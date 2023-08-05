@@ -1,0 +1,3 @@
+docassemble.base==1.3.44
+docassemble==1.3.44
+googledrivedownloader==0.4
