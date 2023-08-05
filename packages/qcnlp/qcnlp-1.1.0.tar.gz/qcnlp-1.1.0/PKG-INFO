@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qcnlp
+Version: 1.1.0
+Summary: A Preprocessing & Parsing tool for Chinese Natural Language Processing
+Home-page: https://github.com/junchaoIU/QCNLP
+Author: wujunchao
+Author-email: wujunchaoIU@outlook.com
+License: Apache License Version 2.0
+Keywords: pip,nlp
+Platform: UNKNOWN
+Requires: numpy
+
+UNKNOWN
+
