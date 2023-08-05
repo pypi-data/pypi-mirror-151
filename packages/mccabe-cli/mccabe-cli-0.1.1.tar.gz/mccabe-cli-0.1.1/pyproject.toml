@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mccabe-cli"
+version = "0.1.1"
+description = ""
+authors = ["Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/tddschn/mccabe-cli"
+repository = "https://github.com/tddschn/mccabe-cli"
+classifiers = [
+    "Topic :: Utilities"
+]
+keywords = ["mccabe", "code complexity", "code metrics"]
+
+[tool.poetry.scripts]
+mccabe = "mccabe_cli:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tddschn/mccabe-cli/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mccabe = "^0.7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
