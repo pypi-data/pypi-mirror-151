@@ -1,0 +1,3 @@
+[console_scripts]
+envoy.project = envoy.base.utils:project_cmd
+
