@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+idex/__init__.py
+idex/client.py
+idex/enums.py
+idex/exceptions.py
+idex/signing.py
+idex/utils.py
+idex/contracts/__init__.py
+python_idex.egg-info/PKG-INFO
+python_idex.egg-info/SOURCES.txt
+python_idex.egg-info/dependency_links.txt
+python_idex.egg-info/requires.txt
+python_idex.egg-info/top_level.txt
