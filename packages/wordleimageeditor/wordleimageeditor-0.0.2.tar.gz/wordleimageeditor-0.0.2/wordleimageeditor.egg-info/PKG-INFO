@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: wordleimageeditor
+Version: 0.0.2
+Summary: A module for creating images for Wordle
+Home-page: UNKNOWN
+Author: Artyom Ulyanov
+Author-email: uljanoff.artem@yandex.ru
+License: MIT
+Description: This is a module for creating images for a game called Wordle
+        
+        Change Log
+        ==========
+        
+        0.0.1
+        -------------------
+        - First Release
+        
+Keywords: wordle
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
