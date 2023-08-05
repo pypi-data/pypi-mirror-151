@@ -1,0 +1,5 @@
+{
+    "baseUrl" : "https://report.qualisys.com",
+    "clientId" : "University of Salford",
+    "token" : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cGxvYWQiOnRydWUsInF0bVVzZXIiOiJVbml2ZXJzaXR5IG9mIFNhbGZvcmQiLCJpYXQiOjE1NjE5NzY1MTAsImV4cCI6MTU3MjUxNzMxMH0.Muldc3i7LV94Y_nIBYgFuF9M0n1CUfcLKaG72sI94Z8"
+}
