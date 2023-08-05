@@ -1,0 +1,13 @@
+mathy_pydoc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mathy_pydoc/about.py,sha256=YfEyno3SJDmxQaRFd7RPIE0sMkc6TFgRfYHtkojzlls,274
+mathy_pydoc/cli.py,sha256=At850dgaM3g-EhdoEXaO_j3rIh7W6NbUqutB49flRfY,3303
+mathy_pydoc/document.py,sha256=KKBInjn_l1MHsyaOaaaN0Hu2wzOv1-8oaGRUjoDkfWg,4697
+mathy_pydoc/imp.py,sha256=hnBM-_ZN_p-qG_By1gQWszqvS__lgl8gj3d3YI6z7sc,4905
+mathy_pydoc/loader.py,sha256=KcKw1TnJLO6rT94rVOjVgQ7zxuYYEAreghCinQZGFNY,8651
+mathy_pydoc/preprocessor.py,sha256=KHjrbrr7b8-MySi_C04qQ6gDpiIRv7w-2cCDItMWoW8,2324
+mathy_pydoc-0.7.27.dist-info/LICENSE.txt,sha256=RbkZIW3ZOmpk7h0XdhqbDA5WEJ8q7z3CvMI7ypm69-Y,1130
+mathy_pydoc-0.7.27.dist-info/METADATA,sha256=nf51BwDR0pGE0VHt-o6dmae1-vCATcnR8cyqeWs4Awo,3905
+mathy_pydoc-0.7.27.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mathy_pydoc-0.7.27.dist-info/entry_points.txt,sha256=JgnjdNW8kedUyakW4Bw0J2CoDTztoy7IePJ-bVHkvW0,52
+mathy_pydoc-0.7.27.dist-info/top_level.txt,sha256=kHeuxe9m6ThlE0qFO6tSNNna13Rs9Lfx7sZuj1FGCi8,12
+mathy_pydoc-0.7.27.dist-info/RECORD,,
