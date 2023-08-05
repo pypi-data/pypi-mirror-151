@@ -1,0 +1,11 @@
+ingestion/__init__.py,sha256=RxjsfHlfsnjPzT44wkQJvNHkE-aYeXc4k14YKhPyZpY,157
+ingestion/apis.py,sha256=XywyH3GEqVrw_hE4q4iQE2P3U4TxDibSag6VGthVx3Q,3311
+ingestion/exceptions.py,sha256=ge6AfuGO4I84XVKetyee8ZXtrqZH2p9zKSdckaBgegE,897
+ingestion/ingestors.py,sha256=Fnu4OnrBrGOKZXh4XCd5ZFRdWJlfRKv5uKxtPLmLHkQ,1775
+ingestion/logconfig.py,sha256=VFGIu9t_jSd8v8RlWcYRT1IlUlyeIyvD16AqrAerX04,323
+ingestion/main.py,sha256=o-DvPodJbUvDxUxDyV4BAo61xAV1Fr9PaxMZkCmqtfM,1553
+ingestion/writers.py,sha256=WhKxWZzW8J8jPh316ofDwQq8CU46Nn3XkDyiqf8_Ws8,3090
+av_tweet_ingestion-1.0.2.dist-info/METADATA,sha256=YLsyZZRVAP1OeM6XNfsth1Bd874IO96sUR8k7yvQcGA,2374
+av_tweet_ingestion-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+av_tweet_ingestion-1.0.2.dist-info/top_level.txt,sha256=wyZccObk8rJzjH34biEeSgXIi1FIlXN7b4czTOjZt3A,10
+av_tweet_ingestion-1.0.2.dist-info/RECORD,,
