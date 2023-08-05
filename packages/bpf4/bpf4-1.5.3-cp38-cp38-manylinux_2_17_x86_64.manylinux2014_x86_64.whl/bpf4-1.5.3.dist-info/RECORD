@@ -1,0 +1,17 @@
+bpf4/bench.py,sha256=6JTDn3uElXDxVSDj-ddtpGTyjQMSZIvcjxtWif3aWT0,392
+bpf4/csvtools.py,sha256=yr21YjGWLRshUUFlorjJsn4ozv8JUZcAVl0tr48GBFY,8159
+bpf4/tests.py,sha256=CPY6xsTQhiA77PGo4OL-h6j3dtpKZSwG5Tel6-Dn5bc,1420
+bpf4/wafointerpol.py,sha256=rBY0Gg0z42deQ-YWtoy2aBrMhEGe8QXp-rdo3WSPsbY,85526
+bpf4/pyinterp.py,sha256=6ds7-eZ9SlDRWljltaEjUETq7aoo9VGZDDpOmMTWiD4,1378
+bpf4/config.py,sha256=eOit41C9cEvJ3Uu4SZN02hUBSuhLZ1RcqAlF6chNlOg,341
+bpf4/api.py,sha256=s1rk_HlB9R_gsmV0C7ECHihC9_RWxjOecJA3LGx_-l0,15726
+bpf4/arraytools.py,sha256=wJoHFcaZMBpXRI3459FQdoq-5vmltqtLLkDYdsQ5_RU,1859
+bpf4/util.py,sha256=XpMYcBFxG-pISszpTgARtd6lDENJGwgCyCgKsadYqfw,26092
+bpf4/plot.py,sha256=rDuv5ROXqCqkUyH1nfdE-esjWT5pIQO2kFAaqGis0Lo,3747
+bpf4/__init__.py,sha256=H8ilLu0XhYe6CAyVw9sx0a4oZB3if0fM_smQkGvPJME,147
+bpf4/core.cpython-38-x86_64-linux-gnu.so,sha256=gbq1cnsM7tLnTgXZJyStwFwwjIIwWxTpfjuR_yLo0Lo,8764584
+bpf4/version.py,sha256=OKUJK8F6VDHvPgLQNGh3Oq_3-oUAtpGUIDiBfeVM3yA,85
+bpf4-1.5.3.dist-info/WHEEL,sha256=-ijGDuALlPxm3HbhKntps0QzHsi-DPlXqgerYTTJkFE,148
+bpf4-1.5.3.dist-info/top_level.txt,sha256=B59MQCcNA0f7BzFnz2Dk2257JgvWLzNNkl7NHrG0lHk,5
+bpf4-1.5.3.dist-info/METADATA,sha256=UvVf1FMU8H_ye8z96Yi9v7AAzmB9mOGVc5IkxVV967c,5128
+bpf4-1.5.3.dist-info/RECORD,,
