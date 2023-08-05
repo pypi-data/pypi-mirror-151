@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+unique_package/unique_folder/__init__.py
+unique_package/unique_folder/unique_functions.py
+unique_package/unique_function.egg-info/PKG-INFO
+unique_package/unique_function.egg-info/SOURCES.txt
+unique_package/unique_function.egg-info/dependency_links.txt
+unique_package/unique_function.egg-info/top_level.txt

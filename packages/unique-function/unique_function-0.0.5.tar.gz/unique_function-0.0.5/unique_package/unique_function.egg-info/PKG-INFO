@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: unique-function
+Version: 0.0.5
+Summary: function to define unique characters
+Home-page: https://git.foxminded.com.ua/foxstudent101526/packaging
+Author: Bartkiv-Yuriy
+Author-email: author@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Unique-function Package
+To install the function you need to execute a command:
+"pip install -i https://test.pypi.org/simple/ unique-project"
+this package is able to identify the unique characters of the transmitted line and text from the file.
+to define unique characters from a string, run the command:
+--string "your text"
+to determine the unique characters of the file, run the command:
+--file "path/to/file"
+when executing two commands, the --file has higher priority
+[Github-flavored Markdown](https://git.foxminded.com.ua/foxstudent101526/packaging)
+
+
