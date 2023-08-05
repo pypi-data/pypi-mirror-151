@@ -1,0 +1,27 @@
+//////////////
+// literals //
+//////////////
+?literal: SIGNED_NUMBER
+    | string
+    | rstring
+    | NULL
+    | boolean
+
+?string: DOUBLE_QUOTED_STRING
+    | SINGLE_QUOTED_STRING
+rstring: "r" string
+
+DOUBLE_QUOTED_STRING: "\"" _STRING_ESC_INNER "\""
+SINGLE_QUOTED_STRING: "'" _STRING_ESC_INNER "'"
+
+?boolean: TRUE
+    | FALSE
+?nullable_boolean: boolean
+    | NULL
+
+NULL: "NULL"i
+TRUE: "TRUE"i
+FALSE: "FALSE"i
+
+%import common._STRING_ESC_INNER
+%import common.SIGNED_NUMBER
