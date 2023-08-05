@@ -1,0 +1,7 @@
+README.md
+setup.py
+pydact.egg-info/PKG-INFO
+pydact.egg-info/SOURCES.txt
+pydact.egg-info/dependency_links.txt
+pydact.egg-info/requires.txt
+pydact.egg-info/top_level.txt
