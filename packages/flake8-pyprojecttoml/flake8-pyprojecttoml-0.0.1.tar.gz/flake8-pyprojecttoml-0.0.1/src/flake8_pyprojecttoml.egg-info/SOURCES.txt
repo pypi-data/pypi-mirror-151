@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.cfg
+src/flake8_pyprojecttoml/__init__.py
+src/flake8_pyprojecttoml/py.typed
+src/flake8_pyprojecttoml.egg-info/PKG-INFO
+src/flake8_pyprojecttoml.egg-info/SOURCES.txt
+src/flake8_pyprojecttoml.egg-info/dependency_links.txt
+src/flake8_pyprojecttoml.egg-info/entry_points.txt
+src/flake8_pyprojecttoml.egg-info/not-zip-safe
+src/flake8_pyprojecttoml.egg-info/requires.txt
+src/flake8_pyprojecttoml.egg-info/top_level.txt
