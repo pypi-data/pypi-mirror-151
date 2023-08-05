@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/kafkaproducerconsumer/KafkaTopics.py
+src/kafkaproducerconsumer/__init__.py
+src/kafkaproducerconsumer.egg-info/PKG-INFO
+src/kafkaproducerconsumer.egg-info/SOURCES.txt
+src/kafkaproducerconsumer.egg-info/dependency_links.txt
+src/kafkaproducerconsumer.egg-info/top_level.txt
