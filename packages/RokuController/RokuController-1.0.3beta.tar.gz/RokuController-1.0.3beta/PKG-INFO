@@ -1,0 +1,51 @@
+Metadata-Version: 1.1
+Name: RokuController
+Version: 1.0.3beta
+Summary: An easy to use Roku cli interface.
+Home-page: https://github.com/levelfourtwenty/RokuController/
+Author: Levelfourtwenty
+Author-email: level420@protonmail.com
+License: gpl-2.0
+Download-URL: https://github.com/levelfourtwenty/RokuController/v_1.0.3beta.tar.gz
+Description: # RokuController
+        A simple cli controller for Roku devices that utilizes the Roku external control API.
+        
+        # What is this program and how do I use it?
+        This program can be used to control Roku devices via the command line, you can use it to control your Roku device and enter text onto it via the command line. 
+        
+        # Installation
+        
+        To install the latest release via PyPi:<br />
+        `$ pip install RokuController`
+        
+        To install the latest release via setup.py:<br />
+         `$ git clone https://github.com/levelfourtwenty/RokuController/` <br /> `$ python setup.py install`
+         
+         # Usage
+         Usage of the program is relatively self explanatory, the keybinds are listed in [keybinds.md](https://github.com/levelfourtwenty/RokuController/blob/main/keybinds.md).
+         
+         To start the program, use:<br />
+         ```$ rokucontroller <ip of the device>```
+         
+         
+        
+         
+         
+        
+        
+        
+        
+        
+        
+        
+Keywords: Controller,Roku Cli,Roku
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
