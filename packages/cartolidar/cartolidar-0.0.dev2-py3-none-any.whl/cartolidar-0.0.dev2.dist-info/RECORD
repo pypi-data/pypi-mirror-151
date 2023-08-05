@@ -1,0 +1,14 @@
+cartolidar/__init__.py,sha256=MXJw3MvKR1-3vqVypuLd_6uD0oz3JiFyYFoeCrH0vxI,440
+cartolidar/__main__.py,sha256=MqvfGHeo_x88TbPx1ezhRj-ZHCQZkirz89edF6Uk2Us,7467
+cartolidar/qlidmerge.py,sha256=bY3X0sk7ZchXsWjq4pr_7cgg9WyRfs6T71bmYpJLvyQ,20998
+cartolidar/qlidtwins.py,sha256=d2GcyRO9T3eeID3fRNHrwh_2r_pLcLNd3-NmNtaMmaQ,40695
+cartolidar/clidtools/__init__.py,sha256=wP1TSjM2ypggPOg3vg3k4t2Ytg6ZYQYl_UPWUZ1lwiw,1208
+cartolidar/clidtools/__main__.py,sha256=aCGY40SiNM-jFshb2hEQYHJJNfbldRxmARm-uJ5UPAY,716
+cartolidar/clidtools/clidmerge.py,sha256=X8sv02rUACCdW8B90F6bqiIMfvZc_iAZR6gHHZHJjMA,56622
+cartolidar/clidtools/clidtwins.py,sha256=XLue6seOQN8l7vtyCarRt8tFYA2-CMbV56pQb-ii3xY,187118
+cartolidar/clidtools/clidtwins_config.py,sha256=viCR2X6lvXHWthUPg9aDEGe8Ji73HMcMo9wIydRyi9Y,30694
+cartolidar-0.0.dev2.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+cartolidar-0.0.dev2.dist-info/METADATA,sha256=PQQm01pPFFHZGS_mnI8VOtEsOfU-tgdSnOE1Qc0_nPw,4532
+cartolidar-0.0.dev2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cartolidar-0.0.dev2.dist-info/top_level.txt,sha256=93BC6N92ei6P0zJnCcRl-RnkFzB5wf38kYrLx1vVYUc,11
+cartolidar-0.0.dev2.dist-info/RECORD,,
