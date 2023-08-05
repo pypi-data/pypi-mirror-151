@@ -1,0 +1,13 @@
+setup.py
+client/__init__.py
+client/client_db.py
+client/login_dialog.py
+client/login_dialog_ui.py
+client/main_window.py
+client/main_window_ui.py
+client/transport.py
+py_yuwinzer_client.egg-info/PKG-INFO
+py_yuwinzer_client.egg-info/SOURCES.txt
+py_yuwinzer_client.egg-info/dependency_links.txt
+py_yuwinzer_client.egg-info/requires.txt
+py_yuwinzer_client.egg-info/top_level.txt
