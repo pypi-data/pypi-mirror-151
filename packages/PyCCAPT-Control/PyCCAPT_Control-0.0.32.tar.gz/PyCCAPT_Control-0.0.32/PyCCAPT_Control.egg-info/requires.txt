@@ -1,0 +1,12 @@
+numpy
+matplotlib
+opencv-python
+pandas
+scikit_learn
+ipywidgets
+networkx
+numba
+requests
+wget
+h5py
+tables
