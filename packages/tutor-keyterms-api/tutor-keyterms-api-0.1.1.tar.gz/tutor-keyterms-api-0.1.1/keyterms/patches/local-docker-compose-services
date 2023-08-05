@@ -1,0 +1,11 @@
+keyterms:
+    image: {{ KEYTERMS_DOCKER_IMAGE }}
+    hostname: keytermsapi
+    environment:
+        DJANGO_SETTINGS_MODULE: edx_key_terms_api.settings.tutor
+    restart: unless-stopped
+    ports:
+        - "18500:18500"
+    expose:
+        - "18500"
+        

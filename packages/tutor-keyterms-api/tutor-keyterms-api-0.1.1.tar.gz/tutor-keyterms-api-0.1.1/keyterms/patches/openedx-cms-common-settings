@@ -1,0 +1,2 @@
+# Edx Key Terms Api
+KEY_TERMS_API_URL = 'http://keytermsapi:18500/api/v1/platform_course_reindex/?course_id='

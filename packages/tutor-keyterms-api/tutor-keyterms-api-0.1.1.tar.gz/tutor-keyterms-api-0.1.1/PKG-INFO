@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: tutor-keyterms-api
+Version: 0.1.1
+Summary: keyterms plugin for Tutor
+Home-page: https://github.com/CUCWD/tutor-keyterms-api
+Author: CUCWD
+Project-URL: Code, https://github.com/CUCWD/edx_key_terms_api
+Project-URL: Issue tracker, https://github.com/CUCWD/edx_key_terms_api/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+
+keyterms plugin for `Tutor <https://docs.tutor.overhang.io>`__
+===================================================================================
+
+This is a plugin for `Tutor <https://docs.tutor.overhang.io>`_ to easily add the key terms api to an Open edX platform.
+
+Installation
+------------
+
+::
+
+    pip install tutor-keyterms-api
+
+
+Usage
+-----
+
+::
+
+    tutor plugins enable keyterms
+
+Pull the latest image for edx_key_terms_api, run::
+
+    tutor images pull keyterms
+
+To create the keyterms container, run::
+
+    tutor local start
+
+Initialize the service, create the database and run migrations, run::
+
+    tutor local init --limit=keyterms
+
+
+Configuration
+-------------
+
+- ``KEYTERMS_DOCKER_REGISTRY`` (default: ``"589371489025.dkr.ecr.us-east-2.amazonaws.com/"``)
+- ``KEYTERMS_DOCKER_IMAGE`` (default: ``"{{ KEYTERMS_DOCKER_REGISTRY }}edx_key_terms_api:{{ KEYTERMS_VERSION }}"``)
+- ``KEYTERMS_HOST`` (default: ``"keyterms.{{ LMS_HOST }}"``)
+- ``KEYTERMS_MYSQL_DATABASE`` (default: ``"keyterms"``)
+- ``KEYTERMS_MYSQL_USERNAME`` (default: ``"keyterms"``)
+
+These values can be modified with ``tutor config save --set PARAM_NAME=VALUE`` commands.

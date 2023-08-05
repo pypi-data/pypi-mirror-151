@@ -1,0 +1,4 @@
+# Keyterms
+{{ KEYTERMS_HOST }}{$default_site_port} {
+    import proxy "keytermsapi:8000"
+}
