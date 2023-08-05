@@ -1,0 +1,17 @@
+tsdb/__init__.py,sha256=dg_VLAmQTuYQO5uu1XASKsW4HQ-7xHaHWOURSWryAS4,400
+tsdb/__version__.py,sha256=MOckg8Al8QD6ejNbHacqRcYKmpkS72rBJHmGvE0cHM8,18
+tsdb/data_processing.py,sha256=yyX-r2Kv8WDfigJ7ajX9pDPdWhgfAoSGdmiXsiiKFLg,8989
+tsdb/database.py,sha256=4OGDTp9wem03MXamKWofJ8c87kjrDJ2OhU2_EXvGItc,4540
+tsdb/data_loading_funcs/__init__.py,sha256=XFEzHvstraVshtcF0tGKb3pMymavTM-wCX29UL-gIgU,379
+tsdb/data_loading_funcs/beijing_multisite_air_quality.py,sha256=hg3-UWCOP9tcHpRyDpPz6oxEUUmd4GDA42qIlZDXMvU,1179
+tsdb/data_loading_funcs/electricity_load_diagrams.py,sha256=rgja8UqTAbSYg2crhoNt00eT7il95jVijtSFggYNZn0,1035
+tsdb/data_loading_funcs/physionet_2012.py,sha256=j6d3cu5kMQcTPiGb2HlJeoeETLbJoXvKsThB6aFyu5E,3154
+tsdb/data_loading_funcs/physionet_2019.py,sha256=vrV4IDl5Oz3CutBm_fkJKT59wC3PI8fuuvg2AaxwLBI,1181
+tsdb/data_loading_funcs/ucr_uea_datasets.py,sha256=CQd9EdPGPozMgRDwLpF268BGSzaE_EpZGEKCQM4hdZA,9121
+tsdb/tests/__init__.py,sha256=0Nlc64QJpVCMqSz8CVeY-sF5bCTTLBHxVWApY3mtgW4,93
+tsdb/tests/test_tsdb.py,sha256=tCpLlmQ9YyO4WBUMFq65nl7xPOdHBX7-d1H1MXO0sPE,1093
+tsdb-0.0.7.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+tsdb-0.0.7.dist-info/METADATA,sha256=O8RJ3k9k07L31kB28WUSwx_7NDhS1st5qXR_Nq_G-Is,5333
+tsdb-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tsdb-0.0.7.dist-info/top_level.txt,sha256=GzbO_-ZD0pQ-vNC6t3oJ9tlqyYJHuPt7Q4qr-7nwUTU,5
+tsdb-0.0.7.dist-info/RECORD,,
