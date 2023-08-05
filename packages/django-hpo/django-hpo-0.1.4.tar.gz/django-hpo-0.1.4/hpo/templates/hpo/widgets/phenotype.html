@@ -1,0 +1,7 @@
+{% load i18n %}
+<input type="text" hpo="phenotype"  {% include "hpo/widgets/attrs.html" with extra_id="_autocomplete" %}
+       placeholder="{% trans "Type phenotype" %}"  {% if phenotype %}value="{{ phenotype }}"{% endif %} />
+<input type="hidden"
+       {% if phenotype %}value="{{ phenotype.id }}"{% endif %}
+       {% include "hpo/widgets/attrs.html" with extra_id="_id" %} name="{{ widget.name }}" />
+<p class="help-block notes">{% if phenotype %}<a target="_blank" href="https://hpo.jax.org/app/browse/term/{{ phenotype.id }}">More info on HPO's page.</a>{% endif %}</p>

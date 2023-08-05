@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: django-hpo
+Version: 0.1.4
+Summary: A Django app to search on hpo database
+Home-page: https://github.com/bimbogino/django_hpo/
+Author: Davide Galletti
+Author-email: davide@c4k.it
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+License-File: LICENSE
+
+===============
+DJANGO HPO
+===============
+
+Alpha: DO NOT USE IN PRODUCTION
+HPO is a Django app that allows to browse HPO Onthology https://hpo.jax.org/app/
+
+Quick start
+-----------
+
+1. Add "hpo" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'hpo',
+    ]
+
+2. Run ``python manage.py migrate`` to create the models.
+
+3. Run ``python manage.py import_hpo`` to populate your database.
+
+
