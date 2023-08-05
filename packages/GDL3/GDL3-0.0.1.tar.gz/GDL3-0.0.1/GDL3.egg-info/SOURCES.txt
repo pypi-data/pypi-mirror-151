@@ -1,0 +1,11 @@
+setup.py
+GDL3.egg-info/PKG-INFO
+GDL3.egg-info/SOURCES.txt
+GDL3.egg-info/dependency_links.txt
+GDL3.egg-info/requires.txt
+GDL3.egg-info/top_level.txt
+gdl3/Entity.py
+gdl3/Events.py
+gdl3/__init__.py
+gdl3/shapes.py
+gdl3/window.py
