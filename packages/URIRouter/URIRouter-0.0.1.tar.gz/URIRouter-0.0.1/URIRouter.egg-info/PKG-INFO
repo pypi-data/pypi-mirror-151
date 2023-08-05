@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: URIRouter
+Version: 0.0.1
+Summary: Flask-style routing for URIs
+Home-page: https://github.com/The-Nicholas-R-Barrow-Company-LLC/uri-router
+Author: The Nicholas R. Barrow Company, LLC
+Author-email: me@nicholasrbarrow.com
+License: MIT
+Project-URL: Source, https://github.com/The-Nicholas-R-Barrow-Company-LLC/uri-router
+Project-URL: Tracker, https://github.com/The-Nicholas-R-Barrow-Company-LLC/uri-router/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# URIRouter
+
+## Format
+{{scheme}}://{netloc}/{{path/more-path}}?{{param1=something}}&{{param2=somethingelse}}
+{{scheme}}:///{{path/more-path}}?{{param1=something}}&{{param2=somethingelse}}
+
