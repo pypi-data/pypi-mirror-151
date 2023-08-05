@@ -1,0 +1,3 @@
+[console_scripts]
+galaxy-store-cli=store_cli:main
+
