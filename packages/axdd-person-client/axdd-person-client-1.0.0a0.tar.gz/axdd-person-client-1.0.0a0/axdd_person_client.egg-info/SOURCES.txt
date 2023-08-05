@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+axdd_person_client.egg-info/PKG-INFO
+axdd_person_client.egg-info/SOURCES.txt
+axdd_person_client.egg-info/dependency_links.txt
+axdd_person_client.egg-info/requires.txt
+axdd_person_client.egg-info/top_level.txt
+uw_person_client/__init__.py
+uw_person_client/components.py
+uw_person_client/core.py
+uw_person_client/test.py
