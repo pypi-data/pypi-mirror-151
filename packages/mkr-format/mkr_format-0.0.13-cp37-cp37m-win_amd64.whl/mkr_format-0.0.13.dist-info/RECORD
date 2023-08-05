@@ -1,0 +1,14 @@
+mkr_format/__init__.py,sha256=dM67kUq7-giLdGFpIKXZl4ZacF5ROm0yqLVnoBZMOEI,181
+mkr_format/_version.py,sha256=icp-F99ILx7k55Vjx4rF1vWjehzfr8l8vcJaT8VhBLU,26
+mkr_format/api_utils.py,sha256=SquWTA4nJ8uz-5_U_udIagZfLXrCuEEmv5-HDhj8hVs,477
+mkr_format/mkr_format_pybind.cp37-win_amd64.pyd,sha256=SVj84NJe4aIXAmebfC8aPqQqlLTJeYib_IKRlh4hqwE,6315520
+mkr_format/reader.py,sha256=AVvIsx4JKEQoi9D9MJaWHWQM-KAXHPEFW0F0GbaR1HM,3732
+mkr_format/reader_pyarrow.py,sha256=qqenNIR_wd6OsAoCcQIDPKTm5_bWI_mLi02Vgihu8vE,14344
+mkr_format/reader_utils.py,sha256=bBlaw8e2cOQS5GDqh-qHXTB1Oud5gaTdH5K3ZqitNK8,1204
+mkr_format/signal_tools.py,sha256=SPW5fLzeH29pmWNjfbbFoewSo9fWaY6OrxYzRzOMmDw,1821
+mkr_format/utils.py,sha256=IDWzuBG3BbM-8bIGm0MCakCLMokbTEho-R6RGiVTNZI,628
+mkr_format/writer.py,sha256=CmVeqEEX8oWnjjgQLswJBTIWrW2TpcISZso9ScMOfJA,9701
+mkr_format-0.0.13.dist-info/METADATA,sha256=2tACnolAUf0BzYcKEQ3ido7tBU_zhJnEJI4vJ1Zeidg,910
+mkr_format-0.0.13.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+mkr_format-0.0.13.dist-info/top_level.txt,sha256=dGJf1LtTe07olSSeTrh0bc0y_QD5hxjHrxPF6sPvVcc,11
+mkr_format-0.0.13.dist-info/RECORD,,
