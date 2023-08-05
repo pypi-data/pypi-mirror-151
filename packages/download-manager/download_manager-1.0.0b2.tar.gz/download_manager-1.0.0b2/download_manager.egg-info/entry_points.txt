@@ -1,0 +1,3 @@
+[console_scripts]
+download_manager = download_manager.cli:cli
+
