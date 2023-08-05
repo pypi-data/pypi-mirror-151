@@ -1,0 +1,9 @@
+
+[model_saving]
+h5py
+
+[tensorflow]
+tensorflow>=2.7
+
+[tensorflow with gpu]
+tensorflow-gpu>=2.7
