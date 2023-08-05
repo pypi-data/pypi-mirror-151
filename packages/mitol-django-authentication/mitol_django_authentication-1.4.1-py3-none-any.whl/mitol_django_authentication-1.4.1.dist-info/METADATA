@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mitol-django-authentication
+Version: 1.4.1
+Summary: MIT Open Learning django app extensions for oauth toolkit
+Home-page: UNKNOWN
+License: BSD 3-Clause License
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: django-anymail (>=6.0)
+Requires-Dist: django (<4.0,>=2.2.12)
+Requires-Dist: djangorestframework (>=3.0.0)
+Requires-Dist: djoser (==2.1.0)
+Requires-Dist: mitol-django-common (~=2.2.0)
+Requires-Dist: mitol-django-mail (~=3.1.0)
+Requires-Dist: social-auth-app-django (>=3.1.0)
+
+UNKNOWN
+
