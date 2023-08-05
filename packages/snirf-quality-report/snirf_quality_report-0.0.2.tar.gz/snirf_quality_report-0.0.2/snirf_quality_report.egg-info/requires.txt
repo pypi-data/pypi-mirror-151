@@ -1,0 +1,6 @@
+numpy
+mne
+mne_nirs
+pandas
+pysnirf2
+importlib_resources

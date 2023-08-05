@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: snirf_quality_report
+Version: 0.0.2
+Summary: Get fNIRS SNIRF raw data quality report
+Home-page: https://github.com/BUNPC/snirf_quality_report
+Author: SK
+Author-email: skura@bu.edu
+License: MIT
+Description: Get fNIRS SNIRF raw data quality report
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
