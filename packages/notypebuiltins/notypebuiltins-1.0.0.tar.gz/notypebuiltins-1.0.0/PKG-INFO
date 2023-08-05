@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: notypebuiltins
+Version: 1.0.0
+Summary: Load not typed modules from cpython github repository.
+Home-page: UNKNOWN
+Author: LUA9
+Maintainer: LUA9
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Example
+```python
+import notypebuiltins
+notypebuiltins.loader.load()
+from notypebuiltins.Lib import abc
+```
+
