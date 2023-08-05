@@ -1,0 +1,6 @@
+[drb.impl]
+sentinel5 = drb_topic_sentinel5
+sentinel5_aux = drb_topic_sentinel5.auxiliary
+sentinel5_l1 = drb_topic_sentinel5.level1
+sentinel5_l2 = drb_topic_sentinel5.level2
+
