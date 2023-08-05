@@ -1,0 +1,5 @@
+setup.py
+torchsnapshot.egg-info/PKG-INFO
+torchsnapshot.egg-info/SOURCES.txt
+torchsnapshot.egg-info/dependency_links.txt
+torchsnapshot.egg-info/top_level.txt
