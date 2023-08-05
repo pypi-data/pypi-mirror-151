@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: muzaffarsmartcalc
+Version: 1.0.1
+Summary: A very basic calculator
+Home-page: 
+Author: Muzaffar Sharofiddiov
+Author-email: smartboymuzaffar@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE
+
+#auth: SmartBoyMuzaffar
+
+#Full Name: Muzaffar Sharofiddinov
+
+#Description:
+
+This is a very simple calculator.
+
+
+Usage: 
+
+
+    from calculator import calc
+
+
+
+    #there t = character, num1 = 1-number, num2 = 2-number
+
+
+    calc("*", 779, 223)
+    
+    
