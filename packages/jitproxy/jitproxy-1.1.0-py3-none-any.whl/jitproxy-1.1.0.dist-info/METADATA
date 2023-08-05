@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jitproxy
+Version: 1.1.0
+Summary: JIT Lazy-loading Proxies for synch and AIO objects
+Home-page: https://github.com/tangibleintelligence/jitproxy
+License: MIT
+Keywords: lazy-loading,initialization
+Author: Austin Howard
+Author-email: austin@tangibleintelligence.com
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: clearcut (>=0.2.0,<0.3.0)
+Project-URL: Repository, https://github.com/tangibleintelligence/jitproxy
+Description-Content-Type: text/markdown
+
+# jitproxy
+
+[![Build Status](https://cloud.drone.io/api/badges/tangibleintelligence/jitproxy/status.svg)](https://cloud.drone.io/tangibleintelligence/jitproxy)
+
+Just-in-time, lazy-loading Proxies for standard (synchronous) and AIO objects.
