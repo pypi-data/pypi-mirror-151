@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+datapact/__init__.py
+datapact/datapact.py
+datapact/datapact_test.py
+datapact/fixture_test.py
+datapact/schema.py
+datapact/datapact.egg-info/PKG-INFO
+datapact/datapact.egg-info/SOURCES.txt
+datapact/datapact.egg-info/dependency_links.txt
+datapact/datapact.egg-info/requires.txt
+datapact/datapact.egg-info/top_level.txt
+datapact/javascript/__init__.py
+datapact/javascript/entrypoint.js
