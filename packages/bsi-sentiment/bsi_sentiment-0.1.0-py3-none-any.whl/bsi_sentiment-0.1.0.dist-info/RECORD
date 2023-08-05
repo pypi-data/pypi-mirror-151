@@ -1,0 +1,13 @@
+bsi_sentiment/__init__.py,sha256=F2UKwcuwSUNBgQWcCS1p19rMgyDCsHJp6Izw9bhX_hM,216
+bsi_sentiment/bsi_sentiment.py,sha256=H6yuLIX5IC5c4LKh3ZzZ_O8UDzyBzSv0y9zCT0YsjXs,1024
+bsi_sentiment/parser.py,sha256=ZcbgIieY_PY5iR2jWgA9BJ4t4_1QmdoOoF_1rPlAmL4,3185
+bsi_sentiment/twitter.py,sha256=-ShMpxISeE_X-InaCv57oa8ZeBg-swEMTKB6VaQ-qsA,13522
+bsi_sentiment/utils.py,sha256=anjHEY1hwio-yW5bwbn8X3thRUiEMpSLP81uAHQPHNY,6470
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/bsi_sentiment_test.py,sha256=tviZa873I5y_RF3j4xZ9EKgTla7uRpRJ2-23J3LOTFc,657
+bsi_sentiment-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bsi_sentiment-0.1.0.dist-info/METADATA,sha256=HUm7ppvG07W6w4XX9QbyulXQbtlqh_jrdGG5gRhBiOE,5347
+bsi_sentiment-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bsi_sentiment-0.1.0.dist-info/entry_points.txt,sha256=LlN_XbM0i03pLISQBb9TDEkE9qtIaV3Qn5TBgvieKoo,63
+bsi_sentiment-0.1.0.dist-info/top_level.txt,sha256=4QuBJEM4J2i2rIdjwjf_9BTAmMdIQw86-G3JVexA3KE,20
+bsi_sentiment-0.1.0.dist-info/RECORD,,
