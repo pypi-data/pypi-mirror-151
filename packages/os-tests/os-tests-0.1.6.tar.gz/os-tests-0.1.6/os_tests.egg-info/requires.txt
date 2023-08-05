@@ -1,0 +1,4 @@
+PyYAML
+Jinja2<=2.11.3
+tipset>=0.0.15
+markupsafe<=1.1.1
