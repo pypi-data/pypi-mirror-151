@@ -1,0 +1,6 @@
+object_detector/__init__.py,sha256=iVOpAnR-VpOQ5ClmF8jTrr-5KBGH_vbM2qz1YPSC7X0,171
+object_detector/object_detector.py,sha256=DLPp4lOA1Z5GxkUqyjpkvcUy5aoSZfP1nWNFxS4Owaw,6717
+object_detector-1.5.dist-info/METADATA,sha256=RZy5tCclX4QRoEUinp8y1-5E9lIsAw5rwKuya5yq9mQ,3563
+object_detector-1.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+object_detector-1.5.dist-info/top_level.txt,sha256=yzxJLy0dvcsl3EIfTO60iz_oc0ZMQW_M9jKPOKaXjZg,16
+object_detector-1.5.dist-info/RECORD,,
