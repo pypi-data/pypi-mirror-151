@@ -1,0 +1,2 @@
+dagster==0.14.16rc2
+mysql-connector-python
