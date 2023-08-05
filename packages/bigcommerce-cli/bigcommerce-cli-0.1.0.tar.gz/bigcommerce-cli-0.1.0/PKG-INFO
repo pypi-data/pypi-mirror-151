@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bigcommerce-cli
+Version: 0.1.0
+Summary: BigCommerce Management CLI
+Author: dhartle4
+Author-email: dhartle4@uncc.edu
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: prettytable (>=3.3.0,<4.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
