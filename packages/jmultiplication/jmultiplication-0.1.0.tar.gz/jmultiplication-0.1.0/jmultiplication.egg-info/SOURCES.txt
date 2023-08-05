@@ -1,0 +1,9 @@
+README.md
+setup.py
+jmultiplication/__init__.py
+jmultiplication/multiplication.py
+jmultiplication.egg-info/PKG-INFO
+jmultiplication.egg-info/SOURCES.txt
+jmultiplication.egg-info/dependency_links.txt
+jmultiplication.egg-info/requires.txt
+jmultiplication.egg-info/top_level.txt
