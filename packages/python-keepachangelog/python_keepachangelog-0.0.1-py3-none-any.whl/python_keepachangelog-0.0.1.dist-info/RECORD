@@ -1,0 +1,5 @@
+python_keepachangelog/__init__.py,sha256=kV5ISkSQC1AUkMVEiAQlFLu3k14Z0oL9GCGdxln28LM,55
+python_keepachangelog/changelog.py,sha256=NzraFhfCTdiwIQT2Jf4oX6o8YvfiCs3pcc-E1f5bxPw,5492
+python_keepachangelog-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+python_keepachangelog-0.0.1.dist-info/METADATA,sha256=KESVEJMMnauHVD7RHwukBUGqljL70g2jUS-ZVGEUM7s,372
+python_keepachangelog-0.0.1.dist-info/RECORD,,
