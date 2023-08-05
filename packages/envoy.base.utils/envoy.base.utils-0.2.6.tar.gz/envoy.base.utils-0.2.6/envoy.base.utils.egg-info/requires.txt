@@ -1,0 +1,11 @@
+abstracts>=0.0.12
+aio.api.github>=0.1.1
+aio.core>=0.8.2
+aio.run.runner>=0.3.2
+aiohttp
+frozendict
+jinja2
+packaging
+pytz
+pyyaml
+trycast
