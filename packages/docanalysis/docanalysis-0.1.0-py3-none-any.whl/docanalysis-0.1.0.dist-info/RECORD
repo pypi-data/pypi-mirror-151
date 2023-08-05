@@ -1,0 +1,13 @@
+docanalysis/__init__.py,sha256=BkC_DgBz3-Z0ffDXTNOxccGMp9eXzssZyxljeQEjvZA,249
+docanalysis/ami_sections.py,sha256=oKMeC7KJlK1LF6NC5EO2dQM2_rFJ6uKWd7mvVMYlR4A,3563
+docanalysis/docanalysis.py,sha256=TVgakPvoLNXuRRVclFZgyzxy7iygCqxxLam3eMsjmyU,6000
+docanalysis/entity_extraction.py,sha256=PYKCsRe7TNnjSpnKWLaOuH4jJCYp28FgWkI9OJeW8aQ,19278
+docanalysis/file_lib.py,sha256=7idwXssn_YRTjMXK4n9K8i1m2usDllsI_mRi7vpRHok,11601
+docanalysis/glob_trail.py,sha256=FtZKH3DkEeihXCCfhfGeShq0VE-PR-iZZMKmuCBExJw,1162
+docanalysis/xml_lib.py,sha256=VLGGygBUcjrVKUp1xq9BsjIwdWOCcZznZE_vo4hMbS8,17129
+docanalysis-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+docanalysis-0.1.0.dist-info/METADATA,sha256=4Wl2dZ_TIHRo461AOwOL-7j9Xh0dRjlchUCiXgqujqw,12112
+docanalysis-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+docanalysis-0.1.0.dist-info/entry_points.txt,sha256=jdFsEwz8eI9HVXrYvOX8DzYQ1Q7ER5VLU6PBLvZHWPY,61
+docanalysis-0.1.0.dist-info/top_level.txt,sha256=OlggPgarWSWP4ROwx0_AmQ_53F0ryb9pf2m-8jjdelM,12
+docanalysis-0.1.0.dist-info/RECORD,,
