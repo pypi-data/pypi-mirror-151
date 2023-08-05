@@ -1,0 +1,6 @@
+__pycache__/
+dist/
+images/
+.DS_Store
+.ipynb_checkpoints/
+MOR_SM.egg-info/
