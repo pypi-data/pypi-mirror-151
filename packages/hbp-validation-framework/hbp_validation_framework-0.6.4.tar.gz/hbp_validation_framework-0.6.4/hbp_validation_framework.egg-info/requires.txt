@@ -1,0 +1,13 @@
+ebrains_drive
+nameparser
+requests
+simplejson
+
+[reports]
+Jinja2
+beautifulsoup4
+hbp_archive
+pyppdf
+
+[utils]
+sciunit
