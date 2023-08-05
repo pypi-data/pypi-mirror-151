@@ -1,0 +1,160 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)[^1].
+
+<!---
+Types of changes
+
+- Added for new features.
+- Changed for changes in existing functionality.
+- Deprecated for soon-to-be removed features.
+- Removed for now removed features.
+- Fixed for any bug fixes.
+- Security in case of vulnerabilities.
+
+-->
+
+## [Unreleased]
+
+## [2.0.12] - 2022-05-13
+
+### Added
+
+* Unpacking:
+  - Revisions are automatically uploaded to the exchange server.
+  - The shot list is refreshed after the unpacking has finished.
+  - Layout: The ShotGrid compositing briefing of a shot is added as a comment to its Kitsu *Compositing* task, if the status of the latter is *TODO*. The comment defaults to `No comment` if the briefing is undefined.
+* A shot's compositing briefing can be retrieved with the Shotgun wrapper's `get_shot_comp_briefing()` method.
+* A shot now has options to:
+  - compare its compositing preview (`compositing/compositing_movie.mov` by default) with its animatic (`misc/animatic.mp4` by default) in RV.
+  - open its animation layers in RV
+* Use Sentry to monitor events of the GUI session. The Sentry SDK is initialised before starting the session, assuming the project Data Source Name (DSN) is provided in the `SENTRY_DSN` environment variable.
+
+### Fixed
+
+* Unpacking: the package list is not updated anymore whenever the dialog shows up (only the first time, or when the list is explicitly refreshed).
+* Expand synchronisation field in the project's root by default.
+
+## [2.0.11] - 2022-04-26
+
+### Added
+
+* An action to export files of shots filtered by their Kitsu statutes.
+
+## [2.0.10] - 2022-04-25
+
+### Added
+
+* Unpacking: add an option to automatically delete packages on the current site if they were uploaded.
+
+### Fixed
+
+* Unpacking action display when files are ignored.
+* Ensure Kitsu host is defined when the project is entered through the home page `sequences` button.
+
+## [2.0.9] - 2022-04-21
+
+### Added
+
+* An action in the films allowing to unpack the content of packages into specific files and folders. The content may be single files or file sequences, and currently follow these rules:
+  - a single file is unpacked as a new revision of a tracked file
+  - a single file/file sequence is unpacked into a new revision of a tracked folder, with its subdirectories in the source package
+  - multiple elements assigned to a same target folder will be unpacked into the same revision
+* An AfterEffects scene template
+* A JSX script defining a set of functions to import elements for initialising a compositing scene
+* A method to the Shotgun API wrapper to get a shot's duration.
+* An action to initialise a compositing scene with the following elements (latest revision in each case), if they do exist:
+  - background: `misc/background.mp4`
+  - animatic: `misc/animatic.mp4`
+  - video reference: `misc/video_ref.mp4`
+  - audio tracks: all WAV files found in the folder `misc/audio`
+  - clean-up layers: all PNG sequences found in the folder `clean/layers`
+
+## [2.0.8] - 2022-04-04
+
+### Added
+
+* Packaging:
+  - `CreateCleanPackagesAction` holds a list of presets of the source files that have to be packed.
+  - An action to select the type of packages (clean or layout) to create, which prompts the dialog of the appropriate action.
+
+### Changed
+
+* Packaging: `CreateCleanPackagesAction` creates a single type of package.
+
+### Fixed
+
+* Layout package creation when multiple sources are packed
+
+## [2.0.7] - 2022-04-01
+
+### Added
+
+* An action to create clean-up packages
+
+### Changed
+
+* Allow to pack multiple source folders into a single package
+
+## [2.0.6] - 2022-04-01
+
+### Changed
+
+* Create packages:
+  - allow packages of a shot to be created in case the color is available on SG but source files don't exist on disk. In that case, color files are considered as to be sent from another site.
+  - create color package only if it's available on SG
+
+### Fixed
+
+* When a package is created, the name of its latest revision is updated in the file list.
+
+## [2.0.5] - 2022-03-30
+
+### Added
+
+* Add action value store
+
+## [2.0.4] - 2022-03-21
+
+### Changed
+
+* Packages: Create a new target folder whenever the creation of packages is launched.
+
+## [2.0.3] - 2022-03-21
+
+### Added
+
+* A ShotGrid API wrapper providing operators to get and update shot tasks.
+
+### Changed
+
+* The `CreateShotPackages` action lists all shots with a specific task on ShotGrid server having a specific status.
+
+## [2.0.2] - 2022-03-13
+
+### Added
+
+* Prettier labels for sequences, shots and departments
+* Search flow views, which allow to browse project indexed entries. This feature relies on the search module included in Libreflow, which makes use of a MongoDB for entry indexation. Thus, the feature can be enabled giving the session the URI configuration string of this database. If not provided, flow views revert to their default behaviour.
+
+## [2.0.1] - 2022-03-13
+
+### Added
+
+* An option to pack directories into existing shots.
+* An option to create packages, based on predefined templates.
+* Register runners required to:
+  - edit AfterEffects scenes (`AfterEffects`)
+  - render image sequences (`AfterEffectsRender`)
+  - mark rendered images (`MarkSequenceRunner`)
+
+### Fixed
+
+* Error raising when the home page *Sequences* button was clicked
+
+## [2.0.0] - 2022-02-08
+
+Define a flow up and ready to use.
