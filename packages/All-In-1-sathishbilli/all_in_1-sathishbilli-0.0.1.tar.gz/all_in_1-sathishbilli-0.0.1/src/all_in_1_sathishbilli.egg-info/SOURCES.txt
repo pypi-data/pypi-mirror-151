@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/All_In_1/__init__.py
+src/All_In_1/app.py
+src/all_in_1_sathishbilli.egg-info/PKG-INFO
+src/all_in_1_sathishbilli.egg-info/SOURCES.txt
+src/all_in_1_sathishbilli.egg-info/dependency_links.txt
+src/all_in_1_sathishbilli.egg-info/requires.txt
+src/all_in_1_sathishbilli.egg-info/top_level.txt
