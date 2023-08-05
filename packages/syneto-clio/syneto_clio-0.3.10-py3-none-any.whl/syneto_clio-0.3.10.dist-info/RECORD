@@ -1,0 +1,17 @@
+clio/__init__.py,sha256=CcHXUcClay6j_q422ASWINUGa2zFZHkl6T7-GoPHbF0,73
+clio/config.py,sha256=sx0A7U-F4wY1U6aNs7Zh8bdutJe5zbQ7wY-iKNrW_p0,561
+clio/path.py,sha256=Ni5NrTxM0dt8YTgWBOOzszJrYM5f0BlXRlVVlSKVyh4,385
+clio/shell.py,sha256=IIF-vJC4ecRkIQPXJibMCSAwu0HSAlo-kTAspOWemCU,1142
+clio/sync.py,sha256=E1RcaHaN7ZgAfjW0Fxco_AC_iOLNjkjFnABp5tBmIro,914
+clio/syneto_clio.py,sha256=L5tTYn1OPCSAPOGUH0-zkMBZpIzfWhMRg9vYQPM4bwA,6969
+clio/kube/__init__.py,sha256=szGN_DhOI8Qu_VUg18JxIKdkuztyOgqK3HmEVr8ONLY,25
+clio/kube/container.py,sha256=0_vc7iorZdgaDmaKVS2YhixGKGr9pga6BuqCNVAi7cw,590
+clio/prerequisites/__init__.py,sha256=s4bNXGHp0oDSqlgPE5BxzAk1r4xf3nrKZ_M6UsEJKmo,65
+clio/prerequisites/giove.py,sha256=WHZnX2Jo9ItvUK0ka906IwT2hqRjhMtVs1AmH3If6fc,540
+clio/prerequisites/remote_connections_utilities.py,sha256=JVJBPJSk9NONKiBO7Pn3EJnLDhMyBaC7rLgDh1SmMJ0,935
+syneto_clio-0.3.10.dist-info/LICENSE.txt,sha256=RW5a7peBWU2K8TujFlWirCrGnc8Qp96TKm7Yeco4fNE,1067
+syneto_clio-0.3.10.dist-info/METADATA,sha256=deFzhhc9oWF0WNsK4aySPMDNcdTB6lUW-0DnRQZDP6s,1282
+syneto_clio-0.3.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+syneto_clio-0.3.10.dist-info/entry_points.txt,sha256=JcqaCgep8lOE-4ntfH3T58X2REbApEL0jgNhTDgGJu0,53
+syneto_clio-0.3.10.dist-info/top_level.txt,sha256=3Bc6l1ulAyV8wsuhwenLhTfK9mJ5zoDbTVgi8r6_U6o,5
+syneto_clio-0.3.10.dist-info/RECORD,,
