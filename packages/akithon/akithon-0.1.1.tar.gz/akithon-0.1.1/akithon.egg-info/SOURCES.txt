@@ -1,0 +1,14 @@
+LICENSE
+README.txt
+setup.py
+akithon/__init__.py
+akithon/version.py
+akithon.egg-info/PKG-INFO
+akithon.egg-info/SOURCES.txt
+akithon.egg-info/dependency_links.txt
+akithon.egg-info/top_level.txt
+akithon/_client/__init__.py
+akithon/_client/akinator.py
+akithon/_client/constants.py
+akithon/_client/functions.py
+akithon/_client/session.py

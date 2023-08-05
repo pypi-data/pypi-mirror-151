@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: akithon
+Version: 0.1.1
+Summary: Akinator client package python
+Home-page: https://github.com/south1907/akithon
+Author: Heva
+Author-email: namph.soict@gmail.com
+License: MIT
+Keywords: akinator api client library package chatbot magic
+Requires-Python: >=3.7
+License-File: LICENSE
