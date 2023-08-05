@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: streamduo
+Version: 0.0.35
+Summary: streamduo.com API
+Home-page: 
+Author-email: steve@streamduo.com
+Keywords: streamduo.com API
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: jsonschema
+Requires-Dist: pynacl
+Requires-Dist: pandas
+Requires-Dist: great-expectations
+
+    SDK for streamduo.com
+    
