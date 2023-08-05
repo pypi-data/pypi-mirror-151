@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fastapi_intro"
+version = "1.1.0"
+description = ""
+authors = ["prabal <prabal01pathak@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.76.0"
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
+pydantic = {extras = ["email"], version = "^1.9.0"}
+SQLAlchemy = "^1.4.36"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+python-multipart = "^0.0.5"
+pytest = "7.1.2"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+[tool.poetry.dev-dependencies]
+requests = "^2.27.1"
+black = {version = "^22.3.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
