@@ -1,0 +1,7 @@
+setup.py
+inuits_otel_tracer/tracer.py
+inuits_otel_tracer.egg-info/PKG-INFO
+inuits_otel_tracer.egg-info/SOURCES.txt
+inuits_otel_tracer.egg-info/dependency_links.txt
+inuits_otel_tracer.egg-info/requires.txt
+inuits_otel_tracer.egg-info/top_level.txt
