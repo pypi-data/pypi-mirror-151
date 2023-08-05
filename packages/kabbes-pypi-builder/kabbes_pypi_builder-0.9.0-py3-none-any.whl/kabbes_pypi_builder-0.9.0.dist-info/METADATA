@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: kabbes-pypi-builder
+Version: 0.9.0
+Summary: project for easily deploying code to Python Package Index
+Home-page: https://pypi.org/project/kabbes-pypi-builder
+Author: James Kabbes
+Author-email: james.kabbes@gmail.com
+Project-URL: GitHub, https://github.com/jameskabbes/pypi_builder
+Project-URL: Documentation, https://jameskabbes.github.io/pypi_builder
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kabbes-py-starter
+Requires-Dist: kabbes-parent-class
+Requires-Dist: kabbes-dir-ops
+Requires-Dist: kabbes-repository-generator
+
+[GitHub Pages](https://jameskabbes.github.io/pypi_builder)<br>
+[PyPI](https://pypi.org/project/kabbes-pypi-builder)
+
+# pypi_builder
+project for easily deploying code to Python Package Index
+
+<br> 
+
+# Installation
+`pip install kabbes_pypi_builder`
+
+<br>
+
+# Usage
+For more in-depth documentation, read the information provided on the Pages. Or better yet, read the source code.
+
+
+## Python Script
+
+```python
+import pypi_builder as py_build
+```
+
+```python
+py_build.generate
+```
+
+## Terminal
+
+```
+python -m pypi_builder
+```
+
+<br>
+
+# Author
+James Kabbes
