@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+unique_folder/unique_project.egg-info/PKG-INFO
+unique_folder/unique_project.egg-info/SOURCES.txt
+unique_folder/unique_project.egg-info/dependency_links.txt
+unique_folder/unique_project.egg-info/top_level.txt
