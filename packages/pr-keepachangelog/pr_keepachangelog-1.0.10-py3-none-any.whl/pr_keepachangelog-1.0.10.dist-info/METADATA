@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pr-keepachangelog
+Version: 1.0.10
+Summary: Add pull requests to changelog automatically with BitBucket pipelines and release changelog with keepachangelog.
+Home-page: https://github.com/blackwiz4rd/pr-keepachangelog
+Author: blackwiz4rd
+Author-email: blackwiz4rd@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: keepachangelog (>=2.0.0.dev2)
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+
+### Documentation
+The package can be installed with `pip install pr-keepachangelog`.
+For help and to use it: `python -m pr_keepachangelog`.
+
+Based on a pull request that is merged on a certain branch, you can populate the changelog automatically. The category in which the changelog is populated depends on the prefix of the specified branch:
+- hotfix/ -> Fixed
+- feature/ -> Fixed
+- bugfix/ -> Fixed
+# additional branch types
+- deprecated/ -> Deprecated
+- changed/ -> Changed
+- removed/ -> Removed
+- security/ -> Security
+
+### Keepachangelog categories
+Keepachangelog will guess the new version number when you make a release with `--release`:
+- Added: for new features. Results in minor update.
+- Changed: for changes in existing functionality. Results in major update.
+- Deprecated: for soon-to-be removed features. Results in major update.
+- Removed: for now removed features. Results in major update.
+- Fixed: for any bug fixes (hotfix/bugfix). Results in patch update.
+- Security: in case of vulnerabilities. Results in patch update.
