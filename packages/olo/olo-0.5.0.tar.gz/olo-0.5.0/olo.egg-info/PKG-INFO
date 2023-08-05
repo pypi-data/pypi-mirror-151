@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: olo
+Version: 0.5.0
+Summary: ORM with intelligent and elegant cache manager
+Home-page: https://github.com/yetone/olo
+Author: yetone
+Author-email: guanxipeng@douban.com
+License: MIT License
+Keywords: ORM,olo,cache,sqlstore
+Platform: any
+License-File: LICENSE
