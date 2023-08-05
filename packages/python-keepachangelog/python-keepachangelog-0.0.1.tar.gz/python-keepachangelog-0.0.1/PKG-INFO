@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: python-keepachangelog
+Version: 0.0.1
+Summary: Parser + generator for Changelogs of spec from https://keepachangelog.com/en/1.0.0/
+Author: Tom Whitwell
+Author-email: tom@whi.tw
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: semver (>=2.13.0,<3.0.0)
