@@ -1,0 +1,7 @@
+README.md
+setup.py
+gnosis_py.egg-info/PKG-INFO
+gnosis_py.egg-info/SOURCES.txt
+gnosis_py.egg-info/dependency_links.txt
+gnosis_py.egg-info/requires.txt
+gnosis_py.egg-info/top_level.txt
