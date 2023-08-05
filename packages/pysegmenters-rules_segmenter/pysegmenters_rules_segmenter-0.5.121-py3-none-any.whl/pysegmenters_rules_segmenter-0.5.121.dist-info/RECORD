@@ -1,0 +1,9 @@
+pysegmenters_rules_segmenter/__init__.py,sha256=Xtaff5kT2syuOc-EYowA0vaxpsieB9Zp4TBoNoE2H70,51
+pysegmenters_rules_segmenter/pysbd_sentencizer.py,sha256=DE84m1U31GC33f9YHXLm4SKq4mmyRrjVm4FHTRF0Eq0,1255
+pysegmenters_rules_segmenter/rule_sentencizer.py,sha256=8fGxu-NS8yFRFxIad3MNSEjF7mhlaS9-Hq6uQo11gvI,3279
+pysegmenters_rules_segmenter/rules_segmenter.py,sha256=qIbnXTP4V46f7f806tgLjSi5bUmqrswugdfirC2uzO4,10899
+pysegmenters_rules_segmenter-0.5.121.dist-info/entry_points.txt,sha256=poyr99U0IWWl1R2ClK19ebqFgE476tz97R9yuBV9UDE,198
+pysegmenters_rules_segmenter-0.5.121.dist-info/LICENSE,sha256=QPypQEap7i1K1jF4X_JOx3MvFyVupJe4-rr6h2DuXME,1082
+pysegmenters_rules_segmenter-0.5.121.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+pysegmenters_rules_segmenter-0.5.121.dist-info/METADATA,sha256=NUKcm1-MfYhgf713OARoTet0AS83a6STmdOeDzlj2Ek,3371
+pysegmenters_rules_segmenter-0.5.121.dist-info/RECORD,,
