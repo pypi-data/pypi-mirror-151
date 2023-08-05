@@ -1,0 +1,6 @@
+Sphinx>=2.1
+docutils
+matplotlib<=3.4.3
+natsort
+python-decouple
+requests
