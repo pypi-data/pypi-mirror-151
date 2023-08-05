@@ -1,0 +1,2 @@
+[trytond.modules]
+sale_subscription_automatic_post = sale_subscription_automatic_post
