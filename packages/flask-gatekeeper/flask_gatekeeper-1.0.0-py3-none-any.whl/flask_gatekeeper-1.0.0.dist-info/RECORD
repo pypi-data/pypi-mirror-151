@@ -1,0 +1,8 @@
+flask_gatekeeper/__init__.py,sha256=PdJxJjsQFkKexpp6Ju5b2dFCRb8mfL--IeaymFqnbb8,178
+flask_gatekeeper/gatekeeper.py,sha256=V1m6StBizSsD1tcsYbSUGWazoyIb0XgsezRSZjO1MAU,10280
+flask_gatekeeper/test_gatekeeper.py,sha256=_2mp-ORpklW2woqJhk9qveW6IjU2SS_ZwNzhJFCBitc,4808
+flask_gatekeeper-1.0.0.dist-info/LICENSE,sha256=sfSaCNpWtWoelGKoXqo2dTmaE22GSPqBp2K2WwYi33E,1061
+flask_gatekeeper-1.0.0.dist-info/METADATA,sha256=VjbJ0yQvD-j877M4NZYTHDM4I2JUpHpPp2o5VPF4w4A,3103
+flask_gatekeeper-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flask_gatekeeper-1.0.0.dist-info/top_level.txt,sha256=NgtrfSfSTbBAd5g-oqpYmfhIspGxY7B8JNH415XxkNE,17
+flask_gatekeeper-1.0.0.dist-info/RECORD,,
