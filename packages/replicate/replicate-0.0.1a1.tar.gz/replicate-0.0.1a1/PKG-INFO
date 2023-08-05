@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: replicate
+Version: 0.0.1a1
+Summary: Python client for Replicate
+Home-page: https://github.com/replicate/replicate-python
+Author: Replicate, Inc.
+License: BSD
+Requires-Python: >=3.6
