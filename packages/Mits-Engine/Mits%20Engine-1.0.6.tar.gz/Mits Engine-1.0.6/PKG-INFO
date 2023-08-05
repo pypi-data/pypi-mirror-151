@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Mits Engine
+Version: 1.0.6
+Summary: MITS is a basic devlopement system (based on Python).
+Home-page: https://github.com/mbcraft-exe/MitsEngine/
+Download-URL: https://github.com/mbcraft-exe/MitsEngine/blob/main/Mits%20Engine-1.0.2.tar.gz
+Author-email: mbcraft@orange.fr
+License: MB INC
+Keywords: Mits,MITS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.0
+
+Don't install Mits alone, it needs Mits Reader to be used.
+
