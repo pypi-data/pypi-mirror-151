@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tokyo-annotation
+Version: 0.1a0
+Summary: Tokyo Annotation
+Home-page: https://github.com/dion-ricky/tokyo-annotation
+Download-URL: https://github.com/dion-ricky/tokyo-annotation/releases/download/0.1a0/tokyo-annotation-0.1a0.tar.gz
+Author: Dion Ricky Saputra
+Author-email: code@dionricky.com
+License: MIT
+Keywords: data annotation
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: attrs (==21.4.0)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: charset-normalizer (==2.0.12)
+Requires-Dist: idna (==3.3)
+Requires-Dist: openlineage-python (==0.5.1)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: urllib3 (==1.26.9)
+
