@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: hbp-validation-framework
+Version: 0.6.4
+Summary: Python client for the HBP Validation Framework web services
+Home-page: https://github.com/HumanBrainProject/hbp-validation-client
+Author: Andrew Davison and Shailesh Appukuttan
+Author-email: andrew.davison@unic.cnrs-gif.fr, shailesh.appukuttan@unic.cnrs-gif.fr
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: ebrains-drive
+Requires-Dist: nameparser
+Requires-Dist: requests
+Requires-Dist: simplejson
+Provides-Extra: reports
+Requires-Dist: Jinja2 ; extra == 'reports'
+Requires-Dist: beautifulsoup4 ; extra == 'reports'
+Requires-Dist: hbp-archive ; extra == 'reports'
+Requires-Dist: pyppdf ; extra == 'reports'
+Provides-Extra: utils
+Requires-Dist: sciunit ; extra == 'utils'
+
+UNKNOWN
+
+
