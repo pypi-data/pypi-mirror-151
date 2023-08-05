@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+generalindex/Authenticator.py
+generalindex/DatalakeHandler.py
+generalindex/HTTPCalller.py
+generalindex/StatusHandler.py
+generalindex/TaskHandler.py
+generalindex/Timeseries.py
+generalindex/__init__.py
+generalindex/constants.py
+generalindex.egg-info/PKG-INFO
+generalindex.egg-info/SOURCES.txt
+generalindex.egg-info/dependency_links.txt
+generalindex.egg-info/requires.txt
+generalindex.egg-info/top_level.txt
