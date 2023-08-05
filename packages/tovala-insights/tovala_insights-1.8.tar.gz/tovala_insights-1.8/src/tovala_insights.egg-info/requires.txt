@@ -1,0 +1,7 @@
+requests
+pathlib
+PyYaml
+click
+wheel
+setuptools>=40.2.0
+twine
