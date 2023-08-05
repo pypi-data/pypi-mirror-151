@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pylsd/__init__.py
+pylsd/lsd.py
+pylsd/bindings/__init__.py
+pylsd/bindings/lsd_ctypes.py
+pylsd/lib/darwin/liblsd.dylib
+pylsd/lib/linux/liblsd.so
+pylsd/lib/linux_arm/liblsd.so
+pylsd/lib/win32/x64/lsd.dll
+tezz_pylsd.egg-info/PKG-INFO
+tezz_pylsd.egg-info/SOURCES.txt
+tezz_pylsd.egg-info/dependency_links.txt
+tezz_pylsd.egg-info/top_level.txt
