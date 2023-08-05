@@ -1,0 +1,49 @@
+# config file for a dataset--in this case a dataset is a collection of files
+# containing SNP data organized in one of the dataset formats understood by
+# DNADNA; this is used for both loading data from simulated data, or other
+# datasets on which we want to perform prediction
+
+# root directory for all files related to the dataset, either as an absolute
+# path, or as a path relative to the location of this config file
+data_root: .
+
+# a name to give the dataset; used in generating filenames and logging output
+dataset_name: generic
+
+# path to the CSV file containing the per-scenario parameters used in this
+# simulation, either as an absolute path, or as a path relative to this config
+# file
+scenario_params_path: scenario_params.csv
+
+# options for describing the format in which the dataset is organized; currently
+# only one format ("dnadna", the native format for DNADNA) is understood, but
+# others may be added later
+data_source:
+    # a unique label identifying the data format; the format property determines
+    # what reader is used for simulation data, and any further options in
+    # data_source may depend on the format
+    format: dnadna
+
+    # string template for per-replicate simulation files in Python string
+    # template format; the following template variables may be used: 'name', the
+    # same as the name property used in this config file; 'scenario', the
+    # scenario number, and 'replicate', the replicate number of the scenario (if
+    # there are multiple replicates); path separators may also be used in the
+    # template to form a directory structure
+    filename_format: scenario_{scenario}/{dataset_name}_{scenario}_{replicate}.npz
+
+    # keys in the NPZ file for the SNP matrix and position array respectively;
+    # the "dnadna" format usually prescribes this to be ["SNP", "POS"] but it
+    # can be overridden by this property
+    keys:
+    - SNP
+    - POS
+
+# ignore missing scenarios or replicates when loading data samples; in the case
+# of missing samples the next one is tried until one is found
+ignore_missing: false
+
+# used only during training, keeps the validation set cached in-memory, which
+# can greatly speed up evaluation; however, if the validation set is too large
+# to fit in available memory this can be disabled
+cache_validation_set: false
