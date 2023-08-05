@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hecho-events
+Version: 1.2.0
+Summary: Event Broker Rasa
+Home-page: UNKNOWN
+Author: Compasso UOL
+Author-email: hecho.teste@outlook.com
+License: MIT License
+Description: # hecho
+        Event Broker para Chatbots Rasa.
+        ## Getting Started
+        #### DependÃªncias
+        Para usar o pacote **hecho** Ã© necessÃ¡rio instalar o Requests:
+        ```
+        pip install requests
+Keywords: Pacote hecho
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

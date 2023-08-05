@@ -1,0 +1,2 @@
+python-decouple
+requests>=2.20
