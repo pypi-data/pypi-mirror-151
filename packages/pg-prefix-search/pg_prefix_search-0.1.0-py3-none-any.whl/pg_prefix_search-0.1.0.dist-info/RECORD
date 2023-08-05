@@ -1,0 +1,10 @@
+pg_prefix_search/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+pg_prefix_search/migrations/0001_initial.py,sha256=HiBthfVWiMNeGG3-C9wfxTqIPN7G_vkOP80DseElu2Y,1189
+pg_prefix_search/models.py,sha256=zD_e98UE47A8Fkc3Euhw-z5fHKidtGUMA-oAaNLlXMw,841
+pg_prefix_search/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_prefix_search/scripts/makemigrations.py,sha256=un0YWPcA2sge29rLrV6_uC7sZ51NKRVDAY1_KRsf8a8,300
+pg_prefix_search/scripts/mock_settings.py,sha256=LsjDIvXqEzOuFOUc2X4__jF_506WZ7nfAh4OgiJVymM,971
+pg_prefix_search/search.py,sha256=NKWDWYXUpK388E9EKgj8jrGZYhy5IfZVz7W_tXko3fk,1179
+pg_prefix_search-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pg_prefix_search-0.1.0.dist-info/METADATA,sha256=vqYeDC2QZ09Z5ZnJ6jOa81JVCsSvlfS6ESg_pjDyuVY,392
+pg_prefix_search-0.1.0.dist-info/RECORD,,
