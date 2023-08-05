@@ -1,0 +1,10 @@
+mlserver_huggingface/__init__.py,sha256=8-s5jUXkckIhcV-8vjxg0rK3r3deHiwNPWEsFyAa3IA,74
+mlserver_huggingface/codecs.py,sha256=e9TdkfZHJb50R9YEKXtm4xygGvthrLvWR39oR18pGxM,1587
+mlserver_huggingface/common.py,sha256=WhvXOrXACc2bOmnN6xTqqyP6YAGd6co-ramNIiOEVZA,3750
+mlserver_huggingface/runtime.py,sha256=Mj7VVju6f6m3Qwr2O4sx6IJbrmeiGl0dpTbyzrZDumo,3217
+mlserver_huggingface/version.py,sha256=2hYg-eVGoPkjgwBcInMjC6sZO2wulB2XJeQjn0pViME,27
+mlserver_huggingface-1.1.0.dev5.dist-info/LICENSE,sha256=l7wQ3_U8Z0em5oGgyHYgSwqfNFWr_GXnI_6mzN1IIFM,11354
+mlserver_huggingface-1.1.0.dev5.dist-info/METADATA,sha256=2mVvdGyyFTq5K45hBqFYcF5qCEIs0ZBq2CjZFkmecxw,797
+mlserver_huggingface-1.1.0.dev5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mlserver_huggingface-1.1.0.dev5.dist-info/top_level.txt,sha256=j2EFpif_SMqDyo3ydRv08jbWRpWOAgIC7ZqyBYA9sPc,21
+mlserver_huggingface-1.1.0.dev5.dist-info/RECORD,,
