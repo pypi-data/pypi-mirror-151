@@ -1,0 +1,5 @@
+setup.py
+pytorchmetrics.egg-info/PKG-INFO
+pytorchmetrics.egg-info/SOURCES.txt
+pytorchmetrics.egg-info/dependency_links.txt
+pytorchmetrics.egg-info/top_level.txt
