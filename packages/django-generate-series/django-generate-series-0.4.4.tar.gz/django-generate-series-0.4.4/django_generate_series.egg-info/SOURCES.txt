@@ -1,0 +1,17 @@
+AUTHORS.md
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_generate_series/__init__.py
+django_generate_series/apps.py
+django_generate_series/exceptions.py
+django_generate_series/models.py
+django_generate_series.egg-info/PKG-INFO
+django_generate_series.egg-info/SOURCES.txt
+django_generate_series.egg-info/dependency_links.txt
+django_generate_series.egg-info/requires.txt
+django_generate_series.egg-info/top_level.txt
