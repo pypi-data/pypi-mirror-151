@@ -1,0 +1,16 @@
+conf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conf/settings.py,sha256=rVc1PteTb0oIGi8Q89wdp0Bhh6V7iyPbCkmrOfD4cGk,685
+uw_person_client/__init__.py,sha256=aYJvrloYwLKAAlgKVsLDml4PIxVrsEU0JclP8qHSl58,412
+uw_person_client/components.py,sha256=FY1i5i5Wq9XiBm__PIGcsQhz4pIqnRibtKMaOblXNrQ,1396
+uw_person_client/core.py,sha256=xUAAspmrkKeUM8b5kqyEpGSd4HPIa-rWPAhoJomFBxA,9979
+uw_person_client/test.py,sha256=ipQpeNQ4VN2KDt2Mpiyhbo-XtruJLK7p0dO07RuhMjk,348
+uw_person_client/databases/__init__.py,sha256=gl_swKzPU5QR0aVwDWJFXtPqCq1Q67cUW6EhQmq_6lg,827
+uw_person_client/databases/postgres.py,sha256=tfJuOXjPF_KVskw584pxr492dWs4qUFFtC5079FwdAU,880
+uw_person_client/databases/uwpds.py,sha256=FxheDuZeizB0tRejg2ZSJXZm-6eSgIvCPht40t1Hrc8,4321
+uw_person_client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uw_person_client/tests/test_components.py,sha256=0cnMtpSRjiYDOR8NZjIido8r7_MtDzDPpqJ0veZXr3o,500
+axdd_person_client-1.0.0a2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+axdd_person_client-1.0.0a2.dist-info/METADATA,sha256=6bgBeMv5ZVc9IKKokPrnuc5DMNnHyaaX7LIU5ROrZ1k,765
+axdd_person_client-1.0.0a2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+axdd_person_client-1.0.0a2.dist-info/top_level.txt,sha256=U6YDZnPzYorbFJS_7hopEFmNmrZWaKxbNTtnMKSBqwg,22
+axdd_person_client-1.0.0a2.dist-info/RECORD,,
