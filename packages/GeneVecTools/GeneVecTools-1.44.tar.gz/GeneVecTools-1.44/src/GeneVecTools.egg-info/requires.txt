@@ -1,0 +1,8 @@
+scikit-learn
+pandas
+faiss-cpu
+numpy
+requests
+tensorflow
+biopython
+pysam
