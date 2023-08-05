@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+myarithmeticpkg5694/__init__.py
+myarithmeticpkg5694/arithmetic.py
+myarithmeticpkg5694/test_arithmetic.py
+myarithmeticpkg5694.egg-info/PKG-INFO
+myarithmeticpkg5694.egg-info/SOURCES.txt
+myarithmeticpkg5694.egg-info/dependency_links.txt
+myarithmeticpkg5694.egg-info/requires.txt
+myarithmeticpkg5694.egg-info/top_level.txt
