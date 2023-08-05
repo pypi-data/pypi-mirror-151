@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+easyscrape-ebaysuggest/__init__.py
+easyscrape-ebaysuggest/querysuggestions.py
+easyscrape_ebaysuggest.egg-info/PKG-INFO
+easyscrape_ebaysuggest.egg-info/SOURCES.txt
+easyscrape_ebaysuggest.egg-info/dependency_links.txt
+easyscrape_ebaysuggest.egg-info/top_level.txt
