@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: logger-slg
+Version: 0.3.6
+Summary: This is a description.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.3
+Description-Content-Type: text/markdown
+
+from logger_slg import init_logger
+
+
+init_logger(name = 'default_logger',
+    log_path = '/var/log/slg/default_location.log',
+    log_level = 'INFO',
+    stream_log_level = 'DEBUG',
+    formatter_str = '%(asctime)s | %(levelname)-8s | Line %(lineno)-4s | %(pathname)s | %(message)s',
+    max_bytes=10000000,
+    backup_count=5
+)
+
