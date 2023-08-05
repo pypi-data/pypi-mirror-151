@@ -1,0 +1,8 @@
+feedparser
+html2text
+requests
+botocore
+backoff
+boto3
+python-dotenv
+ratelimit
