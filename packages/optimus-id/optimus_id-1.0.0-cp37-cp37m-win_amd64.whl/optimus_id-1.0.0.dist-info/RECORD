@@ -1,0 +1,10 @@
+optimus_id/__init__.py,sha256=MI4J0mr_HsanfUKCmrULJHZrDAgz11h0q6bRybdX4DQ,77
+optimus_id/optimus.pyx,sha256=nbkC0CiGPTrj7f-bE_MO5OBaY5gPciDkN-oQkZBUfAE,2292
+optimus_id/optimus.c,sha256=FoGjxf5gT9dkyKjSt4WsPYtqrkJcVesu6e4ObKmQsgs,323613
+optimus_id/optimus.cp37-win_amd64.pyd,sha256=omm6nrxZgrvJMIaqh-ND5OL70szXfTEmBTMlQTLvaZc,56320
+optimus_id/optimus.pyx,sha256=nbkC0CiGPTrj7f-bE_MO5OBaY5gPciDkN-oQkZBUfAE,2292
+optimus_id/__init__.py,sha256=MI4J0mr_HsanfUKCmrULJHZrDAgz11h0q6bRybdX4DQ,77
+optimus_id-1.0.0.dist-info/LICENSE,sha256=SgmRw1X0L-LZYup8UMc8ku2sOQq5GUBOrVy02HjzyaA,1091
+optimus_id-1.0.0.dist-info/WHEEL,sha256=WD04O_Eo4tKKXRN2oHYbkeZbNRkrcwiifAQ1ZemFjz0,92
+optimus_id-1.0.0.dist-info/METADATA,sha256=99ksQZ7QSgficC2Gc9Ec7YN4xOe4mnWrA4AEVsB5YUA,4346
+optimus_id-1.0.0.dist-info/RECORD,,
