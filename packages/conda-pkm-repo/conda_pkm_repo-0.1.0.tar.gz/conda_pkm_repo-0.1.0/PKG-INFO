@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: conda-pkm-repo
+Version: 0.1.0
+Summary: pkm repository plugin for conda packages
+Description-Content-Type: text/plain
+Author: bennyl
+Author-email:
+Maintainer: bennyl
+Maintainer-email:
+License:
+Requires-Dist: pkm >=0.4.40, <1
+Requires-Python: >=3.8, <4.0
+
+README.md
