@@ -1,0 +1,9 @@
+grus.cp38-win_amd64.pyd,sha256=XUuLDBjtvj4VuEPBVrdpoyYmwcME9BYSpQg1NmYWqz8,392192
+pyjit/Jit_Host.h,sha256=fnxZT5ijJnZcFD4LUHO35vF_1ENMaRB7SKcP9mDhYmA,4605
+pyjit/Jit_Object.h,sha256=bUFz_a8Lw_-BNRg25m63oiX5ax3Xut2L8pjFGh3CxPU,14754
+pyjit/__init__.py,sha256=KP0OXku5MQ4o-tv16jhqDBms4OCaYws5B9PWTho4Pnk,32
+pyjit-1.5.16.dist-info/METADATA,sha256=tteQIK2J8ix4NnzFR8bMx-9V4lVJbmmME5FkkXm_Vh4,652
+pyjit-1.5.16.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+pyjit-1.5.16.dist-info/entry_points.txt,sha256=VZpjSjLBL_zZnQ0wefMXx2vfbPJw9uQh2Ak0KMVlUjY,41
+pyjit-1.5.16.dist-info/top_level.txt,sha256=OP7hN3Tbf5NC0_SRuZP_t51pfLMRS_-9AGLFv8ippNg,11
+pyjit-1.5.16.dist-info/RECORD,,
