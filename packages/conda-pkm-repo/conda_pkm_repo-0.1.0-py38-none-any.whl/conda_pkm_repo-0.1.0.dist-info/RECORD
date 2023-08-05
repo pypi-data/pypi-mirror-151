@@ -1,0 +1,9 @@
+conda_pkm_repo/pkm_extension.py,sha256=XkWQwFvR8EgXJNO6ucCUEGJns54uRwACHMiOdvz0sQI,819
+conda_pkm_repo/conda_repo.py,sha256=Yb3-VEphTOJn8gvG1esalclvAedWjVxdH2N65nBSy7Q,2155
+conda_pkm_repo/conda_distribution.py,sha256=gvgakgLVjBlK9D92PSW0ukGU4Ju2M43jXIcZE9sAtKE,7645
+conda_pkm_repo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conda_pkm_repo/conda_channel_subdir.py,sha256=KFuEOR7tsB5nAtS5XiG6PXCqkjeQZwx2MqMdSBF1RMc,9693
+conda_pkm_repo-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conda_pkm_repo-0.1.0.dist-info/WHEEL,sha256=1Q_cRh5vrJOKtGIxetVVsiEEb7XDjV0zDT9AT2HcoWE,55
+conda_pkm_repo-0.1.0.dist-info/METADATA,sha256=yczgueFwvLDoCwDbQXb7FZFL5PSd40YUOKTvcTckzpI,291
+conda_pkm_repo-0.1.0.dist-info/entry_points.txt,sha256=2m3mTR5ehQOZveZlJHUW6MkiN9qqg-2ZuChlpTOsXKQ,65
