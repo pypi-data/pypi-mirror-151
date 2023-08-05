@@ -1,0 +1,8 @@
+PyQt5
+numpy
+
+[examples]
+matplotlib
+
+[parallel_sweep]
+pathos
