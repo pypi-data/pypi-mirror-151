@@ -1,0 +1,11 @@
+[tool.towncrier]
+    package = "mopidy_funkwhale"
+    directory = ".changelog/changes"
+    filename = "CHANGELOG.md"
+    all_bullets = true
+    template = ".changelog/template.md"
+    start_string = "# Changelog\n"
+    issue_format = "[#{issue}](https://dev.funkwhale.audio/funkwhale/mopidy/-/issues/{issue})"
+    underlines = ["", ""]
+    title_format = "## {version} ({project_date})\n"
+
