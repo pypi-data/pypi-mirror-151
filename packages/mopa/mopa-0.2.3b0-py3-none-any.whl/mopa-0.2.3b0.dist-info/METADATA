@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mopa
+Version: 0.2.3b0
+Summary: Library for interactive multi-objective power amplifier design
+Home-page: https://github.com/kravitsjacob/mopa
+Author: Jacob Kravits
+Author-email: kravitsjacob@gmail.com
+Project-URL: Bug Tracker, https://github.com/kravitsjacob/mopa/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: hiplot
+Requires-Dist: dash
+Requires-Dist: dash-bootstrap-components
+
+# mopa
+Library for interactive multi-objective power amplifier design
+
+# I. Installation
+1. Download [Python](https://www.python.org/downloads/) and ensure you can activate it from your terminal by running `$ python --version` 
+2. Install the test verson of mopa using `$ pip install mopa`
+3. To check that installation is successful `$ pip show mopa`
+
+# II. Dashboard on Local Machine
+mopa now includes the ability to be used as an interactive dashboard!
+1. Run python on the command line by running `$ python`
+2. Import mopa `>>> import mopa`
+3. Create a dashboard `>>> app = mopa.app.create_dashboard()`
+4. Run the dashboard `>>> app.run_server()`
