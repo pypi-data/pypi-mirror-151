@@ -1,0 +1,13 @@
+CGDs/__init__.py,sha256=EaCC4ar8PanndjPEfsBsVJkn4K2_hYHLM71cAnSyDVU,76
+CGDs/acgd.py,sha256=N9pLoT_RPByB5M10UmzXSZo3XE_I49BzxsI213HQYNo,8877
+CGDs/cg_torch.py,sha256=M08tzbnlpWxDgFk54Krwelfa267--r_ezElK5ZYKhbg,1536
+CGDs/cgd.py,sha256=KJlYPtcA8AWXUYfXw8K4Jy0iPGfT3l0tZ-YC2qSguP4,10063
+CGDs/cgd_utils.py,sha256=3A3Z40gi1_mY0ba3wpgx1hP46rlCn3CHgQiF-lCXNHU,7596
+CGDs/distributed.py,sha256=rixGnFkCXsLEQGZhCC-1Ti9e-QvcPH0vCB5CeJlUoN0,622
+CGDs/gmres_acgd.py,sha256=txSsgtA7gQG57b58HzsB_JcVKWd5qFiL3gy36h6KLSY,7298
+CGDs/gmres_torch.py,sha256=SyHubYFnOvaH_6Rk3EyZjGuRexABm1uwb5ykSEn4YDM,3877
+CGDs-0.4.4.dist-info/LICENSE,sha256=M10P3745uWZxbo9PxJvE1oBxIqYAglWwtj1ydDoeV0c,1084
+CGDs-0.4.4.dist-info/METADATA,sha256=DiM6ybgaGrMHYkOH22XIRJadDFk8oP17CLOOLOB5SEA,3651
+CGDs-0.4.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CGDs-0.4.4.dist-info/top_level.txt,sha256=ZH0SbkGuGcLG9kbk8S8c6IDv4CIo-X9vJfQQV_cy2SA,5
+CGDs-0.4.4.dist-info/RECORD,,
