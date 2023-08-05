@@ -1,0 +1,8 @@
+abstracts>=0.0.12
+aio.core>=0.8.4
+aio.run.checker>=0.5.4
+envoy.base.utils>=0.2.8
+flake8
+packaging
+pyyaml
+yapf
