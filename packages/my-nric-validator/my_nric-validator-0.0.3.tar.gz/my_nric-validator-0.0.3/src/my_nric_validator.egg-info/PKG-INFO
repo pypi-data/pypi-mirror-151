@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: my-nric-validator
+Version: 0.0.3
+Summary: Validation tools for Malaysian NRIC
+Home-page: https://github.com/kyorilys/NRICMY
+Author: kyorilys
+Author-email: kyorilys_256@live.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kyorilys/NRICMY/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NRIC MY Validator
+Python NRIC Malaysia validator
+
+There are 3 function validate_nric, validate_birth_place, and get_birth_date
+
+validate_nric  will be used to validate malaysian NRIC / Mykad Number , it 
+will return true if the NRIC malaysia is input correctly.
+
+You just need call the function as the following:
+
+    
+    from my_nric import validator
+
+
+    def example():
+        number = "910502-11-5298"
+        is_nric_valid = validator.validate_nric(number)
+    
+        if is_nric_valid:
+            print("Is Valid")
+        else:
+            print("Not Valid NRIC")
+
+
+#TODO Feature
+1. Get the possible birthplace 
+2. Get Gender 
+3. MyKad Reader function ... __*May be*__
+
