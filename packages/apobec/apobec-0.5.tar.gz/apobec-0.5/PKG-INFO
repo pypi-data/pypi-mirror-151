@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: apobec
+Version: 0.5
+Summary: script for mutations counting in deep sequencing data
+Home-page: https://github.com/babinyurii/apobec
+Author: Yuriy Babin
+Author-email: babin.yurii@gmail.com
+License: MIT
+Download-URL: https://github.com/babinyurii/apobec/archive/refs/tags/v_o.5.tar.gz
+Description: UNKNOWN
+Keywords: bioinformatics,mutations,apobec
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
