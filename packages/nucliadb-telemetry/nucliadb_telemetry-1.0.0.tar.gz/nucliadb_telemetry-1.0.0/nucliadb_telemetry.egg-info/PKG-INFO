@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nucliadb-telemetry
+Version: 1.0.0
+Summary: NucliaDB Telemetry Library Python process
+Home-page: https://github.com/nuclia/nucliadb
+Author: nucliadb Authors
+Author-email: nucliadb@nuclia.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Monitoring
+Requires-Python: ~=3.9
+Description-Content-Type: text/markdown
+
+# NucliaDB Telemetry
+
+Open telemetry compatible plugin to propagate traceid on FastAPI, Nats and GRPC with Asyncio.
+
+
