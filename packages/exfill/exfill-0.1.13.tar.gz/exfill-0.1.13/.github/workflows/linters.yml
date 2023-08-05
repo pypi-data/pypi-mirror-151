@@ -1,0 +1,39 @@
+name: Linters
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - main
+
+
+jobs:
+
+  flake8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.8
+      - name: Run flake8
+        run: |
+          python -m pip install --upgrade flake8
+          flake8 src/
+
+  isort:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.8
+      - uses: isort/isort-action@master
+
+  black:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: black
+        uses: psf/black@stable
