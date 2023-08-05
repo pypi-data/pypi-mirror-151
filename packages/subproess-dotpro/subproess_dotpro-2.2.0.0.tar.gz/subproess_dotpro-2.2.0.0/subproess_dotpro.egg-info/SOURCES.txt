@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+subproess_dotpro.egg-info/PKG-INFO
+subproess_dotpro.egg-info/SOURCES.txt
+subproess_dotpro.egg-info/dependency_links.txt
+subproess_dotpro.egg-info/top_level.txt
