@@ -1,0 +1,7 @@
+numpy
+sklearn
+nltk
+pymorphy2
+natasha
+pandas
+emosent-py

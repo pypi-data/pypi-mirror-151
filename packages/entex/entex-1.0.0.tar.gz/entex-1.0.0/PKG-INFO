@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: entex
+Version: 1.0.0
+Summary: Text Entity Extractor
+Home-page: https://github.com/DenisZagorodnev/entex
+Author: Denis Zagorodnev
+Author-email: denis.zagorodnev@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/DenisZagorodnev/entex/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Entity Extractor
+
+Программные методы извлечения языковых сущностей и структур из текстов на Русском языке.
+
+

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/entex/__init__.py
+src/entex/metrices.py
+src/entex/optimizator.py
+src/entex/text_preprocessor.py
+src/entex.egg-info/PKG-INFO
+src/entex.egg-info/SOURCES.txt
+src/entex.egg-info/dependency_links.txt
+src/entex.egg-info/requires.txt
+src/entex.egg-info/top_level.txt
