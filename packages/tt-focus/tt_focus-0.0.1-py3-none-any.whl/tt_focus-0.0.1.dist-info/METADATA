@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tt-focus
+Version: 0.0.1
+Summary: tt-focus: command-line Time Tracker (命令行时间记录器，帮助你集中注意力)
+Author-email: ahui <102419@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: arrow
+Requires-Dist: click
+Requires-Dist: appdirs
+Requires-Dist: result
+Requires-Dist: msgpack
+Project-URL: Home, https://github.com/ahui2016/tt-focus
+
+# ctt
+ctt: command-line Time Tracker (命令行时间记录器)
+
