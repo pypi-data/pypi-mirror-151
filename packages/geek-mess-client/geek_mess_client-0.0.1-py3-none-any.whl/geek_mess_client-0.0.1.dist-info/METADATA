@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: geek-mess-client
+Version: 0.0.1
+Summary: GeekMessenger Client
+Author: impreza555
+Author-email: example@example.com
+License: GPLv3
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+
