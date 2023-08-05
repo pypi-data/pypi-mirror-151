@@ -1,0 +1,11 @@
+sklearn_extender/__init__.py,sha256=SxzcXuULvc3iXKt9j0pkS9sv8PU6bxgjZUzXhJP-T4E,145
+sklearn_extender/coefficients.py,sha256=30B_mme-ZcnesG_17RkuHup__UxWtyNw3wr1C3qjLow,4513
+sklearn_extender/model_extender.py,sha256=c66jcAK9VicCyeVht-2ddSs3za5lSTV_e48yD3w_zZA,3952
+sklearn_extender/prediction_intervals.py,sha256=N2EJbiTccMuwNPap3SP94EHNpEwXl7JdaVSQLPiGN2I,3289
+sklearn_extender/timeseries_forecast.py,sha256=ZCg_NHH_2FUNFyoOCXOQqvyx6z7l_2IKBr1BrX6nSAU,10151
+sklearn_extender/timeseries_splitter.py,sha256=7zLHlROzAdDgHn4Sn9VTP01tfAyovNvzLLMalzw5-1M,7492
+sklearn_extender-0.0.3.dist-info/LICENSE.txt,sha256=PzSCBArpYAPH42_MThzpZHOqqkDon4WlEnmEQrdGVtM,1090
+sklearn_extender-0.0.3.dist-info/METADATA,sha256=uCyixlZvno0z5OxKZ-VIxLcSfdTd851lcvmG4mASpfo,277
+sklearn_extender-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sklearn_extender-0.0.3.dist-info/top_level.txt,sha256=7CMKUBRgze-Nuf8cNw3Jzln1RpDlWo6mXvngLX2nBM8,17
+sklearn_extender-0.0.3.dist-info/RECORD,,
