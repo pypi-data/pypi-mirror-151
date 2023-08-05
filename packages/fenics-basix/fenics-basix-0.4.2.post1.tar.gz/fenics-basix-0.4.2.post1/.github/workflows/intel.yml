@@ -1,0 +1,49 @@
+name: Intel compilers
+
+# This workflow will test Basix built using Intel compilers and MKL
+
+on:
+  schedule:
+    # '*' is a special character in YAML, so string must be quoted
+    - cron: "0 2 * * TUE"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: ~
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+    container: ubuntu:latest  # Run in container to test with minimal pre-installed packages
+
+    env:
+      CC: icx
+      CXX: icpx
+      DEBIAN_FRONTEND: noninteractive
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install required packages to install Intel compilers and to build
+        run: |
+          apt-get update && apt-get install -y cmake git gnupg ninja-build python3-pip wget
+      - name: Install Intel compilers
+        run: |
+          wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+          apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+          echo "deb https://apt.repos.intel.com/oneapi all main" | tee /etc/apt/sources.list.d/oneAPI.list
+          apt update
+          apt install -y intel-oneapi-common-vars intel-oneapi-compiler-dpcpp-cpp intel-oneapi-mkl
+      - name: Install Basix
+        run: |
+          . /opt/intel/oneapi/setvars.sh
+          export CMAKE_ARGS="-DDOWNLOAD_XTENSOR_LIBS:BOOL=true"
+          pip -v install .[test]
+      - name: Run units tests
+        # LD_PRELOAD is required to 'fix' library resolution problems
+        # when Numpy is not built against MKL
+        run: |
+          . /opt/intel/oneapi/setvars.sh
+          pip install pytest-xdist
+          export LD_PRELOAD=/opt/intel/oneapi/mkl/latest/lib/intel64/libmkl_core.so:/opt/intel/oneapi/mkl/latest/lib/intel64/libmkl_sequential.so
+          pytest -vs -n auto --durations 20 test/
