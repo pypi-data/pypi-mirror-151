@@ -1,0 +1,542 @@
+# pylint: disable = invalid-name
+
+from __future__ import annotations
+
+import typing as _tp
+
+import PyQt5.QtCore as _qtc
+from PyQt5.QtWidgets import (
+    QLabel,
+    QLineEdit,
+    QGridLayout,
+    QHBoxLayout,
+    QListWidget,
+    QPushButton,
+    QSpacerItem,
+    QVBoxLayout,
+    QRadioButton,
+    QDialog,
+    QTabWidget,
+    QWidget,
+    QMessageBox,
+    QListWidgetItem,
+)
+
+import trnsysGUI.directPortPair as _dpp
+import trnsysGUI.modifyRelativeHeightsDialog as _mhd
+import trnsysGUI.storageTank.side as _sd
+
+if _tp.TYPE_CHECKING:
+    import trnsysGUI.storageTank.widget as _st
+    import trnsysGUI.diagram.Editor as _ed
+
+
+class ConfigureStorageDialog(QDialog):  # pylint: disable = too-many-instance-attributes
+    WIDTH_INCREMENT = 10
+    HEIGHT_INCREMENT = 100
+
+    def __init__(self, storage: _st.StorageTank, editor: _ed.Editor):  # type: ignore[name-defined]
+        # pylint: disable = too-many-locals, too-many-statements
+        super().__init__(editor)
+        self._editor = editor
+        self.storage = storage
+        self.n = 0  # pylint: disable = invalid-name
+        self.m = 0  # pylint: disable = invalid-name
+        self.minimumPortDistance = 9
+
+        spacerHeight = 15
+
+        self.tabs = QTabWidget()
+        self.tab1 = QWidget()
+        self.tab2 = QWidget()
+
+        self.tabs.addTab(self.tab1, "Heat exchangers")
+        self.tabs.addTab(self.tab2, "Direct ports")
+
+        h0 = QHBoxLayout()  # pylint: disable = invalid-name
+        description = QLabel("Please configure the storage tank:")
+        exportButton = QPushButton("Export ddck")
+        exportButton.clicked.connect(self.storage.exportDck)
+
+        h0.addWidget(description)
+        h0.addWidget(exportButton)
+
+        tankNameLabel = QLabel()
+        tankNameLabel.setText("<b>Tank name: </b>")
+        self.lineEdit = QLineEdit(self.storage.label.toPlainText())
+
+        gridLayout = QGridLayout()
+        hxsLabel = QLabel("<b>Heat Exchangers </b>")
+        gridLayout.addWidget(hxsLabel, 0, 0, 1, 2)
+
+        qhbL = QHBoxLayout()
+
+        self.leftHeatExchangersItemListWidget = QListWidget()
+        qhbL.addWidget(self.leftHeatExchangersItemListWidget)
+
+        self.rightHeatExchangersItemListWidget = QListWidget()
+        qhbL.addWidget(self.rightHeatExchangersItemListWidget)
+
+        offsetLabel = QLabel("Height offsets in percent")
+        offsetLeILabel = QLabel("Input:")
+        offsetLeOLabel = QLabel("Output:")
+        self.offsetLeI = QLineEdit("0")
+        self.offsetLeO = QLineEdit("0")
+        self.lButton = QRadioButton("Left side")
+        self.rButton = QRadioButton("Right side")
+
+        gridLayout.addWidget(offsetLabel, 3, 0, 1, 1)
+        gridLayout.addWidget(offsetLeILabel, 4, 0, 1, 1)
+        gridLayout.addWidget(self.offsetLeI, 5, 0, 1, 3)
+        gridLayout.addWidget(offsetLeOLabel, 6, 0, 1, 1)
+        gridLayout.addWidget(self.offsetLeO, 7, 0, 1, 3)
+
+        self.hxNameLe = QLineEdit()
+        self.hxNameLe.setPlaceholderText("Enter a name...")
+        gridLayout.addWidget(self.hxNameLe, 8, 0, 1, 3)
+
+        gridLayout.addWidget(self.lButton, 9, 0, 1, 1)
+        gridLayout.addWidget(self.rButton, 9, 2, 1, 1)
+
+        addButton = QPushButton("Add...")
+        addButton.clicked.connect(self.addHx)
+        gridLayout.addWidget(addButton, 10, 0, 1, 1)
+        removeButton = QPushButton("Remove...")
+        removeButton.clicked.connect(self.removeHxL)
+        removeButton.clicked.connect(self.removeHxR)
+        gridLayout.addWidget(removeButton, 10, 1, 1, 1)
+        modifyButton = QPushButton("Modify")
+        modifyButton.clicked.connect(self.modifyHx)
+        gridLayout.addWidget(modifyButton, 10, 2, 1, 1)
+        spaceHx = QSpacerItem(self.width(), spacerHeight)
+        gridLayout.addItem(spaceHx, 11, 0, 1, 2)
+
+        manPortLay = QVBoxLayout()
+        qhbL2 = QHBoxLayout()
+
+        self._leftDirectPortPairsItemListWidget = QListWidget()
+        qhbL2.addWidget(self._leftDirectPortPairsItemListWidget)
+
+        self._rightDirectPortPairsItemListWidget = QListWidget()
+        qhbL2.addWidget(self._rightDirectPortPairsItemListWidget)
+
+        manPortLay.addLayout(qhbL2)
+
+        manPortLabel = QLabel("<b>Set port manually</b>")
+        manPortLabel2 = QLabel("Enter height in percent: ")
+        portlabelUpper = QLabel("Inlet")
+        self.manPortLeI = QLineEdit("0")
+        portlabelLower = QLabel("Outlet")
+        self.manPortLeO = QLineEdit("0")
+
+        qhbl3 = QHBoxLayout()
+        self.manlButton = QRadioButton("Left side")
+        self.manrButton = QRadioButton("Right side")
+        qhbl3.addWidget(self.manlButton)
+        qhbl3.addWidget(self.manrButton)
+
+        self.manAddButton = QPushButton("Add (manual) ports")
+        self.manAddButton.clicked.connect(self.addPortPair)
+
+        self.manRemovebutton = QPushButton("Remove ports")
+        self.manRemovebutton.clicked.connect(self.removePortPairLeft)
+        self.manRemovebutton.clicked.connect(self.removePortPairRight)
+
+        self.modifyPortButton = QPushButton("Modify")
+        self.modifyPortButton.clicked.connect(self.modifyPort)
+
+        addRemoveButtons = QHBoxLayout()
+        addRemoveButtons.addWidget(self.manAddButton)
+        addRemoveButtons.addWidget(self.manRemovebutton)
+        addRemoveButtons.addWidget(self.modifyPortButton)
+
+        manPortLay.addWidget(manPortLabel)
+        manPortLay.addWidget(manPortLabel2)
+        manPortLay.addWidget(portlabelUpper)
+        manPortLay.addWidget(self.manPortLeI)
+        manPortLay.addWidget(portlabelLower)
+        manPortLay.addWidget(self.manPortLeO)
+        manPortLay.addLayout(qhbl3)
+        manPortLay.addLayout(addRemoveButtons)
+
+        increaseSizeButton = QPushButton("Increase size")
+        decreaseSizeButton = QPushButton("Decrease size")
+        self.okButton = QPushButton("OK")
+        self.cancelButton = QPushButton("Cancel")
+
+        increaseSizeButton.clicked.connect(self.incrSize)
+        decreaseSizeButton.clicked.connect(self.decrSize)
+        self.okButton.clicked.connect(self.acceptedEdit)
+        self.cancelButton.clicked.connect(self.cancel)
+
+        layout = QVBoxLayout()
+        layout.addLayout(h0)
+        layout.addWidget(tankNameLabel)
+        layout.addWidget(self.lineEdit)
+
+        t1Layout = QVBoxLayout()
+        t1Layout.addLayout(qhbL)
+        t1Layout.addLayout(gridLayout)
+
+        self.tab1.setLayout(t1Layout)
+
+        self.tab2.setLayout(manPortLay)
+
+        layout.addWidget(self.tabs)
+
+        layout.addWidget(increaseSizeButton)
+        layout.addWidget(decreaseSizeButton)
+        layout.addWidget(self.okButton)
+        layout.addWidget(self.cancelButton)
+
+        self.setLayout(layout)
+
+        self._loadHeatExchangers()
+        self._loadDirectPortPairs()
+
+        # This is to ensure that only one list element is selected
+        self.rightHeatExchangersItemListWidget.setSelectionMode(QListWidget.SelectionMode(1))
+        self.leftHeatExchangersItemListWidget.setSelectionMode(QListWidget.SelectionMode(1))
+        self.rightHeatExchangersItemListWidget.clicked.connect(self.listWRClicked)
+        self.leftHeatExchangersItemListWidget.clicked.connect(self.listWLClicked)
+
+        self._rightDirectPortPairsItemListWidget.setSelectionMode(QListWidget.SelectionMode(1))
+        self._leftDirectPortPairsItemListWidget.setSelectionMode(QListWidget.SelectionMode(1))
+        self._rightDirectPortPairsItemListWidget.clicked.connect(self.listWR2Clicked)
+        self._leftDirectPortPairsItemListWidget.clicked.connect(self.listWL2Clicked)
+
+        self.show()
+
+    def _loadHeatExchangers(self):
+        self.leftHeatExchangersItemListWidget.clear()
+        self.rightHeatExchangersItemListWidget.clear()
+
+        for heatExchanger in self.storage.heatExchangers:
+            itemText = self._getHeatExchangerListItemText(heatExchanger)
+            item = QListWidgetItem(itemText)
+            item.setData(_qtc.Qt.UserRole, heatExchanger)
+
+            if heatExchanger.sSide == 0:
+                self.leftHeatExchangersItemListWidget.addItem(item)
+            else:
+                self.rightHeatExchangersItemListWidget.addItem(item)
+
+    @staticmethod
+    def _getHeatExchangerListItemText(h):  # pylint: disable = invalid-name
+        return (
+            f"{h.displayName}, y_offset = {int(h.relativeInputHeight * 100)}% to {int(h.relativeOutputHeight * 100)}%"
+        )
+
+    def _loadDirectPortPairs(self):
+        self._leftDirectPortPairsItemListWidget.clear()
+        self._rightDirectPortPairsItemListWidget.clear()
+
+        directPortPair: _dpp.DirectPortPair
+        for directPortPair in self.storage.directPortPairs:
+            itemText = self._getDirectPortPairListItemText(directPortPair)
+            item = QListWidgetItem(itemText)
+            item.setData(_qtc.Qt.UserRole, directPortPair)
+
+            if directPortPair.side.isLeft:
+                self._leftDirectPortPairsItemListWidget.addItem(item)
+            else:
+                self._rightDirectPortPairsItemListWidget.addItem(item)
+
+    @staticmethod
+    def _getDirectPortPairListItemText(directPortPair: _dpp.DirectPortPair):
+        return (
+            f"Port pair from {int(directPortPair.relativeInputHeight * 100)}% to "
+            f"{int(directPortPair.relativeOutputHeight * 100)}%"
+        )
+
+    def listWLClicked(self):
+        self.rightHeatExchangersItemListWidget.clearSelection()
+
+    def listWRClicked(self):
+        self.leftHeatExchangersItemListWidget.clearSelection()
+
+    def listWL2Clicked(self):
+        self._rightDirectPortPairsItemListWidget.clearSelection()
+
+    def listWR2Clicked(self):
+        self._leftDirectPortPairsItemListWidget.clearSelection()
+
+    def addHx(self):
+        """
+        Checks whether the inputs are in the correct range (0,100) and in order, and calls the function for creating a
+        HeatExchanger on the respective side.
+
+        Returns
+        -------
+        """
+        try:
+            _inputPercentageHeight = float(self.offsetLeI.text())
+        except ValueError:
+            self._editor.logger.warning('HX input height is not a number.')
+            return
+
+        try:
+            _outputPercentageHeight = float(self.offsetLeO.text())
+        except ValueError:
+            self._editor.logger.warning('HX output height is not a number.')
+            return
+
+        if self.minOffsetDistance() and self.offsetsInRange():
+            if self.rButton.isChecked():
+                self._editor.logger.debug('Adding HX on righthand side.')
+                self._addHxR()
+            elif self.lButton.isChecked():
+                self._editor.logger.debug('Adding HX on lefthand side.')
+                self._addHxL()
+            else:
+                self._editor.logger.warning('No side selected for heat exchanger.')
+                return
+        else:
+            msgb = QMessageBox()
+            msgb.setText(
+                f"At least {self.minimumPortDistance}% of difference needed and valid range (0, 100)"
+            )
+            msgb.exec_()
+
+    def minOffsetDistance(self):
+        return abs(float(self.offsetLeI.text()) - float(self.offsetLeO.text())) >= self.minimumPortDistance
+
+    def offsetsInRange(self):
+        return (0 <= float(self.offsetLeI.text()) <= 100) and (0 <= float(self.offsetLeO.text()) <= 100)
+
+    def _addHxL(self):
+        self._addHeatExchanger(_sd.Side.LEFT)
+
+    def _addHxR(self):
+        self._addHeatExchanger(_sd.Side.RIGHT)
+
+    def _addHeatExchanger(self, side: _sd.Side):
+        name = self.hxNameLe.text()
+        if not name:
+            messageBox = QMessageBox()
+            messageBox.setText("Please specify the name of the heat exchanger that you want to add.")
+            messageBox.exec_()
+            return
+
+        relativeInputHeight = float(self.offsetLeI.text()) / 100
+        relativeOutputHeight = float(self.offsetLeO.text()) / 100
+
+        trnsysId = self._editor.idGen.getTrnsysID()
+        self.storage.addHeatExchanger(name, trnsysId, side, relativeInputHeight, relativeOutputHeight)
+
+        self._loadHeatExchangers()
+
+    def addPortPair(self):
+        try:
+            _inputPortPercentageHeight = float(self.manPortLeI.text())
+        except ValueError:
+            self._editor.logger.warning('Input port height is not a number.')
+            return
+
+        try:
+            _outputPortPercentageHeight = float(self.manPortLeO.text())
+        except ValueError:
+            self._editor.logger.warning('Output port height is not a number.')
+            return
+
+        if max(_inputPortPercentageHeight, _outputPortPercentageHeight) >= 100 or min(_inputPortPercentageHeight,
+                                                                                      _outputPortPercentageHeight) <= 0:
+            messageBox = QMessageBox()
+            messageBox.setText(
+                'Ports need to be on the tank, please make sure the port heights are within (0 %, 100 %).')
+            messageBox.exec_()
+            return
+
+        trnsysId = self._editor.idGen.getTrnsysID()
+
+        if self.manlButton.isChecked():
+            _pairSide = _sd.Side.LEFT
+        elif self.manrButton.isChecked():
+            _pairSide = _sd.Side.RIGHT
+        else:
+            self._editor.logger.warning('No side selected for port pair.')
+            return
+
+        self.storage.addDirectPortPair(
+            trnsysId,
+            _pairSide,
+            _inputPortPercentageHeight / 100,
+            _outputPortPercentageHeight / 100,
+            self.storage.h,
+        )
+
+        self._loadDirectPortPairs()
+
+    def removePortPairLeft(self):
+        self._removeSelectedPortPairs(self._leftDirectPortPairsItemListWidget)
+
+    def removePortPairRight(self):
+        self._removeSelectedPortPairs(self._rightDirectPortPairsItemListWidget)
+
+    def _removeSelectedPortPairs(self, directPortPairsListWidget):
+        for selectedItem in directPortPairsListWidget.selectedItems():
+            selectedDirectPortPair = selectedItem.data(_qtc.Qt.UserRole)
+
+            self.storage.directPortPairs.remove(selectedDirectPortPair)
+
+            row = directPortPairsListWidget.row(selectedItem)
+            directPortPairsListWidget.takeItem(row)
+
+            while len(selectedDirectPortPair.fromPort.connectionList) > 0:
+                selectedDirectPortPair.fromPort.connectionList[0].deleteConn()
+
+            while len(selectedDirectPortPair.toPort.connectionList) > 0:
+                selectedDirectPortPair.toPort.connectionList[0].deleteConn()
+
+            self.storage.inputs.remove(selectedDirectPortPair.fromPort)
+            self.storage.outputs.remove(selectedDirectPortPair.toPort)
+
+            self.storage.parent.scene().removeItem(selectedDirectPortPair.fromPort)
+            self.storage.parent.scene().removeItem(selectedDirectPortPair.toPort)
+
+    def removeHxL(self):
+        self._removeSelectedHeatExchangers(self.leftHeatExchangersItemListWidget)
+
+    def removeHxR(self):
+        self._removeSelectedHeatExchangers(self.rightHeatExchangersItemListWidget)
+
+    def _removeSelectedHeatExchangers(self, heatExchangersItemListWidget):
+        for selectedItem in heatExchangersItemListWidget.selectedItems():
+            heatExchanger = selectedItem.data(_qtc.Qt.UserRole)
+
+            self.storage.heatExchangers.remove(heatExchanger)
+
+            row = heatExchangersItemListWidget.row(selectedItem)
+            heatExchangersItemListWidget.takeItem(row)
+
+            while len(heatExchanger.port1.connectionList) > 0:
+                heatExchanger.port1.connectionList[0].deleteConn()
+
+            while len(heatExchanger.port2.connectionList) > 0:
+                heatExchanger.port2.connectionList[0].deleteConn()
+
+            self.storage.inputs.remove(heatExchanger.port1)
+            self.storage.outputs.remove(heatExchanger.port2)
+
+            self.storage.parent.scene().removeItem(heatExchanger.port1)
+            self.storage.parent.scene().removeItem(heatExchanger.port2)
+            self.storage.parent.scene().removeItem(heatExchanger)
+
+    def modifyHx(self):
+        """
+        Modify Hx.
+        """
+        result = self._getFirstSelectedItemAndHeatExchanger()
+        if not result:
+            return
+        selectedItem, heatExchanger = result
+
+        modifyDialog = _mhd.ModifyRelativeHeightsDialog(
+            heatExchanger.relativeInputHeight, heatExchanger.relativeOutputHeight
+        )
+        newHeights = modifyDialog.newRelativeHeights
+        if not newHeights:
+            return
+
+        newInputHeight = newHeights.input if newHeights.input != "empty" else heatExchanger.relativeInputHeight
+        newOutputHeight = newHeights.output if newHeights.output != "empty" else heatExchanger.relativeOutputHeight
+        heatExchanger.setRelativeHeights(newInputHeight, newOutputHeight)
+
+        listText = self._getHeatExchangerListItemText(heatExchanger)
+        selectedItem.setText(listText)
+
+    def _getFirstSelectedItemAndHeatExchanger(self):
+        leftSelectedItems = self.leftHeatExchangersItemListWidget.selectedItems()
+        rightSelectedItems = self.rightHeatExchangersItemListWidget.selectedItems()
+
+        if leftSelectedItems:
+            side = 0
+            selectedItem = leftSelectedItems[0]
+        elif rightSelectedItems:
+            side = 2
+            selectedItem = rightSelectedItems[0]
+        else:
+            return None
+
+        name = selectedItem.text().split(",")[0]
+        for heatExchanger in self.storage.heatExchangers:
+            if heatExchanger.displayName == name and heatExchanger.sSide == side:
+                return selectedItem, heatExchanger
+
+        raise AssertionError(f"No heat exchanger with name {name} found.")
+
+    def modifyPort(self):
+        """
+        Modify existing ports.
+        """
+        selectedItem = self._getFirstSelectedDirectPortPairListWidgetItem()
+        if not selectedItem:
+            return
+
+        directPortPair: _dpp.DirectPortPair = selectedItem.data(_qtc.Qt.UserRole)
+
+        dialogResult = _mhd.ModifyRelativeHeightsDialog(
+            directPortPair.relativeInputHeight, directPortPair.relativeOutputHeight
+        )
+        newHeights = dialogResult.newRelativeHeights
+        if not newHeights:
+            return
+
+        newRelativeInputHeight = newHeights.input if newHeights.input != "empty" else directPortPair.relativeInputHeight
+        newRelativeOutputHeight = (
+            newHeights.output if newHeights.output != "empty" else directPortPair.relativeOutputHeight
+        )
+
+        directPortPair.setRelativeHeights(newRelativeInputHeight, newRelativeOutputHeight, self.storage.h)
+
+        newText = self._getDirectPortPairListItemText(directPortPair)
+        selectedItem.setText(newText)
+
+    def _getFirstSelectedDirectPortPairListWidgetItem(
+            self,
+    ) -> _tp.Optional[QListWidgetItem]:
+        leftSelectedItems = self._leftDirectPortPairsItemListWidget.selectedItems()
+        if leftSelectedItems:
+            return leftSelectedItems[0]
+
+        rightSelectedItems = self._rightDirectPortPairsItemListWidget.selectedItems()
+        if rightSelectedItems:
+            return rightSelectedItems[0]
+
+        return None
+
+    def incrSize(self):
+        self._changeSize(self.HEIGHT_INCREMENT, self.WIDTH_INCREMENT)
+
+    def decrSize(self):
+        self._changeSize(-self.HEIGHT_INCREMENT, -self.WIDTH_INCREMENT)
+
+    def _changeSize(self, deltaH, deltaW):
+        self.storage.updatePortItemPositions(deltaH, deltaW)
+        self.storage.h += deltaH
+        self.storage.w += deltaW
+        self.storage.updateHeatExchangersAfterTankSizeChange()
+        self.storage.updateImage()
+
+    def acceptedEdit(self):
+        newName = self.lineEdit.text()
+        if newName.lower() == str(self.storage.displayName).lower():
+            self.close()
+            return
+        if self.lineEdit.text() == "":
+            qmb = QMessageBox()
+            qmb.setText("Please set a name for this storage tank.")
+            qmb.setStandardButtons(QMessageBox.Ok)
+            qmb.setDefaultButton(QMessageBox.Ok)
+            qmb.exec()
+            return
+        if self.parent().nameExists(newName) or self.parent().nameExistsInDdckFolder(newName):
+            msgb = QMessageBox()
+            msgb.setText("Name already exist!")
+            msgb.exec()
+            return
+        self.storage.setDisplayName(self.lineEdit.text())
+        self.close()
+
+    def cancel(self):
+        self.close()
