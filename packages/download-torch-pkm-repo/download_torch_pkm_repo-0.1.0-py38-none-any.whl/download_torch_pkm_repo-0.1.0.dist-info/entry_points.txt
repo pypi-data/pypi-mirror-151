@@ -1,0 +1,3 @@
+[pkm-repositories]
+torch = download_torch_pkm_repo.pkm_extension:install
+

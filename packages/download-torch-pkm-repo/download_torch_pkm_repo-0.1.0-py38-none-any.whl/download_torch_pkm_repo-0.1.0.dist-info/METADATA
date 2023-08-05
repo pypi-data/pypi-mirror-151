@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: download-torch-pkm-repo
+Version: 0.1.0
+Summary: light-the-torch based repository for pkm
+Description-Content-Type: text/plain
+Author: bennyl
+Author-email:
+Maintainer: bennyl
+Maintainer-email:
+License:
+Requires-Dist: pkm >=0.4.22, <1
+Requires-Python: >=3.8, <4.0
+
+README.md
