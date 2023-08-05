@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: sekai-starknet-libraries
+Version: 0.0.1
+Summary: Cairo Libraries for use in StarkNet
+Home-page: https://github.com/sekai-studio/starknet-libs
+Author: Sekai
+Author-email: maintainers@sekai.gg
+License: MIT
+Platform: any
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: testing
+License-File: LICENSE
+
+# Sekai StarkNet Libraries
+
+A series of libraries to help using Cairo on StarkNet.
+
+Examples for use in other Cairo contracts are provided in [examples](examples).
+
+## Contents
+
+- [Usage](#usage)
+- [Libraries](#libraries)
+  - [String](#string)
+  - [Math](#math)
+- [Local setup](#local-setup)
+
+## Usage
+
+To use the libary, simply install it using
+
+```
+pip install sekai-starknet-libraries
+```
+
+## Libraries
+
+### String
+
+Library to store & manipulate strings in Cairo on StarkNet.
+
+_The doc needs to be written but the code is commented using Python Docstrings standards (kinda)_
+
+### Math
+
+Short utility to concatenate arrays. _Credits [Marcello Bardus](https://github.com/marcellobardus/starknet-l2-storage-verifier/blob/master/contracts/starknet/lib/concat_arr.cairo)_
+
+_The doc needs to be written but the code is commented using Python Docstrings standards (kinda)_
+
+## Local setup
+
+```
+pip install -r requirements.txt
+```
+
+Test: `make test`
+
+Build packages: `make build`
