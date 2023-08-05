@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+supplychaind3/__init__.py
+supplychaind3.egg-info/PKG-INFO
+supplychaind3.egg-info/SOURCES.txt
+supplychaind3.egg-info/dependency_links.txt
+supplychaind3.egg-info/requires.txt
+supplychaind3.egg-info/top_level.txt
