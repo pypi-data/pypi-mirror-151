@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: tscat
+Version: 0.0.0
+Summary: A library which stores, loads and filters time-series-events and catalogues.
+Home-page: https://github.com/SciQLop/tscat
+Author: Patrick Boettcher
+Author-email: p@yai.se
+License: GNU General Public License v3
+Keywords: tscat
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+======================
+Time Series Catalogues
+======================
+
+.. image:: https://github.com/SciQLop/tscat/actions/workflows/test_main.yml/badge.svg
+        :target: https://github.com/pboettch/tscat/actions/workflows/test_main.yml
+
+.. image:: https://codecov.io/gh/SciQLop/tscat/branch/main/graph/badge.svg
+        :target: https://codecov.io/gh/SciQLop/tscat
+        :alt: Coverage Status
+
+
+A library which stores, loads and filters time-series-events and associates them catalogues and
+dynamic catalogues (filter-based).
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://tscat.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.0 (2021-07-01)
+------------------
+
+* First release on PyPI.
+
+
