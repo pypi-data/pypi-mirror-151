@@ -1,0 +1,2 @@
+[flake8.report]
+flake8_pyprojecttoml_dummy = flake8_pyprojecttoml:Dummy
