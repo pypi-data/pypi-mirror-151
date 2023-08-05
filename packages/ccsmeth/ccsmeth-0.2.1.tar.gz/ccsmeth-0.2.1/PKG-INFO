@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: ccsmeth
+Version: 0.2.1
+Summary: UNKNOWN
+Home-page: https://github.com/PengNi/ccsmeth
+Author: Peng Ni
+Author-email: 543943952@qq.com
+License: GNU General Public License v3 (GPLv3)
+Download-URL: https://github.com/PengNi/ccsmeth/archive/refs/tags/0.2.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: ccsmeth
+        ========
+        
+        
+        Documentation
+        -------------
+        v0.2.1
+        ----------
+        minor fixes
+        
+        change default mode in extract module
+        
+        improvements in call_freqb module
+        
+        
+        v0.2.0
+        ----------
+        use hifi reads instead of subreads as input
+        
+        modbam support
+        
+        use (chrom, pos, strand) as key instead of (chrom, pos) to handle CG mismatch in CCS read when call_freq
+        
+        
+        v0.1.2
+        ----------
+        add pbmm2 as default aligner
+        
+        enable gzip output
+        
+        
+        v0.1.1
+        ----------
+        bug fixes
+        
+        
+        v0.1.0
+        ----------
+        initialize
+Keywords: methylation,pacbio,neural network
+Platform: Linux
+Platform: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
