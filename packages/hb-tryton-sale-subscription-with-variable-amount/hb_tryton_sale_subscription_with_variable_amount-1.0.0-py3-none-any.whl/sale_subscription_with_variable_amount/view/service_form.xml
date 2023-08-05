@@ -1,0 +1,10 @@
+<data>
+    <xpath expr="/form/field[@name='active']" position="after">
+        <label name="service_type"/>
+        <field name="service_type"/>
+    </xpath>
+    <xpath expr="/form/field[@name='consumption_delay']" position="after">
+        <group id="hook_properties" colspan="4" string="Hook properties for the service type">
+        </group>
+    </xpath>
+</data>

@@ -1,0 +1,48 @@
+<tryton>
+    <data>
+        <record model="sale.subscription.service.type" id="default_service_type">
+            <field name="name">Default</field>
+        </record>
+        <record model="ir.ui.view" id="service_type_view_form">
+            <field name="model">sale.subscription.service.type</field>
+            <field name="type">form</field>
+            <field name="name">service_type_form</field>
+        </record>
+        <record model="ir.ui.view" id="service_type_view_tree">
+            <field name="model">sale.subscription.service.type</field>
+            <field name="type">tree</field>
+            <field name="name">service_type_tree</field>
+        </record>
+        <record model="ir.action.act_window" id="act_service_type">
+            <field name="name">Service types</field>
+            <field name="res_model">sale.subscription.service.type</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_service_type_view_tree">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="service_type_view_tree"/>
+            <field name="act_window" ref="act_service_type"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_service_type_view_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="service_type_view_form"/>
+            <field name="act_window" ref="act_service_type"/>
+        </record>
+        <menuitem
+            parent="product.menu_configuration"
+            action="act_service_type"
+            sequence="20"
+            id="menu_service_type"/>
+
+        <record model="ir.ui.view" id="service_view_form">
+            <field name="model">sale.subscription.service</field>
+            <field name="inherit" ref="sale_subscription.service_view_form"/>
+            <field name="name">service_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="subscription_line_view_form">
+            <field name="model">sale.subscription.line</field>
+            <field name="inherit" ref="sale_subscription.subscription_line_view_form"/>
+            <field name="name">subscription_line_form</field>
+        </record>
+    </data>
+</tryton>
