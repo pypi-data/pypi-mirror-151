@@ -1,0 +1,7 @@
+wheel
+tensorflow
+numpy
+opencv-python
+Pillow
+mss
+pywinauto
