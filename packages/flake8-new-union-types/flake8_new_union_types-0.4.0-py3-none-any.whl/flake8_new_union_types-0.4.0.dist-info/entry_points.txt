@@ -1,0 +1,3 @@
+[flake8.extension]
+NU=flake8_new_union_types:PEP604Checker
+
