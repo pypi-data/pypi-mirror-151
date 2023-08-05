@@ -1,0 +1,5 @@
+click
+python-dateutil
+requests
+tabulate
+faculty>=0.30.2
