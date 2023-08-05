@@ -1,0 +1,11 @@
+LICENSE
+README.md
+nbss_upload.py
+setup.py
+pb_nbss_upload.egg-info/PKG-INFO
+pb_nbss_upload.egg-info/SOURCES.txt
+pb_nbss_upload.egg-info/dependency_links.txt
+pb_nbss_upload.egg-info/entry_points.txt
+pb_nbss_upload.egg-info/not-zip-safe
+pb_nbss_upload.egg-info/requires.txt
+pb_nbss_upload.egg-info/top_level.txt
