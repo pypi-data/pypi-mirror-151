@@ -1,0 +1,6 @@
+networkx==2.5
+numpy
+pandas
+psutil
+pyyaml
+scipy
