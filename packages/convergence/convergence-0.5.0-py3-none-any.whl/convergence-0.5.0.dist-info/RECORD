@@ -1,0 +1,10 @@
+convergence/__init__.py,sha256=7UGakr07O5kUFS7YfiytZ6KzCnsP-lfAE8Xp-XZuues,917
+convergence/functions.py,sha256=m0jgjKokn7vHirSWXiGMxE0Vfm9Xxjk9qJfSTu_ZJlg,5402
+convergence/interface.py,sha256=j9aDeclAp3YyMTrLJoo0wPquWgPZ4GW8CDOafLKZpmU,25012
+convergence/tables.py,sha256=ETWAHjpwq-k6eb6CdvwJiC660NY2VpDbH3D_tARqIuk,10239
+convergence-0.5.0.dist-info/COPYING,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+convergence-0.5.0.dist-info/METADATA,sha256=aEcEhkinvMYdfHD7cdS-H_8KneXl5JIGHh1T45T9VWc,11399
+convergence-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+convergence-0.5.0.dist-info/entry_points.txt,sha256=FbfLfYV3M3rlZYHoanNOynYPDoOwzh3EY50XkU4upB0,73
+convergence-0.5.0.dist-info/top_level.txt,sha256=izsC1g1ZKDNxU3rpI_DxtXLDr5ZOPsBnkbkbSbyjpP8,12
+convergence-0.5.0.dist-info/RECORD,,
