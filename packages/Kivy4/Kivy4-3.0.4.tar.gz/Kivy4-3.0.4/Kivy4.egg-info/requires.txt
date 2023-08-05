@@ -1,0 +1,7 @@
+kivy==2.0.0
+kivymd
+darkdetect
+screeninfo
+pyperclip
+winshell
+pywin32
