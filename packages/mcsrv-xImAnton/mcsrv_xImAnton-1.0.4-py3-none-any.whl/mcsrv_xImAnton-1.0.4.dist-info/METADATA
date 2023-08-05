@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mcsrv-xImAnton
+Version: 1.0.4
+Summary: Manage your Minecraft Server with more comfort from the CLI
+Home-page: https://github.com/xImAnton/MCManager
+Author: xImAnton_
+Author-email: admin@ximanton.de
+Project-URL: Bug Tracker, https://github.com/xImAnton/MCManager/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: click (==8.1.2)
+Requires-Dist: inquirer (==2.9.2)
+Requires-Dist: psutil (==5.9.0)
+
+# MCSRV
+Manage your Minecraft Server with more comfort from the CLI
+
+*More Documentation coming...*

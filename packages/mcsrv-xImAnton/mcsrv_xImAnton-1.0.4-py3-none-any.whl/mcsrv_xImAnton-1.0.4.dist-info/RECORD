@@ -1,0 +1,10 @@
+mcsrv/__init__.py,sha256=ECzUK1BA1AcgnHFUZZX--kWPlE3q3SX8VZZFaUTDIR8,28
+mcsrv/__main__.py,sha256=iWb6CeqVMTLmT0WYlypyxXgePG8oKaDVqJW14ULFyoM,73
+mcsrv/cli.py,sha256=A1bs4S-2Hu6ovsVs2RBDZml7Xxf1t17g19tsRozTX9w,4770
+mcsrv/server.py,sha256=pbWsmPv0MLtUPRxIk8_-0RSznPrbr11PVg6tLBRng10,6343
+mcsrv/util.py,sha256=GcHNKB2ftDmlbl0h08NketHmsgxJVyzO2n7iKNhQUds,1176
+mcsrv_xImAnton-1.0.4.dist-info/METADATA,sha256=3OIysNKJiGK6XXcJFGlc8a-0Xa87VPP-n-mosKrBj0k,730
+mcsrv_xImAnton-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mcsrv_xImAnton-1.0.4.dist-info/entry_points.txt,sha256=byght2bXdRmJxvY4mP8V4jGGG_8l1lzNaeln4M3p7dA,41
+mcsrv_xImAnton-1.0.4.dist-info/top_level.txt,sha256=ogao8G0_q4IhENrduPKfN8M2zOtlmKGNaV31gTRXtR8,6
+mcsrv_xImAnton-1.0.4.dist-info/RECORD,,
