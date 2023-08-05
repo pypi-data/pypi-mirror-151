@@ -1,0 +1,5 @@
+redis>=4.3.0
+requests
+setuptools
+lz4
+nanoid
