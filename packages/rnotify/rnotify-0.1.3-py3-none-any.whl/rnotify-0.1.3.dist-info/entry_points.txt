@@ -1,0 +1,4 @@
+[console_scripts]
+rn=rnotify.main:cli
+rnotify=rnotify.main:cli
+
