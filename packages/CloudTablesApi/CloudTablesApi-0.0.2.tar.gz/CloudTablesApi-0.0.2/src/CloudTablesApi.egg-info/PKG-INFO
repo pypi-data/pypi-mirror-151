@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: CloudTablesApi
+Version: 0.0.2
+Summary: CloudTables API for Python scripts
+Home-page: http://cloudtables.com
+Author: Sprymedia
+Keywords: CloudTables,DataTables
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is Python API for CloudTables - please see https://cloudtables.com/docs/cloud/api/python for more information and usage.
