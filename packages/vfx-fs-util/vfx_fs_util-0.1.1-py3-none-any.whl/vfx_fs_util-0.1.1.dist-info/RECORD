@@ -1,0 +1,14 @@
+vfx_fs_util/__init__.py,sha256=bVJG9jsphHhNh8K4E5_NaoJwsOwZckGf_izSGXccu2E,30
+vfx_fs_util/api.py,sha256=RrJC3Za2FkOGPrnN_UeI53kCBOf52ZnGutrdqH6GByA,3707
+vfx_fs_util/compressed_filepath/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vfx_fs_util/compressed_filepath/_base.py,sha256=mcoiexo8R4xw6-piUgIoXHU2Kfq2dz9cA-Lw_aEFJoU,14957
+vfx_fs_util/compressed_filepath/errors.py,sha256=Ni7EMO0YC3sbqUMGxmHwXXoBhLO-OwjRiUieS0Nr5Ug,859
+vfx_fs_util/compressed_filepath/iteration.py,sha256=LQn2OmHkkH5UmBbelnG_NI1PY0TYDwGGfgwlRfIWC0E,12577
+vfx_fs_util/compressed_filepath/tokenize.py,sha256=VDJj6Q-1sV-3r3uLge9GNiHITVcq7uNIDW3yXfMm2l8,6990
+vfx_fs_util/compressed_filepath/types.py,sha256=myRk42IQaUisFjwcr2ml-LW01Oac64hoYG52q-WfYPE,1066
+vfx_fs_util/config.json,sha256=I5AH6NY-XT0qJgrm4lmfRBNMgpLg3cHMxgD4K215mqI,711
+vfx_fs_util/config.py,sha256=iv7KKMVoGanbHRnt4nt9MBMxZ-2747z82BwIsE3OmZA,523
+vfx_fs_util-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vfx_fs_util-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+vfx_fs_util-0.1.1.dist-info/METADATA,sha256=ECWGsbyvgL1lU8IStFDC5k-gWYir_CrZoqLZd0RFOvA,512
+vfx_fs_util-0.1.1.dist-info/RECORD,,
