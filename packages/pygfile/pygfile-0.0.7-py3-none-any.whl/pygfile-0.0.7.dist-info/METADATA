@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pygfile
+Version: 0.0.7
+Summary: Python加密文件。
+Home-page: https://github.com/Gry321/pygfile
+Author: 郭若垚
+Author-email: yao1127@aliyun.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.8
+Description-Content-Type: text/markdown
+
+### 作者：郭若垚，班级：二（2），住：南京市
+用pickle、base64和struct实现加密文件
+提示：
+如果报错 TypeError: a bytes-like object is required, not 'list' 就是多了
+如果报错 TypeError: a bytes-like object is required, not 'int' 那就是少了
+
