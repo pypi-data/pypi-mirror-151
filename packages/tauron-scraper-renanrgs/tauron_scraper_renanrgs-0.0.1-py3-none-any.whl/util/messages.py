@@ -1,0 +1,1 @@
+OUTSTANDING_BILL_MSG = 'Sua próxima conta no valor de <b>{bill_amount}</b> com vencimento em <b>{due_date}</b> deve ser paga hoje'
