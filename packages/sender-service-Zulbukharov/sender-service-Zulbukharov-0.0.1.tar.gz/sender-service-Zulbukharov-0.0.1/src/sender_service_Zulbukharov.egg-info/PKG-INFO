@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sender-service-Zulbukharov
+Version: 0.0.1
+Summary: GRPC server/client for sender service
+Home-page: https://gitlab.ozon.dev/Zulbukharov/sender
+Author: Abylaikhan Zulbukharov
+Author-email: l1pt0n1905@gmail.com
+Project-URL: Bug Tracker, https://gitlab.ozon.dev/Zulbukharov/sender/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
