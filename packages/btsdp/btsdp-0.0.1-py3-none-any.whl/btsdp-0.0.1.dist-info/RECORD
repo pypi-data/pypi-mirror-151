@@ -1,0 +1,10 @@
+btsdp/__init__.py,sha256=xr_lr2bEor1CaLdP8ulkVp7x0A9pHw0I85_Zi-dXX6A,4009
+btsdp/sdp.py,sha256=qjaNNDdLl8RslCTEivIrxQalNm4A3QyEhN5kTZk0H7g,67651
+btsdp/pytransform/__init__.py,sha256=OAwIt1kGBC0Y5zsNJlTrAwQwmJhMqierRUVI_ZOjqgg,13587
+btsdp/pytransform/platforms/linux/aarch64/_pytransform.so,sha256=IGcDU5tORezfx7akVupw2MfualOqsYneQBsz9Gt8mgE,1087608
+btsdp/pytransform/platforms/linux/x86_64/_pytransform.so,sha256=kLrW2zLt_kPHheJs2ozij44vu0NzpcE6Gs2_gJOPgdg,1198080
+btsdp-0.0.1.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btsdp-0.0.1.dist-info/METADATA,sha256=aj39x43W4VP22ONGRVvJjNX9TUY7VNRlOgzcdTm4Qcs,744
+btsdp-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+btsdp-0.0.1.dist-info/top_level.txt,sha256=vhEMcCtncPE-H5OwdQKf6X4jfPEzyt_doPz2KveTpac,6
+btsdp-0.0.1.dist-info/RECORD,,
