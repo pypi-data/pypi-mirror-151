@@ -1,0 +1,17 @@
+bpf4/__init__.py,sha256=B2hL8OSYCKsO4Gp7iQx02AuLHw4SGvXexO-hH2EFlzw,157
+bpf4/api.py,sha256=wnJBN8QiL4XvU4EfnjHgeATW-6eZ4nehuUcGK04l8eA,16318
+bpf4/arraytools.py,sha256=JrqCymk-jR2BEkePTgEsUUu_3sJdjfQ_NdrGiaBjQn4,1937
+bpf4/bench.py,sha256=937QqS6thuWALnhmd7x5-g5WcySFtAtuii1qxW6YdmU,415
+bpf4/config.py,sha256=DUSKtWvWogSDXpVG4fkBaIwQo0qsIaP8Wj1QY2_nNLo,356
+bpf4/core.cp38-win32.pyd,sha256=UfoFy__ppXgmE65WJDuHA0RnGDnZh7rgFnBvLA-QHUY,766464
+bpf4/csvtools.py,sha256=tB1WsC1RV-eAk7wObrvWtIVYQ0vYr0ZSPx39Uhcsooo,8380
+bpf4/plot.py,sha256=Jawuc16ZX6xgi9QTROasH-JF2OxrAosCOk3Vuw54kI8,3883
+bpf4/pyinterp.py,sha256=252iM5ZVPljb_gZbmh1GDMsLGUGm1LmtQnZFLJoS3u8,1425
+bpf4/tests.py,sha256=wljYbEmIPzlWuKk222k2kFDdfVSfKBG5DMX7ytuzx8o,1466
+bpf4/util.py,sha256=Zqs3k288mhrCZ4Bkh9JUxgkJYBOs1B1jxRDSfC1mTSc,27056
+bpf4/version.py,sha256=KYN3jXL-bSpy0Wg1b6dMLYhnWm-3rcM11oaErRAmUoM,89
+bpf4/wafointerpol.py,sha256=WvJvPwM_P1Ljxhv79BxuRxGxlG-NMXhHpsUIdqNUaqQ,88277
+bpf4-1.5.3.dist-info/METADATA,sha256=UvVf1FMU8H_ye8z96Yi9v7AAzmB9mOGVc5IkxVV967c,5128
+bpf4-1.5.3.dist-info/WHEEL,sha256=f5A3Ypo9PM0E06rgvH7-s12WthkA89SedEqLArPnjKU,96
+bpf4-1.5.3.dist-info/top_level.txt,sha256=B59MQCcNA0f7BzFnz2Dk2257JgvWLzNNkl7NHrG0lHk,5
+bpf4-1.5.3.dist-info/RECORD,,
