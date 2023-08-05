@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: syneto-clio
+Version: 0.3.8
+Summary: "An easy to use CLI tool for running faster Kubernetes and Docker commands."
+Author: "Alexandra Veres",
+Author-email: "alexandra.veres@syneto.eu",
+License: "MIT"
+Keywords: syneto,clio
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+Requires-Dist: click (>=8.0.1)
+
+README.md
