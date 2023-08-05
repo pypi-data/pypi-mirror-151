@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+tgsart/__init__.py
+tgsart/consola.ttf
+tgsart/consolab.ttf
+tgsart.egg-info/PKG-INFO
+tgsart.egg-info/SOURCES.txt
+tgsart.egg-info/dependency_links.txt
+tgsart.egg-info/requires.txt
+tgsart.egg-info/top_level.txt
