@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "minswap_oura"
+version = "0.1.2"
+description = ""
+authors = ["Samuel Ostholm <kalltrum@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/sostholm/minswap"
+repository = "https://github.com/sostholm/minswap"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+blockfrost-python = "0.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
