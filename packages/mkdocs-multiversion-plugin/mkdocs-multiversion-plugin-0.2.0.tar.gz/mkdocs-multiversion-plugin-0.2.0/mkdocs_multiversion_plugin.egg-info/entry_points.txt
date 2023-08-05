@@ -1,0 +1,43 @@
+[mkdocs.plugins]
+multiversion = mkdocs_multiversion_plugin.entry:Multiversion
+
+[mkdocs_multiversion_plugin.themes]
+amelia = mkdocs_multiversion_plugin.themes.mkdocs
+amelia-classic = mkdocs_multiversion_plugin.themes.mkdocs
+bootstrap = mkdocs_multiversion_plugin.themes.mkdocs
+bootstrap-classic = mkdocs_multiversion_plugin.themes.mkdocs
+cerulean = mkdocs_multiversion_plugin.themes.mkdocs
+cerulean-classic = mkdocs_multiversion_plugin.themes.mkdocs
+cosmo = mkdocs_multiversion_plugin.themes.mkdocs
+cosmo-classic = mkdocs_multiversion_plugin.themes.mkdocs
+cyborg = mkdocs_multiversion_plugin.themes.mkdocs
+cyborg-classic = mkdocs_multiversion_plugin.themes.mkdocs
+darkly = mkdocs_multiversion_plugin.themes.mkdocs
+flatly = mkdocs_multiversion_plugin.themes.mkdocs
+flatly-classic = mkdocs_multiversion_plugin.themes.mkdocs
+journal = mkdocs_multiversion_plugin.themes.mkdocs
+journal-classic = mkdocs_multiversion_plugin.themes.mkdocs
+litera = mkdocs_multiversion_plugin.themes.mkdocs
+lumen = mkdocs_multiversion_plugin.themes.mkdocs
+lux = mkdocs_multiversion_plugin.themes.mkdocs
+materia = mkdocs_multiversion_plugin.themes.mkdocs
+minty = mkdocs_multiversion_plugin.themes.mkdocs
+mkdocs = mkdocs_multiversion_plugin.themes.mkdocs
+mkdocs-classic = mkdocs_multiversion_plugin.themes.mkdocs
+pulse = mkdocs_multiversion_plugin.themes.mkdocs
+readable = mkdocs_multiversion_plugin.themes.mkdocs
+readable-classic = mkdocs_multiversion_plugin.themes.mkdocs
+readthedocs = mkdocs_multiversion_plugin.themes.readthedocs
+sandstone = mkdocs_multiversion_plugin.themes.mkdocs
+simplex = mkdocs_multiversion_plugin.themes.mkdocs
+simplex-classic = mkdocs_multiversion_plugin.themes.mkdocs
+slate = mkdocs_multiversion_plugin.themes.mkdocs
+slate-classic = mkdocs_multiversion_plugin.themes.mkdocs
+solar = mkdocs_multiversion_plugin.themes.mkdocs
+spacelab = mkdocs_multiversion_plugin.themes.mkdocs
+spacelab-classic = mkdocs_multiversion_plugin.themes.mkdocs
+superhero = mkdocs_multiversion_plugin.themes.mkdocs
+united = mkdocs_multiversion_plugin.themes.mkdocs
+united-classic = mkdocs_multiversion_plugin.themes.mkdocs
+yeti = mkdocs_multiversion_plugin.themes.mkdocs
+yeti-classic = mkdocs_multiversion_plugin.themes.mkdocs
