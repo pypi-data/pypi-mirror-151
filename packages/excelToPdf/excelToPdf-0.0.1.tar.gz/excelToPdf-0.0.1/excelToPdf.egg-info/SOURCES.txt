@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+excelToPdf/__init__.py
+excelToPdf/app.jar
+excelToPdf/converter.py
+excelToPdf/unoconv
+excelToPdf.egg-info/PKG-INFO
+excelToPdf.egg-info/SOURCES.txt
+excelToPdf.egg-info/dependency_links.txt
+excelToPdf.egg-info/top_level.txt
