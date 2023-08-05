@@ -1,0 +1,10 @@
+grnkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grnkit/data.py,sha256=cpAeUx3CFRGLmy-VWt19tdsyR2APhvWBpLOcVnXhuLM,6669
+grnkit/evaluate.py,sha256=e0wvgODA5qX_fp74r4tOYY-I_TIJybIeNT7ujTCS9G0,826
+grnkit/ss/GENIE3.py,sha256=NP2UA0FsKNLLDjl15wSO_djG3rt4Xk07m5B5xGoFl3E,7557
+grnkit/ss/notears.py,sha256=MspmCXNGuTKdfUmmQ9W1uDrSbM2HW260HAgwoxsYUac,3424
+grnkit/ts/dynGENIE3.py,sha256=ADMeV8R7VZUPIXjqXiC0T8QaQt_AO1z7-6EGZKtV9Rw,28602
+grnkit-0.0.1.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+grnkit-0.0.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+grnkit-0.0.1.dist-info/METADATA,sha256=GPXg536knKylyFuZ6RJy60Rkm8Ssb_Gv93Ki9XkLkQg,591
+grnkit-0.0.1.dist-info/RECORD,,
