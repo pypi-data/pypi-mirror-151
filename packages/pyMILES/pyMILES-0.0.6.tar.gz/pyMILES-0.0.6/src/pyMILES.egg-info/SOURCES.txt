@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyMILES/__init__.py
+src/pyMILES/embedding.py
+src/pyMILES.egg-info/PKG-INFO
+src/pyMILES.egg-info/SOURCES.txt
+src/pyMILES.egg-info/dependency_links.txt
+src/pyMILES.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/embedding_demo.py
+src/tests/embedding_test.py
+src/tests/l1_svm_demo.py
