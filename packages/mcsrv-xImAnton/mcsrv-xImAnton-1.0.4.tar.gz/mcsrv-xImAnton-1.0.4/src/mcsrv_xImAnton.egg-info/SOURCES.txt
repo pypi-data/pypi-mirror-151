@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+src/mcsrv/__init__.py
+src/mcsrv/__main__.py
+src/mcsrv/cli.py
+src/mcsrv/server.py
+src/mcsrv/util.py
+src/mcsrv_xImAnton.egg-info/PKG-INFO
+src/mcsrv_xImAnton.egg-info/SOURCES.txt
+src/mcsrv_xImAnton.egg-info/dependency_links.txt
+src/mcsrv_xImAnton.egg-info/entry_points.txt
+src/mcsrv_xImAnton.egg-info/requires.txt
+src/mcsrv_xImAnton.egg-info/top_level.txt
