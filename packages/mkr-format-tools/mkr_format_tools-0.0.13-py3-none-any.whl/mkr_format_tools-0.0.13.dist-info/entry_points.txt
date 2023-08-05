@@ -1,0 +1,3 @@
+[console_scripts]
+mkr-convert-fast5 = mkr_format_tools.mkr_convert_fast5:main
+mkr-inspect = mkr_format_tools.mkr_inspect:main
