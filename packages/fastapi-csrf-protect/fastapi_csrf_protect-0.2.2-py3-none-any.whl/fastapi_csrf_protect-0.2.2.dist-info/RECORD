@@ -1,0 +1,9 @@
+fastapi_csrf_protect/__init__.py,sha256=Ifnwt-os8h5AUpTHY1k9sCifUPkjgSbEApThlYQXxkA,411
+fastapi_csrf_protect/core.py,sha256=G52Mffu101BxMY8BCsYh3_RZF64cKB1TLp4DZsWRSGg,6407
+fastapi_csrf_protect/csrf_config.py,sha256=horOMFBGoUZ3nNcajNihGP-RQlV2fMRYB3TcBc-pvto,2315
+fastapi_csrf_protect/exceptions.py,sha256=4YwPqSIlgq7mxDB7Phk1grG8yzdKaaPcjX2FnhTgYgU,765
+fastapi_csrf_protect/load_config.py,sha256=3mKuNAhMfZUycczhNSSPauTwukS0IsD-uowPVEdC6e8,2028
+fastapi_csrf_protect-0.2.2.dist-info/LICENSE,sha256=LpcgKDTxv7XQl0IxyVVGlMoVOu_mTCLoOG92JSuFGvg,1073
+fastapi_csrf_protect-0.2.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+fastapi_csrf_protect-0.2.2.dist-info/METADATA,sha256=R92vJktVXS6PDYoOBkePIEI2M55nsguarlnuT1eTUbs,6270
+fastapi_csrf_protect-0.2.2.dist-info/RECORD,,
