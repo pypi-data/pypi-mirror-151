@@ -1,0 +1,7 @@
+scikit-learn==0.22.*
+pytest
+python-crfsuite
+texta-embedding
+
+[mlp]
+texta-mlp
