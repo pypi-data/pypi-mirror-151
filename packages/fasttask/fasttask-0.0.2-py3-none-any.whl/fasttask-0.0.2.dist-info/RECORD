@@ -1,0 +1,10 @@
+src/__init__.py,sha256=CAjOkQY9gozTsetpVUcXfo3QS4RPrktWc2IPpM9IXxI,48
+src/main.py,sha256=l9oOOdAxiu_GjjRpV1LQ-x7Arz2vkOaFukQvQiwuqYs,136
+src/modules/__init__.py,sha256=s3Y9yfyOcnhU1OQfbLWHetDonAl0brnj6a8t5SPqrHM,25
+src/modules/clicontroller.py,sha256=gFWLd1F-SqlGTjKlf-Xtehwy5j4OudKHNTmZ_SptMoY,117
+fasttask-0.0.2.dist-info/LICENSE,sha256=9T5i8hSS6StjJuhLsCJp-QuqYIk7_2Glos7C1TS5UZw,1078
+fasttask-0.0.2.dist-info/METADATA,sha256=5UxmhLd71T4wrRqGy2fDnq2n6tOG_O2FtMBg60qkNic,428
+fasttask-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fasttask-0.0.2.dist-info/entry_points.txt,sha256=p_YUiUbjcKwg4evMLGksUDYBkI-vyde87ZjBDqjpASU,39
+fasttask-0.0.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+fasttask-0.0.2.dist-info/RECORD,,
