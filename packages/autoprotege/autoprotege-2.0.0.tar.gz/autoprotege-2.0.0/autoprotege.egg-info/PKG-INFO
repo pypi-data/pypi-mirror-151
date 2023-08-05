@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: autoprotege
+Version: 2.0.0
+Summary: A Python Operation Tool Developed for Stanford University's Open Source Ontology Construction Tool Protege
+Home-page: https://github.com/junchaoIU/AutoProtege
+Author: wujunchao
+Author-email: wujunchaoIU@outlook.com
+License: Mozilla Public License Version 2.0
+Keywords: protege,ontology
+Platform: UNKNOWN
+Requires: numpy
+
+UNKNOWN
+
