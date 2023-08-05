@@ -1,0 +1,10 @@
+PyMySQL
+bitmath
+iceprod
+requests
+requests-futures
+requests-toolbelt
+typing-extensions
+wipac-file-catalog
+wipac-rest-tools
+xmltodict
