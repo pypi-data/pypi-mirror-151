@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+easyscrape-amazonsuggest/__init__.py
+easyscrape-amazonsuggest/querysuggestions.py
+easyscrape_amazonsuggest.egg-info/PKG-INFO
+easyscrape_amazonsuggest.egg-info/SOURCES.txt
+easyscrape_amazonsuggest.egg-info/dependency_links.txt
+easyscrape_amazonsuggest.egg-info/top_level.txt
