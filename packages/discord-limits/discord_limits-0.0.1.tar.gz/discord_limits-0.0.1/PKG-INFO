@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: discord_limits
+Version: 0.0.1
+Summary: Make requests API requests to Discord without having to worry about ratelimits.
+Home-page: UNKNOWN
+Author: ninjafella
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
