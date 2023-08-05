@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: streamduo
+Version: 0.0.35
+Summary: streamduo.com API
+Home-page: 
+Author-email: steve@streamduo.com
+Keywords: streamduo.com API
+License-File: LICENSE.md
+
+    SDK for streamduo.com
+    
