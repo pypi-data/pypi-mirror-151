@@ -1,0 +1,12 @@
+[console_scripts]
+fas.calcComplexity = greedyFAS.complexityFAS:main
+fas.checkAnno = greedyFAS.annoFAS.checkAnno:main
+fas.doAnno = greedyFAS.annoFAS.annoFAS:main
+fas.getDomains = greedyFAS.domainFAS:main
+fas.getProtByAnno = greedyFAS.annoFAS.getProtByAnno:main
+fas.parseAnno = greedyFAS.annoFAS.annoParserFAS:main
+fas.run = greedyFAS.calcFAS:main
+fas.runFdogFas = greedyFAS.fdogFAS:main
+fas.setup = greedyFAS.setupFAS:main
+fas.splitJson = greedyFAS.extractAnnoFAS:main
+
