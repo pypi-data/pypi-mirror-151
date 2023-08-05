@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cloudwatch_logs_insights_url_encoder/__init__.py
+cloudwatch_logs_insights_url_encoder/encoder.py
+cloudwatch_logs_insights_url_encoder.egg-info/PKG-INFO
+cloudwatch_logs_insights_url_encoder.egg-info/SOURCES.txt
+cloudwatch_logs_insights_url_encoder.egg-info/dependency_links.txt
+cloudwatch_logs_insights_url_encoder.egg-info/top_level.txt
