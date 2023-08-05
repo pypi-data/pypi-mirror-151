@@ -1,0 +1,8 @@
+README.md
+setup.py
+typing_to_configargparse/__init__.py
+typing_to_configargparse.egg-info/PKG-INFO
+typing_to_configargparse.egg-info/SOURCES.txt
+typing_to_configargparse.egg-info/dependency_links.txt
+typing_to_configargparse.egg-info/requires.txt
+typing_to_configargparse.egg-info/top_level.txt
