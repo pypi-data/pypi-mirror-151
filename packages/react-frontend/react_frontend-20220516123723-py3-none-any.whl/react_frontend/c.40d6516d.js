@@ -1,0 +1,1 @@
+const n=(n,e)=>{const t=new URLSearchParams;return e&&(e.type&&t.append("type",e.type),e.domain&&t.append("domain",e.domain)),n.callApi("GET",`config/config_entries/entry?${t.toString()}`)},e=(n,e)=>n.callApi("DELETE",`config/config_entries/entry/${e}`);export{e as d,n as g};

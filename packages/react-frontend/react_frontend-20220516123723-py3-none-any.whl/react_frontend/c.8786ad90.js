@@ -1,0 +1,1 @@
+const i=(i,t)=>{i.callService("automation","trigger",{entity_id:t,skip_condition:!0})},t=(i,t,e,s)=>i.connection.subscribeMessage(t,{type:"subscribe_trigger",trigger:e,variables:s}),e=(i,t,e)=>i.callWS({type:"test_condition",condition:t,variables:e});export{e as a,t as s,i as t};

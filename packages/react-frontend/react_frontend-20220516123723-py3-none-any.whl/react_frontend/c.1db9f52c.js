@@ -1,0 +1,9 @@
+import{_ as e,s as a,e as i,t,$ as c,f as o,n as s}from"./main-ac83c92b.js";import"./c.1fca9ca6.js";import{X as n,Y as r,Z as d,_ as l,a0 as m}from"./c.3e14cfd3.js";import{b as h}from"./c.461e571b.js";import"./c.4e93087d.js";import"./c.8eddd911.js";import"./c.027db416.js";import"./c.c8193d47.js";import"./c.47fa9be3.js";import"./c.e9aa747b.js";import"./c.8e198788.js";import"./c.25e73c3c.js";import"./c.5ea5eadd.js";import"./c.8cbd7110.js";const u=n(h,r({entity:d(l()),name:d(l()),theme:d(l())})),f=[{name:"entity",required:!0,selector:{entity:{domain:"humidifer"}}},{type:"grid",name:"",schema:[{name:"name",selector:{text:{}}},{name:"theme",selector:{theme:{}}}]}];let p=e([s("hui-humidifier-card-editor")],(function(e,a){return{F:class extends a{constructor(...a){super(...a),e(this)}},d:[{kind:"field",decorators:[i({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[t()],key:"_config",value:void 0},{kind:"method",key:"setConfig",value:function(e){m(e,u),this._config=e}},{kind:"method",key:"render",value:function(){return this.hass&&this._config?c`
+      <ha-form
+        .hass=${this.hass}
+        .data=${this._config}
+        .schema=${f}
+        .computeLabel=${this._computeLabelCallback}
+        @value-changed=${this._valueChanged}
+      ></ha-form>
+    `:c``}},{kind:"method",key:"_valueChanged",value:function(e){o(this,"config-changed",{config:e.detail.value})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>"entity"===e.name?this.hass.localize("ui.panel.lovelace.editor.card.generic.entity"):"theme"===e.name?`${this.hass.localize("ui.panel.lovelace.editor.card.generic.theme")} (${this.hass.localize("ui.panel.lovelace.editor.card.config.optional")})`:this.hass.localize(`ui.panel.lovelace.editor.card.generic.${e.name}`)}}]}}),a);export{p as HuiHumidifierCardEditor};
