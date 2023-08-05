@@ -1,0 +1,11 @@
+pyMILES/__init__.py,sha256=ZeO09AziIk5Bm40_SXTgwYkMHP6WMJTAAY8-90kJEkw,90
+pyMILES/embedding.py,sha256=Ke_e6N9Sek2fj_My6-I5jJvplZT_kMRKDe4RGkcRVKc,11820
+tests/__init__.py,sha256=21HwA2k_1cuHg4z04FmnU4se7CSbYVqEz7SDGkMerxw,32
+tests/embedding_demo.py,sha256=TilJW3NABySD3419liXeQWGgIq7o235UlM0q_5TOcEU,8236
+tests/embedding_test.py,sha256=3Jjpc2VH4DBfnlyXSXjcdPYu3u1YYHDVvicYpr30SXg,8530
+tests/l1_svm_demo.py,sha256=mM5-U2X1M4LwR8rISu9rvrr3D-1X3V3ieBohYIRTBR8,4462
+pyMILES-0.0.6.dist-info/LICENSE,sha256=EF8IbePwGcqNNWOSjVQYC9K_WSJh-MK82mymrduAIMs,1060
+pyMILES-0.0.6.dist-info/METADATA,sha256=Nn_mlvtGci2DM3BNCXm0R7bGkwEsyBv2N3G9r3ddUgo,3431
+pyMILES-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyMILES-0.0.6.dist-info/top_level.txt,sha256=1ADJ_fK7azMiYRYHF8bJgM9rJpTisX5oKt-mRobQSXU,14
+pyMILES-0.0.6.dist-info/RECORD,,
