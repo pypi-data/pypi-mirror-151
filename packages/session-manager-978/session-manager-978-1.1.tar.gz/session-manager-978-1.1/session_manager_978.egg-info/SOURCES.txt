@@ -1,0 +1,7 @@
+setup.py
+SessionManager/__init__.py
+SessionManager/session_manager.py
+session_manager_978.egg-info/PKG-INFO
+session_manager_978.egg-info/SOURCES.txt
+session_manager_978.egg-info/dependency_links.txt
+session_manager_978.egg-info/top_level.txt
