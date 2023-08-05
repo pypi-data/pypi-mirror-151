@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+doujin.egg-info/PKG-INFO
+doujin.egg-info/SOURCES.txt
+doujin.egg-info/dependency_links.txt
+doujin.egg-info/requires.txt
+doujin.egg-info/top_level.txt
