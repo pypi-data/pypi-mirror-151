@@ -1,0 +1,7 @@
+torch
+numpy
+astunparse
+importlib_metadata>=4.8.2
+
+[:python_version < "3.8"]
+asttokens
