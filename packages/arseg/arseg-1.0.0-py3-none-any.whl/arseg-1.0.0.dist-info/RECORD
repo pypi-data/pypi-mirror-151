@@ -1,0 +1,13 @@
+arseg/ARDataSet.py,sha256=maDjBnTTEsKu1kKFtvo0sQela3PsrVjKy_ZeXiryb30,1206
+arseg/__init__.py,sha256=mwaVIPe68d2srM3IY8BAx8dLnBObSDXZ735IFjBrcPs,114
+arseg/active_region.py,sha256=E1OFgNQXtpHdboVuy6Q64JKKp2w9uyJ4ErpZa0gaCkE,6092
+arseg/active_region_derived_fields.py,sha256=PWmsBF6qVbC95PGeuUG_zxR3gEIC_SGs0JHuzMXwKnY,11549
+arseg/active_region_parameters.py,sha256=u9hjld__R0LvCEJyjEW_jgVtDLRKKRy43U_16JAToLw,9459
+arseg/active_region_segments.py,sha256=9EBsTr3GVrfhjq67ERZx-f6f5WbZpWeTRqAVmevcLHc,13607
+arseg/data.py,sha256=6AexpvZSHsiIxcac6IrxkFTGxQkDQs8g5IDVQtkUlhI,4518
+arseg/utils.py,sha256=sa9nVuf9vevmbkFw-EYeBP2brguCjWKqa3La43n29GI,4411
+arseg-1.0.0.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+arseg-1.0.0.dist-info/METADATA,sha256=dKvuM9pmqOyoIxYt4LXnHu1s9SY9AvK-v2_RttPv9Ks,1529
+arseg-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+arseg-1.0.0.dist-info/top_level.txt,sha256=QkatIW72sBw06xK9siiOIvae3oo-CMKNNlLNXhfIHc8,6
+arseg-1.0.0.dist-info/RECORD,,
