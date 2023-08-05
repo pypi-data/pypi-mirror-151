@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+Function/__init__.py
+Function/func.py
+Primenumber/DPF.py
+Primenumber/DPN.py
+Primenumber/__init__.py
+Simplify/__init__.py
+Simplify/sim2ndrt.py
+Statistics/__init__.py
+Statistics/data.py
+tongsmath.egg-info/PKG-INFO
+tongsmath.egg-info/SOURCES.txt
+tongsmath.egg-info/dependency_links.txt
+tongsmath.egg-info/top_level.txt
