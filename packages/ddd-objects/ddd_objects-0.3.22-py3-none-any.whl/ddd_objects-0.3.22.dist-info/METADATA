@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ddd-objects
+Version: 0.3.22
+Summary: In this lib some base objects under concept ddd are defined
+Author: wangziling100
+Author-email: wangziling100@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
