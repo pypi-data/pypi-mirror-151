@@ -1,0 +1,5 @@
+tqdm
+svg.path
+shapely
+matplotlib
+anytree
