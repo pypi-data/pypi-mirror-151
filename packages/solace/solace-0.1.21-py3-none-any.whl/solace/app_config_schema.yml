@@ -1,0 +1,173 @@
+---
+name:
+  type: string
+  required: true
+  minlength: 2
+  maxlength: 128
+
+env:
+  type: dict
+  required: true
+  schema:
+    type:
+      type: string
+      default: dev
+      required: true
+      allowed:
+      - dev
+      - test
+      - stage
+      - prod
+  
+static_assets:
+  type: dict
+  required: false
+  schema:
+    dir:
+      type: string
+      required: true
+    url:
+      type: string
+      required: true
+
+error:
+  type: dict
+  required: true
+  schema:
+    type:
+      type: string
+      default: text
+      required: true
+      allowed:
+      - text
+      - view
+      - json
+    args:
+      type: dict
+      allow_unknown: true
+
+log:
+  type: dict
+  required: true
+  schema:
+    level:
+      type: string
+      default: info
+      required: true
+      allowed:
+      - trace
+      - debug
+      - info
+      - success
+      - warning
+      - error
+      - critical
+
+stores:
+  type: dict
+  required: false
+  allow_unknown: true
+  keysrules:
+    type: string
+    maxlength: 64
+  valuesrules:
+    type: dict
+    schema:
+      type:
+        required: true
+        type: string
+        allowed:
+          - mariadb
+          - mongodb
+          - redis
+          - dynamodb
+      config:
+        type: dict
+        required: true
+        allow_unknown: true
+
+models:
+  type: dict
+  required: false
+  allow_unknown: true
+  keysrules:
+    type: string
+    maxlength: 64
+  valuesrules:
+    type: dict
+    schema:
+      schema:
+        type: dict
+        required: true
+        allow_unknown: true
+
+operations:
+  type: list
+  required: true
+  schema:
+    type: dict
+    schema:
+      name:
+        type: string
+        required: true
+      type:
+        type: string
+        required: true
+        allowed:
+          - save
+          - read
+          - void
+          - noop
+      path:
+        type: string
+        required: true
+
+      flow:
+        type: list
+        required: false
+        schema:
+          type: string
+      
+      stores:
+        type: list
+        required: false
+        schema:
+          type: string
+
+      res:
+        type: dict
+        required: true
+        schema:
+          type:
+            type: string
+            required: true
+            allowed:
+              - view
+              - json
+              - func
+              - redirect
+
+          # NOTE: args are different for different response types
+          # so we'll likely need to add basic validation logic to 
+          # the handler for those.
+          args:
+            type: dict
+
+      # err:
+      #   type: dict
+      #   required: true
+      #   schema:
+      #     type:
+      #       type: string
+      #       required: true
+      #       allowed:
+      #         - view
+      #         - json
+      #         - func
+      #         - redirect
+
+          # NOTE: args are different for different response types
+          # so we'll likely need to add basic validation logic to 
+          # the handler for those.
+          # args:
+          #   type: dict
