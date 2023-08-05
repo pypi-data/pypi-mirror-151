@@ -1,0 +1,3 @@
+[console_scripts]
+Backups_clientAPI-NPP = Backups_clientAPI.__main__:main
+
