@@ -1,0 +1,13 @@
+nsfw_screen_detect/__init__.py,sha256=m635c7xpj0cTCDW6KTIdq_UYH7CIzfOwhTwi5_V-poQ,80
+nsfw_screen_detect/camera.py,sha256=Vg5JSQS5kl0zUyThTK-OFcJIGnLDj0Ko-Gyf99A7zm8,2720
+nsfw_screen_detect/checker.py,sha256=ipX9G3nkDeECzxZibkPfct0m0ukGS2uk1Rybijd-ibc,2838
+nsfw_screen_detect/detector.py,sha256=MhT2Uc0DQbnA1_QX09Z5ID0jQuQ0Y1zvXMjjTTTuBI4,3837
+nsfw_screen_detect/parser.py,sha256=y25qQdhGgayBbl0FBzRkj0I9HIc40eoIf25eDg37NQ0,2022
+nsfw_screen_detect/tests.py,sha256=q0Nkkg1OKmAO9IMlKhHwjSFfmdenjnZNCr4SOqLdqaU,1037
+nsfw_screen_detect/windows.py,sha256=ERCNoQTv7yJiSWYc9WJMfR1VzRI8J28MMQSdC_JWBdo,623
+nsfw_screen_detect/bin/lite_classifier.h5,sha256=SA7Yf9pVuAI9j9KLQJfX9zOss5sOHuICJ-DK7ajmhEQ,83180460
+nsfw_screen_detect-0.2.1.dist-info/LICENSE,sha256=nq2_0cLO9B57MC3RT05zDy1XNp6Vz0Zpq4y5UZEBwFs,1578
+nsfw_screen_detect-0.2.1.dist-info/METADATA,sha256=c0QRhh2dW6W4sAraVzqLoppt41c_7KryM5quo6FG4aE,2198
+nsfw_screen_detect-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nsfw_screen_detect-0.2.1.dist-info/top_level.txt,sha256=XvV_HrWAjtpvNVZqypqKVqlve4IAfBNtEVcfFo_dQGk,19
+nsfw_screen_detect-0.2.1.dist-info/RECORD,,
