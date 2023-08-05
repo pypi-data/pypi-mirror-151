@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: qlkit
+Version: 0.0.27
+Summary: Python application development toolkit
+Author: qianlu
+Author-email: tech001@qianlu.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
