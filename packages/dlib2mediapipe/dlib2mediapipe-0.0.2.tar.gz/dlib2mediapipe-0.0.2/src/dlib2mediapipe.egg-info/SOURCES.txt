@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/dlib2mediapipe.egg-info/PKG-INFO
+src/dlib2mediapipe.egg-info/SOURCES.txt
+src/dlib2mediapipe.egg-info/dependency_links.txt
+src/dlib2mediapipe.egg-info/requires.txt
+src/dlib2mediapipe.egg-info/top_level.txt
