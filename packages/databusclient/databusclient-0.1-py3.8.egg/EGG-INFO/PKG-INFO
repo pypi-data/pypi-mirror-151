@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: databusclient
+Version: 0.1
+Summary: A simple client for submitting data to the databus
+Home-page: https://github.com/dbpedia/databus-client/python
+Author: DBpedia Association
+Author-email: UNKNOWN
+License: Apache-2.0 License
+Description: UNKNOWN
+Platform: UNKNOWN
