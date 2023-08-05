@@ -1,0 +1,12 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pytest_inmanta_lsm.egg-info/PKG-INFO
+src/pytest_inmanta_lsm.egg-info/SOURCES.txt
+src/pytest_inmanta_lsm.egg-info/dependency_links.txt
+src/pytest_inmanta_lsm.egg-info/entry_points.txt
+src/pytest_inmanta_lsm.egg-info/requires.txt
+src/pytest_inmanta_lsm.egg-info/top_level.txt
