@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+region_selection/__init__.py
+region_selection/region_selection.py
+region_selection_apr.egg-info/PKG-INFO
+region_selection_apr.egg-info/SOURCES.txt
+region_selection_apr.egg-info/dependency_links.txt
+region_selection_apr.egg-info/requires.txt
+region_selection_apr.egg-info/top_level.txt
