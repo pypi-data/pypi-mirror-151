@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: util-ds
+Version: 0.5.1
+Summary: This project is a convenient part of the NLP project, including several already exposed projects such as summy and text processing.
+Home-page: UNKNOWN
+Author: Sohone Guo
+Author-email: 878153077@qq.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: mecab-python3 (==1.0.1)
+Requires-Dist: unidic-lite (==1.0.7)
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
