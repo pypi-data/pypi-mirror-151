@@ -1,0 +1,9 @@
+click<9,>=8
+dulwich<0.20.36,>=0.20
+giturlparse<0.11,>=0.10
+pyyaml<7,>=5.4
+py-setenv<1.2,>=1.1
+send2trash>=1.7.1
+
+[:sys_platform == "win32"]
+pywin32==304
