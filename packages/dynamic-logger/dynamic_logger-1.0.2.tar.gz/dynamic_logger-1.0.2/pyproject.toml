@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "dynamic_logger"
+version = "1.0.2"
+description = "Dynamic Logger Class for logging"
+authors = ["ajatkj <ajatkj@yahoo.co.in>"]
+keywords = ["logging", "extra_logging", "dynamic_logging"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/ajatkj/dynamic_logger"
+repository = "https://github.com/ajatkj/dynamic_logger"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pydantic = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
