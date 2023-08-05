@@ -1,0 +1,10 @@
+pycouchdb/__init__.py,sha256=yvTKduQYMrCD3LTAtVQcOmy_pnkIZto58Ya8VpmorYU,238
+pycouchdb/client.py,sha256=uFSW-z5GWSS1BJ6DrPozk8tm8046uaNO5dd9BkO3sjs,22195
+pycouchdb/exceptions.py,sha256=qclWoR-qNgxUvepGERynNXLtw0Wl5IypA-Rs3kGfKyw,379
+pycouchdb/feedreader.py,sha256=79K-9rxjfsLMCaHlrwW5lrGXhzdm-1eSRtuE3NjU0o0,1271
+pycouchdb/resource.py,sha256=SM7TfxcVukmf68SPsWsM43hWkWCXdcIyMgOnJGdi3rw,4054
+pycouchdb/utils.py,sha256=p38QTbdqoDq_f0lO_YnwlRYNPEdBAa7qEabQZLQFLTI,3961
+pycouchdb-1.14.2.dist-info/LICENSE,sha256=QBaYdfStbsQ5tFxXqpXBy78jgpuN9wzBk1cOe6Av3kc,1408
+pycouchdb-1.14.2.dist-info/WHEEL,sha256=Fs47bPI6GdEUUVU2cC1ZH87S4TSequgq1XeoqimcqIE,87
+pycouchdb-1.14.2.dist-info/METADATA,sha256=0_DcgkKrECripntsVHDI0FdkDFu68-eGBsTMiogfoSA,2730
+pycouchdb-1.14.2.dist-info/RECORD,,
