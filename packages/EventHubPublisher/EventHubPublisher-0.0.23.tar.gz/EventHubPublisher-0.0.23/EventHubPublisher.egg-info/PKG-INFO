@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: EventHubPublisher
+Version: 0.0.23
+Summary: A small example package
+Home-page: https://storis.com
+Author: STORIS
+Author-email: author@example.com
+Project-URL: Bug Tracker, https://storis.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Build the project 
+	In the Visual Studio Search box type 'Terminal'.
+	Open the Terminal and navigate to the Project folder location 'cd project_path'
+	run 'py -3.9 -m build'
+	This will update/crate 'dist' folder into the project location
+
+Run send script
+	In the project location open power shell 
+	run 'python C:\Git\Aries\Webhooks\U2Publisher\Storis.EventHub.Publisher\EventPublisher\EventPublisher.py --env=Development --code=storis, --acount=storisAccount, --events='[{\"name\":\"a\"}, {\"name\":\"aa\"}]''
+
+Upload library
+	In the project location open power shell 
+	run 'python -m twine upload dist/* --verbose'
+
+Install script
+	run 'py -m pip install --target=C:\storis\ud15\PYEVENTS EventHubPublisher'
+	Where --target=C:\PyScripts specifies the directory where the package will be installed  
+
+Run the script from package in U2
+	client_code must be always the first parameter 
+	'runpy EventPublisher OrderWrittenSale.py --env=Development --code=storis, --acount=storisAccount, --events=""[{\"name\":\"a\"}, {\"name\":\"aa\"}]""'
+
+Set environment 
+	Production or Development. For Development run the script from the project location
+	'python C:\PyScripts\EventPublishe\OrderWrittenSale.py 'Production''
