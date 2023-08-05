@@ -1,0 +1,104 @@
+[tool.poetry]
+name = "tmp_connection_psql"
+version = "1.0.1"
+description = "Little project to create a temparory connection to a psql database"
+authors = ["CHOSSON Ulysse <ulysse.chosson@obspm.fr>"]
+license = "EUPL v1.2"
+readme = "README.md"
+homepage = "https://gitlab.obspm.fr/uchosson/tmp_connection_psql"
+repository = "https://gitlab.obspm.fr/uchosson/tmp_connection_psql"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psycopg = "^3.0.13"
+pytest-postgresql = "^4.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+pytest-sugar = "^0.9.4"
+pytest-pudb = "^0.7.0"
+pre-commit = "^2.17.0"
+black = "^22.1.0"
+xdoctest = "^0.15.10"
+codespell = "^2.1.0"
+flake8-eradicate = "^1.2.0"
+dlint = "^0.12.0"
+bandit = {extras = ["toml"], version = "^1.7.4"}
+pydocstyle = {extras = ["toml"], version = "^6.1.1"}
+isort = "^5.10.1"
+mypy = "^0.942"
+sqlfluff = "^0.12.0"
+pylint = "^2.13.7"
+plerr = "^2.0.0"
+flake8 = "3.9"
+flakehell = "^0.9.0"
+flake8-bandit = "^3.0.0"
+flake8-commas = "^2.1.0"
+flake8-quotes = "^3.3.1"
+flit = "^3.7.1"
+m2r2 = "^0.3.2"
+dephell = "^0.8.3"
+assertpy = "^1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--xdoctest -xl"
+
+[tool.black]
+target-version = ['py310']
+
+[tool.isort]
+py_version = "310"
+profile = "black"
+known_pytest = ["pytest"]
+sections = ["FUTURE", "PYTEST", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+import_heading_future = "Future imports"
+import_heading_pytest = "Pytest imports"
+import_heading_stdlib = "Standard imports"
+import_heading_thirdparty = "Third party imports"
+import_heading_firstparty = "First party imports"
+import_heading_localfolder = "Local imports"
+
+[tool.bandit]
+targets = ["tmp_connection_psql/"]
+skips = ["B608", "B101", "B404"]
+
+[tool.pydocstyle]
+match = '((?!test_).)*\.py'
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+
+# mypy per-module options:
+
+[[tool.mypy.overrides]]
+module = []
+ignore_missing_imports = true
+
+[tool.sqlfluff.core]
+dialect = "postgres"
+
+[tool.pylint.message_control]
+output-format = "colorized"
+msg-template = "'{msg_id}: in the file: {path}, at line: {line:}, at column: {column}, in objects: {obj} -> {msg}' tmp_connection_psql/"
+
+[tool.flakehell]
+exclude = ["example.py", "setup.py", "README.md"]
+max_line_length = 88
+show_source = true
+format = "grouped"
+
+[tool.flakehell.plugins]
+pyflakes = ["+*"]
+flake8-bandit = ["-*", "+S1??"]
+"flake8-*" = ["+*", "-Q000"]
+flake8-commas = ["+*"]
+mccabe = ["+*"]
+pep8-naming = ["+*", "-N812"]
+dlint = ["+*"]
