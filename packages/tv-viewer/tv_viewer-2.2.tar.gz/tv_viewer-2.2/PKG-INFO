@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tv_viewer
+Version: 2.2
+Summary: Python PyQt5 GUI to view tv program details using tvmaze API and SQLite
+Home-page: https://github.com/gavinlyonsrepo/tv_viewer
+Author: Gavin Lyons
+Author-email: glyons66@hotmail.com
+License: GPL
+Download-URL: https://github.com/gavinlyonsrepo/tv_viewer/archive/2.2.tar.gz
+Keywords: televison tv_viewer tv maze SQLite PyQt gavin lyons schedule API GUI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+License-File: LICENSE.md
+
+UNKNOWN
+
