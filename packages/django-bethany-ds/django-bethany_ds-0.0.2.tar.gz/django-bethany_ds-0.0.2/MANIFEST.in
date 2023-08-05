@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+recursive-include bethany_ds/static *
+recursive-include bethany_ds/templates *
+
+recursive-exclude _data *
+recursive-exclude _static *
+recursive-exclude mytester *
