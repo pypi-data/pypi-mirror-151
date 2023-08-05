@@ -1,0 +1,12 @@
+README.md
+setup.py
+honto/__init__.py
+honto/honto.py
+honto/utils.py
+honto.egg-info/PKG-INFO
+honto.egg-info/SOURCES.txt
+honto.egg-info/dependency_links.txt
+honto.egg-info/entry_points.txt
+honto.egg-info/not-zip-safe
+honto.egg-info/requires.txt
+honto.egg-info/top_level.txt
