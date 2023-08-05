@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: formattex
+Version: 0.0.2
+Summary: A simple and uncompromising Latex code formatter
+Home-page: https://foss.heptapod.net/fluiddyn/formattex
+Author: paugier
+Author-email: pierre.augier@univ-grenoble-alpes.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://foss.heptapod.net/fluiddyn/formattex/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: doc
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# formattex: a simple and uncompromising Latex code formatter
+
+I didn't find a Latex formatter that fits my needs... Let's try to write such
+Latex formatter.
+
+## Getting started
+
+```
+pip install formattex
+formattex article.tex
+```
+
+## Internal
+
+I tried with https://github.com/alvinwan/TexSoup but
+https://github.com/phfaist/pylatexenc/ could also be used.
+
+
