@@ -1,0 +1,16 @@
+.pylintrc
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+Makefile
+README
+package.json
+pyproject.toml
+setup.py
+.github/workflows/workflow
+oslicensor.egg-info/PKG-INFO
+oslicensor.egg-info/SOURCES.txt
+oslicensor.egg-info/dependency_links.txt
+oslicensor.egg-info/entry_points.txt
+oslicensor.egg-info/not-zip-safe
+oslicensor.egg-info/top_level.txt

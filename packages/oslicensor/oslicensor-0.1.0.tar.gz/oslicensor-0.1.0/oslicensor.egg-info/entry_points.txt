@@ -1,0 +1,2 @@
+[console_scripts]
+osslicenser = osslicenser.__main__:main
