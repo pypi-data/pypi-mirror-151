@@ -1,0 +1,7 @@
+onnx
+onnxruntime
+tqdm
+numpy
+Pillow
+requests
+onnxruntime-gpu
