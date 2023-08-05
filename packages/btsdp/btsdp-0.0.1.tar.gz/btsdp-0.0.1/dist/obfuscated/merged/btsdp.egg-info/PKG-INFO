@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: btsdp
+Version: 0.0.1
+Summary: Bluetooth SDP Utilities
+Home-page: https://pypi.org/project/btsdp
+Author: Cibo
+Author-email: cibo@bio-electric.com
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: Other/Proprietary License
+Requires-Python: <3.11,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# btsdp
+
+Bluetooth SDP Utilities
+
+
