@@ -1,0 +1,11 @@
+squids/__init__.py,sha256=PHKNXYldDtnpO2PkncUa-u_x6-pVmEiVXAYvHhaIIwY,134
+squids/__main__.py,sha256=7PxxQQHeqvYv7lew63owR4kERFvrpBWSWgMtht3L74Q,36
+squids/cli.py,sha256=qEUuB6oN-Ray8s6WJEY0flGpx_Vy8vKntg9EfdJRQns,4932
+squids/consumer.py,sha256=oVpOqdcnLchP1nShiPTL_H6iK7-8fNONvteZGaM2eR0,8071
+squids/core.py,sha256=Fzu-nAZhQ1VD06iO-9SjcJLHsRi6pOI30wbEcybNMF8,12545
+SQuidS-0.1.0a1.dist-info/LICENSE,sha256=4OtdvH4dokKl48_NjmYNavL3ruRGeHOsc3opSY7UImk,1069
+SQuidS-0.1.0a1.dist-info/METADATA,sha256=4ZFbKsWoRhN-4_lXMY51BqgfACLakmSB8solGxyueYE,1612
+SQuidS-0.1.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SQuidS-0.1.0a1.dist-info/entry_points.txt,sha256=k-uSbUK5ejB_tYgOZn_Hv5IkOecEOhlC1QLSZmh54Rk,44
+SQuidS-0.1.0a1.dist-info/top_level.txt,sha256=TpClt7uhujqG4OJzuUkZaJ9xkEgJq2aoId7QbUTRhns,7
+SQuidS-0.1.0a1.dist-info/RECORD,,
