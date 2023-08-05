@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/arseg/ARDataSet.py
+src/arseg/__init__.py
+src/arseg/active_region.py
+src/arseg/active_region_derived_fields.py
+src/arseg/active_region_parameters.py
+src/arseg/active_region_segments.py
+src/arseg/data.py
+src/arseg/utils.py
+src/arseg.egg-info/PKG-INFO
+src/arseg.egg-info/SOURCES.txt
+src/arseg.egg-info/dependency_links.txt
+src/arseg.egg-info/top_level.txt
