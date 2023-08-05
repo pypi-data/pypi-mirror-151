@@ -1,0 +1,5 @@
+[console_scripts]
+nlp-service-benchmark = service.server.cli:benchmark
+nlp-service-start = service.server.cli:main
+nlp-service-terminate = service.server.cli:terminate
+
