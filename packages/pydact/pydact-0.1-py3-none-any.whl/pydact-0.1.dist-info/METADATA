@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pydact
+Version: 0.1
+Summary: Redact information
+Home-page: https://github.com/kind-lab/pydact
+Author: Alistair Johnson
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy
+
+UNKNOWN
+
