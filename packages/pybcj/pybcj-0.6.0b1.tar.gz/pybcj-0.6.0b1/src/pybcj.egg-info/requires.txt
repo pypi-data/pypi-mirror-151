@@ -1,0 +1,16 @@
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[check]
+mypy
+check-manifest
+flake8
+readme-renderer
+pygments
+isort
+twine
+
+[test]
+pytest
+hypothesis
