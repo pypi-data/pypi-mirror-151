@@ -1,0 +1,7 @@
+layerapi/__init__.py,sha256=BxYqPTSWKsKgT1kPtpFEvFQMe4S0QTbclOIaG2-_jZs,27
+layerapi/validate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+layerapi/validate/validator.py,sha256=QlTbHsfAwcY_STF6Tl8MPRRzP5aq4WFh8LdvxrWR1-8,44428
+layer_api-0.9.357895.dist-info/METADATA,sha256=06ib0RuuhkeL8o-VkHstp_0Vm1R1agd_eJVHpzBlA5E,217
+layer_api-0.9.357895.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+layer_api-0.9.357895.dist-info/top_level.txt,sha256=0TMs81FdIOpnIylV304aSeqPpEYF_uWghldc5h4My_Q,9
+layer_api-0.9.357895.dist-info/RECORD,,
