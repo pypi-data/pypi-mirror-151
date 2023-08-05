@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+daredata_snowconn/__init__.py
+daredata_snowconn/connect.py
+daredata_snowconn.egg-info/PKG-INFO
+daredata_snowconn.egg-info/SOURCES.txt
+daredata_snowconn.egg-info/dependency_links.txt
+daredata_snowconn.egg-info/requires.txt
+daredata_snowconn.egg-info/top_level.txt
+test/test.py
