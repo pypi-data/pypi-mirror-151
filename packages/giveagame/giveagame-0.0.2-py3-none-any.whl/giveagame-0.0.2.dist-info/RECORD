@@ -1,0 +1,15 @@
+giveagame/Coords.py,sha256=r_WLt0wPXo6EnoQcEUGtWkYSqaz98y6a7c9gHzfS8cQ,1369
+giveagame/GUI.py,sha256=eIdb4PaEuNCW7B-tF5BRVjWrA9XmvvbnOY0Ye1LW5Hk,1616
+giveagame/Game.py,sha256=d9Uj9Jm-tV9KPL-2tmWrbQ3bEvSrJhXMiVsUfZdI8bk,1176
+giveagame/__init__.py,sha256=_l2Q2r2kaJ5IugGFLribGbCJFoJzqzQIv8pcCJ9PE8g,35
+giveagame/sprites/DoorSprite.py,sha256=0IEjCoHz9eQ7Z2nKJf-TgVKfRkDVuptEDKVRFcJ06ZY,872
+giveagame/sprites/MovingPlatformSprite.py,sha256=d1c7-F0eZf-Isg4N3GyQn5XzyOiQMVzQ4toBIR5saJU,1098
+giveagame/sprites/PlatformSprite.py,sha256=V7pDWUWjZHb_AWV1LJX9zXXNvWx02EZZ1u83yxjHuSI,448
+giveagame/sprites/Sprite.py,sha256=IQaFgsiD7gQKn43UBlixzRcDr39UusdmDeBRNVK6nyE,224
+giveagame/sprites/StickFigureSprite.py,sha256=ltW9h7KHPvtbKLvNwREaky1yMS2K0vvIsltHxYSM7sE,5765
+giveagame/sprites/__init__.py,sha256=YwLeT07_dM6j3nT0pdDu8gDW9G2pHZqnJpDI1uo6vsU,97
+giveagame-0.0.2.dist-info/LICENSE,sha256=FkngloZ9FKDTG6ZdF4_H_BOa8RNY6oXDnl46ErRyGdc,33862
+giveagame-0.0.2.dist-info/METADATA,sha256=_S2uWyyIM2AzHlFCVJCoTWrV1I_y9sbXyRJnfAxpkL8,861
+giveagame-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+giveagame-0.0.2.dist-info/top_level.txt,sha256=Iwg0B7LnDtonZGkJH0bNprSTGvwoh_vPICFK9BFEy2o,10
+giveagame-0.0.2.dist-info/RECORD,,
