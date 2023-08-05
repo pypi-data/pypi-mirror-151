@@ -1,0 +1,10 @@
+README.md
+setup.py
+pygfile/__init__.py
+pygfile/enc.py
+pygfile/encfile.py
+pygfile/unencfile.py
+pygfile.egg-info/PKG-INFO
+pygfile.egg-info/SOURCES.txt
+pygfile.egg-info/dependency_links.txt
+pygfile.egg-info/top_level.txt
