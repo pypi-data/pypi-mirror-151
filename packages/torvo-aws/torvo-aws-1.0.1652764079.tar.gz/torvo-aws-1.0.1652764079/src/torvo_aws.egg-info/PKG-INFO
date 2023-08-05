@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: torvo-aws
+Version: 1.0.1652764079
+Summary: AWS infrastructure as code
+Home-page: https://torvo.com.au
+Author: Benjamin Brazier
+Author-email: ben@torvo.com.au
+Project-URL: Documentation, https://torvo.com.au/python3/torvo-aws
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# FIXME: Torvo AWS

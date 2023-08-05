@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/aws/__init__.py
+src/aws/paginate.py
+src/aws/reference.py
+src/aws/vpc.py
+src/torvo_aws.egg-info/PKG-INFO
+src/torvo_aws.egg-info/SOURCES.txt
+src/torvo_aws.egg-info/dependency_links.txt
+src/torvo_aws.egg-info/requires.txt
+src/torvo_aws.egg-info/top_level.txt
