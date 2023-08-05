@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+seca/seca.egg-info/PKG-INFO
+seca/seca.egg-info/SOURCES.txt
+seca/seca.egg-info/dependency_links.txt
+seca/seca.egg-info/top_level.txt
