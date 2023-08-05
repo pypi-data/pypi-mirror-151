@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: django-tabbed-admin2
+Version: 0.1.0
+Summary: 
+Author: Attilio Greco
+Author-email: attilio.greco.gapmilano@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
