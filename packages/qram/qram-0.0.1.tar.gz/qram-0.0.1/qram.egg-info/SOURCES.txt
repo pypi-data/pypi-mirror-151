@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+qram/__init__.py
+qram.egg-info/PKG-INFO
+qram.egg-info/SOURCES.txt
+qram.egg-info/dependency_links.txt
+qram.egg-info/not-zip-safe
+qram.egg-info/top_level.txt
