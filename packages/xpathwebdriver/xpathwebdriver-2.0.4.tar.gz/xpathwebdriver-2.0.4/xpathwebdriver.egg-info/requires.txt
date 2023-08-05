@@ -1,0 +1,4 @@
+parsel>=1.6.0
+pyvirtualdisplay>=0.2.1
+rel_imp>=0.2.4
+selenium>=3.0.2
