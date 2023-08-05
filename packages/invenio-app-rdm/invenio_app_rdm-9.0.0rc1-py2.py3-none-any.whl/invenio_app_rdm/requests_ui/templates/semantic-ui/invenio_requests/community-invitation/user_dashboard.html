@@ -1,0 +1,22 @@
+{# -*- coding: utf-8 -*-
+
+  This file is part of Invenio.
+  Copyright (C) 2022 CERN.
+
+  Invenio is free software; you can redistribute it and/or modify it
+  under the terms of the MIT License; see LICENSE file for more details.
+#}
+{% set title = request.title %}
+{% extends "invenio_requests/details/index.html" %}
+
+{% block request_header_title %}
+  {{ request.title }}
+  {% if invitation_accepted %}
+    <a href="{{ url_for("invenio_app_rdm_communities.communities_detail", pid_value=request.topic.community) }}"
+       class="rel-ml-1">
+      <button class="ui button tiny"> {{ _("View Community") }}</button>
+    </a>
+  {% endif %}
+{% endblock request_header_title %}
+
+{% set active_dashboard_menu_item = 'requests' %}
