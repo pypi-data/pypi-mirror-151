@@ -1,0 +1,21 @@
+tensorflow
+gdspy>=1.5.2
+scikit-rf
+numba
+numpy<1.22
+simphony
+matplotlib
+tables
+tqdm
+
+[:python_version == "3.10"]
+nlopt<2.7.0
+
+[:python_version == "3.7"]
+nlopt<=2.7.1
+
+[:python_version == "3.8"]
+nlopt<=2.7.0
+
+[:python_version == "3.9"]
+nlopt==2.7.0
