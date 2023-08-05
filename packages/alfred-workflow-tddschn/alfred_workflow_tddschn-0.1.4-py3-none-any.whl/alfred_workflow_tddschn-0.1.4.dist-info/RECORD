@@ -1,0 +1,12 @@
+workflow/Notify.tgz,sha256=dfcN09jNo0maLZLIZDSsBDouynsjgtDMSnSL3UfFcRE,35556
+workflow/__init__.py,sha256=3E0oMgdiOaXSPLqwIqQwt9bzaFX8r8t139V9fDsZZPM,2011
+workflow/background.py,sha256=SiL851kTgFtlw4QE4zAKvW1WGJpkOuSFIPMbmobZk0E,7617
+workflow/notify.py,sha256=UuLpSPaxs8x4ONYOgad6w7R3TlAlGM45Vds8XmUygV8,9992
+workflow/update.py,sha256=BfWCC8sf0QLmMhiEuvudkBR4iv2Vf5e8ySzkrWnwHVY,16815
+workflow/util.py,sha256=kYZDpBEn6_YPzjOVXPTzJ2KR4t1Bb-TskWio7qc7DMI,17999
+workflow/version,sha256=_sWfmyrEjikcQfQVyndvj90fs4KQPeqGIb8e85nzj1c,6
+workflow/workflow.py,sha256=TGXzkTAFLUlOE7gHlxAUvdWqNIIg4IbUYhiVercO98k,92744
+workflow/workflow3.py,sha256=xcqNTEeKPI5uaXAPkw_nFiz_eBABJy_NPvT34WEc5z4,22068
+alfred_workflow_tddschn-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+alfred_workflow_tddschn-0.1.4.dist-info/METADATA,sha256=I1U9wNTzTFOhbggpNMn-AqnCthMgReNpFMlQnotW8Eg,12644
+alfred_workflow_tddschn-0.1.4.dist-info/RECORD,,
