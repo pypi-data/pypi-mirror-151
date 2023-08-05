@@ -1,0 +1,12 @@
+idex/__init__.py,sha256=78Z3rIcOGHPxiGdn4pHt3j1NBvUkiZywkV7S-91f56E,170
+idex/client.py,sha256=-R_1y7T6q1vlL63E41JccXRJkgfuNJuIZ2K2Uo3hf2c,79311
+idex/enums.py,sha256=35l6-WRdUqXVl-FJlmi4PPo2qrPCfllyYCcLoxpS3m4,1274
+idex/exceptions.py,sha256=CMDnWtKsRid1yLyplMdoAVBeDc83zY1xUFhBTcCQq-w,1346
+idex/signing.py,sha256=Jw_hV1Pbj_nfLSPdUH9AfcbcL18gkP7HPYEm2MvcfCk,4906
+idex/utils.py,sha256=lrtK0uS6ltX3uI1zzlqc-hZ5ZIijFj0qcwSDN-N8Uzo,1228
+idex/contracts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_idex-3.0.0.dist-info/LICENSE,sha256=sOZ_Wlz0vmPhfC4m212erhkaDlBxjkomFyQXwgmiR-w,1067
+python_idex-3.0.0.dist-info/METADATA,sha256=8wF_Dr5onmwJaODae6OUSJK7mxymKNrbZyTxDBPPiHM,9164
+python_idex-3.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+python_idex-3.0.0.dist-info/top_level.txt,sha256=0HoJaQAwaFqEyDuPdr2gM6u9nkEZ9TtMO-wD4zcnm_U,5
+python_idex-3.0.0.dist-info/RECORD,,
