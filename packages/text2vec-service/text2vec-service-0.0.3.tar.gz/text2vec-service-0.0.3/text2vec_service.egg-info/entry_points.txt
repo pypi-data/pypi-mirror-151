@@ -1,0 +1,5 @@
+[console_scripts]
+service-server-benchmark = service.server.cli:benchmark
+service-server-start = service.server.cli:main
+service-server-terminate = service.server.cli:terminate
+
