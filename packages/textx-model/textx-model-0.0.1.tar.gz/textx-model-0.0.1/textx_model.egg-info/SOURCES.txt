@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+textx_model/CaseWhen.py
+textx_model/General.py
+textx_model/Meta.tx
+textx_model/Model.py
+textx_model/__init__.py
+textx_model.egg-info/PKG-INFO
+textx_model.egg-info/SOURCES.txt
+textx_model.egg-info/dependency_links.txt
+textx_model.egg-info/requires.txt
+textx_model.egg-info/top_level.txt
+textx_tools/__init__.py
