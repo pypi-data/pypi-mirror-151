@@ -1,0 +1,13 @@
+cloudpickle
+fiona
+gdal
+geopandas>=0.10
+numpy
+pandas
+psutil
+pygeos
+pyproj
+shapely
+
+[full]
+simplification
