@@ -1,0 +1,6 @@
+selenium
+
+[test]
+pre-commit
+pytest
+pytest-cov
