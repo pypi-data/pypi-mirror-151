@@ -1,0 +1,5 @@
+image_processor-0.1.1.dist-info/METADATA,sha256=1CFODuRS9RAlwVLse2CcYpqjRmHs9PC48ds8VFi-X9E,1110
+image_processor-0.1.1.dist-info/WHEEL,sha256=THfMXH0vzz8A8zPDUGvb8iwuNXcz5nVcf97Jm5pADQk,108
+image_processor/__init__.py,sha256=6JsTqTIjnaqAqTux37ihp30zz1ZzuwFIYx8aeBZTo7I,143
+image_processor/image_processor.cpython-38-x86_64-linux-gnu.so,sha256=MXf5W0ni85dhPkq57Ds-J77oLap3U3_T6NwWELlL4pc,2660704
+image_processor-0.1.1.dist-info/RECORD,,
