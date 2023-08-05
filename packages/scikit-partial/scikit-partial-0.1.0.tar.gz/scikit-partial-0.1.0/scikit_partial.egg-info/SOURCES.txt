@@ -1,0 +1,11 @@
+README.md
+setup.py
+scikit_partial.egg-info/PKG-INFO
+scikit_partial.egg-info/SOURCES.txt
+scikit_partial.egg-info/dependency_links.txt
+scikit_partial.egg-info/requires.txt
+scikit_partial.egg-info/top_level.txt
+skpartial/__init__.py
+skpartial/pipeline.py
+tests/__init__.py
+tests/test_docs.py
