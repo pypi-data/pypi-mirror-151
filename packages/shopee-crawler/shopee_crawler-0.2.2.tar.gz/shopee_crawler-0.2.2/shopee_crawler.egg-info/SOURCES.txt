@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+shopee_crawler/__init__.py
+shopee_crawler/crawler.py
+shopee_crawler.egg-info/PKG-INFO
+shopee_crawler.egg-info/SOURCES.txt
+shopee_crawler.egg-info/dependency_links.txt
+shopee_crawler.egg-info/requires.txt
+shopee_crawler.egg-info/top_level.txt
+shopee_crawler/toolkit/__init__.py
+shopee_crawler/toolkit/crawl_by_cat_url.py
+shopee_crawler/toolkit/crawl_by_search.py
+shopee_crawler/toolkit/crawl_by_shop_url.py
+shopee_crawler/toolkit/crawl_cat_list.py
+shopee_crawler/toolkit/crawl_product.py
+shopee_crawler/toolkit/curl.py
