@@ -1,0 +1,15 @@
+include LICENSE
+include README.md
+recursive-include courses/static *
+recursive-include courses/templates *
+recursive-include events/static *
+recursive-include events/templates *
+recursive-include features/static *
+recursive-include features/templates *
+recursive-include pricing/static *
+recursive-include pricing/templates *
+
+recursive-exclude _data *
+recursive-exclude _static *
+recursive-exclude mytester *
+recursive-exclude mentor_ds *
