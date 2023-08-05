@@ -1,0 +1,8 @@
+pydantic_settings/__init__.py,sha256=vyxX1zl4bDbO0Pp_IHrRkqCXe3sJebqQMC1wF-BWhus,83
+pydantic_settings/database.py,sha256=mEzW9F6RtZIUA_apTwLXbuzlyISfqhErZbpqoFi9DMk,2907
+pydantic_settings/sentry.py,sha256=taf9SZBkFhX3_KLGbamyNeuvawanoEkQDajpwomjPMA,692
+pydantic_settings/settings.py,sha256=pOyN36QFGpCrEJJXTOoMBngZEB7rjGe8ATq9DdC1gd4,16686
+django_pydantic_settings-0.6.3.dist-info/LICENSE,sha256=UvE2ZCmAIS9NTt6Owiu_ubHBdSMatUBihQWTVVXrjd4,1072
+django_pydantic_settings-0.6.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_pydantic_settings-0.6.3.dist-info/METADATA,sha256=7IHbOFUiFsWs8DMgZ9HbKnJf-sX92t9I2rf0wqO_1hs,8507
+django_pydantic_settings-0.6.3.dist-info/RECORD,,
