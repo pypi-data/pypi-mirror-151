@@ -1,0 +1,13 @@
+LICENSE,sha256=Bb8DAj0qIz1zu0J27n3bCwo7NGRpG1qAqsrMucwtEBQ,1062
+giant_social_links/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+giant_social_links/admin.py,sha256=a376O_FDjNajnjsoix_rWb6DimoVuBOCg0zisib66_s,591
+giant_social_links/apps.py,sha256=_ED1VUKJXtN8DdgOiEcEsttUjcYOcDDEIJPcgtTHAGc,138
+giant_social_links/context_processors.py,sha256=xPfqK7KNxk6UmnQMGRm2qLkHPHXDFOpstgzqhCOlfnA,216
+giant_social_links/migrations/0001_initial.py,sha256=UTGFJaFacjz1Vs8_V81pJ7IxZBOIBQmBwxBJVVVluIo,1514
+giant_social_links/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+giant_social_links/models.py,sha256=Gv0nsiP3MVnFocv4CAVeXmGn-Hix02IxSJ0PUSJ74kI,1189
+giant_social_links/test_context_processors.py,sha256=TJbCnZ-K8iuAbY72e8XxQx5YbidTMsZ0JyPNCKJTpaA,884
+giant_social_links-0.1.1.dist-info/LICENSE,sha256=Bb8DAj0qIz1zu0J27n3bCwo7NGRpG1qAqsrMucwtEBQ,1062
+giant_social_links-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+giant_social_links-0.1.1.dist-info/METADATA,sha256=Y9W5JUTFE-G0Ufej5XmsE1ZsB-f63exsHlO7dzO4F5A,3744
+giant_social_links-0.1.1.dist-info/RECORD,,
