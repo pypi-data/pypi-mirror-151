@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: qram
+Version: 0.0.1
+Summary: Quantum Random Access Memory (qRAM) implementations in Python
+Home-page: http://github.com/hritog/qram
+Author: Hristo Georgiev
+Author-email: hristo.a.georgiev@gmail.com
+License: MIT
+License-File: LICENSE.txt
+
