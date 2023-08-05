@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: seca
+Version: 0.0.1
+Summary: Security analysis of autonomous vehicles
+Home-page: https://github.com/roshambo919/lib-seca.git
+Author: Spencer Hallyburton
+Author-email: spencer@shally.dev
+Project-URL: Bug Tracker, https://github.com/roshambo919/lib-seca/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
