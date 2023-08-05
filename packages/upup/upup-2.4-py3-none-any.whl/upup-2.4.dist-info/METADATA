@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: upup
+Version: 2.4
+Summary: A terminal tool to upload files to servers based on SSH.
+Home-page: https://github.com/XoriieInpottn/upup
+Author: xi
+Author-email: gylv@mail.ustc.edu.cn
+License: MIT License 
+Platform: any
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: paramiko
+
+# upup
+
+upup is a terminal tool to upload file to linux servers. 
+
+## Installation
+
+```bash
+pip3 install upup
+```
+
+
+
