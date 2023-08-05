@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyCCAPT-Calibration
+Version: 0.0.3
+Summary: A package for controlling APT experiment
+Home-page: https://github.com/mmonajem/pyccapt
+Author: Mehrpad Monajem
+Author-email: mehrpad.monajem@fau.de
+License: GPL v3
+Platform: ALL
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
