@@ -1,0 +1,63 @@
+[tool.black]
+line-length = 100
+target-version = ["py36", "py37", "py38"]
+extend-exclude = "^/src/nitsm/_pinmapinterfaces.py"
+
+[tool.ni-python-styleguide]
+extend_exclude = "src/nitsm/_pinmapinterfaces.py"
+# ignore codes not relevant to the Google docstring conventions (http://www.pydocstyle.org/en/stable/error_codes.html#default-conventions)
+# also ignore D415 which requires docstrings to start with a one line summary
+extend_ignore = "D203,D204,D205,D213,D215,D400,D401,D404,D406,D407,D408,D409,D413,D415"  # must also be passed via the command line until https://github.com/ni/python-styleguide/issues/76 is resolved
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+markers = [
+    "pin_map",
+    "sequence_file",
+    "offline_mode"
+]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist = clean, py3{6,7,8}-tests, py3{6,7,8}-systemtests, report
+
+[testenv]
+deps =
+    pytest
+    pytest-cov
+    nidcpower
+    nidmm
+    niscope
+    nidigital
+    niswitch
+    nidaqmx
+    nifgen
+commands =
+    tests: pytest tests --junitxml={envname}-{posargs:any}-tsm-version-results.xml --cov --cov-report=term
+    systemtests: pytest systemtests --junitxml={envname}-{posargs:any}-tsm-version-results.xml --cov --cov-report=term
+passenv =
+    systemtests: TestStandPublic64 ProgramFiles(x86)
+setenv =
+    tests,systemtests: COVERAGE_FILE = .coverage.{envname}-{posargs:any}-tsm-version
+
+[testenv:clean]
+deps = coverage
+skip_install = true
+commands = coverage erase
+
+[testenv:report]
+deps = coverage
+skip_install = true
+commands =
+    coverage combine
+    coverage report -m
+    coverage xml
+"""
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
