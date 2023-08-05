@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: spacy_report
+Version: 0.1.1
+Summary: It's pronounced accura-see. For spaCy models.
+Home-page: https://koaning.github.io/spacy_report/
+Author: Vincent D. Warmerdam
+License: MIT
+Project-URL: Documentation, https://koaning.github.io/spacy_report/
+Project-URL: Source Code, https://github.com/koaning/spacy_report/
+Project-URL: Issue Tracker, https://github.com/koaning/spacy_report/issues
+Description: <img src="https://github.com/koaning/accuraCy/raw/main/icon.png" width=175 height=175 align="right">
+        
+        # spacy-report
+        
+        > The goal of this project is to generate reports for [spaCy](https://spacy.io/) models.
+        
+        ## what it does
+        
+        The goal of `spacy-report` is to offer static reports for spaCy models that
+        help users make better decisions on how the models can be used. At the 
+        moment the project supports interactive views for threshold values for classification. 
+        
+        Here's a preview of what to expect:
+        
+        ![](gif.gif)
+        
+        There are two kinds of charts.
+        
+        1. The first kind is a density chart. This chart shows the distribution
+        of confidence scores for a given class. The blue area represents documents
+        that had the tag assigned to the class. The orange area represents documents
+        that didn't.
+        2. The second kind is a line chart that demonstrates the accuracy, precision
+        and recall values for a given confidence threshold. It's an interactive chart
+        and you can explore the values by hovering over the chart.
+        
+        ## install 
+        
+        You can install `spacy_report` directly with pip. 
+        
+        ```
+        python -m pip install spacy_report
+        ```
+        
+        Alternatively, you can also install the most version from git. 
+        
+        ```
+        python -m pip install "spacy_report @ git+https://github.com/koaning/spacy_report.git"
+        ```
+        
+        ## usage
+        
+        The `accuracy` project provides a command line interface that can
+        generate reports. The full CLI can also be explored via the `--help` flag. 
+        
+        ```
+        > python -m spacy report --help
+        Usage: python -m spacy report [OPTIONS] COMMAND [ARGS]...
+        
+          Generate reports for spaCy models.
+        
+        Options:
+          --help  Show this message and exit.
+        
+        Commands:
+          textcat  Generate a report for textcat models.
+          version  Print the version of spacy_report.
+        ```
+        
+        ### `textcat report`
+        
+        To generate reports for textcat models, you can use the `textcat` sub-command.
+        
+        ```
+        > python -m spacy report textcat training/model-best/ corpus/train.spacy corpus/dev.spacy
+        
+        Loading model at training/model-best
+        Running model on training data...
+        Running model on development data...
+        Generating Charts ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+        Done! You can view the report via;
+        
+        python -m http.server --directory reports PORT 
+        ```
+        
+        This will generate a folder, "reports" by default, that contains a full 
+        dashboard for the trained spaCy model found in `training/model-best`. 
+        
+        The CLI has a few configurable settings:
+        
+        ```text
+        Arguments:
+          [MODEL_PATH]  Path to spaCy model
+          [TRAIN_PATH]  Path to training data
+          [DEV_PATH]    Path to development data
+          [FOLDER_OUT]  Output folder for reports  [default: reports]
+        
+        Options:
+          --classes TEXT  Comma-separated string of classes to use
+          --help          Show this message and exit.
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Provides-Extra: base
+Provides-Extra: dev

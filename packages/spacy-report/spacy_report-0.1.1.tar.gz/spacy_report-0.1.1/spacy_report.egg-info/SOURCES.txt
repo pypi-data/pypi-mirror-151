@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+spacy_report/__init__.py
+spacy_report/__main__.py
+spacy_report/_charts.py
+spacy_report.egg-info/PKG-INFO
+spacy_report.egg-info/SOURCES.txt
+spacy_report.egg-info/dependency_links.txt
+spacy_report.egg-info/entry_points.txt
+spacy_report.egg-info/requires.txt
+spacy_report.egg-info/top_level.txt
+spacy_report/templates/template.html
+tests/__init__.py
+tests/prepare.py
+tests/test_cli.py

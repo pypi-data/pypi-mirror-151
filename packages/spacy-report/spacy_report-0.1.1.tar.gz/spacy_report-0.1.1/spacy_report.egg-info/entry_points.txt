@@ -1,0 +1,3 @@
+[spacy_cli]
+report = spacy_report.__main__:app
+
