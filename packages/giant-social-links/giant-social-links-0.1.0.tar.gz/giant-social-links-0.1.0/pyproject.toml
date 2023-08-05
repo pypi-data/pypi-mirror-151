@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "giant-social-links"
+version = "0.1.0"
+description = "A small reuseable django app that allows social media links to be added via the admin."
+authors = ["Dominic Chaple <domchaple@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/giantmade/giant-social-links"
+repository = "https://github.com/giantmade/giant-social-links"
+keywords = ["giant_social_links", "app"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+include = [
+    "LICENSE",
+]
+packages = [
+    { include = "giant_social_links" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+giant-mixins = "*"
+giant-plugins = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+django = "<3.3"
+django-cms = "<4.0"
+black = "^19.10b0"
+pytest-django = "^3.9.0"
+pytest-cov = "^2.10.0"
+pytest-mock = "^3.2.0"
+six = "^1.15.0"
+isort = "^5.10.1"
+flake8 = "^3.7"
+
+[[tool.poetry.source]]
+name = "TestPyPi"
+url = "https://test.pypi.org/simple/"
+secondary = true
+
+[tool.black]
+line-length = 99
+target-version = ['py36']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.ipython
+  | \.mypy_cache
+  | \.ropeproject
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | migrations
+)/
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
