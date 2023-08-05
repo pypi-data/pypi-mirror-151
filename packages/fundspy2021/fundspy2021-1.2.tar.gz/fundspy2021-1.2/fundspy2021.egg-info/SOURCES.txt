@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+fundspy2021/__init__.py
+fundspy2021/fundspy.py
+fundspy2021.egg-info/PKG-INFO
+fundspy2021.egg-info/SOURCES.txt
+fundspy2021.egg-info/dependency_links.txt
+fundspy2021.egg-info/requires.txt
+fundspy2021.egg-info/top_level.txt
