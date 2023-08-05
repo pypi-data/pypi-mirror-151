@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+subete/__init__.py
+subete/repo.py
+subete.egg-info/PKG-INFO
+subete.egg-info/SOURCES.txt
+subete.egg-info/dependency_links.txt
+subete.egg-info/requires.txt
+subete.egg-info/top_level.txt
