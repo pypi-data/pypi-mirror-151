@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./dropbox_updater/__init__.py
+./dropbox_updater/logger.py
+./dropbox_updater/updater.py
+dropbox_updater/__init__.py
+dropbox_updater/logger.py
+dropbox_updater/updater.py
+dropbox_updater.egg-info/PKG-INFO
+dropbox_updater.egg-info/SOURCES.txt
+dropbox_updater.egg-info/dependency_links.txt
+dropbox_updater.egg-info/requires.txt
+dropbox_updater.egg-info/top_level.txt
