@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "nextx"
+version = "0.15.0"
+description = "Basic structure for fastapi microservices with specific support for blueprint project solution."
+authors = ["adriangs1996 <adriangonzalezsanchez1996@gmail.com>"]
+license = "MIT"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+beanie = "^1.10.4"
+fastapi = "^0.75.1"
+python-jose = "^3.3.0"
+aioredis = "^2.0.1"
+python-decouple = "^3.6"
+Inject = "^4.3.1"
+uvicorn = "^0.17.6"
+grpclib = "^0.4.2"
+protobuf = "^3.20.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+grpcio-tools = "^1.45.0"
+pytest = "^7.1.1"
+mypy = "^0.950"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
