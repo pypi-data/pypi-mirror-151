@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+datacraft_xeger/__init__.py
+datacraft_xeger/suppliers.py
+datacraft_xeger.egg-info/PKG-INFO
+datacraft_xeger.egg-info/SOURCES.txt
+datacraft_xeger.egg-info/dependency_links.txt
+datacraft_xeger.egg-info/entry_points.txt
+datacraft_xeger.egg-info/requires.txt
+datacraft_xeger.egg-info/top_level.txt

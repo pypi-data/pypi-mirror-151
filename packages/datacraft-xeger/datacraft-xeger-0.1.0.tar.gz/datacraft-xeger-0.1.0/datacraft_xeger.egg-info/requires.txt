@@ -1,0 +1,10 @@
+
+[all]
+pytest>=6.2.2
+pycodestyle
+pytest-cov
+
+[test]
+pytest>=6.2.2
+pycodestyle
+pytest-cov

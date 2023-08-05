@@ -1,0 +1,2 @@
+[datacraft.custom_type_loader]
+xeger = datacraft_xeger:load_custom
