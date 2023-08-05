@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: inuits-otel-tracer
+Version: 0.0.6
+Summary: Otel tracer help for tracing in python applications.
+Author: Sayan Suresh
+Author-email: yasinthan@inuits.eu
+License: GPLv2
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Provides: inuits_otel_tracer
