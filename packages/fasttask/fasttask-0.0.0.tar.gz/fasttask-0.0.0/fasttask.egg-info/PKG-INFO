@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fasttask
+Version: 0.0.0
+Summary: TODO
+Home-page: https://github.com/LucasStarlingdePaulaSalles/fasttask
+Author: Lucas Starling
+Author-email: lucastarling1@gmail.com
+License: UNKNOWN
+Description: # fasttask
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
