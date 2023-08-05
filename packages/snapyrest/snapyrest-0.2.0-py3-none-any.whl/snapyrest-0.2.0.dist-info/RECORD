@@ -1,0 +1,15 @@
+pyrest/__init__.py,sha256=N3zq19uIclbcjpZneD_d-U8RJEQKQIis1O2szvIxWP8,132
+pyrest/api.py,sha256=9zgH9RQitHnqHq738HR2aWDe15MxAa4TG5k45O95ucc,6370
+pyrest/images.py,sha256=za0JyBXRcIBrC8o9FmUvHscLLvL5p9LgpZVGTGvQmDM,4318
+pyrest/store.py,sha256=6SKebw9-S3prxeR4ceLV_mwxMTQq2y5iE4FsAld2kk0,303
+pyrest/variable.py,sha256=uEjTPKlTr66V5eGYgTyxbiJ1F46jexyT2_kE0o_0lTk,4328
+snapyrest/__init__.py,sha256=N3zq19uIclbcjpZneD_d-U8RJEQKQIis1O2szvIxWP8,132
+snapyrest/api.py,sha256=9zgH9RQitHnqHq738HR2aWDe15MxAa4TG5k45O95ucc,6370
+snapyrest/images.py,sha256=za0JyBXRcIBrC8o9FmUvHscLLvL5p9LgpZVGTGvQmDM,4318
+snapyrest/store.py,sha256=6SKebw9-S3prxeR4ceLV_mwxMTQq2y5iE4FsAld2kk0,303
+snapyrest/variable.py,sha256=ZJgvaVDtIN09fO3FD3SoHhpVHHyhnVGN5ZQODNnIiAU,4330
+snapyrest-0.2.0.dist-info/LICENSE,sha256=RXxj0Ca4rQzA2f37j97B2ERXMHGuuqqIitnMEg2f5_s,35066
+snapyrest-0.2.0.dist-info/METADATA,sha256=xYd4weBH0uAPvN9ZVCWMWdMFcMhEpVqGrT_sQ0aocQ8,13455
+snapyrest-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+snapyrest-0.2.0.dist-info/top_level.txt,sha256=HYyOwce3Gs8zrBCG5a4BTVhH5jDP0ssKrMnlqT0zkM8,10
+snapyrest-0.2.0.dist-info/RECORD,,
