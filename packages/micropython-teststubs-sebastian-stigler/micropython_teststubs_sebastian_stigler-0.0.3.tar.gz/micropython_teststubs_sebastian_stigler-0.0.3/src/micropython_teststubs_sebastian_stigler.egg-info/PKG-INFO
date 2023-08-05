@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: micropython-teststubs-sebastian-stigler
+Version: 0.0.3
+Summary: Stub files for some micropython modules
+Home-page: https://in-stigler.htw-aalen.de/gitea/vorlesung-pes/micropython_teststubs
+Author: Sebastian Stigler
+Author-email: sebastian.stigler@hs-aalen.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Micropython teststubs
+
+Stub files for some micropython modules
+
+# Installation
+
+```bash
+pip install micropython_teststubs_sebastian_stigler
+```
+
+
+
