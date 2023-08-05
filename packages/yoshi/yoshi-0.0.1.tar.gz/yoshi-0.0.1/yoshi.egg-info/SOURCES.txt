@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+myapp/__init__.py
+myapp/myapp.py
+yoshi.egg-info/PKG-INFO
+yoshi.egg-info/SOURCES.txt
+yoshi.egg-info/dependency_links.txt
+yoshi.egg-info/entry_points.txt
+yoshi.egg-info/top_level.txt
