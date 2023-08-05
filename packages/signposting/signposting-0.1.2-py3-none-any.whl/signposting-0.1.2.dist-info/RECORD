@@ -1,0 +1,13 @@
+signposting/__init__.py,sha256=W_f-H5jzl6PW3SMO8TyC5S83kXABGC7BBG1UJMIiVHo,1293
+signposting/__main__.py,sha256=V2JDLz_IqGbAsViQQDn9x4e35mmro7jWfXG_RT5qViw,185
+signposting/cli.py,sha256=nOjwYoZgSSVWfgSuCj7lEuV8oWwvn9kLn6czJ0BnIzc,2921
+signposting/linkheader.py,sha256=GOO3T-g94z9QL9Z8in6r9fYuhFdhcr7gatOmIqn84qM,6597
+signposting/resolver.py,sha256=d3OqasROIBP7xNvNM0-xVslyTNP974-4pB4A_vNQIOY,2105
+signposting/signpost.py,sha256=gptbj30OsKGDqbKAXGdrrVolAx0F9NpDlvS83UaFCa8,8864
+signposting-0.1.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+signposting-0.1.2.dist-info/METADATA,sha256=FHV7t3Iqf32_YGF_DiXrJPUG0mcZhGk5g1fZnBIRXPM,8240
+signposting-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+signposting-0.1.2.dist-info/entry_points.txt,sha256=l8YQDevuyVEmLtER7IqYBsX1mGxhP7ESKBsjpwfnhdg,54
+signposting-0.1.2.dist-info/top_level.txt,sha256=hYgVi0__dWlb0TOqVWJpIM2MFC1sfIoXS4y-Ipk3uXw,12
+signposting-0.1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+signposting-0.1.2.dist-info/RECORD,,
