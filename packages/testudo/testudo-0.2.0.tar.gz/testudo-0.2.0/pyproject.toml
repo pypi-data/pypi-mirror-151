@@ -1,0 +1,72 @@
+[tool.pdm]
+includes = []
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.1.2",
+    "pytest-cov>=3.0.0",
+    "pytest-mock>=3.7.0",
+    "pylint>=2.13.7",
+    "mypy>=0.950",
+    "flake8>=4.0.1",
+    "bandit>=1.7.4",
+    "black>=22.3.0",
+    "typeguard>=2.13.3",
+    "pytest-xdist>=2.5.0",
+]
+
+[tool.pdm.scripts.publish-test]
+cmd = "twine upload -r testpypi dist/*"
+
+[tool.pdm.scripts.publish]
+cmd = "twine upload dist/*"
+
+[tool.pdm.scripts.test-deploy]
+shell = "pdm build && ssh typ-e -t 'rm /home/eugene/testudo-*-py3-none-any.whl'; rsync -Pparvzy dist/testudo-*-py3-none-any.whl typ-e:/home/eugene/ && ssh typ-e -t 'sudo pip3 install --force-reinstall /home/eugene/testudo-*-py3-none-any.whl && sudo supervisorctl restart borg-backup-to-ed-209'"
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
+
+[project]
+name = "testudo"
+version = "0.2.0"
+description = "A wrapper for commands to be run as periodic tasks while reporting on their results/errors to legiond. Intended to be integrated with supervisord, should work well with systemd in theory."
+authors = [
+    { name = "Eugene Kovalev", email = "eugene@kovalev.systems" },
+    { name = "Eugene Kovalev", email = "eugene@kovalev.systems" },
+]
+dependencies = [
+    "click<9.0.0,>=8.0.3",
+    "funcy<2.0,>=1.16",
+    "legion-utils<1.0.0,>=0.2.7",
+    "pyyaml<7.0,>=6.0",
+    "pydantic<2.0.0,>=1.8.2",
+    "typeguard<3.0.0,>=2.13.2",
+    "types-pyyaml>=6.0.7",
+    "logzero<2.0.0,>=1.7.0",
+]
+requires-python = ">=3.8,<4.0"
+readme = "README.md"
+license-expression = "GPL-3.0-only"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.urls]
+repository = "https://gitlab.com/legion-robotnik/testudo"
+documentation = "https://gitlab.com/legion-robotnik/testudo"
+
+[project.scripts]
+testudo = "testudo.cli:main"
+
+[project.optional-dependencies]
