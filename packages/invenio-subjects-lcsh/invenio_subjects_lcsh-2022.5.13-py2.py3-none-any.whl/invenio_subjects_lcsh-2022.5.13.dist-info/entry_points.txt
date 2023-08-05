@@ -1,0 +1,6 @@
+[console_scripts]
+invenio-subjects-lcsh = invenio_subjects_lcsh.cli:main
+
+[invenio_rdm_records.fixtures]
+invenio_subjects_lcsh = invenio_subjects_lcsh.vocabularies
+

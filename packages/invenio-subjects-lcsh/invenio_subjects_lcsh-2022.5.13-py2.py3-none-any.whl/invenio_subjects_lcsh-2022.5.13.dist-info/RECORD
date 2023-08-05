@@ -1,0 +1,16 @@
+invenio_subjects_lcsh/__init__.py,sha256=h2J7mXv24ekd0Ki4IyUIN74gANKHt9h5f5i25MOK-QA,308
+invenio_subjects_lcsh/cli.py,sha256=yXGADzAYOx8i2H2oZpeVL6DLa-uqHsNAupyeqxRbQ5U,853
+invenio_subjects_lcsh/extractor.py,sha256=vrIN33knCeTQCjdoZZdC4suJul6iLk6oef4C7WMRzJc,1651
+invenio_subjects_lcsh/writer.py,sha256=6I8t0UF2uSRo8Ry2N5Vt6KitgrD6RyBJPAcn4tDU8gw,1020
+invenio_subjects_lcsh/download/__init__.py,sha256=1tvBMsk3R_nrlbygbSP_F0mgyKCjvpiUHYTwxGLGYeg,315
+invenio_subjects_lcsh/download/download.py,sha256=g5WzNZMCV1F_UUgwm79YouqCXceIZiqGvnJaklKDuWQ,729
+invenio_subjects_lcsh/vocabularies/__init__.py,sha256=HIe6ZBMDK0biZFHbvq7fbhbMWZtY9lm-18t_GxKUhMQ,251
+invenio_subjects_lcsh/vocabularies/subjects_lcsh.yaml,sha256=qEJWe8kSsRUDCCmhU03Uwl8e-lP-hW2JirKz6XGVt1o,52497111
+invenio_subjects_lcsh/vocabularies/vocabularies.yaml,sha256=aiDpYKLN-JxTPZvFMFWny9EhIdPBFPEHnq1iAVdOTE4,195
+invenio_subjects_lcsh-2022.5.13.dist-info/AUTHORS.rst,sha256=-IBoRF6JEJXuBQhhbjsq6jDJ_byE9XsHxn1SF-lyQws,330
+invenio_subjects_lcsh-2022.5.13.dist-info/LICENSE,sha256=VvMGg1sN8IqzzzRa_ZraLkZR9I6iEQsSy9nKNMdaj-c,1081
+invenio_subjects_lcsh-2022.5.13.dist-info/METADATA,sha256=G19cry8pulm00Wkkyh3FnLlmmB6X1trKGFSPazSmkxQ,3187
+invenio_subjects_lcsh-2022.5.13.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+invenio_subjects_lcsh-2022.5.13.dist-info/entry_points.txt,sha256=vZlgIPyDaoslHmQbKoC2iLmZL-KFUanGaCIl6FJfjJk,165
+invenio_subjects_lcsh-2022.5.13.dist-info/top_level.txt,sha256=xgsL5iXlqNgvmm-sYBBCORUNPccb3_q_dyiLVA4R62k,22
+invenio_subjects_lcsh-2022.5.13.dist-info/RECORD,,
