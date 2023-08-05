@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/animl/DetectMD.py
+src/animl/FileManagement.py
+src/animl/ImageCropGenerator.py
+src/animl/PredictImages.py
+src/animl/StrikeforceScraper.py
+src/animl/SymlinkClasses.py
+src/animl/TFDetector.py
+src/animl/ZooniverseFunctions.py
+src/animl/__init__.py
+src/animl.egg-info/PKG-INFO
+src/animl.egg-info/SOURCES.txt
+src/animl.egg-info/dependency_links.txt
+src/animl.egg-info/top_level.txt
