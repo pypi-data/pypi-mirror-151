@@ -1,0 +1,21 @@
+#################################
+# Currencies configuration file
+# Use this model:
+#
+# currency_code:
+#   name: Currency Name
+#   entry_points:
+#     - "ws://localhost:9944"
+#   ss58_format: 42
+#################################
+g1:
+  name: Ğ1
+  entry_points:
+    - "ws://localhost:9944"
+  ss58_format: 42
+
+g1-test:
+  name: Ğ1-test
+  entry_points:
+    - "ws://localhost:9944"
+  ss58_format: 42
