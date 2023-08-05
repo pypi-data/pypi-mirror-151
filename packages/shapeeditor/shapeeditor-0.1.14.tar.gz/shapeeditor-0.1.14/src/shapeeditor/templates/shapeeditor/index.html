@@ -1,0 +1,45 @@
+{% extends "./base.html" %}
+{% load i18n static %}
+
+{% block content %}
+<div id="editor_gtfs"> <!-- Into the Vue app -->
+  {% include './top_bar.html' %}
+  {% include './map_section.html' %}
+
+  <div class="table-wrapper se-horizontal-menu">
+  {% include './horizontal_tabs_menu.html' %}
+
+    <div class="tab-content se-sections-content" id="tab_content">
+
+      {% include './agency_section.html' %}
+      {% include './shapes_section.html' %}
+      {% include './stops_section.html' %}
+      {% include './routes_section.html' %}
+      {% include './trips_section.html' %}
+      {% include './stop_times_section.html' %}
+      {% include './calendar_section.html' %}
+      {% include './scheme_section.html' %}
+
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block customjs %}
+<script>
+ //////////////////////////////////////////////////
+
+ //// Constrained map in the work area
+ // Map need a layers group, we're
+ // adding only base layer, streetElementNodes will be next
+ // base layer mainly has routes and buildings.
+ const extent_area = {{ extent }};
+
+ const center = {{ center }};
+
+ const routing_machine_url = "{{ routing_machine_url }}";
+
+ var streetElementGroupHistory = {{ history | safe }};
+
+</script>
+{% endblock %}
