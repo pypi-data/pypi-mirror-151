@@ -1,0 +1,9 @@
+pycairo
+toolz
+colour
+svgwrite
+cairosvg
+Pillow
+
+[latex]
+latextools
