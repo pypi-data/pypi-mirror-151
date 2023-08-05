@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pxmcmc
+Version: 0.1.2
+Summary: Proximal Markov Chain Monte Carlo
+Home-page: https://github.com/auggiemarignier/pxmcmc
+License: GPL-3.0-or-later
+Author: Auggie Marignier
+Author-email: augustin.marignier.14@ucl.ac.uk
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: cartopy
+Provides-Extra: docs
+Requires-Dist: Cartopy (>=0.19.0,<0.20.0); extra == "cartopy"
+Requires-Dist: astropy (>=5.0.4,<6.0.0)
+Requires-Dist: greatcirclepaths (>=1.1.0,<2.0.0)
+Requires-Dist: h5py (>=3.3.0,<4.0.0)
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: pys2let (>=2.2.3,<3.0.0)
+Requires-Dist: pyssht (>=1.4.0,<2.0.0)
+Requires-Dist: scipy (>=1.7.0,<1.8.0)
+Requires-Dist: sphinx (>=4,<5); extra == "docs"
+Requires-Dist: sphinx-rtd-theme (==0.5); extra == "docs"
+Project-URL: Documentation, https://pxmcmc.readthedocs.io/en/latest/index.html
+Project-URL: Repository, https://github.com/auggiemarignier/pxmcmc
+Description-Content-Type: text/markdown
+
+[![Documentation Status](https://readthedocs.org/projects/pxmcmc/badge/?version=latest)](https://pxmcmc.readthedocs.io/en/latest/?badge=latest)
+
+# Python ProxMCMC
+
+## Installation
+
+Available on [pypi](https://pypi.org/project/pxmcmc/)
+
+```bash
+pip install pxmcmc
+```
+
+If installing from source it recommended to use [poetry](https://python-poetry.org/)
+
+```bash
+git clone https://github.com/auggiemarignier/pxmcmc
+cd pxmcmc
+poetry install
+source <ENVIRONMENT_LOCATION>/bin/activate
+pytest
+```
+
+## Documentation
+
+Full documentation available on [readthedocs](https://pxmcmc.readthedocs.io/en/latest/?badge=latest).
+
+## Examples
+
+Examples of how to use this code are found in the `experiments` directory.  Note that we don't provide any example input data files for the various experiments here, though can be made available upon request.
+
+```bash
+cd experiments/phasevelocity
+python main.py --help
+```
+
