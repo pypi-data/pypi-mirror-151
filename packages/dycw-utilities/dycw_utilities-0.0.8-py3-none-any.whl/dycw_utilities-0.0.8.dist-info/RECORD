@@ -1,0 +1,9 @@
+dycw_utilities/__init__.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+dycw_utilities/click.py,sha256=3_MR6Nt0JelqNkc6kWUPrGMzMtShf8AA_7s5ayMheLo,628
+dycw_utilities/hypothesis/__init__.py,sha256=iM6txmMYKlk05nE3QAT7j5zQ9nYBmq6CwpQIftUj1og,619
+dycw_utilities/hypothesis/tempfile.py,sha256=jQBJo22JsXbMh6D1uIrnEw-erkxwWZ-CyWzO5NDTzOI,239
+dycw_utilities/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dycw_utilities/tempfile.py,sha256=tH3aT82sAqKtokjryU7swsVuVqanscZ782ExHXnh898,1480
+dycw_utilities-0.0.8.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+dycw_utilities-0.0.8.dist-info/METADATA,sha256=HYPTWGIvnL796RAsEDLqfAyKH_GkgX0XbeCAGXypZ8A,424
+dycw_utilities-0.0.8.dist-info/RECORD,,
