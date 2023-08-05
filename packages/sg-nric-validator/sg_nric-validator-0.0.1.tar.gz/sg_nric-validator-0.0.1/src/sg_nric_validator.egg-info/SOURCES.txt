@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/sg_nric/__init__.py
+src/sg_nric/validator.py
+src/sg_nric_validator.egg-info/PKG-INFO
+src/sg_nric_validator.egg-info/SOURCES.txt
+src/sg_nric_validator.egg-info/dependency_links.txt
+src/sg_nric_validator.egg-info/top_level.txt

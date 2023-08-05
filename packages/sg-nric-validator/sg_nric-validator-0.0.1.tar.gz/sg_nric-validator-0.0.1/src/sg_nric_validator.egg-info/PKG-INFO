@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sg-nric-validator
+Version: 0.0.1
+Summary: Validation tools for Singapore NRIC
+Home-page: https://github.com/kyorilys/SGNRICValidator
+Author: kyorilys
+Author-email: kyorilys_256@live.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kyorilys/SGNRICValidator/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NRIC MY Validator
+Python NRIC Singapore validator
+
+Simple Validator just for Singapore NRIC validation
+
+There is only 1 function validate_nric.
+
+validate_nric  will be used to validate Singaporean NRIC , it 
+will return true if the Singaporeb NRIC  is input correctly.
+
+You just need call the function as the following:
+
+    
+    from sg_nric import validator
+
+
+    def example():
+        number = "S1240535I"
+        is_nric_valid = validator.validate_nric(number)
+    
+        if is_nric_valid:
+            print("Is Valid")
+        else:
+            print("Not Valid NRIC")
+
+
+#TODO Feature
+1. HTML / Javascript validation if for Django
+2. SG NRIC generator __*(Unlikely)*__
+
+
