@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dime-xai
+Version: 0.0.3a5
+Summary: Explains DIETClassifier model predictions in Rasa chatbot framework.
+Home-page: https://github.com/thisisishara/dime-xai
+Author: Ishara Dissanayake
+Author-email: thisismaduishara@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: GPU
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+
+Dime core package long explanation.
+

@@ -1,0 +1,1 @@
+Dime core package long explanation.
