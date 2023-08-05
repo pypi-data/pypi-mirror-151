@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: sphinx-tsegsearch
+Version: 1.1.1
+Summary: Sphinx extension to split searchword with TinySegmenter
+Home-page: https://github.com/whosaysni/sphinx-tsegsearch/
+License: MIT
+Keywords: sphinx,japanese,word,segmentation,search
+Author: Yasushi Masuda
+Author-email: whosaysni@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Dist: install_requires
+Requires-Dist: install_requires
+Project-URL: Repository, https://github.com/whosaysni/sphinx-tsegsearch/
+Description-Content-Type: text/x-rst
+
+sphinx-tsegsearch
+===================
+
+A Sphinx extension for tokenize japanese query word with TinySegmenter.js
+
+This extension tweaks searchtools.js of sphinx-generated html document
+to tokenize Japanese composite words.
+
+Since Japanese is an agglutinative language, query word for document search
+usually becomes composite form like 'システム標準' (system standard).
+This makes difficult to search pages containing phrase such as
+'システムの標準', '標準システム', because TinySegmenter.py (Sphinx's default
+Japanese index tokenizer) tokenizes 'システム' and '標準' as indexes.
+
+sphinx-tsegsearch patches searchtools.js to override query tokinization
+step so that query input is re-tokenized by TinySegmenter.js (original
+JavaScript implementation of TinySegmenter).
+As a result, roughly say, this tiny hack improves recall of Japanese
+document search in exchange of precision.
+
+Usage:
+
+#. Add 'sphinx_tsegsearch' in conf.extensions
+#. Rebuild document.
+
