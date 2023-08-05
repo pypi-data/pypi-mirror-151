@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: alectiocli
+Version: 0.1.4
+Summary: 
+Author: Adwitiya
+Author-email: adwitiya.trivedi@alectio.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: alectio-sdk (>=0.6.21,<0.7.0)
+Requires-Dist: inquirer (>=2.9.2,<3.0.0)
+Requires-Dist: pyfiglet (>=0.8.post1,<0.9)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: rich (>=12.2.0,<13.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.21,<0.18.0)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
+Requires-Dist: typer[all] (>=0.4.0,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Alectio-CLI  🚀 🚀
+
+`Alectio-cli` is [Alectio's](https://portal.alectio.com/)'s official command-line interface (CLI)wrapper. It allows you to create  projects, experiments and do hybrid labeling tasks. 
+
+## Configuration
+
+### Setup
+
+> These setup instructions are for CLI usage only.
+
+We recommend installing `alectiocli` in your virtualenv rather than doing a global installation so you don't run into unexpected behavior with mismatching versions. 
+
+```sh
+pip insall alectiocli
+```
+
+### Authentication
+
+For usage of cli, you first need to authenticate with Alectio's server.
+
+```sh
+alectio-cli --login
+```
+![alt text](def6429b-7f66-431e-903c-caf1bae4c7df.png)
+This will redirect you to [Alectio's](https://portal.alectio.com/) platform and once you login, it will generate a authentication token, which you need to copy and paste it on the command line.
+
+If you wish to force login or refresh token after the authentication is done, use:
+```sh
+alectio-cli --login --refresh
+```
+## Usage
+
+If you wish to get more information about any command within `alectio-cli`, you can execute `alectio-cli --help` command.
+
+### Common `alectio-cli --help` Options
+
+- `login `: Login for token authentication
+- `project `: A sub-app which handles all project related tasks
+- `experiment `: A sub-app which handles all experiment related tasks
+
+### Common `alectio-cli project --help` Options
+
+- `create `: Create an alectio project
+- `list `: List all the projects of the user
+- `delete `: Delete a project
+- `hybrid-labeling`:
+
+### Projection Creation:
+
+```sh
+alectio-cli project create [OPTIONS] YAML_FILE LABEL_FILE
+```
+A folder Alectio_cli_sample_yamls will be generated which will contain sample YAML files for doing various tasks like:
+- Yaml file for creating an experiment
+- Yaml file for manual curation experiment
+- Yaml file for Hybrid Labeling Task
+####  Sample YAML FILE for creating project
+```yml
+name: "Sample Project"
+description: "test "
+type: "Image Classification"
+alectio-dataset: "false"
+test_len: 0
+s3_bucket: 
+data_name: 
+alectio_dir: 
+pre_loaded_model: 
+project_type: "curation"
+data_format: "image"
+docker_url: 
+premise: "true"
+train_len: 10000
+dataset_source: "on-prem"
+labels: True
+```
+#### List Projects:
+```sh
+alectio-cli project list
+```
+#### Project Deletion:
+```sh
+alectio-cli project delete <proj_id>
+```
+
+#### Hybrid Labeling Task:
+```sh
+alectio-cli project hybrid-labeling [OPTIONS] YAML_FILE
+```
+
+
+
+
+### Experiment
+
+#### Common `alectio-cli experiment --help` Options
+
+- `create `: Create an alectio experiment
+- `run `: Runs an alectio experiment
+- 
+
+#### Experiment Creation
+```sh
+alectio-cli experiment create [OPTIONS] YAML_FILE
+```
+###  Sample YAML FILE for creating project
+```yml
+project_id: '22977034a12b11ecaf91cbe75e9b38c0'
+name: 'Test Experiment'
+n_records: 100
+limits: False
+qs: [] #Empty for auto_al,ml_driven. To be filled for manual curation.
+seed: 120
+labeling_type: pre_labeled
+is_sdk_setup: False
+is_curr_fully_labeled: False
+assoc_labeling_task_id: ''
+```
+
+#### Run Experiment
+```sh
+alectio-cli experiment run [OPTIONS] PYTHON_FILE EXPERIMENT_FILE
+```
+> ℹ️ Note that this cli is still in development phase, instability might occur.
+
+## Future
+We are continually expanding and improving the offerings of this application. Some interactions may change over time, but we will do our best to retain backwards compatibility.

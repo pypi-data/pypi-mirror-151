@@ -1,0 +1,3 @@
+[console_scripts]
+alectio-cli=alectiocli.main:app
+
