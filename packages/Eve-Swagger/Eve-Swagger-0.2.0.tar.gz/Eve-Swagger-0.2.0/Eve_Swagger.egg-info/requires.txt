@@ -1,0 +1,15 @@
+eve
+
+[dev]
+pytest
+tox
+jsonschema
+pyrsistent<=0.16
+
+[docs]
+
+[tests]
+pytest
+tox
+jsonschema
+pyrsistent<=0.16
