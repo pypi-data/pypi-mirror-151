@@ -1,0 +1,6 @@
+setup.py
+snirf_quality_report.egg-info/PKG-INFO
+snirf_quality_report.egg-info/SOURCES.txt
+snirf_quality_report.egg-info/dependency_links.txt
+snirf_quality_report.egg-info/requires.txt
+snirf_quality_report.egg-info/top_level.txt
