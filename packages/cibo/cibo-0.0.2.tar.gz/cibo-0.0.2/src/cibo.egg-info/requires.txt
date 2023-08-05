@@ -1,0 +1,15 @@
+flask>=1.1.2
+pydantic>=1.6.2
+apispec>=4.2.0'
+
+[:python_version < "3.8"]
+typing-extensions
+
+[async]
+asgiref>=3.2
+
+[dotenv]
+python-dotenv
+
+[yaml]
+pyyaml
