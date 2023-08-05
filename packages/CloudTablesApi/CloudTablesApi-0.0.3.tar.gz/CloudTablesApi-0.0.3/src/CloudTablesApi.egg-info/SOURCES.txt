@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/CloudTablesApi/__init__.py
+src/CloudTablesApi.egg-info/PKG-INFO
+src/CloudTablesApi.egg-info/SOURCES.txt
+src/CloudTablesApi.egg-info/dependency_links.txt
+src/CloudTablesApi.egg-info/requires.txt
+src/CloudTablesApi.egg-info/top_level.txt
