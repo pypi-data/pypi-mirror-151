@@ -1,0 +1,5 @@
+keyterms-job:
+    image: {{ KEYTERMS_DOCKER_IMAGE }}
+    environment:
+        DJANGO_SETTINGS_MODULE: edx_key_terms_api.settings.tutor
+    depends_on: {{ [("mysql", RUN_MYSQL)]|list_if }}

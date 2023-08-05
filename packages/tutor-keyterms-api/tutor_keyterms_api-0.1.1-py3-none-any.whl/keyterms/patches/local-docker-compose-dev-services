@@ -1,0 +1,5 @@
+keyterms:
+    command: ./manage.py runserver 0.0.0.0:18500
+    ports:
+        - "18500:18500"
+        

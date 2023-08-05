@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: keyterms
+  labels:
+    app.kubernetes.io/name: keyterms
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: keyterms
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: keyterms
+    spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+      containers:
+        - name: keyterms
+          image: {{ KEYTERMS_DOCKER_IMAGE }}
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DJANGO_SETTINGS_MODULE
+              value: edx_key_terms_api.settings.tutor
+          securityContext:
+            allowPrivilegeEscalation: false
