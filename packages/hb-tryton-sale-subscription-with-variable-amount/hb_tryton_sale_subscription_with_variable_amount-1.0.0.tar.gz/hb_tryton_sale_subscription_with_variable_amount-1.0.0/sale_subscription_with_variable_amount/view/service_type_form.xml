@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<form>
+    <label name="name"/>
+    <field name="name"/>
+    <label name="company"/>
+    <field name="company"/>
+    <label name="consumption_hook"/>
+    <field name="consumption_hook"/>
+    <label name="invoice_hook"/>
+    <field name="invoice_hook"/>
+    <group id="hook_properties" colspan="4" string="Hook properties">
+    </group>
+</form>

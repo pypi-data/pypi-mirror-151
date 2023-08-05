@@ -1,0 +1,6 @@
+<data>
+    <xpath expr="/form/notebook/page" position="after">
+        <page id="hook_properties" string="Hook properties for the service type">
+        </page>
+    </xpath>
+</data>

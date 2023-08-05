@@ -1,0 +1,78 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+
+msgctxt "field:product.configuration,service_type:"
+msgid "Service type"
+msgstr "Type de service"
+
+msgctxt "field:product.configuration.service,company:"
+msgid "Company"
+msgstr "Société"
+
+msgctxt "field:product.configuration.service,service_type:"
+msgid "Service type"
+msgstr "Type de service"
+
+msgctxt "field:sale.subscription.service,service_type:"
+msgid "Service type"
+msgstr "Type de service"
+
+msgctxt "field:sale.subscription.service.type,company:"
+msgid "Company"
+msgstr "Société"
+
+msgctxt "field:sale.subscription.service.type,consumption_hook:"
+msgid "Hook to create the consumption line"
+msgstr "Hook pour la création de la ligne de consommation"
+
+msgctxt "field:sale.subscription.service.type,invoice_hook:"
+msgid "Hook to create the invoice line"
+msgstr "Hook pour la création de la ligne de facture"
+
+msgctxt "field:sale.subscription.service.type,name:"
+msgid "Name of the type of service"
+msgstr "Nom du type de service"
+
+msgctxt "help:sale.subscription.service.type,consumption_hook:"
+msgid "Defined the hook to use for get the quantity"
+msgstr "Définit le hook a utiliser pour obtenir la quantité"
+
+msgctxt "help:sale.subscription.service.type,invoice_hook:"
+msgid "Defined the hook to use for get the quantity or price unit"
+msgstr "Définit le hook à utiliser pour obtenir la quantité ou le prix unitaire"
+
+msgctxt "model:ir.action,name:act_service_type"
+msgid "Service types"
+msgstr "Types de service"
+
+msgctxt "model:ir.ui.menu,name:menu_service_type"
+msgid "Service types"
+msgstr "Types de service"
+
+msgctxt "model:product.configuration.service,name:"
+msgid "product Configuration Service"
+msgstr "product Configuration Service"
+
+msgctxt "model:sale.subscription.service.type,name:"
+msgid "Type of the subscription's service"
+msgstr "Type de service pour l'abonnement"
+
+msgctxt "selection:sale.subscription.service.type,consumption_hook:"
+msgid "The quantity is defined on the subscription line"
+msgstr "La quantité est définit sur la ligne d'abonnement"
+
+msgctxt "selection:sale.subscription.service.type,invoice_hook:"
+msgid "The quantity and price unit are defined on the subscription line"
+msgstr "La quantité et le prix unitaire sont définis sur la ligne d'abonnement"

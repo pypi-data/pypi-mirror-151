@@ -1,0 +1,133 @@
+#########################################
+Hb Bank Statement Machine Learning Module
+#########################################
+
+...
+
+
+*******
+Install
+*******
+
+Dependencies for ArchLinux
+
+.. code-block::
+
+    sudo pacman -S cairo pkgconf gobject-introspection
+
+
+Dependencies for debian
+
+
+.. code-block::
+
+    sudo apt-get install libcairo2-dev libgirepository1.0-dev
+
+
+Install the package
+
+.. code-block::
+
+    # installs python deps
+    pip install hb_tryton_sale_subscription_with_variable_amount
+    # install the module 
+    trytond-admin -u sale_subscription_with_variable_amount --activate-dependencies
+
+
+Install the db by hb-tryton-devtools
+
+.. code-block::
+
+    pip install git+https://gitlab.com/hashbangfr/tryton-modules/hb_tryton_devtools.git#egg=hb_tryton_devtools
+    export TRYTON_DATABASE_URI=postgresql:///
+    export TRYTON_DATABASE_NAME=test
+    hb-tryton-admin create-db --modules sale_subscription_with_variable_amount
+
+
+************
+Test package
+************
+
+The package need pytest and hb-tryton-devtools
+
+.. code-block::
+
+    pip install pytest pytest-cov
+    pip install git+ssh://git@gitlab.com/hashbangfr/tryton-modules/hb_tryton_devtools.git#egg=hb_tryton_devtools
+
+
+Run the test with pytest with environ variable
+
+.. code-block::
+
+    export TRYTON_DATABASE_URI=postgresql:///
+    export TRYTON_DATABASE_NAME=test
+    pytest sale_subscription_with_variable_amount/tests
+
+*****
+Usage
+*****
+
+The goal of this module is to improve the sale_subcription to define variable amount.
+
+The viariable amount will be get by variable quantity or variable unit price. By default the
+behaviour is the same as the main module **sale_subscription** with fixed quantity and fixed
+unit price.
+
+The new object is **sale.subscription.service.type**, this modele defined hooks on the 
+consumption line and the invoice line to put the good quantity and the good unit price.
+
+It is possible to define the service type in  **Product / Configuration / Service types**.
+The default service type can be added **Product / Configuration / Configuration**.
+
+To define new hook you have to inherit the model
+
+.. code-block::
+
+    from trytond.pool import PoolMeta, Pool
+
+
+    class ServiceType(metaclass=PoolMeta):
+        __name__ = 'sale.subscription.service.type'
+
+        @classmethod
+        def __setup__(cls):
+            super(ServiceType, cls).__setup__()
+            cls.consumption_hook_.selection.append(
+                ('timesheet', "Get quantity from the timesheet"))
+            cls.invoice_hook.selection.append(
+                ('amount_grid_for_timesheep', "Get the unit price in function of quantity"))
+
+        def consumption_hook_timesheet(self, line):
+            # here another code on subscription line get the méthod to get the
+            # timesheet to invoice : this méthod is not describe here
+            nb_hours = line.line.get_hours_qty_to_invoice()
+            line.quantity = nb_hours
+
+        def invoice_hook_amount_grid_for_timesheep(self, line):
+            # a model define the grid, it is not the goal of this exemple to define
+            # this modele
+            Grid = Pool().get('amount_grid_for_timesheep')
+            unit_price = Grid.get_the_unitprice_for(line.quantity)
+            line.unit_price = unit_price
+            line.on_change_with_amount()
+
+
+In the view formulaire some groups / page are added 
+
+* sale.subscription.line [FORM] /form/notebook/page@id=hook_properties
+* sale.subscription.service [FORM] /form/group@id=hook_properties
+* sale.subscription.service.type [FORM] /form/group@id=hook_properties
+
+this locations are defined to add easily all the need fields
+
+
+*********
+CHANGELOG
+*********
+
+1.0.0 (2022-05-17)
+------------------
+
+* Added hook mecanisms to get quantity and unit price
+* Added configuration for the service type
