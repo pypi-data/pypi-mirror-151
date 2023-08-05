@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: archiverr
+Version: 0.0.2
+Summary: Archiverr is a tool to archive files and folders based on his sha1
+Home-page: https://github.com/theohrlmnn/archiver
+Author: Théo Hurlimann
+Author-email: author@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (>=58)
+Requires-Dist: Flask (>=2.1.1)
+Requires-Dist: numpy (>=1.22.0)
+Requires-Dist: pandas (>=1.4.2)
+Requires-Dist: py7zr (>=0.17.4)
+Requires-Dist: toml (>=0.10.0)
+Requires-Dist: orjson (>=3.6.7)
+
+Ceci est un test
