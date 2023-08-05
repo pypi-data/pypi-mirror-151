@@ -1,0 +1,12 @@
+akithon/__init__.py,sha256=F0DQUt9n8JiOg-Mobr0QA0m9RqSQHL5mgxHiMHmKqdw,97
+akithon/version.py,sha256=uXF8YVntQAcbqNAWitji2kDUAzZqied1qK684vHSv1Q,95
+akithon/_client/__init__.py,sha256=dfwMW4yvXPdjftlw25B2dUB4DGPmPiWhC2K258fAuh0,165
+akithon/_client/akinator.py,sha256=aeHdXGOctZY2OuWHRS4gOah380c0cl_fLAq7tZ4q_pE,4811
+akithon/_client/constants.py,sha256=j4NhpPnilvyVB7vLCLImFHjZpSf_H58GZ6nIMxAewAM,367
+akithon/_client/functions.py,sha256=OMaZebjZEE_DCwIKC0kb1yRf4Ujzha2eengQNjqKFUM,1864
+akithon/_client/session.py,sha256=J8XvqrSceW9YM4Rmdqs9kePPOPTfsJK7CnJsjwOjhok,320
+akithon-0.1.1.dist-info/LICENSE,sha256=1h-4gde61RE7P4_IqvWzvf7CEFuazK0wV3phI8H7wS8,1066
+akithon-0.1.1.dist-info/METADATA,sha256=W1SF2KBcW3m9kTVcIbNZ8CcV1ZGYlL1uOMWpbnxgpRA,307
+akithon-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+akithon-0.1.1.dist-info/top_level.txt,sha256=KGMNNp78RH0SSJCQHeh7iVviSEYSmzwTMIWHB4AAb74,8
+akithon-0.1.1.dist-info/RECORD,,
