@@ -1,0 +1,12 @@
+confio/__init__.py,sha256=iTraLCjZUpLCF45WI51RZYL-iVKvUmqJIM8RYVygRAw,410
+confio/__meta__.py,sha256=P4JUfjQVRq2cDBc8Ome8LtNyTgKLCctSOWwDgTpUrBI,83
+confio/base.py,sha256=6hIfnmpZqtx6MkIamSqeX0mDs88njSN8Qotgcu-Ml3Q,9111
+confio/consul.py,sha256=6W2Wbvjj7IcDDpKqxVClm73yY-B2ZRCsybvnEp0IWUs,4944
+confio/db.py,sha256=wj5sKkmUvxzPAw2PwQ4FaP8Cd6cCzpFJT51J3J8eNFY,11865
+confio/fs.py,sha256=SBqM412aMOJ6y06uXWZ45cgPa6zBJITcTrmWgBMCNJs,12035
+confio/parser.py,sha256=dSGXNdgAeeIyM1f6UHghSIL0n3G9EisWPrVpsNB4f5Y,2611
+confio-0.2.7.dist-info/LICENSE,sha256=ln96iLsPjdbvPcO1cE6zGT1n9SvJ1eMq3pEPSeOv8tk,1094
+confio-0.2.7.dist-info/METADATA,sha256=yDgX5E240vyY4AIspqYPq-_BuHs511-vw_o9CsgkDsI,9088
+confio-0.2.7.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+confio-0.2.7.dist-info/top_level.txt,sha256=7-aeYHI9UPuwCanjkeltE3bFgvwY1XH3fZQOmYtrpiM,7
+confio-0.2.7.dist-info/RECORD,,
