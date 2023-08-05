@@ -1,0 +1,11 @@
+cpacspy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpacspy/aeromap.py,sha256=LGQbWRIE_m1ZWvgQ0mtCc7gUUYbHrz6G8AfSyCCbdbA,21205
+cpacspy/aircraft.py,sha256=cHAHqZnQ0TBAm0wlgPOBYJpf5vDUpOKQwzQBC9CF2eM,4618
+cpacspy/cpacsfunctions.py,sha256=cABHkWW7-GXoy1g7VBxffxy7z4YqP-j719PFae7Lr0Q,16760
+cpacspy/cpacspy.py,sha256=jrV10Wc9RLtofDGSab3bx5jtRiiDfUwxKfy2So_Ed-s,7142
+cpacspy/utils.py,sha256=EtzgeKZ3OiXF74axT39GTKFXqX_C0zzspSg91LOigiY,1969
+cpacspy-0.0.10.dist-info/LICENSE.txt,sha256=0xtr3BGpTAGXyQgFI2CHQ7-FKZNICo64HL0DTQMzH7o,11344
+cpacspy-0.0.10.dist-info/METADATA,sha256=16knm4JuTkev5t1TGHP4-hvNzVVyuPwLfdGROCrpMEM,753
+cpacspy-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cpacspy-0.0.10.dist-info/top_level.txt,sha256=9SPVzaVi_GcxMf_yqXYHYgMINWHBpC1xFKUFvoXenJo,8
+cpacspy-0.0.10.dist-info/RECORD,,
