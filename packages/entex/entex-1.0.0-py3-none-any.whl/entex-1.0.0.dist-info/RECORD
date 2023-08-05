@@ -1,0 +1,9 @@
+entex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entex/metrices.py,sha256=ulfdk-rBvTncJpTHsyaKCcxp1sg84h6qRWz-H6DH5dY,3069
+entex/optimizator.py,sha256=fAcRGsyNK4MrrfA_wre8IKAkCN2EfeTr6hF_puIdRoE,3404
+entex/text_preprocessor.py,sha256=CN_zUZGw-qK-j5ul6JXa7cOoXPvAs-6C6IUnJS0I2L4,9810
+entex-1.0.0.dist-info/LICENSE,sha256=BDwhB3DG5XoPUkhS4ndEh2tmQFgR-Q4MGRkHLuJM4fM,1072
+entex-1.0.0.dist-info/METADATA,sha256=SBU7o0fVaS3zwLdxO-pBXEMOdve1zpHBsV-lWXRyIbU,835
+entex-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+entex-1.0.0.dist-info/top_level.txt,sha256=RCIUTmAbYRds9be2K7eOsnKZC3D0gg2h_iDHxEHuCno,6
+entex-1.0.0.dist-info/RECORD,,
