@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: dlib2mediapipe
+Version: 0.0.2
+Summary: A Python package that allows developers to transition from Dlib to MediaPipe FaceMesh or convert Dlib projects to MediaPipe.
+Home-page: UNKNOWN
+Author: Rohit Thomas ,Avinash S Kurup ,Boby Chaitanya Villari
+License: UNKNOWN
+Keywords: dlib to mediapipe ,dlib converter,dlib to mediapipe converter,face landmark detector
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: opencv-python
+Requires-Dist: mediapipe
+
+# Package to convert Dlib to Mediapipe 
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)   
+
+
+## Functionality of the Converter
+
+
+- Converts given input to 468 3-D facial landmark points
+- Converts 468 3-D facial landmark points to 2-D facial landmark points
+- Converts the facial landmark points to dlib's format
+
+
+## Usage
+
+- Make sure you have Python installed in your system.
+- Run Following command in the CMD.
+ ```
+  pip install dlib2mediapipe
+  ```
+
+
+ 
+
+## Run the following Script.
+ ```
+  python test.py
+ ```
+
+
+## Note 
+- We have tried to implement all the functionality, it might have some bugs also so please do ignore it or please try to solve that bug.
+
