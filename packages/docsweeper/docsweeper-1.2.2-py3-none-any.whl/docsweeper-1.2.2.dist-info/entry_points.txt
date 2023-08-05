@@ -1,0 +1,6 @@
+[console_scripts]
+docsweeper=_docsweeper.command_line:parse_args
+
+[flake8.extension]
+DOC100=flake8_plugin.Plugin:Plugin
+
