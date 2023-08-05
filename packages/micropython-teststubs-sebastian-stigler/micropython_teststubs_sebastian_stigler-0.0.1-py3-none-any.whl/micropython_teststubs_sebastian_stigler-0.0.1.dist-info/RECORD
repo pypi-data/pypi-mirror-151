@@ -1,0 +1,10 @@
+machine/__init__.py,sha256=-jHEr3W8A5Bs5Bjro_YPoZdAGzDZEvShMb3Zx8ywod0,1372
+micropython/__init__.py,sha256=z4901Vr6-uQsPcY1p9D-SY6REvD14Vrocaj_CxoYvKg,323
+network/__init__.py,sha256=1mgiyKSriWKX6IGF0h3Lj_79rKiHPk_rb4-qB97Br4U,1043
+ucollections/__init__.py,sha256=4QWeVYAFO3mYsA-oIn1UEY4oLXpAs5kshSRIj2sfNXw,278
+utime/__init__.py,sha256=jhLaOv_iqwYJCZmxuXgwWHzy9_H4tI8nXjrRv1xrWvM,321
+micropython_teststubs_sebastian_stigler-0.0.1.dist-info/LICENSE,sha256=L91pya00PFvXmhdpq3XE451eut8nazvq6bMg747BT5c,1106
+micropython_teststubs_sebastian_stigler-0.0.1.dist-info/METADATA,sha256=47-hhR8A6TlWKM_gRUgR5Kn1KsK-hjo7MsaEROcaS4s,950
+micropython_teststubs_sebastian_stigler-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+micropython_teststubs_sebastian_stigler-0.0.1.dist-info/top_level.txt,sha256=mIAVatT-WDONeuBw54nSRs0wYzJtxWfRK9QJ0tEk_OI,47
+micropython_teststubs_sebastian_stigler-0.0.1.dist-info/RECORD,,
