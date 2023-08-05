@@ -1,0 +1,9 @@
+sketch_document_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sketch_document_py/sketch_file/__init__.py,sha256=xRDgp7lekJ6FyMDj5v8NxguiDMXceI3NelCbX2Z40PE,21
+sketch_document_py/sketch_file/file.py,sha256=mLExi5RRMBW0zFnK8mdLhtPoENFn0emTIzfL4_GCOVQ,5738
+sketch_document_py/sketch_file_format/__init__.py,sha256=qSBld8-CBsuMQv_EuR0ro9m9amr_-1faBKkcFycQPxU,118
+sketch_document_py/sketch_file_format/types.py,sha256=D9O0Zjs1Dh4Sw54V0zP3vVmZp4SgIK6sJi-MXryPfcY,52074
+sketch_document_py-1.0.3.dist-info/LICENSE,sha256=VAoEXnXXKPuMG0HHp79gZXmmdKJSwcJIisauWpUXimU,1086
+sketch_document_py-1.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sketch_document_py-1.0.3.dist-info/METADATA,sha256=5KBsm1rSGSv3u0kl5qZuW9uXiO6q29PCO1aYUHj_upQ,3099
+sketch_document_py-1.0.3.dist-info/RECORD,,
