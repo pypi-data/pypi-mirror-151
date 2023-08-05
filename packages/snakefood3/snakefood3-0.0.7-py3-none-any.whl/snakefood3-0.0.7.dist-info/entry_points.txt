@@ -1,0 +1,3 @@
+[console_scripts]
+snakefood3=snakefood3.gen_deps:main
+
