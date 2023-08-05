@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: doujin
+Version: 3.0.12
+Summary: A mirror package for janda. Please install that instead.
+Home-page: https://github.com/sinkaroid/janda
+Author: janda
+License: UNKNOWN
+Description: ### This is a mirror package!
+        
+        It is recommended to install `discord.py` instead.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
