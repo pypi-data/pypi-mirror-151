@@ -1,0 +1,5 @@
+exclude .gitignore
+exclude tgsart/tgsart.py
+exclude doc/arrow.png
+exclude doc/tg.png
+exclude doc/tg30C29.png
