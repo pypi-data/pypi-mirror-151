@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+snelstart/__init__.py
+snelstart/api.py
+snelstart/core.py
+snelstart/main.py
+snelstart.egg-info/PKG-INFO
+snelstart.egg-info/SOURCES.txt
+snelstart.egg-info/dependency_links.txt
+snelstart.egg-info/requires.txt
+snelstart.egg-info/top_level.txt
