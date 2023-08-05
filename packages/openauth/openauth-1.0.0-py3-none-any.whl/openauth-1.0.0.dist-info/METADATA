@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: openauth
+Version: 1.0.0
+Summary: OpenAuth
+Home-page: https://github.com/pybash1/openbase
+Author: Py Bash
+Project-URL: Bug Tracker, https://github.com/pybash1/openbase/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Database
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# OpenAuth
+
+OpenAuth is a Library that provides a variety of authentication methods using Deta as the database.
+
+## Authentication
+
+- [x] Username & Password OAuth
+- [x] Magic Links
+- ### Social Auth
+    - [x] GitHub
+    - [ ] Google
+    - [ ] Apple
+    - [ ] Twitter
+    - [x] Spotify
+    - [x] Discord
+    - [ ] Microsoft
+    - [ ] Facebook

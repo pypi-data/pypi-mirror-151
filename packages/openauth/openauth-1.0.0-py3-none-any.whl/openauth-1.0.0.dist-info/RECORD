@@ -1,0 +1,15 @@
+openauth/__init__.py,sha256=ZhzQKWZ8RFrTIkj7z87B144DI95e8LMfA5w8NDWQDtg,23
+openauth/errors.py,sha256=stc-PPbSkZhEvX4PKgdi2i_05KBuqA41PcKityr-Dz4,332
+openauth/validation.py,sha256=hiI8im-lMuRax60gRwLDnVl3X7xBiKJuTaY9KaSsZSU,664
+openauth/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openauth/auth/magic.py,sha256=fM5MENIu9mvl_TffYhjGK3UiTq-rMlsxcJ0fnN2Qfw4,2152
+openauth/auth/oauth.py,sha256=CjBNtKqOLfEHbflVLa36_8JJeI0jqn-r-JSIf7xGD98,2677
+openauth/auth/social.py,sha256=z1ZxKHwarEzPVkTrH8Z5u7n9XVmc04P-UDFjj8HpScQ,3392
+openauth/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openauth/models/magic.py,sha256=ur4zRlPZcnnhgYuROvFFO3va8a8icmOrUyhXXV-McDM,287
+openauth/models/user.py,sha256=5Ey3vwnxsKsJnQJ-pDywdEKRkJ8nOhuDlUtFN3726lE,2533
+openauth-1.0.0.dist-info/LICENSE,sha256=i4wF3CywpYQREw9OWBrc0XW1uiojRvGh5OTDaTB1sBw,1077
+openauth-1.0.0.dist-info/METADATA,sha256=Jz6g3riv68Lj6RXWvh28FlKTgFjFzXgGXJMwBnEjd5Y,882
+openauth-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+openauth-1.0.0.dist-info/top_level.txt,sha256=pc1MQLgENGoStNzHiaYhnoqX9GcFA5Hhjmpytxu6xkk,9
+openauth-1.0.0.dist-info/RECORD,,
