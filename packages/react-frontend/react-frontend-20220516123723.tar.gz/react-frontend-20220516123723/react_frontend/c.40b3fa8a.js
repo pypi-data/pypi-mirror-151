@@ -1,0 +1,14 @@
+import{_ as e,s as t,e as i,t as s,$ as a,f as o,n as c}from"./main-ac83c92b.js";import"./c.1fca9ca6.js";import{X as n,Y as r,Z as l,a1 as m,_ as h,a7 as d,$ as f,a2 as u,a0 as p}from"./c.3e14cfd3.js";import"./c.33355413.js";import{p as _}from"./c.cb759a4c.js";import{e as g}from"./c.60f8b094.js";import{b}from"./c.461e571b.js";import"./c.4e93087d.js";import"./c.8eddd911.js";import"./c.027db416.js";import"./c.c8193d47.js";import"./c.47fa9be3.js";import"./c.e9aa747b.js";import"./c.8e198788.js";import"./c.25e73c3c.js";import"./c.5ea5eadd.js";import"./c.8cbd7110.js";import"./c.6e13c00f.js";import"./c.53212acc.js";import"./c.cfa85e17.js";import"./c.0e001851.js";import"./c.1430be7b.js";const j=n(b,r({title:l(m([h(),d()])),theme:l(h()),columns:l(d()),show_name:l(f()),show_state:l(f()),show_icon:l(f()),state_color:l(f()),entities:u(g)})),v=[{name:"title",selector:{text:{}}},{name:"",type:"grid",schema:[{name:"columns",selector:{number:{min:1,mode:"box"}}},{name:"theme",selector:{theme:{}}}]},{name:"",type:"grid",column_min_width:"100px",schema:[{name:"show_name",selector:{boolean:{}}},{name:"show_icon",selector:{boolean:{}}},{name:"show_state",selector:{boolean:{}}}]},{name:"state_color",selector:{boolean:{}}}];let k=e([c("hui-glance-card-editor")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[i({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[s()],key:"_config",value:void 0},{kind:"field",decorators:[s()],key:"_configEntities",value:void 0},{kind:"method",key:"setConfig",value:function(e){p(e,j),this._config=e,this._configEntities=_(e.entities)}},{kind:"method",key:"render",value:function(){if(!this.hass||!this._config)return a``;const e={show_name:!0,show_icon:!0,show_state:!0,...this._config};return a`
+      <ha-form
+        .hass=${this.hass}
+        .data=${e}
+        .schema=${v}
+        .computeLabel=${this._computeLabelCallback}
+        @value-changed=${this._valueChanged}
+      ></ha-form>
+      <hui-entity-editor
+        .hass=${this.hass}
+        .entities=${this._configEntities}
+        @entities-changed=${this._entitiesChanged}
+      ></hui-entity-editor>
+    `}},{kind:"method",key:"_valueChanged",value:function(e){const t=e.detail.value;o(this,"config-changed",{config:t})}},{kind:"method",key:"_entitiesChanged",value:function(e){let t=this._config;t={...t,entities:e.detail.entities},this._configEntities=_(this._config.entities),o(this,"config-changed",{config:t})}},{kind:"field",key:"_computeLabelCallback",value(){return e=>"theme"===e.name?`${this.hass.localize("ui.panel.lovelace.editor.card.generic.theme")} (${this.hass.localize("ui.panel.lovelace.editor.card.config.optional")})`:this.hass.localize(`ui.panel.lovelace.editor.card.glance.${e.name}`)||this.hass.localize(`ui.panel.lovelace.editor.card.generic.${e.name}`)}}]}}),t);export{k as HuiGlanceCardEditor};

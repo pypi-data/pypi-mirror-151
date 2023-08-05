@@ -1,0 +1,1 @@
+import{ai as t,_ as a}from"./c.3e14cfd3.js";const i=t=>t.includes("."),e=()=>t(a(),"entity ID (domain.entity)",i),n=t=>"all"===t||i(t),o=()=>t(a(),"entity ID (domain.entity or all)",n);export{e as a,o as e};
