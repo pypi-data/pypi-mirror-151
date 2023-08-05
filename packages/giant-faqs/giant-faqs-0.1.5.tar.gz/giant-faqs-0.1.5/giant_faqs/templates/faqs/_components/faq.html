@@ -1,0 +1,8 @@
+{% load static %}
+
+<div class="accordion__opener">
+    <p><strong>{{ faq.question }}</strong></p>
+</div>
+<div class="accordion__content">
+    {{ faq.answer|safe }}
+</div>
