@@ -1,0 +1,10 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "flask",
+    'flask-autoindex',
+    "pyngrok",
+    "python-telegram-bot"
+]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./src/parrot_feeder.egg-info/PKG-INFO
+./src/parrot_feeder.egg-info/SOURCES.txt
+./src/parrot_feeder.egg-info/dependency_links.txt
+./src/parrot_feeder.egg-info/entry_points.txt
+./src/parrot_feeder.egg-info/requires.txt
+./src/parrot_feeder.egg-info/top_level.txt
+./src/parrotfeeder/__init__.py
+./src/parrotfeeder/parrot_feeder.py

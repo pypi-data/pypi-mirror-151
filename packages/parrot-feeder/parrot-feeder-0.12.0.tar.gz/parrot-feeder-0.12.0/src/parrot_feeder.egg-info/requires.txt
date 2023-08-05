@@ -1,0 +1,4 @@
+flask
+flask-autoindex
+pyngrok
+python-telegram-bot
