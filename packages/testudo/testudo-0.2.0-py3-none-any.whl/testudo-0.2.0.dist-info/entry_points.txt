@@ -1,0 +1,3 @@
+[console_scripts]
+testudo=testudo.cli:main
+
