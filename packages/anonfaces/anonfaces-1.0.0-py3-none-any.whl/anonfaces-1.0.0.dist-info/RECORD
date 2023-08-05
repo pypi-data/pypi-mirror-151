@@ -1,0 +1,11 @@
+anonfaces/__init__.py,sha256=i1OTn1AdngdvNxFCdH3rIUEtMcHkWARFlEpONKBbGMI,73
+anonfaces/_version.py,sha256=uf-nTfWiy3lbEwQw44lxne4ncEaoyVjYNOzJZHSqStE,497
+anonfaces/anonfaces.py,sha256=YYvBdaov8lAslta5_eQWkKTeBZq1qe4GN4oPnfip06E,13786
+anonfaces/centerface.onnx,sha256=d-OUtREIOBtMT3tLrxxkyp9KunPl6AOyY2QZV4kTtf4,7532772
+anonfaces/centerface.py,sha256=VrnlkM6M5sXqHsOaXnTVpgQP-nhGhWMD3GOXX21uKNk,6908
+anonfaces-1.0.0.dist-info/LICENSE,sha256=lv1aYMNiwJT7r-aNNYu1KCfDBBfyOiUuhmULciLAu8E,1073
+anonfaces-1.0.0.dist-info/METADATA,sha256=iCTAQAiR-urJZAsgcmcI8CuXlAufKmViNdbjYICS_6Q,12908
+anonfaces-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+anonfaces-1.0.0.dist-info/entry_points.txt,sha256=Gx1n7NydQrvR6WO7GK58CzUfDxI8RuUvXV6xGJ1bPNs,55
+anonfaces-1.0.0.dist-info/top_level.txt,sha256=8XwYRbm8PlyK80RdzEL7I_vDIOvBTjTcsBZzoJcwMd0,10
+anonfaces-1.0.0.dist-info/RECORD,,

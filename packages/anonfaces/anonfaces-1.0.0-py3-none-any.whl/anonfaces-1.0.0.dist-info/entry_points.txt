@@ -1,0 +1,2 @@
+[console_scripts]
+anonfaces = anonfaces.anonfaces:main
