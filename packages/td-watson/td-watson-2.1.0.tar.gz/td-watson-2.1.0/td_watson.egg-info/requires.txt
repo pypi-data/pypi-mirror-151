@@ -1,0 +1,7 @@
+requests
+arrow>=1.0.0
+click>=8.0
+click-didyoumean
+
+[:sys_platform == "win32"]
+colorama
