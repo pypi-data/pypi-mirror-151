@@ -1,0 +1,6 @@
+kabbes_py_starter
+kabbes_parent_class
+kabbes_dir_ops
+kabbes_repository_generator
+kabbes_pypi_builder
+pypandoc
