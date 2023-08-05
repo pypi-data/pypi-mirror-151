@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+URIRouter.egg-info/PKG-INFO
+URIRouter.egg-info/SOURCES.txt
+URIRouter.egg-info/dependency_links.txt
+URIRouter.egg-info/top_level.txt
+urirouter/__init__.py
