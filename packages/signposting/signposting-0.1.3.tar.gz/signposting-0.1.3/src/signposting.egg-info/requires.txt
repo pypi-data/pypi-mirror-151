@@ -1,0 +1,2 @@
+beautifulsoup4>=4.10
+httplink==0.2.0
