@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dime-xai
+Version: 0.0.3a5
+Summary: Explains DIETClassifier model predictions in Rasa chatbot framework.
+Home-page: https://github.com/thisisishara/dime-xai
+Author: Ishara Dissanayake
+Author-email: thisismaduishara@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: GPU
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: regex (~=2021.7.6)
+Requires-Dist: rasa (~=2.8.8)
+Requires-Dist: rasa-sdk (~=2.8.4)
+Requires-Dist: numpy (~=1.18.5)
+Requires-Dist: scipy (~=1.7.3)
+Requires-Dist: tensorflow (~=2.3.4)
+Requires-Dist: gensim (~=4.1.2)
+Requires-Dist: scikit-learn (~=0.24.2)
+Requires-Dist: flask (~=2.0.3)
+Requires-Dist: werkzeug (~=2.0.3)
+Requires-Dist: requests (~=2.27.1)
+Requires-Dist: tqdm (~=4.62.3)
+Requires-Dist: pandas (~=1.3.5)
+Requires-Dist: termgraph (~=0.5.3)
+Requires-Dist: setuptools (~=58.0.4)
+Requires-Dist: flask-cors (~=3.0.10)
+
+Dime core package long explanation.
+
