@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rusty_results/__init__.py
+rusty_results/exceptions.py
+rusty_results/prelude.py
+rusty_results/py.typed
+rusty_results.egg-info/PKG-INFO
+rusty_results.egg-info/SOURCES.txt
+rusty_results.egg-info/dependency_links.txt
+rusty_results.egg-info/requires.txt
+rusty_results.egg-info/top_level.txt
