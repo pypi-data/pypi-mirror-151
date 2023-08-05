@@ -1,0 +1,8 @@
+[console_scripts]
+nk = nomenklatura.cli:cli
+nomenklatura = nomenklatura.cli:cli
+
+[nomenklatura.enrichers]
+nominatim = nomenklatura.enrich.nominatim:NominatimEnricher
+yente = nomenklatura.enrich.yente:YenteEnricher
+
