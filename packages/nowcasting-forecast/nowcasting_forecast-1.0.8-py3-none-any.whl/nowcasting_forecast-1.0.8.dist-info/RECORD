@@ -1,0 +1,14 @@
+nowcasting_forecast/__init__.py,sha256=6_zKeeTy3PdKjoej_K_Hl3REQ8ZPtyxOCkbA2qLREtY,53
+nowcasting_forecast/app.py,sha256=jqmtJ53cvQF0gbzbOXHZb2O37JroqNNLrvhO6SpGQ5g,5394
+nowcasting_forecast/batch.py,sha256=ecMvMZz0kXpGZH18aJozkUdcYUB2SWPgMhQoaVSeBJo,2512
+nowcasting_forecast/dataloader.py,sha256=gXbF7k_jt5Odb8KeiZJby-zfBPDItda2YTK0Narva1M,1671
+nowcasting_forecast/utils.py,sha256=Qo-aVYx_x4o_s1nK-wfvWeHg023F7NrpnKis9p5IHo0,558
+nowcasting_forecast/models/__init__.py,sha256=iEz-H-Q0c_uvhqGkdYOH1e0PAagAwT9IVigBYuDOPMM,13
+nowcasting_forecast/models/hub.py,sha256=TK-U276sd8Z4C3hZV5QZMWPNHJ1TAXw2LBFtLt74Zko,4862
+nowcasting_forecast/models/nwp_solar_simple.py,sha256=bfI-qoeOI34JT8PSwLl_sYoap3-Hb5r_Z9Kc8QALRGU,2142
+nowcasting_forecast/models/utils.py,sha256=nW6H67Ld8Oe9emqHpBytVZ2w2aipZzuSudHtqtvK7HY,9018
+nowcasting_forecast-1.0.8.dist-info/LICENSE,sha256=oPcPMo1K7NVJiJvxYloNiZW4WAH_q3J0yCpN6kgMHNs,1073
+nowcasting_forecast-1.0.8.dist-info/METADATA,sha256=rIH7uG3mxbYk34hkCA1SXN9Gn7JyIzD0mK3mgwZrm6c,4518
+nowcasting_forecast-1.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nowcasting_forecast-1.0.8.dist-info/top_level.txt,sha256=K3zfKADay5LSIEXZlIaQ5M56hk8Hk8PJT6-yAgLHtV0,20
+nowcasting_forecast-1.0.8.dist-info/RECORD,,
