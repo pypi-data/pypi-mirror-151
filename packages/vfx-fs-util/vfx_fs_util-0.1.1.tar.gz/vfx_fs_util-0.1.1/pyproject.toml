@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "vfx_fs_util"
+version = "0.1.1"
+description = "A library to help with filesystem management in the VFX industry."
+authors = ["John Andrews <johnandrews@macvanderlay.lan>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Lucidity = "^1.6.0"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^4.5.0"
+black = "^22.3.0"
+sphinx-rtd-theme = "^1.0.0"
+sphinxcontrib-napoleon = "^0.7"
+toml = "^0.10.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
