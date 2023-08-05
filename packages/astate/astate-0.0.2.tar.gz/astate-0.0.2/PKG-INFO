@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: astate
+Version: 0.0.2
+Summary: Various AST utils
+Home-page: https://github.com/thorwhalen/astate
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# astate
+Various AST utils
+
+
+To install:	```pip install astate```
+
+
