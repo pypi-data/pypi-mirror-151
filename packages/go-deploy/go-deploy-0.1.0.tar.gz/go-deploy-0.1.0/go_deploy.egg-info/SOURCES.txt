@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+go/__init__.py
+go/deploy.py
+go/utils.py
+go_deploy.egg-info/PKG-INFO
+go_deploy.egg-info/SOURCES.txt
+go_deploy.egg-info/dependency_links.txt
+go_deploy.egg-info/entry_points.txt
+go_deploy.egg-info/requires.txt
+go_deploy.egg-info/top_level.txt
