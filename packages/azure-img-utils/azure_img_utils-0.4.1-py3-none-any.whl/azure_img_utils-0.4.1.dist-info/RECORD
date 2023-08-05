@@ -1,0 +1,14 @@
+azure_img_utils/__init__.py,sha256=mRFE117a8gz65aROLzaV_ll_KyhLfKezp6AL0j0XilI,972
+azure_img_utils/auth.py,sha256=KXCnI_5Y6VCWMHmqH8d9h_S48PHLT40-b3iWSN-t6rA,3314
+azure_img_utils/azure_image.py,sha256=vke7ih8jkRCi-63_ujcbJISXlR1_X8vtA0ggLGQAwqQ,20721
+azure_img_utils/cloud_partner.py,sha256=Y0dCifoCssJvqDWK28s4-koRUZI0ngMQfEIAh_-h8lg,12078
+azure_img_utils/compute.py,sha256=lJUykxSRXIUDuKahxjPg6esZT9-Hup5Oc6zGS2TsaLs,5662
+azure_img_utils/exceptions.py,sha256=TvZVknYqa4pwKigpz_szQJHRSH0JTwF2bCY5vFpyONQ,1209
+azure_img_utils/filetype.py,sha256=BbdpilKzoBSo31fbegfB3Y1GkegR_QPlemOlP0-61kY,1625
+azure_img_utils/storage.py,sha256=X3PF3LzF9Gou39vS0hdkMYbGUbrfa_etd4LEARdgY-E,5795
+azure_img_utils-0.4.1.dist-info/LICENSE,sha256=PEg6Le4OHFtOn6Qzm_pJEo0ETIL0gpOT5u5DvcLtOTs,32403
+azure_img_utils-0.4.1.dist-info/METADATA,sha256=8Pw5Kd-77mMZzmwjgj_HeZnznwDWAh03QF_Az2U2kyw,1608
+azure_img_utils-0.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+azure_img_utils-0.4.1.dist-info/entry_points.txt,sha256=b1HxxdK94OQLQ3KVNeGPeQm9zxpUtkH_xgOLZsdmrbA,68
+azure_img_utils-0.4.1.dist-info/top_level.txt,sha256=lBo0Jt690YEbeSUf9rxYAYH9Lf-SCnWScfgrj2iW6FQ,16
+azure_img_utils-0.4.1.dist-info/RECORD,,
