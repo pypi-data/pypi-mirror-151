@@ -1,0 +1,4 @@
+pandas
+hiplot
+dash
+dash-bootstrap-components
