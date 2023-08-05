@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: testit-adapter-pytest
+Version: 1.1.0
+Summary: Pytest adapter for Test IT
+Home-page: https://pypi.org/project/testit-adapter-pytest/
+Author: Pavel Butuzov
+Author-email: pavel.butuzov@testit.software
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
