@@ -1,0 +1,17 @@
+essmc2utils/__init__.py,sha256=kIyy_CWFlZS4NjoOg-KwuWi75VX7smkspN2VSvW1bxU,91
+essmc2utils/config.py,sha256=gGYoZbobXchY09raCqv9TzjLD7Z2Ih7dgfEcj6ZvM4Y,16967
+essmc2utils/registry.py,sha256=eSAbpQ4yYgqpdOKf7vQdY1hUDd6rv5yQP-PW9ljPEO4,6048
+essmc2utils/version.py,sha256=bpzn7upGnsz2Nld7t5GXv-mDZZ5Xo6Jn0kI9mqLeGi8,130
+essmc2utils/file_systems/__init__.py,sha256=R8GdWKuMgiiJC26sscpRqVCQ7Lwjr6sJ_Z4X2_WWfy0,273
+essmc2utils/file_systems/aliyun_oss_fs.py,sha256=pom1cz_QDTj064xXOLtPHvFQ7RW_Zw09h3UicPt1c9I,6025
+essmc2utils/file_systems/base_fs.py,sha256=cB4KDuNawI4jhwXmmttoDvEQ5dXNne516MQFisTpxbU,6855
+essmc2utils/file_systems/file_system.py,sha256=2wu1WpZm9-HWXi_rjRsfk4cUTsKQSBOXXlHHJnHVWOE,8050
+essmc2utils/file_systems/http_fs.py,sha256=capSBbHgRMC7Iv_yjaL7ZQvH0EhipX-ewIo-n3b5Dmo,2514
+essmc2utils/file_systems/local_fs.py,sha256=kHLhwQQRhOMlB-XOpcsD3lLKwdfb7irBnbE5Kfv-ziI,3310
+essmc2utils/file_systems/registry.py,sha256=oqX82WGky0n8cvR7wF8gAdGfdMupn23qJLXDvTw2n7c,143
+essmc2utils/file_systems/utils.py,sha256=q-Ln_Kd7jV304wVNrH_Vfbuxob92FPDNrDKaLWspeBg,1014
+essmc2utils-0.0.1.dist-info/LICENSE,sha256=9tQ8o9-VifM_nnMv2MDhusXJAByBzUF4_ALfI26A90k,1069
+essmc2utils-0.0.1.dist-info/METADATA,sha256=-WJloc_d4j58uJPstdhTnm-3u7jlNnm-p4V5VV8nQHE,877
+essmc2utils-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+essmc2utils-0.0.1.dist-info/top_level.txt,sha256=44Fq_037TSYYyEYxMwCrIqqup9zl13wkS9tUvPHub_Q,12
+essmc2utils-0.0.1.dist-info/RECORD,,

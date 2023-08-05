@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: essmc2utils
+Version: 0.0.1
+Summary: A standalone python package for essmc2.
+Home-page: https://github.com/Logistic1994/essmc2-utils
+Author: Logistic1994
+Author-email: logistic1994@gmail.com
+License: UNKNOWN
+Keywords: registry,file_systems
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: addict (==2.4.0)
+Requires-Dist: yapf (==0.32.0)
+Requires-Dist: oss2 (==2.15.0)
+
+# essmc2-utils
+Standalone Utils Repo for essmc2 python package.
+
+
