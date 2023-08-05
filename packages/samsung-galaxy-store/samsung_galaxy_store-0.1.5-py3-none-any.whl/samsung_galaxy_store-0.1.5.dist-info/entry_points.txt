@@ -1,0 +1,3 @@
+[console_scripts]
+galaxy-store-cli=samsung_galaxy_store.cli:main
+
