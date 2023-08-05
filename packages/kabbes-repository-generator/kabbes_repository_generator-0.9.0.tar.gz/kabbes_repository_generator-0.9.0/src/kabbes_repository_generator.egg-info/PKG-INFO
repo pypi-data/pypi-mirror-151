@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: kabbes-repository-generator
+Version: 0.9.0
+Summary: Package for easily installing and setting up project environments
+Home-page: https://pypi.org/project/kabbes-repository-generator/
+Author: James Kabbes
+Author-email: james.kabbes@gmail.com
+Project-URL: GitHub, https://github.com/jameskabbes/repository_generator
+Project-URL: Documentation, https://jameskabbes.github.io/repository_generator
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[GitHub Pages](https://jameskabbes.github.io/repository_generator)<br>
+[PyPI](https://pypi.org/project/kabbes-repository-generator)
+
+# repository_generator
+Package for creating repositories from templates, performing operations on Git repositories
+
+<br> 
+
+# Installation
+`pip install kabbes_repository_generator`
+
+<br>
+
+# Usage
+For more in-depth documentation, read the information provided on the Pages. Or better yet, read the source code.
+
+## Python Script
+
+```python
+import repository_generator as repo_gen
+```
+
+```python
+repo_gen.generate()
+```
+
+## Terminal
+
+```
+python -m repository_generator
+```
+
+<br>
+
+# Author
+James Kabbes
