@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: htsexperimentation
+Version: 0.0.8
+Summary: Hierarchical time series forecasting package to help analyze experiments
+Home-page: UNKNOWN
+Author: Luis Roque
+Author-email: <roque0luis@gmail.com>
+License: UNKNOWN
+Keywords: python,time series,hierarchical,forecasting,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (~=58.0.4)
+Requires-Dist: tsaugmentation (~=0.3.3)
+Requires-Dist: pandas (~=1.2.5)
+Requires-Dist: tsaugmentation (~=0.3.6)
+Requires-Dist: seaborn (~=0.11.2)
+Requires-Dist: properscoring (~=0.1)
+Requires-Dist: matplotlib (~=3.3.4)
+
+A package that allows you to analyze the results from experiments performed using a hierarchical time series forecasting algorithms
+
