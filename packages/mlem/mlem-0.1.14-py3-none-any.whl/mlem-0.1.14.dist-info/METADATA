@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: mlem
+Version: 0.1.14
+Summary: Version and deploy your models following GitOps principles
+Home-page: https://mlem.ai
+Author: Mikhail Sveshnikov
+Author-email: mike0sv@iterative.ai
+Maintainer: Iterative
+Maintainer-email: support@mlem.ai
+License: Apache License 2.0
+Download-URL: https://github.com/iterative/mlem
+Keywords: data-science data-version-control machine-learning git mlops developer-tools reproducibility collaboration ai
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dill
+Requires-Dist: requests
+Requires-Dist: isort (>=5.10)
+Requires-Dist: docker
+Requires-Dist: pydantic (<2,>=1.9.0)
+Requires-Dist: typer
+Requires-Dist: click (<8.1)
+Requires-Dist: rich
+Requires-Dist: aiohttp (<4)
+Requires-Dist: aiohttp-swagger (<2)
+Requires-Dist: Jinja2 (>=3)
+Requires-Dist: fsspec (>=2021.7.0)
+Requires-Dist: pyparsing (<3)
+Requires-Dist: cached-property
+Requires-Dist: entrypoints
+Requires-Dist: filelock
+Requires-Dist: appdirs
+Requires-Dist: python-daemon
+Requires-Dist: distro
+Requires-Dist: gitpython
+Requires-Dist: flatdict
+Provides-Extra: all
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-lazy-fixture (==0.6.3) ; extra == 'all'
+Requires-Dist: pytest-mock ; extra == 'all'
+Requires-Dist: pylint ; extra == 'all'
+Requires-Dist: pylint-pytest ; extra == 'all'
+Requires-Dist: pylint-plugin-utils ; extra == 'all'
+Requires-Dist: s3fs ; extra == 'all'
+Requires-Dist: boto3 ; extra == 'all'
+Requires-Dist: botocore ; extra == 'all'
+Requires-Dist: adlfs ; extra == 'all'
+Requires-Dist: gcsfs ; extra == 'all'
+Requires-Dist: testcontainers ; extra == 'all'
+Requires-Dist: emoji ; extra == 'all'
+Requires-Dist: dvc (~=2.0) ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: lxml ; extra == 'all'
+Requires-Dist: openpyxl ; extra == 'all'
+Requires-Dist: xlrd ; extra == 'all'
+Requires-Dist: tables ; extra == 'all'
+Requires-Dist: pyarrow ; extra == 'all'
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: scikit-learn ; extra == 'all'
+Requires-Dist: catboost ; extra == 'all'
+Requires-Dist: xgboost ; extra == 'all'
+Requires-Dist: lightgbm ; extra == 'all'
+Requires-Dist: uvicorn ; extra == 'all'
+Requires-Dist: fastapi ; extra == 'all'
+Requires-Dist: torch ; extra == 'all'
+Requires-Dist: adlfs (>=2021.10.0) ; extra == 'all'
+Requires-Dist: azure-identity (>=1.4.0) ; extra == 'all'
+Requires-Dist: knack ; extra == 'all'
+Requires-Dist: gcsfs (>=2021.11.1) ; extra == 'all'
+Requires-Dist: pyarrow (>=1) ; extra == 'all'
+Requires-Dist: fsspec[arrow] ; extra == 'all'
+Requires-Dist: s3fs[boto3] (>=2021.11.1) ; extra == 'all'
+Requires-Dist: aiobotocore[boto3] (>2) ; extra == 'all'
+Requires-Dist: bcrypt ; extra == 'all'
+Requires-Dist: sshfs[bcrypt] (>=2021.11.2) ; extra == 'all'
+Requires-Dist: pika ; extra == 'all'
+Provides-Extra: azure
+Requires-Dist: adlfs (>=2021.10.0) ; extra == 'azure'
+Requires-Dist: azure-identity (>=1.4.0) ; extra == 'azure'
+Requires-Dist: knack ; extra == 'azure'
+Provides-Extra: catboost
+Requires-Dist: catboost ; extra == 'catboost'
+Provides-Extra: dvc
+Requires-Dist: dvc (~=2.0) ; extra == 'dvc'
+Provides-Extra: fastapi
+Requires-Dist: uvicorn ; extra == 'fastapi'
+Requires-Dist: fastapi ; extra == 'fastapi'
+Provides-Extra: gs
+Requires-Dist: gcsfs (>=2021.11.1) ; extra == 'gs'
+Provides-Extra: hdfs
+Requires-Dist: pyarrow (>=1) ; extra == 'hdfs'
+Requires-Dist: fsspec[arrow] ; extra == 'hdfs'
+Provides-Extra: lightgbm
+Requires-Dist: lightgbm ; extra == 'lightgbm'
+Provides-Extra: numpy
+Requires-Dist: numpy ; extra == 'numpy'
+Provides-Extra: pandas
+Requires-Dist: pandas ; extra == 'pandas'
+Requires-Dist: lxml ; extra == 'pandas'
+Requires-Dist: openpyxl ; extra == 'pandas'
+Requires-Dist: xlrd ; extra == 'pandas'
+Requires-Dist: tables ; extra == 'pandas'
+Requires-Dist: pyarrow ; extra == 'pandas'
+Provides-Extra: rmq
+Requires-Dist: pika ; extra == 'rmq'
+Provides-Extra: s3
+Requires-Dist: s3fs[boto3] (>=2021.11.1) ; extra == 's3'
+Requires-Dist: aiobotocore[boto3] (>2) ; extra == 's3'
+Provides-Extra: sklearn
+Requires-Dist: scipy ; extra == 'sklearn'
+Requires-Dist: scikit-learn ; extra == 'sklearn'
+Provides-Extra: ssh
+Requires-Dist: bcrypt ; extra == 'ssh'
+Requires-Dist: sshfs[bcrypt] (>=2021.11.2) ; extra == 'ssh'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-lazy-fixture (==0.6.3) ; extra == 'tests'
+Requires-Dist: pytest-mock ; extra == 'tests'
+Requires-Dist: pylint ; extra == 'tests'
+Requires-Dist: pylint-pytest ; extra == 'tests'
+Requires-Dist: pylint-plugin-utils ; extra == 'tests'
+Requires-Dist: s3fs ; extra == 'tests'
+Requires-Dist: boto3 ; extra == 'tests'
+Requires-Dist: botocore ; extra == 'tests'
+Requires-Dist: adlfs ; extra == 'tests'
+Requires-Dist: gcsfs ; extra == 'tests'
+Requires-Dist: testcontainers ; extra == 'tests'
+Requires-Dist: emoji ; extra == 'tests'
+Requires-Dist: dvc (~=2.0) ; extra == 'tests'
+Requires-Dist: pandas ; extra == 'tests'
+Requires-Dist: lxml ; extra == 'tests'
+Requires-Dist: openpyxl ; extra == 'tests'
+Requires-Dist: xlrd ; extra == 'tests'
+Requires-Dist: tables ; extra == 'tests'
+Requires-Dist: pyarrow ; extra == 'tests'
+Requires-Dist: numpy ; extra == 'tests'
+Requires-Dist: scipy ; extra == 'tests'
+Requires-Dist: scikit-learn ; extra == 'tests'
+Requires-Dist: catboost ; extra == 'tests'
+Requires-Dist: xgboost ; extra == 'tests'
+Requires-Dist: lightgbm ; extra == 'tests'
+Requires-Dist: uvicorn ; extra == 'tests'
+Requires-Dist: fastapi ; extra == 'tests'
+Requires-Dist: torch ; extra == 'tests'
+Requires-Dist: adlfs (>=2021.10.0) ; extra == 'tests'
+Requires-Dist: azure-identity (>=1.4.0) ; extra == 'tests'
+Requires-Dist: knack ; extra == 'tests'
+Requires-Dist: gcsfs (>=2021.11.1) ; extra == 'tests'
+Requires-Dist: pyarrow (>=1) ; extra == 'tests'
+Requires-Dist: fsspec[arrow] ; extra == 'tests'
+Requires-Dist: s3fs[boto3] (>=2021.11.1) ; extra == 'tests'
+Requires-Dist: aiobotocore[boto3] (>2) ; extra == 'tests'
+Requires-Dist: bcrypt ; extra == 'tests'
+Requires-Dist: sshfs[bcrypt] (>=2021.11.2) ; extra == 'tests'
+Requires-Dist: pika ; extra == 'tests'
+Provides-Extra: torch
+Requires-Dist: torch ; extra == 'torch'
+Provides-Extra: xgboost
+Requires-Dist: xgboost ; extra == 'xgboost'
+
+![image](https://user-images.githubusercontent.com/6797716/165590476-994d4d93-8e98-4afb-b5f8-6f42b9d56efc.png)
+
+
+[![Check, test and release](https://github.com/iterative/mlem/actions/workflows/check-test-release.yml/badge.svg)](https://github.com/iterative/mlem/actions/workflows/check-test-release.yml)
+[![codecov](https://codecov.io/gh/iterative/mlem/branch/main/graph/badge.svg?token=WHU4OAB6O2)](https://codecov.io/gh/iterative/mlem)
+[![PyPi](https://img.shields.io/pypi/v/mlem.svg?label=pip&logo=PyPI&logoColor=white)](https://pypi.org/project/mlem)
+
+MLEM helps you with model deployment. It saves ML models in a standard format that can be used in a variety of downstream deployment scenarios such as real-time serving through a REST API or batch processing. MLEM format is a human-readable text that helps you use GitOps with Git as the single source of truth.
+
+- **Run your model anywhere you want:** package it as a Python package, a Docker Image or deploy it to Heroku (SageMaker, Kubernetes and more platforms are coming). Switch between formats and deployment platforms with a single command thanks to unified abstraction.
+- **Simple text file to save model metadata:** automatically package Python env requirements and input data specifications into a ready-to-deploy format. Use the same human-readable format for any ML framework.
+- **Stick to your training workflow:** MLEM doesn't ask you to rewrite your training code. To start using packaging or deployment machinery, add just two lines to your python script: one to import the library and one to save the model.
+- **Developer-first experience:** use CLI when you feel like DevOps and API when you feel like a developer.
+
+## Why MLEM?
+
+The main reason to use MLEM instead of other related solutions is that it works well with **GitOps approach** and helps you manage model lifecycle in Git:
+
+- **Git as a single source of truth:** we use plain text to save metadata for models that can be saved and versioned.
+- **Reuse existing Git and Github/Gitlab infrastructure** for model management instead of installing separate model management software.
+- **Unify model and software deployment.** Deploy models using the same processes and code you use to deploy software.
+
+## Installation
+
+Install MLEM with pip:
+
+```
+$ pip install mlem
+```
+
+To install the development version, run:
+
+```
+$ pip install git+https://github.com/iterative/mlem
+```
+
+
