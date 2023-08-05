@@ -1,0 +1,15 @@
+sevsnpmeasure/__init__.py,sha256=m0-zB8FTTMrrLkWsm26PUTT345TvvDcHHH3ASZhc81s,89
+sevsnpmeasure/cli.py,sha256=8-UJ4ivDNFT2btou2F1VY2WpSx69WvGJTD-2ZymJMbE,3315
+sevsnpmeasure/gctx.py,sha256=WUxvL4umgT1oGfawqLqAGp5ICATPAPKMIkZ6FdmxHyw,2442
+sevsnpmeasure/guest.py,sha256=MqGps1PLkqn6lNU-9Fl87uLMCf_ToVTUqstquj7LZOI,2831
+sevsnpmeasure/ovmf.py,sha256=Sstmt-Ube0xzcBZO_Tg0KGsE5zDTqEDy1CpaJLcnXKc,3966
+sevsnpmeasure/sev_hashes.py,sha256=FzIG1BpJ0wd1KV46kZhimyiwPC7Q3pb7q8mUiruXO7I,2508
+sevsnpmeasure/sev_mode.py,sha256=O6kynPl7QUJzCmudTpIMgUjEuXYuDPk0OcPrTgoQG-Y,600
+sevsnpmeasure/vcpu_types.py,sha256=o7GGocXdnysaYgEE1OTqp6Gp651RO0hFIh-9tZ60xQ8,1310
+sevsnpmeasure/vmsa.py,sha256=LVda6ksSS9Zkdxkt6EyJIIQoYI5fNGIFYYna52s--Lk,5684
+sev_snp_measure-0.0.3.dist-info/LICENSE,sha256=xllut76FgcGL5zbIRvuRc7aezPbvlMUTWJPsVr2Sugg,11358
+sev_snp_measure-0.0.3.dist-info/METADATA,sha256=sjmiaEmSs_t0HQ1UuCcXJfO1sFExhzC7jRULs6CogtU,4776
+sev_snp_measure-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sev_snp_measure-0.0.3.dist-info/entry_points.txt,sha256=kZchkbQ3L8fDgzyeoXPBsauljOfqAf5SlxRXWd6fJho,59
+sev_snp_measure-0.0.3.dist-info/top_level.txt,sha256=7YnZqHVJaubYRCq0Fk_h6-QwtKjheWRaZLtamfHrZz8,14
+sev_snp_measure-0.0.3.dist-info/RECORD,,
