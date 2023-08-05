@@ -1,0 +1,8 @@
+bgdb/__init__.py,sha256=4PRXPQK-LJxGp9yrZi4Hdf_ezE2dofBOmn5PLVjrz-4,64
+bgdb/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bgdb/client/client.py,sha256=Mne3ZaN2VfpothPi_YuRuXCM3Dhji6MpBJ7AAxby25s,2869
+bgdb-1.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bgdb-1.0.4.dist-info/METADATA,sha256=h0oSk1LqjCusRJvAUE3jyHwnUlQbmL1mZLYQwdb3PRY,569
+bgdb-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bgdb-1.0.4.dist-info/top_level.txt,sha256=ePYAKhJI3J94B_m1nvNFY6phKp0_FASu-cFV-YY0DXY,5
+bgdb-1.0.4.dist-info/RECORD,,
