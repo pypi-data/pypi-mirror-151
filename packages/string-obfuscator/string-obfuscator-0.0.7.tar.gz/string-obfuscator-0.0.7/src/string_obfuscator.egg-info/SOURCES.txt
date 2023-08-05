@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/string_obfuscator/__init__.py
+src/string_obfuscator/obfuscate.py
+src/string_obfuscator.egg-info/PKG-INFO
+src/string_obfuscator.egg-info/SOURCES.txt
+src/string_obfuscator.egg-info/dependency_links.txt
+src/string_obfuscator.egg-info/top_level.txt
