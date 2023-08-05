@@ -1,0 +1,9 @@
+LICENSE
+README.md
+looseversion.py
+pyproject.toml
+setup.cfg
+looseversion.egg-info/PKG-INFO
+looseversion.egg-info/SOURCES.txt
+looseversion.egg-info/dependency_links.txt
+looseversion.egg-info/top_level.txt
