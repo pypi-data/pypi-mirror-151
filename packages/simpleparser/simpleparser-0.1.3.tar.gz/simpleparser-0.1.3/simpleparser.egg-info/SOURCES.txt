@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+simpleparser/__init__.py
+simpleparser/simpleparser.py
+simpleparser.egg-info/PKG-INFO
+simpleparser.egg-info/SOURCES.txt
+simpleparser.egg-info/dependency_links.txt
+simpleparser.egg-info/top_level.txt
