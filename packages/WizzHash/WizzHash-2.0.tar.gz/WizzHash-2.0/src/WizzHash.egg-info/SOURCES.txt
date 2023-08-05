@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/WizzHash.py
+src/WizzHash.egg-info/PKG-INFO
+src/WizzHash.egg-info/SOURCES.txt
+src/WizzHash.egg-info/dependency_links.txt
+src/WizzHash.egg-info/requires.txt
+src/WizzHash.egg-info/top_level.txt
