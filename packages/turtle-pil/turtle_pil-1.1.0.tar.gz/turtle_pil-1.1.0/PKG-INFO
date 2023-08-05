@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: turtle_pil
+Version: 1.1.0
+Summary: Turtle operations on the top of PIL
+Home-page: https://github.com/jutge-org/pil-turtle
+Author: Jordi Petit
+Author-email: UNKNOWN
+License: Apache
+Download-URL: https://github.com/jutge-org/pil-turtle/tarball/1.1.0
+Description: Turtle operations on the top of PIL
+Keywords: jutge,jutge.org,education,turtle,PIL
+Platform: UNKNOWN

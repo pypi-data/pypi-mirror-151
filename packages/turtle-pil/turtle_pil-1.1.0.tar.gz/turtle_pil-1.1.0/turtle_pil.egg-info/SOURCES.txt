@@ -1,0 +1,10 @@
+README.md
+setup.py
+turtle_pil/__init__.py
+turtle_pil.egg-info/PKG-INFO
+turtle_pil.egg-info/SOURCES.txt
+turtle_pil.egg-info/dependency_links.txt
+turtle_pil.egg-info/entry_points.txt
+turtle_pil.egg-info/not-zip-safe
+turtle_pil.egg-info/requires.txt
+turtle_pil.egg-info/top_level.txt
