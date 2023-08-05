@@ -1,0 +1,97 @@
+#
+# This is an example yapp-pipelines configuration file
+# You can also look at pipelines_annotated.yml
+# for an extensively annotated version of this file
+#
+
++all:
+  hooks:
+    - run: common.UselessHook.whatever
+      on: job_start
+  config:
+    pippo: 12333
+
+
+simple_task:
+  inputs:
+    - from: file.CsvInput
+      with:
+        directory: "./data"
+    - from: pandas.read_csv
+      expose:
+        - use: "./data/a_csv_file.csv"
+          as: example_csv
+
+  hooks:
+    - run: common.UselessHook.whatever
+      on: job_start
+    - run: common.UselessHook.whatever
+      on: pipeline_start
+
+  steps:
+    - run: common.PreProcessor
+    - run: MainTask
+      with:
+        p: 'whatever'
+      after: common.PreProcessor
+    - run: Later.print_something
+      after: MainTask
+      with:
+        b: 22
+        d: "a different value"
+
+  config:
+    pippo: 44
+    franco: 9
+
+
+sligthly_more_complex:
+  inputs:
+    - name: pg_input
+      from: pgsql.PgSqlInput
+      with:
+        username: carlo
+        password:
+        host: localhost
+        port: 5432
+        database: postgres
+      expose:
+        - use: dataset
+          as: dataset
+    - from: utils.DummyInput
+      expose:
+        - use: "whatever"
+          as: anempytdataframe
+    - from: file.CsvInput
+      expose:
+        - use: "a_csv_file.csv"
+          as: example_csv
+      with:
+        directory: "./data"
+
+  outputs:
+    - to: pgsql.PgSqlOutput
+      with:
+        username: carlo
+        password: !env PG_PWD
+        host: localhost
+        port: 5432
+        database: postgres
+
+  steps:
+    - run: common.PreProcessor
+
+    - run: PredictorA
+      after: common.PreProcessor
+
+    - run: PredictorB
+      after: common.PreProcessor
+
+    - run: PredictorC
+      after: common.PreProcessor
+
+    - run: Ensemble
+      after: [PredictorA, PredictorB, PredictorC]
+
+    - run: common.PostProcessor
+      after: Ensemble
