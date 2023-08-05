@@ -1,0 +1,10 @@
+dependency-injector
+marshmallow-dataclass==8.5.3
+matplotlib==3.4.3
+numpy==1.22
+scipy==1.7.2
+pillow==8.3.2
+tqdm==4.62.3
+opencv-python==4.5.3.56
+jupyter==1.0.0
+Deprecated==1.2.13
