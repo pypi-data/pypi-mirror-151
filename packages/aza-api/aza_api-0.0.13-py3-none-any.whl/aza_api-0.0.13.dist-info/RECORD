@@ -1,0 +1,12 @@
+aza_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aza_api/aza_api.py,sha256=_mCm6UaXFnbkDmCTIEsthiuN6CzlFm06APTxjrpjmOM,6980
+aza_api/aza_api2.py,sha256=7Q5wjGYmr_11gkwspNcGmYPDzJqhPXTH_v3RqHO4Xs8,4141
+aza_api/fetch_portfolio.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aza_api/html_to_df.py,sha256=_LMV56ZZWu5AGMbUOCelHknzgonCDS18jVB3hQKjPG8,1511
+aza_api/login_aza.py,sha256=t7fsmLOK4409f90aJNlTlMeKp2HxxlGVAqAKcx35AUw,2188
+aza_api/map_aza_stock_to_url.py,sha256=tKZTtGjo5SEfJtwjLlyh5V2zd4lPvXbyH-83-btEcm8,2472
+aza_api-0.0.13.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aza_api-0.0.13.dist-info/METADATA,sha256=jF4fv9EJpoLzxkFMLVrn9q6fHsvraSgU25DsTPEokho,2107
+aza_api-0.0.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aza_api-0.0.13.dist-info/top_level.txt,sha256=oFi8gda5a6EvDsHq6J59rkJ9vvttuvhHFfGQHa3Xk-M,8
+aza_api-0.0.13.dist-info/RECORD,,
