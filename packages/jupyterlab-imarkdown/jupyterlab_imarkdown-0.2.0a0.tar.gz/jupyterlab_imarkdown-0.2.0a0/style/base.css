@@ -1,0 +1,28 @@
+.im-result {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.im-result.jp-RenderedText {
+  padding-left: initial;
+  overflow: initial; /* Not sure why this is works! */
+}
+
+.im-result > .widget-inline-hbox,
+.im-result > .widget-inline-vbox {
+  display: inline-flex;
+}
+
+/* style taken from ipywidgets/packages/base/css/index.css */
+.im-error::before {
+  content: '\f127'; /* fa-chain-broken */
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--jp-warn-color0);
+  padding: 3px;
+  align-self: flex-start;
+}
