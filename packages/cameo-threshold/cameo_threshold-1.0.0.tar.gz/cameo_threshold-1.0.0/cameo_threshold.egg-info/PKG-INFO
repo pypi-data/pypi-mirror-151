@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: cameo-threshold
+Version: 1.0.0
+Summary: large performance increase
+Home-page: https://github.com/bohachu/cameo_threshold
+Author: JC Wang
+Author-email: jcxgtcw@gmail.com
+License: BSD 2-clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
