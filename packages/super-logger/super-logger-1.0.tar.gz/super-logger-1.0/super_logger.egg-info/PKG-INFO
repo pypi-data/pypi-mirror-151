@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: super-logger
+Version: 1.0
+Summary: super-logger!
+Author: wer310Libs
+Author-email: oficalkapudovo@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+example:
+```
+from slogger import SLogger
+logger = SLogger("test")
+logger.info("this is info")
+logger.warning("this is warning")
+logger.error("this is error")
+```
+

@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+slogger/__init__.py
+super_logger.egg-info/PKG-INFO
+super_logger.egg-info/SOURCES.txt
+super_logger.egg-info/dependency_links.txt
+super_logger.egg-info/top_level.txt
