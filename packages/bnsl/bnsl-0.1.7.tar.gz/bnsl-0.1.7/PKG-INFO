@@ -1,0 +1,40 @@
+Metadata-Version: 1.2
+Name: bnsl
+Version: 0.1.7
+Summary: A collection of Bayesian Network structure learning algorithms
+Home-page: https://github.com/Enderlogic/bnsl
+Author: Yang Liu
+Author-email: yangliu@qmul.ac.uk
+License: MIT license
+Description: ====
+        bnsl
+        ====
+        
+        
+        
+        
+        A collection of Bayesian Network structure learning algorithms
+        
+        
+        * Free software: MIT license
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+Keywords: bnsl
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6, <3.10
