@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: datajoint-plus
+Version: 0.1.5
+Summary: A DataJoint extension that integrates hashes and other features.
+Home-page: UNKNOWN
+Author: Stelios Papadopoulos
+Author-email: spapadop@bcm.edu
+License: GNU LGPL
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+License-File: LICENSE
+Requires-Dist: envyaml
+Requires-Dist: simplejson
+Requires-Dist: datajoint (==0.12.9)
+
+UNKNOWN
+
