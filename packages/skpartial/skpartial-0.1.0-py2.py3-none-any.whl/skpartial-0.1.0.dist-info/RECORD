@@ -1,0 +1,9 @@
+skpartial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skpartial/pipeline.py,sha256=3LCGYtdeVmDR9qHXcf_93Q-OmUL3vu-ttkFb-f-PSKw,5431
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_docs.py,sha256=jrwR99QRI65YzrJ0lisSgOzt8ybzgCm396kWqmUvhU0,588
+skpartial-0.1.0.dist-info/LICENSE,sha256=I-h54hQhK7CZRPQ8cqSpH3-O-U2vRPlazp6JXdV-VGA,1077
+skpartial-0.1.0.dist-info/METADATA,sha256=8F0OIwF0zDJp7XD3KwPx1x_ZUJUKtfpZOBxgwA2Qg_o,551
+skpartial-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+skpartial-0.1.0.dist-info/top_level.txt,sha256=X3fsFHZRAcEu3JRAPiYU9LUTqlPMU2QeHs1wlXPLEos,16
+skpartial-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: skpartial
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: scikit-learn (>=0.24.0)
+Provides-Extra: dev
+Requires-Dist: black (>=22.1.0) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.6.0) ; extra == 'dev'
+Requires-Dist: interrogate (>=1.5.0) ; extra == 'dev'
+Requires-Dist: mktestdocs (>=0.1.0) ; extra == 'dev'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.17.0) ; extra == 'dev'
+Requires-Dist: pytest (>=4.0.2) ; extra == 'dev'
+
+UNKNOWN
+
+
