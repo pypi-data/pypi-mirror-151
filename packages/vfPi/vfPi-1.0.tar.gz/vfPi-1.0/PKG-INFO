@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: vfPi
+Version: 1.0
+Summary: A module to control visionFive1 SPI
+Home-page: http://sourceforge.net/projects/raspberry-gpio-python/
+Author: loushl
+Author-email: shanlin.lou@starfivetech.com
+License: MIT
+Description: UNKNOWN
+Keywords: VisionFive1,SPI
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Home Automation
+Classifier: Topic :: System :: Hardware
