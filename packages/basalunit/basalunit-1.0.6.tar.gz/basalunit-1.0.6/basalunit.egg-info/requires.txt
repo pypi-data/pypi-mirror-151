@@ -1,0 +1,4 @@
+elephant
+neo
+sciunit>=0.2.7
+tabulate
