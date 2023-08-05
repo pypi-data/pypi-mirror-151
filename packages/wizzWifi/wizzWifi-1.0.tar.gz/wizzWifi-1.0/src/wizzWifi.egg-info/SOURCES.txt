@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/wizzWifi.egg-info/PKG-INFO
+src/wizzWifi.egg-info/SOURCES.txt
+src/wizzWifi.egg-info/dependency_links.txt
+src/wizzWifi.egg-info/requires.txt
+src/wizzWifi.egg-info/top_level.txt
