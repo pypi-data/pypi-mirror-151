@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sf-session
+Version: 0.1.1
+Summary: Maintain a Salesforce Connection Session.
+License: BSD 3-Clause
+Author: Jarvis Nederlof
+Requires-Python: >=3.8
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: simple-salesforce (>=1.11.6)
+Description-Content-Type: text/markdown
+
+# sf_session
+
+Maintain a Salesforce Connection Session.
+
+## Installation
+
+```bash
+$ pip install sf_session
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`sf_session` was created by Jarvis Nederlof. It is licensed under the terms of the BSD 3-Clause license.
+
+## Credits
+
+`sf_session` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
