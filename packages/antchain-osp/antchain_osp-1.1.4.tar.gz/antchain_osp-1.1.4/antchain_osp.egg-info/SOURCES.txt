@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+antchain_osp.egg-info/PKG-INFO
+antchain_osp.egg-info/SOURCES.txt
+antchain_osp.egg-info/dependency_links.txt
+antchain_osp.egg-info/requires.txt
+antchain_osp.egg-info/top_level.txt
+antchain_sdk_osp/__init__.py
+antchain_sdk_osp/client.py
+antchain_sdk_osp/models.py
