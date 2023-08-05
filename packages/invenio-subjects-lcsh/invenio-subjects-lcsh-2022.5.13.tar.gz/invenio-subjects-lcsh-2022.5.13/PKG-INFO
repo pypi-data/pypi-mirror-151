@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: invenio-subjects-lcsh
+Version: 2022.5.13
+Summary: LCSH subject terms for InvenioRDM
+Home-page: https://github.com/galterlibrary/invenio-subjects-lcsh
+Author: Northwestern University
+Author-email: DL_FSM_GDS@e.northwestern.edu
+License: MIT
+Description: # invenio-subjects-lcsh
+        
+        LCSH subject terms for InvenioRDM
+        
+        Install this extension to get [Library of Congress Subject Headings](https://id.loc.gov/authorities/subjects.html) into your instance.
+        
+        ## Installation
+        
+        From your instance directory:
+        
+            pipenv install invenio-subjects-lcsh
+        
+        This will add it to your Pipfile.
+        
+        ### Versions
+        
+        This repository follows [calendar versioning](https://calver.org/):
+        
+        `2021.06.18` is both a valid semantic version and an indicator of the year-month corresponding to the loaded LCSH terms.
+        
+        
+        ## Usage
+        
+        There are 2 types of users for this package. Maintainers of the package and instance administrators.
+        
+        ### Instance administrators
+        
+        For instance administrators, after you have installed the extension as per the steps above, you are done. It should just work.
+        
+        ### TODO -- Maintainers
+        
+        When a new list of LCSH term comes out, this package should be updated. Here we show how.
+        
+        0- Make sure you have cloned this package. Then install it locally with:
+        
+            make install
+        
+        1- Update:
+        
+            make update
+        
+           This will
+        
+           1- Download the new list (TODO - For now download it manually and place it in `invenio_subjects_lcsh/download/data/`)
+           2- Convert terms to InvenioRDM subjects format
+           3- Write those to `invenio_subjects_lcsh/vocabularies/subjects_lcsh.yaml` file
+        
+        3- Run the tests just to make sure everything is still good:
+        
+            make test
+        
+        4- When you are happy with the list, bump the version in `invenio_subjects_lcsh/version.py` and release it.
+        
+        
+        ## Future Ideas
+        
+        - InvenioRDM doesn't have a way to update pre-existing subjects yet. Once there is one,
+          this package should provide the functionality to update LCSH terms.
+        
+        
+        # Changes
+        
+        Version 2021.09.19 (released 2021-09-19)
+        
+        - Initial public release.
+        
+Keywords: invenio inveniordm subjects LCSH
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: all
