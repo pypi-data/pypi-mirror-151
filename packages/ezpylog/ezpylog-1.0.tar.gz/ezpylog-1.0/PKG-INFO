@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: ezpylog
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/JRodez/ezpylog
+Author: Jérémie Rodez
+Author-email: jeremierodez@outlook.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: tool print ezpylog logger logging log level debug info warning error critical color terminal cli magnificient colorful beautiful filter filter_by_level filter_by_context filter_by_message
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
