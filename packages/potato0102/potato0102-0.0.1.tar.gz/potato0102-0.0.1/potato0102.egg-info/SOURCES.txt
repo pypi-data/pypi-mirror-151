@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+potato0102.egg-info/PKG-INFO
+potato0102.egg-info/SOURCES.txt
+potato0102.egg-info/dependency_links.txt
+potato0102.egg-info/top_level.txt
+shinchan/__init__.py
