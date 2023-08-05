@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kabbes_py_starter.egg-info/PKG-INFO
+src/kabbes_py_starter.egg-info/SOURCES.txt
+src/kabbes_py_starter.egg-info/dependency_links.txt
+src/kabbes_py_starter.egg-info/requires.txt
+src/kabbes_py_starter.egg-info/top_level.txt
+src/py_starter/__init__.py
+src/py_starter/__main__.py
+src/py_starter/py_starter.py
