@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: giveagame
+Version: 0.0.3
+Summary: A simple game engine...
+Home-page: https://www.github.com/misha-network/giveagame/
+Author: misha-network
+Author-email: misha.network.email@gmail.com
+Project-URL: Bug Tracker, https://www.github.com/misha-network/giveagame/issues/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GiveAGame
+
+### Description
+
+This is a simple game engine. 
+[GitHub of Project](https://www.github.com/misha-network/giveagame)
+
+### How to install?
+
+1. *Open your* **terminal**.
+2. *Check if* **Python** and **PIP** *are installed*.
+3. *Finally run* command(**`pip install giveagame`**) in your **terminal**.
+
