@@ -1,0 +1,17 @@
+setup.py
+shonen_magazine_pocket.egg-info/PKG-INFO
+shonen_magazine_pocket.egg-info/SOURCES.txt
+shonen_magazine_pocket.egg-info/dependency_links.txt
+shonen_magazine_pocket.egg-info/entry_points.txt
+shonen_magazine_pocket.egg-info/requires.txt
+shonen_magazine_pocket.egg-info/top_level.txt
+smp/__init__.py
+smp/__main__.py
+smp/base.py
+smp/cli.py
+smp/download.py
+smp/globals.py
+smp/init.py
+smp/settings.py
+smp/style.py
+smp/utils.py

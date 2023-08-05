@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: shonen-magazine-pocket
+Version: 0.0.0.0a1
+Summary: A Basic Shonen Magazine Pocket Scraper
+Home-page: https://github.com/hyaku-dl/shonen-magazine-pocket
+Author: whinee
+Author-email: whinyaan@pm.me
+License: MIT
+Project-URL: Documentation, https://smp.hyaku.download
+Project-URL: Source, https://github.com/hyaku-dl/shonen-magazine-pocket
+Project-URL: Tracker, https://github.com/hyaku-dl/shonen-magazine-pocket/issues
+Keywords: python windows macos linux cli scraper downloader manga python3 urasunday
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+A no-nonsense, simple and easy to use scraper for <a target="_blank" href="https://pocket.shonenmagazine.com">Shonen Magazine Pocket Scraper</a>.
+    For full information, visit https://smp.hyaku.download
+
