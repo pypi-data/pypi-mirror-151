@@ -1,0 +1,3 @@
+[console_scripts]
+ceader = ceader.__main__:main
+
