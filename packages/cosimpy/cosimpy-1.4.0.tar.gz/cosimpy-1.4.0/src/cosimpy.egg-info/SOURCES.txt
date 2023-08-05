@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cosimpy/EM_Field.py
+src/cosimpy/Exceptions.py
+src/cosimpy/RF_Coil.py
+src/cosimpy/S_Matrix.py
+src/cosimpy/__init__.py
+src/cosimpy.egg-info/PKG-INFO
+src/cosimpy.egg-info/SOURCES.txt
+src/cosimpy.egg-info/dependency_links.txt
+src/cosimpy.egg-info/requires.txt
+src/cosimpy.egg-info/top_level.txt
+test/test_develop.py
