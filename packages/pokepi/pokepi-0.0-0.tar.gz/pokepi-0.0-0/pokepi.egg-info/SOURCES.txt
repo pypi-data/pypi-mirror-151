@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+pokepi/__init__.py
+pokepi.egg-info/PKG-INFO
+pokepi.egg-info/SOURCES.txt
+pokepi.egg-info/dependency_links.txt
+pokepi.egg-info/requires.txt
+pokepi.egg-info/top_level.txt
