@@ -1,0 +1,8 @@
+README.md
+setup.py
+ChiSquareTestForString/__init__.py
+ChiSquareTestForString.egg-info/PKG-INFO
+ChiSquareTestForString.egg-info/SOURCES.txt
+ChiSquareTestForString.egg-info/dependency_links.txt
+ChiSquareTestForString.egg-info/requires.txt
+ChiSquareTestForString.egg-info/top_level.txt
