@@ -1,0 +1,6 @@
+paramiko
+asyncssh
+pydantic
+pyyaml
+loguru
+typer
