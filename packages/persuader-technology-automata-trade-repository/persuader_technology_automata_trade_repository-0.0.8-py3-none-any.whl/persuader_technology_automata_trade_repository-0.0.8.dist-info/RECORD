@@ -1,0 +1,11 @@
+traderepo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traderepo/repository/TradeRepository.py,sha256=_IQW0eCOTBs2akDLaHE7IJsW6GLWqhaCVmuVDIudOp4,2837
+traderepo/repository/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traderepo/repository/serialize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traderepo/repository/serialize/trade_deserializer.py,sha256=zxueyWWq5U9HVM6UBIjEGoIMmYgJgduTxA7Wwwk0hnY,1942
+traderepo/repository/serialize/trade_serializer.py,sha256=kBKngk0wqrMhJHG9fKARQ5S1YkbiS8IhFCoZ4yJrIQI,803
+persuader_technology_automata_trade_repository-0.0.8.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+persuader_technology_automata_trade_repository-0.0.8.dist-info/METADATA,sha256=mbq-L6IyZQoIJkwxZefffcIyjwJFu8agDN2oi7uPUbs,510
+persuader_technology_automata_trade_repository-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+persuader_technology_automata_trade_repository-0.0.8.dist-info/top_level.txt,sha256=uMpAzdi5C6l05ZE5fZZZ8KFt9bY_D9De04TG-2RemIE,10
+persuader_technology_automata_trade_repository-0.0.8.dist-info/RECORD,,
