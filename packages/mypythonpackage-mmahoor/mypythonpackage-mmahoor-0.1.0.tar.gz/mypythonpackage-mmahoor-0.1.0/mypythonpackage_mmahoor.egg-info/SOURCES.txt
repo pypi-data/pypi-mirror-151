@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mypythonpackage-mmahoor/__initi__.py
+mypythonpackage-mmahoor/hello.py
+mypythonpackage_mmahoor.egg-info/PKG-INFO
+mypythonpackage_mmahoor.egg-info/SOURCES.txt
+mypythonpackage_mmahoor.egg-info/dependency_links.txt
+mypythonpackage_mmahoor.egg-info/requires.txt
+mypythonpackage_mmahoor.egg-info/top_level.txt

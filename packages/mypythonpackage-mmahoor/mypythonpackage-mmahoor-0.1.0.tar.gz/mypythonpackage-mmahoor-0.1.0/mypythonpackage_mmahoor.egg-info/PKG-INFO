@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mypythonpackage-mmahoor
+Version: 0.1.0
+Summary: hello world
+Home-page: http://pypi.python.org/pypi/mypythonpackage-mmahoor/
+Author: M.H.M
+Author-email: myemail@example.com
+License: LICENSE.txt
+Platform: UNKNOWN
+License-File: LICENSE
+
+This is my first package.
+
