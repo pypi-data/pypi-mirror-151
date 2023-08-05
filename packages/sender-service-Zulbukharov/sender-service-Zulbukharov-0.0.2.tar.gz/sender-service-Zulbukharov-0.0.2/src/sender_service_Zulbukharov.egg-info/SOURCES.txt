@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/sender/__init__.py
+src/sender/api/__init__.py
+src/sender/api/sender_pb2.py
+src/sender/api/sender_pb2_grpc.py
+src/sender_service_Zulbukharov.egg-info/PKG-INFO
+src/sender_service_Zulbukharov.egg-info/SOURCES.txt
+src/sender_service_Zulbukharov.egg-info/dependency_links.txt
+src/sender_service_Zulbukharov.egg-info/top_level.txt
