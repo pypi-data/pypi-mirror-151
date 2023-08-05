@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: scratchcloud
+Version: 1.2.1
+Summary: An event-based asynchronous wrapper for scratch.mit.edu cloud variables.
+Home-page: https://github.com/yuwex/scratchcloud
+Author: yuwex
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.8.0)
+Requires-Dist: websockets (>=10.1)
+Provides-Extra: docs
+Requires-Dist: sphinx (==4.3.2) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==1.0.0) ; extra == 'docs'
+
+# scratchcloud
+An asynchronous Pythonic wrapper for scratch.mit.edu cloud websockets.
+
+[![PyPi Package Version](https://img.shields.io/pypi/v/scratchcloud)](https://pypi.org/project/scratchcloud/)
+[![PyPi Package Python Versions](https://shields.io/pypi/pyversions/scratchcloud)](https://pypi.org/project/scratchcloud/)
+[![PyPi Downloads / Month](https://img.shields.io/pypi/dm/scratchcloud)](https://pypi.org/project/scratchcloud/)
+[![Discord server invite](https://discord.com/api/guilds/963940005837946890/widget.png)](https://discord.gg/K4t2WNnEPC)
+
+## Features
+ * Efficient asynchronous connection with Scratch.
+ * Event-based handling of cloud variables.
+ * Built-in reconnecting.
+ * Encoding and decoding support.
+
+## Extensions
+ * Fetching data from the Scratch API.
+ * Easily customizable codecs for encoding and decoding variables.
+ * Sending and parsing large cloud payloads.
+ * Validating the cloud by finding who changed a cloud variable.
+
+## Example
+```python
+from scratchcloud import CloudClient, CloudChange
+
+client = CloudClient('yuwe', '588579111')
+
+@client.event
+async def on_connect():
+    print('Connected!')
+
+@client.event
+async def on_disconnect():
+    print('Disconnected!')
+
+@client.event
+async def on_message(cloud: CloudChange):
+    print(f"{cloud.name} was set to {cloud.value}!")
+    await client.set_cloud(cloud.name, "123")
+
+client.run("SuperSecretPassword22")
+```
+
+## Links
+ * [Docs](https://yuwex.github.io/scratchcloud)
+ * [PyPi](https://pypi.org/project/scratchcloud/)
+ * [Scratch](https://scratch.mit.edu)
+
