@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+reformedcatutils/__init__.py
+reformedcatutils/biblebooks.py
+reformedcatutils.egg-info/PKG-INFO
+reformedcatutils.egg-info/SOURCES.txt
+reformedcatutils.egg-info/dependency_links.txt
+reformedcatutils.egg-info/not-zip-safe
+reformedcatutils.egg-info/top_level.txt

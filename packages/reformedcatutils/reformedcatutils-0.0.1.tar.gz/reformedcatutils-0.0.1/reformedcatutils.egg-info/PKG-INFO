@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: reformedcatutils
+Version: 0.0.1
+Summary: Helper functions for ReformedCat Project
+Home-page: https://github.com/stephenhky/ReformedCatUtils
+Author: Kwan-Yuet Ho
+Author-email: stephenhky@yahoo.com.hk
+License: LGPL
+Description: Helper functions for ReformedCat Project
+Keywords: Bible,Scripture,catechism
+Platform: UNKNOWN
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Religion
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
