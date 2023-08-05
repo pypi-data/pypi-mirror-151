@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: amundsen-search
+Version: 4.0.0
+Summary: Search Service for Amundsen
+Home-page: https://github.com/amundsen-io/amundsen/tree/main/search
+Maintainer: Amundsen TSC
+Maintainer-email: amundsen-tsc@lists.lfai.foundation
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: all
+Provides-Extra: dev
+Provides-Extra: oidc
