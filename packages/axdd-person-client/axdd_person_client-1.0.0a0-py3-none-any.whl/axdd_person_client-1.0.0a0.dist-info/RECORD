@@ -1,0 +1,9 @@
+uw_person_client/__init__.py,sha256=aYJvrloYwLKAAlgKVsLDml4PIxVrsEU0JclP8qHSl58,412
+uw_person_client/components.py,sha256=FY1i5i5Wq9XiBm__PIGcsQhz4pIqnRibtKMaOblXNrQ,1396
+uw_person_client/core.py,sha256=xUAAspmrkKeUM8b5kqyEpGSd4HPIa-rWPAhoJomFBxA,9979
+uw_person_client/test.py,sha256=ipQpeNQ4VN2KDt2Mpiyhbo-XtruJLK7p0dO07RuhMjk,348
+axdd_person_client-1.0.0a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+axdd_person_client-1.0.0a0.dist-info/METADATA,sha256=YWgKwNmiIHiCxW_GhmF_1QJYNwowDms_dkcLmq6D_5Q,765
+axdd_person_client-1.0.0a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+axdd_person_client-1.0.0a0.dist-info/top_level.txt,sha256=YCKVAimxG69ZlZJFcdtgl44--PY23S7Y6NKglt6VjVM,17
+axdd_person_client-1.0.0a0.dist-info/RECORD,,
