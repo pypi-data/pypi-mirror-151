@@ -1,0 +1,9 @@
+tovala_insights/__init__.py,sha256=06p6mr_LMkOqzy-pI6DjjNmni7oo0O2u-fIgAYYgv6k,571
+tovala_insights/data_load.py,sha256=Aw4uOctI62HYJmymICJI7r4204kUySLAUzw2vaC-_1k,1700
+tovala_insights/log_config.py,sha256=5wi0wSWxzFGKCyWzZy3o3dLBcUz5Iugg7HzPY_cXHSI,499
+tovala_insights/configuration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tovala_insights/configuration/log_config.yaml,sha256=i2OJzvU7RkTedxdsG6i0EuxH2hDQCOpJsQgRFBivO7c,565
+tovala_insights-1.9.dist-info/METADATA,sha256=Koe1J0vMwQT9aWpxHmYh3hNnUzi63iwpYuj-HFdouVA,530
+tovala_insights-1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tovala_insights-1.9.dist-info/top_level.txt,sha256=xI6mkvRcz5x9s6MBFPGideUdcv3rUwNwUSDJy6lt94g,16
+tovala_insights-1.9.dist-info/RECORD,,
