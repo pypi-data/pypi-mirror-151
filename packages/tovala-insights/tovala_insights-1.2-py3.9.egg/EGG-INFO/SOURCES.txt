@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+src/tovala_insights/__init__.py
+src/tovala_insights/get_json.py
+src/tovala_insights/log_config.py
+src/tovala_insights.egg-info/PKG-INFO
+src/tovala_insights.egg-info/SOURCES.txt
+src/tovala_insights.egg-info/dependency_links.txt
+src/tovala_insights.egg-info/not-zip-safe
+src/tovala_insights.egg-info/requires.txt
+src/tovala_insights.egg-info/top_level.txt
