@@ -1,0 +1,8 @@
+pandas
+sqlite_utils
+
+[cli]
+typer
+
+[test]
+pytest
