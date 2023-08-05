@@ -1,0 +1,1 @@
+This is a module for creating images for a game called Wordle
