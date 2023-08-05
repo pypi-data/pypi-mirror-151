@@ -1,0 +1,11 @@
+__init__.py,sha256=ewFgGk6hD2aoFne9ms6IZrWEdnPPr4SfWAQfkgJe6As,24
+datapact.py,sha256=kVly0m1YN5mhAxZ3-2Y5e0juZeNh9-CJfXwVEFPWDn4,10523
+datapact_test.py,sha256=C8ovtNUP9_husoSioz8yy7cgdgdTKc9QfVKFIcvfRD8,1570
+fixture_test.py,sha256=anV_O_xIwMqUvpUaDQDmXToPlhIoobOE4sXl5UZ_eHI,451
+schema.py,sha256=VWeY28N9JZ-7ArOIcpauZPdWclr4DfckdFOkkH4rXlU,1230
+javascript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapact-0.3.5.dist-info/LICENSE,sha256=PJWyrHRfdBtYkg1ZaqjosPeOtYW_QKxPzrq4-pbMatU,1061
+datapact-0.3.5.dist-info/METADATA,sha256=MOs5jYfd7ibdij6TtKWysn4R_xRmifNopZ3wfCsAaVI,4967
+datapact-0.3.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datapact-0.3.5.dist-info/top_level.txt,sha256=_af-X61ZwjvSyy6KaFnTb5QzrCK_u5Dy2pBSitbIgQc,63
+datapact-0.3.5.dist-info/RECORD,,
