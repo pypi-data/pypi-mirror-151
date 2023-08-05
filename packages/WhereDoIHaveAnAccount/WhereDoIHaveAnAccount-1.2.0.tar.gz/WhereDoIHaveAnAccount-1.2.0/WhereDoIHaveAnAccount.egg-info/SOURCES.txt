@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+WhereDoIHaveAnAccount/__init__.py
+WhereDoIHaveAnAccount/scraper.py
+WhereDoIHaveAnAccount.egg-info/PKG-INFO
+WhereDoIHaveAnAccount.egg-info/SOURCES.txt
+WhereDoIHaveAnAccount.egg-info/dependency_links.txt
+WhereDoIHaveAnAccount.egg-info/entry_points.txt
+WhereDoIHaveAnAccount.egg-info/not-zip-safe
+WhereDoIHaveAnAccount.egg-info/requires.txt
+WhereDoIHaveAnAccount.egg-info/top_level.txt

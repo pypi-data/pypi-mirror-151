@@ -1,0 +1,6 @@
+imap-tools>=0.5
+requests>=2.20
+
+[testing]
+pytest>=6.0
+tox>=3.24
