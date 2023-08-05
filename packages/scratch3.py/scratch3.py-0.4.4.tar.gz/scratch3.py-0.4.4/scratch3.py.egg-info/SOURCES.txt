@@ -1,0 +1,15 @@
+README.md
+setup.py
+scratch3.py.egg-info/PKG-INFO
+scratch3.py.egg-info/SOURCES.txt
+scratch3.py.egg-info/dependency_links.txt
+scratch3.py.egg-info/requires.txt
+scratch3.py.egg-info/top_level.txt
+scratchattach/__init__.py
+scratchattach/_cloud.py
+scratchattach/_cloud_requests.py
+scratchattach/_encoder.py
+scratchattach/_exceptions.py
+scratchattach/_project.py
+scratchattach/_session.py
+scratchattach/_user.py
