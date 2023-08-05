@@ -1,0 +1,9 @@
+pycorruptor/__init__.py,sha256=iaMQKGD3nxtXJHnQlLB0lXaxReWyPq2jhjaYcVPQ3Yo,216
+pycorruptor/__version__.py,sha256=VVfPcXRQrqggsyHfsRJt-cH1HPs_e2aI8MdmMeqQqxw,538
+pycorruptor/corrupt.py,sha256=EoJha928Z992c5nu4w1gojTnt6rufp9ciBSLfqiMSho,8561
+pycorruptor/tests/__init__.py,sha256=o09yeyG2rXnUEnBpQNAofm7tEuK-UUpF3MnAN7SQGJc,73
+pycorruptor-0.0.4.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+pycorruptor-0.0.4.dist-info/METADATA,sha256=ouP29o4VDWinps0yNn2hD0A7ED8P3iDAVBQ6gkxVMPw,2007
+pycorruptor-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pycorruptor-0.0.4.dist-info/top_level.txt,sha256=iBMkaSxdAzPG_YCWlqJEtytYqNHg0YUD1mwFYA1-G90,12
+pycorruptor-0.0.4.dist-info/RECORD,,
