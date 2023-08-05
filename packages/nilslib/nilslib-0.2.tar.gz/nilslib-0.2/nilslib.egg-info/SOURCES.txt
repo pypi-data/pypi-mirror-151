@@ -1,0 +1,10 @@
+README.md
+setup.py
+nilslib/__init__.py
+nilslib/nlib.py
+nilslib/test.py
+nilslib.egg-info/PKG-INFO
+nilslib.egg-info/SOURCES.txt
+nilslib.egg-info/dependency_links.txt
+nilslib.egg-info/not-zip-safe
+nilslib.egg-info/top_level.txt
