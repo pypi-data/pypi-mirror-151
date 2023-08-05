@@ -1,0 +1,10 @@
+aiogram_media_group/__init__.py,sha256=ikFbAdib3UYHTdYt0DCwP5_0WvsaF6N_C_Gh0gHMIQc,460
+aiogram_media_group/handler.py,sha256=fHy2LkrHNQwugTfTx7VZslSW-fmHUTU6Ym6HzmG58YA,3997
+aiogram_media_group/storages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiogram_media_group/storages/base.py,sha256=IAT2CWQj-MBtwzuIF7PoKswyEBznemxHONXj7RIFwzA,600
+aiogram_media_group/storages/memory.py,sha256=V9BvhuxaTkvLYeslp8X_5XTMLCxklPrpEippLw_vjlk,1020
+aiogram_media_group/storages/redis.py,sha256=NGDZ0JhDAz1WjxBFSo86LkislkmOAMTgVjszEbG3Ow0,2181
+aiogram_media_group-0.4.0.dist-info/LICENSE,sha256=7k6G385EPwOJ_dW8HoaIe_VeFlHw0CbpSy7a1ZBMDMA,1065
+aiogram_media_group-0.4.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aiogram_media_group-0.4.0.dist-info/METADATA,sha256=mbEehWaTAwL36Vz1XOQKGAvyVdxvVfjSn18Wrz2QW7w,1469
+aiogram_media_group-0.4.0.dist-info/RECORD,,
