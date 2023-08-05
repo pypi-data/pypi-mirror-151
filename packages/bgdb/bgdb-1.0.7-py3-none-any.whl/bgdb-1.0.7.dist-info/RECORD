@@ -1,0 +1,11 @@
+bgdb/__init__.py,sha256=LbLAVxFSfVgmHZrZwXRatvCYE1HCtbSjFgt84reIp9Y,90
+bgdb/bgdb.py,sha256=gzB-NJ_LlGnUjoqUXXbDrmcvW1c7_P2cxrCjMGMl8D0,341
+bgdb/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bgdb/client/client.py,sha256=68yef6lLo5LFbueb98C7IE3Y688azt4h8pVvHhntabE,2877
+bgdb/search/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bgdb/search/search.py,sha256=HOOA7ytbeu1X_3y-3BeFO9TkE_rRa7q73NjjhxvjRIo,1823
+bgdb-1.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bgdb-1.0.7.dist-info/METADATA,sha256=B6OjSnbsq6dCTt46G3sIpNbnc6tfNZOWrIYoMHcppLU,622
+bgdb-1.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bgdb-1.0.7.dist-info/top_level.txt,sha256=ePYAKhJI3J94B_m1nvNFY6phKp0_FASu-cFV-YY0DXY,5
+bgdb-1.0.7.dist-info/RECORD,,
