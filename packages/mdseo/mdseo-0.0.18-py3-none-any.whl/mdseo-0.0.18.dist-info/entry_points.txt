@@ -1,0 +1,5 @@
+[console_scripts]
+mdseo_chk_fm = mdseo.core:chk_fm
+mdseo_dupe_title = mdseo.core:chk_dupe_title
+mdseo_len = mdseo.core:chk_len
+
