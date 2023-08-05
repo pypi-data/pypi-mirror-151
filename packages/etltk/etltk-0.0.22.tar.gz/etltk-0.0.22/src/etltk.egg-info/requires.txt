@@ -1,0 +1,2 @@
+textsearch>=0.0.21
+emoji>=1.7.0
