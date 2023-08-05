@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+mdseo/__init__.py
+mdseo/_nbdev.py
+mdseo/core.py
+mdseo.egg-info/PKG-INFO
+mdseo.egg-info/SOURCES.txt
+mdseo.egg-info/dependency_links.txt
+mdseo.egg-info/entry_points.txt
+mdseo.egg-info/not-zip-safe
+mdseo.egg-info/requires.txt
+mdseo.egg-info/top_level.txt
