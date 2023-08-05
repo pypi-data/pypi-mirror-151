@@ -1,0 +1,3 @@
+[console_scripts]
+fastq-downloader=fastq_downloader.__main__:main
+
