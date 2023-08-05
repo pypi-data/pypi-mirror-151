@@ -1,0 +1,2 @@
+[console_scripts]
+pr_keepachangelog = pr_keepachangelog.__main__:main
