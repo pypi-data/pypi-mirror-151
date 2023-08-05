@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ine_tugesto_somenergia
+Version: 1.0.0.0
+Summary: Translates INE to Tugesto ids
+Home-page: https://github.com/som-energia/ine_tugesto
+Author: Som Energia
+Author-email: info@somenergia.coop
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent

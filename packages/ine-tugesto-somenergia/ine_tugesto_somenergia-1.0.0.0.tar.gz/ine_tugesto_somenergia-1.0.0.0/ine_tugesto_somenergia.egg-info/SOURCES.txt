@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+ine_tugesto_somenergia/__init__.py
+ine_tugesto_somenergia/ine_maping_tugesto.py
+ine_tugesto_somenergia.egg-info/PKG-INFO
+ine_tugesto_somenergia.egg-info/SOURCES.txt
+ine_tugesto_somenergia.egg-info/dependency_links.txt
+ine_tugesto_somenergia.egg-info/top_level.txt
+ine_tugesto_somenergia/csv/ine_maping_tugesto.csv
