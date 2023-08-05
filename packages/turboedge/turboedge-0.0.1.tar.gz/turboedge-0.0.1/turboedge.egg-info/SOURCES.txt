@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+turboedge.egg-info/PKG-INFO
+turboedge.egg-info/SOURCES.txt
+turboedge.egg-info/dependency_links.txt
+turboedge.egg-info/top_level.txt
