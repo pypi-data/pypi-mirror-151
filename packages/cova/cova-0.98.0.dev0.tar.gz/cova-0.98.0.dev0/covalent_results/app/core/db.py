@@ -1,0 +1,166 @@
+# Copyright 2021 Agnostiq Inc.
+#
+# This file is part of Covalent.
+#
+# Licensed under the GNU Affero General Public License 3.0 (the "License").
+# A copy of the License may be obtained with this software package or at
+#
+#      https://www.gnu.org/licenses/agpl-3.0.en.html
+#
+# Use of this file is prohibited except in compliance with the License. Any
+# modifications or derivative works of this file must retain this copyright
+# notice, and modified files must contain a notice indicating that they have
+# been altered from the originals.
+#
+# Covalent is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE. See the License for more details.
+#
+# Relief from the License may be granted by purchasing a commercial license.
+
+import logging
+import os
+import re
+from typing import Optional, Tuple, Union
+
+import sqlalchemy
+from sqlalchemy import (
+    Column,
+    DateTime,
+    Integer,
+    MetaData,
+    String,
+    Table,
+)
+from app.core.config import settings
+from sqlalchemy_utils import (
+    create_database,
+    database_exists,
+)
+
+
+class Database:
+    def __init__(
+        self,
+        database_backend: str = "sqlite",
+        db_name: str = None,
+        db_endpoint: str = None,
+        db_port: int = 3306,
+        db_user: str = "admin",
+        db_password: str = None,
+    ):
+
+        self.database_backend = database_backend
+        self.db_name = db_name if db_name else settings.DISPATCH_DB_NAME
+
+        if self.database_backend == "mysql":
+            self.db_endpoint = db_endpoint
+            self.db_port = db_port
+            self.db_user = db_user
+
+        self.connect(db_password)
+
+        if not database_exists(self.engine.url):
+            create_database(self.engine.url)
+
+        if not sqlalchemy.inspect(self.engine).has_table("workflow"):
+            self.create_workflow_table()
+
+    def connect(self, db_password: str = None):
+        if self.database_backend == "sqlite":
+            # TODO: Use the cache instead of cwd
+            abs_db_path = os.path.join(os.getcwd(), self.db_name)
+            self.engine = sqlalchemy.create_engine(f"sqlite:///{abs_db_path}")
+            self.logger.info("Connected to local SQLite database")
+        elif self.database_backend == "mysql":
+            self.engine = sqlalchemy.create_engine(
+                f"mysql+pymysql://{self.db_user}:{db_password}@{self.db_endpoint}:{self.db_port}/{self.db_name}",
+                pool_recycle=3600,
+            )
+            self.logger.info(f"Connected to MySQL database at {self.db_endpoint}")
+        else:
+            error_str = "Database backend not supported."
+            self.logger.error(error_str)
+            raise ValueError(error_str)
+
+    def create_workflow_table(self):
+        # TODO: Can metadata also be stored as a class variable?
+        metadata = MetaData(self.engine)
+        workflow_table = Table(
+            "workflow",
+            metadata,
+            # TODO: What is the appropriate length for strings?
+            Column("id", String(256), primary_key=True),
+            Column("name", String(256)),
+            Column("status", String(64), default="NEW_OBJECT"),
+            Column("total_tasks", Integer),
+            Column("completed_tasks", Integer, default=0),
+            Column("time_created", DateTime),
+            Column("time_started", DateTime),
+            Column("time_completed", DateTime),
+            Column("inputs_filename", String(256)),
+            Column("inputs_path", String(256)),
+            Column("function_filename", String(256)),
+            Column("function_path", String(256)),
+            Column("results_filename", String(256)),
+            Column("results_path", String(256)),
+            Column("error_msg", String(256)),
+        )
+
+        metadata.create_all(self.engine)
+
+        self.logger.info("Created workflow table")
+
+    def create_task_table(self, table_name: str):
+        name_pattern = re.compile("^[a-zA-Z0-9_]+$")
+        if not re.match(name_pattern, table_name):
+            raise ValueError("Invalid table name.")
+
+        metadata = MetaData(self.engine)
+        task_table = Table(
+            table_name,
+            metadata,
+            Column("id", Integer, primary_key=True),
+            Column("name", String(256)),
+            Column("status", String(64), default="NEW_OBJECT"),
+            Column("time_created", DateTime),
+            Column("time_started", DateTime),
+            Column("time_completed", DateTime),
+            Column("inputs_filename", String(256)),
+            Column("inputs_path", String(256)),
+            Column("function_filename", String(256)),
+            Column("function_path", String(256)),
+            Column("executor_filename", String(256)),
+            Column("executor_path", String(256)),
+            Column("results_filename", String(256)),
+            Column("results_path", String(256)),
+            # TODO: Maybe not a good idea to have a fixed-length string here
+            Column("stdout", String(1024)),
+            Column("stderr", String(1024)),
+            Column("info", String(256)),
+            Column("error", String(256)),
+        )
+
+        metadata.create_all(self.engine)
+
+        self.logger.info(f"Created task table {table_name}")
+
+
+    def value(self, sql: str, key: str = None) -> Optional[Tuple[Union[bool, str]]]:
+        import sqlite3
+
+        con = sqlite3.connect(self.sqlite_db_name)
+        cur = con.cursor()
+        self.logger.info("Executing SQL command.")
+        self.logger.info(sql)
+        value = (False,)
+        if key:
+            self.logger.info("Searching for key " + key)
+            cur.execute(sql, (key,))
+            value = cur.fetchone()
+        else:
+            cur.execute(sql)
+            value = (True,)
+        con.commit()
+        con.close()
+        return value

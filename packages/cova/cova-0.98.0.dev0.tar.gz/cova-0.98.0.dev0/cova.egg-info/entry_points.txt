@@ -1,0 +1,3 @@
+[console_scripts]
+covalent = covalent._cli.cli:cli
+nats-server = covalent_queuer.nats_server:main
