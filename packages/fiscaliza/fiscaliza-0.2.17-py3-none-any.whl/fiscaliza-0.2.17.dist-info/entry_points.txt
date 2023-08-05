@@ -1,0 +1,3 @@
+[console_scripts]
+download = fiscaliza.info:_download_attachments
+relatar = fiscaliza.update:relatar_inspecao
