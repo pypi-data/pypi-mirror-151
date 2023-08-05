@@ -1,0 +1,6 @@
+pip
+packaging
+pyyaml==6.0
+fastcore>=1.4.2
+
+[dev]
