@@ -1,0 +1,8 @@
+setup.py
+baizhangMath2/__init__.py
+baizhangMath2/demo1.py
+baizhangMath2/demo2.py
+wangyuanceshibao.egg-info/PKG-INFO
+wangyuanceshibao.egg-info/SOURCES.txt
+wangyuanceshibao.egg-info/dependency_links.txt
+wangyuanceshibao.egg-info/top_level.txt

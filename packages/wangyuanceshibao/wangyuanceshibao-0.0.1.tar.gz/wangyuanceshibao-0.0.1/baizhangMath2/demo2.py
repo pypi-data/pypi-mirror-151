@@ -1,0 +1,2 @@
+def mutipile():
+    print('multiple')
