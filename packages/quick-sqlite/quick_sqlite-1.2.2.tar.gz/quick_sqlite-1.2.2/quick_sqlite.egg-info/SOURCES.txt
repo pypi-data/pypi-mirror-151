@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+quick_sqlite/__init__.py
+quick_sqlite/quick_sqlite.py
+quick_sqlite.egg-info/PKG-INFO
+quick_sqlite.egg-info/SOURCES.txt
+quick_sqlite.egg-info/dependency_links.txt
+quick_sqlite.egg-info/requires.txt
+quick_sqlite.egg-info/top_level.txt
+test/test.py
