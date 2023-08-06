@@ -1,0 +1,9 @@
+README.md
+setup.py
+stiqueue/__init__.py
+stiqueue/sqclient.py
+stiqueue/sqserver.py
+stiqueue.egg-info/PKG-INFO
+stiqueue.egg-info/SOURCES.txt
+stiqueue.egg-info/dependency_links.txt
+stiqueue.egg-info/top_level.txt
