@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyqt_drawer/__init__.py
+pyqt_drawer/drawer.py
+pyqt_drawer.egg-info/PKG-INFO
+pyqt_drawer.egg-info/SOURCES.txt
+pyqt_drawer.egg-info/dependency_links.txt
+pyqt_drawer.egg-info/requires.txt
+pyqt_drawer.egg-info/top_level.txt
+pyqt_drawer/ico/__init__.py
+pyqt_drawer/ico/drawer.svg
