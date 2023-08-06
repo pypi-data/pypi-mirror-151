@@ -1,0 +1,7 @@
+dokr-i94alan-pyexample
+setup.py
+dokr_i94alan_pyexample.egg-info/PKG-INFO
+dokr_i94alan_pyexample.egg-info/SOURCES.txt
+dokr_i94alan_pyexample.egg-info/dependency_links.txt
+dokr_i94alan_pyexample.egg-info/requires.txt
+dokr_i94alan_pyexample.egg-info/top_level.txt

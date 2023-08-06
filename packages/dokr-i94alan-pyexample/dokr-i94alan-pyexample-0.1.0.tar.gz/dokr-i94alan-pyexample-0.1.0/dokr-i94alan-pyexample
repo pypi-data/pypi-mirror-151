@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+
+echo "pyexample i94alan hey there, this is my first pip package"
