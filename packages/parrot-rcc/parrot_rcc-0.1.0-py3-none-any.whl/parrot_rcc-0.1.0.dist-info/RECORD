@@ -1,0 +1,9 @@
+parrot_rcc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parrot_rcc/cli.py,sha256=RwkuSJ5WOCkeRM0qZ4jv82hkl3Wo0eiZYXoNucK7xjE,8696
+parrot_rcc/types.py,sha256=W9-tl4NjmzkqaQvbWgiu8-UCGpMHmJmCNxwdpLLynUg,1114
+parrot_rcc/utils.py,sha256=TBwUbaPnm0qMJQFC6gBfc7Cvow92kNJj2QT6aIbElPU,1465
+parrot_rcc-0.1.0.dist-info/entry_points.txt,sha256=8P1JKkIVM4lzhS1vTRyQ5m1T8N4pXf8s3xt18Z_NfOQ,50
+parrot_rcc-0.1.0.dist-info/LICENSE,sha256=KXhcTdoRXURfCc1Muq13I8QyDZFvJkyxUY8C4ZJz0hc,1511
+parrot_rcc-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+parrot_rcc-0.1.0.dist-info/METADATA,sha256=exKm1XzzkpTNFl7yXmoG1aR_9CEMEcdzI6xkmhvxUrk,558
+parrot_rcc-0.1.0.dist-info/RECORD,,
