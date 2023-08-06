@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: mqplus
+Version: 0.0.2
+Summary: MQ消息工具（生产者、消费者封装）。
+Home-page: https://github.com/kancyframework/python-plugins/tree/main/mqplus
+Author: kancy
+Author-email: 793272861@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Provides-Extra: threading feature
+
+
+### 使用手册
+
+**快速开始**
+
+1) 生产者
+```python
+import mqplus
+
+producer = mqplus.RabbitProducer("docker.kancy.top", "root", "root123")
+producer.putQueue("test", "pika.test.queue")
+
+# 注册交换机
+producer.registerExchange("pika.test.exchange", 'direct')
+
+# 注册队列
+producer.registerQueue("pika.test.queue", durable=True)
+
+# 绑定交换机很队列
+producer.bind("pika.test.exchange", "pika.test.queue")
+
+```
+
+2) 消费者
+```python
+import mqplus
+
+def handle_message(data, **kwargs):
+    print(kwargs)
+
+consumer = mqplus.RabbitConsumer("docker.kancy.top", "root", "root123")
+consumer.onListener("pika.test.queue", callback=handle_message)
+
+```
+
