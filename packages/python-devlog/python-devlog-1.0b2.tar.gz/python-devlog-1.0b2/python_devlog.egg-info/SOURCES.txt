@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+devlog/__init__.py
+devlog/custom_excepthook.py
+devlog/decorator.py
+devlog/stack_trace.py
+python_devlog.egg-info/PKG-INFO
+python_devlog.egg-info/SOURCES.txt
+python_devlog.egg-info/dependency_links.txt
+python_devlog.egg-info/top_level.txt
