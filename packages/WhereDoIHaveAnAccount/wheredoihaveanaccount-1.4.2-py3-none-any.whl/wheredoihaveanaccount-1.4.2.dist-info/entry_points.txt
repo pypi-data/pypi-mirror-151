@@ -1,0 +1,3 @@
+[console_scripts]
+WhereDoIHaveAnAccount=WhereDoIHaveAnAccount.cli:main
+
