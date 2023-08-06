@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: fastpf
+Version: 0.0.3
+Summary: Performance-first Power Flow implemented in Python with AOT Compilation
+Author-email: Christoph Kattmann <christoph.kattmann@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: loguru >= 0.6.0
