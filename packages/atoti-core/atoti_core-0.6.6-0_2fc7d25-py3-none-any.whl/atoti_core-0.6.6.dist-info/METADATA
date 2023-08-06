@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: atoti-core
+Version: 0.6.6
+Summary: Package containing private symbols shared by the other atoti packages
+Home-page: https://www.atoti.io
+Author: atoti
+Author-email: dev@atoti.io
+License: UNKNOWN
+Keywords: atoti,core
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: importlib-metadata (~=4.10)
+Requires-Dist: typing-extensions (>=4.0.1)
+Provides-Extra: dev
+Requires-Dist: atoti ; extra == 'dev'
+Requires-Dist: pandas-stubs ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: test-utils ; extra == 'dev'
+
+UNKNOWN
+
