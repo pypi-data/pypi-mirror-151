@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "iway-certbot-dns-auth"
+description = "Certbot hook for DNS challenge using iWay Portal API."
+version = "0.2.0"
+authors = ["Frank Bohnsack <frank.bohnsack@iway.ch>"]
+license = "MIT"
+readme = "README.txt"
+homepage = "https://github.com/iwayag/iway-certbot-dns-auth"
+repository = "https://github.com/iwayag/iway-certbot-dns-auth"
+include = [
+    "*.txt",
+    "scripts/iway-certbot-auth-hook",
+    "scripts/iway-certbot-cleanup-hook"
+]
+
+[tool.poetry.urls]
+issues = "https://github.com/iwayag/iway-certbot-dns-auth/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.27.1"
+PyYAML = ">=5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.6.0"
+pylint = "^2.13.8"
+pydocstyle = "^6.1.1"
+
+[tool.poetry.scripts]
+iway-certbot-auth-hook = "iway_certbot_dns_auth.hooks:certbot_auth_hook"
+iway-certbot-cleanup-hook = "iway_certbot_dns_auth.hooks:certbot_cleanup_hook"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

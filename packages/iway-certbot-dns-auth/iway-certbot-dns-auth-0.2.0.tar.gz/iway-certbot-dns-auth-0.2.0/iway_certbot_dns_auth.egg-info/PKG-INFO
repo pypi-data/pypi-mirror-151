@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: iway-certbot-dns-auth
+Version: 0.2.0
+Summary: Certbot hook for DNS challenge using iWay Portal API.
+Home-page: https://github.com/iwayag/iway-certbot-dns-auth
+Author: Frank Bohnsack
+Author-email: frank.bohnsack@iway.ch
+License: MIT License
+        
+        Copyright (c) 2022 iWay AG
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Keywords: certbot
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE
+
+IWAY-CERTBOT-DNS-AUTH
+
+
+Certbot hook for DNS challenge using iWay Portal API.
+
+
+Dependencies
+
+To use this module the certbot is required of course :-)
+
+You can install certbot directly by your OS (e.g. Debian) and install
+iway_certbot_dns_auth globally with
+sudo pip install iway_certbot_dns_auth.
+
+Or, better install certbot in a Python virtual environment together with
+iway_certbot_dns_auth.
+
+
+Config
+
+The hook default config file is /etc/iway-certbot-dns-auth.yml but can
+be change with the environment variable IWAY_CERTBOT_DNS_AUTH_CFG.
+
+    IWAY_CERTBOT_DNS_AUTH_CFG=/etc/my-config.yml
+
+The file have to contain a account section with username and password.
+Further it can contain a logging section with:
+
+-   syslog - enable Syslog (default false)
+-   level - log level (default "INFO")
+-   address - Syslog address (default /dev/log)
+-   facility - Syslog facility (default local0)
+-   format - log format (default
+    "%(asctime)s %(levelname)s %(name)s: %(message)s")
+
+Example /etc/iway-certbot-dns-auth.yml:
+
+    account:
+      username: 12345
+      password: 'changeme'
+    logging:
+      syslog: true
+
+
+Usage
+
+Create a new cert for your domain my-domain.com with:
+
+    PATH=$PATH:/usr/local/lib/python3.8/dist-packages/scripts \
+    certbot \
+      certonly \
+      --email me@gmail.com \
+      --no-eff-email \
+      --agree-tos \
+      --preferred-challenges 'dns' \
+      --manual \
+      --manual-auth-hook iway-certbot-auth-hook \
+      --manual-cleanup-hook iway-certbot-cleanup-hook \
+      --manual-public-ip-logging-ok \
+      --domain my-domain.com
+
+Renew cert with:
+
+    PATH=$PATH:/usr/local/lib/python3.8/dist-packages/scripts \
+    certbot \
+      renew \
+      --force-renewal
+
+_Note:_ PATH depends from your local Python version. Checkout python -V.
+

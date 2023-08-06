@@ -1,0 +1,3 @@
+[console_scripts]
+iway-certbot-auth-hook = iway_certbot_dns_auth.hooks:certbot_auth_hook
+iway-certbot-cleanup-hook = iway_certbot_dns_auth.hooks:certbot_cleanup_hook
