@@ -1,0 +1,9 @@
+click
+httpx
+sqlite-utils
+
+[test]
+pytest
+pytest-httpx
+pytest-mock
+cogapp
