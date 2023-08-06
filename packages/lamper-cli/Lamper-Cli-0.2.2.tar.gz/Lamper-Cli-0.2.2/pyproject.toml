@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "Lamper-Cli"
+version = "0.2.2"
+description = "An easy to use AWS Lambda Function enumeration tool with visual report"
+authors = ["Sina Kheirkhah <sina.for.sec@gmail.com>"]
+maintainers = ["SinSinology <sina.for.sec@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/mdsecresearch/lamper-cli"
+repository = "https://github.com/mdsecresearch/lamper-cli"
+documentation = "https://github.com/mdsecresearch/lamper-cli"
+keywords = [
+    "AWS",
+    "Cloud",
+    "Lambda Function",
+    "Enumeration",
+    "Lambda"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tqdm = "*"
+colorama = "*"
+boto3 = "*"
+terminaltables = "*"
+progressbar2 = "*"
+requests = "*"
+click = "*"
+coloredlogs = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "^22.3.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+lamper-cli = "lamper_cli.cli:cli"
+
+[tool.poetry.urls]
+issues = "https://github.com/mdsecresearch/lamper-cli/issues"

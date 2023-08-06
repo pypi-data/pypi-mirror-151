@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lamper-cli
+Version: 0.2.2
+Summary: An easy to use AWS Lambda Function enumeration tool with visual report
+Home-page: https://github.com/mdsecresearch/lamper-cli
+License: MIT
+Keywords: AWS,Cloud,Lambda Function,Enumeration,Lambda
+Author: Sina Kheirkhah
+Author-email: sina.for.sec@gmail.com
+Maintainer: SinSinology
+Maintainer-email: sina.for.sec@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: coloredlogs
+Requires-Dist: progressbar2
+Requires-Dist: requests
+Requires-Dist: terminaltables
+Requires-Dist: tqdm
+Project-URL: Documentation, https://github.com/mdsecresearch/lamper-cli
+Project-URL: Repository, https://github.com/mdsecresearch/lamper-cli
+Project-URL: issues, https://github.com/mdsecresearch/lamper-cli/issues
+Description-Content-Type: text/markdown
+
+
