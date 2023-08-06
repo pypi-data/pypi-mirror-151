@@ -1,0 +1,2124 @@
+.\" Man page generated from reStructuredText.
+.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.TH "SIERRA-CLI" "1" "May 20, 2022" "1.2.0" "SIERRA"
+.SH NAME
+sierra-cli \- The SIERRA Command Line Interface (CLI).
+.sp
+Unless an option says otherwise, it is applicable to all batch criteria. That
+is, option batch criteria applicability is only documented for options which
+apply to a subset of the available Batch Criteria\&.
+.sp
+If an option is given more than once, the last such occurrence is used.
+.SH SIERRA CORE
+.sp
+These options are for all Platforms\&.
+.SS Bootstrap+Multi\-stage Options
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: sierra\-cli [\-h] [\-\-project PROJECT] [\-\-log\-level {INFO,DEBUG,TRACE}] [\-\-platform PLATFORM] [\-\-skip\-pkg\-checks] [\-\-exec\-env EXEC_ENV] [\-\-template\-input\-file filepath] [\-\-exp\-overwrite]
+                  [\-\-sierra\-root dirpath] [\-\-batch\-criteria [<category>.<definition>,...] [[<category>.<definition>,...] ...]] [\-\-pipeline [stages ...]] [\-\-exp\-range EXP_RANGE] [\-\-platform\-vc]
+                  [\-\-serial\-processing] [\-\-n\-runs N_RUNS] [\-\-skip\-collate]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Bootstrap options
+.sp
+Bare\-bones options for bootstrapping SIERRA
+.INDENT 0.0
+.TP
+.B \-\-project
+.INDENT 7.0
+.INDENT 3.5
+Specify which Project to load.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2,3,4,5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-log\-level
+Possible choices: INFO, DEBUG, TRACE
+.INDENT 7.0
+.INDENT 3.5
+The level of logging to use when running
+SIERRA.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2,3,4,5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "INFO"
+.TP
+.B \-\-platform
+.INDENT 7.0
+.INDENT 3.5
+This argument defines the Platform you
+want to run experiments on.
+.sp
+The value of this argument determines the
+execution environment for experiments; different
+platforms (e.g., simulator, real robots) will
+have different configuration options.
+.sp
+Valid values can be any folder name inside a
+folder on the \fBSIERRA_PLUGIN_PATH\fP (with
+\fB/\fP replaced with \fB\&.\fP as you would expect for
+using path names to address python packages). The
+platforms which come with SIERRA are:
+.INDENT 0.0
+.IP \(bu 2
+\fBplatform.argos\fP \- This directs SIERRA to run
+experiments using the ARGoS
+simulator. Selecting this platform assumes your
+code has been developed and configured for
+ARGoS.
+.IP \(bu 2
+\fBplatform.rosgazebo\fP \- This directs SIERRA to
+run experiments using the Gazebo
+simulator and ROS\&. Selecting this
+platform assumes your code has been developed
+and configured for Gazebo and ROS.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+Default: "platform.argos"
+.TP
+.B \-\-skip\-pkg\-checks
+.INDENT 7.0
+.INDENT 3.5
+Skip the usual startup package checks. Only do
+this if you are SURE you will never use the
+SIERRA functionality which requires packages you
+don\(aqt have installed/can\(aqt install.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-exec\-env
+.INDENT 7.0
+.INDENT 3.5
+This argument defines \fIhow\fP experiments are going
+to be run, using the \fB\-\-platform\fP you have
+selected.
+.sp
+Valid values can be any folder name inside a
+folder on the \fBSIERRA_PLUGIN_PATH\fP (with
+\fB/\fP replaced with \fB\&.\fP as you would expect for
+using path names to address python packages). The
+execution environments which come with SIERRA
+are:
+.INDENT 0.0
+.IP \(bu 2
+\fBhpc.local\fP \- This directs SIERRA to run
+experiments on the local machine. See
+ln\-hpc\-plugins\-local for a detailed
+description.
+.IP \(bu 2
+\fBhpc.pbs\fP \- The directs SIERRA to run
+experiments spread across multiple allocated
+nodes in an HPC computing environment managed
+by TORQUE\-PBS. See ln\-hpc\-plugins\-pbs
+for a detailed description.
+.IP \(bu 2
+\fBhpc.slurm\fP \- The directs SIERRA to run
+experiments spread across multiple allocated
+nodes in an HPC computing environment managed
+by SLURM. See ln\-hpc\-plugins\-slurm for a
+detailed description.
+.IP \(bu 2
+\fBhpc.adhoc\fP \- This will direct SIERRA to run
+experiments on an ad\-hoc network of
+computers. See ln\-hpc\-plugins\-adhoc for
+a detailed description.
+.IP \(bu 2
+\fBrobots.turtlebot\fP \- This will direct SIERRA
+to run experiments on real Turtlebots.
+.UNINDENT
+.sp
+Not all platforms support all execution
+environments.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "hpc.local"
+.UNINDENT
+.SS Multi\-stage options
+.sp
+Options which are used in multiple pipeline stages
+.INDENT 0.0
+.TP
+.B \-\-template\-input\-file
+.INDENT 7.0
+.INDENT 3.5
+The template \fB\&.xml\fP input file for the
+batch experiment. Beyond the requirements
+for the specific \fB\-\-platform\fP, the
+content of the file can be any valid XML,
+with the exception of the SIERRA
+requirements detailed in
+ln\-tutorials\-project\-template\-input\-file\&.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2,3,4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-exp\-overwrite
+.INDENT 7.0
+.INDENT 3.5
+When SIERRA calculates the batch experiment
+root (or any child path in the batch
+experiment root) during stage {1, 2}, if
+the calculated path already exists it is
+treated as a fatal error and no
+modifications to the filesystem are
+performed. This flag overwrides the default
+behavior. Provided to avoid accidentally
+overwrite input/output files for an
+experiment, forcing the user to be explicit
+with potentially dangerous actions.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-sierra\-root
+.INDENT 7.0
+.INDENT 3.5
+Root directory for all SIERRA generated and
+created files.
+.sp
+Subdirectories for controllers, scenarios,
+experiment/experimental run inputs/outputs
+will be created in this directory as
+needed. Can persist between invocations of
+SIERRA.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2,3,4,5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "<home directory>/exp"
+.TP
+.B \-\-batch\-criteria
+.INDENT 7.0
+.INDENT 3.5
+Definition of criteria(s) to use to define
+the experiment.
+.sp
+Specified as a list of 0 or 1 space
+separated strings, each with the following
+general structure:
+.sp
+\fB<category>.<definition>\fP
+.sp
+\fB<category>\fP must be a filename from the
+\fBcore/variables/\fP or from a \fB\-\-project\fP
+\fB<project>/variables/\fP directory, and
+\fB<definition>\fP must be a parsable namne
+(according to the requirements of the
+criteria defined by the parser for
+\fB<category>\fP).
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2,3,4,5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: []
+.TP
+.B \-\-pipeline
+.INDENT 7.0
+.INDENT 3.5
+.INDENT 0.0
+.INDENT 3.5
+Define which stages of the experimental
+pipeline to run:
+.INDENT 0.0
+.IP \(bu 2
+Stage1: Generate the experiment
+definition from the template input file,
+batch criteria, and other command line
+options. Part of default pipeline.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+Stage2: Run a previously generated
+experiment. Part of default pipeline.
+.IP \(bu 2
+Stage3: Post\-process experimental results
+after running the batch experiment; some
+parts of this can be done in
+parallel. Part of default pipeline.
+.IP \(bu 2
+Stage4: Perform deliverable generation
+after processing results for a batch
+experiment, which can include shiny graphs
+and videos. Part of default pipeline.
+.IP \(bu 2
+Stage5: Perform graph generation for
+comparing controllers AFTER graph
+generation for batch experiments has
+been run. Not part of default pipeline.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+Default: [1, 2, 3, 4]
+.TP
+.B \-\-exp\-range
+.INDENT 7.0
+.INDENT 3.5
+Set the experiment numbers from the batch to
+run, average, generate intra\-experiment
+graphs from, or generate inter\-experiment
+graphs from (0 based). Specified in the form
+\fBmin_exp_num:max_exp_num\fP (closed
+interval/inclusive). If omitted, runs,
+averages, and generates intra\-experiment and
+inter\-experiment performance measure graphs
+for all experiments in the batch (default
+behavior).
+.sp
+This is useful to re\-run part of a batch
+experiment in HPC environments if SIERRA
+gets killed before it finishes running all
+experiments in the batch, or to redo a
+single experiment with real robots which
+failed for some reason.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {2,3,4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-platform\-vc
+.INDENT 7.0
+.INDENT 3.5
+For applicable \fB\-\-platforms\fP, enable
+visual capturing of run\-time data during
+stage 2. This data can be frames (i.e., .png
+files), or rendering videos, depending on
+the platform. If the captured data was
+frames, then SIERRA can render the captured
+frames into videos during stage 4. If the
+selected \fB\-\-platform\fP does not support
+visual capture, then this option has no
+effect. See ln\-usage\-vc\-platform for
+full details.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-serial\-processing
+.INDENT 7.0
+.INDENT 3.5
+If TRUE, then results processing/graph
+generation will be performed serially,
+rather than using parallellism where
+possible.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {3,4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-n\-runs
+.INDENT 7.0
+.INDENT 3.5
+The # of experimental runs that will be run
+and their results averaged to form the
+result of a single experiment within a
+batch.
+.sp
+If \fB\-\-platform\fP is a simulator and
+\fB\-\-exec\-env\fP is something other than
+\fBhpc.local\fP then it will be used to
+determine the concurrency of experimental
+runs.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-skip\-collate
+.INDENT 7.0
+.INDENT 3.5
+Specify that no collation of data across
+experiments within a batch (stage 4) or
+across runs within an experiment (stage 3)
+should be performed. Useful if collation
+takes a long time and multiple types of
+stage 4 outputs are desired. Collation is
+generally idempotent unless you change the
+stage3 options (YMMV).
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {3,4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SS Stage1: Generating Experiments
+.sp
+None for the moment.
+.SS Stage2: Running Experiments
+.sp
+None for the moment.
+.SS Stage3: Processing Experiment Results
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-skip\-verify\-results] [\-\-storage\-medium {storage.csv}] [\-\-dist\-stats {none,all,conf95,bw}] [\-\-processing\-mem\-limit PROCESSING_MEM_LIMIT]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Stage3: General options for eprocessing experiment results
+.INDENT 0.0
+.TP
+.B \-\-skip\-verify\-results
+.INDENT 7.0
+.INDENT 3.5
+If passed, then the verification step will be
+skipped during experimental results processing,
+and outputs will be averaged directly. If not
+all the corresponding \fB\&.csv\fP files in all
+experiments generated the same # rows, then
+SIERRA will (probably) crash during experiments
+exist and/or have the stage4. Verification can
+take a long time with large # of runs per
+experiment.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {3}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-storage\-medium
+Possible choices: storage.csv
+.INDENT 7.0
+.INDENT 3.5
+Specify the storage medium for
+Experimental Run outputs, so that
+SIERRA can select an appropriate plugin to read
+them. Any plugin under \fBplugins/storage\fP can
+be used, but the ones that come with SIERRA
+are:
+.INDENT 0.0
+.TP
+.B \fBstorage.csv\fP \- Experimental run outputs are
+stored in a per\-run directory
+as one or more \fB\&.csv\fP
+files.
+.UNINDENT
+.sp
+Regardless of the value of this option, SIERRA
+always generates \fB\&.csv\fP files as it runs and
+averages outputs, generates graphs, etc.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {3}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "storage.csv"
+.TP
+.B \-\-dist\-stats
+Possible choices: none, all, conf95, bw
+.INDENT 7.0
+.INDENT 3.5
+Specify what kinds of statistics, if any,
+should be calculated on the distribution of
+experimental data during stage 3 for inclusion
+on graphs during stage 4:
+.INDENT 0.0
+.IP \(bu 2
+\fBnone\fP \- Only calculate and show raw mean
+on graphs.
+.IP \(bu 2
+\fBconf95\fP \- Calculate standard deviation of
+experimental distribution and show 95%
+confidence interval on relevant graphs.
+.IP \(bu 2
+\fBbw\fP \- Calculate statistics necessary to
+show box and whisker plots around each point
+in the graph
+(\fBSummaryLineGraph\fP
+only).
+.IP \(bu 2
+\fBall\fP \- Generate all possible statistics,
+and plot all possible statistics on graphs.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Applicable graphs
+.INDENT 0.0
+.IP \(bu 2
+\fBSummaryLineGraph\fP
+.IP \(bu 2
+\fBStackedLineGraph\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {3,4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "none"
+.TP
+.B \-\-processing\-mem\-limit
+.INDENT 7.0
+.INDENT 3.5
+Specify, as a percent in [0,100], how much
+memory SIERRA should try to limit itself to
+using.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {3,4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: 90
+.UNINDENT
+.SS Stage4: Deliverable Generation
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-exp\-graphs {intra,inter,all,none}] [\-\-project\-no\-yaml\-LN] [\-\-project\-no\-yaml\-HM] [\-\-plot\-log\-xscale] [\-\-plot\-enumerated\-xscale] [\-\-plot\-log\-yscale]
+              [\-\-plot\-regression\-lines PLOT_REGRESSION_LINES] [\-\-plot\-primary\-axis PLOT_PRIMARY_AXIS] [\-\-plot\-large\-text] [\-\-models\-enable] [\-\-render\-cmd\-opts RENDER_CMD_OPTS] [\-\-project\-imagizing]
+              [\-\-project\-rendering]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Stage4: General options for generating graphs
+.INDENT 0.0
+.TP
+.B \-\-exp\-graphs
+Possible choices: intra, inter, all, none
+.INDENT 7.0
+.INDENT 3.5
+Specify which types of graphs should be
+generated from experimental results:
+.INDENT 0.0
+.IP \(bu 2
+\fBintra\fP \- Generate intra\-experiment graphs
+from the results of a single experiment
+within a batch, for each experiment in the
+batch (this can take a long time with large
+batch experiments). If any intra\-experiment
+models are defined and enabled, those are run
+and the results placed on appropriate graphs.
+.IP \(bu 2
+\fBinter\fP \- Generate inter\-experiment graphs
+_across_ the results of all experiments in a
+batch. These are very fast to generate,
+regardless of batch experiment size. If any
+inter\-experiment models are defined and
+enabled, those are run and the results placed
+on appropriate graphs.
+.IP \(bu 2
+\fBall\fP \- Generate all types of graphs.
+.IP \(bu 2
+\fBnone\fP \- Skip graph generation; provided to
+skip graph generation if only video outputs
+are desired.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "all"
+.TP
+.B \-\-project\-no\-yaml\-LN
+.INDENT 7.0
+.INDENT 3.5
+Specify that the intra\-experiment and
+inter\-experiment linegraphs defined in project
+YAML configuration should not be
+generated. Useful if you are working on
+something which results in the generation of
+other types of graphs, and the generation of
+those linegraphs is not currently needed only
+slows down your development cycle.
+.sp
+Performance measure, model linegraphs are still
+generated, if applicable.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-project\-no\-yaml\-HM
+.INDENT 7.0
+.INDENT 3.5
+Specify that the intra\-experiment heatmaps
+defined in project YAML configuration should
+not be generated. Useful if you are working on
+something which results in the generation of
+other types of graphs, and the generation of
+heatmaps only slows down your development
+cycle.
+.sp
+Model heatmaps are still generated, if
+applicable.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SS Stage4: Plotting Options
+.INDENT 0.0
+.TP
+.B \-\-plot\-log\-xscale
+.INDENT 7.0
+.INDENT 3.5
+Place the set of X values used to generate intra\- and
+inter\-experiment graphs into the logarithmic
+space. Mainly useful when the batch criteria involves
+large swarm sizes, so that the plots are more
+readable.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Applicable graphs
+.INDENT 0.0
+.IP \(bu 2
+\fBSummaryLineGraph\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {4,5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-plot\-enumerated\-xscale
+.INDENT 7.0
+.INDENT 3.5
+Instead of using the values generated by a given
+batch criteria for the X values, use an enumerated
+list [0,...,len(X value) \- 1]. Mainly useful when the
+batch criteria involves large swarm sizes, so that
+the plots are more readable.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Applicable graphs
+.INDENT 0.0
+.IP \(bu 2
+\fBSummaryLineGraph\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {4,5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-plot\-log\-yscale
+.INDENT 7.0
+.INDENT 3.5
+Place the set of Y values used to generate intra\- and
+inter\-experiment graphs into the logarithmic
+space. Mainly useful when the batch criteria involves
+large swarm sizes, so that the plots are more
+readable.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Applicable graphs
+.INDENT 0.0
+.IP \(bu 2
+\fBSummaryLineGraph\fP
+.IP \(bu 2
+\fBStackedLineGraph\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {4,5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-plot\-regression\-lines
+.INDENT 7.0
+.INDENT 3.5
+For all 2D generated scatterplots, plot a linear
+regression line and the equation of the line to the
+legend.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Applicable graphs
+.INDENT 0.0
+.IP \(bu 2
+\fBSummaryLineGraph\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-plot\-primary\-axis
+.INDENT 7.0
+.INDENT 3.5
+This option allows you to override the primary axis,
+which is normally is computed based on the batch
+criteria.
+.sp
+For example, in a bivariate batch criteria composed
+of
+.INDENT 0.0
+.IP \(bu 2
+ln\-platform\-argos\-bc\-population\-size on the
+X axis (rows)
+.IP \(bu 2
+ln\-platform\-argos\-bc\-saa\-noise on the Y axis
+(columns)
+.UNINDENT
+.sp
+Swarm metrics will be calculated by \fIcomputing\fP
+across .csv rows and \fIprojecting\fP down the columns by
+default, since swarm size will only vary within a
+row. Passing a value of 1 to this option will
+override this calculation, which can be useful in
+bivariate batch criteria in which you are interested
+in the effect of the OTHER non\-size criteria on
+various performance measures.
+.sp
+0=criteria of interest varies across \fIrows\fP\&.
+.sp
+1=criteria of interest varies across \fIcolumns\fP\&.
+.sp
+This option only affects
+\fBBivarBatchCriteria\fP\&.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Applicable graphs
+.INDENT 0.0
+.IP \(bu 2
+\fBHeatmap\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-plot\-large\-text
+.INDENT 7.0
+.INDENT 3.5
+This option specifies that the title, X/Y axis
+labels/tick labels should be larger than the SIERRA
+default. This is useful when generating graphs
+suitable for two column paper format where the
+default text size for rendered graphs will be too
+small to see easily. The SIERRA defaults are
+generally fine for the one column/journal paper
+format.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SS Models
+.INDENT 0.0
+.TP
+.B \-\-models\-enable
+.INDENT 7.0
+.INDENT 3.5
+Enable running of all models; otherwise, no models
+are run, even if they appear in the project config
+file. The logic behind having models disabled by
+default is that most users won\(aqt have them.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SS Stage4: Rendering (see also stage1 rendering options)
+.INDENT 0.0
+.TP
+.B \-\-render\-cmd\-opts
+.INDENT 7.0
+.INDENT 3.5
+Specify the \fBffmpeg\fP options to appear
+between the specification of the input image
+files and the specification of the output
+file. The default is suitable for use with ARGoS
+frame grabbing set to a frames size of 1600x1200
+to output a reasonable quality video.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "\-r 10 \-s:v 800x600 \-c:v libx264 \-crf 25 \-filter:v scale=\-2:956 \-pix_fmt yuv420p"
+.TP
+.B \-\-project\-imagizing
+.INDENT 7.0
+.INDENT 3.5
+Enable generation of image files from \fB\&.csv\fP
+files captured during stage 2 and averaged during
+stage 3 for each experiment. See
+ln\-usage\-rendering\-project for details and
+restrictions.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {3,4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-project\-rendering
+.INDENT 7.0
+.INDENT 3.5
+Enable generation of videos from imagized
+\fB\&.csv\fP files created as a result of
+\fB\-\-project\-imagizing\fP\&. See
+ln\-usage\-rendering\-project for details.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {4}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SS Stage5: Comparing Controllers
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-controllers\-list CONTROLLERS_LIST] [\-\-controllers\-legend CONTROLLERS_LEGEND] [\-\-scenarios\-list SCENARIOS_LIST] [\-\-scenarios\-legend SCENARIOS_LEGEND] [\-\-scenario\-comparison]
+              [\-\-controller\-comparison] [\-\-comparison\-type {LNraw,HMraw,HMdiff,HMscale,SUraw,SUscale,SUdiff}] [\-\-bc\-univar] [\-\-bc\-bivar] [\-\-transpose\-graphs]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Stage5: General options for controller comparison
+.INDENT 0.0
+.TP
+.B \-\-controllers\-list
+.INDENT 7.0
+.INDENT 3.5
+Comma separated list of controllers to compare
+within \fB\-\-sierra\-root\fP\&.
+.sp
+The first controller in this list will be used
+for as the controller of primary interest if
+\fB\-\-comparison\-type\fP is passed.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-controllers\-legend
+.INDENT 7.0
+.INDENT 3.5
+Comma separated list of names to use on the
+legend for the generated comparison graphs,
+specified in the same order as the
+\fB\-\-controllers\-list\fP\&.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. If omitted: the raw controller names will be used.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-scenarios\-list
+.INDENT 7.0
+.INDENT 3.5
+Comma separated list of scenarios to compare
+\fB\-\-controller\fP across within
+\fB\-\-sierra\-root\fP\&.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-scenarios\-legend
+.INDENT 7.0
+.INDENT 3.5
+Comma separated list of names to use on the
+legend for the generated inter\-scenario
+controller comparison graphs(if applicable),
+specified in the same order as the
+\fB\-\-scenarios\-list\fP\&.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. If omitted: the raw scenario names will be used.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-scenario\-comparison
+.INDENT 7.0
+.INDENT 3.5
+Perform a comparison of \fB\-\-controller\fP across
+\fB\-\-scenarios\-list\fP (univariate batch criteria
+only).
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. Either \fB\-\-scenario\-comparison\fP or \fB\-\-controller\-comparison\fP must be
+passed.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-controller\-comparison
+.INDENT 7.0
+.INDENT 3.5
+Perform a comparison of \fB\-\-controllers\-list\fP
+across all scenarios at least one controller
+has been run on.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. Either \fB\-\-scenario\-comparison\fP or \fB\-\-controller\-comparison\fP must be passed.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-comparison\-type
+Possible choices: LNraw, HMraw, HMdiff, HMscale, SUraw, SUscale, SUdiff
+.INDENT 7.0
+.INDENT 3.5
+Specify how controller comparisons should be
+performed.
+.sp
+If the batch criteria is univariate, the
+options are:
+.INDENT 0.0
+.IP \(bu 2
+\fBLNraw\fP \- Output raw 1D performance
+measures using a single: class:
+\fI~sierra.core.graphs.summary_line_graph.SummaryLineGraph\fP
+for each measure, with all \fB\-
+\-controllers\-list\fP controllers shown on the
+same graph.
+.UNINDENT
+.sp
+If the batch criteria is bivariate, the options
+are:
+.INDENT 0.0
+.IP \(bu 2
+\fBLNraw\fP \- Output raw performance measures
+as a set of: class:
+\fI~sierra.core.graphs.summary_line_graph.SummaryLineGraph\fP,
+where each line graph is constructed from the
+i\-th row/column for the 2D dataframe for the
+performance results for all controllers.
+.IP \(bu 2
+\fBHMraw\fP \- Output raw 2D performance
+measures as a set of dual heatmaps comparing
+all controllers against the controller of
+primary interest(one per pair).
+.IP \(bu 2
+\fBHMdiff\fP \- Subtract the performance measure
+of the controller of primary interest against
+all other controllers, pairwise, outputting
+one 2D heatmap per comparison.
+.IP \(bu 2
+\fBHMscale\fP \- Scale controller performance
+measures against those of the controller of
+primary interest by dividing, outputing one
+2D heatmap per comparison.
+.IP \(bu 2
+\fBSUraw\fP \- Output raw 3D performance
+measures as a single, stacked 3D surface
+plots comparing all controllers(identical
+plots, but viewed from different angles).
+.IP \(bu 2
+\fBSUscale\fP \- Scale controller performance
+measures against those of the controller of
+primary interest by dividing. This results in
+a single stacked 3D surface plots comparing
+all controllers(identical plots, but viewed
+from different angles).
+.IP \(bu 2
+\fBSUdiff\fP \- Subtract the performance measure
+of the controller of primary interest from
+each controller(including the primary). This
+results in a set single stacked 3D surface
+plots comparing all controllers(identical
+plots, but viewed from different angles), in
+which the controller of primary interest
+forms an(X, Y) plane at Z=0.
+.UNINDENT
+.sp
+For all comparison types,
+\fB\-\-controllers\-legend\fP is used if passed for
+legend.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-bc\-univar
+.INDENT 7.0
+.INDENT 3.5
+Specify that the batch criteria is
+univariate. This cannot be deduced from the
+command line \fB\-\-batch\-criteria\fP argument in
+all cases because we are comparing controllers
+\fIacross\fP scenarios, and each
+scenario(potentially) has a different batch
+criteria definition, which will result in
+(potentially) erroneous comparisons if we don\(aqt
+re\-generate the batch criteria for each scenaro
+we compare controllers within.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-bc\-bivar
+.INDENT 7.0
+.INDENT 3.5
+Specify that the batch criteria is
+bivariate. This cannot be deduced from the
+command line \fB\-\-batch\-criteria\fP argument in
+all cases because we are comparing controllers
+\fIacross\fP scenarios, and each
+scenario(potentially) has a different batch
+criteria definition, which will result in
+(potentially) erroneous comparisons if we don\(aqt
+re\-generate the batch criteria for each scenaro
+we compare controllers in .
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-transpose\-graphs
+.INDENT 7.0
+.INDENT 3.5
+Transpose the X, Y axes in generated
+graphs. Useful as a general way to tweak graphs
+for best use of space within a paper.
+.sp
+Ignored for other graph types.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Applicable graphs
+.INDENT 0.0
+.IP \(bu 2
+\fBHeatmap\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {5}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SH ARGOS PLATFORM
+.sp
+These options are enabled if \fB\-\-platform=platform.argos\fP is passed.
+.SS Stage1: Generating Experiments
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-exp\-setup EXP_SETUP] [\-\-physics\-engine\-type2D {dynamics2d}] [\-\-physics\-engine\-type3D {dynamics3d}] [\-\-physics\-n\-engines {1,2,4,6,8,12,16,24}] [\-\-physics\-iter\-per\-tick PHYSICS_ITER_PER_TICK]
+              [\-\-camera\-config {overhead,argos.sw,argos.sw+interp,sierra.sw,sierra.sw+interp,sierra.sw+interp+zoom}] [\-\-with\-robot\-rab] [\-\-with\-robot\-leds] [\-\-with\-robot\-battery] [\-\-n\-robots N_ROBOTS]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Stage1: Experiment generation
+.INDENT 0.0
+.TP
+.B \-\-exp\-setup
+.INDENT 7.0
+.INDENT 3.5
+Defines experiment run length, Ticks per second for the experiment
+(<experiment> tag), # of datapoints to
+capture/capture interval for each
+simulation. See ln\-vars\-expsetup for
+a full description.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "exp_setup.T5000.K5.N50"
+.UNINDENT
+.SS Stage1: Configuring ARGoS physics engines
+.INDENT 0.0
+.TP
+.B \-\-physics\-engine\-type2D
+Possible choices: dynamics2d
+.INDENT 7.0
+.INDENT 3.5
+The type of 2D physics engine to use
+for managing spatial extents within the
+arena, choosing one of the types that
+ARGoS supports. The precise 2D areas
+(if any) within the arena which will be
+controlled by 2D physics engines is
+defined on a per \fB\-\-project\fP basis.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "dynamics2d"
+.TP
+.B \-\-physics\-engine\-type3D
+Possible choices: dynamics3d
+.INDENT 7.0
+.INDENT 3.5
+The type of 3D physics engine to use
+for managing 3D volumetric extents
+within the arena, choosing one of the
+types that ARGoS supports. The precise
+3D volumes (if any) within the arena
+which will be controlled by 3D physics
+engines is defined on a per
+\fB\-\-project\fP basis.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "dynamics3d"
+.TP
+.B \-\-physics\-n\-engines
+Possible choices: 1, 2, 4, 6, 8, 12, 16, 24
+.INDENT 7.0
+.INDENT 3.5
+# of physics engines to use during
+simulation (yay ARGoS!). If N > 1, the
+engines will be tiled in a uniform grid
+within the arena (X and Y spacing may
+not be the same depending on dimensions
+and how many engines are chosen,
+however), extending upward in Z to the
+height specified by \fB\-\-scenario\fP
+(i.e., forming a set of "silos" rather
+that equal volumetric extents).
+.sp
+If 2D and 3D physics engines are mixed,
+then half of the specified # of engines
+will be allocated among all arena
+extents cumulatively managed by each
+type of engine. For example, if 4
+engines are used, with 1/3 of the arena
+managed by 2D engines and 2/3 by 3D,
+then 2 2D engines will manage 1/3 of
+the arena, and 2 3D engines will manage
+the other 2/3 of the arena.
+.sp
+If \fB\-\-exec\-env\fP is something other
+than \fBhpc.local\fP then the # physics
+engines will be computed from the HPC
+environment, and the cmdline value (if
+any) will be ignored.
+.sp
+\fBIMPORTANT:\fP
+.INDENT 0.0
+.INDENT 3.5
+When using multiple
+physics engines, always make sure
+that \fB# engines / arena dimension\fP
+(X \fBAND\fP Y dimensions) is always a
+rational number. That is,
+.INDENT 0.0
+.IP \(bu 2
+24 engines in a \fB12x12\fP arena
+will be fine, because
+\fB12/24=0.5\fP, which can be
+represented reasonably well in
+floating point.
+.IP \(bu 2
+24 engines in a \fB16x16\fP arena
+will not be fine, because
+\fB16/24=0.666667\fP, which will
+very likely result in rounding
+errors and ARGoS being unable to
+initialize the space because it
+can\(aqt place arena walls.
+.UNINDENT
+.sp
+This is enforced by SIERRA.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-physics\-iter\-per\-tick
+.INDENT 7.0
+.INDENT 3.5
+The # of iterations all physics engines
+should perform per Tick each
+time the controller loops are run (the
+# of ticks per second for controller
+control loops is set via
+\fB\-\-exp\-setup\fP).
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: 10
+.UNINDENT
+.SS Stage1: Rendering (see also stage4 rendering options)
+.INDENT 0.0
+.TP
+.B \-\-camera\-config
+Possible choices: overhead, argos.sw, argos.sw+interp, sierra.sw, sierra.sw+interp, sierra.sw+interp+zoom
+.INDENT 7.0
+.INDENT 3.5
+Select the camera configuration for
+simulation. Ignored unless
+\fB\-\-platform\-vc\fP is passed. Valid
+values are:
+.INDENT 0.0
+.IP \(bu 2
+\fBoverhead\fP \- Use a single
+overhead camera at the center of
+the aren looking straight down at
+an appropriate height to see the
+whole arena.
+.IP \(bu 2
+\fBargos.sw\fP \- Use the default
+ARGoS camera configuration (12
+cameras equally spaced on the unit
+circle), cycling through them
+periodically throughout simulation
+without interpolation. In this
+configuration, cameras are set at
+Z=arena height, so you need to make
+sure your arena Z size is
+sufficiently high to avoid only
+looking at the wall (even for 2D
+simulations).
+.IP \(bu 2
+\fBargos.sw+interp\fP \- Same as
+\fBargos.sw\fP, but with
+interpolation.
+.IP \(bu 2
+\fBsierra.sw\fP \- Use the SIERRA
+ARGoS camera configuration (12
+cameras), cycling through them
+periodically throughout simulation
+without interpolation.
+.IP \(bu 2
+\fBsierra.sw+interp\fP \- Same as
+\fBsierra.static\fP, but with
+interpolation.
+.IP \(bu 2
+\fBsierra.sw+interp+zoom\fP \- Same as
+\fBsierra.sw+interp\fP, but uses 36
+cameras: 12 at 3 different levels
+of zoom, forming a spiral of
+vantage points. All cameras are
+cycled through periodically
+throughout simulation with
+interpolation between positions.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "overhead"
+.UNINDENT
+.SS Stage1: Configuring robots
+.INDENT 0.0
+.TP
+.B \-\-with\-robot\-rab
+.INDENT 7.0
+.INDENT 3.5
+If passed, do not remove the Range and
+Bearing (RAB) sensor, actuator, and
+medium XML definitions from
+\fB\-\-template\-input\-file\fP before
+generating experimental
+inputs. Otherwise, the following XML
+tags are removed if they exist:
+.INDENT 0.0
+.IP \(bu 2
+\fB\&.//media/range_and_bearing\fP
+.IP \(bu 2
+\fB\&.//actuators/range_and_bearing\fP
+.IP \(bu 2
+\fB\&.//sensors/range_and_bearing\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-with\-robot\-leds
+.INDENT 7.0
+.INDENT 3.5
+If passed, do not remove the robot LED
+actuator XML definitions from the
+\fB\-\-template\-input\-file\fP before
+generating experimental
+inputs. Otherwise, the following XML
+tags are removed if they exist:
+.INDENT 0.0
+.IP \(bu 2
+\fB\&.//actuators/leds\fP
+.IP \(bu 2
+\fB\&.//medium/leds\fP
+.IP \(bu 2
+\fB\&.//sensors/colored_blob_omnidirectional_camera\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-with\-robot\-battery
+.INDENT 7.0
+.INDENT 3.5
+If passed, do not remove the robot
+battery sensor XML definitions from
+\fB\-\-template\-input\-file\fP before
+generating experimental
+inputs. Otherwise, the following XML
+tags are removed if they exist:
+.INDENT 0.0
+.IP \(bu 2
+\fI\&.//entity/*/battery\fP
+.IP \(bu 2
+\fI\&.//sensors/battery\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-n\-robots
+.INDENT 7.0
+.INDENT 3.5
+The # robots that should be used in the
+simulation. Can be used to override
+batch criteria, or to supplement
+experiments that do not set it so that
+manual modification of input file is
+unneccesary.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Stage2: Running Experiments
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-exec\-jobs\-per\-node EXEC_JOBS_PER_NODE] [\-\-exec\-no\-devnull] [\-\-exec\-resume]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS HPC options
+.sp
+For platforms which are simulators (and cantherefore be run in HPC environments).
+.INDENT 0.0
+.TP
+.B \-\-exec\-jobs\-per\-node
+.INDENT 7.0
+.INDENT 3.5
+Specify the maximum number of parallel jobs to run
+per allocated node. By default this is computed
+from the selected HPC environment for maximum
+throughput given the desired \fB\-\-n\-runs\fP and CPUs
+per allocated node. However, for some environments
+being able to override the computed default can be
+useful.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-exec\-no\-devnull
+.INDENT 7.0
+.INDENT 3.5
+Don\(aqt redirect ALL output from simulations to
+/dev/null. Useful for platform where you can\(aqt
+disable all INFO messages at compile time, and
+don\(aqt want to have to grep through lots of
+redundant stdout files to see if there were any
+errors.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-exec\-resume
+.INDENT 7.0
+.INDENT 3.5
+Resume a batch experiment that was killed/stopped/etc
+last time SIERRA was run.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SH ROS+GAZEBO PLATFORM
+.sp
+These options are enabled if \fB\-\-platform=platform.rosgazebo\fP is passed.
+.SS Stage1: Generating Experiments
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-exp\-setup EXP_SETUP] [\-\-robot ROBOT] [\-\-robot\-positions ROBOT_POSITIONS [ROBOT_POSITIONS ...]] [\-\-physics\-engine\-type {ode,bullet,dart,simbody}] [\-\-physics\-iter\-per\-tick PHYSICS_ITER_PER_TICK]
+              [\-\-physics\-n\-threads PHYSICS_N_THREADS] [\-\-physics\-ec\-threadpool PHYSICS_EC_THREADPOOL]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Stage1: Experiment generation
+.INDENT 0.0
+.TP
+.B \-\-exp\-setup
+.INDENT 7.0
+.INDENT 3.5
+Defines experiment run length, ticks per
+second for the experiment, # of datapoints
+to capture/capture interval for each
+simulation. See ln\-vars\-expsetup for
+a full description.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "exp_setup.T1000.K5.N50"
+.TP
+.B \-\-robot
+.INDENT 7.0
+.INDENT 3.5
+The key name of the robot model, which must
+be present in the appropriate section of
+\fBmain.yaml\fP for the Project\&. See
+ln\-tutorials\-project\-main\-config for
+details.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Stage1: Experiment setup
+.INDENT 0.0
+.TP
+.B \-\-robot\-positions
+.INDENT 7.0
+.INDENT 3.5
+A list of space\-separated "X,Y,Z" tuples
+(no quotes) passed on the command line as
+valid starting positions for the robots
+within the world.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: effective arena dimensions must be given as part of \fB\-\-scenario\fP\&.
+.UNINDENT
+.UNINDENT
+.sp
+Default: []
+.UNINDENT
+.SS Stage1: Configuring Gazebo physics engines
+.INDENT 0.0
+.TP
+.B \-\-physics\-engine\-type
+Possible choices: ode, bullet, dart, simbody
+.INDENT 7.0
+.INDENT 3.5
+The type of 3D physics engine to use
+for managing spatial extents within the
+arena, choosing one of the types that
+Gazebo supports. A single
+engine instance is used to manage all
+physics in the arena.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "ode"
+.TP
+.B \-\-physics\-iter\-per\-tick
+.INDENT 7.0
+.INDENT 3.5
+The # of iterations all physics engines
+should perform per tick each time the
+controller loops are run (the # of
+ticks per second for controller control
+loops is set via \fB\-\-exp\-setup\fP).
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: 1000
+.TP
+.B \-\-physics\-n\-threads
+.INDENT 7.0
+.INDENT 3.5
+Gazebo can group non\-interacting
+entities into computational "islands"
+and do the physics updates for those
+islands in parallel each timestep
+(islands) are recomputed after each
+timestep). Gazebo can also parallelize
+the computation of velocity/position
+updates with the computation of
+resolving collisions (i.e., the
+timestep impulse results in one entity
+"inside" another). You can assign
+multiple threads to a pool for
+cumulative use for these two
+parallelization methods (threads will
+be allocated evenly between them). The
+point at which adding more threads will
+start to DECREASE performance depends
+on the complexity of your world, the
+number and type of robots in it, etc.,
+so don\(aqt just set this parameter to the
+# of cores for your machine as a
+default.
+.sp
+From the Gazebo Parallel Physics
+Report, setting the pool size to the #
+robots/# joint trees in your simulation
+usually gives good results, as long as
+you have more cores available than you
+allocate to this pool (Gazebo has other
+threads too).
+.sp
+This only applies if
+
+.nf
+\(ga\(ga
+.fi
+\-\-physics\-engine\-type\(ga\(ga=ode.
+.sp
+A value of 0=no threads.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: 0
+.TP
+.B \-\-physics\-ec\-threadpool
+.INDENT 7.0
+.INDENT 3.5
+Gazebo can parallelize the computation
+of velocity/position updates with the
+computation of resolving collisions
+(i.e., the timestep impulse results in
+one entity "inside" another). You can
+assign multiple threads to a pool for
+cumulative use for this purpose. The
+point at which adding more threads will
+start to DECREASE performance depends
+on the complexity of your world, the
+number and type of robots in it, etc.,
+so don\(aqt just set this parameter to the
+# of cores for your machine as a
+default.
+.sp
+From the Gazebo Parallel Physics
+Report, setting the pool size to the #
+robots/#joint trees in your simulation
+usually gives good results, as long as
+you have more cores than than you
+allocate to physics (Gazebo has other
+threads too).
+.sp
+This only applies if 
+.nf
+\(ga\(ga
+.fi
+\-\-physics\-engine\-type\(ga\(ga=ode.
+.sp
+A value of 0=no threads.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: 0
+.UNINDENT
+.SS Stage2: Running Experiments
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-exec\-jobs\-per\-node EXEC_JOBS_PER_NODE] [\-\-exec\-no\-devnull] [\-\-exec\-resume]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS HPC options
+.sp
+For platforms which are simulators (and cantherefore be run in HPC environments).
+.INDENT 0.0
+.TP
+.B \-\-exec\-jobs\-per\-node
+.INDENT 7.0
+.INDENT 3.5
+Specify the maximum number of parallel jobs to run
+per allocated node. By default this is computed
+from the selected HPC environment for maximum
+throughput given the desired \fB\-\-n\-runs\fP and CPUs
+per allocated node. However, for some environments
+being able to override the computed default can be
+useful.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.TP
+.B \-\-exec\-no\-devnull
+.INDENT 7.0
+.INDENT 3.5
+Don\(aqt redirect ALL output from simulations to
+/dev/null. Useful for platform where you can\(aqt
+disable all INFO messages at compile time, and
+don\(aqt want to have to grep through lots of
+redundant stdout files to see if there were any
+errors.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1,2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.TP
+.B \-\-exec\-resume
+.INDENT 7.0
+.INDENT 3.5
+Resume a batch experiment that was killed/stopped/etc
+last time SIERRA was run.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SH ROS+ROBOT PLATFORM
+.sp
+These options are enabled if \fB\-\-platform=platform.rosrobot\fP is passed.
+.SS Stage1: Generating Experiments
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-exp\-setup EXP_SETUP] [\-\-robot ROBOT] [\-\-skip\-sync]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Stage1: Experiment generation
+.INDENT 0.0
+.TP
+.B \-\-exp\-setup
+.INDENT 7.0
+.INDENT 3.5
+Defines experiment run length, ticks per
+second for the experiment, # of datapoints
+to capture/capture interval for each
+simulation. See ln\-vars\-expsetup for
+a full description.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: "exp_setup.T1000.K5.N50"
+.TP
+.B \-\-robot
+.INDENT 7.0
+.INDENT 3.5
+The key name of the robot model, which must
+be present in the appropriate section of
+\fBmain.yaml\fP for the Project\&. See
+ln\-tutorials\-project\-main\-config for
+details.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Stage1: Experiment generation
+.INDENT 0.0
+.TP
+.B \-\-skip\-sync
+.INDENT 7.0
+.INDENT 3.5
+If passed, then the generated experiment will not
+be synced to robots. This is useful when:
+.INDENT 0.0
+.IP \(bu 2
+You are developing your Project and
+just want to check locally if the experiment
+is being generated properly.
+.IP \(bu 2
+You have a lot of robots and/or the network
+connection from the SIERRA host machine to
+the robots is slow, and copying the
+experiment multiple times as you tweak
+parameters takes a long time.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {1}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SS Stage2: Running Experiments
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+usage: SIERRA [\-\-exec\-inter\-run\-pause SECONDS] [\-\-exec\-resume]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Stage2: Experiment executionFor running real robot experiments
+.INDENT 0.0
+.TP
+.B \-\-exec\-inter\-run\-pause
+.INDENT 7.0
+.INDENT 3.5
+How long to pause between Experimental
+Runs, giving you time to
+reset the environment, move robots, etc.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: 60
+.TP
+.B \-\-exec\-resume
+.INDENT 7.0
+.INDENT 3.5
+Resume a batch experiment that was
+killed/stopped/etc last time SIERRA was
+run.
+.UNINDENT
+.UNINDENT
+.sp
+\fBTIP:\fP
+.INDENT 7.0
+.INDENT 3.5
+Used by stage {2}; can be omitted otherwise. If omitted: N/A.
+.UNINDENT
+.UNINDENT
+.sp
+Default: False
+.UNINDENT
+.SH AUTHOR
+John Harwell
+.SH COPYRIGHT
+2022, John Harwell
+.\" Generated by docutils manpage writer.
+.
