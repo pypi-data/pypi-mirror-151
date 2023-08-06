@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sayhitoyourfriends
+Version: 0.0.3
+Summary: I hope this works use add subtract times divide and hi
+Home-page: UNKNOWN
+Author: Danny2391b
+Author-email: 21d.mullins@pcs.hants.sch.uk
+License: MIT
+Keywords: core package
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: full
+License-File: LICENCE.txt
+
+global-include *.txt *.py
+

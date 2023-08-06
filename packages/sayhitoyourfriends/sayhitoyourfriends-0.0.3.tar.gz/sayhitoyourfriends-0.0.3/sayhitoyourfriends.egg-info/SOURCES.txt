@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+__init__.py
+setup.py
+sayhitoyourfriends.egg-info/PKG-INFO
+sayhitoyourfriends.egg-info/SOURCES.txt
+sayhitoyourfriends.egg-info/dependency_links.txt
+sayhitoyourfriends.egg-info/entry_points.txt
+sayhitoyourfriends.egg-info/not-zip-safe
+sayhitoyourfriends.egg-info/requires.txt
+sayhitoyourfriends.egg-info/top_level.txt
