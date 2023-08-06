@@ -1,0 +1,16 @@
+mytextgrid/__init__.py,sha256=UTGWqTv1MYRQJ_wiYMXwEzkIVYqf8bXwsePaorqJIbI,278
+mytextgrid/_eval.py,sha256=u6MK7VQmRQw6mdK-gKy2Ox3dbIIxxCYuTC3a5W7XDYE,1370
+mytextgrid/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mytextgrid/core/interval_tier.py,sha256=xLG5fgfdyNNtYoYh9VQFInzYVbNGNQ3OBlYOH0glNwU,7769
+mytextgrid/core/point_tier.py,sha256=oin1QcYc-JY7zYdZ4_xgc2CoGOPKD2gQOht5voV6vxo,3707
+mytextgrid/core/textgrid.py,sha256=Ke0FNUuudyIS9KCCowo0qK6UlpL76UdHQOcRJW_k42Y,13642
+mytextgrid/core/tier.py,sha256=Nwc8vE0nNqee2WhAiSXod09CwPB6AdDw8eSyn4Gj6Ro,1309
+mytextgrid/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mytextgrid/io/export.py,sha256=cYbQM48XmLw0g_Tj3eu145BOT-Nj_DvnCa874OTWUiU,5210
+mytextgrid/io/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mytextgrid/io/parser/full_text_format.py,sha256=uEb2eaF8Cf1xoQQGWBRQzAsyOCgIPbwwegtVDw-454M,9171
+mytextgrid-0.3.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mytextgrid-0.3.3.dist-info/METADATA,sha256=7W5dWQD7djNdpIXmoiux-OzfbqWPlxgyxxrKe9EYzC0,4482
+mytextgrid-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mytextgrid-0.3.3.dist-info/top_level.txt,sha256=ZBproZ5XA-l-eOeyZ63l2l3B5hsisUesHZEO58-UNWY,11
+mytextgrid-0.3.3.dist-info/RECORD,,
