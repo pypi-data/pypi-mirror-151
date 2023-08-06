@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/synapi.py
+synapi.egg-info/PKG-INFO
+synapi.egg-info/SOURCES.txt
+synapi.egg-info/dependency_links.txt
+synapi.egg-info/requires.txt
+synapi.egg-info/top_level.txt
