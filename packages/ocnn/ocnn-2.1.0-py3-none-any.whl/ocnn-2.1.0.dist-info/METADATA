@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ocnn
+Version: 2.1.0
+Summary: Octree-based Sparse Convolutional Neural Networks
+Home-page: https://github.com/octree-nn/ocnn-pytorch
+Author: Peng-Shuai Wang
+Author-email: wangps@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+
+# O-CNN
+
+**[Documentation](https://ocnn-pytorch.readthedocs.io)**
+
+This repository contains the **pure PyTorch**-based implementation of O-CNN.
+
+The code has been tested with `Pytorch>=1.9.0`.
