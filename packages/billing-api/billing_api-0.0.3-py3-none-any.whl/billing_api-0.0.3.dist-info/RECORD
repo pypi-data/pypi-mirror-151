@@ -1,0 +1,9 @@
+unicboard_billing_sdk/__init__.py,sha256=GvUUxym8Ordc9rWaUF7XVMBWhzx86vJicwxAP6iMlnc,100
+unicboard_billing_sdk/billing_api_sdk.py,sha256=q68WBqskiAIuc81SCeZ47RcRJlBQM7ab-dcVE1NzmXo,2636
+unicboard_billing_sdk/response_models.py,sha256=wGjfSPywuJTbO13c_FUMwo4Jdx1Dlcl6SgKg-L4OZOU,2335
+unicboard_billing_sdk/utils.py,sha256=jRD4ckYFkwgASCnuCvznA7lNnXNLswBTBVkecCgQpYo,2918
+billing_api-0.0.3.dist-info/LICENSE,sha256=6Qo8OdcqI8aGrswJKJYhST-bYqxVQBQ3ujKdTSdq-80,1062
+billing_api-0.0.3.dist-info/METADATA,sha256=9CsaEHPwBgHV31WbQG_goYqxH8SjcEvffYDvtJlfJcY,1590
+billing_api-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+billing_api-0.0.3.dist-info/top_level.txt,sha256=KPp_PUbZjQrFqiCgxP1ddzhnk7dnQV7vV7IA9jQGpc0,22
+billing_api-0.0.3.dist-info/RECORD,,
