@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tap_mssql/__init__.py
+tap_mssql/connection.py
+tap_mssql.egg-info/PKG-INFO
+tap_mssql.egg-info/SOURCES.txt
+tap_mssql.egg-info/dependency_links.txt
+tap_mssql.egg-info/entry_points.txt
+tap_mssql.egg-info/requires.txt
+tap_mssql.egg-info/top_level.txt
+tap_mssql/sync_strategies/__init__.py
+tap_mssql/sync_strategies/common.py
+tap_mssql/sync_strategies/full_table.py
+tap_mssql/sync_strategies/incremental.py
