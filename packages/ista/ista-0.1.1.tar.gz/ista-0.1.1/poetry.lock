@@ -1,0 +1,21 @@
+[[package]]
+name = "ista"
+version = "0.1.0"
+description = ""
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.source]
+type = "file"
+url = "target/wheels/ista-0.1.0-cp38-cp38-manylinux_2_28_x86_64.whl"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "5b6acce6321958282849876c58a42bea429eae6ffc985ccd3fdbb0884eed5e73"
+
+[metadata.files]
+ista = [
+    {file = "ista-0.1.0-cp38-cp38-manylinux_2_28_x86_64.whl", hash = "sha256:d231e09f1cd921ecbadeb889d53a39f49cd37c633cc24848e4efe3e42ae4d7f4"},
+]
