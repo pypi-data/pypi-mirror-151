@@ -1,0 +1,3 @@
+[console_scripts]
+xlab = xlab.cli:main
+
