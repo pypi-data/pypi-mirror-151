@@ -1,0 +1,10 @@
+pthflops/__init__.py,sha256=SEFaFyyfKs24vCShN8vl1GthLI7keN_Q7jlaEeL4ejQ,1090
+pthflops/ops_fx.py,sha256=eOi6IBtS_pcvmzPlemhM_FWw7hjx34AS1WxHrE_E6mY,9408
+pthflops/ops_jit.py,sha256=uWKWszojOy-YxDG0F_dt3c0kjJwPTPizTe8zlxpHRNM,12249
+pthflops/utils.py,sha256=43qGkAS3UYEkOR36kOzp-f9KOZ3pnjezo4_84yOpaxk,5691
+pthflops-0.4.2.dist-info/LICENSE,sha256=AlqsUWQQs5qZCPt_unT7EXPEn1R9y8fvIDDfGoKeFqs,1546
+pthflops-0.4.2.dist-info/METADATA,sha256=jeWFPwkuOUEQV5skHV-QeDWsC1r_hdDi3rcEts07E3Q,3047
+pthflops-0.4.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pthflops-0.4.2.dist-info/top_level.txt,sha256=zIyfHSc0UBDqiufXoYUrPlTSRTLc4EeXty_-crq530c,9
+pthflops-0.4.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pthflops-0.4.2.dist-info/RECORD,,
