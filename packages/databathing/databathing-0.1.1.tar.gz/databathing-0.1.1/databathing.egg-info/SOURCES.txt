@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+databathing.egg-info/PKG-INFO
+databathing.egg-info/SOURCES.txt
+databathing.egg-info/dependency_links.txt
+databathing.egg-info/requires.txt
+databathing.egg-info/top_level.txt
