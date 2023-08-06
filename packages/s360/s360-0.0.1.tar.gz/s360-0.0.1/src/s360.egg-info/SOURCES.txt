@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/s360/__init__.py
+src/s360.egg-info/PKG-INFO
+src/s360.egg-info/SOURCES.txt
+src/s360.egg-info/dependency_links.txt
+src/s360.egg-info/entry_points.txt
+src/s360.egg-info/top_level.txt
