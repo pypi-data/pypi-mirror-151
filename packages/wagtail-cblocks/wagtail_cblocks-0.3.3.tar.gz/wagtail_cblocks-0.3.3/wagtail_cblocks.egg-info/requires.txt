@@ -1,0 +1,5 @@
+wagtail<4.0,>=2.15
+
+[factories]
+factory-boy<3.2,>=3.1
+wagtail-factories>=2.0.1
