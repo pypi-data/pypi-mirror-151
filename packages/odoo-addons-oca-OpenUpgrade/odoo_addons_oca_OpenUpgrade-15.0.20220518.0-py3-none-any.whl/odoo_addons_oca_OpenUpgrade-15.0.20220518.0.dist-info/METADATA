@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-OpenUpgrade
+Version: 15.0.20220518.0
+Summary: Meta package for oca-OpenUpgrade Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 15.0
+Requires-Dist: odoo-addon-openupgrade-framework (<15.1dev,>=15.0dev)
+Requires-Dist: odoo-addon-openupgrade-scripts (<15.1dev,>=15.0dev)
+
+UNKNOWN
+
