@@ -1,0 +1,17 @@
+anndata
+gseapy
+leidenalg
+matplotlib
+numpy<=1.21
+pandas
+petname
+pydantic
+scanpy
+seaborn
+scipy
+scvi-tools
+
+[test]
+pytest
+pytest-cov
+scikit-learn
