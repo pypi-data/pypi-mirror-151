@@ -1,0 +1,9 @@
+quickbeutils/__init__.py,sha256=GOf7Wyr4Ow7tjhzwBrPKRSsopIfXJ6iNzs42WOLvmZo,3072
+quickbeutils/aws_ses.py,sha256=V5hkKb6r86lBb-muDHpR4YxLR4SkvZ_CpkHWEFkGqPU,1021
+quickbeutils/gmail.py,sha256=dpndxpiYvKWXnHARenrIx6OZW2msR9qYImOKE35v8mM,784
+quickbeutils/helpers.py,sha256=uPE1sonh_RoU4u5DG1pVLi4V3RfZK_rhCbu42X1pIE8,436
+quickbeutils/slack.py,sha256=ogQE25VMMKR8QicFEdMzpbVkqOoJZ7VrPA9HC7hKXBg,1938
+quickbeutils-1.0.0.dist-info/METADATA,sha256=qzhu7JE5X_IrMgNNEV-UH9BgTk3Xxs39AI67hBUUIZM,630
+quickbeutils-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quickbeutils-1.0.0.dist-info/top_level.txt,sha256=Hi95nkqN5flfNWCBHMOPLWPqi3izJVNQRJYMoolpO0A,13
+quickbeutils-1.0.0.dist-info/RECORD,,
