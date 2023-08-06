@@ -1,0 +1,3 @@
+[console_scripts]
+statusof = statusof.__main__:main
+
