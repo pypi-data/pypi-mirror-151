@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: sky-api-client
+Version: 0.0.1
+Summary: A python client for sky apis
+Home-page: https://bitbucket.org/kalyanvarma/skyapi
+Author: Uddesh Jain
+Author-email: uddesh@almabase.com
+License: UNKNOWN
+Description: # Sky Api Client
+        
+        This is the sky api python client library.
+        
+        ## Installation
+        
+        ```
+        pip install sky_api_client
+        ```
+        
+        ## Examples
+        
+        1. Initialize the client
+        
+        ```python
+        from sky_api_client import SkyApi
+        
+        sky_api = SkyApi('subscription_key', 'access_token')
+        ```
+        
+        2. Get list of all constituent
+        
+        ```python
+        list = sky_api.constituent.list()
+        ```
+        
+        ## Available methods
+        
+        1. List all constituents
+        
+        ```
+        list = sky_api.constituent.list()
+        ```
+        
+        2. Get a specific constituent
+        
+        ```python
+        constituent = sky_api.constituent.get('constituent_id')
+        ```
+        
+        3. Create a new constituent
+        
+        ```python
+        new_constituent = sky_api.constituent.create({'first': '', 'last': ''})
+        ```
+        
+        4. Update an existing constituent
+        
+        ```python
+        updated_constituent = sky_api.constituent.update('constituent_id' ,{'first': '', 'last': ''})
+        ```
+        
+        5. Delete a constituent
+        
+        ```python
+        sky_api.constituent.delete('constituent_id')
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
