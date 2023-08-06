@@ -1,0 +1,30 @@
+
+# Stocklib
+
+### Stocklib is a library for getting stock data!
+
+## Installation:
+
+##### `pip install stocklib`
+
+## Usage:
+
+```
+>>> from stocklib import get_stock_price
+>>> get_stock_price(ticker="AAPl")
+146.5
+```
+
+## What's New?
+
+##### Bug fixes and performance improvements
+##### Stocklib now has ticker types. Ticker types are for getting new types of assets, like cryptocurrencies. To use a ticker type:
+```
+>>> from stocklib import get_stock_price
+>>> get_stock_price(ticker="BTC", tickerType="crypto")
+28942.4
+>>> # NOTE: tickerType is defaulted to "stock"
+
+```
+
+NOTE: Stocklib is new, so there are very few features
