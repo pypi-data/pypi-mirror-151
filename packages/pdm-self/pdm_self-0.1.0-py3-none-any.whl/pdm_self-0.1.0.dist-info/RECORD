@@ -1,0 +1,7 @@
+pdm_self/__init__.py,sha256=5_llL8Ab4GzPcZWiWKeQPiMybEeq7-1Y4vhLw_Y0oLw,121
+pdm_self/cli.py,sha256=PhYsPaZgE7dEZ3uX7nj6WyIBk6o8-6dA55poCYt5Zkw,157
+pdm_self/plugin.py,sha256=iAH3DLXbdMLyw_Ys2xN9gpHk5Cr5EuTza5YqVNjMf1o,546
+pdm_self-0.1.0.dist-info/entry_points.txt,sha256=-VevfIUE7_z7KszGMDa1tV-hjkIyId6Pr7_0pisfks4,30
+pdm_self-0.1.0.dist-info/WHEEL,sha256=6dj3VwBXrByyKJtG7fF3cvJMeAn2Gjr14tOXtWZMFj8,88
+pdm_self-0.1.0.dist-info/METADATA,sha256=let0Dg6blABBiAPozOhNxfNonCynRP-atzHft6Nf5fY,255
+pdm_self-0.1.0.dist-info/RECORD,,
