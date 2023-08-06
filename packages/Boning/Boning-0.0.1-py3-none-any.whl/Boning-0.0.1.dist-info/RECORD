@@ -1,0 +1,12 @@
+boning/__init__.py,sha256=eBEAw2U9X-fvA-TtSTDCRJqO911X6cCU1NOZJjZXU_E,195
+boning/functional.py,sha256=Zi2xzQNlyn4hm77B7_LzoNjUrOgXUGxRd-BE8RAjPb8,190
+boning/optimizer.py,sha256=VxQOv6VZVjXSXXX3-JruK6zevPplQ5AZrWliRh4pe5w,216
+boning/utils.py,sha256=12g9hdowZfuXaLjuT5OiPO9q0j21wbb89NUm3HwrSQI,266
+boning/variable.py,sha256=Ttof9UufXvy__lZWznTENxYHD4pct_Y6nde080MO5pk,5874
+boning/network/__init__.py,sha256=qfcrhxIr8fPg3Dm9sBtjsH8eIVAFLQAnQeVhhF3y4Ls,170
+boning/network/linear.py,sha256=vCkx8_KILP-Pd4rmopr7jwZX6yUPF5uXT0c1RD7pknU,777
+boning/network/net.py,sha256=PrExrEam0Ay1lOblERT6iF01h_5WmAYrk8ZlGH_Q9GU,530
+Boning-0.0.1.dist-info/METADATA,sha256=j_7aSsUD9Ci5pwUi29nkCMihhoC1XixDyKsNxq2xFiA,879
+Boning-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+Boning-0.0.1.dist-info/top_level.txt,sha256=InnlA7S2ubMi-hR3l-ykGj-x5R_kgpjycr17GhFdTwA,7
+Boning-0.0.1.dist-info/RECORD,,
