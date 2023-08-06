@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pyundergraduate/Differentiation.py
+pyundergraduate/Integration.py
+pyundergraduate/Interpolation.py
+pyundergraduate/ODE_Solvers.py
+pyundergraduate/RootFinder.py
+pyundergraduate/__init__.py
+pyundergraduate.egg-info/PKG-INFO
+pyundergraduate.egg-info/SOURCES.txt
+pyundergraduate.egg-info/dependency_links.txt
+pyundergraduate.egg-info/requires.txt
+pyundergraduate.egg-info/top_level.txt
