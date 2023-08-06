@@ -1,0 +1,17 @@
+pyoracle_forms/__init__.py,sha256=-Lrn7oAlYbfqCAxqOieXK5vZmuEVHuEFOWzug2uRh64,6094
+pyoracle_forms/constants.py,sha256=auI8amAB-8Cu7ut4c1nOct7X1ydUMXbKsC17G46EagQ,11698
+pyoracle_forms/context.py,sha256=u1qw0DIetvr51odgU_UYAb92tTNb6ithJTkiIjVRDfM,8262
+pyoracle_forms/error_handling.py,sha256=QqZOVL7LymyeJuiZXJoMR5311vd-eIiSrNAmzRPvcHI,1726
+pyoracle_forms/forms_api.py,sha256=WG_V2Huc1REm6xgyMEZvVTgKTFYDEecL31C6mg0xRoQ,1173
+pyoracle_forms/forms_objects.py,sha256=JiGLSvb_uZxIAHQXQ8xgNUf4_n3vzl6xvKkMWQ-b6c4,89361
+pyoracle_forms/generic_object.py,sha256=L_oIa4zXd0MdpH7epuKir6BYdIdFei4VQCEeE6HNels,4268
+pyoracle_forms/misc.py,sha256=UXELM8qwBpV8wYrCe5rZv5HOEo16-XvZ5o2wfQS7VrM,7171
+pyoracle_forms/property_types.py,sha256=a3c8Gy5aWcq8g2ISHatQf3o_1yQc88YWhcjNt8HFxII,13808
+pyoracle_forms/forms_api/parsed_10g.json,sha256=NiE41UXWWVxouafStxnK8N-mapPG23Q6UfVFVJWzyUQ,258123
+pyoracle_forms/forms_api/parsed_12c.json,sha256=05qOxGuCNVbjarOKNCJ232r5RSLtuelhYMhSlaeRBbY,275663
+pyoracle_forms/forms_api/parsed_6i.json,sha256=6-jU05WYJC_XoPgFe6NDaqf3lQJ-B6lTDWzSdawPBDA,255388
+pyoracle_forms-0.4.1.dist-info/LICENSE,sha256=Tz1XQKHOn9YwnqAQZWfcvOInXfObIeGE2YU03fj6z6A,1070
+pyoracle_forms-0.4.1.dist-info/METADATA,sha256=1EpsXzW1pl70qoQsZpNG9_E0nI2eFOgaQmTNFfZjhXM,3388
+pyoracle_forms-0.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyoracle_forms-0.4.1.dist-info/top_level.txt,sha256=ZSunKAl3b94NlEznzl-U7ZgHavuf7ldSKeMKsA27jSQ,15
+pyoracle_forms-0.4.1.dist-info/RECORD,,
