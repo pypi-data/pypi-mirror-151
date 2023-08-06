@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+hypper/__init__.py
+hypper/base.py
+hypper/hypergraph.py
+hypper/utils.py
+hypper.egg-info/PKG-INFO
+hypper.egg-info/SOURCES.txt
+hypper.egg-info/dependency_links.txt
+hypper.egg-info/requires.txt
+hypper.egg-info/top_level.txt
