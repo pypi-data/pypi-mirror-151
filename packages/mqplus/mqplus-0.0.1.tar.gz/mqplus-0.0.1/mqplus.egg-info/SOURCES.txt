@@ -1,0 +1,9 @@
+README.md
+mqplus.py
+setup.py
+mqplus.egg-info/PKG-INFO
+mqplus.egg-info/SOURCES.txt
+mqplus.egg-info/dependency_links.txt
+mqplus.egg-info/entry_points.txt
+mqplus.egg-info/requires.txt
+mqplus.egg-info/top_level.txt
