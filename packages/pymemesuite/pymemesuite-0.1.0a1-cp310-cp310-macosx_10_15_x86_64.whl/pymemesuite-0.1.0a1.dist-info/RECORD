@@ -1,0 +1,17 @@
+pymemesuite/__init__.py,sha256=R2TAOgsjHOK90Og5KtpLiS6UV08A2VdczC6rN9-wKFU,182
+pymemesuite/_globals.c,sha256=WgDHVwHZ3byqyF9jF3y558qdsUGnReOjbINBgmQgnJQ,910
+pymemesuite/cisml.cpython-310-darwin.so,sha256=Xl4G_jN5cvvQyVrIa9lLyDToxp238E8koEUwLqmJPr8,2135528
+pymemesuite/cisml.pxd,sha256=8sgaeho8oMArBonwtoTNgcgFr1SpuGx7TQ_Szmzo0Vw,1419
+pymemesuite/cisml.pyx,sha256=DD4PcbuwXru0UiQG7Wo7fe3_iqs5dwzEwneY5wljhms,11639
+pymemesuite/common.cpython-310-darwin.so,sha256=iRssxAIYB8vE-ujxFx5KHVN2vyXOuj3UBR8qQrKfLrM,2356592
+pymemesuite/common.pxd,sha256=5a8T-POLy2_wRWELGJLDeJnVaRR6gGTkULblvy1vazw,2872
+pymemesuite/common.pyx,sha256=Q3QOlk2L99f3zllsMc-LG-1wkXqD5MVk0xB8X2xWvpk,39347
+pymemesuite/errors.cpython-310-darwin.so,sha256=PrKf3gt8oTKJFIYcny5DJphPtv4OcGw4beyMh6K_SXo,85432
+pymemesuite/errors.pyx,sha256=TcYU-nj2I2NP9HsL3UZTLVJEcqvJoUJbChVPGPXm1Ls,857
+pymemesuite/fimo.cpython-310-darwin.so,sha256=v7bBXUuFpx0URV7U54p9Ut3XHPufN7Xc102cAsJRjck,2167432
+pymemesuite/fimo.pyx,sha256=C-zbScQMTV_cYmNsVeu9Qo5nTFLaz5YbRgFiUodtrBU,14857
+pymemesuite-0.1.0a1.dist-info/COPYING,sha256=wPzDeBjR3w-UjqKqcZMcGmVN5gOI4A-FTL-nHRIWv5s,1103
+pymemesuite-0.1.0a1.dist-info/METADATA,sha256=ppSpC9tDy3t3RVayDoigokx2vvnH1NmclSYcYnzqrH0,9344
+pymemesuite-0.1.0a1.dist-info/WHEEL,sha256=Mp26lirrtUNzLUWsPKBAjl3RVvrCg7YEjI0nue_kNcE,112
+pymemesuite-0.1.0a1.dist-info/top_level.txt,sha256=hbngsKQDnDaIKFMQ2dydIxPdfL6uq1PN7_1baaSkjfc,12
+pymemesuite-0.1.0a1.dist-info/RECORD,,
