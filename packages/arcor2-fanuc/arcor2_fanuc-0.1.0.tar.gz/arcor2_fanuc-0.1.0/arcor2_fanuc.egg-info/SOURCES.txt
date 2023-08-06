@@ -1,0 +1,15 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+arcor2_fanuc/VERSION
+arcor2_fanuc/__init__.py
+arcor2_fanuc/py.typed
+arcor2_fanuc.egg-info/PKG-INFO
+arcor2_fanuc.egg-info/SOURCES.txt
+arcor2_fanuc.egg-info/dependency_links.txt
+arcor2_fanuc.egg-info/entry_points.txt
+arcor2_fanuc.egg-info/namespace_packages.txt
+arcor2_fanuc.egg-info/requires.txt
+arcor2_fanuc.egg-info/top_level.txt
+arcor2_fanuc/scripts/__init__.py
+arcor2_fanuc/scripts/fanuc.py

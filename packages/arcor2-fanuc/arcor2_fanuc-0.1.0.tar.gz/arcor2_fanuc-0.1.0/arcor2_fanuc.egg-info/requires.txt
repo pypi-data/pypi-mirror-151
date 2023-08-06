@@ -1,0 +1,5 @@
+Flask==2.1.2
+arcor2~=0.23.1
+fanucpy==0.1.6
+requests==2.27.1
+types-requests==2.27.25

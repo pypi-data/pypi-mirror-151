@@ -1,0 +1,3 @@
+[console_scripts]
+arcor2_fanuc = arcor2_fanuc.scripts.fanuc:main
+
