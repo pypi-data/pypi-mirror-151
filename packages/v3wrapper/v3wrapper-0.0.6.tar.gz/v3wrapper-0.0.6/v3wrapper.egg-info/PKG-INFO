@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: v3wrapper
+Version: 0.0.6
+Summary: wrapper for easy download of data from Metrikus v3 API
+Home-page: https://github.com/lupit0/Metrikus
+Author: JQ
+Author-email: juan.f.quintas@gmail.com
+License: GNU2L
+Keywords: metrikus
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: licence.txt
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added 
+
+- Option to avoid holidays in a similar way to "out of office" hours
+- Histogram functionality
+- Cognitive performance functionality
+- Excel export template
+- png table generation
+
+## [0.0.5] - 2022-05-20
+
+### Added
+
+- Data downloads can extend beyond the 31 day limit through batch processing
+
+## [0.0.4] - 2022-05-08
+
+### Added
+
+- First properly working version that can be simply installed with
+~~~
+pip install v3wrapper
+~~~
+
+
+
+
