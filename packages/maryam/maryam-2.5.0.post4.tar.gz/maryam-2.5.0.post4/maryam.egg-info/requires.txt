@@ -1,0 +1,11 @@
+bs4
+cloudscraper
+flask
+lxml
+matplotlib
+nltk
+pandas
+plotly
+requests
+vaderSentiment
+wordcloud
