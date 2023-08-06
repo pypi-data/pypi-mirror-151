@@ -1,0 +1,5 @@
+setup.py
+blogdown.egg-info/PKG-INFO
+blogdown.egg-info/SOURCES.txt
+blogdown.egg-info/dependency_links.txt
+blogdown.egg-info/top_level.txt
