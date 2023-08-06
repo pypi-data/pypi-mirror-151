@@ -1,0 +1,8 @@
+LICENSE,sha256=GmtV5N7TY_tlHqhQ4EimQ3XCJJ0cBCk7b9yzaPpEiI4,1115
+hiddb/__init__.py,sha256=uZsygMXMKRw-7qhWojAjnpm8GFPXU92xW6XA8O5GwFY,22
+hiddb/asynchronous.py,sha256=xdnZmxPhqVSVq9OFF6jLYr2AalNCkt0X0KRZcb4-r7o,15271
+hiddb/synchronous.py,sha256=uWOSnfP8NCmA1Qf9JUnK1EFcwh4V5hf-nZSUTRAItqc,3250
+hiddb-0.1.4.dist-info/LICENSE,sha256=GmtV5N7TY_tlHqhQ4EimQ3XCJJ0cBCk7b9yzaPpEiI4,1115
+hiddb-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+hiddb-0.1.4.dist-info/METADATA,sha256=BicKK7x9jC1uJLiC6N-skh9NrN--XZ3zpQlIEFtbXuE,2266
+hiddb-0.1.4.dist-info/RECORD,,
