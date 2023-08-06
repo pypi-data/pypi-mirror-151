@@ -1,0 +1,16 @@
+pandas
+numpy>=1.0
+pymongo
+allure-python-commons
+allure-pytest
+paho-mqtt
+pytest
+pytest-base-url
+pytest-forked
+pytest-html
+pytest-metadata
+pytest-ordering
+requests
+urllib3
+xlrd==1.2
+xlwt==1.3

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: hkzlautoapi
+Version: 0.1.0
+Summary: 封装了pytest+request+excel数据驱动接口自动化框架
+Home-page: http://10.0.40.18:8888/root/automated-testing
+Author: 郑珊珊
+Author-email: zheng11071107@qq.com
+License: MIT License
+Description: UNKNOWN
+Keywords: 接口自动化,pytest
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
