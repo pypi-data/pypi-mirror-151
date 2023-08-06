@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: zeno_etl_libs
+Version: 1.0.20
+Summary: Zeno ETL Custom library
+Home-page: https://bitbucket.org/workcell/etl/src/master/
+Author: Zeno ETL Team
+Author-email: data@zeno.health
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# ETL Project 
+Extract, Transform, Load (ETL). All the scripts and custom libs.
+
+## 1. Setup:
+* clone the git project
+```
+git clone https://<your-git-user-name>@bitbucket.org/ashishgenerico/etl.git
+```
+* Create `python3.6` virtual env and activate
+* Install the `requirements.txt` in the venv
+```commandline
+pip install -r requirements.txt 
+```
+* Request the `./zeno_etl_libs/config/zeno_secrets.py` secrets file from your fellow team members 
+* Write your ETL script inside the scripts folder
+* Don't forget to include the custom library folder(`./zeno_etl_libs`) to the python search path
+* Modify the path as per your script location inside the folder
+```python
+```
+
+## 2. Updating the custom libs
+* add your module inside the `./zeno_etl_libs/<your_module_name>` folder
+* got to `./etl/` folder
+* create the **egg**
+```
+python zeno_etl_libs/setup.py bdist_egg
+```
+* Upload the .egg file to s3
+```commandline
+aws s3 cp ./dist/zeno_etl_pkg-0.0.2-py3.6.egg s3://aws-glue-assets-921939243643-ap-south-1/libs/
+```
+* Use the custom libs egg file s3 URI (e.g. `s3://aws-glue-assets-921939243643-ap-south-1/libs/zeno_etl_pkg-0.0.1-py3.6.egg`) inside the ETL glue job
+
+## 3. More on external and custom libs inside glue job
+* pip install, your module inside the `./etl_libs/<your_module_name>` folder
+```
+pip install -r requirements.txt -t ./etl_libs/
+```
+* got inside `./etl_libs/` folder
+```
+cd etl_libs
+```
+* create the **egg**
+```
+python setup.py bdist_egg
+```
+* Upload the .egg file to s3
+```commandline
+aws s3 cp ./dist/etl_pkg-0.0.4-py3.6.egg s3://aws-glue-assets-921939243643-ap-south-1/libs/
+```
+* link: [here](https://workcell.atlassian.net/l/c/8X1CCMqc)
+
