@@ -1,0 +1,6 @@
+tifffile
+numpy
+tqdm
+pandas
+matplotlib
+pypdf2
