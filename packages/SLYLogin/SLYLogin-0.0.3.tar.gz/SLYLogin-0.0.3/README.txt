@@ -1,0 +1,2 @@
+This is a simple login library that will check if a username and password are a match on a line in a accounts file. 
+Format of file must be USERNAME PASSWORD. The library takes three inputs, username, password, accountsFile.
