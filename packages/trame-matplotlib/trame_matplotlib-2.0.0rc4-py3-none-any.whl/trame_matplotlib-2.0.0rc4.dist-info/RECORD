@@ -1,0 +1,16 @@
+trame/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/matplotlib.py,sha256=tRBOyyIRBEcpazaz2rB8dGDInt3BsGFLsCImFgiqMLo,38
+trame/widgets/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/widgets/matplotlib.py,sha256=9tcohyhalEc7PLXnqT_wdR5KS5mApy2iw3eGmvPbDLU,150
+trame_matplotlib/LICENSE,sha256=JxmBE8KpohRh29ulqaImObpOZfl8FSA_vHAaFdb01gA,1504
+trame_matplotlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_matplotlib/module/__init__.py,sha256=uA8WnkwYB0UL2vDS7fngcFrIOHpPtvtmQdU1TuwnyIw,392
+trame_matplotlib/module/serve/trame-matplotlib.umd.min.js,sha256=6oUasbN97zm7kWWC1kWc9EC8JOCrJiaJqF1QvZ2M9_A,327964
+trame_matplotlib/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_matplotlib/widgets/matplotlib.py,sha256=dj8OSR0ayXDeNFL6MBea8RmJ_lZsaUZIEg7GUmv6kQo,1603
+trame_matplotlib-2.0.0rc4.dist-info/LICENSE,sha256=JxmBE8KpohRh29ulqaImObpOZfl8FSA_vHAaFdb01gA,1504
+trame_matplotlib-2.0.0rc4.dist-info/METADATA,sha256=0wcPPfgLNWDAaRxJzL1i9gii8gloh6aYA5rj-mBpWTo,3276
+trame_matplotlib-2.0.0rc4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+trame_matplotlib-2.0.0rc4.dist-info/top_level.txt,sha256=sbgu6hbXnaRrmEd_9silm0e9Nje59Mn9O3zqWu7A8uA,23
+trame_matplotlib-2.0.0rc4.dist-info/RECORD,,
