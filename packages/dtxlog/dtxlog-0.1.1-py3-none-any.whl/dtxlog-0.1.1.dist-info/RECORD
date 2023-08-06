@@ -1,0 +1,9 @@
+dtxlog/__init__.py,sha256=ye0_tg3IlwZyB325hquygbyOZLW6Cmtu2cPlg-PaWG8,1636
+dtxlog/_compat.py,sha256=V7js-hlh3ep3SWs8bnsqNtdAEV3y1QFuxXkQex0PrV0,263
+dtxlog/config.py,sha256=_ZYMINz69bNJRui4-bjwv5Jwp6jUuYV5QmSJ7gHdIGo,400
+dtxlog/formatters.py,sha256=359FtpXu3YoJOZf5ONlxdSnhEv5pyYB1yl7oUh3iDLM,680
+dtxlog/handlers.py,sha256=xioYCtZ3rE3pL7Mg36aaHmEuxS7JhNjPiXTjUlK2uUs,1909
+dtxlog/level.py,sha256=Qt3wQ-Mj50k-db9YcWcTLDbw29WWk94u-8IjLCOjjEo,158
+dtxlog-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+dtxlog-0.1.1.dist-info/METADATA,sha256=GOk9E6HyVHfVmFdCksSEL_fmopCfxDhU-YWOESXWv3k,517
+dtxlog-0.1.1.dist-info/RECORD,,
