@@ -1,0 +1,9 @@
+telenvi_beta/__init__.py,sha256=hRex74OuwSKeljVB3hmHB6hzwZ-MQn3-pdYMii19yP8,148
+telenvi_beta/geogrid.py,sha256=S9sndkycXy2w8OAk79OgL8H1nCYjQyR0KKJafYo0NWQ,10932
+telenvi_beta/geoim.py,sha256=AvVMVee1PbVfXokizGii44Ydgo0gGNtnAVULNb_BcAU,3879
+telenvi_beta/raster_tools.py,sha256=dc6eDvV4zTvmSeX0IwLL62qnf3WYa7lCD7A5Kqw6uLw,25828
+telenvi-0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+telenvi-0.1.dist-info/METADATA,sha256=88sskRniGD_6lcCtRuZluZMEAkWh1HJg4-Tx3EvINxo,1925
+telenvi-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+telenvi-0.1.dist-info/top_level.txt,sha256=dHPYd5J9VWHzkaNIRZvUvVUF0qeIkTB7VZF08R_JmDY,13
+telenvi-0.1.dist-info/RECORD,,
