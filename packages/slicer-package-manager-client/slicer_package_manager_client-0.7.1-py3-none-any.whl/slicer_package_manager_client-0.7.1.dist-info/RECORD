@@ -1,0 +1,14 @@
+slicer_package_manager_client/__init__.py,sha256=pXYPHUbgPc7zlUbjbuAdk3Z857W8yf99x-Vz3CrWnIw,26039
+slicer_package_manager_client/__main__.py,sha256=3tBtRKxlbCXPraePHVQyVhBTE5g2gfPq-TFbQ74HdcA,70
+slicer_package_manager_client/cli.py,sha256=WDbtcCZt_25XPXW9V74pWK9IfDaJZNMmu18fGXiXl6k,26264
+slicer_package_manager_client/_vendor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slicer_package_manager_client/_vendor/bson/__init__.py,sha256=YKCEzw047hCSv0NnB-_Ek3Hg9NaqNJtFqpI618FG-Nc,631
+slicer_package_manager_client/_vendor/bson/errors.py,sha256=AkDIISytky_6NFP-U2ecdXooIr53yt0ZiAT42DmuoI8,1159
+slicer_package_manager_client/_vendor/bson/objectid.py,sha256=1pB86ncrCurFog__HPWzfbew-UB5wdoJ-jDagD_VbPY,9397
+slicer_package_manager_client/_vendor/bson/py3compat.py,sha256=nC6q-RwR7iCHN3NFVoiwO3s3Y6GeKe_qQAcIL4Gc9J4,2815
+slicer_package_manager_client/_vendor/bson/tz_util.py,sha256=Zy_bA8x2YWrTbIx08HQYYJVghKKwChcCkO4VSBwaNVU,1518
+slicer_package_manager_client-0.7.1.dist-info/METADATA,sha256=mPZu9VnRti3t7VVce9q_tw3g72ATP-w6HzGD52MrqD8,2002
+slicer_package_manager_client-0.7.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+slicer_package_manager_client-0.7.1.dist-info/entry_points.txt,sha256=TQHPamGmDF05J3l-wCVPxZ-qKc1I8B_vZr8aJ7XPk6o,89
+slicer_package_manager_client-0.7.1.dist-info/top_level.txt,sha256=NfrBAOwBe5meRiZ1O0HfNxtbBwh7fihB6GVcDEf8N2g,30
+slicer_package_manager_client-0.7.1.dist-info/RECORD,,
