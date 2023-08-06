@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+osc_bsu_backup/__init__.py
+osc_bsu_backup/bsu_backup.py
+osc_bsu_backup/cli.py
+osc_bsu_backup/error.py
+osc_bsu_backup/utils.py
+osc_bsu_backup.egg-info/PKG-INFO
+osc_bsu_backup.egg-info/SOURCES.txt
+osc_bsu_backup.egg-info/dependency_links.txt
+osc_bsu_backup.egg-info/entry_points.txt
+osc_bsu_backup.egg-info/requires.txt
+osc_bsu_backup.egg-info/top_level.txt
