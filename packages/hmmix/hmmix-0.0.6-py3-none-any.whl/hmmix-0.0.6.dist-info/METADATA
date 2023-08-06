@@ -1,0 +1,339 @@
+Metadata-Version: 2.1
+Name: hmmix
+Version: 0.0.6
+Summary: Find introgressed segments
+Home-page: https://github.com/LauritsSkov/Introgression-detection
+Author: Laurits Skov and Moises Coll Macia
+Author-email: lauritsskov2@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: scipy (>=1.5)
+Requires-Dist: numba
+
+# Introgression detection
+These are the scripts needed to infere archaic introgression in modern populations using an unadmixed outgroup.
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install hmmix 
+```
+If you want to work with bcf/vcf files I would also install vcftools and bcftools. You can either use conda or visit their websites.
+```python
+conda install -c bioconda vcftools bcftools
+```
+
+
+![Overview of model](https://user-images.githubusercontent.com/30321818/43464826-4d11d46c-94dc-11e8-8f1a-6851aa5d9125.jpg)
+
+The way the model works is by removing variation found in an outgroup population and then using the remaining variants to group the genome into regions of different variant density. If the model works well we would expect that introgressed regions have higher variant density than non-introgressed - because they have spend more time accumulation variation that is not found in the outgroup.
+
+An example on simulated data is provided below:
+
+![het_vs_archaic](https://user-images.githubusercontent.com/30321818/46877046-217eff80-ce40-11e8-9010-edb544e3e1ee.png)
+
+In this example we zoom in on 1 Mb of simulated data for a haploid genome. The top panel shows the coalescence times with the outgroup across the region and the green segment is an archaic introgressed segment. Notice how much more deeper the coalescence time with the outgroup is. The second panel shows that probability of being in the archaic state. We can see that the probability is much higher in the archaic segment, demonstrating that in this toy example the model is working like we would hope. The next panel is the snp density if you dont remove all snps found in the outgroup. By looking at this one cant tell where the archaic segments begins and ends, or even if there is one. The bottom panel is the snp density when all variation in the outgroup is removed. Notice that now it is much clearer where the archaic segment begins and ends!
+
+The method is now published in PlosGenetics and can be found here: [Detecting archaic introgression using an unadmixed outgroup](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007641) This paper is describing and evaluating the method. 
+
+## Usage
+```
+Script for identifying introgressed archaic segments
+
+Turorial:
+hmmix make_test_data 
+hmmix train  -obs=obs.txt -weights=weights.bed -mutrates=mutrates.bed -param=Initialguesses.json -out=trained.json 
+hmmix decode -obs=obs.txt -weights=weights.bed -mutrates=mutrates.bed -param=trained.json
+
+
+Turorial with 1000 genomes data:
+hmmix create_outgroup -ind=individuals.json -vcf=*.bcf -weights=strickmask.bed -out=outgroup.txt -ancestral=homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_*.fa
+hmmix mutation_rate -outgroup=outgroup.txt  -weights=strickmask.bed -window_size=1000000 -out mutationrate.bed
+hmmix create_ingroup  -ind=individuals.json -vcf=*.bcf -weights=strickmask.bed -out=obs -outgroup=outgroup.txt -ancestral=homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_*.fa
+
+hmmix train  -obs=obs.HG00096.txt -weights=strickmask.bed -mutrates=mutationrate.bed -out=trained.HG00096.json 
+hmmix decode -obs=obs.HG00096.txt -weights=strickmask.bed -mutrates=mutationrate.bed -param=trained.HG00096.json 
+```
+
+
+
+## Quick tutorial
+
+Lets make some test data and start using the program.
+```
+> hmmix make_test_data
+making test data...
+creating 2 chromosomes with 50 Mb of test data (100K bins) with the following parameters..
+
+State names: ['Human' 'Archaic']
+Starting_probabilities: [0.98 0.02]
+Transition matrix: 
+[[9.999e-01 1.000e-04]
+ [2.000e-02 9.800e-01]]
+Emission values: [0.04 0.4 ]
+```
+This will generate 4 files, obs.txt, weights.bed, mutrates.bed and Initialguesses.json. 
+
+obs.txt. These are the mutation that are left after removing variants which are found in the outgroup.
+```
+chrom  pos     ancestral_base  genotype
+chr1   5212    A               AG
+chr1   32198   A               AG
+chr1   65251   C               CG
+chr1   117853  A               AG
+chr1   122518  T               TC
+chr1   142322  T               TC
+chr1   144695  C               CG
+chr1   206370  T               TG
+chr1   218969  A               AT
+```
+weights.bed. This is the parts of the genome that we can accurately map to - in this case we have simulated the data and can accurately access the entire genome.
+```
+chr1	1	50000000
+chr2	1	50000000
+```
+mutrates.bed. This is the normalized mutation rate across the genome (in bins of 1 Mb).
+```
+chr1  0        1000000   1
+chr1  1000000  2000000   1
+chr1  2000000  3000000   1
+chr1  3000000  4000000   1
+chr1  4000000  5000000   1
+chr1  5000000  6000000   1
+chr1  6000000  7000000   1
+chr1  7000000  8000000   1
+chr1  8000000  9000000   1
+chr1  9000000  10000000  1
+```
+Initialguesses.json. This is our initial guesses when training the model - note these are different from those we simulated from.
+```json
+{
+  "state_names": ["Human","Archaic"],
+  "starting_probabilities": [0.5,0.5],
+  "transitions": [[0.99,0.01],[0.02,0.98]],
+  "emissions": [0.03,0.3]
+}
+```
+We can find the best fitting parameters using BaumWelsch training - note you can try to ommit the weights and mutrates arguments. Since this is simulated data the mutation is constant across the genome and we can asses the entire genome. Also notice how the parameters approach the parameters the data was generated from (jubii).
+```bash
+> hmmix train  -obs=obs.txt -weights=weights.bed -mutrates=mutrates.bed -param=Initialguesses.json -out=trained.json
+
+iteration    loglikelihood  start1  start2  emis1   emis2   trans1_1  trans2_2
+0            -18123.4475    0.5     0.5     0.03    0.3     0.99      0.98
+1            -17506.0219    0.96    0.04    0.035   0.2202  0.9969    0.9242
+2            -17487.797     0.971   0.029   0.0369  0.2235  0.9974    0.9141
+3            -17477.1367    0.976   0.024   0.0375  0.2404  0.9978    0.9105
+4            -17466.6961    0.98    0.02    0.0379  0.2627  0.9982    0.9102
+5            -17456.1508    0.983   0.017   0.0382  0.2877  0.9985    0.9123
+6            -17445.5098    0.986   0.014   0.0385  0.3146  0.9988    0.9172
+7            -17434.9006    0.988   0.012   0.0388  0.3426  0.9991    0.9248
+8            -17424.6966    0.99    0.01    0.039   0.3705  0.9993    0.9348
+9            -17415.623     0.991   0.009   0.0393  0.3968  0.9995    0.9464
+10           -17408.6263    0.992   0.008   0.0395  0.4195  0.9997    0.9579
+11           -17404.3022    0.993   0.007   0.0396  0.4367  0.9998    0.9673
+12           -17402.299     0.994   0.006   0.0397  0.4477  0.9998    0.9738
+13           -17401.6146    0.994   0.006   0.0398  0.4537  0.9999    0.9774
+14           -17401.4336    0.994   0.006   0.0398  0.4566  0.9999    0.9793
+15           -17401.3933    0.994   0.006   0.0398  0.4578  0.9999    0.9802
+16           -17401.3851    0.994   0.006   0.0398  0.4584  0.9999    0.9806
+17           -17401.3835    0.994   0.006   0.0398  0.4586  0.9999    0.9807
+18           -17401.3832    0.994   0.006   0.0398  0.4587  0.9999    0.9808
+19           -17401.3832    0.994   0.006   0.0398  0.4588  0.9999    0.9808
+
+
+# run without mutrate and weights (only do this for simulated data)
+> hmmix train  -obs=obs.txt -param=Initialguesses.json -out=trained.json
+```
+
+We can now decode the data with the best parameters that maximize the likelihood and find the archaic segments:
+
+```bash
+> hmmix decode -obs=obs.txt -weights=weights.bed -mutrates=mutrates.bed -param=trained.json
+
+chrom        start     end       length    state    snps  mean_prob
+chr1         0         7233000   7234000   Human    287   0.9995
+chr1         7234000   7246000   13000     Archaic  9     0.90427
+chr1         7247000   21618000  14372000  Human    610   0.99946
+chr1         21619000  21673000  55000     Archaic  22    0.9697
+chr1         21674000  26859000  5186000   Human    204   0.99878
+chr1         26860000  26941000  82000     Archaic  36    0.971
+chr1         26942000  49989000  23048000  Human    863   0.99982
+chr2         0         6793000   6794000   Human    237   0.99972
+chr2         6794000   6822000   29000     Archaic  14    0.95461
+chr2         6823000   12646000  5824000   Human    244   0.99927
+chr2         12647000  12745000  99000     Archaic  55    0.97413
+chr2         12746000  15461000  2716000   Human    125   0.99881
+chr2         15462000  15547000  86000     Archaic  38    0.93728
+chr2         15548000  32626000  17079000  Human    709   0.99951
+chr2         32627000  32695000  69000     Archaic  31    0.98305
+chr2         32696000  41087000  8392000   Human    360   0.9995
+chr2         41088000  41178000  91000     Archaic  43    0.96093
+chr2         41179000  49952000  8774000   Human    328   0.9979
+chr2         49953000  49977000  25000     Archaic  13    0.98501
+
+# Again here you could ommit weights and mutationrates. Actually one could also ommit trained.json because then the model defaults to using the parameters we used the generated the data
+> hmmix decode -obs=obs.txt
+```
+
+
+
+
+## Example with 1000 genomes data
+I thought it would be nice to have an entire reproduceble example of how to use this model. From a common starting point such as a VCF file (well a BCF file in this case) to the final output.  The reason for using BCF files is because it is MUCH faster to extract data for each individual. You can convert a vcf file to a bcf file like this:
+
+```bash
+bcftools view file.vcf -l 1 -O b > file.bcf
+bcftools index file.bcf
+```
+
+In this example I will analyse an individual (HG00096) from the 1000 genomes project phase 3.
+
+First we will need to know which 1) bases can be called in the genome and 2) which variants are found in the outgroup. So let's start out by downloading the files from the following directories.
+To download callability regions, ancestral alleles information, ingroup outgroup information call this command:
+
+```bash
+
+
+# bcffiles (hg19)
+ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/bcf_files/
+
+# callability (remember to remove chr in the beginning of each line to make it compatible with hg19 e.g. chr1 > 1)
+ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/accessible_genome_masks/20141020.strict_mask.whole_genome.bed
+sed 's/^chr\|%$//g' 20141020.strict_mask.whole_genome.bed | awk '{print $1"\t"$2"\t"$3}' > strickmask.bed
+
+# outgroup information
+ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel
+
+# Ancestral information
+ftp://ftp.ensembl.org/pub/release-74/fasta/ancestral_alleles/homo_sapiens_ancestor_GRCh37_e71.tar.bz2
+```
+
+For this example we will use all individuals from 'YRI','MSL' and 'ESN' as outgroup individuals. While we will only be decoding hG00096 in this example you can add as many individuals as you want to the ingroup.  
+
+```json
+{
+  "ingroup": [
+    "HG00096",
+    "HG00097"
+  ],
+  "outgroup": [
+    "HG02922",
+    "HG02923",
+    ...
+    "HG02944",
+    "HG02946"]
+}
+```
+This is how we would call archaic segments in an individual. First we need to find a set of variants found in the outgroup. We can use the wildcard character to loop through all bcf files. If you dont have ancestral information you can skip the ancestral argument.
+```bash
+(took an hour) > hmmix create_outgroup -ind=individuals.json -vcf=*.bcf -weights=strickmask.bed -out=outgroup.txt -ancestral=homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_*.fa
+
+# Alternative usage (if you only have a few individual in the outgroup you can also provide a comma separated list)
+> hmmix create_outgroup -ind=HG02922,HG02923,HG02938 -vcf=*.bcf -weights=strickmask.bed -out=outgroup.txt -ancestral=homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_*.fa
+
+# Alternative usage (if you have no ancestral information)
+> hmmix create_outgroup -ind=individuals.json -vcf=*.bcf -weights=strickmask.bed -out=outgroup.txt 
+
+# Alternative usage (if you only want to run the model on a subset of chromosomes, with or without ancestral information)
+> hmmix create_outgroup -ind=individuals.json -vcf=chr1.bcf,chr2.bcf -weights=strickmask.bed -out=outgroup.txt
+
+> hmmix create_outgroup -ind=individuals.json -vcf=chr1.bcf,chr2.bcf -weights=strickmask.bed -out=outgroup.txt -ancestral=homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_1.fa,homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_2.fa
+```
+
+We can use the number of variants in the outgroup to estimate the substitution rate as a proxy for mutation rate.
+```bash
+(took 30 sec) > hmmix mutation_rate -outgroup=outgroup.txt  -weights=strickmask.bed -window_size=1000000 -out mutationrate.bed
+```
+Keep variants that are not found to be derived in the outgroup for each individual in ingroup. You can also speficy a single individual or a comma separated list of individuals.
+```bash
+# Different way to define which individuals are in the ingroup
+(took 20 min) > hmmix create_ingroup  -ind=individuals.json -vcf=*.bcf -weights=strickmask.bed -out=obs -outgroup=outgroup.txt -ancestral=homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_*.fa
+
+(took 20 min) > hmmix create_ingroup  -ind=HG00096,HG00097 -vcf=*.bcf -weights=strickmask.bed -out=obs -outgroup=outgroup.txt -ancestral=homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_*.fa
+```
+Now for training the HMM parameters and decoding
+```bash
+(took 3 min) > hmmix train  -obs=obs.HG00096.txt -weights=strickmask.bed -mutrates=mutationrate.bed -out=trained.HG00096.json 
+
+iteration  loglikelihood  start1  start2  emis1   emis2   trans1_1  trans2_2
+0          -510843.77     0.98    0.02    0.04    0.4     0.9999    0.98
+1          -506415.4794   0.957   0.043   0.0502  0.3855  0.9994    0.9864
+2          -506275.0461   0.953   0.047   0.05    0.3852  0.9992    0.9842
+3          -506217.7733   0.952   0.048   0.0497  0.3846  0.9991    0.9825
+4          -506191.4486   0.951   0.049   0.0495  0.3839  0.999     0.9813
+5          -506178.6378   0.95    0.05    0.0493  0.3834  0.999     0.9804
+6          -506172.171    0.95    0.05    0.0492  0.3829  0.9989    0.9798
+7          -506168.8254   0.95    0.05    0.0491  0.3826  0.9989    0.9794
+8          -506167.0647   0.949   0.051   0.0491  0.3823  0.9989    0.9791
+9          -506166.127    0.949   0.051   0.049   0.3821  0.9989    0.9789
+10         -506165.6233   0.949   0.051   0.049   0.3819  0.9989    0.9787
+11         -506165.351    0.949   0.051   0.049   0.3818  0.9988    0.9786
+12         -506165.2032   0.949   0.051   0.049   0.3817  0.9988    0.9785
+13         -506165.1227   0.949   0.051   0.049   0.3817  0.9988    0.9784
+14         -506165.0787   0.949   0.051   0.049   0.3816  0.9988    0.9783
+15         -506165.0546   0.949   0.051   0.0489  0.3816  0.9988    0.9783
+16         -506165.0415   0.949   0.051   0.0489  0.3815  0.9988    0.9783
+17         -506165.0342   0.949   0.051   0.0489  0.3815  0.9988    0.9783
+18         -506165.0303   0.949   0.051   0.0489  0.3815  0.9988    0.9782
+19         -506165.0281   0.949   0.051   0.0489  0.3815  0.9988    0.9782
+20         -506165.0269   0.949   0.051   0.0489  0.3815  0.9988    0.9782
+21         -506165.0262   0.949   0.051   0.0489  0.3815  0.9988    0.9782
+22         -506165.0259   0.949   0.051   0.0489  0.3815  0.9988    0.9782
+23         -506165.0257   0.949   0.051   0.0489  0.3815  0.9988    0.9782
+24         -506165.0256   0.949   0.051   0.0489  0.3815  0.9988    0.9782
+25         -506165.0255   0.949   0.051   0.0489  0.3815  0.9988    0.9782
+```
+
+```bash
+(took 30 sec) > hmmix decode -obs=obs.HG00096.txt -weights=strickmask.bed -mutrates=mutationrate.bed -param=trained.HG00096.json 
+
+chrom      start          end       length   state    snps    mean_prob
+1          0              2987000   2988000  Human    98      0.98211
+1          2988000        2996000   9000     Archaic  6       0.70696
+1          2997000        3424000   428000   Human    30      0.99001
+1          3425000        3451000   27000    Archaic  22      0.95557
+1          3452000        4301000   850000   Human    38      0.98272
+1          4302000        4359000   58000    Archaic  20      0.83793
+1          4360000        4499000   140000   Human    5       0.96475
+1          4500000        4510000   11000    Archaic  9       0.92193
+```
+It is also possible to tell the model that the data is phased with the -haploid parameter. Below I am only showing the archaic segments.
+```bash
+(took 30 sec) > hmmix decode -obs=obs.HG00096.txt -weights=strickmask.bed -mutrates=mutationrate.bed -param=trained.HG00096.json -haploid
+
+chrom      start          end       length   state    snps    mean_prob
+1_hap1     3425000        3451000   27000    Archaic  22      0.95503
+
+1_hap2     4304000        4336000    33000   Archaic  12      0.91395
+1_hap2     4500000        4509000    10000   Archaic  7       0.83233
+```
+
+The first Archaic segment with a high mean posterior probability is from 3,425,000 to 3,450,000. And this segment has also been found be other methods:
+
+```bash
+# Conditional random field (S. Sankararaman - 2014)
+chr1     3,421,722-3,450,286 HG00096
+# Sstar (B. Vernot - 2016)
+chr1     3,427,298-3,461,813 HG00096
+# Sprime (S. Browning - 2018)
+chr1     3,418,794-3,457,377 HG00096
+# HMM (L. Skov 2018)
+chr1     3,425,000-3,450,000 HG00096
+```
+
+And that is it! Now you have run the model and gotten a set of parameters that you can interpret biologically (see my paper) and you have a list of segments that belong to the human and Archaic state.
+
+If you have any questions about the use of the scripts, if you find errors or if you have feedback you can contact my here (make an issue) or write to:
+
+lauritsskov2@gmail.com
+
+
