@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/xitroo/Api.py
+src/xitroo/__init__.py
+src/xitroo_api.egg-info/PKG-INFO
+src/xitroo_api.egg-info/SOURCES.txt
+src/xitroo_api.egg-info/dependency_links.txt
+src/xitroo_api.egg-info/top_level.txt
