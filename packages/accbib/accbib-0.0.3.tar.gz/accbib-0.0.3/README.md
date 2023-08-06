@@ -1,0 +1,208 @@
+# Bibliography info verification and format conversion package
+
+The "accbib" package aims to accelerate and accurise the bibliography data preparation. It collects complete and accurate bibliography data based on DOIs. It does the following jobs:
+* generate accurate bibliography data from DOI list, bib file, or xml ([used for microsoft word](https://docs.microsoft.com/en-us/office/vba/word/concepts/working-with-word/working-with-bibliographies)) database;
+* check and correct the data of bib and xml file by looking up the entry's DOI;
+* export bibliography database as either bib or xml format;
+* so it can do format conversion between bib and xml files.
+
+The package fetches information from http://dx.doi.org/ website with DOI number using *application/vnd.citationstyles.csl+json* header for content negotiation. However, lots of materials do not have DOIs, such as Phd thesis, websites, very old publications, etc., this package allows users to provide an additional bib file in which user-defined DOIs and their corresponding contents is included. The *fetchadoi* will look into this bib database if DOI was not found on the internet. 
+
+# Installation
+Dependence:
+* pybtex
+* lxml
+
+This module can be installed via pip:
+```bash
+pip install accbib
+```
+
+# Examples
+## retrieve info from a DOI
+```python
+import accbib
+
+# fetch a doi, the returned data is an Entry object defined by pybtex
+data = accbib.fetchadoi('10.1103/PhysRevA.103.063112')
+print(data)
+```
+
+The output would be:
+```bash
+Entry('article',
+  fields=[
+    ('doi', '10.1103/physreva.103.063112'), 
+    ('journal', 'Physical Review A'), 
+    ('number', '6'), 
+    ('publisher', 'American Physical Society (APS)'), 
+    ('title', 'Controlling quantum numbers and light emission of Rydberg states via the laser pulse duration'), 
+    ('url', 'http://dx.doi.org/10.1103/PhysRevA.103.063112'), 
+    ('volume', '103'), 
+    ('pages', '063112'), 
+    ('year', '2021')],
+  persons=OrderedCaseInsensitiveDict([('author', [Person('Ortmann, L.'), Person('Hofmann, C.'), Person('Ivanov, I. A.'), Person('Landsman, A. S.')])]))
+```
+## retrieve bibliography data from a DOI list, bib or xml file
+```python
+# generate bibliography database from a file containing DOI list
+# the .dat file contains one DOI in each row
+# userlib is an optional parameter. For some special materials which do not
+# have DOIs, you can make up a fake DOI and put all the info (must include
+#"DOI":<fake DOI>) in userlib.bib in bib format. The accbib.loadois
+# function will look into that bib file if not found on internet.
+bibdata = accbib.loadois('dois.dat',userlib='userlib.bib')
+
+# load bib and correct the reference info with doi if possible.
+bibdata_1 = accbib.loaddb('test.bib',checkdoi=True)
+
+# load xml and correct the reference info with doi if possible.
+bibdata_2 = accbib.loaddb('test.xml',checkdoi=True)
+```
+
+## save bibliography data as different formats
+```python
+# save the database as an xml file, which can be imported in microsoft
+# office
+# jnStyle specifies whether to output full ('full') or abbreviation
+#('abbr') journal name
+# there is a small journal name database in translation.py file. Everyone
+#can add journal names and their abbreviations for his/her research area.
+accbib.export('example.xml',bibdata,jnStyle='abbr')
+
+# save the database as a bib file
+# for .bib file, full journal name is always output.
+accbib.export('example.bib',bibdata)
+```
+## a sample output bib file
+```bash
+@article{Ortmann2021,
+    author = "Ortmann, L. and Hofmann, C. and Ivanov, I. A. and Landsman,
+    A. S.",
+    doi = "10.1103/physreva.103.063112",
+    journal = "Physical Review A",
+    number = "6",
+    publisher = "American Physical Society (APS)",
+    title = "Controlling quantum numbers and light emission of Rydberg states via the laser pulse duration",
+    url = "http://dx.doi.org/10.1103/PhysRevA.103.063112",
+    volume = "103",
+    pages = "063112",
+    year = "2021"
+}
+
+@article{Facon2016,
+    author = "Facon, Adrien and Dietsche, Eva-Katharina and Grosso, Dorian
+    and Haroche, Serge and Raimond, Jean-Michel and Brune, Michel and
+    Gleyzes, Sébastien",
+    doi = "10.1038/nature18327",
+    journal = "Nature",
+    number = "7611",
+    pages = "262-265",
+    publisher = "Springer Science and Business Media LLC",
+    title = "A sensitive electrometer based on a Rydberg atom in a Schrödinger-cat state",
+    url = "http://dx.doi.org/10.1038/nature18327",
+    volume = "535",
+    year = "2016"
+}
+```
+## a sample output xml file
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<Sources xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography">
+  <Source>
+    <SourceType>JournalArticle</SourceType>
+    <Tag>Ortmann2021</Tag>
+    <Author>
+      <Author>
+        <NameList>
+          <Person>
+            <Last>Ortmann</Last>
+            <First>L.</First>
+            <Middle></Middle>
+          </Person>
+          <Person>
+            <Last>Hofmann</Last>
+            <First>C.</First>
+            <Middle></Middle>
+          </Person>
+          <Person>
+            <Last>Ivanov</Last>
+            <First>I.</First>
+            <Middle>A.</Middle>
+          </Person>
+          <Person>
+            <Last>Landsman</Last>
+            <First>A.</First>
+            <Middle>S.</Middle>
+          </Person>
+        </NameList>
+      </Author>
+    </Author>
+    <Title>Controlling quantum numbers and light emission of Rydberg states
+    via the laser pulse duration</Title>
+    <JournalName>Phys. Rev. A</JournalName>
+    <DOI>10.1103/physreva.103.063112</DOI>
+    <Issue>6</Issue>
+    <Publisher>American Physical Society (APS)</Publisher>
+    <URL>http://dx.doi.org/10.1103/PhysRevA.103.063112</URL>
+    <Volume>103</Volume>
+    <Pages>063112</Pages>
+    <Year>2021</Year>
+  </Source>
+  <Source>
+    <SourceType>JournalArticle</SourceType>
+    <Tag>Facon2016</Tag>
+    <Author>
+      <Author>
+        <NameList>
+          <Person>
+            <Last>Facon</Last>
+            <First>Adrien</First>
+            <Middle></Middle>
+          </Person>
+          <Person>
+            <Last>Dietsche</Last>
+            <First>Eva-Katharina</First>
+            <Middle></Middle>
+          </Person>
+          <Person>
+            <Last>Grosso</Last>
+            <First>Dorian</First>
+            <Middle></Middle>
+          </Person>
+          <Person>
+            <Last>Haroche</Last>
+            <First>Serge</First>
+            <Middle></Middle>
+          </Person>
+          <Person>
+            <Last>Raimond</Last>
+            <First>Jean-Michel</First>
+            <Middle></Middle>
+          </Person>
+          <Person>
+            <Last>Brune</Last>
+            <First>Michel</First>
+            <Middle></Middle>
+          </Person>
+          <Person>
+            <Last>Gleyzes</Last>
+            <First>Sébastien</First>
+            <Middle></Middle>
+          </Person>
+        </NameList>
+      </Author>
+    </Author>
+    <Title>A sensitive electrometer based on a Rydberg atom in a
+    Schrödinger-cat state</Title>
+    <JournalName>Nature</JournalName>
+    <DOI>10.1038/nature18327</DOI>
+    <Issue>7611</Issue>
+    <Pages>262-265</Pages>
+    <Publisher>Springer Science and Business Media LLC</Publisher>
+    <URL>http://dx.doi.org/10.1038/nature18327</URL>
+    <Volume>535</Volume>
+    <Year>2016</Year>
+  </Source>
+</Sources>
+```

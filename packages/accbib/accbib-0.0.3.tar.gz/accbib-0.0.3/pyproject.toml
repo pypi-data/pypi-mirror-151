@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "pybtex",
+    "lxml"
+]
+build-backend = "setuptools.build_meta"
