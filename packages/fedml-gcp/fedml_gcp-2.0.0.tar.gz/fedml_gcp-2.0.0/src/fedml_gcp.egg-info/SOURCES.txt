@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+src/fedml_gcp/__init__.py
+src/fedml_gcp/build_and_push.sh
+src/fedml_gcp/dbconnection.py
+src/fedml_gcp/dwcgcp.py
+src/fedml_gcp/install_kubectl.sh
+src/fedml_gcp/logger.py
+src/fedml_gcp/model.py
+src/fedml_gcp/script_generator.py
+src/fedml_gcp.egg-info/PKG-INFO
+src/fedml_gcp.egg-info/SOURCES.txt
+src/fedml_gcp.egg-info/dependency_links.txt
+src/fedml_gcp.egg-info/requires.txt
+src/fedml_gcp.egg-info/top_level.txt

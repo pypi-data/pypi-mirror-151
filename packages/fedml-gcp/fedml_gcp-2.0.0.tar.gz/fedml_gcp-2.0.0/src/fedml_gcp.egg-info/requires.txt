@@ -1,0 +1,6 @@
+hdbcli
+google
+google-api-python-client
+google-cloud-aiplatform
+pyyaml
+requests
