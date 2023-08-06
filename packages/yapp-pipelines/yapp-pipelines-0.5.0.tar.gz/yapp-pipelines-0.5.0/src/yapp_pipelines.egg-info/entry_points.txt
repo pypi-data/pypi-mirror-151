@@ -1,0 +1,2 @@
+[console_scripts]
+yapp = yapp.cli:main
