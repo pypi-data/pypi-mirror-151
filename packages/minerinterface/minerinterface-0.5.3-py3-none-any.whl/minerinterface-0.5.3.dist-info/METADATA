@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: minerinterface
+Version: 0.5.3
+Summary: python library to talk to crypto miners
+Home-page: https://github.com/schnitzel/minerinterface
+Author: Michael Schmid
+Author-email: michael@amazee.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: asyncssh (>=2.7.2)
+Requires-Dist: cryptography (>=35.0.0)
+Requires-Dist: passlib (>=1.7.4)
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: toml (>=0.10.2)
+
+# minerInterface-library
+python library to talk to crypto miners
+
+Forked from https://github.com/UpstreamData/minerInterface just without the tools, as they are not needed to use the code as a library
