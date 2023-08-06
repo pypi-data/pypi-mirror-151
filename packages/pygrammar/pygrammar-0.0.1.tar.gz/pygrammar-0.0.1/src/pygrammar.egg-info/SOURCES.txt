@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pygrammar/__init__.py
+src/pygrammar/pygrammar.py
+src/pygrammar.egg-info/PKG-INFO
+src/pygrammar.egg-info/SOURCES.txt
+src/pygrammar.egg-info/dependency_links.txt
+src/pygrammar.egg-info/top_level.txt
