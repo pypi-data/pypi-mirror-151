@@ -1,0 +1,2 @@
+[console_scripts]
+aiml = scripts.aiml:main
