@@ -1,0 +1,23 @@
+napari>=0.4.13
+omero-py
+omero-rois
+
+[all]
+napari[all]
+
+[dev]
+black
+flake8
+mypy
+pre-commit
+
+[tests]
+pytest
+pytest-cov
+pytest-qt
+
+[tests:sys_platform == "linux"]
+pytest-xvfb
+
+[tests:sys_platform == "win32"]
+pywin32
