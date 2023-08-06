@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+homeman/__init__.py
+homeman/homeman.py
+homeman.egg-info/PKG-INFO
+homeman.egg-info/SOURCES.txt
+homeman.egg-info/dependency_links.txt
+homeman.egg-info/entry_points.txt
+homeman.egg-info/requires.txt
+homeman.egg-info/top_level.txt
