@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: spacopt
+Version: 0.3.1
+Summary: spacopt is a package for bringing optimization techniques to spacal-simulation application
+Home-page: https://github.com/PrinceRichfather/spacopt
+Author: Shakhzod Dadabaev Urazalievich
+Author-email: misis.dsu@gmail.com
+License: MIT license
+Keywords: spacopt
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: hyperactive (>=4.1.1)
+Requires-Dist: matplotlib (>=3.1)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: root-numpy (>=4.8.0)
+
+# spacopt
+
+[![image](https://img.shields.io/pypi/v/spacopt.svg)](https://pypi.python.org/pypi/spacopt)
+
+[![image](https://img.shields.io/travis/PrinceRichfather/spacopt.svg)](https://travis-ci.com/PrinceRichfather/spacopt)
+
+[![Documentation Status](https://readthedocs.org/projects/spacopt/badge/?version=latest)](https://spacopt.readthedocs.io/en/latest/?version=latest)
+
+`spacopt` - short for `spacal-optimization`
+
+## Description
+
+spacopt is a package for bringing optimization techniques to spacal-simulation application, created for LHCb ECAL studies for different types of calorimeters, such as spacal and shashlik.
+Should be considered as complementary to [spacal-simulation](https://gitlab.cern.ch/spacal-rd/spacal-simulation), hosted at gitlab under CERN domain.
+Up to this point, the main package for optimization is considered [Hyperactive](https://github.com/SimonBlanke/Hyperactive).
+
+## Features
+
+* Create config files, with user defined parameters of the module.
+* Run a MC simulation, using pyton script
+* Run Optimization for finding best user-defined parameters of module, to minimize the loss function: $
+\dfrac{a}{\sqrt{E}}+b,$
+where $a$ - sampling term,
+$b$ - constant term.
+
+In fact, both $a$ and $b$ could be considered as independent subjects to minimize, as well as other functions of one or both of them.
+
+## Installation
+
+```{.shell}
+pip install spacopt
+```
+
+## Usage
+
+```
+import spacopt
+
+# Run Simulation
+```
+
+## Contributing
+
+## License
+
+* Free software: MIT license
+* Documentation: <https://spacopt.readthedocs.io>.
+
+
+# History
+
+## 0.3.1 (2022-05-19)
+
+* Readability changges to Simulation prints
+
+## 0.3.0 (2022-05-19)
+
+* New method to Simulation: MultiFittingMultProc
+  * Adds multiprocessing to running geant4 instances (core per every energy point), so now energy points run in parallel. 
+* Other minor changes to Simulation init: so it now accepts parameters of the module, instead of final method.
+
+## 0.2.0 (2022-05-18)
+
+### New scipts
+
+* New scipt: Optimization_run.py
+
+### Caveats
+
+* For now works only with hard-coded paths, so one needs copy-paste supplementary folders and scipts
+
+## 0.1.3 (2022-05-15)
+
+* Minor changes to package wrappers
+
+## 0.1.2 (2022-05-15)
+
+* Minor changes to package wrappers
+
+## 0.1.0 (2022-05-15)
+
+* First release on PyPI.
+
+
