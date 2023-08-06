@@ -1,0 +1,13 @@
+setup.py
+lzlzhn/QR.py
+lzlzhn/__init__.py
+lzlzhn/author.py
+lzlzhn/connecting_points.py
+lzlzhn/connecting_points_tester.py
+lzlzhn/guide.py
+lzlzhn/information_bombardment.py
+lzlzhn/name.py
+lzlzhn.egg-info/PKG-INFO
+lzlzhn.egg-info/SOURCES.txt
+lzlzhn.egg-info/dependency_links.txt
+lzlzhn.egg-info/top_level.txt
