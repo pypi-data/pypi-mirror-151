@@ -1,0 +1,83 @@
+#!python
+import time
+import argparse
+
+import importlib
+import pkgutil
+
+from lightsleep import Sleep
+
+from startme import StartMe, meta
+import startme.mods
+
+def iter_namespace(ns_pkg):
+    # Specifying the second argument (prefix) to iter_modules makes the
+    # returned name an absolute name instead of a relative one. This allows
+    # import_module to work without having to do additional modification to
+    # the name.
+    return pkgutil.iter_modules(ns_pkg.__path__, ns_pkg.__name__ + ".")
+
+
+def get_args():
+    parser = argparse.ArgumentParser(description='systemd/cron alternative for python virtual environment')
+    parser.add_argument('--hook', nargs='+', metavar=('METHOD', 'ARG'), help='use this hook with arguments')
+    return parser.parse_args()
+
+
+
+
+def main():
+
+    args = get_args()
+    lsleep = Sleep(hook=args.hook)
+
+    mods = {
+        name: importlib.import_module(name)
+        for finder, name, ispkg
+        in iter_namespace(startme.mods)
+    }
+
+    smjobs = [ cls() for cls in meta.__inheritors__ ]
+
+    #
+    # on_start
+    #
+    for j in smjobs:
+        j.on_start()
+
+    #
+    # prepare schedule
+    # 
+
+    sch = {
+        j: j.reschedule()
+        for j in smjobs 
+    }
+
+    #
+    # loop over schedule
+    #
+
+    while True:
+        sch = {k:v for k,v in sch.items() if v is not None}
+        if not sch:
+            return 
+
+        now = time.time()
+        for j, jtime in sch.items():
+            if  now>=jtime:
+                j.on_schedule()
+                sch[j] = j.reschedule()
+
+
+        exectime = sch[min(sch, key=sch.get)]
+        data = lsleep.sleep(exectime - time.time())
+        if data:
+            for j in sch:
+                if j.__class__.__name__ == data:
+                    j.on_schedule()
+                    sch[j] = j.reschedule()
+                    
+
+
+main()
