@@ -1,0 +1,19 @@
+name: NPM
+
+alias: npm
+
+commands:
+  default_command: npm
+  r:
+    command: npm run dev
+    include_default_command: false
+    environment:
+      API_MOCK: '0'
+  rm:
+    command: npm run dev
+    include_default_command: false
+    environment:
+      API_MOCK: 1
+
+  b: build
+
