@@ -1,0 +1,123 @@
+stages:
+  - build
+  - test
+
+
+build/sl7/py36:
+  stage: build
+  image: sl:7
+  needs: []
+  before_script:
+    - yum update -y
+    - yum install python3 git gcc python3-devel-3.6.8 -y
+  script:
+    - git describe --all --long
+    - pwd
+    - ls
+    - pip3 install cython auditwheel wheel
+    - python3 setup.py clean --all;
+    - python3 setup.py bdist_wheel;
+    - mkdir wheelhouse
+    - cp dist/* wheelhouse/
+  artifacts:
+    paths:
+      - wheelhouse
+
+
+.template/build/manylinux: &template-build-manylinux
+  stage: build
+  script:
+    - git describe --all --long
+    - pwd
+    - ls
+    - ${PYBIN}/python -V
+    - ${PYBIN}/pip install cython
+    - ${PYBIN}/python setup.py clean --all;
+    - ${PYBIN}/python setup.py bdist_wheel;
+    - for i in $(ls dist/*.whl); 
+      do 
+          auditwheel repair $i;
+      done
+    - ls
+    - ls ./dist
+    - ls ./wheelhouse
+  artifacts:
+    paths:
+      - wheelhouse
+
+# See https://github.com/pypa/manylinux for manylinux image requirements for each version
+  
+build/manylinux/py37:
+  <<: *template-build-manylinux
+  image: quay.io/pypa/manylinux2014_x86_64
+  needs: []
+  variables:
+    PYBIN: /opt/python/cp37-cp37m/bin
+
+
+build/manylinux/py38:
+  <<: *template-build-manylinux
+  image: quay.io/pypa/manylinux2014_x86_64
+  needs: []
+  variables:
+    PYBIN: /opt/python/cp38-cp38/bin
+
+
+build/manylinux/py39:
+  <<: *template-build-manylinux
+  image: quay.io/pypa/manylinux2014_x86_64
+  needs: []
+  variables:
+    PYBIN: /opt/python/cp39-cp39/bin
+
+
+build/manylinux/py310:
+  <<: *template-build-manylinux
+  image: quay.io/pypa/manylinux_2_24_x86_64
+  needs: []
+  variables:
+    PYBIN: /opt/python/cp310-cp310/bin
+
+
+
+test/sl7/py36: 
+  stage: test
+  image: sl:7
+  before_script:
+    - yum update -y
+    - yum install python3 zlib-devel libjpeg-turbo-devel gcc python3-devel-3.6.8 -y
+    - pip3 install wheelhouse/HWS*.whl
+    - pip3 install pytest
+  script:
+    - pytest tests
+  needs: [build/sl7/py36]
+
+
+
+.template/test/debian: &template-test-debian
+  stage: test
+  before_script:
+    - pip3 install wheelhouse/HWS*manylinux*.whl
+    - pip3 install pytest
+  script:
+    - pytest tests
+
+test/debian/py37: 
+  <<: *template-test-debian
+  needs: [build/manylinux/py37]
+  image: python:3.7
+
+test/debian/py38: 
+  <<: *template-test-debian
+  needs: [build/manylinux/py38]
+  image: python:3.8
+
+test/debian/py39: 
+  <<: *template-test-debian
+  needs: [build/manylinux/py39]
+  image: python:3.9
+
+test/debian/py310: 
+  <<: *template-test-debian
+  needs: [build/manylinux/py310]
+  image: python:3.10

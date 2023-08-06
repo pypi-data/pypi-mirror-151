@@ -1,0 +1,9 @@
+HWS/_version.py
+*.pyc
+version.py
+build/
+dist/
+*.so
+*egg*
+# files not used by ligo
+HWS/HS_WFP_Zonal.py
