@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+thonny_gitonic.egg-info/PKG-INFO
+thonny_gitonic.egg-info/SOURCES.txt
+thonny_gitonic.egg-info/dependency_links.txt
+thonny_gitonic.egg-info/requires.txt
+thonny_gitonic.egg-info/top_level.txt
+thonnycontrib/__init__.py
+thonnycontrib/gitonic/__init__.py

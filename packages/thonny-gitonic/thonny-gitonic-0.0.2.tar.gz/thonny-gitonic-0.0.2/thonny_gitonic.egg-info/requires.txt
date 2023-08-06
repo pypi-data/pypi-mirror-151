@@ -1,0 +1,2 @@
+gitonic
+thonny>=3.3.0
