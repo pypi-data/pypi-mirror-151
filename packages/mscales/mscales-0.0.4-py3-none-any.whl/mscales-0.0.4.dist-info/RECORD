@@ -1,0 +1,17 @@
+mscales/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+mscales/_version.py,sha256=sgmTZoXgCdZH1QDYAT_PKy3aOAGUNaDBEnw7cY9l3xk,497
+mscales/concepts.py,sha256=RUw2ed80BT149mGyc8Irm1RqevLddCHIHvsItlIxwq4,529
+mscales/plots.py,sha256=mypZ3yh4COOJWWt5ccLPF1BUSnUImDc9W3vr6qp0tS8,1134
+mscales/scales.py,sha256=PoyraAKET0nOESh79vID933CmfpqtKNU2Fi1uVpupsU,1542
+mscales/sound.py,sha256=TFjrJkDR1Zz7llkZ4-HniqRwmmP-O2Zl67FhEsXQysA,3558
+mscales/utils.py,sha256=ghpbqg1tLjkbEh9op3N8fgcWwuh3uozJYxH6AD2SQKg,3056
+mscales/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mscales/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mscales/tests/test_examples.py,sha256=58IcUL3i6g_10O7Xbzl5qe9pAczxDNqFWOpCI-ACU6k,160
+mscales-0.0.4.dist-info/AUTHORS.rst,sha256=uI-17icff9WQwA3Wwv2M7dAkp3OeSydGyTx7qch0jfc,170
+mscales-0.0.4.dist-info/LICENSE,sha256=1l1BuVyGaA4PKMVxM0aCL2g6XJ_EIRR39odMd8NPnvA,1522
+mscales-0.0.4.dist-info/METADATA,sha256=YRIEdjGJmJ_huuxhPuQQ9Lk2_8BA6KXGaviuwEM5wXw,1333
+mscales-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mscales-0.0.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mscales-0.0.4.dist-info/top_level.txt,sha256=ev8NcZBnZ9YuMPgqSP9CjuEakO0BEJTmbHW8_TPSHlo,8
+mscales-0.0.4.dist-info/RECORD,,
