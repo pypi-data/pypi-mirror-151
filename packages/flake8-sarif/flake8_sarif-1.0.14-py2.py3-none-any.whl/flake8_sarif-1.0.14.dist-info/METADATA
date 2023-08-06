@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: flake8-sarif
+Version: 1.0.14
+Summary: SARIF Formatting Reporter plugin for Flake8
+Home-page: https://github.com/pycqa/flake8-sarif
+Author: Shaopeng Li
+Author-email: lspmsproject@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Flake8-SARIF
+============
+
+This is a plugin for Flake8 that will format the output as SARIF.
+
+
+Installation
+------------
+
+.. code-block:: bash
+
+    pip install flake8-sarif
+
+
+Usage
+-----
+
+.. code-block:: bash
+
+    flake8 --format=sarif ...
+
+
+Competitors
+-----------
+
+None that I could find on PyPI
+
+
+Maintenance Policy
+------------------
+
+This project is seeking maintainers. Please open an issue if you're interested
+and ensure that you've read the PyCQA's `Code of Conduct`_.
+
+
+.. _Code of Conduct:
+    http://meta.pycqa.org/en/latest/code-of-conduct.html
+
+
