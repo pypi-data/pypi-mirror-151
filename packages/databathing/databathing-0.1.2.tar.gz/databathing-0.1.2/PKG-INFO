@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: databathing
+Version: 0.1.2
+Summary: build spark job based on query
+Home-page: UNKNOWN
+Author: Jiazhen Zhu
+Author-email: jason.jz.zhu@gmail.com
+License: MIT
+Description: # Convert SQL to Spark Code!
+        
+        [![PyPI Latest Release]
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
