@@ -1,0 +1,14 @@
+2captcha-python
+Flask
+googletrans
+markdown
+names
+nordvpn-switcher
+numpy
+pyperclip
+requests
+selenium
+selenium-requests
+undetected_chromedriver
+virtualenv
+wikipedia

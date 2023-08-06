@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: machinariurne
+Version: 0.1
+Summary: Tools & Classes Collection
+Home-page: https://github.com/vega0/python.machinarium
+Author: Nightmare a.k.a Aselock.
+Author-email: nightmare.flow0@gmail.com
+License: MIT
+Description: Some implemented elements.
+Keywords: cogs classes tools utils easy easies comfort шестерни классы инструменты лёгкость
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Text Processing :: Linguistic

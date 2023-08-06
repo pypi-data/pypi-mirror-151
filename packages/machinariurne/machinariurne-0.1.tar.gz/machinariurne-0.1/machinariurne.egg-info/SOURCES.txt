@@ -1,0 +1,7 @@
+setup.py
+machinariurne.egg-info/PKG-INFO
+machinariurne.egg-info/SOURCES.txt
+machinariurne.egg-info/dependency_links.txt
+machinariurne.egg-info/not-zip-safe
+machinariurne.egg-info/requires.txt
+machinariurne.egg-info/top_level.txt
