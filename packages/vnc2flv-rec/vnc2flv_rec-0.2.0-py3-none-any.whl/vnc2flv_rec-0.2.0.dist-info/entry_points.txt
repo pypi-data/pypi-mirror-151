@@ -1,0 +1,3 @@
+[console_scripts]
+vnc2flv-rec = vnc2flv_rec:main
+
