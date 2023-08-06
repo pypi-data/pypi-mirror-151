@@ -1,0 +1,11 @@
+git_flashback/__init__.py,sha256=JG-bjGtVaXL0HQHqwpixcCuodnOIgGnC5Lk8SPdffDI,200
+git_flashback/flashback.py,sha256=D9SIaG3q7MORzkw6nwIugXc0KDk5aFLTUV_ZWxE6uFg,1129
+git_flashback/gitimport.py,sha256=geesSAVS3bqNhG4uVBcAaezG3y0efiClm30pbQFaTGQ,6323
+git_flashback/predicates.py,sha256=RBsaxWwUxYiDOKofcLaaox3ZCFJTMAEH2wpCGw9Bx7U,476
+git_flashback/prelude.py,sha256=VCGK_zDydyL-QrfYehGt5OV1ax3HsWCQ0M-2YAhuTPE,187
+git_flashback/snapshot.py,sha256=Wrb2T9dBQ1_XtMW71Xlm7yeviI9ART3aeC1xapfzAQw,972
+git_flashback/timestamp.py,sha256=sar3hRZg-Kj8-A19YFlze0DaeJQvvmKBRUjLkNmS97Y,396
+git_flashback-0.1.0.dist-info/LICENSE,sha256=TRqYDKbKQk55AEMNmjopB6PJOTzmv6LQT7WmR0QDRoY,1086
+git_flashback-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+git_flashback-0.1.0.dist-info/METADATA,sha256=PIiLc2F92LJtH9xMu8WNGDHSKOO7uUKGyRGTCuerNZk,343
+git_flashback-0.1.0.dist-info/RECORD,,
