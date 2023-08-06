@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bayesKMeans
+Version: 0.2.0
+Summary: Finding optimal k in k-means using bayesian optimization
+Home-page: https://github.com/ForseIKomar/BayesKMeans
+Author: Aleksandr Burlakov
+Author-email: samitist11@gmail.com
+License-File: LICENSE
