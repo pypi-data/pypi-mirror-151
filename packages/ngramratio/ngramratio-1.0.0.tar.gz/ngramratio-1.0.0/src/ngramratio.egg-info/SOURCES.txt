@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ngramratio/__init__.py
+src/ngramratio/ngramratio.py
+src/ngramratio.egg-info/PKG-INFO
+src/ngramratio.egg-info/SOURCES.txt
+src/ngramratio.egg-info/dependency_links.txt
+src/ngramratio.egg-info/top_level.txt
+test/test_score.py
