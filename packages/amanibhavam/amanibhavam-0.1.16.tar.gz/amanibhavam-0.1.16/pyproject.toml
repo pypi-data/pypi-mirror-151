@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "amanibhavam"
+description = ""
+authors = ["Amanibhavam <iam@defn.sh>"]
+version = "0.1.16"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cdktf = "^0.10.4"
+cdktf-cdktf-provider-null = "^0.6.55"
+cdktf-cdktf-provider-aws = "^7.0.55"
+cdktf-cdktf-provider-digitalocean = "^0.0.40"
+cdktf-cdktf-provider-tfe = "^0.2.58"
+cdktf-cdktf-provider-github = "^0.7.62"
+defn-cdktf-provider-cloudflare = "^0.4.0"
+defn-cdktf-provider-buildkite = "^0.4.0"
+
+[tool.poetry.scripts]
+amanibhavam = "config:main"
