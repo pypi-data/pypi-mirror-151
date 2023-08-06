@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pyqt_foldable_item_list_widget/__init__.py
+pyqt_foldable_item_list_widget/foldableItemListWidget.py
+pyqt_foldable_item_list_widget/foldableListWidgetItemWidget.py
+pyqt_foldable_item_list_widget.egg-info/PKG-INFO
+pyqt_foldable_item_list_widget.egg-info/SOURCES.txt
+pyqt_foldable_item_list_widget.egg-info/dependency_links.txt
+pyqt_foldable_item_list_widget.egg-info/requires.txt
+pyqt_foldable_item_list_widget.egg-info/top_level.txt
+pyqt_foldable_item_list_widget/ico/__init__.py
+pyqt_foldable_item_list_widget/ico/down-arrow.svg
+pyqt_foldable_item_list_widget/ico/up-arrow.svg
