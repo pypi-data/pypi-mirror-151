@@ -1,0 +1,6 @@
+matplotlib
+plotly
+scipy
+typing
+tqdm
+pandas
