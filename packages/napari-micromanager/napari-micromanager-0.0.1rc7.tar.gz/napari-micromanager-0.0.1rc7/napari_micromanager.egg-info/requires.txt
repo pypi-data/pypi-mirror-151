@@ -1,0 +1,17 @@
+napari>=0.4.13
+pymmcore-plus>=0.4.0
+useq-schema>=0.1.0
+superqt>=0.3.1
+fonticon-materialdesignicons6
+tifffile
+
+[pyqt5]
+PyQt5
+
+[pyside2]
+PySide2
+
+[testing]
+pytest
+pytest-qt
+pytest-cov
