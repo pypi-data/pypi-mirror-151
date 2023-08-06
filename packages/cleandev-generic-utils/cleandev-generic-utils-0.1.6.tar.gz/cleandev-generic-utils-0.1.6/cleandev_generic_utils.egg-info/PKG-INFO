@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cleandev-generic-utils
+Version: 0.1.6
+Summary: Cleandev Generic Utils for other libs
+Home-page: https://gitlab.com/cleansoftware/libs/public/cleandev-generic-utils
+Author: Daniel Rodriguez Rodriguez
+Author-email: danielrodriguezrodriguez.pks@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/cleansoftware/libs/public/cleandev-generic-utils/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Utilidades Genericas
+
+Un proyecto para recoger utilidades usadas a lo largo de otras librerias.
+
+![diagrana](docs/diagram.png)
+
