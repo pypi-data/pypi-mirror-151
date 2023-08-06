@@ -1,0 +1,3 @@
+[console_scripts]
+restapi = restapi.__commands__:cli
+
