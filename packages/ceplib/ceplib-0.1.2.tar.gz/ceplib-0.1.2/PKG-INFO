@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: ceplib
+Version: 0.1.2
+Summary: An easy way to fetch Brazil Zip code using several services
+Home-page: https://github.com/erickod/CepLib
+Author: Erick Duarte
+Author-email: erickod@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.22.0,<0.23.0)
+Project-URL: Repository, https://github.com/erickod/CepLib
+Description-Content-Type: text/markdown
+
+# CepLib
+Uma lib feita em python para consultar cep em diversos serviços
+
+# Instalando a Lib
+```
+pip install ceplib
+poetry add ceplib
+```
+
+## Serviços disponíveis
+- AwesomeApi
+- Cep.la
+- Correios
+- ViaCep
+- Widenet
+
+## Como utilizar
+No mesmo diretório onde está o example.py execute o código abaixo:
+
+```
+from ceplib import Cep
+
+cep = Cep()
+print(cep(21351050))
+```
+
+### Quando o cep é encontrado
+```
+# {'cep': '21351050', 'state': 'RJ', 'city': 'Rio de Janeiro', 'district': 'Madureira', 
+# 'address': 'Estrada do Portela - até 279 - lado ímpar', 'provider': 'CorreiosService'}
+```
+### Consultando todos os serviços
+```
+from ceplib import Cep
+
+cep = Cep()
+print(cep(21351050, get_all=True))
+```
+
+```
+#[{'cep': '01513000', 'state': 'SP', 'city': 'São Paulo', 'district': 'Liberdade', 'address': 'Rua São Paulo', 
+#'provider': 'CepLaService'}, {'cep': '01513000', #'state': 'SP', 'city': 'São Paulo', 'district': 'Liberdade', 
+#'address': 'Rua São Paulo', 'provider': 'AwesomeApiService'}, {'cep': '01513000', 'state': 'SP', #'city': 'São Paulo', 
+#'district': 'Liberdade', 'address': 'Rua São Paulo', 'provider': 'ViaCEPService'}, {'cep': '01513000', 'state': 'SP', 
+#'city': 'São Paulo', #'district': 'Liberdade', 'address': 'Rua São Paulo', 'provider': 'WideNetService'}, 
+#{'cep': '01513000', 'state': 'SP', 'city': 'São Paulo', 'district': #'Liberdade', 'address': 'Rua São Paulo', 
+#'provider': 'CorreiosService'}]
+```
+
+### Quando o cep não é encontrado
+```
+# {'response': 'Cep não encontrado'}
+```
+
