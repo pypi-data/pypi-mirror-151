@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: herhoopstats
+Version: 0.0.1
+Summary: Programmatic access to the Her Hoop Stats website
+Home-page: https://github.com/gurleen/herhoopstats
+Author: Gurleen Singh
+Author-email: gs585@drexel.edu
+License: UNKNOWN
+Download-URL: https://github.com/gurleen/herhoopstats/archive/refs/heads/main.zip
+Keywords: sports,basketball,stats
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Her Hoop Stats
+
+Provides access to the [Her Hoops Stats](https://herhoopstats.com) service for women's basketball (WNBA/NCAA) statistics. Subscription required.
+
+## Installation
+
+Python >= 3.5
+
+`pip install herhoopstats`
+
+## Usage
+
+```python
+from herhoopstats.api import HerHoopStats
+
+api = HerHoopStats(email="<EMAIL>", password="<PASSWORD>")
+
+teams = api.get_teams()
+drexel = [t for t in teams if t.team == "Drexel"][0]
+stats = api.get_team_statistics(drexel)
+roster = api.get_roster_for_team(drexel)
+```
+

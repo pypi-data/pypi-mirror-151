@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+herhoopstats/__init__.py
+herhoopstats/api.py
+herhoopstats/structs.py
+herhoopstats.egg-info/PKG-INFO
+herhoopstats.egg-info/SOURCES.txt
+herhoopstats.egg-info/dependency_links.txt
+herhoopstats.egg-info/requires.txt
+herhoopstats.egg-info/top_level.txt
