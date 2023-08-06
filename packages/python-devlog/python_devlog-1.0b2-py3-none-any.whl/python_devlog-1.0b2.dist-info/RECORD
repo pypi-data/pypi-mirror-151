@@ -1,0 +1,9 @@
+devlog/__init__.py,sha256=2tPGs4CqJlM27YlA3dO7rBcfXgPDxAA-01JsGjFsfOM,835
+devlog/custom_excepthook.py,sha256=mc1i_WGLfOW-cgX-L-UpOvM6rLmVM7hzNOIkPvdwZKw,1051
+devlog/decorator.py,sha256=wTMOqtYSCiG5UUsn4jYrMHD_zPNEjuzv515Kd7VBoDc,11959
+devlog/stack_trace.py,sha256=eTvM_yez0hIKoJgi_GNJ9qPAQuyjLqYP8jYUa36a8XE,989
+python_devlog-1.0b2.dist-info/LICENSE.txt,sha256=9AyIRn2YhaPyFcsHqfHbswFzbOB1K7LfIPUCOj1thWw,1069
+python_devlog-1.0b2.dist-info/METADATA,sha256=YPrsdRqmJFx0-KrOYRov6wfwZHW39KVGbDfJOc0gYXo,10341
+python_devlog-1.0b2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_devlog-1.0b2.dist-info/top_level.txt,sha256=StpSK3KKojHjp0n8ngRVZdDaIcfdW5ycCKTKBvG_8sU,7
+python_devlog-1.0b2.dist-info/RECORD,,
