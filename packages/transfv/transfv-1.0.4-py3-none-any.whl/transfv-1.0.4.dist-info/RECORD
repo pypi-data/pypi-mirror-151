@@ -1,0 +1,12 @@
+transfv/__init__.py,sha256=EJggJZkvdrceFh0CT5JVVNUYDUy2mJMmTwKyOa6qUIY,1876
+transfv/argument.py,sha256=OYPhzGwTv7F_Ky5oUs-QoNH3OsG-2Sd0MuWy3JZynAU,477
+transfv/configuration.py,sha256=s82MkFNbNuOdJWDL0N5zMTqZPhcgs3dzQ-6dfit-9IM,2903
+transfv/constants.py,sha256=j0BVsG-2Mfzt-yCqoupjzgsil4xMsTkMNaJ8_zKIKBo,664
+transfv/prints.py,sha256=KNT9_a4qhJApr5tK9BKVcZC5qqm7h1TmEO2apZMUV1s,726
+transfv/translator.py,sha256=_aDrKQ74Nd46AtMzct8_Vn7gQLIZ8TOJq516dzKGxPE,1136
+transfv-1.0.4.dist-info/LICENSE,sha256=iZikwSKukeyCKXZxTaaP38xhRC944MmYeOf_EkwCGMU,1066
+transfv-1.0.4.dist-info/METADATA,sha256=etBxc8Ob5uGL9Olj2a2eUoFjuDiO39h3X4Z3xxEIEpw,829
+transfv-1.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+transfv-1.0.4.dist-info/entry_points.txt,sha256=b8nnDnhWyu5JIz2v1vYiQgltQYAU7Ha6YwYEUS6CcgI,49
+transfv-1.0.4.dist-info/top_level.txt,sha256=30qeviHpqqE3qbwpApR4ma3lqpKBGhZgU-AfCQdpPkU,8
+transfv-1.0.4.dist-info/RECORD,,
