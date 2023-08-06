@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: snirf_quality_report
+Version: 0.0.8
+Summary: Get fNIRS SNIRF raw data quality report
+Home-page: https://github.com/BUNPC/snirf_quality_report
+Author: SK
+Author-email: skura@bu.edu
+License: MIT
+Description: 
+        # snirf_quality_report
+        Generates quality report for fNIRS acquisition data in SNIRF format
+        
+        ### Input
+        Takes path to SNIRF file located in BIDS folder structure
+        
+        ### Output
+        Saves quality_report.html and updated channles file in derivatives folder.
+        
+        ### Example
+        ```
+        from snirf_quality_report.snirf_quality_report import snirf_quality_report
+        
+        snirf_path = 'path_to_the_snirf_file_insie_a_BIDS_folder'
+        obj = snirf_quality_report()
+        obj.run_report(snirf_path)
+         
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
