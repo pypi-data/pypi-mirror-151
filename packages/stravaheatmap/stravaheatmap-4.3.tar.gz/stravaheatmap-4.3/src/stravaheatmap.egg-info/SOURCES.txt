@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/stravaheatmap/__init__.py
+src/stravaheatmap.egg-info/PKG-INFO
+src/stravaheatmap.egg-info/SOURCES.txt
+src/stravaheatmap.egg-info/dependency_links.txt
+src/stravaheatmap.egg-info/requires.txt
+src/stravaheatmap.egg-info/top_level.txt
+src/stravaheatmap/cartograph/__init__.py
+src/stravaheatmap/cartograph/__main__.py
+src/stravaheatmap/cartograph/onlinemap.py
+src/stravaheatmap/josm/__init__.py
+src/stravaheatmap/josm/__main__.py
+src/stravaheatmap/josm/imgupdater.py
