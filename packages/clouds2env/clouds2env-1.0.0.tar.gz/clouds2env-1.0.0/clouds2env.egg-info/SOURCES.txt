@@ -1,0 +1,12 @@
+.gitignore
+LICENCE.rst
+README.rst
+clouds2env.py
+pyproject.toml
+setup.cfg
+clouds2env.egg-info/PKG-INFO
+clouds2env.egg-info/SOURCES.txt
+clouds2env.egg-info/dependency_links.txt
+clouds2env.egg-info/entry_points.txt
+clouds2env.egg-info/requires.txt
+clouds2env.egg-info/top_level.txt
