@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: volcano-cooking
+Version: 0.7.0
+Summary: Make some volcanoes and simulate them in CESM2
+License: GPL-3.0
+Author: engeir
+Author-email: eirroleng@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyWavelets (>=1.1.1,<2.0.0)
+Requires-Dist: cftime (>=1.5.0,<2.0.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: cosmoplots (>=0.1.5,<0.2.0)
+Requires-Dist: dask (>=2022.3.0,<2023.0.0)
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: netCDF4 (>=1.5.8,<2.0.0)
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: scipy (>=1.7.1,<2.0.0)
+Requires-Dist: superposed-pulses (>=1.2,<2.0)
+Requires-Dist: wget (>=3.2,<4.0)
+Requires-Dist: xarray (>=0.21.1,<0.22.0)
