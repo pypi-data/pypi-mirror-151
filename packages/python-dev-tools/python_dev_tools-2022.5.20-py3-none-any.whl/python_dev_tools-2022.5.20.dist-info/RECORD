@@ -1,0 +1,14 @@
+python_dev_tools/__init__.py,sha256=TEeLBZ6QIevIFqafMt2PdH7uWEUvbojCFoyK0gyOHDY,46
+python_dev_tools/formatters/__init__.py,sha256=XMWMRrfOUBz5jiNhJ2A2KQktpQKymlEKXxnjaLU3sL0,15
+python_dev_tools/formatters/autoflake.py,sha256=2oP8dLvHMoXZjFVtBGoQ0vrzNwtSKXLsEuoQPfZcfGg,282
+python_dev_tools/formatters/black.py,sha256=V5_6mCjmhTEwQTYwUnn3sPRj2xF_UOOVunKQ0J8m3QY,244
+python_dev_tools/formatters/common.py,sha256=dVKpaFbpLcFmX01z76koZfia94osA77-IJ4_1YtW_SQ,1679
+python_dev_tools/formatters/format_file.py,sha256=w4xG_j48KFmPR-_vYq4pOxJJpKTjGqE9t8xKOBr-6Xg,717
+python_dev_tools/formatters/pyupgrade.py,sha256=xGMlSs4AO1Vr7aB7BDgyVLHWAjgJRYgPKyzUhPeRtjc,254
+python_dev_tools/whataformatter.py,sha256=mdBf6Qk2EFRgnIGQafj6FcQwuLF6fAmYUXOeNCDAVE0,2257
+python_dev_tools/whatalinter.py,sha256=6xTqjMp_5vMXCD8cLmnDKSYEec8VWDQ8qfyJ6beNgxE,978
+python_dev_tools-2022.5.20.dist-info/entry_points.txt,sha256=s2nzN8ZWIJAHOyGBlGsizubtjtPFp_vOe4la9Z_ctzs,136
+python_dev_tools-2022.5.20.dist-info/LICENSE,sha256=MIyDiEkepJbJD-cBHPLhPMQphQKjB2RVDwpt7AaKvwU,1519
+python_dev_tools-2022.5.20.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+python_dev_tools-2022.5.20.dist-info/METADATA,sha256=vCEjUCY0_oQVL98WN2wmvxHM445jNlcJwI7yoSLfw3U,11282
+python_dev_tools-2022.5.20.dist-info/RECORD,,
