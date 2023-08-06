@@ -1,0 +1,10 @@
+aiolinkding/__init__.py,sha256=i1xgdA-djiUJrYRRPO4FUOuAEtWwcWdzVzMvLgqvfBw,73
+aiolinkding/bookmark.py,sha256=eyKE5Vs6l3knxyYnAElXFt3rjINpGHzuift1f_cveHg,532
+aiolinkding/client.py,sha256=PKysACPhRRacMnYfx7VPSkl3eivkzs_LHV1RGt58CR0,1937
+aiolinkding/const.py,sha256=9SVwtsu3UAaxyJxcKtIN2GGXsQdgXaSLZdOQMreVk3A,88
+aiolinkding/errors.py,sha256=3XyxLbOKObsaRBSkTVnIapGY8DJrmzMTT7DPZXNVP0s,318
+aiolinkding/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiolinkding-0.0.1.dist-info/LICENSE,sha256=scz6gEaGZXJPFxvuQ2FiKekDHrpn4ri_vbec1ZXqQp8,1067
+aiolinkding-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+aiolinkding-0.0.1.dist-info/METADATA,sha256=g9kyC4OcerWwfFaG6JVdvTOfmOMDPX4FnG6rMY40B94,4462
+aiolinkding-0.0.1.dist-info/RECORD,,
