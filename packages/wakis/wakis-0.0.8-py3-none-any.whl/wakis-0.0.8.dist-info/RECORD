@@ -1,0 +1,11 @@
+wakis/__init__.py,sha256=dLlSwJrhfNhmML8mg9O02-o1c73v4lpAsX8AOUXeDqk,132
+wakis/bmk.py,sha256=pPSaGCNNbLvUVG6QS8UIv6Os3uRPE1MIEwWx_gXpMh0,40402
+wakis/geom.py,sha256=upPHKAuLq--nml9eqyI2woxxjKFyihQuQPFC9qKOeXg,4239
+wakis/gui.py,sha256=Bh9yHJUgPlrJ9LU1t-afgZrZZ5IpAz_7Od_RKvUWNXA,229
+wakis/proc.py,sha256=7_Jh0OSXBErRl8fdoJeImpxtaGseN6TLWDaSmBVkx7E,35499
+wakis/solver.py,sha256=HUPdrjuqBbtrbvKZUZVq-7w3KTPpKvy7mE8TfYH76vg,16922
+wakis-0.0.8.dist-info/LICENSE.txt,sha256=gUAavT_szxrMiVVZ5ttCZ7mobK_KCoaZZWEvC9WUPPY,1729
+wakis-0.0.8.dist-info/METADATA,sha256=u03xNInU3U2zMm0LkCn5cYGMFSug-L5toONjVmseuik,1139
+wakis-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wakis-0.0.8.dist-info/top_level.txt,sha256=zBPE4PY_DSl4KC5uzUGujlwnaf2Pq6TIoElxPIJv63Y,6
+wakis-0.0.8.dist-info/RECORD,,
