@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: eve-client
+Version: 1.0.0
+Summary: EVE API client from Exodus Intelligence LLC.
+Author: DevTeam
+Author-email: dev@exodusintel.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyNaCl (==1.4.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: requests (==2.26.0)
