@@ -1,0 +1,15 @@
+pyproject.toml
+setup.cfg
+src/lotr_sdk/__init__.py
+src/lotr_sdk/access_token.py
+src/lotr_sdk/books.py
+src/lotr_sdk/chapters.py
+src/lotr_sdk/characters.py
+src/lotr_sdk/init_token.py
+src/lotr_sdk/movies.py
+src/lotr_sdk/quotes.py
+src/lotr_sdk/settings.py
+src/lotr_sdk.egg-info/PKG-INFO
+src/lotr_sdk.egg-info/SOURCES.txt
+src/lotr_sdk.egg-info/dependency_links.txt
+src/lotr_sdk.egg-info/top_level.txt
