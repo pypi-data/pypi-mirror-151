@@ -1,0 +1,3 @@
+gitpython
+tox>=3.18
+packaging
