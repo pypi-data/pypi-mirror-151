@@ -1,0 +1,16 @@
+xlsx_import_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xlsx_import_tools/admin.py,sha256=jkbDooCfdpZgI3_3wKGorAz2kAecFzltKYb8yUYTFrU,519
+xlsx_import_tools/apps.py,sha256=hFZox066G3TRl2gmwSglgrNFhUYBbmeDkq-GjvRBv4I,105
+xlsx_import_tools/definitions.py,sha256=otvjyAYPoItEEBh-eWVQHpQFZt8flW7BUJ3n6_i2E9A,21987
+xlsx_import_tools/migrations/0001_initial.py,sha256=pIntnZBRrbPGUcNcveyzUqYNpBME0BdSgXTL4jLsS3o,2388
+xlsx_import_tools/migrations/0002_auto_20201130_1512.py,sha256=0QU70_EZWMwuqBVyOjdBTsuhEVz8KBQyvEOllGgRdqk,3408
+xlsx_import_tools/migrations/0003_auto_20201203_0829.py,sha256=S9ENoSBP-hGLkqATKwOEjRLQWrFKjjWshoXyNUhh3A4,514
+xlsx_import_tools/migrations/0004_auto_20201203_1300.py,sha256=GgRZ7PzoBmgTltO2juPv6Mb7DIY6BPxFxxe3eYuRW4E,484
+xlsx_import_tools/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xlsx_import_tools/models.py,sha256=UDa6FLEDsEPb_NI392ihYyg3NZPesEha3ycgvALZ0wk,4699
+xlsx_import_tools/validators.py,sha256=ggPdoF2ewm66jBZhczSSXlRgL_Skq9Cyfjnt8hn3lMY,2602
+xlsx_import_tools/workbook_validator.py,sha256=F9PaouG_2i-OUa8hgZAjFe6cPMrD4BZrTZ469ZU9Plk,1642
+xlsx_import_tools-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+xlsx_import_tools-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+xlsx_import_tools-0.1.1.dist-info/METADATA,sha256=RtG5xksajYI2ZhTkvoOIlF6myGqWX8Wlc5ZG229AZ-E,389
+xlsx_import_tools-0.1.1.dist-info/RECORD,,
