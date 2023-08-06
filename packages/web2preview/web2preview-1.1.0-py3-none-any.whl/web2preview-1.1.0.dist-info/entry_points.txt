@@ -1,0 +1,3 @@
+[console_scripts]
+web2preview=web2preview.cli:main
+
