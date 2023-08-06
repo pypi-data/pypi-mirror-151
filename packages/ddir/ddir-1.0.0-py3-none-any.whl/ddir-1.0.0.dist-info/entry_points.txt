@@ -1,0 +1,3 @@
+[console_scripts]
+ddir = ddir.__main__:main
+

@@ -1,0 +1,11 @@
+ddir/__init__.py,sha256=x5Cy4P7svQ0LN76lt8PakVBWMl7eFhJuohVGYZTwLxo,4892
+ddir/__main__.py,sha256=9jCw3_Gf60JWb8SJUwNSN5GsOJU9itLqIKgsObgvhZ0,376
+ddir/create.py,sha256=9gTnrMkrbdHzruTN0vgPmvQ4SgdpWCL4qmaGArKoZNI,3377
+ddir/init.py,sha256=9wg9m-k0a3Ki-qLBosvmZ-FoJ_abOrauiTY_Y7abAQk,1138
+ddir/resolve.py,sha256=iW9B80XutrIHPynwRJPQ22stNarB6KfhEFmBlcpIjqE,4681
+ddir-1.0.0.dist-info/LICENSE,sha256=1dg3ZNX6FUSHfzQSyWE3rLl3_gqt-AELy1RrujtcFtY,191
+ddir-1.0.0.dist-info/METADATA,sha256=jyDrAossn_jOHMl33ktF2A-O1Tu3Ui547iK1WBlHvi8,2448
+ddir-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ddir-1.0.0.dist-info/entry_points.txt,sha256=gO3RWB1N-pL6QCs6Qnt1B3tH7T0d4vcwVgMTNTgBPaQ,45
+ddir-1.0.0.dist-info/top_level.txt,sha256=F7NGOmHjOI4UseDtkAR3bTsbwIxLi4Gy8KaMMpIl6Ws,5
+ddir-1.0.0.dist-info/RECORD,,
