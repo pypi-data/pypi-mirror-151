@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+UniversEncrypt/__init__.py
+UniversEncrypt/main.py
+UniversEncrypt.egg-info/PKG-INFO
+UniversEncrypt.egg-info/SOURCES.txt
+UniversEncrypt.egg-info/dependency_links.txt
+UniversEncrypt.egg-info/top_level.txt
