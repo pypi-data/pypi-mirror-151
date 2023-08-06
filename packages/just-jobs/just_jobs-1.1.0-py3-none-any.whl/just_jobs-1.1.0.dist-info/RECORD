@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=a6gar1jSgFFU318GsmljQ7MsfqSfRtQuS4rvweZc4CU,1215
+just_jobs/__init__.py,sha256=1FpN22b5ZVKiIOnb9YpbDx3ZuJpJ-4N2D0LA3XV67wA,804
+just_jobs/brokers/__init__.py,sha256=Mpe_PfHeJINgTO9cLuneAmpVdJYMCUE3u_lkum-y9UI,72
+just_jobs/brokers/base.py,sha256=-fC9XT3ZDXyIxXl6hv0wZp3-kLRVsU_jL0Hpme1qQjs,4319
+just_jobs/brokers/redis.py,sha256=Dd4tjrTnfpPDSu5D3jZ2cIVhJeSbf_pbLE58WBA6-QM,2944
+just_jobs/errors.py,sha256=ess8rrTQNMHSaF1ZljIwSNk22Qvw4kYwpLjiboPm-mE,439
+just_jobs/manager.py,sha256=wDruKYdn7_YW33nwAFAzq77kdHVJcwTdAy0exloRNTU,4320
+just_jobs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+just_jobs-1.1.0.dist-info/LICENSE,sha256=il0BQGEjHpcgYF6-Mt_188x9ouJaAa495dTf_7LFb2g,1322
+just_jobs-1.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+just_jobs-1.1.0.dist-info/METADATA,sha256=PH7bcCVhgSubenCE_6MePUtBwURHAY9WFmTBI_reAA4,3990
+just_jobs-1.1.0.dist-info/RECORD,,
