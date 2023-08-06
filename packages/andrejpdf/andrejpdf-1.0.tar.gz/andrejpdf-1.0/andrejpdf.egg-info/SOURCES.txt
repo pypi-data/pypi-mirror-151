@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+andrejpdf/__init__.py
+andrejpdf/pdf2image.py
+andrejpdf/pdf2text.py
+andrejpdf.egg-info/PKG-INFO
+andrejpdf.egg-info/SOURCES.txt
+andrejpdf.egg-info/dependency_links.txt
+andrejpdf.egg-info/top_level.txt
