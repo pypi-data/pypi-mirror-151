@@ -1,0 +1,8 @@
+azure-cli<2.18.1,>=2.18.0
+azure-core<1.10.1,>=1.10.0
+azure.identity==1.3
+azure.keyvault.secrets
+azure.storage.blob
+websockets
+huepy
+msrestazure
