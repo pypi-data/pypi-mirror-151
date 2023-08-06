@@ -1,0 +1,3 @@
+[console_scripts]
+aws-account=aws_account.cli:main
+
