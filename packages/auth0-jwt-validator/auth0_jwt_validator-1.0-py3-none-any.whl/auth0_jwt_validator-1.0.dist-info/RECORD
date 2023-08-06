@@ -1,0 +1,6 @@
+auth0_jwt_validator/__init__.py,sha256=6iYsN5U0SctUcEI4040cxKqdxhWyzF1EOCsiE0f2z-Q,3771
+auth0_jwt_validator/http_bearer.py,sha256=1MNAbYyJbIs0tQDoe0m1VWsNzBDPlGcvxCIqOgJrhuU,1748
+auth0_jwt_validator/jwt_verifier.py,sha256=74wjqbXhE-uZVENZv6Ms6ScLuqv3poZ9XRwRW2rAhrE,34651
+auth0_jwt_validator-1.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+auth0_jwt_validator-1.0.dist-info/METADATA,sha256=WgJh4c4_OV9LJpjq6PIcDVG5oPz3nyS2FnGUHv9-0-M,6023
+auth0_jwt_validator-1.0.dist-info/RECORD,,
