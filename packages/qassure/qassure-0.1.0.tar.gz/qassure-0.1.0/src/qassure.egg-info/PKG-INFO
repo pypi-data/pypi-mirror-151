@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qassure
+Version: 0.1.0
+Summary: Audit any data and report on deficiencies
+Home-page: https://github.com/turnbullerin/qassure
+Author: Erin Turnbull
+Author-email: erin.a.turnbull@gmail.com
+Project-URL: Bug Tracker, https://github.com/turnbullerin/qassure/issues
+Project-URL: Documentation, https://qassure.readthedocs.io/en/latest/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Data Quality Auditor
+
+[![Documentation Status](https://readthedocs.org/projects/qassure/badge/?version=latest)](https://qassure.readthedocs.io/en/latest/?badge=latest)
+
+This module provides a useful base for anyone looking to audit data structure to ensure their 
+conformance with a given specification. It allows for the creation of a report of all the 
+deficiencies within a file and provides an easy-to-read framework for creating tests.
+
+Read the [full documentation](https://qassure.readthedocs.io/en/latest/) for more details.

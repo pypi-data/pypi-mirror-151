@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/qassure/__init__.py
+src/qassure/framework.py
+src/qassure.egg-info/PKG-INFO
+src/qassure.egg-info/SOURCES.txt
+src/qassure.egg-info/dependency_links.txt
+src/qassure.egg-info/top_level.txt
