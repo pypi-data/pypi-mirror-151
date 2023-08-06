@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+scythe/__init__.py
+scythe/client.py
+scythe/defaults.py
+scythe/request_resource.py
+scythe_python.egg-info/PKG-INFO
+scythe_python.egg-info/SOURCES.txt
+scythe_python.egg-info/dependency_links.txt
+scythe_python.egg-info/requires.txt
+scythe_python.egg-info/top_level.txt
+scythe_python.egg-info/zip-safe

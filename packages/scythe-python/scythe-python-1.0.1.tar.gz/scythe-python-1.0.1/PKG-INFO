@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: scythe-python
+Version: 1.0.1
+Summary: Python SDK for Scythe
+Home-page: https://github.com/yat-co/scythe-python
+Author: YAT, LLC
+Author-email: rgoss@yat.ai
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+# Scythe - Python
+
+Python SDK for Scythe
+
+## Setup
+
+`python setup.py install`
