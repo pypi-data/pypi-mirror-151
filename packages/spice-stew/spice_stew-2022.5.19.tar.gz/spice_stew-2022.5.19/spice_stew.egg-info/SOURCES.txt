@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+spice_stew/__init__.py
+spice_stew/spice_stew.py
+spice_stew.egg-info/PKG-INFO
+spice_stew.egg-info/SOURCES.txt
+spice_stew.egg-info/dependency_links.txt
+spice_stew.egg-info/entry_points.txt
+spice_stew.egg-info/requires.txt
+spice_stew.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+spice_stew = spice_stew.spice_stew:main
+
