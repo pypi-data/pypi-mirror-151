@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+labcsv/__init__.py
+labcsv/lab_reader.py
+labcsv.egg-info/PKG-INFO
+labcsv.egg-info/SOURCES.txt
+labcsv.egg-info/dependency_links.txt
+labcsv.egg-info/requires.txt
+labcsv.egg-info/top_level.txt
