@@ -1,0 +1,9 @@
+pandas
+scikit-learn
+joblib
+argparse
+numpy
+scipy
+graphviz
+dtreeviz
+matplotlib
