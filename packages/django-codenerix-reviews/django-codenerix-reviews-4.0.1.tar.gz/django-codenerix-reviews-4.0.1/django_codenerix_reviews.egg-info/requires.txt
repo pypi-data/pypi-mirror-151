@@ -1,0 +1,3 @@
+django-codenerix
+django-codenerix-invoicing
+django-codenerix-products
