@@ -1,0 +1,48 @@
+# This is an example text file containing the items and text interactions
+# of a shop.
+# This file should have three parts: Items, Text, and Options
+# Sections should be separated by a single blank line.
+# The format of each section is described below.
+#
+# Lines beginning with # will be ignored.
+#
+# Items section:
+# (name of item followed by lines of properties of that item)
+Salt
+price: 2
+long_name: Some good ol' sea salt
+description: You may be surrounded by salt water, but this salt is special.
+Pepper
+price: 3
+long_name: Ground black pepper
+description: For those who like things a little ~spicy~
+Crackers
+price: 2
+long_name: Oyster crackers
+description: No oysters were harmed in the making of these crackers.
+Noodles
+price: 4
+long_name: Egg noodles
+description: Take your soups to the next level with this starchy treat.
+
+# Text section:
+# (type of text followed by lines of text included in that script)
+welcome
+-> Welcome to the shop!
+-> What would you like look at?
+item-purchased
+-> Here you go!
+-> What else would you like to look at?
+select-item
+-> Ok...
+-> Would you like to look as something else?
+insufficient-funds
+-> oops, looks like you need to collect some more coins to purchase that item.
+-> Look at something else?
+
+# Options section
+# (type of option: text of option)
+yes: Purchase this item
+no: Do not purchase this item
+exit: Exit shop
+
