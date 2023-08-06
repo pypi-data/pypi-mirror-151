@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/awslambdabootstrap/__init__.py
+src/awslambdabootstrap/coordinator.py
+src/awslambdabootstrap/logger.py
+src/awslambdabootstrap.egg-info/PKG-INFO
+src/awslambdabootstrap.egg-info/SOURCES.txt
+src/awslambdabootstrap.egg-info/dependency_links.txt
+src/awslambdabootstrap.egg-info/requires.txt
+src/awslambdabootstrap.egg-info/top_level.txt
