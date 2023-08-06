@@ -1,0 +1,15 @@
+boto_session_manager/__init__.py,sha256=VNtda4e9OxHDGpP_Deukjl7gjA5a1Ubu1mpf_Lsf5aA,699
+boto_session_manager/_version.py,sha256=E3tRTmW0js9YXSIukQYF5E-40XT08rv_5wqI9JdX8-g,93
+boto_session_manager/manager.py,sha256=e4OjY9pGE16RSuKVcd0MRafLuV2jAewN3r2R44UgFuE,8540
+boto_session_manager/services.py,sha256=JJ_HRz_jfxwUyff5AUPxgVQAvq-58C7l5DEK0zZt_9s,9957
+boto_session_manager/__pycache__/__init__.cpython-38.pyc,sha256=_TVHuXG-1dMeqnEddbSA7HkAFUH78CL-3NFkjfHzePg,879
+boto_session_manager/__pycache__/_version.cpython-38.pyc,sha256=KZW646JPU5S0BIThkia0CXUHzUehWSNoWrrcqP3qMlg,252
+boto_session_manager/__pycache__/manager.cpython-38.pyc,sha256=4DrKiyhmqMZi2N0uBSIp4Oj9rcEFPMXb333IzIbBZbo,6563
+boto_session_manager/__pycache__/services.cpython-38.pyc,sha256=hkFsBNKbpLrzBuAwI66q5tR-ArsORGXZP7WLnJ2x46Q,10411
+boto_session_manager/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+boto_session_manager-0.0.4.dist-info/AUTHORS.rst,sha256=ROrEuLM7jAJnyn4FKyYG8vfwtw5hcpdBOwWnnBRzWTM,509
+boto_session_manager-0.0.4.dist-info/LICENSE.txt,sha256=7D6rTPqlIQ6ekOXH9IH2LnSY3HPNjPey9pnxVyVhctY,1130
+boto_session_manager-0.0.4.dist-info/METADATA,sha256=TgcmkOS8fBIZ9HL98M2MhQsLYYt980JFpBkYv6RWvIY,5618
+boto_session_manager-0.0.4.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+boto_session_manager-0.0.4.dist-info/top_level.txt,sha256=uPGAqte49Ut27eLBw1EHG4hieTyusGH4BT1J62WMRtQ,21
+boto_session_manager-0.0.4.dist-info/RECORD,,
