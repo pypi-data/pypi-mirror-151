@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cz-emoji
+Version: 0.4.0
+Summary: A `commitizen` plugin like `commitizen-emoji`, but more consistent with the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) spec and addition of custom emojis in messages.
+Home-page: https://github.com/adam-grant-hendry/cz-emoji
+License: MIT
+Author: Hendry, Adam
+Author-email: adam.hendry@medtronic.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: commitizen (>=2.27.0,<3.0.0)
+Requires-Dist: emoji (>=1.7.0,<2.0.0)
+Project-URL: Repository, https://github.com/adam-grant-hendry/cz-emoji
+Description-Content-Type: text/markdown
+
+# cz-emoji
+A `commitizen` plugin like `commitizen-emoji`, but more consistent with the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) spec and addition of custom emojis in messages.
+
+![Demo](./resources/demo.gif)
+
+## Install
+
+```
+pip install cz-emoji
+```
