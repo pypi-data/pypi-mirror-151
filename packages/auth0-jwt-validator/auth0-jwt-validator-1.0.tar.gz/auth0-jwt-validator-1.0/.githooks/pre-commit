@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e -u -o pipefail
+
+STAGED_PYTHON_FILES=$(git diff --name-only --cached -- '*.py' '**/*.py')
+
+python -m isort --check $STAGED_PYTHON_FILES
+python -m black --check $STAGED_PYTHON_FILES
+python -m flake8 $STAGED_PYTHON_FILES

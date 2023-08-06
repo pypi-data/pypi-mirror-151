@@ -1,0 +1,85 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[project]
+name = "auth0-jwt-validator"
+authors = [
+  { name = "Danilo Britto", email = "dbritto.dev@gmail.com" },
+]
+classifiers = [
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: System Administrators",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python",
+  "Topic :: Internet",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development",
+  "Typing :: Typed",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Security",
+]
+dependencies = ["Authlib"]
+readme = "README.md"
+requires-python = ">=3.6"
+dynamic = ["version", "description"]
+
+[project.optional-dependencies]
+test = [
+  "pytest >=7",
+  "pytest-cov",
+  "pytest-mock",
+  "faker",
+]
+doc = ["pdoc"]
+dev = [
+  "isort",
+  "black",
+  "flake8",
+  "bandit",
+  "safety",
+]
+ci = [
+  "pytest >=7",
+  "pytest-cov",
+  "pytest-mock",
+  "faker",
+  "isort",
+  "black",
+  "flake8",
+  "bandit",
+  "safety",
+]
+
+[project.urls]
+Documentation = "https://github.com/immersa-co/python-jwt-auth0-validator"
+Source = "https://github.com/immersa-co/python-jwt-auth0-validator"
+
+[tool.flit.module]
+name = "auth0_jwt_validator"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["auth0_jwt_validator"]
+
+[tool.black]
+line-length = 99
+target-version = ['py36', 'py37', 'py38', 'py39']
+include = '\.pyi?$'
+preview = true
