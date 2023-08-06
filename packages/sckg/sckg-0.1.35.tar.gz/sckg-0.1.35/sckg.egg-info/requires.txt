@@ -1,0 +1,5 @@
+Click>=7.0
+kgdt>=0.4.1
+pygtrie
+tqdm
+nltk
