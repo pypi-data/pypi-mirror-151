@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: vnetconfig
+Version: 0.1.24
+Summary: Package for extracting secret key-pairs
+Home-page: https://github.com/pypa/sampleproject
+Author: Gopinath Muthusamy
+Author-email: gopinathmu@virtusa.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vnetconfig
+## _Package for extacting credentila for vNet - Internal Use_
+
+
+
+## Features
+
+- Connect to RDS Cluster for Multiple Env
+- Get S3object based on ENV as well custom RoleArn
+
+
+## Installation
+
+vnetconfig requires [Python 3](https://www.python.org/download/releases/3.0/)  to run.
+
+Install the dependencies by.
+
+```
+pip install vnetconfig==0.1.23
+```
+
+## Method Available
+
+Use below python function for connecting RDS Cluster
+
+Rds Connect:
+
+```
+from vnet.config import *
+auroraConnect(env,accessType)
+```
+
+get S3Object:
+
+```
+get_s3Object(bucket_name, object_path, expiration=60, roleArn="None", env="None")
+```
+
+
+## License
+
+MIT
+
+**Internal Use only!**
+
+

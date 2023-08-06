@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/vnet/__init__.py
+src/vnet/config.py
+src/vnetconfig.egg-info/PKG-INFO
+src/vnetconfig.egg-info/SOURCES.txt
+src/vnetconfig.egg-info/dependency_links.txt
+src/vnetconfig.egg-info/requires.txt
+src/vnetconfig.egg-info/top_level.txt
