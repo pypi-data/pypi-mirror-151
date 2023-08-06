@@ -1,0 +1,3 @@
+[console_scripts]
+two_tables=two_tables.updater:main
+
