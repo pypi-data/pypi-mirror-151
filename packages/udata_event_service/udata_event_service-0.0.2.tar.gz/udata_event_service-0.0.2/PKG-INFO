@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: udata_event_service
+Version: 0.0.2
+Summary: udata event service package containing kafka utils
+Author-email: Etalab <info@data.gouv.fr>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: kafka-python==2.0.2
+Project-URL: Home, https://www.data.gouv.fr
+
+# udata-event-core
