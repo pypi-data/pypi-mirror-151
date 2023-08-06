@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: atrhub
+Version: 0.4.6
+Summary: ATR xml files handler
+Home-page: https://www.gisce.net
+Author: Xavi Torelló
+Author-email: devel@gisce.net
+License: General Public Licence 3
+Description: # Gestor ATR
+        
+        ATR processes handler devised to validate and dispatch XML messages over the different network actors.
+        
+        ![](.resources/atrhub.jpg)
+        
+        Sections
+        - [Usage](#usage)
+          - [Cli](#cli)
+          - [Library](#library)
+        - [Logging](#log-examples)
+        
+        
+        ## Usage
+        
+        ### Cli
+        
+        This library provides the `atrhub` client:
+        
+        ```
+        $ gestor_atr --help
+        Usage: gestor_atr [OPTIONS]
+        
+        Options:
+          --config FILENAME  Provided configuration is not reachable
+          --path PATH
+          --help             Show this message and exit.
+        ```
+        
+        Will return $rc >0 if any exception is raised, 0 if execution is ok! (An empty execution without any raise will be ok, I mean, an execution that does not need to process any files is an ok execution)
+        
+        #### Working directory
+        
+        The priority for the `fodler` to be processed is the following:
+        - 1) passed `--path`
+        - 2) `--config`, looking for the `"DEAULT"` -> `"BASE_DIR"` property
+        - 3) inspect default paths for the `"DEAULT"` -> `"BASE_DIR"` property
+          - `~/gestor_atr.ini`
+          - `/etc/gestor_atr.ini`
+        - 4) Try default path `/home/gestor_atr`
+        
+        #### Config example
+        
+        ```
+        ; atrhub.ini
+        [DEFAULT]
+        BASE_DIR = /home/atrhub/ftp
+        ```
+        
+        ### How to create new users?
+        
+        Just use the [`bin/bin/create_ftp_user.sh`](bin/create_ftp_user.sh) tool:
+        
+        ```sh
+        # #This will create a new user, and set the needed grants to be able to interact with the atrhub
+        
+        # bash src/create_ftp_user.sh AAAA XXXX
+        User created properly: AAAA : **********
+         - Remember to test it using $ sftp AAAA@localhost
+        
+        User created properly: XXXX : **********
+         - Remember to test it using $ sftp XXXX@localhost
+         
+        ```
+        
+        
+        ### Library
+        
+        Just load the `ATRFiles` with the desired path
+        
+        ```
+        import atrhub
+        
+        atr_files = atrhub.ATRFiles(path="/tmp/atr_tree")
+        
+        atr_files.deliver()
+        ```
+        , this will
+        - 1) process `/tmp/atr_tree` looking for outcoming ATR files
+        - 2) validate every matched file using [gestionatr](https://github.com/gisce/gestionatr)
+          - also validate that requested destination inside the XML exists
+        - 3) move file to destination
+        - 4) each `action` and `error` is logged saving an specific logfile inside the base folder based on the execution date i.e `0000/Salida/2019-01-14T19:55:59.log`
+        
+        ## Log examples
+        
+        ### Action
+        ```
+        2019-01-14 19:55:59,264 INFO     Moving file '/tmp/atr_tree/0034/Salida/M1_2.xml' to '/tmp/atr_tree/0762/Entrada/M1_2.xml'
+        ```
+        
+        ### Error
+        
+        ```
+        2019-01-14 19:55:59,297 ERROR    File '/tmp/atr_tree/0096/Salida/inexistent_destination.xml' is not accepted, wrong destinatary inside XML "0000"
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides: atrhub
+Description-Content-Type: text/markdown

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        atrhub=atrhub.cli:main
+    
