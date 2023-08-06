@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+matheasy/matheasy.egg-info/PKG-INFO
+matheasy/matheasy.egg-info/SOURCES.txt
+matheasy/matheasy.egg-info/dependency_links.txt
+matheasy/matheasy.egg-info/top_level.txt
