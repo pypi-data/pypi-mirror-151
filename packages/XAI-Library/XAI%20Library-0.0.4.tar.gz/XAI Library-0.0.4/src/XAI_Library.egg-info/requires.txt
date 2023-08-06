@@ -1,0 +1,14 @@
+LORE-Ext>=0.2
+scikit-image
+matplotlib
+altair
+lime
+shap
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
