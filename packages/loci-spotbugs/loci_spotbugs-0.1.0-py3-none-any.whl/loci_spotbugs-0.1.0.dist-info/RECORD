@@ -1,0 +1,11 @@
+loci_spotbugs/__init__.py,sha256=0WSok0h0w1yzbAJkTQkP6dhF45FVzeDXEzf3Srh0aB4,192
+loci_spotbugs/main.py,sha256=cz1a8uwvdyYHBHd-joF6QGCKGBb1shmGQsf6wzbA1z8,531
+loci_spotbugs/run.py,sha256=AR8TvGK46z9eEsoxnHZFlclVIlPJ2QtxuIzdnTYtYF4,7281
+loci_spotbugs/summary.py,sha256=pqAXW-S4tu0SG5S-vuDWnnXw5XOa6pL5pKOlQ6DQPuc,1815
+loci_spotbugs/utils.py,sha256=6kHr7Sg5mGzHF3oeZcqtMan4F3vFUnbBy5ppcWF1Lz8,10951
+loci_spotbugs-0.1.0.dist-info/LICENSE,sha256=KYHo-hEwhgINQ8r74WjNTVfGYQC-wIUXf7xFEY2qodM,35075
+loci_spotbugs-0.1.0.dist-info/METADATA,sha256=SVt32CFFqSKYmii-fQUFuz-7LAiAimADFfBKxcLFLc0,946
+loci_spotbugs-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+loci_spotbugs-0.1.0.dist-info/entry_points.txt,sha256=Qgt5hOt1JzeyEwuyhaZT_FX9mFz7H8qtpabjHq1wpGE,68
+loci_spotbugs-0.1.0.dist-info/top_level.txt,sha256=-AvtUB2tK0mPMU9lO_2MceBtSSqZQpHSaMy-JT68ShI,14
+loci_spotbugs-0.1.0.dist-info/RECORD,,

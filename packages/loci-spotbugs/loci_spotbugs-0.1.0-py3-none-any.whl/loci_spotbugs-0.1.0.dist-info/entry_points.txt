@@ -1,0 +1,3 @@
+[console_scripts]
+loci-spotbugs = loci_spotbugs.main:loci_spotbugs
+
