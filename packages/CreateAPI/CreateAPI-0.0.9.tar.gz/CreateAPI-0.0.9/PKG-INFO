@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: CreateAPI
+Version: 0.0.9
+Summary: A very simple API creator
+Home-page: 
+Author: oren
+Author-email: orennadle@gmail.com
+License: MIT
+Keywords: api-creator CreateAPI api-maker make-api api create-api create
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This package is for creating simple api.
+
+``RandomJoke(place="/jokes/random")``\
+
+``RandomName(place="/names/random")``\
+
+``OwnPage(place="/orenAPI/aboutME/",name="myname",what_to_show="oren")``\
+
+``CreateAPI("localhost","9896",False)``\
+
+
