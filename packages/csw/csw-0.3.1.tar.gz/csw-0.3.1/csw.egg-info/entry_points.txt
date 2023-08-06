@@ -1,0 +1,3 @@
+[console_scripts]
+csw = csw.csw:main
+
