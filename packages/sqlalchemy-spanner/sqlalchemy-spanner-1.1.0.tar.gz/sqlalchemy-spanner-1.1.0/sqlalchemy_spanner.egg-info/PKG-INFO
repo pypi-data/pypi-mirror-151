@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-spanner
+Version: 1.1.0
+Summary: SQLAlchemy dialect integrated into Cloud Spanner database
+Home-page: https://github.com/cloudspannerecosystem/python-spanner-sqlalchemy
+Author: Google LLC
+Author-email: cloud-spanner-developers@googlegroups.com
+Classifier: Intended Audience :: Developers
+Provides-Extra: tracing
+License-File: LICENSE
