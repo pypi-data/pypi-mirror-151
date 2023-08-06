@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+recursive-include medilab_ds/static *
+recursive-include medilab_ds/templates *
+
+recursive-exclude _data *
+recursive-exclude _static *
+recursive-exclude mytester *
