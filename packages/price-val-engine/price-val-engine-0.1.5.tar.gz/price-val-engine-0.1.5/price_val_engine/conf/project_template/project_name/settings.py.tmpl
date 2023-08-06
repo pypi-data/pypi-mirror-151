@@ -1,0 +1,20 @@
+import os
+
+# AWS CONFIGRATION
+# uncomment below lines if read/write operation from S3 
+# AWS_ACCESS_KEY_ID     = os.environ.get('AWS_ACCESS_KEY_ID')
+# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+# AWS_SESSION_TOKEN     = os.environ.get('AWS_SESSION_TOKEN')
+
+# google cloud CONFIGRATION
+# uncomment below lines if read/write operation from google cloud storage gcs 
+# GCS_TOKEN = os.environ.get('GCS_TOKEN', 'anon')
+
+
+# default Validation Pipelies
+VALIDATION_PIPELINES = [
+  'price_val_engine.core.validations.general_rules.NullNegativeZeroValidationRule',
+  'price_val_engine.core.validations.general_rules.OutOfRangeValidationRule',
+  'price_val_engine.core.validations.revision_rules.DeltaPercentageFromLastDayRule',
+]
+

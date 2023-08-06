@@ -1,0 +1,10 @@
+from price_val_engine.core.validations import BaseRule
+
+
+class MyValidationRule(BaseRule):
+    name = "validation_rules.myvalidation_rule"
+    message = '' # ERROR MESSAGE
+    severity = 'HIGH'
+    
+    def is_valid(self, item):
+        pass
