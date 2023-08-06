@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mongoclass/__init__.py
+mongoclass/client.py
+mongoclass.egg-info/PKG-INFO
+mongoclass.egg-info/SOURCES.txt
+mongoclass.egg-info/dependency_links.txt
+mongoclass.egg-info/requires.txt
+mongoclass.egg-info/top_level.txt
+test/test_basic.py
+test/test_find.py
+test/test_insert.py
+test/test_update.py
