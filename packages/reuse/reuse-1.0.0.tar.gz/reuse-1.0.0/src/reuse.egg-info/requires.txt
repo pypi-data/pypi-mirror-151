@@ -1,0 +1,7 @@
+python-debian
+requests
+license-expression
+boolean.py
+Jinja2
+binaryornot
+setuptools
