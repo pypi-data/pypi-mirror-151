@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gensaschema package &mdash; GenSASchema 0.6.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ci.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="gensaschema._column module" href="gensaschema._column.html" />
+    <link rel="prev" title="gensaschema" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GenSASchema
+          </a>
+              <div class="version">
+                0.6
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">gensaschema</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">gensaschema package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._column.html">gensaschema._column module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._config.html">gensaschema._config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._constraint.html">gensaschema._constraint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._exceptions.html">gensaschema._exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._schema.html">gensaschema._schema module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._symbols.html">gensaschema._symbols module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._table.html">gensaschema._table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._template.html">gensaschema._template module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._type.html">gensaschema._type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._util.html">gensaschema._util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.constraints.html">gensaschema.constraints module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-gensaschema">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gensaschema-static-sqlalchemy-schema-generator">GenSASchema - Static SQLAlchemy Schema Generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GenSASchema</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">gensaschema</a> &raquo;</li>
+      <li>gensaschema package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gensaschema-package">
+<h1>gensaschema package<a class="headerlink" href="#gensaschema-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._column.html">gensaschema._column module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._column.html#column-inspection-and-representation">Column inspection and representation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._config.html">gensaschema._config module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._config.html#schema-config-management">Schema config management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._constraint.html">gensaschema._constraint module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._constraint.html#constraint-inspection-and-representation">Constraint inspection and representation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._exceptions.html">gensaschema._exceptions module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._exceptions.html#gensaschema-exceptions">GenSASchema Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._schema.html">gensaschema._schema module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._schema.html#schema-module-generation">Schema module generation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._symbols.html">gensaschema._symbols module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._symbols.html#symbol-management">Symbol management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._table.html">gensaschema._table module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._table.html#table-inspection-and-representation">Table inspection and representation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._template.html">gensaschema._template module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._template.html#simple-template-abstraction">Simple template abstraction</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._type.html">gensaschema._type module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._type.html#type-inspection-and-representation">Type inspection and representation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema._util.html">gensaschema._util module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema._util.html#misc-utilities">Misc Utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema.constraints.html">gensaschema.constraints module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema.constraints.html#constraint-declarators">Constraint Declarators</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-gensaschema">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-gensaschema" title="Permalink to this headline"></a></h2>
+<dl class="field-list">
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>Copyright 2014 - 2022
+André Malo or his licensors, as applicable</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>Licensed under the Apache License, Version 2.0 (the “License”);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at</p>
+<blockquote>
+<div><p><a class="reference external" href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+</div></blockquote>
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+</dd>
+</dl>
+<section id="gensaschema-static-sqlalchemy-schema-generator">
+<h3>GenSASchema - Static SQLAlchemy Schema Generator<a class="headerlink" href="#gensaschema-static-sqlalchemy-schema-generator" title="Permalink to this headline"></a></h3>
+<p>GenSASchema generates static schema definitions using SQLAlchemy’s
+inspection capabilities.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="gensaschema.Config">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema.</span></span><span class="sig-name descname"><span class="pre">Config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schemas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lines</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_config.html#Config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Config" title="Permalink to this definition"></a></dt>
+<dd><p>Schema config container</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Config.tables">
+<span class="sig-name descname"><span class="pre">tables</span></span><a class="headerlink" href="#gensaschema.Config.tables" title="Permalink to this definition"></a></dt>
+<dd><p>Table list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Config.schemas">
+<span class="sig-name descname"><span class="pre">schemas</span></span><a class="headerlink" href="#gensaschema.Config.schemas" title="Permalink to this definition"></a></dt>
+<dd><p>Alien schema mapping</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Config._lines">
+<span class="sig-name descname"><span class="pre">_lines</span></span><a class="headerlink" href="#gensaschema.Config._lines" title="Permalink to this definition"></a></dt>
+<dd><p>Original config lines (or <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Config._CONFIG_TPL">
+<span class="sig-name descname"><span class="pre">_CONFIG_TPL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;gensaschema._template.Template</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#gensaschema.Config._CONFIG_TPL" title="Permalink to this definition"></a></dt>
+<dd><p>Template for empty config file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><cite>Template</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Config.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'gensaschema._config',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">Schema</span> <span class="pre">config</span> <span class="pre">container\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">tables</span> <span class="pre">(list):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Table</span> <span class="pre">list\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">schemas</span> <span class="pre">(dict):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Alien</span> <span class="pre">schema</span> <span class="pre">mapping\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_lines</span> <span class="pre">(list):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Original</span> <span class="pre">config</span> <span class="pre">lines</span> <span class="pre">(or</span> <span class="pre">``None``)\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'_CONFIG_TPL':</span> <span class="pre">&lt;gensaschema._template.Template</span> <span class="pre">object&gt;,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">Config.__init__&gt;,</span> <span class="pre">'from_file':</span> <span class="pre">&lt;classmethod(&lt;function</span> <span class="pre">Config.from_file&gt;)&gt;,</span> <span class="pre">'from_lines':</span> <span class="pre">&lt;classmethod(&lt;function</span> <span class="pre">Config.from_lines&gt;)&gt;,</span> <span class="pre">'from_parser':</span> <span class="pre">&lt;classmethod(&lt;function</span> <span class="pre">Config.from_parser&gt;)&gt;,</span> <span class="pre">'dump':</span> <span class="pre">&lt;function</span> <span class="pre">Config.dump&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Config'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Config'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="headerlink" href="#gensaschema.Config.__dict__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Config.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schemas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lines</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_config.html#Config.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Config.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tables</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>) – Table list</p></li>
+<li><p><strong>schemas</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>) – (Alien) Schema mapping</p></li>
+<li><p><strong>lines</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">iterable</span></code>) – Original config lines. If omitted or <code class="docutils literal notranslate"><span class="pre">None</span></code>, the config lines
+are not available.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Config.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._config'</span></em><a class="headerlink" href="#gensaschema.Config.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Config.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#gensaschema.Config.__weakref__" title="Permalink to this definition"></a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Config.dump">
+<span class="sig-name descname"><span class="pre">dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fp</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_config.html#Config.dump"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Config.dump" title="Permalink to this definition"></a></dt>
+<dd><p>Dump config to a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fp</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">file</span></code>) – Stream to dump to</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Config.from_file">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name_or_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_config.html#Config.from_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Config.from_file" title="Permalink to this definition"></a></dt>
+<dd><p>Construct from config file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name_or_file</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span> <span class="pre">or</span> <span class="pre">file</span></code>) – Config filename or file pointer</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>New Config instance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#gensaschema.Config" title="gensaschema.Config">Config</a></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>IOError</strong> – Error reading the file (except for ENOENT, which
+    treats the file as empty)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Config.from_lines">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_config.html#Config.from_lines"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Config.from_lines" title="Permalink to this definition"></a></dt>
+<dd><p>Create from config lines</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>lines</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">iterable</span></code>) – List of config lines</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>New Config instance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#gensaschema.Config" title="gensaschema.Config">Config</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Config.from_parser">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lines</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_config.html#Config.from_parser"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Config.from_parser" title="Permalink to this definition"></a></dt>
+<dd><p>Construct from config parser</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parser</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigParser.RawConfigParser</span></code>) – Configparser instance</p></li>
+<li><p><strong>lines</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">iterable</span></code>) – Original config lines</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>New Config instance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#gensaschema.Config" title="gensaschema.Config">Config</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="gensaschema.Error">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema.</span></span><span class="sig-name descname"><span class="pre">Error</span></span><a class="reference internal" href="../_modules/gensaschema/_exceptions.html#Error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Error" title="Permalink to this definition"></a></dt>
+<dd><p>Base exception for this package</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Error.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._exceptions'</span></em><a class="headerlink" href="#gensaschema.Error.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Error.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#gensaschema.Error.__weakref__" title="Permalink to this definition"></a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gensaschema.Schema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema.</span></span><span class="sig-name descname"><span class="pre">Schema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schemas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_schema.html#Schema"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Schema" title="Permalink to this definition"></a></dt>
+<dd><p>Schema container</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema._dialect">
+<span class="sig-name descname"><span class="pre">_dialect</span></span><a class="headerlink" href="#gensaschema.Schema._dialect" title="Permalink to this definition"></a></dt>
+<dd><p>Dialect name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema._tables">
+<span class="sig-name descname"><span class="pre">_tables</span></span><a class="headerlink" href="#gensaschema.Schema._tables" title="Permalink to this definition"></a></dt>
+<dd><p>Table collection</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TableCollection</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema._schemas">
+<span class="sig-name descname"><span class="pre">_schemas</span></span><a class="headerlink" href="#gensaschema.Schema._schemas" title="Permalink to this definition"></a></dt>
+<dd><p>Schema -&gt; module mapping</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema._symbols">
+<span class="sig-name descname"><span class="pre">_symbols</span></span><a class="headerlink" href="#gensaschema.Schema._symbols" title="Permalink to this definition"></a></dt>
+<dd><p>Symbol table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#gensaschema.Symbols" title="gensaschema.Symbols">gensaschema.Symbols</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema._dbname">
+<span class="sig-name descname"><span class="pre">_dbname</span></span><a class="headerlink" href="#gensaschema.Schema._dbname" title="Permalink to this definition"></a></dt>
+<dd><p>DB identifier</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span> <span class="pre">or</span> <span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema._MODULE_TPL">
+<span class="sig-name descname"><span class="pre">_MODULE_TPL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;gensaschema._template.Template</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#gensaschema.Schema._MODULE_TPL" title="Permalink to this definition"></a></dt>
+<dd><p>Template for the module</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Template</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'gensaschema._schema',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">Schema</span> <span class="pre">container\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_dialect</span> <span class="pre">(str):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Dialect</span> <span class="pre">name\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_tables</span> <span class="pre">(TableCollection):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Table</span> <span class="pre">collection\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_schemas</span> <span class="pre">(dict):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Schema</span> <span class="pre">-&gt;</span> <span class="pre">module</span> <span class="pre">mapping\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_symbols</span> <span class="pre">(Symbols):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Symbol</span> <span class="pre">table\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_dbname</span> <span class="pre">(str</span> <span class="pre">or</span> <span class="pre">None):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">DB</span> <span class="pre">identifier\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'_MODULE_TPL':</span> <span class="pre">&lt;gensaschema._template.Template</span> <span class="pre">object&gt;,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">Schema.__init__&gt;,</span> <span class="pre">'dump':</span> <span class="pre">&lt;function</span> <span class="pre">Schema.dump&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Schema'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Schema'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="headerlink" href="#gensaschema.Schema.__dict__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Schema.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schemas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dbname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_schema.html#Schema.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Schema.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>conn</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Connection</span> <span class="pre">or</span> <span class="pre">Engine</span></code>) – SQLAlchemy connection or engine</p></li>
+<li><p><strong>tables</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>) – List of tables to reflect, (local name, table name) pairs</p></li>
+<li><p><strong>schemas</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>) – schema -&gt; module mapping</p></li>
+<li><p><strong>symbols</strong> (<a class="reference internal" href="#gensaschema.Symbols" title="gensaschema.Symbols"><em>gensaschema.Symbols</em></a>) – Symbol table</p></li>
+<li><p><strong>dbname</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Optional db identifier. Used for informational purposes. If
+omitted or <code class="docutils literal notranslate"><span class="pre">None</span></code>, the information just won’t be emitted.</p></li>
+<li><p><strong>types</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">callable</span></code>) – Extra type loader. If the type reflection fails, because
+SQLAlchemy cannot resolve it, the type loader will be called with
+the type name, (bound) metadata and the symbol table. It is
+responsible for modifying the symbols and imports <em>and</em> the
+dialect’s <code class="docutils literal notranslate"><span class="pre">ischema_names</span></code>. If omitted or <code class="docutils literal notranslate"><span class="pre">None</span></code>, the reflector
+will always fail on unknown types.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._schema'</span></em><a class="headerlink" href="#gensaschema.Schema.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Schema.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#gensaschema.Schema.__weakref__" title="Permalink to this definition"></a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Schema.dump">
+<span class="sig-name descname"><span class="pre">dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fp</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_schema.html#Schema.dump"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Schema.dump" title="Permalink to this definition"></a></dt>
+<dd><p>Dump schema module to fp</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fp</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">file</span></code>) – File to write to</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="gensaschema.SymbolException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema.</span></span><span class="sig-name descname"><span class="pre">SymbolException</span></span><a class="reference internal" href="../_modules/gensaschema/_symbols.html#SymbolException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.SymbolException" title="Permalink to this definition"></a></dt>
+<dd><p>Symbol error</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.SymbolException.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#gensaschema.SymbolException.__annotations__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.SymbolException.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._symbols'</span></em><a class="headerlink" href="#gensaschema.SymbolException.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gensaschema.Symbols">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema.</span></span><span class="sig-name descname"><span class="pre">Symbols</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_symbols.html#Symbols"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Symbols" title="Permalink to this definition"></a></dt>
+<dd><p>Symbol table</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Symbols._symbols">
+<span class="sig-name descname"><span class="pre">_symbols</span></span><a class="headerlink" href="#gensaschema.Symbols._symbols" title="Permalink to this definition"></a></dt>
+<dd><p>Symbols</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Symbols.imports">
+<span class="sig-name descname"><span class="pre">imports</span></span><a class="headerlink" href="#gensaschema.Symbols.imports" title="Permalink to this definition"></a></dt>
+<dd><p>Import container</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">_Imports</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Symbols.types">
+<span class="sig-name descname"><span class="pre">types</span></span><a class="headerlink" href="#gensaschema.Symbols.types" title="Permalink to this definition"></a></dt>
+<dd><p>Type container</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">_Types</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__contains__">
+<span class="sig-name descname"><span class="pre">__contains__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_symbols.html#Symbols.__contains__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Symbols.__contains__" title="Permalink to this definition"></a></dt>
+<dd><p>Check symbol table entry</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Symbol identifier</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Does the symbol entry exist?</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__delitem__">
+<span class="sig-name descname"><span class="pre">__delitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_symbols.html#Symbols.__delitem__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Symbols.__delitem__" title="Permalink to this definition"></a></dt>
+<dd><p>Remove symbol entry if available</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Symbol identifier</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'gensaschema._symbols',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">Symbol</span> <span class="pre">table\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_symbols</span> <span class="pre">(dict):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Symbols\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">imports</span> <span class="pre">(_Imports):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Import</span> <span class="pre">container\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">types</span> <span class="pre">(_Types):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Type</span> <span class="pre">container\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">Symbols.__init__&gt;,</span> <span class="pre">'__delitem__':</span> <span class="pre">&lt;function</span> <span class="pre">Symbols.__delitem__&gt;,</span> <span class="pre">'__setitem__':</span> <span class="pre">&lt;function</span> <span class="pre">Symbols.__setitem__&gt;,</span> <span class="pre">'__getitem__':</span> <span class="pre">&lt;function</span> <span class="pre">Symbols.__getitem__&gt;,</span> <span class="pre">'__contains__':</span> <span class="pre">&lt;function</span> <span class="pre">Symbols.__contains__&gt;,</span> <span class="pre">'__iter__':</span> <span class="pre">&lt;function</span> <span class="pre">Symbols.__iter__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Symbols'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Symbols'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="headerlink" href="#gensaschema.Symbols.__dict__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__getitem__">
+<span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_symbols.html#Symbols.__getitem__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Symbols.__getitem__" title="Permalink to this definition"></a></dt>
+<dd><p>Get symbol table entry</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Symbol identifier</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The symbol</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>KeyError</strong> – Symbol not found</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_symbols.html#Symbols.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Symbols.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>symbols</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>) – Initial symbols</p></li>
+<li><p><strong>imports</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">iterable</span></code>) – List of initial (id, import statement) tuples. If omitted or
+<code class="docutils literal notranslate"><span class="pre">None</span></code>, it’s empty.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__iter__">
+<span class="sig-name descname"><span class="pre">__iter__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_symbols.html#Symbols.__iter__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Symbols.__iter__" title="Permalink to this definition"></a></dt>
+<dd><p>Make item iterator (id, value)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The iterator</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>iterable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._symbols'</span></em><a class="headerlink" href="#gensaschema.Symbols.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__setitem__">
+<span class="sig-name descname"><span class="pre">__setitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbol</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_symbols.html#Symbols.__setitem__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Symbols.__setitem__" title="Permalink to this definition"></a></dt>
+<dd><p>Set symbol table entry</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Symbol identifier</p></li>
+<li><p><strong>symbol</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Symbol</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#gensaschema.SymbolException" title="gensaschema.SymbolException"><strong>SymbolException</strong></a> – Symbol could not be set because of some conflict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Symbols.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#gensaschema.Symbols.__weakref__" title="Permalink to this definition"></a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gensaschema.Type">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema.</span></span><span class="sig-name descname"><span class="pre">Type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dialect_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_type.html#Type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Type" title="Permalink to this definition"></a></dt>
+<dd><p>Type container</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Type._ctype">
+<span class="sig-name descname"><span class="pre">_ctype</span></span><a class="headerlink" href="#gensaschema.Type._ctype" title="Permalink to this definition"></a></dt>
+<dd><p>Column type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SA</span> <span class="pre">type</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Type._dialect">
+<span class="sig-name descname"><span class="pre">_dialect</span></span><a class="headerlink" href="#gensaschema.Type._dialect" title="Permalink to this definition"></a></dt>
+<dd><p>Dialect name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Type._symbols">
+<span class="sig-name descname"><span class="pre">_symbols</span></span><a class="headerlink" href="#gensaschema.Type._symbols" title="Permalink to this definition"></a></dt>
+<dd><p>Symbol table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#gensaschema.Symbols" title="gensaschema.Symbols">gensaschema.Symbols</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Type.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'gensaschema._type',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">Type</span> <span class="pre">container\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_ctype</span> <span class="pre">(SA</span> <span class="pre">type):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Column</span> <span class="pre">type\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_dialect</span> <span class="pre">(str):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Dialect</span> <span class="pre">name\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_symbols</span> <span class="pre">(Symbols):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Symbol</span> <span class="pre">table\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">Type.__init__&gt;,</span> <span class="pre">'by_column':</span> <span class="pre">&lt;classmethod(&lt;function</span> <span class="pre">Type.by_column&gt;)&gt;,</span> <span class="pre">'__repr__':</span> <span class="pre">&lt;function</span> <span class="pre">Type.__repr__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Type'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Type'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="headerlink" href="#gensaschema.Type.__dict__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Type.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dialect_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_type.html#Type.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Type.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ctype</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SA</span> <span class="pre">type</span></code>) – Column type</p></li>
+<li><p><strong>dialect_name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – Dialect name</p></li>
+<li><p><strong>symbols</strong> (<a class="reference internal" href="#gensaschema.Symbols" title="gensaschema.Symbols"><em>gensaschema.Symbols</em></a>) – Symbol table</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Type.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._type'</span></em><a class="headerlink" href="#gensaschema.Type.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Type.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_type.html#Type.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Type.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Make string representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The string representation</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Type.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#gensaschema.Type.__weakref__" title="Permalink to this definition"></a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Type.by_column">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">by_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_type.html#Type.by_column"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Type.by_column" title="Permalink to this definition"></a></dt>
+<dd><p>Construct by SA column</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>column</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SA</span> <span class="pre">column</span></code>) – SA column</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>New Type instance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#gensaschema.Type" title="gensaschema.Type">Type</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="gensaschema.Warning">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema.</span></span><span class="sig-name descname"><span class="pre">Warning</span></span><a class="reference internal" href="../_modules/gensaschema/_exceptions.html#Warning"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Warning" title="Permalink to this definition"></a></dt>
+<dd><p>Base warning for this package</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">_warnings</span><span class="o">.</span><span class="n">catch_warnings</span><span class="p">(</span><span class="n">record</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">record</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="ne">Warning</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="s1">&#39;my message&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="gp">... </span>    <span class="nb">str</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+<span class="go">&#39;my message&#39;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="ne">Warning</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="s1">&#39;lalala&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="c">...</span>
+<span class="gr">Warning</span>: <span class="n">lalala</span>
+</pre></div>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Warning.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._exceptions'</span></em><a class="headerlink" href="#gensaschema.Warning.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema.Warning.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#gensaschema.Warning.__weakref__" title="Permalink to this definition"></a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema.Warning.emit">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">emit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stacklevel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_exceptions.html#Warning.emit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.Warning.emit" title="Permalink to this definition"></a></dt>
+<dd><p>Emit a warning of this very category</p>
+<p>This method is pure convenience. It saves you the unfriendly
+<code class="docutils literal notranslate"><span class="pre">warnings.warn</span></code> syntax (and the <code class="docutils literal notranslate"><span class="pre">warnings</span></code> import).</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><cite>message</cite><span class="classifier">any</span></dt><dd><p>The warning message</p>
+</dd>
+<dt><cite>stacklevel</cite><span class="classifier"><code class="docutils literal notranslate"><span class="pre">int</span></code></span></dt><dd><p>Number of stackframes to go up in order to place the warning
+source. This is useful for generic warning-emitting helper
+functions. The stacklevel of <em>this</em> helper function is already
+taken into account.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="gensaschema" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gensaschema._column.html" class="btn btn-neutral float-right" title="gensaschema._column module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015 - 2022 André Malo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

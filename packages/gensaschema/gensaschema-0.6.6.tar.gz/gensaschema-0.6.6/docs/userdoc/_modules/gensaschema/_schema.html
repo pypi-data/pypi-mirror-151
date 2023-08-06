@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gensaschema._schema &mdash; GenSASchema 0.6.6 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/ci.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> GenSASchema
+          </a>
+              <div class="version">
+                0.6
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../apidoc/index.html">gensaschema</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../apidoc/gensaschema.html">gensaschema package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._column.html">gensaschema._column module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._config.html">gensaschema._config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._constraint.html">gensaschema._constraint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._exceptions.html">gensaschema._exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._schema.html">gensaschema._schema module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._symbols.html">gensaschema._symbols module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._table.html">gensaschema._table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._template.html">gensaschema._template module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._type.html">gensaschema._type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._util.html">gensaschema._util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.constraints.html">gensaschema.constraints module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#module-gensaschema">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.html#gensaschema-static-sqlalchemy-schema-generator">GenSASchema - Static SQLAlchemy Schema Generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GenSASchema</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>gensaschema._schema</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for gensaschema._schema</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: ascii -*-</span>
+<span class="sa">u</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">==========================</span>
+<span class="sd"> Schema module generation</span>
+<span class="sd">==========================</span>
+
+<span class="sd">Schema module generation code.</span>
+
+<span class="sd">:Copyright:</span>
+
+<span class="sd"> Copyright 2010 - 2022</span>
+<span class="sd"> Andr\xe9 Malo or his licensors, as applicable</span>
+
+<span class="sd">:License:</span>
+
+<span class="sd"> Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="sd"> you may not use this file except in compliance with the License.</span>
+<span class="sd"> You may obtain a copy of the License at</span>
+
+<span class="sd">     http://www.apache.org/licenses/LICENSE-2.0</span>
+
+<span class="sd"> Unless required by applicable law or agreed to in writing, software</span>
+<span class="sd"> distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="sd"> WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="sd"> See the License for the specific language governing permissions and</span>
+<span class="sd"> limitations under the License.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;Andr</span><span class="se">\xe9</span><span class="s2"> Malo&quot;</span>
+
+<span class="kn">import</span> <span class="nn">sqlalchemy</span> <span class="k">as</span> <span class="nn">_sa</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_table</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_template</span>
+
+
+<div class="viewcode-block" id="Schema"><a class="viewcode-back" href="../../apidoc/gensaschema._schema.html#gensaschema.Schema">[docs]</a><span class="k">class</span> <span class="nc">Schema</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Schema container</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      _dialect (str):</span>
+<span class="sd">        Dialect name</span>
+
+<span class="sd">      _tables (TableCollection):</span>
+<span class="sd">        Table collection</span>
+
+<span class="sd">      _schemas (dict):</span>
+<span class="sd">        Schema -&gt; module mapping</span>
+
+<span class="sd">      _symbols (Symbols):</span>
+<span class="sd">        Symbol table</span>
+
+<span class="sd">      _dbname (str or None):</span>
+<span class="sd">        DB identifier</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#: Template for the module</span>
+    <span class="c1">#:</span>
+    <span class="c1">#: :Type: Template</span>
+    <span class="n">_MODULE_TPL</span> <span class="o">=</span> <span class="n">_template</span><span class="o">.</span><span class="n">Template</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">        # -*- coding: ascii -*-</span>
+<span class="s1">        # flake8: noqa pylint: skip-file</span>
+<span class="s1">        &quot;&quot;&quot;</span>
+<span class="s1">        ==============================</span>
+<span class="s1">         SQLAlchemy schema definition</span>
+<span class="s1">        ==============================</span>
+
+<span class="s1">        SQLAlchemy schema definition</span><span class="si">%(dbspec)s</span><span class="s1">.</span>
+
+<span class="s1">        :Warning: DO NOT EDIT, this file is generated</span>
+<span class="s1">        &quot;&quot;&quot;</span>
+
+<span class="s1">        import sqlalchemy as </span><span class="si">%(sa)s</span><span class="s1"></span>
+<span class="s1">        from sqlalchemy.dialects import </span><span class="si">%(dialect)s</span><span class="s1"> as </span><span class="si">%(type)s</span><span class="s1"></span>
+<span class="s1">        </span><span class="si">%(imports)s</span><span class="s1"></span>
+<span class="s1">        </span><span class="si">%(meta)s</span><span class="s1"> = </span><span class="si">%(sa)s</span><span class="s1">.MetaData()</span>
+<span class="s1">        </span><span class="si">%(table)s</span><span class="s1"> = </span><span class="si">%(sa)s</span><span class="s1">.Table</span>
+<span class="s1">        </span><span class="si">%(column)s</span><span class="s1"> = </span><span class="si">%(sa)s</span><span class="s1">.Column</span>
+<span class="s1">        </span><span class="si">%(default)s</span><span class="s1"> = </span><span class="si">%(sa)s</span><span class="s1">.DefaultClause</span>
+<span class="s1">        </span><span class="si">%(lines)s</span><span class="s1"></span>
+<span class="s1">        del </span><span class="si">%(sa)s</span><span class="s1">, </span><span class="si">%(table)s</span><span class="s1">, </span><span class="si">%(column)s</span><span class="s1">, </span><span class="si">%(default)s</span><span class="s1">, </span><span class="si">%(meta)s</span><span class="s1"></span>
+
+<span class="s1">        # vim: nowrap tw=0</span>
+<span class="s1">    &#39;&#39;&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Schema.__init__"><a class="viewcode-back" href="../../apidoc/gensaschema._schema.html#gensaschema.Schema.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="n">tables</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">types</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialization</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          conn (Connection or Engine):</span>
+<span class="sd">            SQLAlchemy connection or engine</span>
+
+<span class="sd">          tables (list):</span>
+<span class="sd">            List of tables to reflect, (local name, table name) pairs</span>
+
+<span class="sd">          schemas (dict):</span>
+<span class="sd">            schema -&gt; module mapping</span>
+
+<span class="sd">          symbols (Symbols):</span>
+<span class="sd">            Symbol table</span>
+
+<span class="sd">          dbname (str):</span>
+<span class="sd">            Optional db identifier. Used for informational purposes. If</span>
+<span class="sd">            omitted or ``None``, the information just won&#39;t be emitted.</span>
+
+<span class="sd">          types (callable):</span>
+<span class="sd">            Extra type loader. If the type reflection fails, because</span>
+<span class="sd">            SQLAlchemy cannot resolve it, the type loader will be called with</span>
+<span class="sd">            the type name, (bound) metadata and the symbol table. It is</span>
+<span class="sd">            responsible for modifying the symbols and imports *and* the</span>
+<span class="sd">            dialect&#39;s ``ischema_names``. If omitted or ``None``, the reflector</span>
+<span class="sd">            will always fail on unknown types.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">metadata</span> <span class="o">=</span> <span class="n">_sa</span><span class="o">.</span><span class="n">MetaData</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dialect</span> <span class="o">=</span> <span class="n">metadata</span><span class="o">.</span><span class="n">bind</span><span class="o">.</span><span class="n">dialect</span><span class="o">.</span><span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tables</span> <span class="o">=</span> <span class="n">_table</span><span class="o">.</span><span class="n">TableCollection</span><span class="o">.</span><span class="n">by_names</span><span class="p">(</span>
+            <span class="n">metadata</span><span class="p">,</span> <span class="n">tables</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">types</span><span class="o">=</span><span class="n">types</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_schemas</span> <span class="o">=</span> <span class="n">schemas</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span> <span class="o">=</span> <span class="n">symbols</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dbname</span> <span class="o">=</span> <span class="n">dbname</span></div>
+
+<div class="viewcode-block" id="Schema.dump"><a class="viewcode-back" href="../../apidoc/gensaschema._schema.html#gensaschema.Schema.dump">[docs]</a>    <span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fp</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Dump schema module to fp</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          fp (file):</span>
+<span class="sd">            File to write to</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">imports</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="o">.</span><span class="n">imports</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">imports</span><span class="p">:</span>  <span class="c1"># pragma: no branch</span>
+            <span class="n">imports</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+            <span class="n">imports</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="n">defines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">defines</span>
+        <span class="k">if</span> <span class="n">defines</span><span class="p">:</span>
+            <span class="n">defined</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">define</span> <span class="ow">in</span> <span class="n">defines</span><span class="p">:</span>
+                <span class="n">defined</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">define</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dialect</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">defined</span><span class="p">:</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;# Custom type definitions&#39;</span><span class="p">)</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">defined</span><span class="p">)</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tables</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">table</span><span class="o">.</span><span class="n">is_reference</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">lines</span><span class="p">:</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">sa_table</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="s1">&#39;backslashescape&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">bytes</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">str</span><span class="p">:</span>  <span class="c1"># pragma: no cover</span>
+                <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;# Table &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,))</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> = </span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">varname</span><span class="p">,</span> <span class="n">table</span><span class="p">))</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+        <span class="n">param</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(((</span><span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">),</span> <span class="n">value</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">),</span>
+                     <span class="n">dbspec</span><span class="o">=</span><span class="s2">&quot; for </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dbname</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dbname</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                     <span class="n">dialect</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_dialect</span><span class="p">,</span>
+                     <span class="n">imports</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">imports</span><span class="p">),</span>
+                     <span class="n">lines</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">))</span>
+        <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_MODULE_TPL</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="o">**</span><span class="n">param</span><span class="p">))</span>
+        <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015 - 2022 André Malo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

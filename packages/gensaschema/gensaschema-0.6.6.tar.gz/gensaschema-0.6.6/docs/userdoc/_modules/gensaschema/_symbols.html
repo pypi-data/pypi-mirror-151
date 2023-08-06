@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gensaschema._symbols &mdash; GenSASchema 0.6.6 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/ci.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> GenSASchema
+          </a>
+              <div class="version">
+                0.6
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../apidoc/index.html">gensaschema</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../apidoc/gensaschema.html">gensaschema package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._column.html">gensaschema._column module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._config.html">gensaschema._config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._constraint.html">gensaschema._constraint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._exceptions.html">gensaschema._exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._schema.html">gensaschema._schema module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._symbols.html">gensaschema._symbols module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._table.html">gensaschema._table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._template.html">gensaschema._template module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._type.html">gensaschema._type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._util.html">gensaschema._util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.constraints.html">gensaschema.constraints module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#module-gensaschema">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.html#gensaschema-static-sqlalchemy-schema-generator">GenSASchema - Static SQLAlchemy Schema Generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GenSASchema</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>gensaschema._symbols</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for gensaschema._symbols</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: ascii -*-</span>
+<span class="sa">u</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">===================</span>
+<span class="sd"> Symbol management</span>
+<span class="sd">===================</span>
+
+<span class="sd">Symbol management.</span>
+
+<span class="sd">:Copyright:</span>
+
+<span class="sd"> Copyright 2010 - 2022</span>
+<span class="sd"> Andr\xe9 Malo or his licensors, as applicable</span>
+
+<span class="sd">:License:</span>
+
+<span class="sd"> Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="sd"> you may not use this file except in compliance with the License.</span>
+<span class="sd"> You may obtain a copy of the License at</span>
+
+<span class="sd">     http://www.apache.org/licenses/LICENSE-2.0</span>
+
+<span class="sd"> Unless required by applicable law or agreed to in writing, software</span>
+<span class="sd"> distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="sd"> WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="sd"> See the License for the specific language governing permissions and</span>
+<span class="sd"> limitations under the License.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;Andr</span><span class="se">\xe9</span><span class="s2"> Malo&quot;</span>
+
+<span class="kn">import</span> <span class="nn">keyword</span> <span class="k">as</span> <span class="nn">_keyword</span>
+<span class="kn">import</span> <span class="nn">operator</span> <span class="k">as</span> <span class="nn">_op</span>
+<span class="kn">import</span> <span class="nn">weakref</span> <span class="k">as</span> <span class="nn">_weakref</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_exceptions</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_util</span>
+
+
+<div class="viewcode-block" id="SymbolException"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema.SymbolException">[docs]</a><span class="k">class</span> <span class="nc">SymbolException</span><span class="p">(</span><span class="n">_exceptions</span><span class="o">.</span><span class="n">Error</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Symbol error &quot;&quot;&quot;</span></div>
+
+
+<div class="viewcode-block" id="Symbols"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema.Symbols">[docs]</a><span class="k">class</span> <span class="nc">Symbols</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Symbol table</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      _symbols (dict):</span>
+<span class="sd">        Symbols</span>
+
+<span class="sd">      imports (_Imports):</span>
+<span class="sd">        Import container</span>
+
+<span class="sd">      types (_Types):</span>
+<span class="sd">        Type container</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="Symbols.__init__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema.Symbols.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbols</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">imports</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialization</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          symbols (dict):</span>
+<span class="sd">            Initial symbols</span>
+
+<span class="sd">          imports (iterable):</span>
+<span class="sd">            List of initial (id, import statement) tuples. If omitted or</span>
+<span class="sd">            ``None``, it&#39;s empty.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">defaults</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">sa</span><span class="o">=</span><span class="s2">&quot;_sa&quot;</span><span class="p">,</span>          <span class="c1"># SQLAlchemy shortname</span>
+            <span class="n">meta</span><span class="o">=</span><span class="s2">&quot;m&quot;</span><span class="p">,</span>          <span class="c1"># MetaData shortname</span>
+            <span class="n">table</span><span class="o">=</span><span class="s2">&quot;T&quot;</span><span class="p">,</span>         <span class="c1"># Table shortname</span>
+            <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;t&quot;</span><span class="p">,</span>          <span class="c1"># Type module shortname</span>
+            <span class="n">column</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">,</span>        <span class="c1"># Column shortname</span>
+            <span class="n">default</span><span class="o">=</span><span class="s2">&quot;D&quot;</span><span class="p">,</span>       <span class="c1"># DefaultClause shortname</span>
+            <span class="n">pk</span><span class="o">=</span><span class="s2">&quot;PrimaryKey&quot;</span><span class="p">,</span>   <span class="c1"># PrimaryKey function name</span>
+            <span class="n">fk</span><span class="o">=</span><span class="s2">&quot;ForeignKey&quot;</span><span class="p">,</span>   <span class="c1"># ForeignKey function name</span>
+            <span class="n">uk</span><span class="o">=</span><span class="s2">&quot;Unique&quot;</span><span class="p">,</span>       <span class="c1"># UniqueKey function name</span>
+            <span class="n">constraints</span><span class="o">=</span><span class="p">(</span>      <span class="c1"># constraint function module</span>
+                <span class="vm">__name__</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;.constraints&#39;</span>
+            <span class="p">),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">imports</span> <span class="o">=</span> <span class="n">_Imports</span><span class="p">(</span><span class="n">imports</span><span class="o">=</span><span class="n">imports</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">types</span> <span class="o">=</span> <span class="n">_Types</span><span class="p">(</span><span class="n">_weakref</span><span class="o">.</span><span class="n">proxy</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">symbols</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">symbols</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">symbols</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">defaults</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">symbols</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="nb">dict</span><span class="p">(</span><span class="n">symbols</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="bp">self</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">symbol</span></div>
+
+<div class="viewcode-block" id="Symbols.__delitem__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema.Symbols.__delitem__">[docs]</a>    <span class="k">def</span> <span class="fm">__delitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Remove symbol entry if available</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          name (str):</span>
+<span class="sd">            Symbol identifier</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Symbols.__setitem__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema.Symbols.__setitem__">[docs]</a>    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">symbol</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set symbol table entry</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          name (str):</span>
+<span class="sd">            Symbol identifier</span>
+
+<span class="sd">          symbol (str):</span>
+<span class="sd">            Symbol</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">          SymbolException: Symbol could not be set because of some conflict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">_util</span><span class="o">.</span><span class="n">py2</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">_util</span><span class="o">.</span><span class="n">unicode</span><span class="p">):</span>  <span class="c1"># pragma: no cover</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">_keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="n">symbol</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">SymbolException</span><span class="p">(</span>
+                <span class="s2">&quot;Cannot use keyword </span><span class="si">%r</span><span class="s2"> as symbol&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">symbol</span><span class="p">,)</span>
+            <span class="p">)</span>
+        <span class="k">elif</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">!=</span> <span class="n">symbol</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">SymbolException</span><span class="p">(</span><span class="s2">&quot;Symbol conflict: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">symbol</span><span class="p">,))</span>
+        <span class="k">elif</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">!=</span> <span class="n">symbol</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">SymbolException</span><span class="p">(</span><span class="s2">&quot;Symbol identifier conflict: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">symbol</span></div>
+
+<div class="viewcode-block" id="Symbols.__getitem__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema.Symbols.__getitem__">[docs]</a>    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get symbol table entry</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          name (str):</span>
+<span class="sd">            Symbol identifier</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          str: The symbol</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">          KeyError: Symbol not found</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">_util</span><span class="o">.</span><span class="n">py2</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">_util</span><span class="o">.</span><span class="n">unicode</span><span class="p">):</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="n">name</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Symbols.__contains__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema.Symbols.__contains__">[docs]</a>    <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check symbol table entry</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          name (str):</span>
+<span class="sd">            Symbol identifier</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          bool: Does the symbol entry exist?</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">_util</span><span class="o">.</span><span class="n">py2</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">_util</span><span class="o">.</span><span class="n">unicode</span><span class="p">):</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span></div>
+
+<div class="viewcode-block" id="Symbols.__iter__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema.Symbols.__iter__">[docs]</a>    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make item iterator (id, value)</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          iterable: The iterator</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">iter</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span></div></div>
+
+
+<div class="viewcode-block" id="_Types"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Types">[docs]</a><span class="k">class</span> <span class="nc">_Types</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Type container</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      _types (dict):</span>
+<span class="sd">        Type map</span>
+
+<span class="sd">      _symbols (Symbols):</span>
+<span class="sd">        Symbol table</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="_Types.__init__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Types.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbols</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialization</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          symbols (Symbols):</span>
+<span class="sd">            Symbol table</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_types</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span> <span class="o">=</span> <span class="n">symbols</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">instance_repr</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">defines</span> <span class="o">=</span> <span class="p">[]</span></div>
+
+<div class="viewcode-block" id="_Types.__setitem__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Types.__setitem__">[docs]</a>    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">class_</span><span class="p">,</span> <span class="n">symbol</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set type</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          class_ (type):</span>
+<span class="sd">            Type to match</span>
+
+<span class="sd">          symbol (str):</span>
+<span class="sd">            Type module symbol</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">          SymbolException: Type conflict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">class_</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_types</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_types</span><span class="p">[</span><span class="n">class_</span><span class="p">]</span> <span class="o">!=</span> <span class="n">symbol</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">SymbolException</span><span class="p">(</span><span class="s2">&quot;Type conflict: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">symbol</span><span class="p">,))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_types</span><span class="p">[</span><span class="n">class_</span><span class="p">]</span> <span class="o">=</span> <span class="n">symbol</span></div>
+
+<div class="viewcode-block" id="_Types.resolve"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Types.resolve">[docs]</a>    <span class="k">def</span> <span class="nf">resolve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">type_</span><span class="p">,</span> <span class="n">dialect</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Resolve type to module symbol</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          type_ (object):</span>
+<span class="sd">            Type to resolve</span>
+
+<span class="sd">          dialect (str):</span>
+<span class="sd">            Dialect name</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          str: Resolved symbol</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">          SymbolException: Type could not be resolved</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">type_</span><span class="o">.</span><span class="vm">__class__</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_types</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_types</span><span class="p">[</span><span class="n">type_</span><span class="o">.</span><span class="vm">__class__</span><span class="p">]]</span>
+        <span class="k">for</span> <span class="n">class_</span><span class="p">,</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_types</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">type_</span><span class="p">,</span> <span class="n">class_</span><span class="p">):</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="n">symbol</span><span class="p">]</span>
+
+        <span class="n">mod</span> <span class="o">=</span> <span class="n">type_</span><span class="o">.</span><span class="vm">__module__</span>
+        <span class="k">if</span> <span class="n">mod</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;sqlalchemy.&#39;</span><span class="p">):</span>
+            <span class="n">mod</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mod</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[:</span><span class="mi">3</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">mod</span> <span class="o">==</span> <span class="s1">&#39;sqlalchemy.dialects.</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">dialect</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">_load_dotted</span><span class="p">(</span><span class="s1">&#39;sqlalchemy.dialects.</span><span class="si">%s</span><span class="s1">.</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span>
+                        <span class="n">dialect</span><span class="p">,</span> <span class="n">type_</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+                    <span class="p">))</span>
+                    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span>
+                <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+                    <span class="k">try</span><span class="p">:</span>
+                        <span class="n">_load_dotted</span><span class="p">(</span><span class="s1">&#39;sqlalchemy.types.</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span>
+                            <span class="n">type_</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                        <span class="p">))</span>
+                        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.types&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="s1">&#39;sa&#39;</span><span class="p">],)</span>
+                    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+                        <span class="k">pass</span>
+        <span class="k">raise</span> <span class="n">SymbolException</span><span class="p">(</span>
+            <span class="s2">&quot;Don&#39;t know how to address type </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">type_</span><span class="p">,)</span>
+        <span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="_Imports"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Imports">[docs]</a><span class="k">class</span> <span class="nc">_Imports</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Import table</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      _imports (list):</span>
+<span class="sd">        Import list</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="_Imports.__init__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Imports.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">imports</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialization</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          imports (iterable):</span>
+<span class="sd">            List of initial (id, import statement) tuples. If omitted or</span>
+<span class="sd">            ``None``, it&#39;s empty.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_imports</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">imports</span> <span class="ow">or</span> <span class="p">())</span></div>
+
+<div class="viewcode-block" id="_Imports.__contains__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Imports.__contains__">[docs]</a>    <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if name is in imports</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          name (str):</span>
+<span class="sd">            Import identifier</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          bool: Does an import with that identifier exist?</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_imports</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">name</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+<div class="viewcode-block" id="_Imports.__setitem__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Imports.__setitem__">[docs]</a>    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">import_</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set import</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          name (str):</span>
+<span class="sd">            Symbolic name (to support import uniqueness)</span>
+
+<span class="sd">          import_ (str):</span>
+<span class="sd">            Import statement</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">          SymbolException: Import conflict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">_util</span><span class="o">.</span><span class="n">py2</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">_util</span><span class="o">.</span><span class="n">unicode</span><span class="p">):</span>  <span class="c1"># pragma: no cover</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+        <span class="n">imports</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_imports</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">imports</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">imports</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">!=</span> <span class="n">import_</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">SymbolException</span><span class="p">(</span><span class="s2">&quot;Import conflict: </span><span class="si">%r</span><span class="s2">: </span><span class="si">%r</span><span class="s2"> vs. </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span>
+                    <span class="n">name</span><span class="p">,</span> <span class="n">imports</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="n">import_</span>
+                <span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_imports</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">name</span><span class="p">,</span> <span class="n">import_</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="_Imports.__iter__"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._Imports.__iter__">[docs]</a>    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make iterator over the import statements</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          iterable: The iterator</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">iter</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">_op</span><span class="o">.</span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_imports</span><span class="p">))</span></div></div>
+
+
+<div class="viewcode-block" id="_load_dotted"><a class="viewcode-back" href="../../apidoc/gensaschema._symbols.html#gensaschema._load_dotted">[docs]</a><span class="k">def</span> <span class="nf">_load_dotted</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Load a dotted name</span>
+
+<span class="sd">    (Stolen from wtf-server)</span>
+
+<span class="sd">    The dotted name can be anything, which is passively resolvable</span>
+<span class="sd">    (i.e. without the invocation of a class to get their attributes or</span>
+<span class="sd">    the like).</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">      name (str):</span>
+<span class="sd">        The dotted name to load</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      any: The loaded object</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">      ImportError: A module in the path could not be loaded</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">components</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="p">[</span><span class="n">components</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)]</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="nb">__import__</span><span class="p">(</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">while</span> <span class="n">components</span><span class="p">:</span>
+        <span class="n">comp</span> <span class="o">=</span> <span class="n">components</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">comp</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">comp</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="nb">__import__</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">comp</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+                <span class="c1"># pylint: disable = raise-missing-from</span>
+                <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">obj</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015 - 2022 André Malo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

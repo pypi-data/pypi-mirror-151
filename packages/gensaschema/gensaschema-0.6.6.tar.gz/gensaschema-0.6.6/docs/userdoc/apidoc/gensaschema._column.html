@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gensaschema._column module &mdash; GenSASchema 0.6.6 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/ci.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="gensaschema._config module" href="gensaschema._config.html" />
+    <link rel="prev" title="gensaschema package" href="gensaschema.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> GenSASchema
+          </a>
+              <div class="version">
+                0.6
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">gensaschema</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="gensaschema.html">gensaschema package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="gensaschema.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">gensaschema._column module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._config.html">gensaschema._config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._constraint.html">gensaschema._constraint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._exceptions.html">gensaschema._exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._schema.html">gensaschema._schema module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._symbols.html">gensaschema._symbols module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._table.html">gensaschema._table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._template.html">gensaschema._template module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._type.html">gensaschema._type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._util.html">gensaschema._util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.constraints.html">gensaschema.constraints module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#module-gensaschema">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema-static-sqlalchemy-schema-generator">GenSASchema - Static SQLAlchemy Schema Generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GenSASchema</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">gensaschema</a> &raquo;</li>
+          <li><a href="gensaschema.html">gensaschema package</a> &raquo;</li>
+      <li>gensaschema._column module</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-gensaschema._column">
+<span id="gensaschema-column-module"></span><h1>gensaschema._column module<a class="headerlink" href="#module-gensaschema._column" title="Permalink to this headline"></a></h1>
+<section id="column-inspection-and-representation">
+<h2>Column inspection and representation<a class="headerlink" href="#column-inspection-and-representation" title="Permalink to this headline"></a></h2>
+<p>Column inspection and generation.</p>
+<dl class="field-list">
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>Copyright 2010 - 2022
+André Malo or his licensors, as applicable</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>Licensed under the Apache License, Version 2.0 (the “License”);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at</p>
+<blockquote>
+<div><p><a class="reference external" href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+</div></blockquote>
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="gensaschema._column.Column">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema._column.</span></span><span class="sig-name descname"><span class="pre">Column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nullable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">primary_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoincrement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_column.html#Column"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema._column.Column" title="Permalink to this definition"></a></dt>
+<dd><p>Column container</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column._name">
+<span class="sig-name descname"><span class="pre">_name</span></span><a class="headerlink" href="#gensaschema._column.Column._name" title="Permalink to this definition"></a></dt>
+<dd><p>Name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column._ctype">
+<span class="sig-name descname"><span class="pre">_ctype</span></span><a class="headerlink" href="#gensaschema._column.Column._ctype" title="Permalink to this definition"></a></dt>
+<dd><p>Column type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SA</span> <span class="pre">type</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column._nullable">
+<span class="sig-name descname"><span class="pre">_nullable</span></span><a class="headerlink" href="#gensaschema._column.Column._nullable" title="Permalink to this definition"></a></dt>
+<dd><p>Nullable?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column._primary_key">
+<span class="sig-name descname"><span class="pre">_primary_key</span></span><a class="headerlink" href="#gensaschema._column.Column._primary_key" title="Permalink to this definition"></a></dt>
+<dd><p>Part of a primary key?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column._autoincrement">
+<span class="sig-name descname"><span class="pre">_autoincrement</span></span><a class="headerlink" href="#gensaschema._column.Column._autoincrement" title="Permalink to this definition"></a></dt>
+<dd><p>Possible autoincrement?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column._server_default">
+<span class="sig-name descname"><span class="pre">_server_default</span></span><a class="headerlink" href="#gensaschema._column.Column._server_default" title="Permalink to this definition"></a></dt>
+<dd><p>Default clause</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Default</span> <span class="pre">clause</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column._symbols">
+<span class="sig-name descname"><span class="pre">_symbols</span></span><a class="headerlink" href="#gensaschema._column.Column._symbols" title="Permalink to this definition"></a></dt>
+<dd><p>Symbol table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="gensaschema.html#gensaschema.Symbols" title="gensaschema.Symbols">gensaschema.Symbols</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'gensaschema._column',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">Column</span> <span class="pre">container\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_name</span> <span class="pre">(unicode):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Name\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_ctype</span> <span class="pre">(SA</span> <span class="pre">type):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Column</span> <span class="pre">type\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_nullable</span> <span class="pre">(bool):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Nullable?\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_primary_key</span> <span class="pre">(bool):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Part</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">primary</span> <span class="pre">key?\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_autoincrement</span> <span class="pre">(bool):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Possible</span> <span class="pre">autoincrement?\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_server_default</span> <span class="pre">(Default</span> <span class="pre">clause):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Default</span> <span class="pre">clause\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_symbols</span> <span class="pre">(Symbols):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Symbol</span> <span class="pre">table\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">Column.__init__&gt;,</span> <span class="pre">'from_sa':</span> <span class="pre">&lt;classmethod(&lt;function</span> <span class="pre">Column.from_sa&gt;)&gt;,</span> <span class="pre">'__repr__':</span> <span class="pre">&lt;function</span> <span class="pre">Column.__repr__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Column'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Column'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="headerlink" href="#gensaschema._column.Column.__dict__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema._column.Column.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nullable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">primary_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autoincrement</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_column.html#Column.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema._column.Column.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>) – Column name</p></li>
+<li><p><strong>ctype</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SA</span> <span class="pre">type</span></code>) – Column type</p></li>
+<li><p><strong>nullable</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Nullable?</p></li>
+<li><p><strong>primary_key</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Part of a primary key?</p></li>
+<li><p><strong>autoincrement</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Possible autoincrement?</p></li>
+<li><p><strong>server_default</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Default</span> <span class="pre">clause</span></code>) – Default clause</p></li>
+<li><p><strong>symbols</strong> (<a class="reference internal" href="gensaschema.html#gensaschema.Symbols" title="gensaschema.Symbols"><em>gensaschema.Symbols</em></a>) – Symbol table</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._column'</span></em><a class="headerlink" href="#gensaschema._column.Column.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema._column.Column.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_column.html#Column.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema._column.Column.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Make string representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The string representation</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.Column.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#gensaschema._column.Column.__weakref__" title="Permalink to this definition"></a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema._column.Column.from_sa">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_sa</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_column.html#Column.from_sa"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema._column.Column.from_sa" title="Permalink to this definition"></a></dt>
+<dd><p>Construct from SA column</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>column (SA column):</dt><dd><p>SA column</p>
+</dd>
+<dt>symbols (Symbols):</dt><dd><p>Symbol table</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>New column instance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#gensaschema._column.Column" title="gensaschema._column.Column">Column</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gensaschema._column.ServerDefault">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gensaschema._column.</span></span><span class="sig-name descname"><span class="pre">ServerDefault</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_column.html#ServerDefault"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema._column.ServerDefault" title="Permalink to this definition"></a></dt>
+<dd><p>Default clause container</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.ServerDefault._default">
+<span class="sig-name descname"><span class="pre">_default</span></span><a class="headerlink" href="#gensaschema._column.ServerDefault._default" title="Permalink to this definition"></a></dt>
+<dd><p>Default clause</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Default</span> <span class="pre">clause</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.ServerDefault._symbols">
+<span class="sig-name descname"><span class="pre">_symbols</span></span><a class="headerlink" href="#gensaschema._column.ServerDefault._symbols" title="Permalink to this definition"></a></dt>
+<dd><p>Symbol table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="gensaschema.html#gensaschema.Symbols" title="gensaschema.Symbols">gensaschema.Symbols</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.ServerDefault.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'gensaschema._column',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">Default</span> <span class="pre">clause</span> <span class="pre">container\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_default</span> <span class="pre">(Default</span> <span class="pre">clause):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Default</span> <span class="pre">clause\n\n</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">_symbols</span> <span class="pre">(Symbols):\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Symbol</span> <span class="pre">table\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">ServerDefault.__init__&gt;,</span> <span class="pre">'__repr__':</span> <span class="pre">&lt;function</span> <span class="pre">ServerDefault.__repr__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'ServerDefault'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'ServerDefault'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="headerlink" href="#gensaschema._column.ServerDefault.__dict__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema._column.ServerDefault.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_column.html#ServerDefault.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema._column.ServerDefault.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>default</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Default</span> <span class="pre">clause</span></code>) – Default clause</p></li>
+<li><p><strong>symbols</strong> (<a class="reference internal" href="gensaschema.html#gensaschema.Symbols" title="gensaschema.Symbols"><em>gensaschema.Symbols</em></a>) – Symbol table</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.ServerDefault.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gensaschema._column'</span></em><a class="headerlink" href="#gensaschema._column.ServerDefault.__module__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gensaschema._column.ServerDefault.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/_column.html#ServerDefault.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema._column.ServerDefault.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Make string representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The string representation</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gensaschema._column.ServerDefault.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#gensaschema._column.ServerDefault.__weakref__" title="Permalink to this definition"></a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="gensaschema.html" class="btn btn-neutral float-left" title="gensaschema package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gensaschema._config.html" class="btn btn-neutral float-right" title="gensaschema._config module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015 - 2022 André Malo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

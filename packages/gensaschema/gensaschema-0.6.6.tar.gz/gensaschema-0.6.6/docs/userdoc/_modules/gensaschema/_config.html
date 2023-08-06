@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gensaschema._config &mdash; GenSASchema 0.6.6 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/ci.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> GenSASchema
+          </a>
+              <div class="version">
+                0.6
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../apidoc/index.html">gensaschema</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../apidoc/gensaschema.html">gensaschema package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._column.html">gensaschema._column module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._config.html">gensaschema._config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._constraint.html">gensaschema._constraint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._exceptions.html">gensaschema._exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._schema.html">gensaschema._schema module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._symbols.html">gensaschema._symbols module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._table.html">gensaschema._table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._template.html">gensaschema._template module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._type.html">gensaschema._type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._util.html">gensaschema._util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.constraints.html">gensaschema.constraints module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#module-gensaschema">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.html#gensaschema-static-sqlalchemy-schema-generator">GenSASchema - Static SQLAlchemy Schema Generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GenSASchema</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>gensaschema._config</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for gensaschema._config</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: ascii -*-</span>
+<span class="sa">u</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">==========================</span>
+<span class="sd"> Schema config management</span>
+<span class="sd">==========================</span>
+
+<span class="sd">Schema config management.</span>
+
+<span class="sd">:Copyright:</span>
+
+<span class="sd"> Copyright 2010 - 2022</span>
+<span class="sd"> Andr\xe9 Malo or his licensors, as applicable</span>
+
+<span class="sd">:License:</span>
+
+<span class="sd"> Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="sd"> you may not use this file except in compliance with the License.</span>
+<span class="sd"> You may obtain a copy of the License at</span>
+
+<span class="sd">     http://www.apache.org/licenses/LICENSE-2.0</span>
+
+<span class="sd"> Unless required by applicable law or agreed to in writing, software</span>
+<span class="sd"> distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="sd"> WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="sd"> See the License for the specific language governing permissions and</span>
+<span class="sd"> limitations under the License.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;Andr</span><span class="se">\xe9</span><span class="s2"> Malo&quot;</span>
+
+<span class="kn">import</span> <span class="nn">errno</span> <span class="k">as</span> <span class="nn">_errno</span>
+
+<span class="k">if</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="nn">ConfigParser</span> <span class="k">as</span> <span class="nn">_config_parser</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>  <span class="c1"># pragma: no cover</span>
+        <span class="kn">import</span> <span class="nn">configparser</span> <span class="k">as</span> <span class="nn">_config_parser</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">cStringIO</span> <span class="kn">import</span> <span class="n">StringIO</span> <span class="k">as</span> <span class="n">_TextIO</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>  <span class="c1"># pragma: no cover</span>
+        <span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span> <span class="k">as</span> <span class="n">_TextIO</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_template</span>
+
+
+<div class="viewcode-block" id="Config"><a class="viewcode-back" href="../../apidoc/gensaschema._config.html#gensaschema.Config">[docs]</a><span class="k">class</span> <span class="nc">Config</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Schema config container</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      tables (list):</span>
+<span class="sd">        Table list</span>
+
+<span class="sd">      schemas (dict):</span>
+<span class="sd">        Alien schema mapping</span>
+
+<span class="sd">      _lines (list):</span>
+<span class="sd">        Original config lines (or ``None``)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#: Template for empty config file</span>
+    <span class="c1">#:</span>
+    <span class="c1">#: :Type: `Template`</span>
+    <span class="n">_CONFIG_TPL</span> <span class="o">=</span> <span class="n">_template</span><span class="o">.</span><span class="n">Template</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">        # This is a comment. I love comments.</span>
+<span class="s1">        #</span>
+<span class="s1">        # This files contains table names, one per line</span>
+<span class="s1">        # Comments and empty lines are ignored</span>
+<span class="s1">        #</span>
+<span class="s1">        # If the table name contains a dot, the first part is treated as</span>
+<span class="s1">        # schema name.</span>
+<span class="s1">        #</span>
+<span class="s1">        # If the table variable should be treated differently, use:</span>
+<span class="s1">        #</span>
+<span class="s1">        # name = table</span>
+<span class="s1">        #</span>
+<span class="s1">        # The basename of this file (modulo .schema extension) is used as</span>
+<span class="s1">        # basename for the python file.</span>
+<span class="s1">    &#39;&#39;&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Config.__init__"><a class="viewcode-back" href="../../apidoc/gensaschema._config.html#gensaschema.Config.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tables</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">lines</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialization</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          tables (list):</span>
+<span class="sd">            Table list</span>
+
+<span class="sd">          schemas (dict):</span>
+<span class="sd">            (Alien) Schema mapping</span>
+
+<span class="sd">          lines (iterable):</span>
+<span class="sd">            Original config lines. If omitted or ``None``, the config lines</span>
+<span class="sd">            are not available.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tables</span> <span class="o">=</span> <span class="n">tables</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">schemas</span> <span class="o">=</span> <span class="n">schemas</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_lines</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">lines</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">list</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Config.from_file"><a class="viewcode-back" href="../../apidoc/gensaschema._config.html#gensaschema.Config.from_file">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_file</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name_or_file</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Construct from config file</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          name_or_file (str or file):</span>
+<span class="sd">            Config filename or file pointer</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          Config: New Config instance</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">          IOError: Error reading the file (except for ENOENT, which</span>
+<span class="sd">                   treats the file as empty)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">name_or_file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">read</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">name_or_file</span><span class="p">,</span> <span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">read</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span> <span class="k">if</span> <span class="nb">str</span> <span class="ow">is</span> <span class="nb">bytes</span> <span class="k">else</span> <span class="p">{</span><span class="s1">&#39;encoding&#39;</span><span class="p">:</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">}</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="c1"># pylint: disable = bad-option-value, unspecified-encoding</span>
+                    <span class="c1"># pylint: disable = bad-option-value, consider-using-with</span>
+                    <span class="n">fp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name_or_file</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">IOError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">errno</span> <span class="o">!=</span> <span class="n">_errno</span><span class="o">.</span><span class="n">ENOENT</span><span class="p">:</span>
+                        <span class="k">raise</span>
+                    <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">try</span><span class="p">:</span>
+                        <span class="n">lines</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+                    <span class="k">finally</span><span class="p">:</span>
+                        <span class="n">fp</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">lines</span> <span class="o">=</span> <span class="n">name_or_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">from_lines</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Config.from_lines"><a class="viewcode-back" href="../../apidoc/gensaschema._config.html#gensaschema.Config.from_lines">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_lines</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">lines</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create from config lines</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          lines (iterable)</span>
+<span class="sd">            List of config lines</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          Config: New Config instance</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">conf_lines</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;[schemas]&#39;</span><span class="p">,</span> <span class="s1">&#39;[tables]&#39;</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">line</span> <span class="ow">or</span> <span class="n">line</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="s1">&#39;=&#39;</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">or</span> <span class="p">(</span><span class="s1">&#39;[&#39;</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s1">&#39;]&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">):</span>
+                <span class="n">conf_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">name</span> <span class="o">=</span> <span class="n">line</span>
+                <span class="k">if</span> <span class="s1">&#39;.&#39;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+                    <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">conf_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">line</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">bytes</span> <span class="ow">is</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="n">parser</span> <span class="o">=</span> <span class="n">_config_parser</span><span class="o">.</span><span class="n">RawConfigParser</span><span class="p">()</span>
+            <span class="n">parser</span><span class="o">.</span><span class="n">optionxform</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span>
+            <span class="c1"># pylint: disable = deprecated-method</span>
+            <span class="n">parser</span><span class="o">.</span><span class="n">readfp</span><span class="p">(</span><span class="n">_TextIO</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">conf_lines</span><span class="p">)))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">parser</span> <span class="o">=</span> <span class="n">_config_parser</span><span class="o">.</span><span class="n">RawConfigParser</span><span class="p">(</span><span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">parser</span><span class="o">.</span><span class="n">optionxform</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span>
+            <span class="n">parser</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">_TextIO</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">conf_lines</span><span class="p">)))</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">from_parser</span><span class="p">(</span><span class="n">parser</span><span class="p">,</span> <span class="n">lines</span><span class="o">=</span><span class="n">lines</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Config.from_parser"><a class="viewcode-back" href="../../apidoc/gensaschema._config.html#gensaschema.Config.from_parser">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_parser</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">parser</span><span class="p">,</span> <span class="n">lines</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Construct from config parser</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          parser (ConfigParser.RawConfigParser):</span>
+<span class="sd">            Configparser instance</span>
+
+<span class="sd">          lines (iterable):</span>
+<span class="sd">            Original config lines</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          Config: New Config instance</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># pylint: disable = unnecessary-comprehension</span>
+        <span class="n">tables</span> <span class="o">=</span> <span class="p">[(</span><span class="n">name</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">parser</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="s1">&#39;tables&#39;</span><span class="p">)]</span>
+        <span class="n">schemas</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">name</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">parser</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="s1">&#39;schemas&#39;</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">tables</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">lines</span><span class="o">=</span><span class="n">lines</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Config.dump"><a class="viewcode-back" href="../../apidoc/gensaschema._config.html#gensaschema.Config.dump">[docs]</a>    <span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fp</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Dump config to a file</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          fp (file):</span>
+<span class="sd">            Stream to dump to</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lines</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">lines</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_CONFIG_TPL</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">lines</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">tables</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">table</span> <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tables</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">tables</span><span class="p">:</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">tables</span><span class="p">)</span>
+                <span class="n">schemas</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+                           <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">schemas</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+                <span class="k">if</span> <span class="n">schemas</span><span class="p">:</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;[schemas]&#39;</span><span class="p">)</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">schemas</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">lines</span>
+
+        <span class="n">content</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">result</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="n">content</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="n">fp</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015 - 2022 André Malo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+gensaschema.\_symbols module
+============================
+
+.. automodule:: gensaschema._symbols
+   :members:
+   :undoc-members:
+   :special-members:
+   :private-members:

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gensaschema._constraint &mdash; GenSASchema 0.6.6 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/ci.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> GenSASchema
+          </a>
+              <div class="version">
+                0.6
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../apidoc/index.html">gensaschema</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../apidoc/gensaschema.html">gensaschema package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._column.html">gensaschema._column module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._config.html">gensaschema._config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._constraint.html">gensaschema._constraint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._exceptions.html">gensaschema._exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._schema.html">gensaschema._schema module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._symbols.html">gensaschema._symbols module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._table.html">gensaschema._table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._template.html">gensaschema._template module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._type.html">gensaschema._type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._util.html">gensaschema._util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.constraints.html">gensaschema.constraints module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#module-gensaschema">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.html#gensaschema-static-sqlalchemy-schema-generator">GenSASchema - Static SQLAlchemy Schema Generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GenSASchema</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>gensaschema._constraint</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for gensaschema._constraint</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: ascii -*-</span>
+<span class="sa">u</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">==========================================</span>
+<span class="sd"> Constraint inspection and representation</span>
+<span class="sd">==========================================</span>
+
+<span class="sd">Constraint inspection and representation.</span>
+
+<span class="sd">:Copyright:</span>
+
+<span class="sd"> Copyright 2010 - 2022</span>
+<span class="sd"> Andr\xe9 Malo or his licensors, as applicable</span>
+
+<span class="sd">:License:</span>
+
+<span class="sd"> Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="sd"> you may not use this file except in compliance with the License.</span>
+<span class="sd"> You may obtain a copy of the License at</span>
+
+<span class="sd">     http://www.apache.org/licenses/LICENSE-2.0</span>
+
+<span class="sd"> Unless required by applicable law or agreed to in writing, software</span>
+<span class="sd"> distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="sd"> WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="sd"> See the License for the specific language governing permissions and</span>
+<span class="sd"> limitations under the License.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;Andr</span><span class="se">\xe9</span><span class="s2"> Malo&quot;</span>
+
+<span class="kn">import</span> <span class="nn">keyword</span> <span class="k">as</span> <span class="nn">_keyword</span>
+<span class="kn">import</span> <span class="nn">re</span> <span class="k">as</span> <span class="nn">_re</span>
+<span class="kn">import</span> <span class="nn">tokenize</span> <span class="k">as</span> <span class="nn">_tokenize</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_util</span>
+
+
+<div class="viewcode-block" id="Constraint"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.Constraint">[docs]</a><span class="k">class</span> <span class="nc">Constraint</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Reflected Constraint</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      constraint (SA Constraint):</span>
+<span class="sd">        Constraint</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_SYMBOL</span><span class="p">,</span> <span class="n">_IMPORT</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="Constraint.__new__"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.Constraint.__new__">[docs]</a>    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">constraint</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Constraint factory &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">cls</span> <span class="o">==</span> <span class="n">Constraint</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">constraint</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;CheckConstraint&#39;</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="k">return</span> <span class="nb">globals</span><span class="p">()[</span><span class="n">name</span><span class="p">](</span>
+                <span class="n">constraint</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">options</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Constraint.__init__"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.Constraint.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">constraint</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialization</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          constraint (SA Constraint):</span>
+<span class="sd">            Constraint</span>
+
+<span class="sd">          table (str):</span>
+<span class="sd">            Table varname</span>
+
+<span class="sd">          symbols (Symbols):</span>
+<span class="sd">            Symbol table</span>
+
+<span class="sd">          options (str):</span>
+<span class="sd">            Options</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span> <span class="o">=</span> <span class="n">constraint</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table</span> <span class="o">=</span> <span class="n">table</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span> <span class="o">=</span> <span class="n">symbols</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="o">.</span><span class="n">imports</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_SYMBOL</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_IMPORT</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">options</span></div>
+
+<div class="viewcode-block" id="Constraint.copy"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.Constraint.copy">[docs]</a>    <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Create shallow copy &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="Constraint.__cmp__"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.Constraint.__cmp__">[docs]</a>    <span class="k">def</span> <span class="nf">__cmp__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Compare &quot;&quot;&quot;</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s1">&#39;PrimaryKeyConstraint&#39;</span><span class="p">,</span> <span class="s1">&#39;UniqueConstraint&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;ForeignKeyConstraint&#39;</span><span class="p">,</span> <span class="s1">&#39;CheckConstraint&#39;</span>
+        <span class="p">]</span>
+
+        <span class="k">def</span> <span class="nf">bytype</span><span class="p">(</span><span class="n">const</span><span class="p">):</span>
+            <span class="sd">&quot;&quot;&quot; Sort by type &quot;&quot;&quot;</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">names</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">const</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+
+        <span class="k">return</span> <span class="n">_util</span><span class="o">.</span><span class="n">cmp</span><span class="p">((</span>
+            <span class="n">bytype</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="p">),</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">options</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
+        <span class="p">),</span> <span class="p">(</span>
+            <span class="n">bytype</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">constraint</span><span class="p">),</span>
+            <span class="n">other</span><span class="o">.</span><span class="n">options</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">other</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="nb">repr</span><span class="p">(</span><span class="n">other</span><span class="p">),</span>
+        <span class="p">))</span></div>
+
+<div class="viewcode-block" id="Constraint.__lt__"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.Constraint.__lt__">[docs]</a>    <span class="k">def</span> <span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">,</span> <span class="n">_cmp</span><span class="o">=</span><span class="n">__cmp__</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Check for &#39;&lt;&#39; &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">_cmp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span></div>
+
+<div class="viewcode-block" id="Constraint.repr"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.Constraint.repr">[docs]</a>    <span class="k">def</span> <span class="nf">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">keywords</span><span class="o">=</span><span class="p">(),</span> <span class="n">short</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Base repr for all constraints</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          symbol (str):</span>
+<span class="sd">            Symbol name</span>
+
+<span class="sd">          args (iterable):</span>
+<span class="sd">            Positional arguments</span>
+
+<span class="sd">          keywords (iterable):</span>
+<span class="sd">            Keywords arguments to specify</span>
+
+<span class="sd">          short (bool):</span>
+<span class="sd">            Short representation (i.e. one-line)? Only applied if there are</span>
+<span class="sd">            not too many parameters.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          str: The constraint repr</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># pylint: disable = too-many-branches</span>
+
+        <span class="n">params</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;name=</span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">name</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">deferrable</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;deferrable=</span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">deferrable</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">initially</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;initially=</span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">initially</span><span class="p">,))</span>
+        <span class="k">for</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="n">keywords</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="p">,</span> <span class="n">keyword</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">=</span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span>
+                    <span class="n">keyword</span><span class="p">,</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="p">,</span> <span class="n">keyword</span><span class="p">)</span>
+                <span class="p">))</span>
+        <span class="k">if</span> <span class="n">short</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">params</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">short</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">args</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">short</span><span class="p">:</span>
+                <span class="n">args</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">args</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">    &#39;</span> <span class="o">+</span> <span class="s1">&#39;,</span><span class="se">\n</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">args</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+        <span class="k">if</span> <span class="n">short</span><span class="p">:</span>
+            <span class="n">params</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">args</span> <span class="ow">and</span> <span class="n">params</span><span class="p">:</span>
+                <span class="n">params</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">params</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">params</span> <span class="o">=</span> <span class="s1">&#39;,</span><span class="se">\n</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">params</span><span class="p">:</span>
+                <span class="n">params</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">    &#39;</span> <span class="o">+</span> <span class="n">params</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span>
+            <span class="k">if</span> <span class="n">args</span> <span class="ow">or</span> <span class="n">params</span><span class="p">:</span>
+                <span class="n">params</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%s%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="n">symbol</span><span class="p">],</span> <span class="n">args</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="access_col"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.access_col">[docs]</a><span class="k">def</span> <span class="nf">access_col</span><span class="p">(</span><span class="n">col</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate column access string (either as attribute or via dict access)</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">      col (SA Column):</span>
+<span class="sd">        Column</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      str: Access string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">col</span><span class="o">.</span><span class="n">name</span>
+    <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">col</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">_util</span><span class="o">.</span><span class="n">py2</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">_util</span><span class="o">.</span><span class="n">bytes</span><span class="p">):</span>  <span class="c1"># pragma: no cover</span>
+            <span class="n">name</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">name</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">UnicodeError</span><span class="p">:</span>
+        <span class="n">is_ascii</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">is_ascii</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">if</span> <span class="n">is_ascii</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">_keyword</span><span class="o">.</span><span class="n">iskeyword</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="ow">and</span> \
+            <span class="n">_re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">_tokenize</span><span class="o">.</span><span class="n">Name</span> <span class="o">+</span> <span class="s1">&#39;$&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;.c.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">name</span>
+    <span class="k">return</span> <span class="s2">&quot;.c[</span><span class="si">%r</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="n">name</span></div>
+
+
+<div class="viewcode-block" id="UniqueConstraint"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.UniqueConstraint">[docs]</a><span class="k">class</span> <span class="nc">UniqueConstraint</span><span class="p">(</span><span class="n">Constraint</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Unique constraint &quot;&quot;&quot;</span>
+    <span class="n">_SYMBOL</span> <span class="o">=</span> <span class="s1">&#39;uk&#39;</span>
+    <span class="n">_IMPORT</span> <span class="o">=</span> <span class="s1">&#39;from </span><span class="si">%(constraints)s</span><span class="s1"> import Unique as </span><span class="si">%(uk)s</span><span class="s1">&#39;</span>
+
+<div class="viewcode-block" id="UniqueConstraint.__repr__"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.UniqueConstraint.__repr__">[docs]</a>    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make string representation</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          str: The string representation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">empty</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+        <span class="n">short</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">repr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_SYMBOL</span><span class="p">,</span> <span class="p">[</span>
+            <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">,</span> <span class="n">access_col</span><span class="p">(</span><span class="n">col</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">columns</span>
+        <span class="p">],</span> <span class="n">short</span><span class="o">=</span><span class="n">short</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">empty</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;# </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">result</span>
+        <span class="k">return</span> <span class="n">result</span></div></div>
+
+
+<div class="viewcode-block" id="PrimaryKeyConstraint"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.PrimaryKeyConstraint">[docs]</a><span class="k">class</span> <span class="nc">PrimaryKeyConstraint</span><span class="p">(</span><span class="n">UniqueConstraint</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Primary Key constraint &quot;&quot;&quot;</span>
+    <span class="n">_SYMBOL</span> <span class="o">=</span> <span class="s1">&#39;pk&#39;</span>
+    <span class="n">_IMPORT</span> <span class="o">=</span> <span class="s1">&#39;from </span><span class="si">%(constraints)s</span><span class="s1"> import PrimaryKey as </span><span class="si">%(pk)s</span><span class="s1">&#39;</span></div>
+
+
+<div class="viewcode-block" id="ForeignKeyConstraint"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.ForeignKeyConstraint">[docs]</a><span class="k">class</span> <span class="nc">ForeignKeyConstraint</span><span class="p">(</span><span class="n">Constraint</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; ForeignKey constraint &quot;&quot;&quot;</span>
+    <span class="n">_SYMBOL</span> <span class="o">=</span> <span class="s1">&#39;fk&#39;</span>
+    <span class="n">_IMPORT</span> <span class="o">=</span> <span class="s1">&#39;from </span><span class="si">%(constraints)s</span><span class="s1"> import ForeignKey as </span><span class="si">%(fk)s</span><span class="s1">&#39;</span>
+
+<div class="viewcode-block" id="ForeignKeyConstraint.__repr__"><a class="viewcode-back" href="../../apidoc/gensaschema._constraint.html#gensaschema._constraint.ForeignKeyConstraint.__repr__">[docs]</a>    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make string representation</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          str: The string representation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">columns</span> <span class="o">=</span> <span class="s2">&quot;[</span><span class="si">%s</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="s1">&#39;,</span><span class="se">\n</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span>
+            <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">table</span><span class="p">,</span> <span class="n">access_col</span><span class="p">(</span><span class="n">col</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">columns</span>
+        <span class="p">])</span>
+        <span class="n">refcolumns</span> <span class="o">=</span> <span class="s2">&quot;[</span><span class="si">%s</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="s1">&#39;,</span><span class="se">\n</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="sa">u</span><span class="s1">&#39;table_</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">key</span><span class="o">.</span><span class="n">column</span><span class="o">.</span><span class="n">table</span><span class="o">.</span><span class="n">name</span><span class="p">],</span>
+            <span class="n">access_col</span><span class="p">(</span><span class="n">key</span><span class="o">.</span><span class="n">column</span><span class="p">),</span>
+        <span class="p">)</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">elements</span><span class="p">])</span>
+        <span class="n">keywords</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;onupdate&#39;</span><span class="p">,</span> <span class="s1">&#39;ondelete&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">use_alter</span><span class="p">:</span>
+            <span class="n">keywords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;use_alter&#39;</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">repr</span><span class="p">(</span><span class="s1">&#39;fk&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">columns</span><span class="p">,</span> <span class="n">refcolumns</span><span class="p">],</span> <span class="n">keywords</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">:</span>
+            <span class="n">cyclic</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">use_alter</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;seen:&#39;</span><span class="p">):</span>
+                <span class="n">table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">cyclic</span><span class="p">:</span>
+                    <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"># Cyclic foreign key:</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">result</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"># Foreign key belongs to </span><span class="si">%r</span><span class="s1">:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span>
+                        <span class="n">table</span><span class="p">,</span> <span class="n">result</span>
+                    <span class="p">)</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;unseen:&#39;</span><span class="p">):</span>
+                <span class="n">table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">cyclic</span><span class="p">:</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span>
+                        <span class="mi">0</span><span class="p">,</span>
+                        <span class="s1">&#39;Cyclic foreign key, defined at table </span><span class="si">%r</span><span class="s1">:</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">table</span>
+                    <span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Defined at table </span><span class="si">%r</span><span class="s1">:</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">table</span><span class="p">)</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;# </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">result</span><span class="p">])</span>
+
+        <span class="k">return</span> <span class="n">result</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015 - 2022 André Malo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

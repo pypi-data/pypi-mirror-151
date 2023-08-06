@@ -1,0 +1,8 @@
+gensaschema.\_type module
+=========================
+
+.. automodule:: gensaschema._type
+   :members:
+   :undoc-members:
+   :special-members:
+   :private-members:

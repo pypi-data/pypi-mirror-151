@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gensaschema._table &mdash; GenSASchema 0.6.6 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/ci.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> GenSASchema
+          </a>
+              <div class="version">
+                0.6
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../apidoc/index.html">gensaschema</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../apidoc/gensaschema.html">gensaschema package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._column.html">gensaschema._column module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._config.html">gensaschema._config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._constraint.html">gensaschema._constraint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._exceptions.html">gensaschema._exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._schema.html">gensaschema._schema module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._symbols.html">gensaschema._symbols module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._table.html">gensaschema._table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._template.html">gensaschema._template module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._type.html">gensaschema._type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema._util.html">gensaschema._util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.constraints.html">gensaschema.constraints module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../apidoc/gensaschema.html#module-gensaschema">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../apidoc/gensaschema.html#gensaschema-static-sqlalchemy-schema-generator">GenSASchema - Static SQLAlchemy Schema Generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GenSASchema</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>gensaschema._table</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for gensaschema._table</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: ascii -*-</span>
+<span class="sa">u</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">=====================================</span>
+<span class="sd"> Table inspection and representation</span>
+<span class="sd">=====================================</span>
+
+<span class="sd">Table inspection and representation</span>
+
+<span class="sd">:Copyright:</span>
+
+<span class="sd"> Copyright 2010 - 2022</span>
+<span class="sd"> Andr\xe9 Malo or his licensors, as applicable</span>
+
+<span class="sd">:License:</span>
+
+<span class="sd"> Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="sd"> you may not use this file except in compliance with the License.</span>
+<span class="sd"> You may obtain a copy of the License at</span>
+
+<span class="sd">     http://www.apache.org/licenses/LICENSE-2.0</span>
+
+<span class="sd"> Unless required by applicable law or agreed to in writing, software</span>
+<span class="sd"> distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="sd"> WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="sd"> See the License for the specific language governing permissions and</span>
+<span class="sd"> limitations under the License.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;Andr</span><span class="se">\xe9</span><span class="s2"> Malo&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span> <span class="k">as</span> <span class="nn">_logging</span>
+<span class="kn">import</span> <span class="nn">operator</span> <span class="k">as</span> <span class="nn">_op</span>
+<span class="kn">import</span> <span class="nn">re</span> <span class="k">as</span> <span class="nn">_re</span>
+<span class="kn">import</span> <span class="nn">warnings</span> <span class="k">as</span> <span class="nn">_warnings</span>
+
+<span class="kn">import</span> <span class="nn">sqlalchemy</span> <span class="k">as</span> <span class="nn">_sa</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_column</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_constraint</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">_util</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">_logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="Table"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.Table">[docs]</a><span class="k">class</span> <span class="nc">Table</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Reflected table</span>
+
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      varname (str):</span>
+<span class="sd">        Variable name</span>
+
+<span class="sd">      sa_table (sqlalchemy.Table):</span>
+<span class="sd">        Table</span>
+
+<span class="sd">      constraints (list):</span>
+<span class="sd">        Constraint list</span>
+
+<span class="sd">      _symbols (Symbols):</span>
+<span class="sd">        Symbol table</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#: Is it a table reference (vs. a table)?</span>
+    <span class="c1">#:</span>
+    <span class="c1">#: :Type: bool</span>
+    <span class="n">is_reference</span> <span class="o">=</span> <span class="kc">False</span>
+
+<div class="viewcode-block" id="Table.__new__"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.Table.__new__">[docs]</a>    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">varname</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Construct</span>
+
+<span class="sd">        This might actually return a table reference</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          varname (str):</span>
+<span class="sd">            Variable name</span>
+
+<span class="sd">          table (sqlalchemy.Table):</span>
+<span class="sd">            Table</span>
+
+<span class="sd">          schemas (dict):</span>
+<span class="sd">            Schema -&gt; module mapping</span>
+
+<span class="sd">          symbols (Symbols):</span>
+<span class="sd">            Symbol table</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          Table or TableReference: New instance</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">table</span><span class="o">.</span><span class="n">schema</span> <span class="ow">in</span> <span class="n">schemas</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">TableReference</span><span class="p">(</span>
+                <span class="n">varname</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">schemas</span><span class="p">[</span><span class="n">table</span><span class="o">.</span><span class="n">schema</span><span class="p">],</span> <span class="n">symbols</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Table</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Table.__init__"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.Table.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">varname</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialization</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          varname (str):</span>
+<span class="sd">            Variable name</span>
+
+<span class="sd">          table (sqlalchemy.Table):</span>
+<span class="sd">            Table</span>
+
+<span class="sd">          schemas (dict):</span>
+<span class="sd">            Schema -&gt; module mapping</span>
+
+<span class="sd">          symbols (Symbols):</span>
+<span class="sd">            Symbol table</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># pylint: disable = unused-argument</span>
+
+        <span class="n">symbols</span><span class="p">[</span><span class="sa">u</span><span class="s1">&#39;table_</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">table</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">varname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span> <span class="o">=</span> <span class="n">symbols</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">varname</span> <span class="o">=</span> <span class="n">varname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sa_table</span> <span class="o">=</span> <span class="n">table</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">constraints</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="p">[</span><span class="n">_constraint</span><span class="o">.</span><span class="n">Constraint</span><span class="p">(</span>
+            <span class="n">con</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">varname</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">,</span>
+        <span class="p">)</span> <span class="k">for</span> <span class="n">con</span> <span class="ow">in</span> <span class="n">table</span><span class="o">.</span><span class="n">constraints</span><span class="p">]))</span></div>
+
+<div class="viewcode-block" id="Table.by_name"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.Table.by_name">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">by_name</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">varname</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">types</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Construct by name</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          name (str):</span>
+<span class="sd">            Table name (possibly qualified)</span>
+
+<span class="sd">          varname (str):</span>
+<span class="sd">            Variable name of the table</span>
+
+<span class="sd">          metadata (SA (bound) metadata):</span>
+<span class="sd">            Metadata container</span>
+
+<span class="sd">          schemas (dict):</span>
+<span class="sd">            Schema -&gt; module mapping</span>
+
+<span class="sd">          symbols (Symbols):</span>
+<span class="sd">            Symbol table</span>
+
+<span class="sd">          types (callable):</span>
+<span class="sd">            Extra type loader. If the type reflection fails, because</span>
+<span class="sd">            SQLAlchemy cannot resolve it, the type loader will be called with</span>
+<span class="sd">            the type name, (bound) metadata and the symbol table. It is</span>
+<span class="sd">            responsible for modifying the symbols and imports *and* the</span>
+<span class="sd">            dialect&#39;s ``ischema_names``. If omitted or ``None``, the reflector</span>
+<span class="sd">            will always fail on unknown types.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="s1">&#39;.&#39;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+            <span class="n">schema</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;schema&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">schema</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">schema</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">tmatch</span> <span class="o">=</span> <span class="n">_re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;^Did not recognize type (.+) of column&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">match</span>
+
+        <span class="k">def</span> <span class="nf">type_name</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+            <span class="sd">&quot;&quot;&quot; Extract type name from exception &quot;&quot;&quot;</span>
+            <span class="n">match</span> <span class="o">=</span> <span class="n">tmatch</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                <span class="n">type_name</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">type_name</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)):</span>
+                    <span class="n">type_name</span> <span class="o">=</span> <span class="n">type_name</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+                <span class="k">return</span> <span class="n">type_name</span> <span class="ow">or</span> <span class="kc">None</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">with</span> <span class="n">_warnings</span><span class="o">.</span><span class="n">catch_warnings</span><span class="p">():</span>
+            <span class="n">_warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span><span class="p">,</span>
+                                     <span class="n">message</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;^Did not recognize type &#39;</span><span class="p">)</span>
+            <span class="n">_warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span><span class="p">,</span>
+                                     <span class="n">message</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;^Unknown column definition &#39;</span><span class="p">)</span>
+            <span class="n">_warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span><span class="p">,</span>
+                                     <span class="n">message</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;^Incomplete reflection of &#39;</span>
+                                             <span class="sa">r</span><span class="s1">&#39;column definition&#39;</span><span class="p">)</span>
+            <span class="n">_warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span><span class="p">,</span>
+                                     <span class="n">message</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;^Could not instantiate type &#39;</span><span class="p">)</span>
+            <span class="n">_warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span><span class="p">,</span>
+                                     <span class="n">message</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;^Skipped unsupported &#39;</span>
+                                             <span class="sa">r</span><span class="s1">&#39;reflection of expression-based&#39;</span>
+                                             <span class="sa">r</span><span class="s1">&#39; index &#39;</span><span class="p">)</span>
+            <span class="n">_warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span><span class="p">,</span>
+                                     <span class="n">message</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;^Predicate of partial index &#39;</span><span class="p">)</span>
+
+            <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">table</span> <span class="o">=</span> <span class="n">_sa</span><span class="o">.</span><span class="n">Table</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">autoload</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+                <span class="k">except</span> <span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">types</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">tname</span> <span class="o">=</span> <span class="n">type_name</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">tname</span> <span class="ow">and</span> <span class="n">tname</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+                            <span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="n">tname</span><span class="p">]</span>
+                            <span class="k">while</span> <span class="n">stack</span><span class="p">:</span>
+                                <span class="k">try</span><span class="p">:</span>
+                                    <span class="n">types</span><span class="p">(</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">symbols</span><span class="p">)</span>
+                                <span class="k">except</span> <span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+                                    <span class="n">tname</span> <span class="o">=</span> <span class="n">type_name</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span>
+                                    <span class="k">if</span> <span class="n">tname</span> <span class="ow">and</span> <span class="n">tname</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stack</span> <span class="ow">and</span> \
+                                            <span class="n">tname</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+                                        <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tname</span><span class="p">)</span>
+                                        <span class="k">continue</span>
+                                    <span class="k">raise</span>
+                                <span class="k">else</span><span class="p">:</span>
+                                    <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+                            <span class="k">continue</span>
+                    <span class="k">raise</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">break</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Table.__repr__"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.Table.__repr__">[docs]</a>    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make string representation</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          str: The string representation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">args</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="nb">repr</span><span class="p">(</span><span class="n">_column</span><span class="o">.</span><span class="n">Column</span><span class="o">.</span><span class="n">from_sa</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">sa_table</span><span class="o">.</span><span class="n">columns</span>
+        <span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sa_table</span><span class="o">.</span><span class="n">schema</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;schema=</span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">_util</span><span class="o">.</span><span class="n">unicode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sa_table</span><span class="o">.</span><span class="n">schema</span><span class="p">),))</span>
+
+        <span class="n">args</span> <span class="o">=</span> <span class="s1">&#39;,</span><span class="se">\n</span><span class="s1">    &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">args</span><span class="p">:</span>
+            <span class="n">args</span> <span class="o">=</span> <span class="s1">&#39;,</span><span class="se">\n</span><span class="s1">    </span><span class="si">%s</span><span class="s1">,</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">args</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%r</span><span class="s2">, </span><span class="si">%s%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">],</span>
+            <span class="n">_util</span><span class="o">.</span><span class="n">unicode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sa_table</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_symbols</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">],</span>
+            <span class="n">args</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">constraints</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span>
+                <span class="n">result</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">repr</span><span class="p">,</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">constraints</span><span class="p">)))</span>
+            <span class="p">))</span>
+        <span class="k">return</span> <span class="n">result</span></div></div>
+
+
+<div class="viewcode-block" id="TableReference"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.TableReference">[docs]</a><span class="k">class</span> <span class="nc">TableReference</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Referenced table</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      varname (str):</span>
+<span class="sd">        Variable name</span>
+
+<span class="sd">      sa_table (sqlalchemy.Table):</span>
+<span class="sd">        Table</span>
+
+<span class="sd">      constraints (list):</span>
+<span class="sd">        Constraint list</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#: Is it a table reference (vs. a table)?</span>
+    <span class="c1">#:</span>
+    <span class="c1">#: :Type: bool</span>
+    <span class="n">is_reference</span> <span class="o">=</span> <span class="kc">True</span>
+
+<div class="viewcode-block" id="TableReference.__init__"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.TableReference.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">varname</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">schema</span><span class="p">,</span> <span class="n">symbols</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialization</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          varname (str):</span>
+<span class="sd">            Variable name</span>
+
+<span class="sd">          table (sqlalchemy.Table):</span>
+<span class="sd">            Table</span>
+
+<span class="sd">          symbols (Symbols):</span>
+<span class="sd">            Symbol table</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">varname</span> <span class="o">=</span> <span class="n">varname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sa_table</span> <span class="o">=</span> <span class="n">table</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">constraints</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">pkg</span><span class="p">,</span> <span class="n">mod</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">rsplit</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">mod</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">):</span>
+            <span class="n">modas</span> <span class="o">=</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">mod</span>
+            <span class="n">symbols</span><span class="o">.</span><span class="n">imports</span><span class="p">[</span><span class="n">schema</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;from </span><span class="si">%s</span><span class="s1"> import </span><span class="si">%s</span><span class="s1"> as </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span>
+                <span class="n">pkg</span><span class="p">,</span> <span class="n">mod</span><span class="p">,</span> <span class="n">modas</span>
+            <span class="p">)</span>
+            <span class="n">mod</span> <span class="o">=</span> <span class="n">modas</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">symbols</span><span class="o">.</span><span class="n">imports</span><span class="p">[</span><span class="n">schema</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;from </span><span class="si">%s</span><span class="s1"> import </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">pkg</span><span class="p">,</span> <span class="n">mod</span><span class="p">)</span>
+        <span class="n">symbols</span><span class="p">[</span><span class="sa">u</span><span class="s1">&#39;table_</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">table</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">mod</span><span class="p">,</span> <span class="n">varname</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="TableCollection"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.TableCollection">[docs]</a><span class="k">class</span> <span class="nc">TableCollection</span><span class="p">(</span><span class="nb">tuple</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Table collection &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="TableCollection.by_names"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table.TableCollection.by_names">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">by_names</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">names</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">types</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Construct by table names</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">          metadata (sqlalchemy.MetaData):</span>
+<span class="sd">            Metadata</span>
+
+<span class="sd">          names (iterable):</span>
+<span class="sd">            Name list (list of tuples (varname, name))</span>
+
+<span class="sd">          symbols (Symbols):</span>
+<span class="sd">            Symbol table</span>
+
+<span class="sd">          types (callable):</span>
+<span class="sd">            Extra type loader. If the type reflection fails, because</span>
+<span class="sd">            SQLAlchemy cannot resolve it, the type loader will be called with</span>
+<span class="sd">            the type name, (bound) metadata and the symbol table. It is</span>
+<span class="sd">            responsible for modifying the symbols and imports *and* the</span>
+<span class="sd">            dialect&#39;s ``ischema_names``. If omitted or ``None``, the reflector</span>
+<span class="sd">            will always fail on unknown types.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          TableCollection: New table collection instance</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">objects</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">table</span><span class="o">.</span><span class="n">sa_table</span><span class="o">.</span><span class="n">key</span><span class="p">,</span> <span class="n">table</span><span class="p">)</span> <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="p">[</span>
+            <span class="n">Table</span><span class="o">.</span><span class="n">by_name</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">varname</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span>
+                          <span class="n">types</span><span class="o">=</span><span class="n">types</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">varname</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span>
+        <span class="p">])</span>
+
+        <span class="k">def</span> <span class="nf">map_table</span><span class="p">(</span><span class="n">sa_table</span><span class="p">):</span>
+            <span class="sd">&quot;&quot;&quot; Map SA table to table object &quot;&quot;&quot;</span>
+            <span class="k">if</span> <span class="n">sa_table</span><span class="o">.</span><span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">objects</span><span class="p">:</span>
+                <span class="n">varname</span> <span class="o">=</span> <span class="n">sa_table</span><span class="o">.</span><span class="n">name</span>
+                <span class="k">if</span> <span class="n">_util</span><span class="o">.</span><span class="n">py2</span> <span class="ow">and</span> \
+                        <span class="nb">isinstance</span><span class="p">(</span><span class="n">varname</span><span class="p">,</span>
+                                   <span class="n">_util</span><span class="o">.</span><span class="n">unicode</span><span class="p">):</span>  <span class="c1"># pragma: no cover</span>
+                    <span class="n">varname</span> <span class="o">=</span> <span class="n">varname</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+                <span class="n">objects</span><span class="p">[</span><span class="n">sa_table</span><span class="o">.</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span>
+                    <span class="n">varname</span><span class="p">,</span> <span class="n">sa_table</span><span class="p">,</span> <span class="n">schemas</span><span class="p">,</span> <span class="n">symbols</span>
+                <span class="p">)</span>
+            <span class="k">return</span> <span class="n">objects</span><span class="p">[</span><span class="n">sa_table</span><span class="o">.</span><span class="n">key</span><span class="p">]</span>
+
+        <span class="n">tables</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">map_table</span><span class="p">,</span> <span class="n">metadata</span><span class="o">.</span><span class="n">tables</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+        <span class="n">tables</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="ow">not</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">is_reference</span><span class="p">),</span> <span class="n">x</span><span class="o">.</span><span class="n">varname</span><span class="p">))</span>
+
+        <span class="n">_break_cycles</span><span class="p">(</span><span class="n">metadata</span><span class="p">)</span>
+        <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">:</span>
+            <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">sa_table</span><span class="o">.</span><span class="n">key</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">con</span> <span class="ow">in</span> <span class="n">table</span><span class="o">.</span><span class="n">constraints</span><span class="p">:</span>
+                <span class="c1"># pylint: disable = unidiomatic-typecheck</span>
+                <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">con</span><span class="p">)</span> <span class="o">==</span> <span class="n">_constraint</span><span class="o">.</span><span class="n">ForeignKeyConstraint</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">con</span><span class="o">.</span><span class="n">options</span> <span class="o">==</span> <span class="s1">&#39;seen&#39;</span><span class="p">:</span>
+                        <span class="k">continue</span>
+
+                    <span class="n">remote_key</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">elements</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">column</span><span class="o">.</span><span class="n">table</span><span class="o">.</span><span class="n">key</span>
+                    <span class="k">if</span> <span class="n">remote_key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+                        <span class="n">con</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="s1">&#39;unseen: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span>
+                            <span class="n">objects</span><span class="p">[</span><span class="n">remote_key</span><span class="p">]</span><span class="o">.</span><span class="n">varname</span><span class="p">,</span>
+                        <span class="p">)</span>
+                        <span class="n">remote_con</span> <span class="o">=</span> <span class="n">con</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+                        <span class="n">remote_con</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="s1">&#39;seen: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">varname</span><span class="p">,)</span>
+                        <span class="n">objects</span><span class="p">[</span><span class="n">remote_key</span><span class="p">]</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">remote_con</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">tables</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="_break_cycles"><a class="viewcode-back" href="../../apidoc/gensaschema._table.html#gensaschema._table._break_cycles">[docs]</a><span class="k">def</span> <span class="nf">_break_cycles</span><span class="p">(</span><span class="n">metadata</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Find foreign key cycles and break them apart</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">      metadata (sqlalchemy.MetaData):</span>
+<span class="sd">        Metadata</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">break_cycle</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Break foreign key cycle &quot;&quot;&quot;</span>
+        <span class="n">cycle_keys</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">_op</span><span class="o">.</span><span class="n">attrgetter</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">),</span> <span class="n">e</span><span class="o">.</span><span class="n">cycles</span><span class="p">))</span>
+        <span class="n">cycle_path</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="n">child</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">parent</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">edges</span>
+            <span class="k">if</span> <span class="n">parent</span><span class="o">.</span><span class="n">key</span> <span class="ow">in</span> <span class="n">cycle_keys</span> <span class="ow">and</span> <span class="n">child</span><span class="o">.</span><span class="n">key</span> <span class="ow">in</span> <span class="n">cycle_keys</span>
+        <span class="p">]</span>
+        <span class="n">deps</span> <span class="o">=</span> <span class="p">[</span><span class="n">cycle_path</span><span class="o">.</span><span class="n">pop</span><span class="p">()]</span>
+        <span class="k">while</span> <span class="n">cycle_path</span><span class="p">:</span>
+            <span class="n">tmp</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">parent</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">cycle_path</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">parent</span> <span class="o">==</span> <span class="n">deps</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]:</span>
+                    <span class="n">deps</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">parent</span><span class="p">,</span> <span class="n">child</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">tmp</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">parent</span><span class="p">,</span> <span class="n">child</span><span class="p">))</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">cycle_path</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="s2">&quot;Could not construct sorted cycle path&quot;</span><span class="p">)</span>
+            <span class="n">cycle_path</span> <span class="o">=</span> <span class="n">tmp</span>
+        <span class="k">if</span> <span class="n">deps</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">key</span> <span class="o">!=</span> <span class="n">deps</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">key</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="s2">&quot;Could not construct sorted cycle path&quot;</span><span class="p">)</span>
+
+        <span class="n">deps</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">_op</span><span class="o">.</span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">deps</span><span class="p">))</span>
+        <span class="n">first_dep</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">deps</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">_op</span><span class="o">.</span><span class="n">attrgetter</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">while</span> <span class="n">first_dep</span> <span class="o">!=</span> <span class="n">deps</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">deps</span> <span class="o">=</span> <span class="p">[</span><span class="n">deps</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">+</span> <span class="n">deps</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">deps</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Found foreign key cycle: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot; -&gt; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span>
+            <span class="nb">repr</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">deps</span> <span class="o">+</span> <span class="p">[</span><span class="n">deps</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+        <span class="p">]))</span>
+
+        <span class="k">def</span> <span class="nf">visit_foreign_key</span><span class="p">(</span><span class="n">fkey</span><span class="p">):</span>
+            <span class="sd">&quot;&quot;&quot; Visit foreign key &quot;&quot;&quot;</span>
+            <span class="k">if</span> <span class="n">fkey</span><span class="o">.</span><span class="n">column</span><span class="o">.</span><span class="n">table</span> <span class="o">==</span> <span class="n">deps</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="n">fkey</span><span class="o">.</span><span class="n">use_alter</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="n">fkey</span><span class="o">.</span><span class="n">constraint</span><span class="o">.</span><span class="n">use_alter</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="n">_sa</span><span class="o">.</span><span class="n">sql</span><span class="o">.</span><span class="n">visitors</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="n">deps</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">dict</span><span class="p">(</span><span class="n">schema_visitor</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">foreign_key</span><span class="o">=</span><span class="n">visit_foreign_key</span><span class="p">,</span>
+        <span class="p">))</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">with</span> <span class="n">_warnings</span><span class="o">.</span><span class="n">catch_warnings</span><span class="p">():</span>
+                <span class="n">_warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">SAWarning</span><span class="p">,</span>
+                                         <span class="n">message</span><span class="o">=</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^Cannot correctly sort &#39;</span>
+                                                  <span class="sa">r</span><span class="s1">&#39;tables&#39;</span><span class="p">))</span>
+
+                <span class="n">metadata</span><span class="o">.</span><span class="n">sorted_tables</span>  <span class="c1"># pylint: disable = pointless-statement</span>
+        <span class="k">except</span> <span class="n">_sa</span><span class="o">.</span><span class="n">exc</span><span class="o">.</span><span class="n">CircularDependencyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">break_cycle</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">break</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015 - 2022 André Malo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

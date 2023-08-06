@@ -1,0 +1,8 @@
+gensaschema.\_column module
+===========================
+
+.. automodule:: gensaschema._column
+   :members:
+   :undoc-members:
+   :special-members:
+   :private-members:
