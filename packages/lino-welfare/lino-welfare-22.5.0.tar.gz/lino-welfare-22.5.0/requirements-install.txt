@@ -1,0 +1,7 @@
+num2words
+schedule
+odfpy
+imagesize
+appy
+bleach
+git+https://github.com/karimabdelhakim/suds-py3#egg=suds-py3
