@@ -1,0 +1,17 @@
+README.md
+setup.py
+acido/__init__.py
+acido/cli.py
+acido.egg-info/PKG-INFO
+acido.egg-info/SOURCES.txt
+acido.egg-info/dependency_links.txt
+acido.egg-info/requires.txt
+acido.egg-info/top_level.txt
+acido/azure_utils/BlobManager.py
+acido/azure_utils/InstanceManager.py
+acido/azure_utils/ManagedIdentity.py
+acido/azure_utils/VaultManager.py
+acido/azure_utils/__init__.py
+acido/utils/__init__.py
+acido/utils/decoration.py
+acido/utils/functions.py
