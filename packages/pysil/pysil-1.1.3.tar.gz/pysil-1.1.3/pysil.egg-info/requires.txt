@@ -1,0 +1,10 @@
+distro
+psutil
+windows-tools.antivirus
+py-cpuinfo
+GPUtil
+netifaces
+speedtest-cli
+screeninfo
+xlib
+sounddevice
