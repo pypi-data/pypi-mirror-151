@@ -1,0 +1,11 @@
+starmerx_apollo_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starmerx_apollo_client/apollo_client.py,sha256=ocqAhkBDJd2L_wdFRCgP9Y7uEXQeeP-Dgs0l7whLGsg,2236
+starmerx_apollo_client/base.py,sha256=llirvOmOEQAz7Us8b3E6aFqDhgfc_F9TEN3AfuDRxxE,11262
+starmerx_apollo_client/util.py,sha256=DnhJZRCudvnAzdYZoZM_uJ-KcbXMf17Uvc7J0JMxbmI,1184
+starmerx_apollo_client/test/__init__.py,sha256=yr7PuAE0vlyR4MHjJDBu1ptTy_OTCxgKShfQlwsr1pA,145
+starmerx_apollo_client/test/client_test.py,sha256=FRZOw8L71EnANCAFkfqstJWOJc8GzrQ_Dp9LYHrgxMs,2470
+starmerx_apollo_client-0.0.7.dist-info/LICENSE,sha256=9Rsi8_aBsMx5C5AtO2Pqm7wWulqptzYneGZYYa4BMTg,1053
+starmerx_apollo_client-0.0.7.dist-info/METADATA,sha256=nSRM7-63d-ux5S_27H5O1BymtmkLbAO_iI0MPDkvr5w,886
+starmerx_apollo_client-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+starmerx_apollo_client-0.0.7.dist-info/top_level.txt,sha256=HvpFBuXPZshBbK3-wU1jqkhuTP41zAN_dINpqAeYxvs,23
+starmerx_apollo_client-0.0.7.dist-info/RECORD,,
