@@ -1,0 +1,13 @@
+summon/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+summon/__main__.py,sha256=2VANVXt9cnvlehtmfvpNlGOqSar21RlMvS9EC09XXII,933
+summon/_plugin_spec.py,sha256=qm7ygwtOPdqcfPk_JISyG32dES6mdz-IC8DHxcOlnvg,151
+summon/_typer_app.py,sha256=R65cAQyYvTJBthBbGCyEh-ud9oqgESTI7PkL-FmzkNk,58
+summon/error.py,sha256=gt7g9HWtcD0MWN09KXqeO58to5_bsZ1Jo_AVyjHXg90,89
+summon/exec.py,sha256=hYR8Ixb3DA11DtCrX2TQc-KLkz-BrpYJ2KAoTAIcXfk,2607
+summon/plugins.py,sha256=X7fhV3G7SCzicdsIuGoaEye06NBASpeipfrjQzs_0y4,59
+summon/project.py,sha256=NjQM6nusCAhIIFDtMVHKK-WpBtHkwlxHaraULe8sfxo,837
+summon/tasks.py,sha256=nJ1pnqcZnHgYeVrCBIIkJfh5aojFZqjIYwb7lesPJtk,171
+summon_tasks-0.1.0.dist-info/entry_points.txt,sha256=Thw3NH0JBLhrAVr-lmozNFarguiIz8n86aEp7wJ04pU,47
+summon_tasks-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+summon_tasks-0.1.0.dist-info/METADATA,sha256=YCP0r5URfinYAy3zaHMuuPkFyoHn0yWC4TB2X_umYa4,492
+summon_tasks-0.1.0.dist-info/RECORD,,
