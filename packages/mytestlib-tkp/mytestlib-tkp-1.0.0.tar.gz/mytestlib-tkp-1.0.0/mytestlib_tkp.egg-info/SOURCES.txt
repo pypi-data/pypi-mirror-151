@@ -1,0 +1,6 @@
+README.txt
+setup.py
+mytestlib_tkp.egg-info/PKG-INFO
+mytestlib_tkp.egg-info/SOURCES.txt
+mytestlib_tkp.egg-info/dependency_links.txt
+mytestlib_tkp.egg-info/top_level.txt
