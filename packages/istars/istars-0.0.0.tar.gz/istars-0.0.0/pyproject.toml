@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "istars"
+version = "0.0.0"
+description = ""
+authors = ["Alex Rudolph <alex3rudolph@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pre-commit = "^2.19.0"
+black = "^22.3.0"
+isort = "^5.10.1"
+pytest-cov = "^3.0.0"
+cookiecutter = "^1.7.3"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
