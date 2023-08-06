@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+schoolware.egg-info/PKG-INFO
+schoolware.egg-info/SOURCES.txt
+schoolware.egg-info/dependency_links.txt
+schoolware.egg-info/requires.txt
+schoolware.egg-info/top_level.txt
