@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Algebraic-Expression-Parser
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/mohamedsalahh/Algebraic-Expression-Parser
+Author: Mohamed Salah
+Author-email: mohamed.s636499@gmail.com
+License: MIT
+Keywords: Algebraic Expression Parser
+Platform: UNKNOWN
+Requires-Dist: binarytree
+
+UNKNOWN
+
