@@ -1,0 +1,17 @@
+flake8_codes/__init__.py,sha256=l2aRiy-NF7Q9y_GQOVAHrod0tIcDhfJPUUnyG7pNJ5w,224
+flake8_codes/__main__.py,sha256=9PY29yYEzbHuNNjq6QiARY40U_CoBMSu9m6xO_35LsI,50
+flake8_codes/_cli.py,sha256=CYJrpNq7PfA8cw0tLs_Nc-BRiJ-vjUclFo1xuBNHg0Q,1903
+flake8_codes/_codes/__init__.py,sha256=l31YuZd8YKeTTbEKh1s10Dp2l_hJ8MyikD9pV7tG-u4,60
+flake8_codes/_codes/_adhoc.py,sha256=daPH064S2GSZADyU7IYWzTYLbTsxXBrYwkeayWqnzrM,9692
+flake8_codes/_codes/_default.py,sha256=kOxGoCn9D_ExBgskqP9Hm4cQpKdyUZ-fLAeKQekNaSA,1107
+flake8_codes/_codes/_extract.py,sha256=pVlzc7khKmGPXPdsZyay25lWBl95Va_aomDholmAUis,880
+flake8_codes/_codes/_hardcoded.py,sha256=O0QfLskNE1AG3vKGO2E5GRZr1GA6cnwokuktwN-fPgA,1134
+flake8_codes/_codes/_registry.py,sha256=6iOOfTnbW05JVClBnBCWa1ocEoLSNxPNxaZKDpdHMhU,606
+flake8_codes/_codes/_renamed.py,sha256=hHa1WAwxlMYLwDYZ7H17pKxH3LYj_NqhGsLxdDB-KUg,2039
+flake8_codes/_plugins/__init__.py,sha256=qLL3fej4EzvfATcgf5zOMKwleYGPi8egnqI5CDVywzc,91
+flake8_codes/_plugins/_discover.py,sha256=8jWnRMPYglPyx9-k3TaV1K5fctov9zIGN0ZAeRL8byQ,2104
+flake8_codes/_plugins/_plugin.py,sha256=TlW4p66QTrzgLO6spizSYlpGHqDmek4PXVLIDF88Xu8,1498
+flake8_codes-0.2.2.dist-info/LICENSE,sha256=BxTjazc45bB8y7OjiHDFHxzhbTG7IPPE4z1TmHMw-gQ,1046
+flake8_codes-0.2.2.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+flake8_codes-0.2.2.dist-info/METADATA,sha256=GPjyqkwv8qezy5mc-zGLmvuJoVYCRgAmijNAcA38NnI,4540
+flake8_codes-0.2.2.dist-info/RECORD,,
