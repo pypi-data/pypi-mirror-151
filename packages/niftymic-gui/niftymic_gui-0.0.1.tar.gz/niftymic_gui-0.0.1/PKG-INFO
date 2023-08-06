@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: niftymic-gui
+Version: 0.0.1
+Summary: 
+Author: TonyChG
+Author-email: tonychg7@pm.me
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyQt5 (>=5.15.6,<6.0.0)
+Requires-Dist: psutil (>=5.9.0,<6.0.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: rich (>=12.4.1,<13.0.0)
