@@ -1,0 +1,9 @@
+processmanager/ProcessBase.py,sha256=i6HSv6u3gGIkbOn9qPghh8Kc8kbr0tRGs8QDSQl40GM,1089
+processmanager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processmanager/reporter/ProcessReporter.py,sha256=fPE9_pM94z6LghaBx4s2oPKYxk6mnyoMlXHWubptpnw,509
+processmanager/reporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+persuader_technology_automata_process_manager-0.0.2.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+persuader_technology_automata_process_manager-0.0.2.dist-info/METADATA,sha256=HYY3CfOBcA2NpMB1Hbq06NoN4fld9dADJBR_B-4meck,585
+persuader_technology_automata_process_manager-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+persuader_technology_automata_process_manager-0.0.2.dist-info/top_level.txt,sha256=pD935BCKB49mtd2uLbL7oYQbNn3yLlDWoeaGcHlhhtk,15
+persuader_technology_automata_process_manager-0.0.2.dist-info/RECORD,,
