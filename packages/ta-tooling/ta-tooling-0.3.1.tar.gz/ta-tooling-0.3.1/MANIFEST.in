@@ -1,0 +1,4 @@
+graft src/bbutils/templates
+graft src/bbutils/static
+graft src/ta_tooling/scripts
+global-exclude *.py[cod]

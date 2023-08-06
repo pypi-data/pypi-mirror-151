@@ -1,0 +1,7 @@
+click
+flask
+flask-cors
+selenium
+requests
+pandas
+python-dotenv
