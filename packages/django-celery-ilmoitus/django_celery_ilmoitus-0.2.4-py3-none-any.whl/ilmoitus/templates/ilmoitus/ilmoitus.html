@@ -1,0 +1,92 @@
+{% load i18n %}
+
+{% block html %}
+  <div id="ilmoitukset-rivi">
+    <div id="ilmoitukset"></div>
+  </div>
+{% endblock html %}
+
+{% block css %}
+  <style>
+    #ilmoitukset-rivi {
+      z-index: 1000;
+      position: absolute;
+      left: 50%;
+    }
+    #ilmoitukset {
+      display: inline-block;
+      margin-left: -50%;
+    }
+    #ilmoitukset >div {
+      float: left;
+      margin: 1em;
+      white-space: pre-wrap;
+    }
+  </style>
+{% endblock css %}
+
+{% block js %}
+  <script>
+    function nayta_ilmoitus(ilmoitus) {
+      $("#ilmoitukset").append(
+        $("<div/>", {
+          class: ilmoitus.tags + " alert alert-dismissible",
+          role: "alert",
+        }).append(
+          $("<button/>", {
+            type: "button",
+            class: "close",
+            "data-dismiss": "alert",
+            "aria-label": "{% trans "Sulje" %}"
+          }).append(
+            $("<span/>", {"aria-hidden": true, text: "⨉"})
+          ),
+          ilmoitus.message
+        )
+      );
+    }
+
+    {% comment %}
+      Vastaanotetaan viestejä reaaliaikaisesti Websocket-yhteyden kautta,
+      jos se on käytettävissä.
+      Muuten haetaan yhdellä Ajax-pyynnöllä kaikki olemassaolevat viestit.
+    {% endcomment %}
+
+    {% if request.websocket %}
+      function avaaYhteys() {
+        let viestit = new WebSocket("{{ request.websocket }}{% url "ilmoitukset" %}");
+        $.extend(viestit, {
+          onmessage: function (e) {
+            const ilmoitus = JSON.parse(e.data);
+            const tila = ilmoitus.status ?? 0;
+            if (tila == 302)
+              // HTTP 302: istunto vanhentunut tms. -> päivitetään sivu.
+              location.reload();
+            else if (tila >= 300)
+              // HTTP 3xx / 4xx / 5xx: uudelleenohjaus, virhe pyynnössä tai
+              // virhe palvelimella -> katkaistaan.
+              viestit.close(1000);
+            else
+              nayta_ilmoitus(ilmoitus);
+          },
+          onclose: function (e) {
+            if (e.code > 1001)
+              // Avataan yhteys uudelleen 200 ms:n kuluttua.
+              setTimeout(avaaYhteys, 200);
+          }
+        });
+      }
+      avaaYhteys();
+
+    {% else %}
+    $.ajax({
+      url: "{% url "ilmoitukset" %}",
+      success: function (sanoma) {
+        for (const ilmoitus of sanoma) {
+          nayta_ilmoitus(ilmoitus);
+        }
+      }
+    });
+    {% endif %}
+  </script>
+{% endblock js %}

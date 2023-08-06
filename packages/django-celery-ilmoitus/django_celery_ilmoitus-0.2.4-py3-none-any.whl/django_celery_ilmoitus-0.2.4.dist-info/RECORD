@@ -1,0 +1,12 @@
+ilmoitus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ilmoitus/celery.py,sha256=dKM4Ag-a24F_Albi0-rkiYMwmC6PDxJjHqY4qNT6epw,173
+ilmoitus/nakyma.py,sha256=HarnW_vAEaEU41OiJ1CCsduPzmqdNFuaoa0ZIwHiM-M,3199
+ilmoitus/sovellus.py,sha256=SOOWujhcf2LLTWoPaQdcEkW2pRY3ApQlwj6pX69B9Nw,565
+ilmoitus/uusi.py,sha256=C0UyXeESAZ5e0up_RRnyvd9IBZkAzGebdaLDlknwvO8,1558
+ilmoitus/templates/ilmoitus/ilmoitus.html,sha256=DXXUjUapASvPJszRwaP4j8_aYtJ6pTSSVjtJ3ZPgwtA,2409
+django_celery_ilmoitus-0.2.4.dist-info/METADATA,sha256=ZhpmUlDJu8pji8azyT41gxNz9ZVLYHS__bLvSyEojHk,376
+django_celery_ilmoitus-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_celery_ilmoitus-0.2.4.dist-info/entry_points.txt,sha256=3AMHL9cqBiTIAaJPTSxqxM-oGYEM0dDXmGTdqP4-RXo,103
+django_celery_ilmoitus-0.2.4.dist-info/historia.json,sha256=29rZijgHsAJ-7pt_JGsy569DBXhFjDHb3CkY7FVTs1w,2254
+django_celery_ilmoitus-0.2.4.dist-info/top_level.txt,sha256=XXORYxeO_wDDbhd8-J2SVagMU_BEv2aupuZnW_p6-5w,9
+django_celery_ilmoitus-0.2.4.dist-info/RECORD,,

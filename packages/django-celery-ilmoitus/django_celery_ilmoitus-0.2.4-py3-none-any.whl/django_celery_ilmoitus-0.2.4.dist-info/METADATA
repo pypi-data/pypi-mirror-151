@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: django-celery-ilmoitus
+Version: 0.2.4
+Summary: Ajax/Websocket-pohjainen Django-ilmoitusnäkymä
+Home-page: https://github.com/an7oine/django-celery-ilmoitus.git
+Author: Antti Hautaniemi
+Author-email: antti.hautaniemi@me.com
+Requires-Dist: celery
+Requires-Dist: Django
+Provides-Extra: websocket
+Requires-Dist: django-pistoke ; extra == 'websocket'
+
