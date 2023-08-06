@@ -1,0 +1,3 @@
+[console_scripts]
+contactform=contact_form_smtp:cli
+
