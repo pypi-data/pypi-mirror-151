@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: smsitai
+Version: 0.0.2.3
+Summary: some basic tools for interacting with sms-it.ai's api
+Home-page: UNKNOWN
+Author: Jesse Love Ramsey
+Author-email: <jesse@ramsey.love>
+License: UNKNOWN
+Keywords: python,first package,sms-it,sms-it.ai,p2p sms
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+just something I am working on to interact with sms-it.ai's api (should have everything soon)
+
+
