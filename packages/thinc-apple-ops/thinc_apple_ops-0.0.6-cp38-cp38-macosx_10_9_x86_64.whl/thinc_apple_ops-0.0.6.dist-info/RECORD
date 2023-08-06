@@ -1,0 +1,14 @@
+thinc_apple_ops/__init__.py,sha256=gq7qYLzpnjhCUYWRmwygHMIowu-eIS9XhYRiWcyiZ8Y,26
+thinc_apple_ops/blas.cpython-38-darwin.so,sha256=wAMdf5l7nfBsBOtmtOP6mWl8Ltc4ajKBj-GiIqPzcw0,166416
+thinc_apple_ops/blas.pyx,sha256=gV-Uq_hf8HkNslm3etiMUxUM1xq3hsGjBzGwgM3B5ks,2647
+thinc_apple_ops/ops.py,sha256=VOEsm_Kw_dbDz3d_IkLTYu-tRqm0tWFS0K3NGcNffOg,814
+thinc_apple_ops/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thinc_apple_ops/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thinc_apple_ops/tests/test_gemm.py,sha256=B34CGKAemm7zYpLoSFICe2-f7YjZ0I-qjfo4wedDjqY,1510
+thinc_apple_ops-0.0.6.dist-info/LICENSE,sha256=-Nkd5LQez2Eb42ACE5teInibvQoC8Z119rGHM__RdOM,1083
+thinc_apple_ops-0.0.6.dist-info/METADATA,sha256=dMM3BHnPj8dc_e_3iP7RcyJ148NT5UP4tpN0qA_-SEc,5549
+thinc_apple_ops-0.0.6.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+thinc_apple_ops-0.0.6.dist-info/entry_points.txt,sha256=T7UBMSDFDV-zhnUeAdeLx80yzFW88CKNqWq-j6x-8rs,48
+thinc_apple_ops-0.0.6.dist-info/top_level.txt,sha256=mzOnVxE0bVNb0EFEqQKBEY8lQ9TWWJhFCLefE6tTU7c,16
+thinc_apple_ops-0.0.6.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+thinc_apple_ops-0.0.6.dist-info/RECORD,,
