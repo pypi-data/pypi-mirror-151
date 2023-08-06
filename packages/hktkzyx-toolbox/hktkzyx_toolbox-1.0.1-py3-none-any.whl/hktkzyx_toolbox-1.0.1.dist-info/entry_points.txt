@@ -1,0 +1,4 @@
+[console_scripts]
+hktkzyx-electronics=hktkzyx_toolbox.scripts.electronics:hktkzyx_electronics
+hktkzyx-finance=hktkzyx_toolbox.scripts.finance:hktkzyx_finance
+
