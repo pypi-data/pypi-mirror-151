@@ -1,0 +1,9 @@
+colorama
+django-channels
+pycryptodomex
+pyscard
+pyserial
+python-escpos
+pyusb
+tornado
+ws4py

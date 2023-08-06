@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+codenerix_pos_client/posclient.py
+django_codenerix_pos_client.egg-info/PKG-INFO
+django_codenerix_pos_client.egg-info/SOURCES.txt
+django_codenerix_pos_client.egg-info/dependency_links.txt
+django_codenerix_pos_client.egg-info/not-zip-safe
+django_codenerix_pos_client.egg-info/requires.txt
+django_codenerix_pos_client.egg-info/top_level.txt

@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: django-codenerix-pos-client
+Version: 4.0.1
+Summary: Codenerix POS Client enables the system to work with codenerix_pos_client command line tool so it can connecto to CODENERIX POS server.
+Home-page: https://github.com/codenerix/django-codenerix-pos-client
+Author: Juan Miguel Taboada Godoy <juanmi@juanmitaboada.com>
+Author-email: UNKNOWN
+License: Apache License Version 2.0
+Description: ===========================
+        django-codenerix-pos-client
+        ===========================
+        
+        Codenerix POS Client is a module that enables the system where it is installed to communicate with POS module from `CODENERIX <https://www.codenerix.com/>`_
+        
+        .. image:: https://github.com/codenerix/django-codenerix/raw/master/codenerix/static/codenerix/img/codenerix.png
+            :target: https://www.codenerix.com
+            :alt: Try our demo with Codenerix Cloud
+        
+        ****
+        Demo
+        ****
+        
+        Coming soon...
+        
+        **********
+        Quickstart
+        **********
+        
+        1. Install this package::
+        
+            For python 2: sudo pip2 install django-codenerix-pos-client
+            For python 3: sudo pip3 install django-codenerix-pos-client
+        
+        2. You are done, now you can work with your new command "codenerix_pos_client"
+        
+        *************
+        Documentation
+        *************
+        
+        Coming soon... do you help us?
+        
+        You can get in touch with us `here <https://codenerix.com/contact/>`_.
+        
+Keywords: django,codenerix,management,erp,pos,client
+Platform: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
