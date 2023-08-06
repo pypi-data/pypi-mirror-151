@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./ed_analytics/__init__.py
+./ed_analytics/consts.py
+./ed_analytics/utils.py
+./ed_analytics/github/__init__.py
+./ed_analytics/github/abc.py
+ed_analytics.py.egg-info/PKG-INFO
+ed_analytics.py.egg-info/SOURCES.txt
+ed_analytics.py.egg-info/dependency_links.txt
+ed_analytics.py.egg-info/top_level.txt
