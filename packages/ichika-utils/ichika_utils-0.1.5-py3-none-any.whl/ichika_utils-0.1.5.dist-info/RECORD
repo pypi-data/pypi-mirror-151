@@ -1,0 +1,8 @@
+license.txt,sha256=WQsQPkrMWMPIJpwctNdKNziYUIBR-q8Pydz2o8a5ToQ,1045
+ichika_utils/__init__.py,sha256=PRUsHSHFe9__5nMybjhSTVwdDtM85bfdJdXmtxsqzk0,180
+ichika_utils/lin_regression.py,sha256=irqvSJ9DHIra2MPQXtKeJECzf2Fb_hSxUB63nnnH6Uk,1545
+ichika_utils/main.py,sha256=G8NuYg5yToAy7aeyikfLeoMj_RjbJTJ8Y6J8la2n18Q,3009
+ichika_utils/std.py,sha256=qlnIInXHiMlkXDIxdKBlgmEGJID5mA08sr2HW2Bt0jE,460
+ichika_utils-0.1.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+ichika_utils-0.1.5.dist-info/METADATA,sha256=lv-OsKtYLBW5TgaHrx1iMV2KCvqzLwmNyZTyDmMlWt4,1861
+ichika_utils-0.1.5.dist-info/RECORD,,
