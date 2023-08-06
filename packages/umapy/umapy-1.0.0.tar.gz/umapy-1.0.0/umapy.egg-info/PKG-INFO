@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: umapy
+Version: 1.0.0
+Summary: A python wrapper for UMA API
+Home-page: https://github.com/Rexians/umapy
+Author: Rexians
+Author-email: admin@rexiansteam.tk
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Rexians/umapy/issues
+Keywords: uma,mcoc,umapy,api,wrapper
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div>
+  <h1 align='center'>
+    umapy
+  </h1>
+</div>
+<div>
+  <p align='center'>
+    A simple API wrapper of Unofficial MCOC API(UMA).
+  </p>
+</div>
+
+## Install
+
+```bash
+pip install git+https://github.com/Rexians/umapy.git
+```
+
+## Basic Usage
+
+Get Champ Info-
+
+```py
+from umapy import Client
+
+client = Client()
+abom = x.get_champ_info('ABOMINATION',6, 3)
+print(abom.name)
+```
+
+- Docs soon!!
+
+## Contribution
+
+Feel free to contribute by either opening an issue or a pull request.
