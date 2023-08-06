@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src_py/swyng/__init__.py
+src_py/swyng.egg-info/PKG-INFO
+src_py/swyng.egg-info/SOURCES.txt
+src_py/swyng.egg-info/dependency_links.txt
+src_py/swyng.egg-info/not-zip-safe
+src_py/swyng.egg-info/requires.txt
+src_py/swyng.egg-info/top_level.txt
