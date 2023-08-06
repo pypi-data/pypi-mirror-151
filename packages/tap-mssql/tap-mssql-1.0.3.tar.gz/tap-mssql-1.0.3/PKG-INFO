@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tap-mssql
+Version: 1.0.3
+Summary: Singer.io tap for extracting data from SQL Server - PipelineWise compatible
+Home-page: https://github.com/wintersrd/pipelinewise-tap-mssql
+Author: Rob Winters
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+
+UNKNOWN
+
