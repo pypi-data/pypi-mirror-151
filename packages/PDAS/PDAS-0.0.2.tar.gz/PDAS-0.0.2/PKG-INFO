@@ -1,0 +1,422 @@
+Metadata-Version: 2.1
+Name: PDAS
+Version: 0.0.2
+Summary: A small example package
+Author: Dial
+Author-email: Dial@plurallydial.com
+Description-Content-Type: text/markdown
+
+![Logo](logo.png) *ALPHA RELEASE*
+## PDAS - Diagnostic Accessability Service 
+
+#### Book of Operations & Documentation
+1. Requirements
+2. Introduction
+3. Syntax
+4. Source
+
+
+
+
+
+## Requirements:
+***Subject to change.***
+> Python Verision  3.1
+> 
+> __It is recommended that you use Repl.it!__
+>
+> a JSON file with the name "CPDAS.json" with the following  contents:
+```json{
+{
+  "doAudit": true, 
+  "doPassword": true, 
+  "doIPcollection": true,
+  "maxAttempts": 1,
+  "lockTime" : 60,
+  "enableLockdown" : false
+  }
+```
+> a Python file with the name "PDAS.py".
+> > This should already be in the same directory as the READ-ME file. Contents can be copy&pasted from the bottom of this document.
+>
+## Introduction:
+
+> 1. Open main.py, and paste the following onto line 1:
+  > > ```from PDAS import *```
+> <- This imports the PDAS classes and predeclared variables. This is the life-line of the bridge between the main program and the class file.
+>
+> 2. Let's start by some simple logging. Copy the following into main.py on any line below line 1:
+>    > ```python
+>    > Okay("Okay")
+>    > Info("Info")
+>    > Warn("Warn")
+>    > Fatal("Fatal w/o Raise")
+>    > Fatal("Fatal w/ Raise", True)
+>    > ```
+>    > These are the 5 logging classes we will start with. When ran, you should see content in Audit.txt and colored text in the Terminal. If you see the colored text and content in Audit.txt, you are ready to continue. Otherwise, check and make sure you configured everything.
+>
+> 3. PDAS comes with security features; and we will go over them lightly for the time-being.
+> >You'll notice that in the json file, there is the following:
+> >```json
+> >"doPassword": true,
+> >"doIPcollection": true,
+> >"maxAttempts": 3,
+> >"lockTime" : 60,
+> >"enableLockdown" : false
+> > ```
+> > These are the config attributes for the security subclass of PDAS.
+> > Change the following:
+> > ```json
+> > "enableLockdown" : true
+> > ```
+> > Run the program, you should see a new output in the terminal. The correct output should be the following:
+> > ```
+> > "[-][ ]Program Locked. Contact System Admin[-][ ]"
+> > ```
+> > The program will not respond to any keyboard input. KeyboardInterupt will not affect the security at this stage; due to PDAS checking the CPDAS file on initialization.
+> >
+> > Now, go back to main.py and add the following line of code:
+> > > ```python
+> > >   CollectIP()
+> > > ```
+> > > Now run the program. The result should be a password screen if you have a Secret named "PASSWORD". If you do not have one declared when running, you should get a WARN output with the following message:
+> > > ```
+> > > WARN: PASSWORD ENV NOT DECLARED! ABORTING
+> > > ```
+> > > PDAS is configured to ignore the password prompt IF one or more of the following conditions are met.
+> > > 1. No Secret named password is declared.
+> > > 2. CPDAS.json's "doPassword" attribute is set to "false"
+> > >
+## Syntax:
+*** 
+#### Logging Subclass:
+>```
+>Info(message=str*)
+> ^     ^
+> |     | 
+> |     Message to Log under INFO Designation.   
+> Function Name
+>
+> Info("Demo") -> "INFO: Demo"
+> ```
+>```
+>Okay(message=str*)
+> ^     ^
+> |     | 
+> |     Message to Log under OKAY Designation.   
+> Function Name
+>
+> Okay("Demo") -> "OKAY: Demo"
+> ```
+>```
+>Warn(message=str*)
+> ^     ^
+> |     | 
+> |     Message to Log under WARN Designation.   
+> Function Name
+>
+> Warn("Demo") -> "WARN: Demo"
+> ```
+>```
+>Fatal(message=str*, raise=bool)
+> ^     ^             ^
+> |     |             |
+> |     |             Stops/Continues the program.
+> |     |
+> |     Message to Log under OKAY Designation.
+> |
+> Function Name
+>
+> Fatal("Demo") -> "FATAL: Demo" <- Will not halt program
+> Fatal("Demo", True) -> "FATAL: Demo" -> Exception. \_Halts Program
+> ```
+>```
+>Recall(Amount=All)
+> ^     ^
+> |     | 
+> |     Amount to return. ( UNUSED CURRENTLY )   
+> Function Name
+>
+> Recall() -> "LOG_LINE_TYPE: LOG" & Log Count
+> ```
+
+> ### Security Subclass:
+>
+> ```
+> CollectIP()
+> ^        ^
+> |        |
+> |       No Arg's 
+> Function Name
+>
+> CollectIP() -> Logs in Audit.txt & loads password prompt.
+> ```
+>
+> ```
+> TimeOUT(TIMEDELAY=config["lockTime"])
+> ^         ^
+> |         |
+> |         |
+> |        Default Argument if presented arguments return Null.
+> Function Name
+>
+> TimeOUT() -> Locks screen for time set in CPDAS.json
+> TimeOUT(5) -> Locks screen for 5 Minutes. Bypasses CPDAS.json.
+> ```
+
+
+
+
+## PDAS.py
+
+```python
+from colorama import Fore, Back, Style
+import os, time, socket, json
+
+with open("src/PDAS/CPDAS.json", "r") as jsonfile:
+  config = json.load(jsonfile)
+
+
+def LD():
+  while config['enableLockdown']:
+    print(Fore.RED, "[-][ ]Program Locked. Contact System Admin[-][ ]")
+    time.sleep(1)
+    os.system("clear")
+    print(Fore.BLUE, "[ ][-]Program Locked. Contact System Admin[ ][-]")
+    time.sleep(1)
+    os.system("clear")
+    with open(os.path.abspath("PDAS.json"), "r") as jsonfile:
+      con = json.load(jsonfile)
+    if con['enableLockdown'] == False:
+      break
+
+
+def Time():
+  from datetime import datetime
+  now = datetime.now()
+  current_time = now.strftime("%H:%M:%S")
+  return current_time
+
+
+class PDAS:
+  """Main Class of PDAS. """
+  pass
+  audit = open("Audit.txt", "a")
+  audit.write(f'\n ------NEW RUN @ {Time()} ---- \n ')
+  audit.write(
+    f"Current Configuration Values: \n > Password Enabled?: {config['doPassword']} \n > IP Collection?: {config['doIPcollection']} \n > Audit Enabled?: {config['doAudit']} \n END CCV \n")
+  if config['enableLockdown'] == True:
+    audit.write(f"Program Entered LOCKDOWN @ {Time()}.")
+    audit.close()
+    LD()
+
+  audit.close()
+
+  def __init__(self):
+
+    pass
+
+  class System:
+    """Subclass for Security, Logging, Console, Login_Monitoring. """
+    pass
+
+    def __init__(self):
+
+      print("Directory: " + str(PDAS.System))
+
+    class Security:
+      """Security Class. Handles Passwords and logging."""
+      pass
+
+      def timeout(TIMEDELAY=config["lockTime"]):
+        """Priority 3 Notifcation: Info -> Okay -> Warning -> Fatal"""
+        pass
+        try:
+          Warn(f"Security Lock for {int(TIMEDELAY)} Minutes")
+          time.sleep(int(TIMEDELAY) * 60)
+          PDAS.System.Security.Lock()
+        except KeyboardInterrupt:
+          pass
+          print("\n")
+          Warn("You cannot do that! Time Restarted.")
+          TimeOUT()
+
+      def Lock():
+        """Password Protection. Takes password from OS.env under the name "PASSWORD" """
+        pass
+        try:
+          Password = os.environ["PASSWORD"]
+        except:
+          Warn("PASSWORD ENV NOT DECLARED! ABORTING")
+        if config['doPassword'] == False or os.getenv('PASSWORD') is None:
+          Info("Password Login Aborted.")
+        else:
+          attempts = int(config['maxAttempts'])
+          if attempts < 0:
+            attempts = attempts * -1
+          os.system("clear")
+          Info(f"PASSWORD PROTECTED! \n You have {attempts} attempts to enter a password match.")
+          while attempts != 0:
+            submitted_pass = input("Enter Password: ")
+            if submitted_pass != Password:
+              attempts = attempts - 1
+              Warn(f"Incorrect! You have {attempts} Remaining Attempt(s)")
+            if submitted_pass == Password:
+              os.system("clear")
+              Okay("Access Granted!")
+              break
+          if attempts == 0:
+            PDAS.System.Security.timeout()
+          if attempts > 0:
+            return 1
+            pass
+
+      class Login_Monitoring:
+        """Handles Audit for Logins."""
+        pass
+
+        def __init__(self):
+          print("Handles Logging \n PDAS.System.Console.Log")
+
+        def collectIP():
+          hostname = socket.gethostname()
+          ip_address = socket.gethostbyname(hostname)
+          if config["doIPcollection"] == True:
+            Warn(
+              f"Host with directory: {hostname} has logged on with IP_Address {ip_address} at {Time()}. {hostname} has been sent to password verification. Secure devices now.")
+            condition = Lock()
+            if condition == 1:
+              Okay(f"Device {ip_address} : {hostname} Verified @ {Time()}")
+            else:
+              Info(
+                f"Host with directory: {hostname} has logged on with IP_Address {ip_address} at {Time()}")
+              pass
+          else:
+            Warn(
+              f"Host with directory: {hostname} has logged on with IP_Address {ip_address} at {Time()}. {hostname}")
+            pass
+
+    class Console:
+      """Subclass containing the subclass(s): Log."""
+      pass
+
+      class Log:
+        """Subclass containing logging utility such as Audit and terminal error return functionality. """
+        pass
+
+        def __init__(self):
+          print("Handles Logging \n PDAS.System.Console.Log")
+
+        def Warn(arg):
+          """Priority 2 Notifcation: Info -> Okay -> Warning -> Fatal"""
+          pass
+          audit = open("Audit.txt", "a+")
+          print(Fore.RED + f'WARN: {arg}')
+          audit.write(f'WARNING @ {Time()} : {arg} \n')
+          print(Style.RESET_ALL)
+          audit.close()
+
+        def Info(arg):
+          """Priority 4 Notifcation: Info -> Okay -> Warning -> Fatal"""
+          pass
+          audit = open("Audit.txt", "a+")
+          print(Fore.BLUE + f'INFO: {arg}')
+          audit.write(f'INFO @ {Time()} : {arg} \n')
+          print(Style.RESET_ALL)
+          audit.close()
+
+        def OK(arg):
+          """Priority 3 Notifcation: Info -> Okay -> Warning -> Fatal"""
+          pass
+          audit = open("Audit.txt", "a+")
+          print(Fore.GREEN + f'OKAY: {arg}')
+          audit.write(f'OKAY @ {Time()} : {arg} \n')
+          print(Style.RESET_ALL)
+          audit.close()
+
+        def Fatal(arg, boolraise=False):
+          """Priority 1 Notifcation: Info -> Okay -> Warning -> Fatal. \n Allows you to choose to stop the program and log or log and pass."""
+          pass
+          audit = open("Audit.txt", "a+")
+          print(Fore.WHITE + Back.RED + f'FATAL: {arg}')
+          audit.write(f'FATAL ERROR: @ {Time()} : {arg} \n')
+          print(Style.RESET_ALL)
+          if boolraise:
+            audit.write(f'\n Fatal Error Raised')
+            audit.close()
+          else:
+            pass
+
+        def Recall(amount=all):
+          """Returns all the logs in Audit.txt. Amount is currently unused."""
+          pass
+          try:
+            y = open("Audit.txt", "r")
+            Lines = y.readlines()
+            for x in Lines:
+              if "WARNING" in x:
+                print(Fore.RED + Back.WHITE + x.strip())
+              if "FATAL" in x:
+                print(Fore.WHITE + Back.RED + x.strip())
+              if "INFO" in x:
+                print(Fore.BLUE + Back.WHITE + x.strip())
+              if "OKAY" in x:
+                print(Fore.GREEN + Back.WHITE + x.strip())
+            print(Style.RESET_ALL)
+            print(f'There was {len(Lines)} Logs in Audit.')
+            print(Style.RESET_ALL)
+            y.close()
+          except:
+
+            print("Error")
+
+        def Purge(Force=False):
+          """Purges Audit.txt. Boolean Force allows you to determine if the function asks before purging; or purge without asking. Static and set to false by default."""
+          pass
+          try:
+            if Force != False and Force != True:
+              Warn("Only Accepts True False. Aborting Purge of Audit.")
+
+            else:
+              if Force:
+                try:
+                  aud = open("Audit.txt", "w+")
+                  aud.write(" ")
+                  aud.close()
+                  Info("Complete")
+                except BaseException as error:
+                  Warn(f"{str(error)}")
+              else:
+                action = input("Are you sure you wish to purge audit? Y/N")
+                if action == "Y":
+                  try:
+                    aud = open("Audit.txt", "w+")
+                    aud.write(" ")
+                    aud.close()
+                    Info("Complete. Reason: User Requested Purge.")
+                  except BaseException as error:
+                    Info("USER TRIED PURGE")
+                    Warn(str(error))
+                if action == "N":
+                  Info("Skipping Audit Purge")
+                if action != "Y" and action != "N":
+                  Warn("Must be Y or N.")
+
+
+          except BaseException as error:
+            Warn({str(error)})
+
+
+## Pre-Declares Shortened  
+pdas = PDAS.System.Console.Log
+Warn = PDAS.System.Console.Log.Warn
+Info = PDAS.System.Console.Log.Info
+Okay = PDAS.System.Console.Log.OK
+Fatal = PDAS.System.Console.Log.Fatal
+Recall = PDAS.System.Console.Log.Recall
+Purge = PDAS.System.Console.Log.Purge
+Lock = PDAS.System.Security.Lock
+TimeOUT = PDAS.System.Security.timeout
+CollectIP = PDAS.System.Security.Login_Monitoring.collectIP
+Lockdown = LD()
+```
