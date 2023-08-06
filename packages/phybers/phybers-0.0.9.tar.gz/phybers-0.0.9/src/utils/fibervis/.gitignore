@@ -1,0 +1,17 @@
+# ignore the python compiled files
+# *.pyc
+**/__pycache__/
+
+# ignore the object and library files from CExtend c files
+Framework/CExtend/*.o
+Framework/CExtend/*.so
+
+# ignore tmp dir
+tmp/
+
+# ignore mac os files
+*.DS_Store
+
+*.sublime-project
+*.sublime-workspace
+
