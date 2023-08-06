@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Artemix/__about__.py
+Artemix/__init__.py
+Artemix2.egg-info/PKG-INFO
+Artemix2.egg-info/SOURCES.txt
+Artemix2.egg-info/dependency_links.txt
+Artemix2.egg-info/requires.txt
+Artemix2.egg-info/top_level.txt
