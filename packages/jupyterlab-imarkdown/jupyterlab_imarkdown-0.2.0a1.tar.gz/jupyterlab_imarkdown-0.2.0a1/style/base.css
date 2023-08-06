@@ -1,0 +1,54 @@
+/*The element wrapper must be invisible.*/
+/*Note that on Safari, this might break accessibility?*/
+.im-RenderedExpression {
+  display: contents;
+}
+
+/* Let most elements be inline */
+.im-RenderedExpression > * {
+  display: inline;
+}
+
+/*Helper classes*/
+.vertical-align-top {
+  vertical-align: top;
+}
+.vertical-align-text-top {
+  vertical-align: text-top;
+}
+.vertical-align-middle {
+  vertical-align: middle;
+}
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+.vertical-align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+/*Render error messages properly*/
+.im-RenderedExpression > .jp-RenderedText[data-mime-type='application/vnd.jupyter.stdout'],
+.im-RenderedExpression > .jp-RenderedText[data-mime-type='application/vnd.jupyter.stderr']
+{
+  padding-left: unset;
+}
+.im-RenderedExpression > .jp-RenderedText[data-mime-type='application/vnd.jupyter.stdout'] pre,
+.im-RenderedExpression > .jp-RenderedText[data-mime-type='application/vnd.jupyter.stderr'] pre
+{
+  background-color: unset;
+  display: inline-block;
+}
+
+/* style taken from ipywidgets/packages/base/css/index.css */
+.im-RenderedExpressionError::before {
+  content: '\f127'; /* fa-chain-broken */
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--jp-warn-color0);
+  padding: 3px;
+  align-self: flex-start;
+}
