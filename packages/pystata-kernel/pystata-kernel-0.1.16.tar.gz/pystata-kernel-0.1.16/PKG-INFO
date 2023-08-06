@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: pystata-kernel
+Version: 0.1.16
+Summary: A simple Jupyter kernel for Stata based on pystata
+Home-page: https://github.com/ticoneva/pystata-kernel
+Author: Vinci Chow
+Author-email: ticoneva@gmail.com
+License: UNKNOWN
+Description: ==============
+        pystata-kernel
+        ==============
+        
+        A simple Jupyter kernel for Stata based on *pystata* (https://www.stata.com/python/pystata/). Requires Stata 17 or above.
+        Consider *stata_kernel* (https://github.com/kylebarron/stata_kernel) instead if you have an older version of Stata. 
+        
+        Installation
+        ------------
+        
+        See https://github.com/ticoneva/pystata-kernel for instructions.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
