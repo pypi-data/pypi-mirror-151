@@ -1,0 +1,2 @@
+[console_scripts]
+ptdos = ptdos.ptdos:main
