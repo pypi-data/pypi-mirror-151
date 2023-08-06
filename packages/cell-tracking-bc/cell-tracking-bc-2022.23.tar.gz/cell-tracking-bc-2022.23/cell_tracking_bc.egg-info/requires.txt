@@ -1,0 +1,15 @@
+blosc
+imageio
+matplotlib
+mrc
+networkx
+numpy
+pca-b-stream
+Pillow
+plotext
+rich
+scikit-image
+scipy
+tensorflow
+tifffile
+xlsxwriter
