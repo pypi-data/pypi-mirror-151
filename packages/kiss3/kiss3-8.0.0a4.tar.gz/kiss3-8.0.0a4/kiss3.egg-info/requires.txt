@@ -1,0 +1,3 @@
+attrs>20
+bitarray>2.5.0
+pyserial-asyncio>=0.6
