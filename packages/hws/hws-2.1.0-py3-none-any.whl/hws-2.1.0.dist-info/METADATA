@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: hws
+Version: 2.1.0
+Summary: Python toolbox for analysing Hartmann Wavefront sensor data for the LIGO and Virgo detectors
+Home-page: https://git.ligo.org/HWS/hws
+Author-email: peter.veitch@adelaide.edu.au
+License: GPL
+Project-URL: Bug Tracker, https://git.ligo.org/HWS/hws/issues
+Project-URL: Source Code, https://git.ligo.org/HWS/hws
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: h5py
+Requires-Dist: scikit-image
+
+# Hartmann Wavefront software (HWS)
+
+The HWS is software designed to process and operate the Hartmann Wavefront Sensing system at the LIGO and Virgo detectors.
+
+As of 19th May 2022 (v2.1.0) the HWS source code was made open source by Peter Veitch.
+
+Please direct packaging questions to daniel.d.brown@adelaide.edu.au.
+
+# Fixing HWS
+
+Changes should be submitted via merge requests. Merge requests should pass all tests and
+requires approval. Version number must be bumped up manually. Each time a new a Wheel package
+version is needed the version number must be bumped manually in `setup.py`.
+
+# Releasing new version to Pypi
+
+General advice can be found for releasing a package here: https://packaging.python.org/en/latest/tutorials/packaging-projects
+
+```
+rm -rf dist/hws-* # delete all existing distributions that have been built
+python -m build
+python -m twine upload dist/*
+```
+This will require access to a pypi account hosting the project.
