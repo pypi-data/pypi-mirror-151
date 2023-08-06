@@ -1,0 +1,12 @@
+nonebot/adapters/feishu/__init__.py,sha256=AqvzSVW-umb7SpA9kk25Yzga-1yEdJnma_wl9Dd3YI8,597
+nonebot/adapters/feishu/adapter.py,sha256=IN2rJ3XZTQmQBuFORJuFtVjcZ6Le7FI67OeRxsmXlfE,12375
+nonebot/adapters/feishu/bot.py,sha256=77VekICgu9HTU05x4Sty9XdD3uuwe0F0XSi10rZPDqE,6502
+nonebot/adapters/feishu/config.py,sha256=5JIr_6iNlDcbyMxG9kgI2dm5GwzoyAzcCiekEqKDOXQ,1393
+nonebot/adapters/feishu/event.py,sha256=FNjZyB99uDZNLOxiN-utZTVkfPGmTaeXQaqyULwbhDA,19770
+nonebot/adapters/feishu/exception.py,sha256=0Qfg37tssbPeJst8k3AHIKXwNyYpUcA72PmtalXipvg,1373
+nonebot/adapters/feishu/message.py,sha256=R9n3SrSmOLAT5VSsED8CvlYGWAF4wus8j1hRZ6MEJfc,8305
+nonebot/adapters/feishu/utils.py,sha256=FeCCnGrfwB7FfohikUrjpmUAsY0XzzZrhurz2UGHbaU,1499
+nonebot_adapter_feishu-2.0.0b2.dist-info/LICENSE,sha256=4EZBnkZPQYBvtO2KFGaUQHTO8nZ26pGeaCFchdBq_AE,1064
+nonebot_adapter_feishu-2.0.0b2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nonebot_adapter_feishu-2.0.0b2.dist-info/METADATA,sha256=87cpH_z78c0oGUUAzq8LVDXPg2dNErd6YvB5VxJKZw4,1344
+nonebot_adapter_feishu-2.0.0b2.dist-info/RECORD,,
