@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vcolorpicker
+Version: 1.4.0
+Summary: Open a visual vcolorpicker from any project.
+Home-page: https://github.com/nlfmt/pyqt-colorpicker
+Author: nlfmt
+Author-email: nlfmt@gmx.de
+License: MIT
+Keywords: python,color,gui,colorpicker,visual
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+
