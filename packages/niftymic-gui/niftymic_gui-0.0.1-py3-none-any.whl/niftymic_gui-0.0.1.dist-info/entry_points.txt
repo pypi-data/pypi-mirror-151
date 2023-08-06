@@ -1,0 +1,3 @@
+[console_scripts]
+niftymic-gui=niftymic_gui.main:main
+
