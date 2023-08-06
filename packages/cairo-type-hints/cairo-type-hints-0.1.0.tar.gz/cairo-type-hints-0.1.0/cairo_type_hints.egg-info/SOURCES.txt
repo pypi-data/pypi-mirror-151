@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cairo-type-hints/__init__.py
+cairo-type-hints/console.py
+cairo-type-hints/generate.py
+cairo-type-hints/parser.py
+cairo_type_hints.egg-info/PKG-INFO
+cairo_type_hints.egg-info/SOURCES.txt
+cairo_type_hints.egg-info/dependency_links.txt
+cairo_type_hints.egg-info/top_level.txt
