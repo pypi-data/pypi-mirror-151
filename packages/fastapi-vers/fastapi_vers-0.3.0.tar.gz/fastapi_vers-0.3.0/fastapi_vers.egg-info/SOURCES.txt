@@ -1,0 +1,9 @@
+LICENSE
+README.md
+fastapi_vers.py
+setup.py
+fastapi_vers.egg-info/PKG-INFO
+fastapi_vers.egg-info/SOURCES.txt
+fastapi_vers.egg-info/dependency_links.txt
+fastapi_vers.egg-info/requires.txt
+fastapi_vers.egg-info/top_level.txt
