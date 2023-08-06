@@ -1,0 +1,8 @@
+biopython
+cutadapt>=4.0
+matplotlib
+networkx
+pydot
+rapidfuzz
+sqlalchemy
+xlsxwriter
