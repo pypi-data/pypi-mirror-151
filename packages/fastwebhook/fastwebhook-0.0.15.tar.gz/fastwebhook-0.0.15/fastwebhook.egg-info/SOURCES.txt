@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fastwebhook/__init__.py
+fastwebhook/_nbdev.py
+fastwebhook/core.py
+fastwebhook.egg-info/PKG-INFO
+fastwebhook.egg-info/SOURCES.txt
+fastwebhook.egg-info/dependency_links.txt
+fastwebhook.egg-info/entry_points.txt
+fastwebhook.egg-info/not-zip-safe
+fastwebhook.egg-info/requires.txt
+fastwebhook.egg-info/top_level.txt
