@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: oscillator-gym
+Version: 0.1.0
+Summary: A simple harmonic oscillator gym environment
+Author: Onno Eberhard
+Author-email: onnoeberhard@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: gym (>=0.23.1,<0.24.0)
+Requires-Dist: numpy (>=1.22.4,<2.0.0)
+Requires-Dist: pygame (>=2.1.2,<3.0.0)
