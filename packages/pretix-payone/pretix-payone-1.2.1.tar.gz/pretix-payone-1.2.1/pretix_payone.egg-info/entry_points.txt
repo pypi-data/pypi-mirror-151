@@ -1,0 +1,2 @@
+[pretix.plugin]
+pretix_payone = pretix_payone:PretixPluginMeta
