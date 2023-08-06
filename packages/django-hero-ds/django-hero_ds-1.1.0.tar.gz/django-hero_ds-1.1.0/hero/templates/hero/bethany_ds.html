@@ -1,0 +1,25 @@
+{% extends 'hero/_common.html' %}
+{% load static %}
+
+
+{% block hero %}
+<!-- ======= Hero Section ======= -->
+{% for item in hero %}
+<style>
+  #hero {
+  background: url("{% static 'img/hero/'|add:item.bg|add:'.jpg' %}") center center;
+}
+</style>
+
+<section id="hero" class="d-flex align-items-center">
+  <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+    {% autoescape off %}
+    <h1>{{ item.title }}</h1>
+    <h2>{{ item.slogan }}</h2>
+    {% endautoescape %}
+    <a href="{{ item.btn.link }}" class="btn-get-started scrollto">{{ item.btn.title }}</a>
+  </div>
+</section>
+{% endfor %}
+<!-- End Hero -->
+{% endblock %}
