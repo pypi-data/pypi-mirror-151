@@ -1,0 +1,11 @@
+prefix=/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/pip-req-build-vwfg1oim/build/lib.macosx-10.9-x86_64-3.10
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: networkit
+Description: networkit
+URL: http://networkit.github.io
+Version: 10.0
+Cflags: -I${includedir}  -DNETWORKIT_RELEASE_LOGGING
+Libs: -L${libdir} -lnetworkit
