@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: fitmulticell
+Version: 0.0.8
+Summary: Fit multi-cellular and multi-scale models
+Home-page: https://gitlab.com/fitmulticell/fit
+Download-URL: https://gitlab.com/fitmulticell/fit/-/releases
+Author: The FitMultiCell developers
+Author-email: emad.alamoudi@uni-bonn.de
+Maintainer: Emad Alamoudi
+Maintainer-email: emad.alamoudi@uni-bonn.de
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://gitlab.com/fitmulticell/fit/-/issues
+Project-URL: Documentation, https://fitmulticell.readthedocs.io
+Project-URL: Changelog, https://fitmulticell.readthedocs.io/en/latest/changelog.html
+Keywords: multi-cellular,multi-scale,abc,approximate bayesian computation,inference,pyabc,morpheus
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: test
+Provides-Extra: doc
+License-File: LICENSE.txt
+
+FitMultiCell
+============
+
+.. figure:: https://gitlab.com/fitmulticell/fit/raw/main/doc/logo/logo_long.svg.png
+   :alt: FitMultiCell logo
+   :width: 60 %
+   :align: center
+
+|pypi| |docs| |ci| |codecov| |black|
+
+Fitting of multi-cellular models combining the tools `morpheus <https://gitlab.com/morpheus.lab/morpheus>`_ and `pyABC <https://github.com/icb-dcm/pyabc>`_.
+
+- **Documentation:** https://fitmulticell.readthedocs.io
+- **Contact:** https://fitmulticell.readthedocs.io/en/latest/contact.html
+- **Source code:** https://gitlab.com/fitmulticell/fit
+- **Examples:** https://fitmulticell.readthedocs.io/en/latest/example.html
+- **Bug reports:** https://gitlab.com/fitmulticell/fit/issues
+
+.. |pypi| image:: https://badge.fury.io/py/fitmulticell.svg
+   :target: https://badge.fury.io/py/fitmulticell
+   :alt: PyPI
+
+.. |docs| image:: https://readthedocs.org/projects/fitmulticell/badge/?version=latest
+   :target: http://fitmulticell.readthedocs.io/en/latest/
+   :alt: Docs
+
+.. |ci| image:: https://gitlab.com/fitmulticell/fit/badges/main/pipeline.svg
+   :target: https://gitlab.com/fitmulticell/fit/-/commits/main
+   :alt: CI pipeline
+
+.. |codecov| image:: https://codecov.io/gl/fitmulticell/fit/branch/main/graph/badge.svg?token=EIW43PMPMF
+   :target: https://codecov.io/gl/fitmulticell/fit
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Code style: Black
