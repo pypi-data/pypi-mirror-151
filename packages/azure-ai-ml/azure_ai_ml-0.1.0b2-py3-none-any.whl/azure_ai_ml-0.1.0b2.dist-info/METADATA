@@ -1,0 +1,104 @@
+Metadata-Version: 2.0
+Name: azure-ai-ml
+Version: 0.1.0b2
+Summary: Microsoft Azure Machine Learning Client Library for Python
+Home-page: https://github.com/Azure/azure-sdk-for-python
+Author: Microsoft Corporation
+Author-email: azuremlsdk@microsoft.com
+Maintainer: Microsoft
+Maintainer-email: azuremlsdk@microsoft.com
+License: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst
+Provides-Extra: designer
+Requires-Dist: pyyaml (<7.0.0,>=5.1.0)
+Requires-Dist: azure-identity
+Requires-Dist: msrest (>=0.6.18)
+Requires-Dist: azure-core (!=1.22.0,<2.0.0,>=1.8.0)
+Requires-Dist: azure-mgmt-core (<2.0.0,>=1.2.0)
+Requires-Dist: marshmallow (<4.0.0,>=3.5)
+Requires-Dist: jsonschema (<5.0.0,>=4.0.0)
+Requires-Dist: tqdm (<=4.63.0)
+Requires-Dist: colorama (<=0.4.4)
+Requires-Dist: pyjwt (<=2.3.0)
+Requires-Dist: azure-storage-blob (<=12.9.0,>=12.5.0)
+Requires-Dist: azure-storage-file-share (<13.0.0)
+Requires-Dist: pydash (<=4.9.0)
+Requires-Dist: pathspec (==0.9.*)
+Requires-Dist: isodate
+Requires-Dist: docker
+Requires-Dist: azure-common (<2.0.0,>=1.1)
+Requires-Dist: typing-extensions (<4.0.0,>=3.10)
+Requires-Dist: applicationinsights (<=0.11.10)
+Provides-Extra: designer
+Requires-Dist: mldesigner; extra == 'designer'
+
+Azure Machine Learning Python SDK v2
+==============================================================================
+
+.. contents::
+    :depth: 1
+    :local:
+
+Overview
+------------------------------------------------------------------------------
+The azure-ai-ml is a Python SDK package (aka AML SDKv2) for Azure Machine Learning, which allows users to:
+
+- Submit training jobs
+- Manage data, models, environments
+- Perform managed inferencing (real time and batch)
+- Stitch together multiple tasks and production workflows using Azure ML pipelines
+
+Use cases for SDK v2
+------------------------------------------------------------------------------
+The SDK v2 is useful in the following scenarios:
+
+1. Move from simple to complex concepts incrementally. SDK v2 allows you to:
+    - Construct a single command.
+    - Add a hyperparameter sweep on top of that command
+    - Add the command with various others into a pipeline one after the other.
+
+    This construction is useful, given the iterative nature of machine learning.
+
+2. Reusable components in pipelines
+
+    Azure ML introduces `components <https://docs.microsoft.com/azure/machine-learning/concept-component.md>`_ for managing and reusing common logic across pipelines. This functionality is available only via CLI v2 and SDK v2.
+
+3. Managed inferencing
+
+    Azure ML offers `endpoints <https://docs.microsoft.com/azure/machine-learning/concept-endpoints.md>`_ to streamline model deployments for both real-time and batch inference deployments. This functionality is available only via CLI v2 and SDK v2.
+
+
+
+
+Get started with SDK v2
+------------------------------------------------------------------------------
+- Read through this `Install and set up SDK (v2) <https://aka.ms/sdk-v2-install>`_
+- Read through this `Train models with the Azure ML Python SDK v2 (preview) <https://docs.microsoft.com/azure/machine-learning/how-to-train-sdk>`_
+- Read through this `Tutorial: Create production ML pipelines with Python SDK v2 (preview) in a Jupyter notebook <https://docs.microsoft.com/azure/machine-learning/tutorial-pipeline-python-sdk.md>`_
+
+Setup
+------------------------------------------------------------------------------
+    Install the azure-ai-ml package:
+
+        .. code-block:: bash
+
+            pip install --pre azure-ai-ml
+
+
+Change Log
+----------
+
+Initial prerelease
+=========================
+
+- initial prerelease
