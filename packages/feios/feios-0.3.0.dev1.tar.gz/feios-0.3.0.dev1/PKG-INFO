@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: feios
+Version: 0.3.0.dev1
+Summary: The feios main module
+Home-page: https://github.com/devoter-fyc/fei-ros
+Author: fyc
+Author-email: fycsfls_winter@126.com
+Project-URL: Bug Tracker, https://github.com/devoter-fyc/fei-ros/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### FEIOS
+* An os still indev.
+* Developed by fyc,it is remade.
+
+### Changelog
+#### Changelog @ 0.3.0dev1
+* Added support back to py3.5.
+* Fixed some IndexError.

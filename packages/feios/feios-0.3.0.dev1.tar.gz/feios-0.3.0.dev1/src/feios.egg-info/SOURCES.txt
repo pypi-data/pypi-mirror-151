@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/feios/__init__.py
+src/feios/__main__.py
+src/feios/feios.py
+src/feios.egg-info/PKG-INFO
+src/feios.egg-info/SOURCES.txt
+src/feios.egg-info/dependency_links.txt
+src/feios.egg-info/requires.txt
+src/feios.egg-info/top_level.txt
