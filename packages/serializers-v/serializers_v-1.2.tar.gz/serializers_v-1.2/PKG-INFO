@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: serializers_v
+Version: 1.2
+Summary: library for python serialization
+Home-page: https://github.com/GutorovPavel
+Author: Gutorov Pavel
+Author-email: pavelgutorovgut@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Lab2 by visshiisort 053501
+
