@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: batspp
+Version: 1.1.0
+Summary: This process and run shell style tests using bats-core
+Home-page: https://github.com/LimaBD/batspp
+Author: Tom O'Hara, Bruno Daniel Lima
+Author-email: tomasohara@gmail.com, bdl1998@hotmail.com
+Project-URL: Bug Tracker, https://github.com/LimaBD/batspp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BATSPP
+
+This process and run shell style tests using bats-core
+
+
+## Instalation
+TODO: WORK-IN-PROGRESS
+
+
+## Usage
+TODO: WORK-IN-PROGRESS
+
+
+## How to contribute
+TODO: WORK-IN-PROGRESS
+
+
+## Contributors
+TODO: WORK-IN-PROGRESS
