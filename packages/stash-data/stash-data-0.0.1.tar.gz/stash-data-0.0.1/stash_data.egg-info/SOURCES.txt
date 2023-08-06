@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+stash/__init__.py
+stash_data.egg-info/PKG-INFO
+stash_data.egg-info/SOURCES.txt
+stash_data.egg-info/dependency_links.txt
+stash_data.egg-info/requires.txt
+stash_data.egg-info/top_level.txt
