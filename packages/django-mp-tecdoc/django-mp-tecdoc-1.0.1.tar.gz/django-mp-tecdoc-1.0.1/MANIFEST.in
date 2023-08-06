@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include product_tecdoc/locale *
+recursive-include product_tecdoc/templates *
+prune *.pyc
