@@ -1,0 +1,1 @@
+Very much a work in progress. Eventually will be a module using plotly, pandas, numpy and matplotlib for matrix mathematical visualizations.

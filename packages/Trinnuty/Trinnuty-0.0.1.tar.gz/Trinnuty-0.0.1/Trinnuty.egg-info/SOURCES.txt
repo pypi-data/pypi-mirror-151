@@ -1,0 +1,10 @@
+README.txt
+pyproject.toml
+setup.py
+Trinnuty/Trinnuty.py
+Trinnuty/__init__.py
+Trinnuty.egg-info/PKG-INFO
+Trinnuty.egg-info/SOURCES.txt
+Trinnuty.egg-info/dependency_links.txt
+Trinnuty.egg-info/requires.txt
+Trinnuty.egg-info/top_level.txt
