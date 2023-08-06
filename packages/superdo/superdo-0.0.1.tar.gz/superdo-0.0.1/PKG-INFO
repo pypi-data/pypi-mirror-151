@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: superdo
+Version: 0.0.1
+Summary: The Super Way To Do Things.
+Home-page: UNKNOWN
+Author: CodeCosmic
+Author-email: <pycodermaximos@gmail.com>
+License: UNKNOWN
+Keywords: python,math,superdo,eazy,easy,better
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Welcome to superdo. Superdo aims to make your code look better.
+
+To import the module: import superdo as sd
+
+Commands:
+sd.ctime() // Current Time
+sd.wait(numOfSeconds) // = time.sleep()
+sd.cmd(Command) // Run a CMD command from python
+sd.file(Name, Extension) // Makes a new file
+sd.ip() // returns IP address
+sd.libs() // = pip freeze command
+sd.mpower(Number) // find power of a num
+sd.pipget(Package) // = pip install Package
+sd.mfact(Num) // Factorial
+sd.mvalue(Num1, Num2) // Greater or Less Than
+sd.rannum(Start, End) // Random Number
+
+
