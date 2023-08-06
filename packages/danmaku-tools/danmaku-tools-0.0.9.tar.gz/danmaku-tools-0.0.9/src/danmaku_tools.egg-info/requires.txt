@@ -1,0 +1,7 @@
+matplotlib
+numpy
+scipy
+python-dateutil
+srt
+tqdm
+textrank4zh
