@@ -1,0 +1,7 @@
+tqdm
+langdetect
+requests
+beautifulsoup4
+
+# optional:
+# ray
