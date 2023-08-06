@@ -1,0 +1,17 @@
+blobclass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blobclass/blob_class.py,sha256=IwQHXoCBluWN2JZwaU_pkag8L2WmQ7ZviDLK3OHyqbs,4574
+blobwork/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blobwork/blob_work.py,sha256=5TQwyiiQulC2jFklycCrize4waI_cYnjWC_sv6VPcZY,5535
+blobworld/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blobworld/blob_world.py,sha256=4uS4E44Dnv8U8eVMkgNDnmWdvGcinolc9uIej5DTUn8,13888
+blobworld/blobicon.png,sha256=ubRjowBSocY496FV3nukGscpHVScfrIQT2J0U3hY4zQ,1956
+blobworld/end.wav,sha256=3pAIKTyzFU0fcL1bMh6wB-Q314VN94N5IoiVjVyTN9I,7980
+blobworld/kill.wav,sha256=aKMmLoeSZJG-dh6149vY07MqxvURtlTSeKtIJWVt4z0,2196
+blobworld/pause.wav,sha256=I2iTWg72KmaY3XvlnK1yuplj31jJ6WHLTQoJevQswGM,2894
+blobworld/start.wav,sha256=y9O63p3QpBK-O1jVIsCaAXJyyyG9ciotVTdadVsbg1w,16032
+blobworld-1.2.3.data/scripts/blob_world.py,sha256=_JmYE2nEzYpLrAFr2U1vCQOflxra14sepK9gIPaY8G8,13874
+blobworld-1.2.3.dist-info/LICENSE.md,sha256=zsie6WWjZvaVYsuCl3dXCyubmAiM6NL6wYaltmSTP-4,25150
+blobworld-1.2.3.dist-info/METADATA,sha256=yWTIbPbqiEdLhHjiuPJt10irHaDqwAO1w0XMngQmdpM,558
+blobworld-1.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+blobworld-1.2.3.dist-info/top_level.txt,sha256=COVWZg2kmnDO6_02t9ul1y59a06BejR4SGFV3d1jVjw,29
+blobworld-1.2.3.dist-info/RECORD,,
