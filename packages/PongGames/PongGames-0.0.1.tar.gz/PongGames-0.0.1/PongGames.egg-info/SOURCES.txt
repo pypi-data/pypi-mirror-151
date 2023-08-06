@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+setup.py
+PongGames/__init__.py
+PongGames.egg-info/PKG-INFO
+PongGames.egg-info/SOURCES.txt
+PongGames.egg-info/dependency_links.txt
+PongGames.egg-info/requires.txt
+PongGames.egg-info/top_level.txt

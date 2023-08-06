@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PongGames
+Version: 0.0.1
+Summary: A Simple Pong Game with Different Themes
+Home-page: UNKNOWN
+Author: DestructiveLone
+Author-email: lambo.blac123@gmail.com
+License: MIT
+Keywords: game
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
+
+Simple Game of Pong with Different themes from the user input.
+
