@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+django_autoutils/__init__.py
+django_autoutils/admin_utils.py
+django_autoutils/exceptions.py
+django_autoutils/html_tag.py
+django_autoutils/model_utils.py
+django_autoutils/utils.py
+django_autoutils.egg-info/PKG-INFO
+django_autoutils.egg-info/SOURCES.txt
+django_autoutils.egg-info/dependency_links.txt
+django_autoutils.egg-info/requires.txt
+django_autoutils.egg-info/top_level.txt
