@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/tms_django_router/__init__.py
+src/tms_django_router/apps.py
+src/tms_django_router/routers.py
+src/tms_django_router.egg-info/PKG-INFO
+src/tms_django_router.egg-info/SOURCES.txt
+src/tms_django_router.egg-info/dependency_links.txt
+src/tms_django_router.egg-info/requires.txt
+src/tms_django_router.egg-info/top_level.txt
