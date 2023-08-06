@@ -1,0 +1,4 @@
+[console_scripts]
+expam = expam.main:main
+expam_limit = expam.sandbox.main:main
+
