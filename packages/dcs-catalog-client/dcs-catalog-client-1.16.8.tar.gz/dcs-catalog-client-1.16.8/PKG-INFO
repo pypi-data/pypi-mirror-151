@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dcs-catalog-client
+Version: 1.16.8
+Summary: Catalog Next API.
+Home-page: https://github.com/unfoldingWord-dev/python-dcs-catalog-client
+Author-email: 
+Keywords: Swagger,Catalog Next API.
+
+    This documentation describes the Catalog Next API for all versions and other miscellaneous endpoints.  # noqa: E501
+    
