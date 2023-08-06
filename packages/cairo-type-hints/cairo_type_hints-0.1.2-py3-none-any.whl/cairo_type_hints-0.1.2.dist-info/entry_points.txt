@@ -1,0 +1,2 @@
+[console_scripts]
+compile-cairo-type-hints = cairo_type_hints.console:main
