@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: FlowViewer
+Version: 0.0.1
+Summary: Chrome浏览器数据包监听器。
+Home-page: https://gitee.com/g1879/FlowViewer
+Author: g1879
+Author-email: g1879@qq.com
+License: MIT
+Keywords: FlowViewer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: DrissionPage
+Requires-Dist: requests
+Requires-Dist: pychrome
+
+UNKNOWN
+
