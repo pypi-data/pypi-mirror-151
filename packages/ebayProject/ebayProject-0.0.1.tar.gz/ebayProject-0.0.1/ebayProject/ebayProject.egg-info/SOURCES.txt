@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.cfg
+ebayProject/ebayProject.egg-info/PKG-INFO
+ebayProject/ebayProject.egg-info/SOURCES.txt
+ebayProject/ebayProject.egg-info/dependency_links.txt
+ebayProject/ebayProject.egg-info/top_level.txt
