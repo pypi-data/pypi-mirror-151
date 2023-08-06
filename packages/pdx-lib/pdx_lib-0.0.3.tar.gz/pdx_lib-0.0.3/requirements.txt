@@ -1,0 +1,5 @@
+pycryptodome
+requests
+pyyaml
+cx_Oracle
+gitpython

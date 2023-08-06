@@ -1,0 +1,10 @@
+include README.md
+include requirements.txt
+prune demo
+graft pdx
+prune pdx_lib.egg-info
+graft docs
+global-exclude *.orig
+global-exclude *.log
+global-exclude *.swp
+global-exclude *.py[co]
