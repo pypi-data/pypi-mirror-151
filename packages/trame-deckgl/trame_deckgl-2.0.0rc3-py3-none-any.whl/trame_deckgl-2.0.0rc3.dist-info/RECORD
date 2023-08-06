@@ -1,0 +1,15 @@
+trame/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/deckgl.py,sha256=5ISczRvp_uFrK9J-cSKULYwayDHtw3yLn5g78-R1Jcs,34
+trame/widgets/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/widgets/deckgl.py,sha256=u3cUVmOQjRUAUY5PqiTbVqOk0jjj6CdqKDSy4yH6Aqw,138
+trame_deckgl/LICENSE,sha256=7Fap-G4xE-Cyd7HMGRilqOZqwDLU8CjM90hQGg2YAdU,1078
+trame_deckgl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_deckgl/module/__init__.py,sha256=BFmwnWu8JepWkxw5i16T4RlDEtZcYjEheyDJ2c4u9v4,382
+trame_deckgl/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_deckgl/widgets/deckgl.py,sha256=G4pgn1yf1qbZdnAT8g6k9uxPyoBRaL6jNABUUGB80-g,1246
+trame_deckgl-2.0.0rc3.dist-info/LICENSE,sha256=7Fap-G4xE-Cyd7HMGRilqOZqwDLU8CjM90hQGg2YAdU,1078
+trame_deckgl-2.0.0rc3.dist-info/METADATA,sha256=Xx34G7OqDeuj6FtlcW6zt7hX8vYAOtKcNkyrgKEPWvI,3480
+trame_deckgl-2.0.0rc3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trame_deckgl-2.0.0rc3.dist-info/top_level.txt,sha256=sHtUZ8mizc24TPFsFTAMk-GTgmB-ndBKEqQAT46WxPY,19
+trame_deckgl-2.0.0rc3.dist-info/RECORD,,
