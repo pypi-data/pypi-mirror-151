@@ -1,0 +1,12 @@
+hissdb/__init__.py,sha256=Ud_mgo9bUW1h5D_sdpBaoyrWode210wfS4dRRsrqpQU,206
+hissdb/column.py,sha256=HT-SItuCfXLzNZwl_8vkMPwE4xLLOZ4AU-apQnpZYRo,4165
+hissdb/db.py,sha256=NZpA-Ift23wYWxfoHlsarK2_Y5TwXEtxZdq4pgYe1uw,8759
+hissdb/expression.py,sha256=zCmt_rGY4g_RMAFcTNdIk3cxWzFyQXw-uZl_XNUJ9kA,15400
+hissdb/functions.py,sha256=dD47bBikLJuBWjORZPyf-5FiV2bZ4zIWtJD1uE3-h1U,6489
+hissdb/statements.py,sha256=1tx7_qNqmxyQqDWk9pSB0YIfMh7k_V4aSd_gGq9PFtI,18327
+hissdb/table.py,sha256=OyYLrTJVPPTPo96B88d10lj9o4odoU03TgJ6yXCnRuI,9510
+hissdb-0.0.5.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+hissdb-0.0.5.dist-info/METADATA,sha256=OhbbxRwfGOfF6czt0YklN4iwW4QF6pr4jD0L0WEofcQ,3562
+hissdb-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hissdb-0.0.5.dist-info/top_level.txt,sha256=TjtiHX_o1T06RaeAYPa2wteH_tFtJD8Zbjic0twBMHE,7
+hissdb-0.0.5.dist-info/RECORD,,
