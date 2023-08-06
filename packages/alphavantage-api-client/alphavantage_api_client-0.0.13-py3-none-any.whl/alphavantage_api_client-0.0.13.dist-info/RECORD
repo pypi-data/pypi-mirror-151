@@ -1,0 +1,11 @@
+alphavantage_api_client/__init__.py,sha256=qnTlX-cQbHSUhSEKlnsRIPMdpTkVZWKV7y7YoxLsTUk,62
+alphavantage_api_client/__main__.py,sha256=cap91c9AmW6O1cpCc1H8ZVnKbJqNrpQObcd3o3bmbco,977
+alphavantage_api_client/client.py,sha256=bDgcr0aOpRqm4H-NItZbq-vm2vqGKHM-MGq04UPaO9w,11176
+alphavantage_api_client/version.py,sha256=CPPPQtdj0x8RPK2m4AZHAS0xNcHBTFgGIjF6A9AkfBo,260
+alphavantage_api_client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alphavantage_api_client/tests/test_alphavantage_client.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alphavantage_api_client-0.0.13.dist-info/LICENSE,sha256=pqc8PsXCbEEWs5MXtWyNwJoJn2LeEvbHPtghrWzjYl8,1067
+alphavantage_api_client-0.0.13.dist-info/METADATA,sha256=MkIU5XLh_bx_24ITXuFPj4qw4gEUwQqr2zPPEoECOJY,3434
+alphavantage_api_client-0.0.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alphavantage_api_client-0.0.13.dist-info/top_level.txt,sha256=zC2GpjDMRDlj9SP0bJUlUsx2AcloJYHtsV5QLKrHI_8,24
+alphavantage_api_client-0.0.13.dist-info/RECORD,,
