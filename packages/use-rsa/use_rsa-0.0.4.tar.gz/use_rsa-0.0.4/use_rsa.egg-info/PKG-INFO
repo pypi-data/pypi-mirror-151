@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: use-rsa
+Version: 0.0.4
+Summary: encrypte your message
+Home-page: UNKNOWN
+Author: Andriatina Ranaivoson
+Author-email: andriatina@aims.ac.za
+License: UNKNOWN
+Description: encrypte your message
+Keywords: python,rsa
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
