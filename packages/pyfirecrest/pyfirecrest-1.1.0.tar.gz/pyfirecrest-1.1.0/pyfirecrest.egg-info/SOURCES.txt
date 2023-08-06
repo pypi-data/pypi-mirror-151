@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+firecrest/Authorization.py
+firecrest/BasicClient.py
+firecrest/FirecrestException.py
+firecrest/__init__.py
+firecrest/version.py
+pyfirecrest.egg-info/PKG-INFO
+pyfirecrest.egg-info/SOURCES.txt
+pyfirecrest.egg-info/dependency_links.txt
+pyfirecrest.egg-info/requires.txt
+pyfirecrest.egg-info/top_level.txt
