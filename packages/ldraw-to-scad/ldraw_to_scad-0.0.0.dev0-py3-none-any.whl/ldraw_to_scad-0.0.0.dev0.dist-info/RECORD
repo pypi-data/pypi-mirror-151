@@ -1,0 +1,9 @@
+ldraw_to_scad/__init__.py,sha256=OtwGMbNmrf-HWM3TRiWm58byQVH9BL2OW0PMeP4xkfo,79
+ldraw_to_scad/ldrawconverter.py,sha256=eyugtK-hmRiC_3j1GEfCWnMRNTHEoap9aLHu21gwTJE,12145
+ldraw_to_scad/lib.scad,sha256=BoROG6PBougZEvT7M1vLGi9Vu2pg_STdxfflNvoOshQ,10563
+ldraw_to_scad-0.0.0.dev0.data/scripts/ldraw2scad,sha256=2nk7Tsu8OBW6bhf1BUEaouOn0fh6OJpY1S39371XTEI,3591
+ldraw_to_scad-0.0.0.dev0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ldraw_to_scad-0.0.0.dev0.dist-info/METADATA,sha256=B9YrsiuhMbO0rwXjORDkRPLriVm_7usCUzsX14tglI0,2653
+ldraw_to_scad-0.0.0.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ldraw_to_scad-0.0.0.dev0.dist-info/top_level.txt,sha256=ccYF-o9aCFvQHVaAh2_udSWPQiQXh9tXHjdGSRT841M,14
+ldraw_to_scad-0.0.0.dev0.dist-info/RECORD,,
