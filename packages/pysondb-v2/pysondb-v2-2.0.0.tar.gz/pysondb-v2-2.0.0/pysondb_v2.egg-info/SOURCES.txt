@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pysondb/__init__.py
+pysondb/__main__.py
+pysondb/cli.py
+pysondb/db.py
+pysondb/db_types.py
+pysondb/errors.py
+pysondb/utils.py
+pysondb_v2.egg-info/PKG-INFO
+pysondb_v2.egg-info/SOURCES.txt
+pysondb_v2.egg-info/dependency_links.txt
+pysondb_v2.egg-info/entry_points.txt
+pysondb_v2.egg-info/requires.txt
+pysondb_v2.egg-info/top_level.txt

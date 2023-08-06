@@ -1,0 +1,10 @@
+
+[all]
+ujson==5.2.0
+prettytable==3.3.0
+
+[pretttytable]
+prettytable==3.3.0
+
+[ujson]
+ujson==5.2.0
