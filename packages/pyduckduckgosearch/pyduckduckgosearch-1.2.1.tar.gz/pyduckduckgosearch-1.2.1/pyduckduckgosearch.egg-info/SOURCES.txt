@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyduckduckgosearch.egg-info/PKG-INFO
+pyduckduckgosearch.egg-info/SOURCES.txt
+pyduckduckgosearch.egg-info/dependency_links.txt
+pyduckduckgosearch.egg-info/requires.txt
+pyduckduckgosearch.egg-info/top_level.txt
+websearch/__init__.py
