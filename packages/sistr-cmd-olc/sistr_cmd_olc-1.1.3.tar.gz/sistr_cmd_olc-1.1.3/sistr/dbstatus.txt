@@ -1,0 +1,1 @@
+DB downloaded on : 2022-05-17 from https://sairidapublic.blob.core.windows.net/downloads/sistr/database/SISTR_V_1.1_db.tar.gz
