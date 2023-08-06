@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: geometrie
+Version: 0.0.1
+Summary: Librarie pour le calcul des formes geometriques
+Author: Sage Kataliko
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Il s'agit ici d'un packet pour les calculs geometriques
