@@ -1,0 +1,11 @@
+requests>=2
+
+[testing]
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.950
+pre-commit>=2.19.0
+pytest>=7.0.0
+pytest-cov>=3.0.0
+tox>=3.25.0
+types-requests>=2.27.0
