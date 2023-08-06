@@ -1,0 +1,12 @@
+glapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glapi/configuration.py,sha256=XbIfGv4tCZJixvfCyZsoZSLAa0-BEgRike6e5S1a_II,731
+glapi/connection.py,sha256=usTxKCtQSeERG6X7N66HvoMUSGF3RK29qnXJXqH3Tcc,3655
+glapi/epic.py,sha256=L98n9YXNJ7Y31Kqp8aYYNDOGB5HUr-ldatBg-QSz7UI,5925
+glapi/group.py,sha256=4eEnpuQpnkBN0PNfQ-Vg-uVhAJFuVOtPr0q4Oa91M0k,4800
+glapi/issue.py,sha256=OzkR8kdfEQDMj0eY27Yim5r8_c9wSbCYVHH4CHaK2YE,3537
+glapi/project.py,sha256=Dnu-A8ehEMbid1_ACFw4BTNSZTqCO7fz3Ee9NnRzkPY,4459
+glapi/user.py,sha256=XHbwsqstYkipseZcLOddofy3G_m1hmMApsHomLNzjMU,6861
+glapi-0.7.2.dist-info/METADATA,sha256=1P-T4VsnJywbmLgZasx4u-P7Y2xDXrilU4bGZSzEbBc,490
+glapi-0.7.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+glapi-0.7.2.dist-info/top_level.txt,sha256=5C_o9QxDhk8pZxxOc4F8iOd33K5NDOkNM38X9MKY9kw,6
+glapi-0.7.2.dist-info/RECORD,,
