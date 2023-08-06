@@ -1,0 +1,9 @@
+tensorflow
+numpy
+keras
+sympy
+networkx
+PyYAML
+matplotlib
+ray
+deap
