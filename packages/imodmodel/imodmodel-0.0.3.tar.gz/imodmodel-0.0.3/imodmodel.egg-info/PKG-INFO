@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: imodmodel
+Version: 0.0.3
+Summary: IMOD models as pandas DataFrames
+Home-page: https://github.com/alisterburt/imodmodel
+Author: Alister Burt
+Author-email: alisterburt@gmail.com
+License: BSD license
+Project-URL: Source Code, https://github.com/alisterburt/imodmodel
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Provides-Extra: dev
+License-File: LICENSE
+
+# imodmodel
+
+[![License](https://img.shields.io/pypi/l/imodmodel.svg?color=green)](https://github.com/alisterburt/imodmodel/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/imodmodel.svg?color=green)](https://pypi.org/project/imodmodel)
+[![Python Version](https://img.shields.io/pypi/pyversions/imodmodel.svg?color=green)](https://python.org)
+[![CI](https://github.com/alisterburt/imodmodel/actions/workflows/ci.yml/badge.svg)](https://github.com/alisterburt/imodmodel/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/alisterburt/imodmodel/branch/main/graph/badge.svg)](https://codecov.io/gh/alisterburt/imodmodel)
+
+IMOD models as pandas DataFrames
