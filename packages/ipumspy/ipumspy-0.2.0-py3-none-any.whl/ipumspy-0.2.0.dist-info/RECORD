@@ -1,0 +1,17 @@
+ipumspy/__init__.py,sha256=zLT3yqcYUMw9Q8MqfwH3Cpdb7AKVq9PEOdQNRT2fYHs,96
+ipumspy/__version__.py,sha256=bTfovU7DQljAe_P30NSZEnJhVq5aypiWm-ZSe3PchIg,184
+ipumspy/api/__init__.py,sha256=_ahog_1tNEXe6X14amdU5CwPjM5wRZGyg2HpIbXu91M,119
+ipumspy/api/core.py,sha256=6xIM9PGlp4DzeeG5kkA_hoW7_djAKpVDo04UBZrsvbk,18762
+ipumspy/api/exceptions.py,sha256=IuwZ4JIYjYCIFPbGC33u3LZ49dqzHlSeE4hm1JGVmxE,1108
+ipumspy/api/extract.py,sha256=xXyIzxzUX5Uzr24im25vdGlzfT0h-SPsf-iTEeUzLOI,11541
+ipumspy/cli.py,sha256=Q5HLaBGC5NpEeCz9yhoHhSLEWEHQRhLE_pRAuH_38gY,8789
+ipumspy/ddi.py,sha256=PK7l3OeUQ7BvNx3xl46gnhh9aFgbfvi3qJxHGNjD2aI,12365
+ipumspy/fileutils.py,sha256=8SmyH8v9T8YomTMQ1DL9ZDJ1TB1lSwpvr7u34JYnUl8,6009
+ipumspy/readers.py,sha256=hTUTkoeZSd-OSuhWY7F6tF3yVNQ2T3BBITsbGNORdRc,10166
+ipumspy/types.py,sha256=3Av8n8_mzyMQKY11sCI3uXjVRcKPrQdV1aZPOQgdvYM,348
+ipumspy/utilities.py,sha256=S2QShecsCWlB7db7Lt3B9rtClkNLRVkjHuWzgknsr2s,2871
+ipumspy-0.2.0.dist-info/entry_points.txt,sha256=jS27Tf-3v2E_YyQm0JjwnsEEF0ICio2Uy3JaCHJ4XG8,41
+ipumspy-0.2.0.dist-info/LICENSE,sha256=x290DRUhub7ZynoErVJsMQSTxiYhsTQdYjtDFzZTOzA,16725
+ipumspy-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+ipumspy-0.2.0.dist-info/METADATA,sha256=QkraaOAZSvKAEaAfa7fHCOzuwhzX3wfQBAegByEj3K4,1098
+ipumspy-0.2.0.dist-info/RECORD,,
