@@ -1,0 +1,38 @@
+
+language: python
+
+python:
+  - { PATH: "{{Python38}}", VERSION: 3.9, DIST: std, PYINT: python3.9, PYTHONPATH: src }
+  
+virtualenv:
+  - path: {{ospathjoin(root_path, pickname("$NAME_JENKINS", project_name + "_$VERSION_$DIST_$NAME"), "_venv")}}
+  
+install:
+  - if [ -d "/var/lib/jenkins/.local/lib" ]; then echo BEGIN rm -r -f /var/lib/jenkins/.local/lib; fi
+  - if [ -d "/var/lib/jenkins/.local/lib" ]; then rm -r -f /var/lib/jenkins/.local/lib; fi
+  - if [ -d "/var/lib/jenkins/.local/lib" ]; then echo END rm -r -f /var/lib/jenkins/.local/lib; fi
+  - $PYINT -m pip install --upgrade pip
+  - $PYINT -m pip install --upgrade --no-cache-dir --no-deps --index http://localhost:8067/simple/ jyquickhelper pyquickhelper --extra-index-url=https://pypi.python.org/simple/
+  - $PYINT -m pip install -r requirements.txt
+  - $PYINT --version
+  - $PYINT -m pip freeze
+
+before_script:
+  - $PYINT -u setup.py write_version
+
+script:
+  - { CMD: "$PYINT -u setup.py unittests --covtoken=b67b3051-8c5d-460b-b2fa-51d81ab7008c", NAME: "UT" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*LONG.*\" -g \".*chrome.*\"", NAME: "UT_LONG", SCHEDULER: "H H(1-2) 27 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*chrome.*\"", NAME: "UT_LONG_CHROME", SCHEDULER: "H H(1-2) 27 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*SKIP.*base.*\" -g \".*datascientist.*\"", NAME: "UT_SKIP_BASE", TIMEOUT: 7200, SCHEDULER: "H H(1-2) 27 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*SKIP.*sqlitespy.*\"", NAME: "UT_SKIP_SQLLITE", TIMEOUT: 7200, SCHEDULER: "H H(1-2) 27 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*SKIP.*minimal.*\"", NAME: "UT_SKIP_MINIMAL", TIMEOUT: 7200, SCHEDULER: "H H(1-2) 27 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*SKIP.*notebook.*\"", NAME: "UT_SKIP_NB", SCHEDULER: "H H(1-2) 27 * *" }
+
+after_script:
+  - $PYINT -u setup.py bdist_wheel
+  - if [ ${VERSION} == "3.9" and ${DIST} != "conda" and ${NAME} == "UT" ] then cp dist/*.whl {{root_path}}/../local_pypi/local_pypi_server fi
+
+documentation:
+  - if [ ${NAME} == "UT" ] then $PYINT -u setup.py build_sphinx --layout=html fi
+  - if [ ${NAME} == "UT" ] then cp -R -f _doc/sphinxdoc/build/html dist/html fi
