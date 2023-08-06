@@ -1,0 +1,5 @@
+tensorflow>2.0
+matplotlib
+slackclient
+python-dotenv
+psutil
