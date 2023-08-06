@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+MUFS.egg-info/PKG-INFO
+MUFS.egg-info/SOURCES.txt
+MUFS.egg-info/dependency_links.txt
+MUFS.egg-info/not-zip-safe
+MUFS.egg-info/requires.txt
+MUFS.egg-info/top_level.txt
+mufs/Metrics.py
+mufs/Selection.py
+mufs/__init__.py
+mufs/_version.py
+mufs/tests/MUFS_test.py
+mufs/tests/Metrics_test.py
+mufs/tests/__init__.py
