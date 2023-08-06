@@ -1,0 +1,7 @@
+prompt_toolkit==3.0.29
+ssh-config==0.1.1
+prettytable==3.3.0
+
+[dev]
+ipython==7.19.0
+pytest==6.1.2
