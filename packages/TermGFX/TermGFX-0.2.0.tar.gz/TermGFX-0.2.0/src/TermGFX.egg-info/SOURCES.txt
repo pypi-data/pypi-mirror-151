@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/TermGFX/__init__.py
+src/TermGFX/colors.py
+src/TermGFX/engine.py
+src/TermGFX/gol.py
+src/TermGFX/lines.py
+src/TermGFX/rects.py
+src/TermGFX/shapes.py
+src/TermGFX/test.py
+src/TermGFX.egg-info/PKG-INFO
+src/TermGFX.egg-info/SOURCES.txt
+src/TermGFX.egg-info/dependency_links.txt
+src/TermGFX.egg-info/top_level.txt
