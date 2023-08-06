@@ -1,0 +1,5 @@
+setup.py
+pyiceberg.egg-info/PKG-INFO
+pyiceberg.egg-info/SOURCES.txt
+pyiceberg.egg-info/dependency_links.txt
+pyiceberg.egg-info/top_level.txt
