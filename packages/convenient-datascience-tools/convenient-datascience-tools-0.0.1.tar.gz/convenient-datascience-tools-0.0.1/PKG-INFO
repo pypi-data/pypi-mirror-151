@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: convenient-datascience-tools
+Version: 0.0.1
+Summary: DataScience Tools
+Author: Guilherme Turtera
+Requires-Python: >=3.9.12
+Description-Content-Type: text/markdown
+License-File: license
+
+Useful tools for handling data, using many known data science packages.
