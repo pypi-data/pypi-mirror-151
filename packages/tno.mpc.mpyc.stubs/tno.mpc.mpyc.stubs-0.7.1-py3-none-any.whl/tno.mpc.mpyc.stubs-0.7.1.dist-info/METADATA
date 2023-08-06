@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: tno.mpc.mpyc.stubs
+Version: 0.7.1
+Summary: Partial stubs for use with the MPyC library
+Home-page: https://mpc.tno.nl/
+Author: TNO MPC Lab
+Author-email: mpclab@tno.nl
+Maintainer: TNO MPC Lab
+Maintainer-email: mpclab@tno.nl
+License: Apache License, Version 2.0
+Download-URL: https://pypi.org/project/tno.mpc.mpyc.stubs/#files
+Project-URL: Source Code, https://github.com/TNO-MPC/mpyc.stubs
+Keywords: TNO,MPC,multi-party computation,MPyC,stubs
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mpyc (<0.9.0,>=0.7.8)
+
+# TNO MPC Lab - MPyC - Stubs
+
+The TNO MPC lab consists of generic software components, procedures, and functionalities developed and maintained on a regular basis to facilitate and aid in the development of MPC solutions. The lab is a cross-project initiative allowing us to integrate and reuse previously developed MPC functionalities to boost the development of new protocols and solutions.
+
+The package tno.mpc.mpyc.stubs is part of the TNO Python Toolbox.
+
+This package contains stubs to use for type hinting [MPyC](https://github.com/lschoe/mpyc).
+
+*Limitations in (end-)use: the content of this software package may solely be used for applications that comply with international export control laws.*  
+*This implementation of cryptographic software has not been audited. Use at your own risk.*
+
+## Install
+
+Easily install the tno.mpc.mpyc.stubs package using pip:
+```console
+$ python -m pip install tno.mpc.mpyc.stubs
+```
+
+
