@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyscab
+Version: 0.1.3
+Summary: python implementation of scab (stimulation controller for auditory brain-computer interface)
+Home-page: https://github.com/simonkojima/scab-python
+Author: Simon Kojima
+Author-email: simon.kojima@outlook.com
+Project-URL: Bug Tracker, https://github.com/simonkojima/scab-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyaudio (>=0.2.11)
+Requires-Dist: numpy (>=1.22.3)
+
+# scab-python
+python implementation of scab (stimulation controller for auditory bci)
+  
+You can find the document [here](http://pyscab.readthedocs.io/)
+  
+Author : Simon Kojima  
+Guest Researcher at Donders Institue, Radboud University, Nijmegen, Netherlands  
+Ph.D. Stundent at Shibaura Institue of Technology, Tokyo, Japan  
