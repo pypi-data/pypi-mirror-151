@@ -1,0 +1,16 @@
+trame/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/vega.py,sha256=nehv88fPrW_rhVPcRZXTqeXcqHlONKyW27sJIv2MwZM,32
+trame/widgets/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/widgets/vega.py,sha256=_YxPK9Vz9AlmAGacFyA0yMo8TO-406xNJDPPiS2tk1Y,132
+trame_vega/LICENSE,sha256=JxmBE8KpohRh29ulqaImObpOZfl8FSA_vHAaFdb01gA,1504
+trame_vega/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_vega/module/__init__.py,sha256=RcHbcpl-YpaSeD7kmbQMpRdZPltFqLQkK0rs-MhECKk,368
+trame_vega/module/serve/trame-vega.umd.min.js,sha256=nQYVASlKEsoPvcJS0araMdGjppwUFQIoaaqofFOWPug,1028704
+trame_vega/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_vega/widgets/vega.py,sha256=TRmdmA-Vk1NSJl8EwQ4lnVEN_bHKEy3w_w26H9nqdaY,1423
+trame_vega-2.0.0rc4.dist-info/LICENSE,sha256=JxmBE8KpohRh29ulqaImObpOZfl8FSA_vHAaFdb01gA,1504
+trame_vega-2.0.0rc4.dist-info/METADATA,sha256=Wpm0WXtQtRhjYndIUEE3oIIZ-6G0HiLvGh8bebU8PXM,3845
+trame_vega-2.0.0rc4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+trame_vega-2.0.0rc4.dist-info/top_level.txt,sha256=rO2C_y4jENV0AlJlyGWj5FnV2GbIEK7Ja5rDdJbDdx0,17
+trame_vega-2.0.0rc4.dist-info/RECORD,,
