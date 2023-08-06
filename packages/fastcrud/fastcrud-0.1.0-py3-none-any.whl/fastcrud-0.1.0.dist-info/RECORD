@@ -1,0 +1,9 @@
+fastcrud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastcrud/base_repository.py,sha256=H5lNkUbrKcE50CGmBKQH69BG9XGjsFX2br8POMDcrTo,2526
+fastcrud/exceptions.py,sha256=iPn6YNalThA1tI-Pw18SsoIn29YlUSpxCYhsM3wNMjE,159
+fastcrud/router_generator.py,sha256=ZYq0MBD-Kbba8lbfnsj5HGwhXoGf0dl7uWSnQaeLryk,3027
+fastcrud/schemas.py,sha256=FvHPBSjhkkNzVoaH-FNrGpmGcZCp9IeRFnTclfjeSS4,362
+fastcrud/utils.py,sha256=D7whtxdJD-SYw918LwiY-iUez6XnIcEj5AWUU-ir_WQ,511
+fastcrud-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+fastcrud-0.1.0.dist-info/METADATA,sha256=aML2YNwj9mjyk0iatUvCdsrSIWtvOombbjET_prmT-o,385
+fastcrud-0.1.0.dist-info/RECORD,,
