@@ -1,0 +1,2 @@
+[console_scripts]
+transmart-packer = packer.main:main
