@@ -1,0 +1,11 @@
+cansig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cansig/api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cansig/filesys.py,sha256=t3KcXp73cpGu9gmij1snWkstZU4vx8mTfB6I5OD8kEI,4911
+cansig/gsea.py,sha256=BDuKP23vlEXPAuBriSapdK33TKDvC0vvRiDt4hU0UUw,7739
+cansig/tutorial.py,sha256=N3I4uLv-_5US5SMAc1iuz9sJSFqR2a40FNntWJR_Aag,4590
+cansig/types.py,sha256=Kp0CqW0nPNAZDaf2V_1Hrq4Elvk1_bZqAVjzEBWrZFs,1427
+cansig-0.1a0.dist-info/LICENSE,sha256=tW7sL52DxQXVAr0xAFkXa2foYxe07VNISGrjuvJCtvI,1529
+cansig-0.1a0.dist-info/METADATA,sha256=JiIKFdkrpbuoaBFV2JpzNMWKP7pgYxqNfwZqf0yY9Iw,2534
+cansig-0.1a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cansig-0.1a0.dist-info/top_level.txt,sha256=A5aIV0IL9crWIWCUzQoAi9wDWiPQ93uPzjf_E-ysnqs,7
+cansig-0.1a0.dist-info/RECORD,,
