@@ -1,0 +1,218 @@
+.\" Man page generated from reStructuredText.
+.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.TH "SIERRA-EXAMPLES" "7" "May 20, 2022" "1.2.0" "SIERRA"
+.SH NAME
+sierra-examples \- Examples of SIERRA usage. These examples all assume that you have successfully set up SIERRA with a project of your choice.
+.SH ARGOS EXAMPLES
+.sp
+These examples assumes a project named \fBfordyca\fP which contains a controller
+defined in the \fBcontrollers.yaml\fP as \fBd0.CRW\fP, with a runtime environment of
+the local machine.
+.SS Basic Example
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+sierra\-cli \e
+\-\-sierra\-root=$HOME/exp \e
+\-\-template\-input\-file=templates/ideal.argos \e
+\-\-n\-runs=3 \e
+\-\-platform=platform.argos\e
+\-\-project=fordyca \e
+\-\-exec\-env=hpc.local \e
+\-\-physics\-n\-engines=1 \e
+\-\-exp\-setup=exp_setup.T10000 \e
+\-\-controller=d0.CRW \e
+\-\-scenario=SS.12x6x1 \e
+\-\-batch\-criteria population_size.Log64 \e
+\-\-n\-blocks=20
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+This will run a batch of 7 experiments using a correlated random walk robot
+controller (CRW), across which the swarm size will be varied from 1..64, by
+powers of 2. Within each experiment, 3 copies of each simulation will be run
+(each with different random seeds), for a total of 21 ARGoS simulations. On a
+reasonable machine it should take about 10 minutes or so to run. After it
+finishes, you can go to \fB$HOME/exp\fP and find all the simulation outputs. For
+an explanation of SIERRA\(aqs runtime directory tree, see
+ln\-usage\-runtime\-exp\-tree\&.
+.SS Rendering Example
+.sp
+This example shows how to use ARGoS image capturing ability to create nice
+videos of simulations.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+sierra\-cli \e
+\-\-sierra\-root=$HOME/exp \e
+\-\-template\-input\-file=templates/ideal.argos \e
+\-\-platform=platform.argos\e
+\-\-project=fordyca \e
+\-\-controller=d0.CRW \e
+\-\-scenario=SS.12x6x1 \e
+\-\-exec\-env=hpc.local \e
+\-\-n\-runs=3 \e
+\-\-platform\-vc \e
+\-\-exp\-graphs=none \e
+\-\-physics\-n\-engines=1 \e
+\-\-batch\-criteria population_size.Log8
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+The runs 3 simulations in parallel with 1 physics engine each, and runs ARGoS
+under \fBXvfb\fP to get it to render headless images. During stage 4, these
+images are stitched together using \fBffmpeg\fP to create videos (see
+ln\-usage\-runtime\-exp\-tree for where the videos will appear). No graphs
+are generated during stage 4 in this example.
+.sp
+You may also be interested in the \fB\-\-camera\-config\fP option, which allows you
+to specify different static/dynamic camera arrangements (e.g., do a nice
+circular pan around the arena during simulation).
+.sp
+\fBNOTE:\fP
+.INDENT 0.0
+.INDENT 3.5
+Because LOTS of images can be captured by ARGoS to create videos,
+depending on simulation length, you usually want to have a very small
+\fB\-\-n\-runs\fP to avoid filling up the filesystem.
+.UNINDENT
+.UNINDENT
+.SS Stage 5 Example
+.sp
+This example assumes that stages 1\-4 have been run successfully with a project
+named \fBfordyca\fP and that a univariate batch criteria has been used (such as
+ln\-platform\-argos\-bc\-population\-size).
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+sierra\-cli \e
+\-\-project=fordyca \e
+\-\-pipeline 5 \e
+\-\-scenario\-comparison \e
+\-\-dist\-stats=conf95 \e
+\-\-bc\-univar \e
+\-\-controller=d0.CRW \e
+\-\-sierra\-root=$HOME/exp
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+This will compare all scenarios that all controllers with \fB$HOME/exp\fP which
+have been run on the same set of scenarios according to the configuration
+defined in \fBstage5.yaml\fP\&. It will plot the 95% confidence intervals on all
+generated graphs for the univariate batch criteria.
+.SH ROS+GAZEBO EXAMPLES
+.SS Basic Example
+.sp
+This examples assumes a project named \fBfordyca\fP which contains a controller
+defined in the \fBcontrollers.yaml\fP as \fBturtlebot3_sim.wander\fP, with a runtime
+environment of the local machine.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+sierra\-cli \e
+\-\-platform=platform.rosgazebo \e
+\-\-project=fordyca \e
+\-\-n\-runs=4 \e
+\-\-template\-input\-file=exp/ros/turtlebot3_sim.launch \e
+\-\-scenario=HouseWorld.10x10x1 \e
+\-\-sierra\-root=$HOME/exp/test \e
+\-\-batch\-criteria population_size.Log8 \e
+\-\-controller=turtlebot3_sim.wander \e
+\-\-exp\-overwrite \e
+\-\-exp\-setup=exp_setup.T10 \e
+\-\-robot turtlebot3
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+This will run a batch of 4 experiments using a correlated random walk controller
+(CRW) on the turtlebot3. Swarm size will be varied from 1..8, by powers
+of 2. Within each experiment, 4 copies of each simulation will be run (each with
+different random seeds), for a total of 16 Gazebo simulations. On a reasonable
+machine it should take about 10 minutes or so to run. After it finishes, you can
+go to \fB$HOME/exp\fP and find all the simulation outputs. For an explanation of
+SIERRA\(aqs runtime directory tree, see ln\-usage\-runtime\-exp\-tree\&.
+.SH ROS+ROBOT EXAMPLES
+.SS Basic Example
+.sp
+This examples assumes a project named \fBfordyca\fP which contains a controller
+defined in the \fBcontrollers.yaml\fP as \fBturtlebot3_sim.wander\fP, with a runtime
+environment of a set of turtlebots.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+sierra\-cli \e
+\-\-platform=platform.rosgazebo \e
+\-\-project=fordyca \e
+\-\-n\-runs=4 \e
+\-\-template\-input\-file=exp/ros/turtlebot3_real.launch \e
+\-\-scenario=HouseWorld.10x10x1 \e
+\-\-sierra\-root=$HOME/exp/test \e
+\-\-batch\-criteria population_size.Log8 \e
+\-\-controller=turtlebot3_real.wander \e
+\-\-exp\-overwrite \e
+\-\-exp\-setup=exp_setup.T10 \e
+\-\-robot turtlebot3
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+This will run a batch of 4 experiments using a correlated random walk controller
+(CRW) on the turtlebot3. Swarm size will be varied from 1..8, by powers
+of 2. Within each experiment, 4 experimental runs will be conducted with each
+swarm size. SIERRA will prompt the user after each run to reset the environment
+and robot positions before continuing with the next run. After all runs have
+completed and SIERRA finishes stages 3 and 4, you can go to \fB$HOME/exp\fP and
+find all the simulation outputs. For an explanation of SIERRA\(aqs runtime
+directory tree, see ln\-usage\-runtime\-exp\-tree\&.
+.SH AUTHOR
+John Harwell
+.SH COPYRIGHT
+2022, John Harwell
+.\" Generated by docutils manpage writer.
+.

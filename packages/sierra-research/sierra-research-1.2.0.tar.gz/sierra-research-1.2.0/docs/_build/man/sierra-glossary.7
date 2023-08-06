@@ -1,0 +1,271 @@
+.\" Man page generated from reStructuredText.
+.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.TH "SIERRA-GLOSSARY" "7" "May 20, 2022" "1.2.0" "SIERRA"
+.SH NAME
+sierra-glossary \- Glossary of SIERRA terminology.
+.SH GLOSSARY
+.sp
+SIERRA uses a number of common research\-related terms, perhaps in different ways
+than you are used to. They are defined here to help demystify \fIwhy\fP SIERRA
+works/is designed the way it is, and to help you find your way around.
+.INDENT 0.0
+.TP
+.B ARGoS
+A state\-of\-the\-art multi\-physics engine robotics simulator which SIERRA
+supports as a \fI\%Platform\fP\&. The ARGoS website is at
+\fI\%https://www.argos\-sim.info/index.php\fP\&.
+.TP
+.B Gazebo
+A state\-of\-the\-art robotics simulator with many features including .urdf
+robot models, realistic 3D rendering, and more. The Gazebo website is at
+\fI\%http://gazebosim.org\fP\&.
+.TP
+.B ROS
+You know it. You either love it or hate it, but you can\(aqt escape it. The
+ROS website is at \fI\%https://wiki.ros.org\fP\&.
+.TP
+.B ROS+Gazebo
+A \fI\%Platform\fP supported by SIERRA to use \fI\%ROS\fP with the
+\fI\%Gazebo\fP simulator.
+.TP
+.B ROS+Robot
+A \fI\%Platform\fP supported by SIERRA using \fI\%ROS\fP and any robot
+which supports ROS.
+.TP
+.B Project
+The SIERRA plugin allowing you to use your compiled C++ library+ARGoS
+within the SIERRA framework. A project is mainly a set of \fB\&.yaml\fP
+configuration files, project\-specific \fI\%Batch Criteria\fP, and some
+utility classes which allow SIERRA to translate the \fB\-\-scenario\fP
+argument passed on the cmdline to sets of XML changes as part of
+\fI\%Experiment\fP definition.
+.sp
+\fBIMPORTANT:\fP
+.INDENT 7.0
+.INDENT 3.5
+The parent directories of all SIERRA project plugins must
+be on \fBSIERRA_PLUGIN_PATH\fP, or SIERRA won\(aqt be able
+to find them.
+.UNINDENT
+.UNINDENT
+.sp
+\fBIMPORTANT:\fP
+.INDENT 7.0
+.INDENT 3.5
+You can\(aqt share projects across \fI\%Platforms\fP, so if you want to be able to use your project
+on ROS and ARGoS (for example), you will need to create 2
+separate projects with shared python code imported into
+each as needed.
+.UNINDENT
+.UNINDENT
+.sp
+Specified via \fB\-\-project\fP on the cmdline. See ln\-usage\-cli for
+documentation.
+.TP
+.B Tick
+A timestep. In SIERRA, physics engines will perform some number of
+iterations per tick, and after that the controllers for all robots will be
+run.
+.TP
+.B Batch Criteria
+A \fIvariable\fP you wish to used SIERRA to evaluate the effect of on robot
+system behavior. A batch criteria can has a single axis (such as
+ln\-platform\-argos\-bc\-population\-size), in which case it is called
+\fIunivariate\fP, or have two axes (such as
+ln\-platform\-argos\-bc\-population\-size and
+ln\-platform\-argos\-bc\-saa\-noise), in which case it is called
+\fIbivariate\fP\&.
+.sp
+Univariate batch criteria have one dimension, and so the graphs produced
+by them are (usually) linegraphs with a numerical representation of the
+range for the variable on the X axis, and some other quantity of interest
+on the Y.
+.sp
+Bivariate batch criteria have two dimensions, and so the graphs produced
+by them are (usually) heatmaps with the first variable in the criteria on
+the X axis, the second on the Y, and the quantity of interest on
+the Z. Bivariate batch criteria are always built using univariate batch
+criteria as building blocks.
+.sp
+The axis/axes you select as part of the batch criteria you will use to
+define for \fI\%Batch Experiment\fP define the \fIsearch space\fP for your
+experiment: either a 1D or 2D array of \fI\%Experiments\fP\&.
+.sp
+Batch criteria define a \fIrange\fP of sets changes for one or more elements
+in a template \fB\&.xml\fP file (passed to SIERRA with
+\fB\-\-template\-input\-file\fP). For each element in the range, the changes are
+applied to the template \fB\&.xml\fP file to define
+\fI\%Experiments\fP\&. The set of defined experiments is called
+a \fI\%Batch Experiment\fP\&.
+.sp
+The batch criteria you can use depends on:
+.INDENT 7.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+The \fI\%Project\fP you have loaded, as each project can define their
+own batch criteria (see ln\-tutorials\-project\-new\-bc).
+.IP \(bu 2
+The \fI\%Platform\fP you have selected, as each platform defines some
+basic batch criteria that any project/experiment can use.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+SIERRA itself does not define any batch criteria.
+.TP
+.B Batch Experiment
+A set of \fI\%Experiments\fP each defined by XML changes
+generated by the selected \fI\%Batch Criteria\fP to a template \fB\&.argos\fP
+file passed to SIERRA during stage 1 via \fB\-\-template\-input\-file\fP\&.
+.sp
+For example, for the ln\-platform\-argos\-bc\-population\-size batch
+criteria, each experiment is defined by a single XML change to the
+provided \fI\&.argos\fP file: the number of robots in the swarm. Depending on
+the specifics you set for the \fIrange\fP of sizes you are interested in,
+several experiments will be generated from the template \fB\&.argos\fP file,
+each differing from the template in the configured swarm size.
+.TP
+.B Experiment
+A single datapoint within a \fI\%Batch Experiment\fP;
+that is a single value of the \fIthing\fP that you are interested in varying
+across some range of experiments to see what happens (or doesn\(aqt happen).
+.TP
+.B Experimental Run
+Meaning is \fI\%Platform\fP dependent.
+.sp
+For \fB\-\-platform=platform.argos\fP it is an \fI\%ARGoS\fP simulation that
+runs as part of an experiment. For \fB\-\-platform=platform.rosgazebo\fP it is
+a \fI\%Gazebo\fP simulation that runs as part of an experiment
+.sp
+The number of simulations which will be run by SIERRA in stage 2 and
+averaged together by SIERRA in stage 3 is controlled by \fB\-\-n\-runs\fP\&.
+.sp
+All runs in within an \fI\%Experiment\fP are identical, with the exception
+of:
+.INDENT 7.0
+.IP \(bu 2
+Different values for the XML changes resulting from the different
+experiments they are part of, as defined by the batch criteria
+generating the batch experiment.
+.IP \(bu 2
+Different random seeds
+.UNINDENT
+.TP
+.B Output .csv
+A \fB\&.csv\fP file generated as an output from a single \fI\%Experimental
+Run\fP\&. It will (probably) contain a set of columns of representing outputs
+of interest, with rows corresponding to values captured throughout the
+run.
+.TP
+.B Averaged .csv
+A \fB\&.csv\fP file generated as from averaging files from multiple
+\fI\%Experimental Runs\fP\&. It will (probably) contain a
+set of columns of representing outputs of interest, with rows
+corresponding to values captured throughout the run.
+.TP
+.B Collated .csv
+A \fB\&.csv\fP file created by SIERRA during stage 4 (if inter\-experiment
+graph generation is to be run). Collated \fB\&.csv\fP files contain a set
+columns, one per \fI\%Experiment\fP in the \fI\%Batch Experiment\fP\&. Each
+column is the captured value of a \fIsingle\fP column within an \fI\%Output
+\&.csv\fP\&. This is to capture a specific aspect of the behavior of the swarm
+within a batch experiment, for use in graph generation.
+.TP
+.B Summary .csv
+A \fB\&.csv\fP file created by SIERRA during stage 4 (if inter\-experiment
+graph generation is to be run). A summary \fB\&.csv\fP file created from a
+\fI\%Collated .csv\fP file by taking the last row; this usually
+corresponds to steady\-state behavior, which is what you are
+after. However, you can also capture transient behaviors by creating
+\fI\%Collated .csv\fP and \fI\%Summary .csv\fP files from captured
+\fI\%Experimental Run\fP outputs over short stretches of time\-\-SIERRA does
+not know the difference.
+.TP
+.B Inter\-Batch .csv
+A \fB\&.csv\fP file created by SIERRA during stage 5. An inter\-batch \fB\&.csv\fP
+is created by "collating" columns from a \fI\%Summary .csv\fP present in
+multiple \fI\%Batch Experiments\fP into a single
+\fB\&.csv\fP\&. Used during stage 5.
+.TP
+.B imagizing
+The process of turning a text file of some kind (e.g., \fB\&.csv\fP, \fB\&.gml\fP)
+into an image.
+.TP
+.B Platform
+The \fIcontext\fP in which experiments are run: either via a simulator of some
+kind, or a run\-time framework for deploying code to one or more real
+robots.
+.TP
+.B Graph Category
+A semantic label attached to a set of graphs which are similar. For
+example, if you want to generate graphs about the different ways that
+robots allocate tasks, you might create a \fBLN_task_alloc\fP label, so that
+you can enable/disable all task allocation related graphs for one or more
+controllers easily when configuring your project.
+.TP
+.B Controller Category
+A semantic label attached to a set of controllers which are similar in
+some way. For example, if you have two controllers which use the same type
+of memory (say it\(aqs a "last N objects seen" memory), you could create a
+\fBLastN\fP category, and then define controllers within it, e.g.,
+\fBLastN.Ring\fP and \fBLastN.DecayRing\fP for two controllers which have a
+ringbuffer of remembered objects and a decaying ringbuffer of remembered
+objects (i.e., an object is forgotten after some period of time even if it
+is not forced out of the ringbuffer by seeing a new object). See
+configuring your project.
+.TP
+.B Model
+A python implementation of a theoretical model of some kind. Can use
+empirical data from simulations, or not, as needed. Intended to generate
+predictions of \fIsomething\fP which can then be plotted against empirical
+results for comparison.
+.TP
+.B Plugin
+A python package/module living in a directory on
+\fBSIERRA_PLUGIN_PATH\fP which contains functionality to extend SIERRA
+without modifying its core (i.e., customization of different parts of the
+pipeline). Plugins come in several flavors, all of which are handled
+equivalently by SIERRA:
+.INDENT 7.0
+.IP \(bu 2
+Pipeline plugins \- Plugins which provide different ways of executing
+core parts of the SIERRA pipeline (e.g., how to run experiments).
+.IP \(bu 2
+Platform plugins \- Plugins which correspond to different
+\fI\%Platforms\fP\&.
+.UNINDENT
+.UNINDENT
+.SH AUTHOR
+John Harwell
+.SH COPYRIGHT
+2022, John Harwell
+.\" Generated by docutils manpage writer.
+.
