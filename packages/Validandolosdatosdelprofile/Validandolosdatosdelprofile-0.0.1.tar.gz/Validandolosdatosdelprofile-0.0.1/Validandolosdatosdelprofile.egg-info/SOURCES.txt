@@ -1,0 +1,8 @@
+README.md
+setup.py
+Validandolosdatosdelprofile.egg-info/PKG-INFO
+Validandolosdatosdelprofile.egg-info/SOURCES.txt
+Validandolosdatosdelprofile.egg-info/dependency_links.txt
+Validandolosdatosdelprofile.egg-info/top_level.txt
+ValidateField/Funciones.py
+ValidateField/__init__.py
