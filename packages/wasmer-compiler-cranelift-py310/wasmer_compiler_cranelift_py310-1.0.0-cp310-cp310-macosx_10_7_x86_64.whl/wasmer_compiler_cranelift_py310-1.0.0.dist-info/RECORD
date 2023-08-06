@@ -1,0 +1,5 @@
+wasmer_compiler_cranelift_py310-1.0.0.dist-info/METADATA,sha256=YrSW0fON3v_SsAZta-u3w4sFfdgpwOr56B8ViqTt2Qs,3269
+wasmer_compiler_cranelift_py310-1.0.0.dist-info/WHEEL,sha256=d1oV-i47DNWdqXyoHnHRqTc_KNRMz0JmNfjusNfdf5o,107
+wasmer_compiler_cranelift/__init__.py,sha256=kiIYOA7lpkU0rZ_wH_14EiFUEEqWOWz-rGGziohsong,183
+wasmer_compiler_cranelift/wasmer_compiler_cranelift.cpython-310-darwin.so,sha256=L380OrE0VlTW08JXS2_A1yn47NHJZi2SUCUsc4iNWZM,3438152
+wasmer_compiler_cranelift_py310-1.0.0.dist-info/RECORD,,
