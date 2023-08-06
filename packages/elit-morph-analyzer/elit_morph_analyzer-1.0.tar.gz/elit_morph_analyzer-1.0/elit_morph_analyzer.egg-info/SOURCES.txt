@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+elit_morph_analyzer/__init__.py
+elit_morph_analyzer/demo.py
+elit_morph_analyzer/morph_analyzer.py
+elit_morph_analyzer/util.py
+elit_morph_analyzer.egg-info/PKG-INFO
+elit_morph_analyzer.egg-info/SOURCES.txt
+elit_morph_analyzer.egg-info/dependency_links.txt
+elit_morph_analyzer.egg-info/requires.txt
+elit_morph_analyzer.egg-info/top_level.txt
+elit_morph_analyzer/resources/__init__.py
+elit_morph_analyzer/resources/english/__init__.py
+elit_morph_analyzer/tests/__init__.py
+elit_morph_analyzer/tests/conftest.py
+elit_morph_analyzer/tests/test_morph_analyzer.py
