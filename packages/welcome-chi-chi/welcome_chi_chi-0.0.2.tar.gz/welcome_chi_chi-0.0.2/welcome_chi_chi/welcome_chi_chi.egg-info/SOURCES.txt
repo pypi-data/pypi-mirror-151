@@ -1,0 +1,6 @@
+README.md
+setup.py
+welcome_chi_chi/welcome_chi_chi.egg-info/PKG-INFO
+welcome_chi_chi/welcome_chi_chi.egg-info/SOURCES.txt
+welcome_chi_chi/welcome_chi_chi.egg-info/dependency_links.txt
+welcome_chi_chi/welcome_chi_chi.egg-info/top_level.txt
