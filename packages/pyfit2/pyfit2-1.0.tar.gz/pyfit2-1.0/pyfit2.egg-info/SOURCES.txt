@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.cfg
+pyfit2.egg-info/PKG-INFO
+pyfit2.egg-info/SOURCES.txt
+pyfit2.egg-info/dependency_links.txt
+pyfit2.egg-info/top_level.txt
