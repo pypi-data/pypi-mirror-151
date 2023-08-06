@@ -1,0 +1,7 @@
+README.md
+setup.py
+slotminer.egg-info/PKG-INFO
+slotminer.egg-info/SOURCES.txt
+slotminer.egg-info/dependency_links.txt
+slotminer.egg-info/requires.txt
+slotminer.egg-info/top_level.txt
