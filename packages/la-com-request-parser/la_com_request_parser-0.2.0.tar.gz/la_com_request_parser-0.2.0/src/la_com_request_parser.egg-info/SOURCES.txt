@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/la_com_request_parser/__init__.py
+src/la_com_request_parser/com_request_parser.py
+src/la_com_request_parser.egg-info/PKG-INFO
+src/la_com_request_parser.egg-info/SOURCES.txt
+src/la_com_request_parser.egg-info/dependency_links.txt
+src/la_com_request_parser.egg-info/top_level.txt
