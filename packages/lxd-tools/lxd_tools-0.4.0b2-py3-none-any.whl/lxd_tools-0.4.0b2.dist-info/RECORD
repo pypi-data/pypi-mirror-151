@@ -1,0 +1,10 @@
+lxd_tools/__init__.py,sha256=uWi4l3z-HHMnxtd6klt08QUtJiJzJqOBF55uXfgVgSE,80
+lxd_tools/cli.py,sha256=8365WDC8-HY2BqWml3-tPW6DEO2FSbSPX1YOpzjBI7s,2275
+lxd_tools/constant.py,sha256=aQvTc2tZ5LafCRSX2spIACSNfjecTcyQne9takgZiaM,199
+lxd_tools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lxd_tools/resources.py,sha256=VBnUUp_e-M2kPa3v-HV7aO3qrjGUFnc2_gpcjoi8oHU,6322
+lxd_tools-0.4.0b2.dist-info/entry_points.txt,sha256=esIMsWfCxa_uo6NQRB7qzcROpDSYxmL6VXyCCmjRMvw,69
+lxd_tools-0.4.0b2.dist-info/LICENSE.txt,sha256=eEkNE_8Fec_sW9db4kUoIC5aSUv_oyRom17by815fd0,1068
+lxd_tools-0.4.0b2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+lxd_tools-0.4.0b2.dist-info/METADATA,sha256=4g9ZxZ8cwZOxB6NdWQ39rKZiv_3lLddTCdWq5pHtetg,1937
+lxd_tools-0.4.0b2.dist-info/RECORD,,
