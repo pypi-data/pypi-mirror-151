@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "defn-cdktf-provider-buildkite"
+description = ""
+authors = ["Amanibhavam <iam@defn.sh>"]
+version = "0.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cdktf = "^0.10.4"
+
