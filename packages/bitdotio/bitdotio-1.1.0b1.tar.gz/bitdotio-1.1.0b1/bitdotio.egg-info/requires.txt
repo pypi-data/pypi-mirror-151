@@ -1,0 +1,11 @@
+urllib3>=1.15
+six>=1.10
+certifi
+python-dateutil
+click>=8.0.1
+
+[psycopg2]
+psycopg2>=2.8.6
+
+[psycopg2-binary]
+psycopg2-binary>=2.8.6
