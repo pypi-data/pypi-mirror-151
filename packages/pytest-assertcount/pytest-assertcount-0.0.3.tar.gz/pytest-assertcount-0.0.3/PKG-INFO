@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pytest-assertcount
+Version: 0.0.3
+Summary: Plugin to count actual number of asserts in pytest
+Home-page: https://github.com/Old-Shatterhand/pytest-assertcount
+Author: Roman Joeres
+Author-email: romanjoeres@gmail.com
+License: MIT
+Keywords: pytest,plugin,assert
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Classifier: Framework :: Pytest
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AssertCount
+
+A pytest plugin to count the actual number of asserts in a pytest run.
+
+### Output
+
+The output will be shown as the second last result in the pytest output, right above ````short test summary info````.<br>
+Example:
+```
+...
+===== assert statistics =====
+total asserts : 1
+passed asserts: 1 (100%)
+failed asserts: 0 (0%)
+== short test summary info ==
+...
+```
+
+### Restrictions
+
+This plugin to only able to count "non-trivial" asserts, so
+````python
+assert scoring("a", "b") == 10
+````
+would work for some given ````scoring```` function, but
+````python
+assert 2*3 == 10
+````
+would not be counted, as it's a pointless assert.
+
+Furthermore, only asserts in the ````test_XYZ.py```` files will be counted.
+

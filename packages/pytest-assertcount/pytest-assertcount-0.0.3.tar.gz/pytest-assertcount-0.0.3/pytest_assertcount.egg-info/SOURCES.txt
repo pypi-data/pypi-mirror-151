@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pytest_assertcount.py
+setup.py
+pytest_assertcount.egg-info/PKG-INFO
+pytest_assertcount.egg-info/SOURCES.txt
+pytest_assertcount.egg-info/dependency_links.txt
+pytest_assertcount.egg-info/entry_points.txt
+pytest_assertcount.egg-info/requires.txt
+pytest_assertcount.egg-info/top_level.txt
