@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: djangoplicity-signals-ahoy
+Version: 0.1-1
+Summary: signals-ahoy
+Home-page: https://github.com/djangoplicity/djangoplicity-signals-ahoy/
+Download-URL: https://github.com/djangoplicity/djangoplicity-signals-ahoy/archive/refs/tags/0.1.1.tar.gz
+Author: Bruce Kroeze
+Author-email: brucek@ecomsmith.com
+License: New BSD License
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
+
+Djangoplicity Signals Ahoy provides very useful common signals for larger Django applications.
