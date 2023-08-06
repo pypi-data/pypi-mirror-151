@@ -1,0 +1,7 @@
+itsdangerous>=0.21
+morepath>=0.18
+werkzeug>=0.9
+
+[tests]
+pytest
+webtest
