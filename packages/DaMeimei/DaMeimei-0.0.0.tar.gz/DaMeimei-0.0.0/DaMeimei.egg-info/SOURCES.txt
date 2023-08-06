@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+DaMeimei.egg-info/PKG-INFO
+DaMeimei.egg-info/SOURCES.txt
+DaMeimei.egg-info/dependency_links.txt
+DaMeimei.egg-info/top_level.txt
