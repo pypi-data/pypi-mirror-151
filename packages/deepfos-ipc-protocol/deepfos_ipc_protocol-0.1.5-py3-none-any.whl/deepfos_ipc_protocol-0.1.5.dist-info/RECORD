@@ -1,0 +1,9 @@
+deepfos_ipc_protocol/__init__.py,sha256=eFtBV6HS6wWdiOHnAZhkZPavsGH_nTHf15z2JuS0aQg,30
+deepfos_ipc_protocol/client.py,sha256=jT-rIFFZvszB5-VU7xnJkb-nXT-bjCR8GqVixaeujRI,3689
+deepfos_ipc_protocol/const.py,sha256=wM4wdj7Ha9JG-UBCA8sw9YJ7dqvDV4knQt3mihQq4SM,2467
+deepfos_ipc_protocol/server.py,sha256=d041g3q7M-U_c4nXSilqm-sDLw-OEd6wOdzSUnsQNFA,3068
+deepfos_ipc_protocol/utils.py,sha256=OikqszvStXW0AQL-tAGFk5HuGTKAj6hPv89LgVt-Phs,6318
+deepfos_ipc_protocol-0.1.5.dist-info/METADATA,sha256=CMfZbSIZiQrj-NhwPJO94-gVxQyCS_PPoMV3lNJQuQQ,1708
+deepfos_ipc_protocol-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deepfos_ipc_protocol-0.1.5.dist-info/top_level.txt,sha256=neFmmUYe7RRp62kVOo0qpS_jdYQ0ukfYWZFe1oCmcTc,21
+deepfos_ipc_protocol-0.1.5.dist-info/RECORD,,
