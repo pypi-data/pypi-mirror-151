@@ -1,0 +1,3 @@
+[console_scripts]
+gitbak = git_backups.main:main
+
