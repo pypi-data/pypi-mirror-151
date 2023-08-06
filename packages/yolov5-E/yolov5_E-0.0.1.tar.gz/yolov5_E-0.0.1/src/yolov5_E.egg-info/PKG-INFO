@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yolov5-E
+Version: 0.0.1
+Summary: Simplified yolov5 version
+Home-page: http://gitlabnew.depid.local/python-packages/etra-yolov5
+Author: Sergi Grau
+Author-email: sgrau.etraid@grupoetra.com
+License: MIT
+Keywords: YoloV5
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+file: README.md

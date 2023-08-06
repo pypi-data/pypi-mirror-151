@@ -1,0 +1,112 @@
+from setuptools import setup, find_packages
+import sys
+import subprocess
+
+
+sys_platform = sys.platform
+
+if sys_platform in ['win32', 'cygwin' ,'windows']:
+        code = 1
+        try:
+            code = subprocess.call(['pip', 'install', 'torch==1.9.1+cu111', 'torchvision==0.10.1+cu111',
+                                    'torchaudio==0.9.1', '-f', 'https://download.pytorch.org/whl/torch_stable.html'])
+            if code != 0:
+                raise Exception('Torch and torchvsion instalation failed !')
+        except:
+            try:
+                code = subprocess.call(['pip3', 'install', 'torch==1.9.1+cu111', 'torchvision==0.10.1+cu111',
+                                        'torchaudio==0.9.1', '-f',
+                                        'https://download.pytorch.org/whl/torch_stable.html'])
+                if code != 0:
+                    raise Exception('Torch and torchvision installation failed !')
+            except:
+                print('Failed to install pytorch, please install pytorch and torchvision manually by following '
+                      'the simple instructions over at: https://pytorch.org/get-started/locally/')
+        if code == 0:
+            print('Successfully installed pytorch and torchvision')
+
+setup(
+    name='yolov5_E',
+    version='0.0.1',
+    license='MIT',
+    author="Sergi Grau",
+    author_email='sgrau.etraid@grupoetra.com',
+    description = "Simplified yolov5 version",
+    long_description = 'file: README.md',
+    long_description_content_type = "text/markdown",
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
+    include_package_data=True,
+    url='http://gitlabnew.depid.local/python-packages/etra-yolov5',
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    keywords='YoloV5',
+    install_requires=[
+        'absl-py==1.0.0',
+        'bleach==5.0.0',
+        'build==0.7.0',
+        'cachetools==5.1.0',
+        'certifi==2022.5.18',
+        'charset-normalizer==2.0.12',
+        'colorama==0.4.4',
+        'commonmark==0.9.1',
+        'cycler==0.11.0',
+        'docutils==0.18.1',
+        'flatbuffers==2.0',
+        'fonttools==4.33.3',
+        'google-auth==2.6.6',
+        'google-auth-oauthlib==0.4.6',
+        'grpcio==1.46.1',
+        'idna==3.3',
+        'importlib-metadata==4.11.3',
+        'keyring==23.5.0',
+        'kiwisolver==1.4.2',
+        'Markdown==3.3.7',
+        'matplotlib==3.5.2',
+        'numpy==1.22.3',
+        'oauthlib==3.2.0',
+        'onnxruntime==1.11.1',
+        'opencv-python==4.5.5.64',
+        'packaging==21.3',
+        'pandas==1.4.2',
+        'pep517==0.12.0',
+        'Pillow==9.1.1',
+        'pkginfo==1.8.2',
+        'protobuf==3.20.1',
+        'pyasn1==0.4.8',
+        'pyasn1-modules==0.2.8',
+        'Pygments==2.12.0',
+        'pyparsing==3.0.9',
+        'python-dateutil==2.8.2',
+        'pytz==2022.1',
+        'pywin32-ctypes==0.2.0',
+        'PyYAML==6.0',
+        'readme-renderer==35.0',
+        'requests==2.27.1',
+        'requests-oauthlib==1.3.1',
+        'requests-toolbelt==0.9.1',
+        'rfc3986==2.0.0',
+        'rich==12.4.1',
+        'rsa==4.8',
+        'scipy==1.8.1',
+        'seaborn==0.11.2',
+        'six==1.16.0',
+        'tensorboard==2.9.0',
+        'tensorboard-data-server==0.6.1',
+        'tensorboard-plugin-wit==1.8.1',
+        'thop==0.0.31.post2005241907',
+        'tomli==2.0.1',
+        'tqdm==4.64.0',
+        'twine==4.0.0',
+        'typing_extensions==4.2.0',
+        'urllib3==1.26.9',
+        'webencodings==0.5.1',
+        'Werkzeug==2.1.2',
+        'zipp==3.8.0'
+    ],
+    dependency_links=[],
+    python_requires="==3.8"
+)
