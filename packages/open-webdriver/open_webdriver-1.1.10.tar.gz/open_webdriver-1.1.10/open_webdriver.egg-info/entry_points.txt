@@ -1,0 +1,2 @@
+[console_scripts]
+open_webdriver_tests = open_webdriver:test
