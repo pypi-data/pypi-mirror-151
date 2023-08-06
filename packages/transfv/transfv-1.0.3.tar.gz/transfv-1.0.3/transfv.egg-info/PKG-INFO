@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: transfv
+Version: 1.0.3
+Summary: Google translator for a terminal.
+Home-page: https://github.com/filipvrba/trans.git
+Author: Filip Vrba
+Author-email: filipvrba@pm.me
+License: MIT
+Description: # Trans
+        Google translator for a terminal.
+Keywords: python,google,translator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+[console_scripts]
+trans = trans.__init__:main
+
