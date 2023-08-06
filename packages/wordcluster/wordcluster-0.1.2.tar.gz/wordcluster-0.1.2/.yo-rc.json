@@ -1,0 +1,12 @@
+{
+  "generator-python3-package": {
+    "packageName": "wordcluster",
+    "packageDesc": "A algoirthm for clustering similar words in a list",
+    "fullName": "Dr. Suat ATAN",
+    "pypiUserName": "suatatan",
+    "githubUserName": "suatatan",
+    "email": "suatatan@gmail.com",
+    "useTravisCI": false,
+    "version": "0.4.0"
+  }
+}
