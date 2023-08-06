@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ghostbuster/__init__.py
+ghostbuster/cli.py
+ghostbuster/scan.py
+ghostbuster/version.py
+ghostbusterV2.egg-info/PKG-INFO
+ghostbusterV2.egg-info/SOURCES.txt
+ghostbusterV2.egg-info/dependency_links.txt
+ghostbusterV2.egg-info/entry_points.txt
+ghostbusterV2.egg-info/requires.txt
+ghostbusterV2.egg-info/top_level.txt
