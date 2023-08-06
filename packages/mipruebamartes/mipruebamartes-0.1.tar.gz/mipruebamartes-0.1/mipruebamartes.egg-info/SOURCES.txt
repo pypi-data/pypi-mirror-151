@@ -1,0 +1,6 @@
+mipruebamartes.py
+setup.py
+mipruebamartes.egg-info/PKG-INFO
+mipruebamartes.egg-info/SOURCES.txt
+mipruebamartes.egg-info/dependency_links.txt
+mipruebamartes.egg-info/top_level.txt
