@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ramanfitter/__init__.py
+src/ramanfitter/main.py
+src/ramanfitter.egg-info/PKG-INFO
+src/ramanfitter.egg-info/SOURCES.txt
+src/ramanfitter.egg-info/dependency_links.txt
+src/ramanfitter.egg-info/requires.txt
+src/ramanfitter.egg-info/top_level.txt
+test/test.py
