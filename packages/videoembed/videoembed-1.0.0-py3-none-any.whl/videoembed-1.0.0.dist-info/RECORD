@@ -1,0 +1,14 @@
+providers/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+providers/base.py,sha256=F9yzvldvU4vTw_wRlW9gjiXf1ubwgpC8pSJzHi-hxy4,2241
+providers/config.py,sha256=p2Jg1ejrj8VOSRIZ24YT8yO8XBqbFvONGCMwYsRxPTA,397
+providers/vimeo.py,sha256=EFfjuSjzo5MPxdzz6YaGsUmmdiXUgGv49ac6jTD1VAE,493
+providers/youtube.py,sha256=4BSk6WNOAIl6L6Khxug7p09rARBvtQ4X9PjlTbLJgGk,560
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_embedder.py,sha256=UzSWzyTIaKc6wP-XNK_tVhMQydSl7LHMLd0L2ELYHUs,2426
+tests/test_providers_vimeo.py,sha256=ukjMbIrXevcJfeK-8Cr9Vjb6tu6cq5URf6ajzNk-WOU,4173
+tests/test_providers_youtube.py,sha256=BFAjcfc5Cc02Zn2hKyUdsURHZVG8j5ZQIosWBT4wH0o,4196
+videoembed-1.0.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+videoembed-1.0.0.dist-info/METADATA,sha256=uJRQhzUxs4OxKUfB20ZGse3cXKaJQ9vwPAXTkFWbdCM,1798
+videoembed-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+videoembed-1.0.0.dist-info/top_level.txt,sha256=-1c8oBiKr9jIAM7GzSi5nxp_6pbZ78ZW7_boJUxazHE,16
+videoembed-1.0.0.dist-info/RECORD,,
