@@ -1,0 +1,11 @@
+pip
+packaging
+fastai>=2.6
+graphviz
+pandas
+requests
+transformers
+datasets
+sentencepiece
+
+[dev]
