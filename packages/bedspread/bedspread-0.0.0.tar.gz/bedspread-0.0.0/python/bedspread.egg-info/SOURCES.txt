@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+python/bedspread/__init__.py
+python/bedspread/__main__.py
+python/bedspread/evaluator.py
+python/bedspread/front_end.py
+python/bedspread/grammar.automaton
+python/bedspread/syntax.py
+python/bedspread/version.py
+python/bedspread.egg-info/PKG-INFO
+python/bedspread.egg-info/SOURCES.txt
+python/bedspread.egg-info/dependency_links.txt
+python/bedspread.egg-info/requires.txt
+python/bedspread.egg-info/top_level.txt
