@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+PPTXConvertor/__init__.py
+PPTXConvertor.egg-info/PKG-INFO
+PPTXConvertor.egg-info/SOURCES.txt
+PPTXConvertor.egg-info/dependency_links.txt
+PPTXConvertor.egg-info/top_level.txt
