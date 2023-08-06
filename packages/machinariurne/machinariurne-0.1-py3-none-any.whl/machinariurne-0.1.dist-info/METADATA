@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: machinariurne
+Version: 0.1
+Summary: Tools & Classes Collection
+Home-page: https://github.com/vega0/python.machinarium
+Author: Nightmare a.k.a Aselock.
+Author-email: nightmare.flow0@gmail.com
+License: MIT
+Keywords: cogs classes tools utils easy easies comfort шестерни классы инструменты лёгкость
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: 2captcha-python
+Requires-Dist: Flask
+Requires-Dist: googletrans
+Requires-Dist: markdown
+Requires-Dist: names
+Requires-Dist: nordvpn-switcher
+Requires-Dist: numpy
+Requires-Dist: pyperclip
+Requires-Dist: requests
+Requires-Dist: selenium
+Requires-Dist: selenium-requests
+Requires-Dist: undetected-chromedriver
+Requires-Dist: virtualenv
+Requires-Dist: wikipedia
+
+Some implemented elements.
+
+
