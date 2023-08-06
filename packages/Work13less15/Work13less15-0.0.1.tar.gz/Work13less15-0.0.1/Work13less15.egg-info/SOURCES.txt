@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Work13less15/__init__.py
+Work13less15/homeWork13.py
+Work13less15.egg-info/PKG-INFO
+Work13less15.egg-info/SOURCES.txt
+Work13less15.egg-info/dependency_links.txt
+Work13less15.egg-info/top_level.txt
