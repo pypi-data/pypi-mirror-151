@@ -1,0 +1,60 @@
+pipeline_name: import_corpus
+doc: Onboard a text corpus.
+steps:
+  - module_type: import.file_bundle
+    step_id: import_text_corpus
+  - module_type: create.table.from.text_file_bundle
+    step_id: create_text_corpus
+    input_links:
+      text_file_bundle: import_text_corpus.file_bundle
+  - module_type: table.cut_column
+    step_id: extract_texts_column
+    input_links:
+      table: create_text_corpus.table
+  - module_type: tokenize.texts_array
+    step_id: tokenize_content
+    input_links:
+      texts_array: extract_texts_column.array
+  - module_type: remove_stopwords.from.tokens_array
+    step_id: remove_stopwords
+    input_links:
+      tokens_array: tokenize_content.tokens_array
+  - module_type: preprocess.tokens_array
+    step_id: preprocess_corpus
+    input_links:
+      tokens_array: remove_stopwords.tokens_array
+  - module_type: generate.LDA.for.tokens_array
+    step_id: generate_lda
+    input_links:
+      tokens_array: preprocess_corpus.tokens_array
+
+input_aliases:
+  extract_texts_column.column_name: content_column_name
+  import_text_corpus.path: text_corpus_folder_path
+  tokenize_content.tokenize_by_word: tokenize_by_word
+  generate_lda.num_topics_min: num_topics_min
+  generate_lda.num_topics_max: num_topics_max
+  generate_lda.compute_coherence: compute_coherence
+  generate_lda.words_per_topic: words_per_topic
+  remove_stopwords.languages: languages
+  remove_stopwords.additional_stopwords: additional_stopwords
+  preprocess_corpus.to_lowercase: to_lowercase
+  preprocess_corpus.remove_alphanumeric: remove_alphanumeric
+  preprocess_corpus.remove_non_alpha: remove_non_alpha
+  preprocess_corpus.remove_all_numeric: remove_all_numeric
+  preprocess_corpus.remove_short_tokens: remove_short_tokens
+  preprocess_corpus.remove_stopwords: remove_stopwords
+
+output_aliases:
+  import_text_corpus.file_bundle: text_corpus_file_bundle
+  create_text_corpus.table: text_corpus_table
+  extract_texts_column.array: content_array
+  tokenize_content.tokens_array: tokenized_corpus
+  remove_stopwords.tokens_array: tokenized_corpus_without_stopword
+  preprocess_corpus.tokens_array: preprocessed_corpus
+  generate_lda.topic_models: topic_models
+
+inputs:
+  content_column_name: "content"
+  text_corpus_folder_path: examples/data/text_corpus
+  languages: ["italian"]
