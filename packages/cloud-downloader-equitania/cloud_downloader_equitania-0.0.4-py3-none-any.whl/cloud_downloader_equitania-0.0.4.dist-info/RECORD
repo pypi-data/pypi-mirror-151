@@ -1,0 +1,9 @@
+cloud_downloader/__init__.py,sha256=2VTD32PuV8sQo4EAryCs2xYJgsTXpm13xFKqdeXQMq8,19
+cloud_downloader/cloud_downloader.py,sha256=FD6q4w_17p_L24vDgva1MrtovZ69bdH47ZyMA3zR3Pw,1325
+cloud_downloader/utils.py,sha256=ry54Hl-qebz20yKFrkXsJoPM-wn0l0ZV-0wVhPyqIV4,1055
+cloud_downloader_equitania-0.0.4.dist-info/LICENSE.txt,sha256=VD-pauwiiia-Xi2zgKvalKRIFSJJjqRCQw6aIpK2T9U,33892
+cloud_downloader_equitania-0.0.4.dist-info/METADATA,sha256=nRyppYtcZFEkNwicdTfGPyKQuRPB3J7TvHbVhiVqzxo,2105
+cloud_downloader_equitania-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cloud_downloader_equitania-0.0.4.dist-info/entry_points.txt,sha256=aGMykeL4TcrGc2aWR4uiyRTinms5M173_NMXNyh8ZgQ,92
+cloud_downloader_equitania-0.0.4.dist-info/top_level.txt,sha256=GXgNEx5iNtP11Oq71SIJjvVdYsEfhB_9XMjBiTAwyV8,17
+cloud_downloader_equitania-0.0.4.dist-info/RECORD,,
