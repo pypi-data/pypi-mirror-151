@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+classy_sdk/__init__.py
+classy_sdk/utils.py
+classy_sdk/api/__init__.py
+classy_sdk/api/api.py
+classy_sdk/sdk/__init__.py
+classy_sdk/sdk/sdk.py
+searpent_classy_sdk.egg-info/PKG-INFO
+searpent_classy_sdk.egg-info/SOURCES.txt
+searpent_classy_sdk.egg-info/dependency_links.txt
+searpent_classy_sdk.egg-info/requires.txt
+searpent_classy_sdk.egg-info/top_level.txt
