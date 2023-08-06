@@ -1,0 +1,14 @@
+fastapi_restful/__init__.py,sha256=6ANpjNprfsrZrw9Ftb75hqW10DFGSz8GGqIdKujnrPs,95
+fastapi_restful/main.py,sha256=79VdKewHq7E9q5Y6xgYaivBKMnm5dedHSoGNfDSQzVo,1015
+fastapi_restful/resource.py,sha256=akj3ZCzl45cZxODCVhgIUDosJPEqCrTQYfBCzEWMqBk,5034
+fastapi_restful/utils.py,sha256=i5bu1jxEJ2nHNJRgTRItbCWQinE8pOO3pBS8xjr1iVU,418
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=-5WhVe5bHUwQwr9pxCc9SSdxnTgzdbSm6uVqMjQTrbo,380
+tests/test_main.py,sha256=g5N3MedXRM7OHH1gpU74KgzzdYI-yYqm-3hTF0eCp3M,490
+tests/test_resource.py,sha256=_ldcIOz0y7AnLPGRjLqy8mXCyLNzYiP4lNN-DFo-uok,2003
+tests/test_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_restful_extension-0.1.0.dist-info/LICENSE,sha256=LkYgDYbwV7IuQ4T_RvieqNoOaZ82H61fHyRZwNMrIeM,1070
+fastapi_restful_extension-0.1.0.dist-info/METADATA,sha256=zfWzsExF942_KwFW0hMD7fVZ10IAF68WzHlStji5Nn4,767
+fastapi_restful_extension-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastapi_restful_extension-0.1.0.dist-info/top_level.txt,sha256=WIAWFgXR8lY4-LkyMrLMM7iiNHxThrW0p5LBuUrHe2o,22
+fastapi_restful_extension-0.1.0.dist-info/RECORD,,
