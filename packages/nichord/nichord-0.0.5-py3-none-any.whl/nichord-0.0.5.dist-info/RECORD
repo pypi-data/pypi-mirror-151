@@ -1,0 +1,11 @@
+nichord/__init__.py,sha256=1fpJ-85FOYPbx4_Ic3Xlpk06BAbPsWdrh4k8od-MWzM,756
+nichord/chord.py,sha256=cqCVPdf9wDds5V3valowJwTkg3S5IZGqqN3uuSuU6rc,26132
+nichord/combine.py,sha256=bNHSDP0iXzMYpODShZM96oEEjEC4S7MSonP1Kge45tY,1686
+nichord/convert.py,sha256=WrXmCK4MRmfEO7VjPGPcEWeBwsCcq4M_4qD-N7j2PHs,482
+nichord/coord_labeler.py,sha256=Bel9_4D0w3V5bOiu7fmsLCXezzWggHyiH_uhF72A_js,5693
+nichord/glassbrain.py,sha256=tw_InJpLW17XlTBGKTvMPwS-p0rdDwLmx2fe-UYT328,4799
+nichord/patch_RendererAgg.py,sha256=TImyvXJKvFZClFllTJggWuF0jeaXmbpflUZ0o4_cAwA,1854
+nichord-0.0.5.dist-info/METADATA,sha256=_tmWwabRuEDpSAdLgsvMOh3C8l2NI19gNlAHbhXnVFU,1385
+nichord-0.0.5.dist-info/RECORD,,
+nichord-0.0.5.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+nichord-0.0.5.dist-info/top_level.txt,sha256=y3M0OwCgey3AC0qsB9SrRDdrcEMtjbX51y8QPZjIlm0,8
