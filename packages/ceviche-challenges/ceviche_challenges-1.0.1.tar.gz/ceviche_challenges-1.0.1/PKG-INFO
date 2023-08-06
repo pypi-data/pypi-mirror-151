@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ceviche_challenges
+Version: 1.0.1
+Home-page: https://github.com/google/ceviche-challenges
+Author: Google LLC
+Author-email: noreply@google.com
+License: Apache 2.0
+Requires-Python: >=3
+License-File: LICENSE
