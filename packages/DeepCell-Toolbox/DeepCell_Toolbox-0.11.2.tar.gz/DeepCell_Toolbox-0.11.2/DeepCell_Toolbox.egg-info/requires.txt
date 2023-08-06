@@ -1,0 +1,20 @@
+cython>=0.28.0
+pandas
+networkx>=2.1
+numpy>=1.16.6
+scipy>=1.3.0
+scikit-image>=0.15.0
+scikit-learn
+tqdm
+
+[:python_version < "3"]
+opencv-python-headless<=4.2.0.32
+
+[:python_version >= "3"]
+opencv-python-headless
+
+[tests]
+pytest<6
+pytest-pep8
+pytest-cov
+pytest-mock
