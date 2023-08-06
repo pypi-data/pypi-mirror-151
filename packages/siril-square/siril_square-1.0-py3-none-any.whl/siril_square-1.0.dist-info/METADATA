@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: siril-square
+Version: 1.0
+Summary: It squares the number
+Home-page: https://github.com/YogeshPatil88/siril-square
+Author: Yogesh Patil
+Author-email: patilyogesh22506755@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+It takes an integer as an input and prints it square.
+pip install saral-square
+Open terminal and type square and then input the integer
+This repository is licensed under the MIT license. See LICENSE for details.
