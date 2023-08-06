@@ -1,0 +1,8 @@
+numpy
+mrcfile
+keras<2.4.0,>=2.1.2
+csbdeep<0.7.0,>=0.6.0
+psutil
+
+[c11]
+nvidia-tensorflow[horovod]<1.16,>=1.15.5+nv22.1
