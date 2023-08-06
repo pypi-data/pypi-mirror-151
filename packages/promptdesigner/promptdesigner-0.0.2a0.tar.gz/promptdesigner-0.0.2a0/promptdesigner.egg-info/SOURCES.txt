@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+promptdesigner/PromptDesigner.py
+promptdesigner/__init__.py
+promptdesigner/answers_interface.py
+promptdesigner/export_answers.py
+promptdesigner/prompt-designer-icon.png
+promptdesigner.egg-info/PKG-INFO
+promptdesigner.egg-info/SOURCES.txt
+promptdesigner.egg-info/dependency_links.txt
+promptdesigner.egg-info/requires.txt
+promptdesigner.egg-info/top_level.txt
