@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: savingfigures
+Version: 1.0.4
+Summary: Saving figures and gifs in an organized manner
+Home-page: https://tulimid1.github.io/
+Download-URL: https://github.com/tulimid1/savingfigures/archive/refs/tags/1.0.4.tar.gz
+Author: Duncan Tulimieri
+Author-email: tulimid@udel.edu
+License: GPL-3
+Keywords: figures,gifs,save
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE

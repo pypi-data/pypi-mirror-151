@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+savingfigures/__init__.py
+savingfigures/savingfigures.py
+savingfigures.egg-info/PKG-INFO
+savingfigures.egg-info/SOURCES.txt
+savingfigures.egg-info/dependency_links.txt
+savingfigures.egg-info/requires.txt
+savingfigures.egg-info/top_level.txt
