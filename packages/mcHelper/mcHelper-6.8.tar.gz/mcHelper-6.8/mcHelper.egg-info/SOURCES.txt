@@ -1,0 +1,10 @@
+setup.py
+mcHelper.egg-info/PKG-INFO
+mcHelper.egg-info/SOURCES.txt
+mcHelper.egg-info/dependency_links.txt
+mcHelper.egg-info/top_level.txt
+mcHelpers/__init__.py
+mcHelpers/loginHelper.py
+mcHelpers/mcHelper.py
+mcHelpers/sliceHelper.py
+mcHelpers/sqlHelper.py
