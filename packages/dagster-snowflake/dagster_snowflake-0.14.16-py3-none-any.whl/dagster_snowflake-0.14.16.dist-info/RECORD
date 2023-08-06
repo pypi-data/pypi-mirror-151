@@ -1,0 +1,12 @@
+dagster_snowflake/__init__.py,sha256=fYPQV6Jd4kHAd0EEm50NRTizOghyEblRWV6MtGHz4bc,555
+dagster_snowflake/configs.py,sha256=szZA7_AmQG2cOe9qtuYyQFtafMznyt4762tH6xdS75Q,5699
+dagster_snowflake/db_io_manager.py,sha256=EwtwjZUUrk_Omso5dbQvqCKDafgECXow1NjN6C1ntrY,5231
+dagster_snowflake/resources.py,sha256=oLLpc_dZZmYxLigU76k00IXTil1_-6T70AtEgyiGths,6954
+dagster_snowflake/snowflake_io_manager.py,sha256=KgHsMsZEqWEBg6Hck2nTb6aQSoB5__3JzY5hG3vOYqQ,3322
+dagster_snowflake/solids.py,sha256=dzCob024aeaybWQARJFWQcoUEvy-CLhQoB1E04Pmr8Q,2190
+dagster_snowflake/version.py,sha256=6e8OJwIO3dl2cw5y8HqamzSiNZfNmrpF4SiaVd8gqOI,24
+dagster_snowflake-0.14.16.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+dagster_snowflake-0.14.16.dist-info/METADATA,sha256=AuPpG7RsA0knA_D6-WpOuFL4pBBHDeHB6PP19jZa_1A,841
+dagster_snowflake-0.14.16.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dagster_snowflake-0.14.16.dist-info/top_level.txt,sha256=uECYCiluOxLQ996SCUPBBwdK0CTyz45FjWqf7WDqMMc,18
+dagster_snowflake-0.14.16.dist-info/RECORD,,
