@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+irispreppy.egg-info/PKG-INFO
+irispreppy.egg-info/SOURCES.txt
+irispreppy.egg-info/dependency_links.txt
+irispreppy.egg-info/not-zip-safe
+irispreppy.egg-info/requires.txt
+irispreppy.egg-info/top_level.txt
