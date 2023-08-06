@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ops/__init__.py
+ops/__main__.py
+ops/communicator.py
+opservatory_cli.egg-info/PKG-INFO
+opservatory_cli.egg-info/SOURCES.txt
+opservatory_cli.egg-info/dependency_links.txt
+opservatory_cli.egg-info/entry_points.txt
+opservatory_cli.egg-info/requires.txt
+opservatory_cli.egg-info/top_level.txt

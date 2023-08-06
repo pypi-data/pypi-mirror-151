@@ -1,0 +1,2 @@
+[console_scripts]
+ops = ops.__main__:run

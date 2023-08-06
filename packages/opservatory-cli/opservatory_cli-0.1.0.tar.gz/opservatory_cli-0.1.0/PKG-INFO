@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: opservatory_cli
+Version: 0.1.0
+Summary: CLI for Opservatory server
+Home-page: https://github.com/subatiq/ops
+Download-URL: https://github.com/subatiq/ops/archive/refs/tags/0.1.0.tar.gz
+Author: Vladimir Semenov
+Author-email: subatiq@gmail.com
+License: MIT
+Keywords: automation,monitoring
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
