@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: Starfive.GPIO
+Version: 1.3.1
+Summary: A module to control Starfive GPIO ports
+Home-page: http://gitlab.starfivetech.com/product1/oftware-ae/visionfive-python-gpio/starfive_gpio
+Author: Starfive
+Author-email: Starfive.shanghai@starfivetech.com
+License: MIT
+Description: This package provides a Python module to control the GPIO on a Starfive.
+        
+        N
+        
+        Change Log
+        ==========
+        
+        0.2.0
+        -------
+        - Support Sense Hat (B)
+          A class TH is defined, and the  Methods list of class TH is as follows: 
+          start(), stop(), reset(), getHum(), getTem()
+          The demo code, please see ./source/Sense_Hat.py
+        
+        
+        
+Keywords: Starfive GPIO
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Home Automation
+Classifier: Topic :: System :: Hardware

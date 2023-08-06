@@ -1,0 +1,11 @@
+Change Log
+==========
+
+0.2.0
+-------
+- Support Sense Hat (B)
+  A class TH is defined, and the  Methods list of class TH is as follows: 
+  start(), stop(), reset(), getHum(), getTem()
+  The demo code, please see ./source/Sense_Hat.py
+
+
