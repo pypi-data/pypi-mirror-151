@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "assessment_varun"
+version = "0.1.0"
+description = "oops and pandas"
+authors = ["varun1423"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pandas = "^1.4.2"
+matplotlib = "^3.5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
