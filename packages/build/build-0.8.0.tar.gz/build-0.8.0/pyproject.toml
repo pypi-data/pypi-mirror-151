@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools >=42.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.coverage.run]
+source = [
+  "build",
+  "tests",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  '\#\s*pragma: no cover',
+  '^\s*raise NotImplementedError\b',
+]
+
+[tool.coverage.paths]
+build = [
+  "src",
+  "*/site-packages",
+  '*\site-packages',
+]
+
+[tool.coverage.html]
+show_contexts = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["--strict-config", "--strict-markers"]
+log_cli_level = "info"
+testpaths = ["tests"]
+xfail_strict = true
+junit_family = "xunit2"
+norecursedirs = "tests/integration/*"
+markers = [
+  "isolated",
+  "pypy3323bug",
+]
+filterwarnings = [
+  "error",
+  "ignore:path is deprecated.:DeprecationWarning",
+]
+
+[tool.mypy]
+files = "src"
+python_version = "3.6"
+strict = true
+show_error_codes = true
+enable_error_code = ["ignore-without-code", "truthy-bool", "redundant-expr"]
+
+
+[[tool.mypy.overrides]]
+module = [
+  "colorama",   # Optional dependency
+  "pep517.*",   # Untyped
+  "virtualenv", # Optional dependency
+]
+ignore_missing_imports = true
+
+[tool.black]
+line-length = 127
+skip-string-normalization = true
+target-version = ["py39", "py38", "py37", "py36"]
+
+[tool.isort]
+profile = "black"
+lines_between_types = 1
+lines_after_imports = 2
+line_length = 127
+known_first_party = "build"
+skip = []  # "build" is included in the default skip list
