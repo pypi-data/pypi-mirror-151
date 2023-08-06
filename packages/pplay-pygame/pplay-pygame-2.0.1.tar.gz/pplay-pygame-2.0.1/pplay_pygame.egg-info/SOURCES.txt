@@ -1,0 +1,10 @@
+LICENSE.rst
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+pplay_pygame.egg-info/PKG-INFO
+pplay_pygame.egg-info/SOURCES.txt
+pplay_pygame.egg-info/dependency_links.txt
+pplay_pygame.egg-info/requires.txt
+pplay_pygame.egg-info/top_level.txt
