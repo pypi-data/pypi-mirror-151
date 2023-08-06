@@ -1,0 +1,9 @@
+prefect_pokemon/__init__.py,sha256=jMVE6eKegndV9O0lmGwPddirpw8Rn7Pdlqw5tyj2c4w,73
+prefect_pokemon/_version.py,sha256=fCLZTtXX23p88gpJiuqbMBA8mrTfvfL7mBd4H61z7Wk,497
+prefect_pokemon/credentials.py,sha256=gCk4Hy0ihUsCaLmxjyEFZLtbIzG6ahlihT-uuKzR3gU,509
+prefect_pokemon/pokemon.py,sha256=zFKcDBtl_ikquWZjNhrWcyB9O8Y05YHJ7E3Ar6kYDxI,1304
+prefect_pokemon-0.1.0.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_pokemon-0.1.0.dist-info/METADATA,sha256=bzr4EY6P_9oCtNg8udoNdXL0QKShR7pdwPuQ7imNTUI,3041
+prefect_pokemon-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prefect_pokemon-0.1.0.dist-info/top_level.txt,sha256=C1fH6tG-7jL4xxrUbXEoLVWPttJTvdXFQZLRQgS7JBM,16
+prefect_pokemon-0.1.0.dist-info/RECORD,,
