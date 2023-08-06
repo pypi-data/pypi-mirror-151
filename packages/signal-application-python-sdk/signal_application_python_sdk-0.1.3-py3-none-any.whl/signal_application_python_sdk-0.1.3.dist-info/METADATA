@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: signal-application-python-sdk
+Version: 0.1.3
+Summary: signal application services
+Author: Wesley Clover
+Author-email: burak.cakmak@wesleyclover.com
+Description-Content-Type: text/markdown
+Requires-Dist: awsiotsdk (>=1.7.1)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: awscrt (==0.13.9)
+Requires-Dist: awsiotsdk (==1.11.0)
+Requires-Dist: boto3 (==1.21.43)
+Requires-Dist: botocore (==1.24.43)
+Requires-Dist: paho-mqtt (==1.6.1)
+Requires-Dist: urllib3 (==1.26.8)
+
+# signal-application-python-sdk
