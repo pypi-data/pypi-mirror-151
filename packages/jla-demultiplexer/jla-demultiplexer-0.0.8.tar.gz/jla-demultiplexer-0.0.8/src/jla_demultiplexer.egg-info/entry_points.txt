@@ -1,0 +1,4 @@
+[console_scripts]
+demultiplexer = deMultiplexer:manifestAlign
+fastqbreakdown = deMultiplexer:fastqBreakDown
+jla-trim = deMultiplexer:trimDeDup

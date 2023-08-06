@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/deMultiplexer/__init__.py
+src/deMultiplexer/deMultiplexer.py
+src/jla_demultiplexer.egg-info/PKG-INFO
+src/jla_demultiplexer.egg-info/SOURCES.txt
+src/jla_demultiplexer.egg-info/dependency_links.txt
+src/jla_demultiplexer.egg-info/entry_points.txt
+src/jla_demultiplexer.egg-info/requires.txt
+src/jla_demultiplexer.egg-info/top_level.txt
