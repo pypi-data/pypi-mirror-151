@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dubclumper/__init__.py
+dubclumper/dubclump.py
+dubclumper.egg-info/PKG-INFO
+dubclumper.egg-info/SOURCES.txt
+dubclumper.egg-info/dependency_links.txt
+dubclumper.egg-info/top_level.txt
