@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "varutils"
+version = "0.0.7"
+description = "My personal Python module containing various useful utilities."
+authors = ["Andrew Sonin <sonin.cel@yandex.ru>"]
+repository = "https://github.com/andrewsonin/varutils"
+homepage = "https://github.com/andrewsonin/varutils"
+readme = "README.md"
+license = "Apache License 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typing-extensions = "^4"
+varname = "^0.8"
+
+[tool.poetry.dev-dependencies]
+mypy = ">=0.950"
+toml = "^0.10"
+types-toml = "^0.10"
+types-setuptools = "^57"
+ipython = "^7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools>=62", "toml>=0.10,<0.11"]
+build-backend = "poetry.core.masonry.api"
