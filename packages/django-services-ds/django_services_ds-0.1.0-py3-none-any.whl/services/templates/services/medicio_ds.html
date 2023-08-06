@@ -1,0 +1,31 @@
+{% extends 'services/_common.html' %}
+{% load static %}
+
+{% block services %}
+<!-- ======= Services Section ======= -->
+<section id="services" class="services services">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>{{ services.title }}</h2>
+      {% autoescape off %}
+      <p>{{ services.subtitle }}</p>
+      {% endautoescape %}
+    </div>
+
+    <div class="row">
+      {% for item in services.items %}
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="{% cycle '100' '200' '300' '400' '500' '600' %}">
+        {% if services.type == 'icon' %}
+          <div class="icon"><i class="fas {{ item.icon }}"></i></div>
+        {% elif services.type == 'image' %}
+          <img src="{% static 'img/services/'|add:item.image_filename %}" class="img-fluid" alt="">
+        {% endif %}
+        <h4 class="title"><a href="">{{ item.title }}</a></h4>
+        <p class="description">{{ item.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section><!-- End Services Section -->
+{% endblock %}
