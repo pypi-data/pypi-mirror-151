@@ -1,0 +1,2 @@
+typing>=3.7.0, <4; python_version <= "3.8"
+typing_extensions>=4.0.0, <5; python_version <= "3.11"
