@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pydarm
+Version: 0.0.1
+Summary: 'pyDARM modeling package for LIGO detector calibration'
+Author: Evan Goetz
+Author-email: evan.goetz@ligo.org
+License: GPL-3.0-or-later
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: conda
+License-File: LICENSE
+
+# pyDARM
+
+pyDARM is a python implementation of the LIGO DARM servo loop
+model. It is used to calibrate the detector digital output into units
+of differential arm length variations or spacetime strain.
+
+[Installing pyDARM](INSTALL.md)
+
+[Contributing to pyDARM](CONTRIBUTING.md)
+
+
+## Usage
+
+
+### library
+
+See the [examples](examples) directory for examples of library
+usage. You can use pyDARM either from `python`, `ipython`, or a
+jupyter notebook, depending on your preferences.
+
+
+### command line interface
+
+pyDARM includes a command line interface to help guide through the
+calibration process.  See the command help for more info:
+```shell
+$ python3 -m pydarm --help
+```
