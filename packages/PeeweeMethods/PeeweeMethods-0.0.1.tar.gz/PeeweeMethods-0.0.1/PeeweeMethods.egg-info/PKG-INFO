@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PeeweeMethods
+Version: 0.0.1
+Summary: Inner join and last three lines
+Home-page: https://gitlab.com/z691/Igor_Vasilevich_Z69/-/tree/PeeweeMethods
+Author: IgorVasilevich
+Author-email: igar902009@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License
+
+## Peewee methods
+
+---
+
+Here are the methods: inner join and last three lines
+
