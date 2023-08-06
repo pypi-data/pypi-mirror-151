@@ -1,0 +1,17 @@
+kerykeion/__init__.py,sha256=1gMz_eBH5edTEP6Fs2ynB_p135s7_uwg6bgTTgbzldE,4843
+kerykeion/aspects.py,sha256=004fuPirkK9hDcb2bG0urkrliQ4ANcDXeu_BRA30hyM,12884
+kerykeion/fetch_geonames.py,sha256=UfYSkO5OVbnzNJbe_RBqMVX_GHpfOmMb3onla0Gj8v8,4922
+kerykeion/kr.config.json,sha256=yBKPG6SragXya7qx6194jryzkqXPLrCQEWyItosYKWc,10345
+kerykeion/main.py,sha256=RNlo3Vr0nQVV75Y8t5XgubVe-ZCFYlL3uoFXxS0UBic,21351
+kerykeion/print_all_data.py,sha256=eIam_XaKEqPZE2LoPGg8ymbfsl79np0UUShQ54OOqN4,3103
+kerykeion/relationship_score.py,sha256=p1u0nDWYnyeNN4U4TP2y4q-E4VA-VSoYZtpQmqOq09Y,7559
+kerykeion/types.py,sha256=I2008Cmn4oABVarvHthOpIDpKHjBSPFXqiWcbYsBiTA,4583
+kerykeion/utilities.py,sha256=iV5nbu_q2CJCjuoQIiYN-bP10pKsp9g6Q5zmsTDKC-Y,5803
+kerykeion/charts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kerykeion/charts/charts_svg.py,sha256=iomfUwpgqxJ5gMH1NojkSeDtci5EA4W0CRYyJPdN1f8,67868
+kerykeion/charts/templates/basic.xml,sha256=VmqzoF1rpEZxJBCr7_ZK8KDDAlXd9pLewSCSKI_Z4rI,56546
+kerykeion/charts/templates/extended.xml,sha256=cXDqI7uUkG1Pdzdl4h6Hr_POETKrsX3rBqR52iFGRog,56733
+kerykeion-3.1.6.dist-info/METADATA,sha256=jHWj1FnVsxv5cwiX5Y3imI-PDuC0qF-2LSVSbPcSji4,6257
+kerykeion-3.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kerykeion-3.1.6.dist-info/top_level.txt,sha256=dksQHkHSOqfJo-O1gs0FBHhSHB-2UtVJKgDLgddatOg,10
+kerykeion-3.1.6.dist-info/RECORD,,
