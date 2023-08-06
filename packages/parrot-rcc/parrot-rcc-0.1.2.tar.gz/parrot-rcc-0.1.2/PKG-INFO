@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: parrot-rcc
+Version: 0.1.2
+Summary: Zeebe external task Robot Framework RCC client
+Home-page: https://github.com/datakurre/parrot-rcc
+License: BSD-3-Clause
+Author: Asko Soukka
+Author-email: asko.soukka@iki.fi
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: pyzeebe (>=3.0.4,<4.0.0)
+Requires-Dist: uvloop (>=0.16.0,<0.17.0)
+Project-URL: Documentation, https://github.com/datakurre/parrot-rcc
+Project-URL: Repository, https://github.com/datakurre/parrot-rcc
+Description-Content-Type: text/markdown
+
+`parrot-rcc` mimics https://pypi.org/project/carrot-rcc/ for Zeebe.
+
+`parrot-rcc` is Work in progress.
+
+```
+Usage: parrot-rcc [OPTIONS] [ROBOTS]...
+
+  Zeebe external task Robot Framework RCC client
+
+  [ROBOTS] could also be passed as a space separated env RCC_ROBOTS
+
+Options:
+  --rcc-executable TEXT
+  --rcc-controller TEXT
+  --rcc-fixed-spaces BOOLEAN
+  --rcc-telemetry BOOLEAN
+  --task-timeout-ms INTEGER
+  --task-max-jobs INTEGER
+  --zeebe-hostname TEXT
+  --zeebe-port INTEGER
+  --camunda-client-id TEXT
+  --camunda-client-secret TEXT
+  --camunda-cluster-id TEXT
+  --camunda-region TEXT
+  --log-level TEXT
+  --help                        Show this message and exit.
+```
+
