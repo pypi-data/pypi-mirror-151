@@ -1,0 +1,9 @@
+name_matching/distance_metrics.py,sha256=YQl8k0oLiVG_auwzI2CJ1_gDl4wI-w3gOArsnuO5Vfk,9305
+name_matching/name_matcher.py,sha256=0ViB-gD0C9SnITgzBqiTCFWFY0SnFdkF7lfj5_edFWo,30610
+name_matching/run_nm.py,sha256=R3xeJnenll3NHrPZiHexpj13z7AWRpIJ0hMqbQS6guo,14837
+name_matching/sparse_cosine.py,sha256=H8X2bjNiHnZfw4Aa_VLMV3ex9wxIDjUXSUyx5g_PtDs,6083
+name_matching/term_data.py,sha256=iOXTsa9CVSR3EYBuVF6Zfpti6Gu82xFT58HXUUZrNPk,7361
+name_matching-0.8.1.dist-info/METADATA,sha256=XKMnokPh3gdoUw2uOhL6M90V0NMTgpw154fMeII-WMo,418
+name_matching-0.8.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+name_matching-0.8.1.dist-info/top_level.txt,sha256=fyTaDQqWP8NxDEcCsJtxpc6-Bk57DihB3MP2v4r00gg,14
+name_matching-0.8.1.dist-info/RECORD,,
