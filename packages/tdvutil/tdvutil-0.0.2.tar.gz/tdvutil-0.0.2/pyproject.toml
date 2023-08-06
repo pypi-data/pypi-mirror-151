@@ -1,0 +1,87 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "setuptools_scm[toml]>=5",
+    "wheel",
+
+    # this will validate our project classifiers
+    "trove-classifiers",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tdvutil"
+dynamic = [ "version" ]
+description = "A few simple helper classes used by TDV Alinsa"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+readme = "README.md"
+# keywords = [ "whatever", "whatever_else" ]
+authors = [ { name = "TDV Alinsa", email = "alinsa-github@lupine.org" } ]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+
+dependencies = []
+
+# for e.g. "pip install mything[dev]"
+# [project.optional-dependencies]
+# dev = ["check-manifest"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/alinsavix/python-tdvutil"
+"Bug Reports" = "https://github.com/alinsavix/python-tdvutil/issues"
+"Source" = "https://github.com/alinsavix/python-tdvutil"
+
+
+# This would provide a command called `sample` which executes the function
+# `main` from this package when invoked:
+# [project.scripts]
+# sample = "sample:main"
+
+
+[tool.setuptools_scm]
+# For smarter version schemes and other configuration options,
+# check out https://github.com/pypa/setuptools_scm
+version_scheme = "no-guess-dev"
+write_to = "src/_tdvutil/_version.py"
+
+
+[tool.setuptools]
+# our actual source code
+package-dir = { "" = "src" }
+
+
+[tool.setuptools.package-data]
+# data files included that need to be installed
+# "sample" = [ "*.dat" ]
+"tdvutil" = [ "py.typed" ]
+"_tdvutil" = [ "py.typed" ]
+
+[tool.mypy]
+python_version = 3.9
+
+mypy_path = "typings"
+exclude = "^(tests/|conftest\\.py|outputs/|typings/|out/)"
+
+# follow_imports = "silent"
+# ignore_missing_imports = true
+namespace_packages = true
+
+strict_optional = true
+disallow_subclassing_any = false
+disallow_any_generics = true
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
