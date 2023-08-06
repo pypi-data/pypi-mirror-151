@@ -1,0 +1,13 @@
+varutils/__init__.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+varutils/errors.py,sha256=QvdG0NqH74aYQ793Ru-emgDsMjjzRTi4l5bL4R_UOiI,318
+varutils/logging.py,sha256=qJoKouAevxcMAn1jkD8MOZuuYwRmgd5MVb6QleXwXxw,1225
+varutils/plugs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varutils/plugs/constants.py,sha256=uLpzjRxwjdoHtvlJXlM91Y5Cv3z0nB3X64XWfOupBY4,172
+varutils/plugs/functional.py,sha256=oC-W7KtF2-4uoVrd4cF0GqQUoRNFTg4I0vU--75wJ7s,329
+varutils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varutils/types.py,sha256=NHlP7Vk0Fg80jEORSWO3yuc1shnhrsAVj2eYPuV-yVA,90
+varutils/typing.py,sha256=lhgZjEV97jGsPn-xEStBsXtd3yYgid-3qMLfcu_fOEQ,1672
+varutils-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+varutils-0.0.8.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+varutils-0.0.8.dist-info/METADATA,sha256=83WzFCLqKzP2Zw3v4Nl64Fwn4f74rCZkQtTjvb3Ytc0,846
+varutils-0.0.8.dist-info/RECORD,,
