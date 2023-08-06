@@ -1,0 +1,4 @@
+[console_scripts]
+postroj = postroj.cli:cli
+racker = racker.cli:cli
+
