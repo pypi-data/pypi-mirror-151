@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* remove d.screenrecord, use start\_recording and stop\_recording instread
+* add scrcpy test code, fix screenrecord
+* fix create\_connection
+* little update
+* fix screenrecord, ref #18
+* fix fix github build
+* fix github build
+* support #63, add more tests, add root, tcpip
+* close #54, support specify adb path through ADBUTILS\_ADB\_PATH
+* Download binaries from android.com
