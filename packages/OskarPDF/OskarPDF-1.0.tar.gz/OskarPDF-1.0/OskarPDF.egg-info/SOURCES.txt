@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+OskarPDF.egg-info/PKG-INFO
+OskarPDF.egg-info/SOURCES.txt
+OskarPDF.egg-info/dependency_links.txt
+OskarPDF.egg-info/top_level.txt
