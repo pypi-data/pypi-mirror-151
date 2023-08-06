@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: MLNN
+Version: 2.1
+Summary: Multi-layer neuron network
+Home-page: UNKNOWN
+Author: vladgap
+Author-email: gaponenko.vladimir@gmail.com
+License: UNKNOWN
+Description: # Multi-layer neuron network with back propagarion by momentum or gradient descent.
+        
+        ## Version 2.1  25.02.22
+        
+        The project based on a LinkedIn course 
+        "Training Neural Networks in Python" by Eduardo Corpeno
+        and modified by me.
+        
+        The vectorized calculations based on 
+        https://peterroelants.github.io/posts/neural-network-implementation-part04/
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
