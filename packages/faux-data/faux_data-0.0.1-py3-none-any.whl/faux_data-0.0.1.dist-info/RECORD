@@ -1,0 +1,16 @@
+faux_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faux_data/cmd.py,sha256=ACP6asg6f93-eyhIk7NAMwmrOo6rqdUTOeNQK8x5bSQ,3727
+faux_data/column.py,sha256=TVR654zf6fW0NKRHhMfznLyOZs6HffCRtyeaRibq0k8,10488
+faux_data/config.py,sha256=bSZ3V9oSttKoRg4MMyTyHI2TRxYaRRoKdnYNGi3Ek60,120
+faux_data/factory.py,sha256=ZiNbFw5C3DtW_T5Z10pECZyfXgPgH0rbPVPhgbQPu-o,3239
+faux_data/main.py,sha256=KxQRImbRlF_4zJYz83VlzmVUbEWOZiW0D-ZMJWbuqZA,719
+faux_data/table.py,sha256=XNK-z0eZGysB3nEp4IxpkdVIHwDkw25OS5ZzjJu0fLE,3776
+faux_data/target.py,sha256=GtR0u2-6nAIHQxThQyOMZuc-noR8M--H_ryq02XFTsU,11506
+faux_data/template.py,sha256=ZHLLTi-agB3Z_6dxdU4N-Y26XAah5ceunV79ZcFwNyg,2028
+faux_data/template_rendering.py,sha256=ow5WQC2c06NkwrfzTZQsIjOX1-LKO7uFp825_IwIFEw,6533
+faux_data/utils.py,sha256=oLm_82rqzLePu6o9LRFElyvpQONanj8Irr6SwOdcbgM,667
+faux_data-0.0.1.dist-info/METADATA,sha256=I4P8F2kAVVcBQwb1vEvCx3vSRxLn4DFwNMct4b0U-Bw,458
+faux_data-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+faux_data-0.0.1.dist-info/entry_points.txt,sha256=RNKBAsbf0nJ7rR7JC5fOWnwwXWck11xXut1l2rTnoM8,44
+faux_data-0.0.1.dist-info/top_level.txt,sha256=AIdBcvTqA6MP5DFG-nY86wV7rY7a_t35w-qSmjU1Rmg,10
+faux_data-0.0.1.dist-info/RECORD,,
