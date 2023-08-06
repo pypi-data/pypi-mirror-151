@@ -1,0 +1,11 @@
+tagfindutils/__init__.py,sha256=6MPdxjO2jo_ogeHd0a_5keIb4KMT6FpGfOhNXXUL1F0,668
+tagfindutils/cloudmusic.py,sha256=pCK9laHqFnitz70juOsu-MwUhTK_B21y8nw3-pupdoA,7970
+tagfindutils/qqmusic.py,sha256=-9zFGG1bvYIQoFgAZ8inNoZ9nKqcXX15kvQhJx8VvlQ,10695
+tagfindutils/rawquery.py,sha256=ywgntCsvudAuzoGHNQNgjMJ4lwiCE94C0IWdbPGEUQk,6127
+tagfindutils/structures.py,sha256=BsysPrgy2BW3SAaj35PBAgWR4bUaq7xA3CBkEKV7lJs,4301
+tagfindutils/utils.py,sha256=CcbZLfcgps2oQ0tzNoEMuF8gAHkAv6dY1lr2lSc-K0Q,464
+MusicTagFindUtils-0.1.0.dist-info/LICENSE,sha256=yEnSW62NgVeQCpjdmkGiygW2lmYzwi0W5H3u8UJwFRo,1065
+MusicTagFindUtils-0.1.0.dist-info/METADATA,sha256=3aR09BzVfv04aZhCQcydhEclWqmA0JGFH-DfU0ySnog,3923
+MusicTagFindUtils-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+MusicTagFindUtils-0.1.0.dist-info/top_level.txt,sha256=5h55SeZLEkhO5hgFT-HhgpcHOxbVpS0hmvzlEZMl6Zk,13
+MusicTagFindUtils-0.1.0.dist-info/RECORD,,
