@@ -1,0 +1,15 @@
+atoti_kafka/LICENSE,sha256=qhBWfrxs73KX_30cNTmfQCk2bHFA15nkoDmey1OkObA,23066
+atoti_kafka/__init__.py,sha256=gMahu1RRrWiZceQNrO3Tw55NOKgm_mfyjI7OqnfeugU,224
+atoti_kafka/_custom.py,sha256=iPazMU_mW4yDb4Hoxmyb0KDHfwWE0kb5PxnEmQ_lzzg,1934
+atoti_kafka/_kafka_deserializer.py,sha256=gZGJ_sraCdmL72w0LaEHw-ULAmJZmWc9BZi5lIR51XM,237
+atoti_kafka/_plugin.py,sha256=cQSQuhHydNs5Vq8oyNTNj8Euud03hb6GUw6LfREDjNk,726
+atoti_kafka/_source.py,sha256=gLcpX7CyFI9Paw0SmYXjyQfXlUMlwkTtwWPjtmstBf8,3399
+atoti_kafka/deserializer.py,sha256=6h8uE9RtRR-Tx1x2icdIyPqdbYvh0zyRRTbzzuUtAQo,304
+atoti_kafka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_kafka/data/atoti-kafka.jar,sha256=JYcLap__3CPH5DHTZmCW9Gr-J4YjymKQo2owEpHsguQ,6215371
+atoti_kafka-0.6.6.dist-info/LICENSE,sha256=qhBWfrxs73KX_30cNTmfQCk2bHFA15nkoDmey1OkObA,23066
+atoti_kafka-0.6.6.dist-info/METADATA,sha256=edLNpUyezptPqqU1utbWskfVx8KznLm6RkBDqrYa5l4,927
+atoti_kafka-0.6.6.dist-info/WHEEL,sha256=LQjZFLTOBxkIp4di2ofhYKlPFNXKaDElkpqoA9Yb01U,109
+atoti_kafka-0.6.6.dist-info/entry_points.txt,sha256=dk7szq9xcbZUlyB1DGxnBSiqU28rtj60bgBdg9z767c,56
+atoti_kafka-0.6.6.dist-info/top_level.txt,sha256=wrXuS4Xe2kIYlNkXR_86D3MliYoiP5VGpigSveHfA4c,12
+atoti_kafka-0.6.6.dist-info/RECORD,,
