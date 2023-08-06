@@ -1,0 +1,3 @@
+[console_scripts]
+gha-stats=gha_stats.cli:cli
+
