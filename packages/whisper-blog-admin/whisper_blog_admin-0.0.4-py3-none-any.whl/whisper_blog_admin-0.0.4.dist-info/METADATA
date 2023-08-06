@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: whisper-blog-admin
+Version: 0.0.4
+Summary: Admin panel for Whisper, a lightweight modularized blog engine
+Home-page: https://ciel.dev/whisper/
+Author: TechCiel
+Author-email: whisper@ciel.dev
+License: AGPL-3.0
+Project-URL: Source Code, https://github.com/TechCiel/whisper/tree/plugins/admin
+Project-URL: Issue Tracker, https://github.com/TechCiel/whisper/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: whisper-blog-core
+
+# whisper.admin
+
+Admin panel plugin for Whisper, a highly modularized multi-purpose blog engine.
+
+## Installation
+
+WIP
+
+## License
+
+This plugin is released under GNU Affero General Public License (version 3) from the Free Software Foundation, same as the Whisper blog engine as required. A copy of the license should be included with every copy of this plugin, you can also read the license text [here](https://www.gnu.org/licenses/agpl-3.0.html).
