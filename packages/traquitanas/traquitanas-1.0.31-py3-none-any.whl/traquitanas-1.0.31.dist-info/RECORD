@@ -1,0 +1,17 @@
+traquitanas/__init__.py,sha256=9pEhU7CiIBuhVCtleQ710blCcWhFwuAa79e6kkEFjbo,274
+traquitanas/personal.py,sha256=AIem0B_ifKrj_3QEiTCWMVVR8t51uSn-69W8kWSV1Pw,1889
+traquitanas/utils.py,sha256=3yQQNEFnSMQMyz_0te1gNiBFN0jqhr8fBMCPvXetcYQ,843
+traquitanas/geo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traquitanas/geo/converts.py,sha256=M1Ik24dCruV2iTrYD6vNJbdnKxJHBvQjANh1xFqAy9k,3503
+traquitanas/geo/layers.py,sha256=-E07ce9qQzEfo2yuuRXUia13hKye1ibEMizheAN_Gjg,2715
+traquitanas/net/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traquitanas/net/downloads.py,sha256=02d2PEdRKiAjUyc_KXBpCt2lvF5LGW_IMyo57P74wyk,2872
+traquitanas/net/scraping.py,sha256=6BFB3k90Uoc2ukLAmPthaUcNF_XCUBQR2UYFWuiUyEM,2860
+traquitanas/net/ssss.py,sha256=d_5T8Q1MI_7avMjc2SJ4mk6x6aORlccETvnwEjYP30A,7518
+traquitanas/numbers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traquitanas/numbers/numbers.py,sha256=UxPfZxfVxLOMnTikX2-7KQiHgYso0Wt1NIgyF78Nizc,1403
+traquitanas-1.0.31.dist-info/LICENSE,sha256=0JGJWPlRtH9XP1ra6G7WyVyhmrybvabf1rnpPSV3kRQ,1068
+traquitanas-1.0.31.dist-info/METADATA,sha256=9lImrBhyydcmdR_3JA3kaWRevyTYPnEEqlkRJczDH0s,2306
+traquitanas-1.0.31.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+traquitanas-1.0.31.dist-info/top_level.txt,sha256=xOMFPBv-XuM7jXokmktF3QOUDW8Kda_M8U4lYkwen_A,12
+traquitanas-1.0.31.dist-info/RECORD,,
