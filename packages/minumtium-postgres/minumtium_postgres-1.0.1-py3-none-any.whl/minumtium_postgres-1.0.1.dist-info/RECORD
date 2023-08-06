@@ -1,0 +1,10 @@
+minumtium_postgres/__init__.py,sha256=RqvIyi7vVCMfHbWOjyrIIq6VTqZW0-GrbUakRX4aPE8,8062
+minumtium_postgres/migrations/__init__.py,sha256=J8iWLtEO1hcdTH6Rr8JwV5CuRocBaSXFzDHAm7VDvCM,1626
+minumtium_postgres/migrations/versions/__init__.py,sha256=_RbiKr91He8u_feootACZnr0ttddBBVHYAULMgk31uc,674
+minumtium_postgres/migrations/versions/version_0.py,sha256=JuJ9NkMTlt9lEUbgCzl4aa4oolDVuhPaTLydfL81BuM,779
+minumtium_postgres/migrations/versions/version_1.py,sha256=QAUX7s2H9LziQPgeoDfpn-9gtjp0OapMh7zE4ZNq2CE,1128
+minumtium_postgres-1.0.1.dist-info/LICENSE,sha256=PcCtAPK9Ckak3WL6ofTKUMitOL0OhCgOMEV6iRbrFOQ,554
+minumtium_postgres-1.0.1.dist-info/METADATA,sha256=42LUN6PUQRgFT4NIwojqqiuKWtTG5CMBbnMdB4vxnEw,2051
+minumtium_postgres-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+minumtium_postgres-1.0.1.dist-info/top_level.txt,sha256=GGwlk0BoXQ00wIov36NBQwrt-Vg3Mb5lveLLbpqLNWM,19
+minumtium_postgres-1.0.1.dist-info/RECORD,,
