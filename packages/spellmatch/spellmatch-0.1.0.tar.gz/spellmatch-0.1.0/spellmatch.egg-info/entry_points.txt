@@ -1,0 +1,2 @@
+[console_scripts]
+spellmatch = spellmatch.__main__:cli
