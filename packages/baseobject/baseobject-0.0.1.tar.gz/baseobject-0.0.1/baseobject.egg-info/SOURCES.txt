@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+baseobject/__init__.py
+baseobject/_base.py
+baseobject/_meta.py
+baseobject.egg-info/PKG-INFO
+baseobject.egg-info/SOURCES.txt
+baseobject.egg-info/dependency_links.txt
+baseobject.egg-info/not-zip-safe
+baseobject.egg-info/requires.txt
+baseobject.egg-info/top_level.txt
+baseobject/tests/__init__.py
+baseobject/tests/test_base.py
