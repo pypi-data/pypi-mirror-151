@@ -1,0 +1,6 @@
+arcane/credentials/__init__.py,sha256=Tnw6egFfLWTZWByjAg_JrZmo9WtU5vcv69reTwZVn_0,53
+arcane/credentials/credentials.py,sha256=4FDmKWXLAbjdAK6XuXTx_QF3aF9hjmIyuQhvg59eAjU,2926
+arcane/credentials/exceptions.py,sha256=y35p3yN5sg3QVYofw7ZWiqi9_C5rFx5N9VGUyykIbGA,103
+arcane_credentials-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+arcane_credentials-0.1.0.dist-info/METADATA,sha256=HYr2mPqQAyIkih777nBp8iFxah3GVDfkk4-4fsvvnRA,736
+arcane_credentials-0.1.0.dist-info/RECORD,,
