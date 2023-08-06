@@ -1,0 +1,13 @@
+AUTHORS
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ansible/plugins/filter/ldif.py
+ansible_filters_ldif.egg-info/PKG-INFO
+ansible_filters_ldif.egg-info/SOURCES.txt
+ansible_filters_ldif.egg-info/dependency_links.txt
+ansible_filters_ldif.egg-info/requires.txt
+ansible_filters_ldif.egg-info/top_level.txt
