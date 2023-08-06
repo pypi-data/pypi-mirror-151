@@ -1,0 +1,3 @@
+[flake8.extension]
+RBT = flake8_require_beartype:Plugin
+
