@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: transunet
+Version: 1.0.1
+Summary: Tensorflow Extra Utilities. https://github.com/awsaf49/TransUNet-tf
+Home-page: https://github.com/awsaf49/TransUNet-tf
+Author: Awsaf
+Author-email: awsaf49@gmail.com
+License: MIT
+Keywords: tensorflow TransUNet
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: tensorflow-addons
+Requires-Dist: validators
+Requires-Dist: tensorflow
+
+## TransUNet
+> Tensorflow Implementation of [TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation](https://arxiv.org/pdf/2102.04306.pdf)
+<img src="https://production-media.paperswithcode.com/social-images/hfPJrzzvUuaeIMvb.png" width=800>
+
+## Installation
+```shell
+pip install transunet
+```
+
+## Usage
+```py
+from transunet import TransUNet
+model = TransUNet(image_size=224, pretrain=True)
+```
+
+## References 
+* [TransUNet](https://github.com/Beckschen/TransUNet)(Official)
+* [TransUnet](https://github.com/kenza-bouzid/TransUnet)
+* [vit-keras](https://github.com/faustomorales/vit-keras)
+* [ResNetV2](https://github.com/tensorflow/tensorflow/blob/v2.5.0/tensorflow/python/keras/applications/resnet_v2.py#L28-L56)
+
+
+

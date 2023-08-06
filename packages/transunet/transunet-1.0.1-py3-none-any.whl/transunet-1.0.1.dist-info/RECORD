@@ -1,0 +1,12 @@
+transunet/__init__.py,sha256=ZCtkFV1zF26ybcl9BQC_Xrey_W_HCsVtoCl3nDn9vAs,28
+transunet/decoder_layers.py,sha256=XQXmJHZwiZqA_21EszPqA9msN--a1b1pdHBg2_8mEV8,3141
+transunet/encoder_layers.py,sha256=pVETDqiBrhIoWfB3mka9q2Kfhl2YUvpxVRb6ryF3GSk,4792
+transunet/model.py,sha256=qW-FrcANTGV-UuUXzaxJJL4FsHs27j9fiCZyfQiATw4,3900
+transunet/resnet_v2.py,sha256=SXxTARrgkQppHFW_qseV4ySnRsatsF2PwLNhBpVjwfU,6471
+transunet/utils.py,sha256=AsovvW1wbMOzOavP-uzZhQEggWXC5iGHj21qV9cjH7w,6945
+transunet/version.py,sha256=x7SWnx8ho-VaDHLtK75ItIuboJ9SpcR_vy2GvXNmU4A,21
+transunet-1.0.1.dist-info/LICENSE.md,sha256=zQWrnwgOYf_FNrSRUizHcwOfbB-tji7OeWfyMcwfatU,1073
+transunet-1.0.1.dist-info/METADATA,sha256=Tgs9nuMrHxvIN_BmRnifvimz-dU55Q4j5ICqyvoHrE8,1836
+transunet-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+transunet-1.0.1.dist-info/top_level.txt,sha256=uXZODdLQ77dPzmaGL1p72506sNdH_eYCl6LUcVD185c,10
+transunet-1.0.1.dist-info/RECORD,,
