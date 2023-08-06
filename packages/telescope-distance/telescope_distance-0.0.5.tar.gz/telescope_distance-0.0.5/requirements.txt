@@ -1,0 +1,7 @@
+numpy>=1.18
+sklearn~=0.0
+scikit-learn
+scipy
+setuptools~=47.1.0
+kmedoids
+PyChest~=1.22
