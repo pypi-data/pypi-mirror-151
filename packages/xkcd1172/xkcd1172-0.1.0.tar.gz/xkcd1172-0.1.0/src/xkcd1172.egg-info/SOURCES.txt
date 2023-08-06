@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/xkcd1172/__init__.py
+src/xkcd1172/main.py
+src/xkcd1172.egg-info/PKG-INFO
+src/xkcd1172.egg-info/SOURCES.txt
+src/xkcd1172.egg-info/dependency_links.txt
+src/xkcd1172.egg-info/entry_points.txt
+src/xkcd1172.egg-info/requires.txt
+src/xkcd1172.egg-info/top_level.txt
