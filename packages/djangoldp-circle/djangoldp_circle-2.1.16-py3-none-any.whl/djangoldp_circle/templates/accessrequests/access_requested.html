@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <div>
+        {%if instance.user.name is not None %}{{instance.user.name}}{% else %}{{instance.user.urlid}}{% endif %} requested access to your circle {{instance.circle.urlid}}
+    </div>
+    <div style='margin-top:10px;'>
+        <p style='font-size:small;color:#777'>
+            --
+            <br>
+            Don't respond directly to this email. {% if on %}Instead, find the request at <a href='{{ on }}' target='_blank'>{{ on }}</a>{% endif %}.
+            <br>
+        </p>
+    </div>
+</html>
