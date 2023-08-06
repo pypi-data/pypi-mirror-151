@@ -1,0 +1,8 @@
+pytorch-lightning
+torch
+numpy
+sklearn
+pandas
+overrides
+scipy
+tensorflow
