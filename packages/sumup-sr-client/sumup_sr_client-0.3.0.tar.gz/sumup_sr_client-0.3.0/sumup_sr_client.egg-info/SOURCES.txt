@@ -1,0 +1,15 @@
+README.md
+setup.py
+schema_registry/__init__.py
+schema_registry/client/__init__.py
+schema_registry/client/error.py
+schema_registry/client/sumup_schema_registry_client.py
+schema_registry/registry/__init__.py
+schema_registry/registry/sumup_schema_registry.py
+schema_registry/utils/__init__.py
+schema_registry/utils/schema_utils.py
+sumup_sr_client.egg-info/PKG-INFO
+sumup_sr_client.egg-info/SOURCES.txt
+sumup_sr_client.egg-info/dependency_links.txt
+sumup_sr_client.egg-info/requires.txt
+sumup_sr_client.egg-info/top_level.txt
