@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+portalcomponentscg/exceptions.py
+portalcomponentscg/logs.py
+portalcomponentscg/requests_cg.py
+portalcomponentscg.egg-info/PKG-INFO
+portalcomponentscg.egg-info/SOURCES.txt
+portalcomponentscg.egg-info/dependency_links.txt
+portalcomponentscg.egg-info/requires.txt
+portalcomponentscg.egg-info/top_level.txt
