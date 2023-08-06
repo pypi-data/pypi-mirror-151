@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: django-user-auth-tek
+Version: 0.1
+Summary: A Django app for User Authentication.
+Home-page: https://www.youtube.com/channel/UCjBAntT7XjiP5QVjpxbTfXg
+Author: Usman Mukhtar
+Author-email: usmanmukhtar432@gmail.com
+License: MIT  # Example license
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
