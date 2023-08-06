@@ -1,0 +1,15 @@
+$def with (project, repo, package_releases)
+$var title: $project
+
+$if repo.exists():
+    <h2>Files</h2>
+    <ul>
+    $for file in repo.files:
+        <li>$repo</li>
+    </ul>
+
+<h2>Releases</h2>
+<ul>
+$for release in package_releases:
+    <li><a href=/$project/releases/$release>$release</a></li>
+</ul>
