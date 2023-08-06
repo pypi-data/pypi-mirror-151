@@ -1,0 +1,9 @@
+logging_k8s_metadata/__init__.py,sha256=0yDNkTlscX1c10ftTOsyQtwQICGxHdPjwiKVsZWXrzM,115
+logging_k8s_metadata/formatters.py,sha256=JohvvlO3Tp-AJwDXlC-Iaxs9i8RT3172mcIGnYIINfI,989
+logging_k8s_metadata/utils.py,sha256=RrCzUlnFHRlqjyRMD7Vcq_YPAjSAsZp_sI8QvmBISJE,2948
+logging_k8s_metadata/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logging_k8s_metadata/tests/test_logging.py,sha256=zB_9TOIWFht8ur7IVz3Aa5g4Xnk80DVrHsU7Jv5ZBSI,2277
+logging_k8s_metadata-1.0.1.dist-info/METADATA,sha256=z16Cqym1DcWFG3pP0r4sptan__a0EHKLsuKic5z7szM,2746
+logging_k8s_metadata-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+logging_k8s_metadata-1.0.1.dist-info/top_level.txt,sha256=7EXmRIF7ITeE50CmRaIyNgIAc6pMIKDCfJ5ptag-snw,21
+logging_k8s_metadata-1.0.1.dist-info/RECORD,,
