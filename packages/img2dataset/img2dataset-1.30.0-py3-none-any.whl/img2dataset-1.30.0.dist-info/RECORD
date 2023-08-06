@@ -1,0 +1,15 @@
+img2dataset/__init__.py,sha256=1ZniLNf0m29Wwqbu1GjT03BMs4INjNjkm2g1K4IJuf0,91
+img2dataset/distributor.py,sha256=YASpuQshDdEFVfNe98hxGlWLhzFo032AOFN0bo2WNoA,2648
+img2dataset/downloader.py,sha256=Oq8m4bnRx1mjToZHBRe03LXUUgze7qQm7FRIURP2w5E,10109
+img2dataset/logger.py,sha256=94CE-jpImQt1shjQK9Q79vhWjNm3n6w0Wo6aAvuQdqg,11123
+img2dataset/main.py,sha256=vlTX3s_H8xJc17D4nBt45Xbxt4NuL7Gz_ipCl_DsO9I,5447
+img2dataset/reader.py,sha256=zwJLzd-71lCrN5W1XfDdvdXbcwMPZYuo2zGbT9nrnR8,7447
+img2dataset/resizer.py,sha256=SQ9h2W6u92nbGJkV9EFUTFAtj30bZPFqh0Kd7NxVQ9Y,6667
+img2dataset/writer.py,sha256=lmI-4eXuCoO5WyhNZY4iZ9iFZECb97dpTl0hNDd4NdY,10007
+img2dataset-1.30.0.data/data/README.md,sha256=0OZhYzVFrEesCs81S8JMuo8fqqlf1Nw1OTsmBjOXD1k,19418
+img2dataset-1.30.0.dist-info/LICENSE,sha256=kQ7Sg07ctsEZeQxAgGGT8tsbjz8G5o_kY8ToEkxWfjE,1072
+img2dataset-1.30.0.dist-info/METADATA,sha256=Lfupc9N2VhMgrbtaZIemibziyEECM0h1UIDWimhGA3w,20478
+img2dataset-1.30.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+img2dataset-1.30.0.dist-info/entry_points.txt,sha256=Io2Taw9IWbI9q6ifd7rlWuJxTXDBMoNZdsI3-lpqBlE,50
+img2dataset-1.30.0.dist-info/top_level.txt,sha256=KsqvZBbOY_zffikhqPWGjj61dw5NEbvND06COxxwNEg,12
+img2dataset-1.30.0.dist-info/RECORD,,
