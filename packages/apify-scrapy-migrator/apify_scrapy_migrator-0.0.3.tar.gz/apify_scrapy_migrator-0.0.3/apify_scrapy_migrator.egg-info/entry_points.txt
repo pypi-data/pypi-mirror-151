@@ -1,0 +1,2 @@
+[console_scripts]
+apify-scrapy-migrator = src.apify_scrapy_migrator:parse_input
