@@ -1,0 +1,13 @@
+ietf_comments/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+ietf_comments/changes.py,sha256=84Ls8PATuLQDFyJEXYh_9LlmJIDnGDtr30UQuyN3Iok,1827
+ietf_comments/github.py,sha256=7Trk3hfXftLQuOy2Dp0-uNWgrPwGKXmtNNCo9c89EJE,1933
+ietf_comments/linkify.py,sha256=CY7vQvFiQRE7DLygmzGwrGHfC8BhGJlKvSni8gvlT3Y,2160
+ietf_comments/md_comments.py,sha256=viARlJvjzJW7OjeBo1qeLaWNnuw1uVBM_NM9PXaxTQY,5198
+ietf_comments/ui.py,sha256=4zuWZRwlPJCplJgw2C-aB_8LJapY3W4u5dx4KvJh6ZI,4201
+ietf_comments/xml_comments.py,sha256=ncUv6jRgG1jCXgmJ2v6t06UgOT8_7YHqigSadlRX3lM,2666
+ietf_comments-0.2.0.dist-info/LICENSE,sha256=Emw7SJCbVIGbV9fMWWCgHVm_UL0203r9V2NU207Nuhg,1325
+ietf_comments-0.2.0.dist-info/METADATA,sha256=87pS1a-JxEzhpAqkdCsPuIYqVHwCj6SbCe-3dolixhc,4658
+ietf_comments-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ietf_comments-0.2.0.dist-info/entry_points.txt,sha256=pp9DktStjcNoQ3J0ewkeMDscKbwlJpI07VAKvqYLcjo,122
+ietf_comments-0.2.0.dist-info/top_level.txt,sha256=TDkAskxa0i0-3FB8i60gP0fcnRhtOIdzER0RaPSEn1s,14
+ietf_comments-0.2.0.dist-info/RECORD,,
