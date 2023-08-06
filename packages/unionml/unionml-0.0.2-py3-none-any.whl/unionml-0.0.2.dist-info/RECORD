@@ -1,0 +1,16 @@
+unionml/__init__.py,sha256=vLvj1bb0c_iq1WG_ETaMx0nBAUq10UfHVfIDIl0JFkI,836
+unionml/cli.py,sha256=JbjwDXQ-rPGf1k917aKEaR_EKVRWzxd_xPJUpQA2yEQ,6180
+unionml/dataset.py,sha256=rpuFhLoFpLE8IH3FViFBKouD9W62yxnnTgtt3uWcYxk,6799
+unionml/fastapi.py,sha256=MyE2fJlwpSFnEazJDfP2qPsnkUfmlzUEGgxWrw9GI_A,2426
+unionml/model.py,sha256=aJkSkesYpPnpi7K4RKRgwEwpCDbR1wCseFIbrmTNgZg,25000
+unionml/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unionml/remote.py,sha256=1ONFkOnINKKIxk8tu55fKkOfSOFpDADwamlZ-6m2IZU,6161
+unionml/task_resolver.py,sha256=WYLy4MszUPNBq_fzEEhyOQdaKGBUvTX-XrPESQbvdS8,1158
+unionml/utils.py,sha256=Ln9FRDklfwdCn6CBujqCSiVXOw8o4GtGOqH_o_xUWnE,2198
+unionml-0.0.2.data/data/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+unionml-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+unionml-0.0.2.dist-info/METADATA,sha256=Pwkx9r6AlbziKQ70Bq6sryspS29EwNiCPqMPgoJe5Tw,4872
+unionml-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+unionml-0.0.2.dist-info/entry_points.txt,sha256=96nwtYjq8mRxy-YVm3MNy9hO2JhVBLww55dzhrmK0RU,45
+unionml-0.0.2.dist-info/top_level.txt,sha256=JSJxOTChyTI3uS57ihJTFUlgRmS2X1Y0ORmc6xp_5pY,8
+unionml-0.0.2.dist-info/RECORD,,
