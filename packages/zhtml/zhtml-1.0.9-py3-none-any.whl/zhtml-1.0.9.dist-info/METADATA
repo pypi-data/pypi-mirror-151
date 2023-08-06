@@ -1,0 +1,187 @@
+Metadata-Version: 2.1
+Name: zhtml
+Version: 1.0.9
+Summary: Because the world need's yet another HTML templating framework
+Home-page: https://gitlab.com/z3c0/zhtml
+Author: z3c0
+Author-email: z3c0@21337.tech
+License: LGPL-3.0
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ZHTML (LGPLv3)
+
+Because the world needs another HTML framework.
+
+ZHTML is short for ZacHTML, which is short for Zach HTML.
+
+## Install
+
+```bash
+python -m pip install zhtml
+```
+
+## Tutorial
+
+Create a blank HTML page to begin.
+
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>zhtml Example</title>
+
+    <!-- Water.css, to spruce things up -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+</head>
+<body>
+    
+</body>
+
+</html>
+```
+
+ZHTML is a dynamic rendering library, so instead of putting our HTML directly into our file, we will instead insert a comment as a placeholder.
+
+```html
+</head>
+
+<body>
+    <!-- APP -->
+</body>
+
+</html>
+```
+
+Next, let's begin our script.
+
+```py
+# example.py
+
+import zhtml as html
+
+
+if __name__ == '__main__':
+    example = html.Page('examples/example.html', 'index')
+
+```
+
+`html.Page` allows us to load our template file as an object.
+
+Before going any further, we need to bind our `APP` placeholder, using the `html.Placeholder` class.
+
+```py
+# example.py
+
+import zhtml as html
+
+
+if __name__ == '__main__':
+    binding = html.Placeholder('APP')
+    example = html.Page('examples/example.html', 'index')
+
+```
+
+By passing `'APP'` to our `Placeholder` object, we are telling it to look for the `<!-- APP -->` placeholder in our HTML file. The resulting object is an `re.Pattern`.
+
+Next, let's create some HTML to inject into our `example.html` page.
+
+ZHTML uses string functions to assemble HTML snippets. To start, let's create a heading and a paragraph.
+
+```py
+# example.py
+
+import zhtml as html
+
+
+if __name__ == '__main__':
+    binding = html.Placeholder.create('APP')
+    example = html.Page('examples/example.html', 'index')
+
+    heading = html.heading('Hello, World!')
+    paragraph = html.paragraph('This is a body of text.')
+
+```
+
+Once created, lets wrap our new elements in a `main` tag. This will be the root of our application. Because ZHTML assembles elements as strings, unioning our heading and paragraph is as easy as concatenating two strings.
+
+```py
+# example.py
+
+import zhtml as html
+
+
+if __name__ == '__main__':
+    binding = html.Placeholder.create('APP')
+    example = html.Page('examples/example.html', 'index')
+
+    heading = html.heading('Hello, World!')
+    paragraph = html.paragraph('This is a body of text.')
+
+    main = html.main(heading + paragraph)
+
+```
+
+Finally, we can inject our application using the `inject_text` method on our `Page` object. Be sure to provide the `Placeholder` that we created earlier. To output the results, use the `write` method.
+
+```py
+# example.py
+
+import zhtml as html
+
+
+if __name__ == '__main__':
+    binding = html.Placeholder.create('APP')
+    example = html.Page('examples/example.html', 'index')
+
+    heading = html.heading('Hello, World!')
+    paragraph = html.paragraph('This is a body of text.')
+
+    main = html.main(heading + paragraph)
+
+    example = example.inject_text(main, binding)
+    example.write('output')
+
+```
+
+You should now have a file named `index.html` in the `output` folder of your project.
+
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>zhtml Example</title>
+
+    <!-- Water.css, to spruce things up -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+</head>
+
+<body>
+    
+    <main>
+        <h1>Hello, World!</h1>
+        <p>This is a body of text.</p>
+    </main>
+    
+</body>
+
+</html>
+```
+
+![index.html](examples/example.png)
+
+***
+
+## Contributing
+
+ZHTML is a young project, with a lot of work to do. If you want to help [contact z3c0](mailto:z3c0@21337.tech), or fork the project and submit your change as a merge request.
+
+
