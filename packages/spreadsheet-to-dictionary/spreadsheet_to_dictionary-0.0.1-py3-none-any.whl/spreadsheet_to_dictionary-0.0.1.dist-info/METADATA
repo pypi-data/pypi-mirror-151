@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: spreadsheet-to-dictionary
+Version: 0.0.1
+Summary: A library to convert spreadsheets into a Python dictionary
+Home-page: https://github.com/h4n53l/excel_to_dictionary
+Author: Jonathan Hansel Awo
+Author-email: hanselsoftwaredev@gmail.com
+Project-URL: Bug Tracker, https://github.com/h4n53l/excel_to_dictionary/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openpyxl
+
+Spreadsheet_to_Dictionary converts a spreadsheet into a python dictionary. The current version (0.0.1) only supports locally saved files.
+## How to use it
+You can use the library by specifying the spreadsheet file location as an argument.
+Optionally, you can also specify the name of the worksheet in the spreadsheet file.
+If the column names were not defined in the first row, you can also specify the row number as well, where 1 is the first row.
+## Repository
+https://github.com/h4n53l/excel_to_dictionary
