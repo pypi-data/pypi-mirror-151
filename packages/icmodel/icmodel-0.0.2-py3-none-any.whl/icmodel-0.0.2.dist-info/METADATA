@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: icmodel
+Version: 0.0.2
+Summary: development_time_predict
+Home-page: https://github.com/JiekaiLab/development_time_predict
+Author: qycai
+Author-email: cai_quanyou@gibh.ac.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: anndata
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scanpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: sparse
+Requires-Dist: umap-learn
+Requires-Dist: lifelines
+Requires-Dist: lightgbm
+Requires-Dist: nmslib
+
+# development_time_predict
+### Install package:
+```
+pip install icmodel
+```
+### Usage:
+```
+import icmodel
+# Load data
+test_data = sc.read_h5ad('DATA/PATH')
+# Predict time
+test_data = icmodel.Predict(test_data,pred='development time',NN=True,n=5)
+# Predict celltype
+test_data = icmodel.Predict(test_data,pred='cell type')
+```
+
