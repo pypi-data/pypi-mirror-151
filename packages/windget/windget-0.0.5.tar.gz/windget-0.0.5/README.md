@@ -1,0 +1,40 @@
+# windget
+windget is a third party Win.d API for python. It's embeded within RiskQuantLib. 
+
+It is also equipped with a pycharm plugin named as windget. You can search pycharm plugin market to install this code completion plugin.
+
+The basic Win.d API provides with w.set, w.wss, w.wsd, etc. However, users have to depend the Code Generator within Win.d Desktop terminal to find out the English name of attributes that they want. For example, before using Code Generator, you will never be able to know you shoule use **pct_chg** rather than **percentage_change** to pull out the data of percentage change of every stock.
+
+This is inconvenient because you have to use CG in Win.d terminal every time you download data. This library allows users to index function with attribute name. In the above example, just use:
+
+>from windget import *  
+> 
+>getPctChg("000001.SZ","tradeDate=20200519")
+
+Every attribute that is provided in old wind API is reformed to a new function in this library. And every function start with a **get**, if you are using pycharm, the IDE shoule auto-finish the rest part of this function.
+
+If you find this is still not good enough, this library also provides the index with Chinese. In pycharm, press **Alt+Shift+F** to open the index window, and type any Chinese key words, the result will till you which function you should use. In above case, press **Alt+Shift+F** in pycharm and type **涨跌** to see how many function this library gives you.
+
+**Notice: If you installed SouGou Input, the key of Alt+Shift+F may not work because SouGou covers it with other functions, you have to go to settings of SouGou to shut it down.**
+
+You can read the document of RiskQuantLib on https://riskquantlib-doc.readthedocs.io/en/latest/index.html
+
+windget是一个三方开发的万得python接口，它使得用户可以以更为方便的方式从万得获取数据。windget也集成于RiskQuantLib中。
+
+使用windget的有效方法是使用windget的pycharm插件。使用pip安装了windget之后，您可以在pycharm的插件市场搜索并安装windget，此插件会为您提供实时的代码补全和中文字段提示。
+
+万得默认的python数据接口使用w.set, w.wss, w.wsd等函数向用户提供数据服务，但用户必须依赖万得的桌面终端中的代码生成器来寻找字段的名称，这非常不便。比如当用户需要下载某股票过去几年的每日涨跌时，需要先打开万得终端的代码生成器，找到涨跌对应的字段名为 **pct_chg** 而不是 **percentage_change**，然后再使用函数接口。当用户需要频繁获取字段时，这变得非常繁琐。
+
+本库提供了通过名称直接检索函数的功能，使得用户不必使用代码生成器就可以快速找到想要的万得函数。在上面的例子中，只需要使用：
+
+>from windget import *  
+> 
+>getPctChg("000001.SZ","tradeDate=20200519")
+
+本库将万得提供的所有字段都进行了重构，使得每个字段都有对应的函数，用户可以通过字段来获得函数。这样的函数集合被称为get函数族，其中的每个函数都以get开头，紧接字段的英文名称。当用户模糊输入英文名称时，诸如pycharm这样的IDE会自动补全其余的部分，大大加快用户的编码速度。
+
+用户也可以通过中文来索引想要的万得函数，在pycharm中同时按住Alt，Shift，以及F，可以打开文本搜索，在其中键入想要的字段的名称，就可以快速看到本库提供的所有相关函数的名称。
+
+**注意：如果你安装了搜狗输入法，那么搜狗输入法会屏蔽Alt，Shift，以及F，搜狗将其定义为了其他功能，你需要先进入搜狗输入法的设置，快捷键，来关闭这一项。**
+
+你也可以访问 https://riskquantlib-doc.readthedocs.io/zh_CN/latest/ 来获取更多关于RiskQuantLib的信息。

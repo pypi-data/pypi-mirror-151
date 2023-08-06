@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/windget/__init__.py
+src/windget/wsd.py
+src/windget/wss.py
+src/windget.egg-info/PKG-INFO
+src/windget.egg-info/SOURCES.txt
+src/windget.egg-info/dependency_links.txt
+src/windget.egg-info/top_level.txt
