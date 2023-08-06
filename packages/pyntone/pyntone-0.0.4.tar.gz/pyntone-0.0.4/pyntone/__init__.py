@@ -1,0 +1,2 @@
+from pyntone.kintone_rest_api_client import KintoneRestAPIClient
+from pyntone.models.base import KintoneBaseModel
