@@ -1,0 +1,22 @@
+:root {
+    --white: #ffffff;
+    --faint-c: #f9f1fd;
+    --faint-c2: #ead1f9;
+    --faint-c3: #c276ee;
+    --main-c: #9219cc;
+    --dark-c: #7e4399;
+    --dark-c2: #522c64;
+    --light-c: #aa32e6;
+    --light-c2: #7e16b5;
+
+    --alpha-c: rgba(146, 25, 204, 0.4);
+    --alpha-c2: rgba(146, 25, 204, 0.7);
+
+    --light-gray: #777777;
+    --dark-gray: #444444;
+    --almost-black: #082744;
+
+    --bright-red: #ed3c0d;
+    --bright-green: #18d26e;
+    --naver-green: #2DB400;
+}
