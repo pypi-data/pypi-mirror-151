@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: markdown-text-decorator
+Version: 2.0.0
+Summary: Text Decorator Extension for Python-Markdown.
+Author: Silver Bullet Software
+Author-email: inq.sbs@gmail.com
+Maintainer: sbs
+Maintainer-email: inq.sbs@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: markdown (>=3)
+
+[Python-Markdown]: https://python-markdown.github.io/
+
+[delete]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
+[insert]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
+[mark]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
+[ruby]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby
+[strikethrough]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s
+[subscript]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
+[superscript]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
+
+# Text Decorator Extension for Python-Markdown
+
+[![Downloads](https://pepy.tech/badge/markdown-text-decorator)](https://pepy.tech/project/markdown-text-decorator) [![Downloads](https://pepy.tech/badge/markdown-text-decorator/month)](https://pepy.tech/project/markdown-text-decorator) [![Downloads](https://pepy.tech/badge/markdown-text-decorator/week)](https://pepy.tech/project/markdown-text-decorator) 
+
+
+This extension add Text Decorate handler to [Python-Markdown].
+
+
+## Spec
+
+This extension supports following expressions.
+
+|Type           |Markdown        |HTML                                 |
+|:--------------|:---------------|:------------------------------------|
+|[delete]       |`--text--`      |`<del>text</del>`                    |
+|[insert]       |`++text++`      |`<ins>text</ins>`                    |
+|[mark]         |`!!text!!`      |`<mark>text</mark>`                  |
+|[ruby]         |`{text:rt-text}`|`<ruby>text<rt>ruby-text</rt></ruby>`|
+|[strikethrough]|`~~text~~`      |`<s>text</s>`                        |
+|[subscript]    |`^text^`        |`<sub>text</sub>`                    |
+|[superscript]  |`^^text^^`      |`<sup>text</sup>`                    |
+
+## Installation
+
+```bash
+python3 -m pip install markdown_text_decorator
+```
+
+## Usage
+
+### Sample Code
+
+```python
+from markdown import Markdown
+
+MARKDOWN_EXTENSIONS = [
+    "markdown_text_decorator"
+]
+
+md2html = Markdown(extensions=MARKDOWN_EXTENSIONS)
+
+markdown_input = """
+
+# Markdown Text Decoration
+
+~~This is~~ strikethrough ~~line.~~
+
+++This is++ insert ++line.++ 
+
+--This is-- delete --line.--
+
+^^This is^^ superscript ^^line^^
+
+^This is^ subscript ^line^
+
+!!This is!! mark !!line!!
+
+{ Markdown Text Decorator : mɑ́ːkdàun tékst dékərèitər }
+
+{ 日本語: !!Japanese!! } { 英語: !!English!! }
+
+"""
+
+html_output = md2html.convert(markdown_input)
+
+print(html_output)
+
+```
+
+### Sample Output
+
+```html
+<h1>Markdown Text Decoration</h1>
+<p><s>This is</s> strikethrough <s>line.</s></p>
+<p><ins>This is</ins> insert <ins>line.</ins> </p>
+<p><del>This is</del> delete <del>line.</del></p>
+<p><sup>This is</sup> superscript <sup>line</sup></p>
+<p><sub>This is</sub> subscript <sub>line</sub></p>
+<p><mark>This is</mark> mark <mark>line</mark></p>
+<p><ruby>Markdown Text Decorator<rt>mɑ́ːkdàun tékst dékərèitər</rt></ruby></p>
+<p><ruby>日本語<rt><mark>Japanese</mark></rt></ruby> <ruby>英語<rt><mark>English</mark></rt></ruby></p>
+```
+
+### Test Result
+
+```text
+MarkdownTextDecoratorTestCase
+----------------------------------------------------------------------
+test_delete (__main__.MarkdownTextDecoratorTestCase)
+test for delete ... ok
+test_insert (__main__.MarkdownTextDecoratorTestCase)
+test for insert ... ok
+test_mark (__main__.MarkdownTextDecoratorTestCase)
+test for mark ... ok
+test_ruby (__main__.MarkdownTextDecoratorTestCase)
+test for ruby ... ok
+test_strikethrough (__main__.MarkdownTextDecoratorTestCase)
+test for strikethrough ... ok
+test_subscript (__main__.MarkdownTextDecoratorTestCase)
+test for subscript ... ok
+test_superscript (__main__.MarkdownTextDecoratorTestCase)
+test for superscript ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.009s
+```
+
+
+## CHANGE LOG
+
+### v2.0.0
+
+Support ruby and add unittest for ruby.
+
+### v1.2.0
+
+Support mark and add unittest for mark.
+
+### v1.1.1
+
+Add unittest for strikethrough, insert, delete, superscript and subscript.
+
+### v1.1.0
+
+Support superscript and subscript.
+
+### v1.0.1
+
+Support multi-pairs in one line release.
+
+### v1.0.0
+
+Initial Release.
+
