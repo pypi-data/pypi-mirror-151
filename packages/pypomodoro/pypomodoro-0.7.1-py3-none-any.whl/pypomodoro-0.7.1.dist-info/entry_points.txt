@@ -1,0 +1,2 @@
+[console_scripts]
+pypomodoro = pypomodoro.main:main
