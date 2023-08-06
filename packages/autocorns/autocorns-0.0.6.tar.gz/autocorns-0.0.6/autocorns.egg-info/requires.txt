@@ -1,0 +1,13 @@
+eth-brownie
+requests
+tqdm
+web3
+
+[dev]
+black
+moonworm>=0.1.14
+
+[distribute]
+setuptools
+twine
+wheel
