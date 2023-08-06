@@ -1,0 +1,12 @@
+quicksect/quicksect.cpython-37m-darwin.so,sha256=orJJ6i-heXeijuEn_SrzxxVpzRPQatrWQHjV67n5zIs,148512
+quicksectx/__init__.py,sha256=aEUoUqzTfm3FJJkjvcF5i4hPcQ-M23GufgGSXQtg64c,145
+quicksectx/quicksectx.cpp,sha256=evfdFOBE7YcPD_Pd4JFYl8rTqLxV6S4ztbqMCGbyXpI,685727
+quicksectx/quicksectx.cpython-37m-darwin.so,sha256=FlTWw_5HX1bfpxoBpIP82YDXJi6XgEiE_47QF8MuFk8,150448
+quicksectx/quicksectx.pxd,sha256=TwJ8V9Fv5l_dmBEYfyfEzNefSR23eqSBBnpVtD8a0bE,1463
+quicksectx/quicksectx.pyx,sha256=6z_LI_hx5aX1ApXrrFFeyBJsHeDsE2Ufgh8AVXDXdCM,18039
+quicksectx/version.py,sha256=fmQFG3MwQU4leQOeX4kbTXylshCKC_ptuzclAObL0k4,73
+quicksectx-0.3.1b1.dist-info/LICENSE,sha256=VAPzO96t8fCbMYozMQW5kKjVYq2ay4gbvyrfAtFItmw,1080
+quicksectx-0.3.1b1.dist-info/METADATA,sha256=8Vzfyxf7s06kYAejFxbD7T4tRn_E9SxyP_-nT62clwU,2687
+quicksectx-0.3.1b1.dist-info/WHEEL,sha256=t-yJnV7ncEuoOkGIUUhH14bb9iMbJ4DANdZCkJ-k_2s,110
+quicksectx-0.3.1b1.dist-info/top_level.txt,sha256=8NDGIj_DVaDPjTJqEw3r-3n9N4pUAEicM0Xb7LEAvwc,21
+quicksectx-0.3.1b1.dist-info/RECORD,,
