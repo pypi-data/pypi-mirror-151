@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: antiCPy
+Version: 0.0.5
+Summary: A package that provides tools to estimate resilience and noise level of a system as well as extrapolate possible transition times.
+Home-page: https://github.com/MartinHessler/antiCPy
+Author: Martin Heßler
+Author-email: m_hess23@wwu.de
+License: GPL
+Keywords: time series analysis,critical transitions,leading indicators
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE
+
+The ``antiCPy`` package provides tools to monitor destabilization because of varying control parameters or the influence of noise. Based on early warning measures it provides an extrapolation tool to estimate the time horizon in which a critical transition will probably occur.
+
