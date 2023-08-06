@@ -1,0 +1,13 @@
+sqlalchemy_spanner-1.1.0-py3.10-nspkg.pth,sha256=b0D5dZk3RUzK54tZ9iZDvLm7u8ltc5EzYrGCmhsuoNw,1698
+google/cloud/sqlalchemy_spanner/__init__.py,sha256=RPtbMBkXHz8mIOEitkwnFNMSliCEivaV_VacMiLfAnk,651
+google/cloud/sqlalchemy_spanner/_opentelemetry_tracing.py,sha256=oQ8qjSzo8pQU91wqQpfOiBwWdJP-u_Xl-hDUeor9-Do,1988
+google/cloud/sqlalchemy_spanner/provision.py,sha256=8eLQzPdjRGuBDjzkJS6eaw58vrtzrCxNqIeOXY2H_ok,792
+google/cloud/sqlalchemy_spanner/requirements.py,sha256=i7Kta-1Du_RBc4nxWZYaK6bnWvp80wMTHAbnMSo5biI,2661
+google/cloud/sqlalchemy_spanner/sqlalchemy_spanner.py,sha256=d39yuqzSNg9msqbKFB13WVHWjx0UIVnDl1iTl35FPKc,33464
+sqlalchemy_spanner-1.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+sqlalchemy_spanner-1.1.0.dist-info/METADATA,sha256=qTLtYg2uujt6N_gUQAZjweUgFOAqTewgFVj1HVQBq0w,694
+sqlalchemy_spanner-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlalchemy_spanner-1.1.0.dist-info/entry_points.txt,sha256=XrPrzgnvkj-q4mpF0vXecdqsDIviaebzYCx4CQeJme4,87
+sqlalchemy_spanner-1.1.0.dist-info/namespace_packages.txt,sha256=v8IaYqRE2a0onAGJIpZeFkkH83wXSWZRR9eOyfMwoTc,20
+sqlalchemy_spanner-1.1.0.dist-info/top_level.txt,sha256=_1QvSJIhFAGfxb79D6DhB7SUw2X6T4rwnz_LLrbcD3c,7
+sqlalchemy_spanner-1.1.0.dist-info/RECORD,,
