@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pysustrans
+Version: 0.0.112
+Summary: pysustran is a statistical Python package for Transportation data analysis.
+Author: Rahul Raoniar
+Author-email: rahul.raoniar@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# pysustrans
+
+A set of **D**ata **A**nalytics **T**ools in **p**ython
+
+A package that allows performing common statitical analysis on transportation related data.
+
+## Documentation:
+Modules documentation can be found on [pysustrans github](https://github.com/rahul-raoniar/pysustrans/blob/main/README.md)
+
+## Installation:
+pysustrans can be installed directly using `pip`:
+```
+pip install pysustrans
+```
+
+**Python Require** `Python>=3.8`
+**Dependencies:** `numpy`, `pandas`, `scipy`, `matplotlib`, `seaborn`
+
+## Contributions:
+Contributions, bugfixes and suggestions are welcomed.
+
+
