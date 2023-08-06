@@ -1,0 +1,11 @@
+aws/__init__.py,sha256=PFE79gcyXsmd86I9pK8n1RDcDw2KWaoSipzn-LyL7Nk,42
+aws/client.py,sha256=fAVBlHGpL31TZNrMItqubwFCIFOv0YVadW7SljbEnt4,96
+aws/paginate.py,sha256=gcNeiD8mRSviWe6I0vt7erO2f88j39Ku-G5dJqOgzCU,317
+aws/reference.py,sha256=3XctuPOfbkwZDold3_g5HdZpk-zyQZ8-ypn5oL3VdbU,3091
+aws/session.py,sha256=TydqjQlbkcrAZxdbuizqs4N-A9t6uPeYwimm4xGig7c,1034
+aws/vpc.py,sha256=AsHjEILZzr3MGY409wF7XRzkX4Xx1bN8dNFvyLNG1Ek,6064
+torvo_aws-1.0.1652828124.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+torvo_aws-1.0.1652828124.dist-info/METADATA,sha256=LTDngNGXNEmLsJPUGo6f0wSewc_fIMc7AzkYlYwCj7A,1324
+torvo_aws-1.0.1652828124.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+torvo_aws-1.0.1652828124.dist-info/top_level.txt,sha256=cGN9AygK9hJ6obZkvkz9vh2cDIwiYSmUDUzkbuWVdBo,4
+torvo_aws-1.0.1652828124.dist-info/RECORD,,
