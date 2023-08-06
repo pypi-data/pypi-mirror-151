@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+scripts/tflite2tensorflow
+scripts/view_npy
+tflite2tensorflow/__init__.py
+tflite2tensorflow/mediapipeCustomOp.py
+tflite2tensorflow/tflite2tensorflow.py
+tflite2tensorflow/view_npy.py
+tflite2tensorflow.egg-info/PKG-INFO
+tflite2tensorflow.egg-info/SOURCES.txt
+tflite2tensorflow.egg-info/dependency_links.txt
+tflite2tensorflow.egg-info/top_level.txt
