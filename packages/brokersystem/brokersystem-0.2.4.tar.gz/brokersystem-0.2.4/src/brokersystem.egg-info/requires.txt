@@ -1,0 +1,4 @@
+requests>=1.0
+logzero>=1.7
+pandas>=1.0
+pillow>=9.0
