@@ -1,0 +1,9 @@
+podmesh/__init__.py,sha256=zNkPX0dTynOgvTPeF_Sur6IjWOCNxlok6Adhc2fp1hI,144
+podmesh/core.py,sha256=lXYBsiJlGUgJcimw2H6sm-MpXBAdxz24h_kJAyZDhz0,1529
+podmesh/hookspecs.py,sha256=TnYuoACv_19tpMDh3lrlJ-Cnt-xbjFzQBe_cZreAkD8,736
+podmesh/main.py,sha256=nN7GptnKWDXlyMtpfSkqfd2PWbthPIk3RRCkNbipKKw,1147
+podmesh-0.0.1.dist-info/LICENSE,sha256=lYrv7GHyjX60u8Gk1Q346zvBAFwkf6uW5xKyhTORsA0,1060
+podmesh-0.0.1.dist-info/METADATA,sha256=6TkYFSG6mE35mOeJqGs63sbO_nkerchZFrz7AyGFQxE,501
+podmesh-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+podmesh-0.0.1.dist-info/top_level.txt,sha256=v9HhdLPplBtvf_pHMS5uYAe3mXjBrkQI0ZHcXEo3CH8,8
+podmesh-0.0.1.dist-info/RECORD,,

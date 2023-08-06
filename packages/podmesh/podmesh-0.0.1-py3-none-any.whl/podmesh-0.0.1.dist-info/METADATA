@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: podmesh
+Version: 0.0.1
+Summary: Mesh networking system for podman
+Home-page: https://github.com/SamP20/podmesh
+Author: Sam P
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: podman
+Requires-Dist: pluggy (<1.0,>=0.1.0)
+
+# podmesh
+Mesh networking system for podman
