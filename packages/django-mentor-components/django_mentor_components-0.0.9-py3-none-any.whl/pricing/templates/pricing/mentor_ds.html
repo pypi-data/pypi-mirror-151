@@ -1,0 +1,44 @@
+{% extends 'pricing/_common.html' %}
+{% load humanize %}
+
+{% block pricing %}
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row">
+      {% for item in pricing %}
+      {% if forloop.first %}
+      <div class="col-lg-3 col-md-6">
+      {% else%}
+      <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+      {% endif %}
+        {% if item.featured %}
+        <div class="box featured">
+        {% else %}
+        <div class="box">
+        {% endif %}
+          {% if item.advanced %}
+          <span class="advanced">Advanced</span>
+          {% endif %}
+          <h3>{{ item.title}}</h3>
+          <h4>{{ item.price|intcomma }}<span>원 / class</span></h4>
+          <ul>
+            {% for li in item.li %}
+            <li>{{ li }}</li>
+            {% endfor %}
+            {% for disabled_li in item.disabled_li %}
+            <li class="na">{{ disabled_li }}</li>
+            {% endfor %}
+          </ul>
+          <div class="btn-wrap">
+            <a href="{{ item.link.url }}" class="btn-buy">{{ item.link.title }}</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section><!-- End Pricing Section -->
+{% endblock %}
