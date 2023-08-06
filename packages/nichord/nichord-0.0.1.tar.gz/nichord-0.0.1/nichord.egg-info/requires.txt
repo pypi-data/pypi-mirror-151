@@ -1,0 +1,5 @@
+nilearn
+numpy
+matplotlib
+scipy
+atlasreader
