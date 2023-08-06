@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: scorer-edge-l2dc
+Version: 0.0.13
+Summary: A set of schema definitions and API for SCORER Edge L2DC
+Home-page: https://github.com/scorer-edge/l2dc
+Author: Hideaki Suzuki
+Author-email: h2suzuki@gmail.com
+Project-URL: Bug Tracker, https://github.com/scorer-edge/l2dc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flatbuffers
+Requires-Dist: numpy
+Requires-Dist: pyzmq
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# SCORER Edge - Low Latency Data Channels (L2DC)
+
+This package contains FlatBuffers schema definitions and the API to exchange data (the wrapper library).
+
+
+## How to install the package
+
+Currently, wheels for CPython 3.7, 3.9, 3.10 are pushed to PyPI.
+
+    pip install scorer-edge-l2dc
+
+
+## How to build and install the package from source
+
+After cloning the repository on Debian 10, use make to build the source.
+
+    git clone https://github.com/scorer-edge/l2dc.git
+    cd l2dc
+    make prereq
+    make install
+
+
+## How to test the package
+
+GoogleTest is used to test the library.
+
+    make test
+
+
+## How to use the package
+
+Some examples are provided in `examples` directory.
+
+
+## How to uninstall the package
+
+You can use uninstall target of Makefile for your convenience.
+
+    make uninstall
+
+
+## How to push the package to PyPI
+
+PyPI does not allow the same version to get pushed twice.  First you increment the
+package version by one of `inc-major-ver`, `inc-minor-ver`, or `inc-patch-ver`.
+Then, use publish target.
+
+    make inc-patch-ver
+    make publish
+
+Also note that you need docker to build `manylinux` version of wheels.
+
+End.
