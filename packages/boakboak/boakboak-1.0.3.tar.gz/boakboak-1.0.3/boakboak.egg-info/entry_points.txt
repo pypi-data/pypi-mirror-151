@@ -1,0 +1,3 @@
+[console_scripts]
+boak = boakboak.__main__:main
+

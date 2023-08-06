@@ -1,0 +1,16 @@
+# archive.yml
+# archives files and folders, call like: python -m boakboak archive -m 'message'
+name: search
+# path to package top folder, if app is package then  __init__.py should be one level below
+# test: cd appPath --> then run cmds
+appPath: \python_venvs\501_utils\70_search_rescue
+# mandatory calling arguments for subprocess to be run
+cmds:
+  - python
+  - -m
+  - search
+  - replace
+# optional argument if package uses args or kwargs
+defaultArgs:
+  - -p \python_venvs\packages\boakboak
+  - -q a_rename_boakboak_boakboak
