@@ -1,0 +1,6 @@
+/***********************************************
+         Invenio Theme Icon Variables
+***********************************************/
+
+
+@fontPath          : '../../themes/default/assets/fonts';
