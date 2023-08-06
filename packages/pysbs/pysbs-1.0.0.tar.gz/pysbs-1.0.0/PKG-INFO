@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pysbs
+Version: 1.0.0
+Summary: Library for ooen and write .sbs files
+Author: wer310Libs
+Author-email: oficalkapudovo@gmail.com
+
+```
+from pysbs import SBS
+sbs = SBS(open("main.sbs", "rb"))
+print(sbs["test"])
+sbs["test"] = "hello"
+print(sbs["test"])
+sbs.dump(open("main.sbs", "wb"))
+```
+
