@@ -1,0 +1,14 @@
+[console_scripts]
+sonar-audit = sonar.audit.audit:main
+sonar-config = sonar.config:main
+sonar-custom-measures = sonar.cust_measures:main
+sonar-findings-export = sonar.findings.export:main
+sonar-findings-sync = sonar.findings.sync:main
+sonar-housekeeper = sonar.housekeeper:main
+sonar-issues-export = sonar.findings.export:main
+sonar-issues-sync = sonar.findings.sync:main
+sonar-loc = sonar.loc:main
+sonar-measures-export = sonar.measures_export:main
+sonar-projects-export = sonar.projects_export:main
+sonar-projects-import = sonar.projects_import:main
+
