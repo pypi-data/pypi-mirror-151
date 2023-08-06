@@ -1,0 +1,11 @@
+name: graphbin
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.7.1
+  - pip
+  - pip:
+    - cogent3
+    - cairocffi
+    - python-igraph>=0.7.1
