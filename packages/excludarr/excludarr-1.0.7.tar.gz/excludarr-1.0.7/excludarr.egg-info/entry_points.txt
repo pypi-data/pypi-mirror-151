@@ -1,0 +1,2 @@
+[console_scripts]
+excludarr = excludarr.main:cli
