@@ -1,0 +1,15 @@
+statistical_methods/__init__.py,sha256=o-4RTKIGLFOXO9mIHkakWddKWS_jgXtz_E_Q_KQDRAM,23
+statistical_methods/basics.py,sha256=dqtyGb1OI_KQqKmsgC3kcsCz1vv9uCaLu506ouYtTPI,7633
+statistical_methods/finance.py,sha256=nPUWjsodPsXXXM7ujUivr2nvpOh_yKMRe1Nw6hbZfkQ,482
+statistical_methods/hypothesis_testing.py,sha256=uV8AWzNiF30ELIRfO1GXY4na4cuIp6bvmQgiGnvfmrA,6015
+statistical_methods/timeseries.py,sha256=D4G7zQbvx4fvd7_DK_RbDYTE-D4OLuqZuTV860Yhrsg,715
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/basics_test.py,sha256=sys3bYYh4U0GGxl5SXSZg5H-d8I2iJAsIYxCKQCjqbE,5790
+test/finance_test.py,sha256=mrV5dYu94a5UyTGzcLxi9q0EAvidfzHTBkqETq3aSPc,251
+test/hypothesis_testing_test.py,sha256=5vsKeDI8jNyNOXRs53PMTmBnDo-rKoN-sjNKMIUHHhQ,3996
+test/timeseries_test.py,sha256=DOjVBBewqAE9Kj_4JLjnrYFvHzr5OA9lSO2Cbi4HoKU,256
+statistical_methods-0.0.2.dist-info/LICENCE.md,sha256=D1Hef4n5TLIKQdy2beb5asDEQ-ok1nAXBWmauSMImZM,1088
+statistical_methods-0.0.2.dist-info/METADATA,sha256=bTvIj3Wb1o3X1KKwy6I4akbBW04h2KoLGvCKCn08DfM,550
+statistical_methods-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+statistical_methods-0.0.2.dist-info/top_level.txt,sha256=-grPDJWHM2QhLqK3wFBda56Hi6mQN_74ppB4H-5GzRM,25
+statistical_methods-0.0.2.dist-info/RECORD,,
