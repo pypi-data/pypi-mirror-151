@@ -1,0 +1,14 @@
+PySide6
+pefile
+lief
+icoextract
+yara-python
+iced-x86
+vt-py
+matplotlib
+
+[:platform_system != "Windows" and platform_system != "Darwin"]
+python-magic
+
+[:platform_system == "Windows" or platform_system == "Darwin"]
+python-magic-bin
