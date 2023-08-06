@@ -1,0 +1,10 @@
+tinvest_robot_perevalov/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinvest_robot_perevalov/_config.py,sha256=n-60-FVVDSFzu5qGls81wBYZmtKu4vb1UkGsBZ5uPjI,270
+tinvest_robot_perevalov/_db.py,sha256=i94-ANWesjdmUYt5cdSsY009GHbwByFwJISHeRPmPXw,4233
+tinvest_robot_perevalov/news_fetcher.py,sha256=9OKAgWPrlxfkicOihZswiLh5hucBYHb-W-IlX0-idbk,1818
+tinvest_robot_perevalov/sentiment_analyzer.py,sha256=frCLldDhJv-Ry3jH4VBqZtbVgsDkM1gh28fooa0lY2A,1867
+tinvest_robot_perevalov/trader.py,sha256=IZ6Grvp9lJUqZa9fPpmHgRs0lj8N8YPzxA_Sf0f-oTs,9443
+tinvest_robot_perevalov-0.1.2.dist-info/METADATA,sha256=ffL-fLz4xSVSwnZ6L8eGsrxJDSXVhoE-PTjSuIOx4F8,8987
+tinvest_robot_perevalov-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tinvest_robot_perevalov-0.1.2.dist-info/top_level.txt,sha256=8fGukRdZQNvQLdJQMhVW8HNiq08j3atKrgHWF8wgthA,24
+tinvest_robot_perevalov-0.1.2.dist-info/RECORD,,
