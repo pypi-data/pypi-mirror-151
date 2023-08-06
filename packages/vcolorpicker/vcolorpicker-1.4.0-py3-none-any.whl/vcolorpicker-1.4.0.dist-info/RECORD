@@ -1,0 +1,13 @@
+vcolorpicker/__init__.py,sha256=BdoCWz7qkq6dq3m_Ps7sahgbf7klVPbGnFRAWm9SLRM,314
+vcolorpicker/__main__.py,sha256=XIPWnUAhG6hvtc5yCqYRvubxAXW858d2dII-i9PyGuo,56
+vcolorpicker/img.py,sha256=Yf-nlMDPFd12mPwFCBigq8KEYG79REGA6nXR8ZsdXbw,8500
+vcolorpicker/ui_dark.py,sha256=rpq4qoJG528D5SU3E3uTg8vHJltJfYo7BkA1jM75DOE,16704
+vcolorpicker/ui_dark_alpha.py,sha256=ghGLij5dn9VeUJz-zOrgGLnVbg3f_oyxwClY6794-Uk,17265
+vcolorpicker/ui_light.py,sha256=sV1RdGcjoEkPeoTp79m2FspV8ryI6VajpRLaI_B22Ns,16386
+vcolorpicker/ui_light_alpha.py,sha256=d8NBit7L0GXnePV5JXApURyNLpewnSUUeaTLcpUCECw,17001
+vcolorpicker/vcolorpicker.py,sha256=PtFh8n7GDnHubzWqsV-b65WvpgFHIogzwIkmRDkneo8,12583
+vcolorpicker-1.4.0.dist-info/LICENSE,sha256=dTOJw47o4Nse5A6DsWZ4ESiJLshc0bbZuqW4vnc0Lao,1083
+vcolorpicker-1.4.0.dist-info/METADATA,sha256=LRjD5ykieL84eDUdcbX2PV1Du5_agSfOKVLOfdr1OE0,583
+vcolorpicker-1.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vcolorpicker-1.4.0.dist-info/top_level.txt,sha256=uq2cyGy1H7z78fzxHwKwpRuijnWu8BuzaUg7mRnOXfk,13
+vcolorpicker-1.4.0.dist-info/RECORD,,
