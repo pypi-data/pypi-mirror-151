@@ -1,0 +1,15 @@
+Change log
+============
+
+0.0.8 (17/05/2022)
+---------------------
+- First release
+
+0.0.9 (19/05/2022)
+---------------------
+- Implemented converting "behave" report into "cucumber"
+
+0.1.0 (20/05/2022)
+---------------------
+- Added tool implementation solution description into README.md
+- Refactored behave_to_cucumber_converter.py
