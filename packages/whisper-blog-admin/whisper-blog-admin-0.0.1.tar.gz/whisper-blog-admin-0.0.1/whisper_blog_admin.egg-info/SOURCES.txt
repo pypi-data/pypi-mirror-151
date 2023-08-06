@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+whisper/admin/__init__.py
+whisper/admin/admin.py
+whisper/admin/config.py
+whisper/admin/py.typed
+whisper_blog_admin.egg-info/PKG-INFO
+whisper_blog_admin.egg-info/SOURCES.txt
+whisper_blog_admin.egg-info/dependency_links.txt
+whisper_blog_admin.egg-info/namespace_packages.txt
+whisper_blog_admin.egg-info/not-zip-safe
+whisper_blog_admin.egg-info/requires.txt
+whisper_blog_admin.egg-info/top_level.txt
