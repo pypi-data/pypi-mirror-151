@@ -1,0 +1,45 @@
+name: Python
+
+alias: py
+
+interceptors:
+  - docker_local:
+      condition: "'$docker' == 'None'"
+      command: docker-compose exec $service $default_command $command
+  - docker_service:
+      condition: "'$docker' != 'None' and '$docker' != 'local'"
+      command: docker-compose exec $docker $default_command $command
+  - kube:
+      condition: "'$kube' != 'local'"
+      command: cli kubectl exec $kube $default_command $command
+
+default_configuration:
+  named_arguments:
+    - docker:
+        default: "'local'"
+    - service:
+        default: Docker.get_main_docker_compose_service()
+    - kube:
+        default: "'local'"
+
+environment:
+  PYTEST_ADDOPTS: --color=yes
+
+commands:
+  default_command: python
+
+  install:
+    command: -m pip install -r $file
+    alias: i
+    arguments:
+      - file:
+          default: "'requirements.txt'"
+
+  test:
+    command: -m pytest -f --lf
+    alias: t
+##test_prod={'command': 'pytest -n 8 --create-db'}
+##
+##send_to_pip={
+##    'command': 'python3 setup.py sdist bdist_wheel; twine upload dist/*; rm dist build -rf'
+##}
