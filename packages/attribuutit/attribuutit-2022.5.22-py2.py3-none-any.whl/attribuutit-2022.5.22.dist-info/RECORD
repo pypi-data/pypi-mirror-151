@@ -1,0 +1,13 @@
+attribuutit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attribuutit/__main__.py,sha256=DQT9yI1SFeQqTRLxBAzT-dPruQKwGpIkl8pAoQ-JSMg,240
+attribuutit/attribuutit.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attribuutit/cli.py,sha256=eFxlI4cSAVV3jGnVF2yipgC3sB_FABlTuKtaz3Kr03g,1722
+attribuutit/shp.py,sha256=L2QwFWcG2I5ZHXXh1XMAT-4uC_FR0Rm9-hFkW9k3ggw,1399
+attribuutit/tif.py,sha256=1h5KvW5jMgtI_hIQQKjXetl0cdo4lK9JgjYe76qjuX4,504
+attribuutit/vpf.py,sha256=prSEnw_IxMbkaRnlR-sqNotFNAsj4Qr3ZXXTIqZ3HXE,7515
+attribuutit-2022.5.22.dist-info/LICENSE,sha256=7xgn1qW4kKTaB163LiE9nqy5u7ddEv-GDesuxK-SW58,1069
+attribuutit-2022.5.22.dist-info/METADATA,sha256=kerwWLa4wYaTD3epTua5FtvjjTF8fed10WzZCG2FuPg,1227
+attribuutit-2022.5.22.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+attribuutit-2022.5.22.dist-info/entry_points.txt,sha256=bXaWdrSbcmmhKS5XfTb4h9726kucKLFXjgjFGNlGNZo,52
+attribuutit-2022.5.22.dist-info/top_level.txt,sha256=b5dZjeQfjRW_pD1Rq_jWMK1tcLesJvjOiJg7FBA4RAw,12
+attribuutit-2022.5.22.dist-info/RECORD,,
