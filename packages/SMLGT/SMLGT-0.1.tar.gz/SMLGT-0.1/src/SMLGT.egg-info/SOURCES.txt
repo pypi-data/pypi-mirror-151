@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/GiantTour.py
+src/SMLGT.egg-info/PKG-INFO
+src/SMLGT.egg-info/SOURCES.txt
+src/SMLGT.egg-info/dependency_links.txt
+src/SMLGT.egg-info/requires.txt
+src/SMLGT.egg-info/top_level.txt

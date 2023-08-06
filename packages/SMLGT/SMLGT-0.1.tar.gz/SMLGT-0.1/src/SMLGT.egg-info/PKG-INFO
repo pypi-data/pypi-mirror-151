@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: SMLGT
+Version: 0.1
+Summary: create giant tour
+Home-page: UNKNOWN
+Author: Mr. Hanh
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+Instruction
+
+How to install?
+!pip install SMLGT
+import GiantTour as gt
+
+How to use?
+giant_tour_problem = gt.GT( DM_req, size_of_clusters= 6 ),
+s = giant_tour_problem.create_giant_tour()
+
+
