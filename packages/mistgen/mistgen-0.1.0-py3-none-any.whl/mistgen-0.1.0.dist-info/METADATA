@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mistgen
+Version: 0.1.0
+Summary: minimum snap trajectory generator
+Home-page: https://github.com/zhz03/MiSTGen
+Author: Zhaoliang Zheng
+Author-email: zhz03@g.ucla.edu
+License: GNU GENERAL PUBLIC LICENSE V3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: numpy
+Requires-Dist: cvxopt
+
+# MiSTGen
