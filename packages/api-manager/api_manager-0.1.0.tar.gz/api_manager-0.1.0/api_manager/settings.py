@@ -1,0 +1,18 @@
+ALMS_USER = {
+
+}
+
+LABS_USER = {
+
+}
+
+ALMS_IDENTITY_SERVER = None
+ALMS_USERS_API = None
+
+LABS_API = None
+
+PROJECT = None
+PROJECT_ROOT = None
+
+CERT_PATH = None
+WAIT_TIMEOUT = None
