@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: myarithmeticpkg1135
+Version: 0.1.0
+Summary: my arithmetic package
+Home-page: http://pypi.python.org/pypi/angelnfdes/
+Author: A.N.F
+Author-email: myemail@example.com
+License: LICENSE
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: Django (>=1.1.1)
+Requires-Dist: pytest
+
+Arithmetic file
+
