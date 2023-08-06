@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: markdown-text-decorator
+Version: 1.0.0
+Summary: Python-Markdown Text Decorator Extension
+Author: Silver Bullet Software
+Author-email: inq.sbs@gmail.com
+Maintainer: sbs
+Maintainer-email: inq.sbs@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: markdown (>=3)
+
+# Python-Markdown Text Decorator Extension
+
+This is a Python-Markdown Text Decorator Extension.
+
+## Spec
+
+This module supports follwing expressions.
+
+|Type          |Markdown |HTML             |
+|:------------|:--------|:-----------------|
+|delete       |`--text--`|`<del>text</del>`|
+|insert       |`++text++`|`<ins>text</ins>`|
+|strikethrough|`~~text~~`|`<s>text</s>`    |
+
+## Installation
+
+```bash
+python3 -m pip install markdown_text_decorator
+```
+
+## Usage
+
+### Code
+
+```python
+from markdown import Markdown
+
+MARKDOWN_EXTENSIONS = [
+    "markdown_text_decorator"
+]
+
+md2html = Markdown(extensions=MARKDOWN_EXTENSIONS)
+
+markdown_input = """
+
+# Markdown Text Decoration
+
+~~This is strikethrough line.~~
+
+++This is insert line.++ 
+
+--This is delete line.--
+
+"""
+
+html_output = md2html.convert(markdown_input)
+
+print(html_output)
+
+```
+
+### Result
+
+```html
+<h1>Markdown Text Decoration</h1>
+<p><s>This is strikethrough line.</s></p>
+<p><ins>This is insert line.</ins> </p>
+<p><del>This is delete line.</del></p>
+```
