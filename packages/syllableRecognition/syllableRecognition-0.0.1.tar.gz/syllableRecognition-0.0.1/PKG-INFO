@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: syllableRecognition
+Version: 0.0.1
+Summary: Simple test example
+Home-page: https://github.com/taw19960426/-Speech-signal-processing-experiment-tutorial-_python.git
+Author: xiaoTang
+Author-email: 123456@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# syllable
+
+我简单测试的例子
+
+
+

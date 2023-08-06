@@ -1,0 +1,7 @@
+README.md
+setup.py
+syllableRecognition/__init__.py
+syllableRecognition.egg-info/PKG-INFO
+syllableRecognition.egg-info/SOURCES.txt
+syllableRecognition.egg-info/dependency_links.txt
+syllableRecognition.egg-info/top_level.txt
