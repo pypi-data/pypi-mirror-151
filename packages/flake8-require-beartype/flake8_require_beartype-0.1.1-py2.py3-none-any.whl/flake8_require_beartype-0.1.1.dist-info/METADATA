@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: flake8-require-beartype
+Version: 0.1.1
+Summary: flake8 plugin which checks for use of @beartype decorator.
+Home-page: https://github.com/rbroderi/flake8_require_beartype
+Author: Richard Broderick
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flake8 (>=3.7)
+Requires-Dist: importlib-metadata (>=0.9) ; python_version < "3.8"
+
+flake8-require-beartype
+===========
+
+flake8 plugin which checks for use of @beartype decorator.
+
+It checks any function or method that has arguments other
+than self, cls, or mcls
+
+## installation
+
+`pip install flake8-require-beartype`
+
+## flake8 codes
+
+| Code   | Description                                            |
+|--------|--------------------------------------------------------|
+| RBT001 |  Function missing @beartype                            |
+| RBT002 |  Method missing @beartype                              |
+
+## rationale
+
+Helps to add / keep beartype runtime checking in a code base.
+
+
