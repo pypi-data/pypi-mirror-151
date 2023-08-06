@@ -1,0 +1,57 @@
+name: Git
+
+alias: g
+
+commands:
+  default_command: git
+  f: fetch -p --progress
+
+  commit_push:
+    alias: cp
+    include_default_command: false
+    command:
+      - git add -p
+      - cli git build_commit
+      - git push
+
+  rs:
+    command: reset --soft HEAD~$commits
+    arguments:
+      - commits:
+          default: 1
+
+  rh:
+    command: reset --hard HEAD~$commits
+    arguments:
+      - commits:
+          default: 1
+
+  l:
+    help: Show custom git log. Show 10 entries by default, -N to change.
+    command: log --color --graph --pretty=format:"%C(yellow)%h%Creset - %Cgreen(%ci) %C(bold blue)<%an>%Creset%C(bold yellow)%d%n%C(bold)%s" --abbrev-commit -10
+    show_cmd: false
+
+  merge_updated:
+    alias: mu
+    command:
+    - checkout $branch
+    - pull
+    - checkout -
+    - merge $branch
+    arguments:
+      - branch
+
+  ps: push
+  pl: pull
+
+  sa:
+    command: cli git in_all status -sb
+    include_default_command: false
+
+  fa:
+    command: cli git in_all fetch
+    include_default_command: false
+
+  pa:
+    command: cli git in_all pull
+    include_default_command: false
