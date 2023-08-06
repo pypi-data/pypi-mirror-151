@@ -1,0 +1,7 @@
+README.md
+setup.py
+rangex/__init__.py
+rangex.egg-info/PKG-INFO
+rangex.egg-info/SOURCES.txt
+rangex.egg-info/dependency_links.txt
+rangex.egg-info/top_level.txt

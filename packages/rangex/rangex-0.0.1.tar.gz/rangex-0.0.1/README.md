@@ -1,0 +1,1 @@
+This package can generate random strings by patterns
