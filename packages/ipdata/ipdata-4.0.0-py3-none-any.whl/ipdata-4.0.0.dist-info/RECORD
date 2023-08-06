@@ -1,0 +1,14 @@
+ipdata/__init__.py,sha256=JXL6-1RDHid5YcNDvZHzHkn44EpNHCDQweHCuf5VZTM,763
+ipdata/cli.py,sha256=2gB-_tGe9eoH6Y44HMk9pvCkVM9EamfNG6xSE1838KI,15927
+ipdata/codes.py,sha256=aQyythfZXb--2bRtNg3cx4nVNYmCPITHatW4zc1fcOE,48694
+ipdata/geofeeds.py,sha256=NnbR2sRk69g7GXCnf3EUdEoalLWCER9P3nFToMEi2Q8,7586
+ipdata/ipdata.py,sha256=csOhGvuPL0sFdZGu_UVRXN_it93NE_eCVor6SOqxZoE,9030
+ipdata/lolcat.py,sha256=ITjF-dmYFXvZkRXG40ej2UwAbz2-e-kIZ98CgBb80XU,7736
+ipdata/test_geofeeds.py,sha256=f4pMMSGiDulhU_adD2-jCmw8vv9EhVMkDyejGTPEhnQ,449
+ipdata/test_ipdata.py,sha256=kAL0NlQa1rE3YCwn5A7RRqh9cVDYUDGNDuhwkXBFjqc,1787
+ipdata-4.0.0.dist-info/LICENSE,sha256=eGnLdQEoRkEjhHKdpo6cxFDaoagNRo3_DfbsCn3vyKU,1049
+ipdata-4.0.0.dist-info/METADATA,sha256=-QtKua5YjtfAvzRov7V0tnyRZW6seZkCA-mEANZKJBU,14073
+ipdata-4.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ipdata-4.0.0.dist-info/entry_points.txt,sha256=fpt8dK03R5gXh7uvPTCTTu61xmZj-YRKNFvv0ZcHNvI,81
+ipdata-4.0.0.dist-info/top_level.txt,sha256=-ISDy2FJGomfZ_9XdCECRlGaGI1ZaGs8d7Eyee6MKro,7
+ipdata-4.0.0.dist-info/RECORD,,

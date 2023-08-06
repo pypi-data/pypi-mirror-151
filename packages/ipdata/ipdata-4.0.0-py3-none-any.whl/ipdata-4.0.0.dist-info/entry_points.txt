@@ -1,0 +1,3 @@
+[console_scripts]
+geofeed_validate = ipdata.cli:validate
+ipdata = ipdata.cli:cli
