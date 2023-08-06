@@ -1,0 +1,14 @@
+name: GitHub
+
+alias: gh
+
+commands:
+  default_command: gh
+  cm:
+    command:
+      - cli git cp
+      - echo "Waiting 5s..."
+      - sleep 5
+      - cli github monitor
+    help: Create the commit, push and monitor pipeline
+    include_default_command: false

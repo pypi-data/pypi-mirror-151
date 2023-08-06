@@ -1,0 +1,52 @@
+name: Docker
+
+alias: dk
+
+service_args: &service_args
+  arguments:
+    - service:
+        default: Docker.get_main_docker_compose_service()
+
+commands:
+  default_command: docker-compose
+  stop_all:
+    command: docker stop $containers 2> /dev/null
+    help: Stop all containers
+    arguments:
+      - containers:
+          default: "'$(docker ps -q)'"
+    messages:
+      - start: Stopping all containers
+      - finish: All containers have been stopped
+    include_default_command: false
+    exit_on_fail: false
+
+  armageddon:
+    command:
+      - cli docker stop_all
+      - docker system prune -af --volumes
+    help: Delete EVERYTHING in Docker with "docker system prune -af --volumes"
+    exit_on_fail: False
+    include_default_command: false
+
+  exec:
+    command: exec $service
+    <<: *service_args
+
+  bash:
+    command: exec $service bash
+    <<: *service_args
+
+  logs:
+    command: logs -f $service
+    <<: *service_args
+
+  run:
+    command: run --rm $service
+    <<: *service_args
+
+  start_stop:
+    command:
+      - stop $service
+      - up -d $service
+    <<: *service_args
