@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: markerbci
+Version: 0.0.6
+Summary: Handling marker devices for brain-computer interfaces.
+Home-page: https://github.com/simonkojima/markerbci-python
+Author: Simon Kojima
+Author-email: simon.kojima@outlook.com
+Project-URL: Bug Tracker, https://github.com/simonkojima/markerbci-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# markerbci-python
+Handling marker devices for brain-computer interfaces.  
+
+ - buttonbox module  
+ This module was originally developed by Wilbert van Ham, Radboud University Nijmegen.
+ You can find original source from [here](https://github.com/wilberth/RuSocSci)  
