@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: socket-project
+Version: 0.3.2
+Summary: A small example package
+Home-page: https://github.com/armen1337/socket-project
+Author: armen1337
+Author-email: armen14102003@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.2
+Description-Content-Type: text/markdown
+
+# Readme
