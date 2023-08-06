@@ -1,0 +1,14 @@
+tensorflow>=2.6.0
+keras-applications>=1.0.8
+numpy>=1.19.2
+pillow>=8.3.2
+albumentations>=1.1.0
+pandas>=1.4.0
+scikit-learn>=1.0.2
+scikit-image>=0.19.1
+lime>=0.2.0.1
+pooch>=1.6.0
+classification-models-3D>=1.0.4
+SimpleITK>=2.1.1
+batchgenerators>=0.23
+volumentations-aucmedi>=1.0.1
