@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vproces
+Version: 0.0.8
+Summary: An awesome package that does something
+Author: Wojciech A
+Author-email: wa@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Video reader 
+A simple video reader based on opencv library
+
+[CONTACT](aw@gmail.com)
+
+

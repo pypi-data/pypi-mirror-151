@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+vproces/__init__.py
+vproces.egg-info/PKG-INFO
+vproces.egg-info/SOURCES.txt
+vproces.egg-info/dependency_links.txt
+vproces.egg-info/requires.txt
+vproces.egg-info/top_level.txt
+vproces/imgproc/__init__.py
+vproces/imgproc/imgproc.py
