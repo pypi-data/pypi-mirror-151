@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+
+recursive-exclude _data *
+recursive-exclude _static *
+recursive-exclude mytester *
+recursive-exclude bethany_ds *
