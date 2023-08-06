@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bsum-sudoku
+Version: 0.9.5
+Summary: A minimalist sudoku solver using Qt
+Home-page: https://github.com/beatussum/sudoku
+Author: Mattéo Rossillol‑‑Laruelle
+Author-email: beatussum@protonmail.com
+Maintainer: Mattéo Rossillol‑‑Laruelle
+Maintainer-email: beatussum@protonmail.com
+License: GPL-3.0-or-later
+Keywords: qt,sudoku
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Requires-Python: >=3.6
+License-File: LICENSE
