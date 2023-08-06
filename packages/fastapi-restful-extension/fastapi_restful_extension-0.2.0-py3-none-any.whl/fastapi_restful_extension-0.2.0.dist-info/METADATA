@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fastapi-restful-extension
+Version: 0.2.0
+Summary: Extension for make RESTful interfaces with FastAPI.
+Home-page: https://github.com/maximshumilo/fastapi-restful-extension
+Author: Shumilo Maxim
+Author-email: shumilo.mk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: fastapi (~=0.78.0)
+Requires-Dist: setuptools (~=62.3.2)
+
+UNKNOWN
+
