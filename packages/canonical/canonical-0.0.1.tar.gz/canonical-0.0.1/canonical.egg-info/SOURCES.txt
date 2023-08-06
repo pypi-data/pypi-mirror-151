@@ -1,0 +1,13 @@
+MANIFEST.in
+VERSION
+setup.py
+canonical/__init__.py
+canonical/package.json
+canonical.egg-info/PKG-INFO
+canonical.egg-info/SOURCES.txt
+canonical.egg-info/dependency_links.txt
+canonical.egg-info/requires.txt
+canonical.egg-info/top_level.txt
+canonical/tests/test_integration_noop.py
+canonical/tests/test_system_noop.py
+canonical/tests/test_unit_noop.py
