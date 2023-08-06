@@ -1,0 +1,14 @@
+README.md
+setup.py
+passql/__init__.py
+passql/defaults.py
+passql/exceptions.py
+passql/interfaces.py
+passql/models.py
+passql/query.py
+passql/sql.py
+passql.egg-info/PKG-INFO
+passql.egg-info/SOURCES.txt
+passql.egg-info/dependency_links.txt
+passql.egg-info/not-zip-safe
+passql.egg-info/top_level.txt

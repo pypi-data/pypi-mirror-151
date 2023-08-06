@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: passql
+Version: 0.2.8
+Summary: Super light ORM
+Home-page: UNKNOWN
+Author: Vladislav Mironov
+Author-email: hidden120@mail.ru
+License: UNKNOWN
+Description: # PasSQL ORM - *really simple mapping for PYTHON*
+        #### © 2022 Vladislav Mironov
+        
+        ### Description
+        
+        PasSQL is a library that provides simple ORM tools for executing template SQL queries from Python 3.7
+        <br> 
+        using other database interface libraries (e.g. asyncpg or PyMySQL).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
