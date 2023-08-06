@@ -1,0 +1,1 @@
+from advanced_maths import power
