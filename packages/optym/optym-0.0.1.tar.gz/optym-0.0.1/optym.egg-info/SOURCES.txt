@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+optym/__init__.py
+optym/optym.py
+optym.egg-info/PKG-INFO
+optym.egg-info/SOURCES.txt
+optym.egg-info/dependency_links.txt
+optym.egg-info/requires.txt
+optym.egg-info/top_level.txt
