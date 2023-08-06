@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+mpinum.egg-info/PKG-INFO
+mpinum.egg-info/SOURCES.txt
+mpinum.egg-info/dependency_links.txt
+mpinum.egg-info/requires.txt
+mpinum.egg-info/top_level.txt
+src/__init__.py
+src/pnCubeDecomp.py
+src/pnDistArray.py
+src/pnDomainPartitionIter.py
+src/pnGhostedDistArray.py
+src/pnLaplacian.py
+src/pnMultiArrayIter.py
+src/pnPartition.py
+src/pnStencilOperator.py
