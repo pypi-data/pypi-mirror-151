@@ -1,0 +1,11 @@
+faker_events/__init__.py,sha256=ZxfxEjzExK1z3eo5kLIdd3viqB_tH8lE1ric6LC69v0,1376
+faker_events/__main__.py,sha256=AEDGRXXMfYoVDpzcOaGVqpDU_XcY5ZI8WuDNlm3SjF8,1762
+faker_events/events.py,sha256=EZ0DTPval_HMv-caPE7ztv-HGT4XmtTTBuc8C5d8ZOk,14730
+faker_events/example.py,sha256=nwMulHJzqbEfBWBcE7x1J9p8kUswag--LMqjDzaYqxY,1307
+faker_events/handlers.py,sha256=V8Ut5zyz5TFJeymJPKyWrAJE_DXNTZ6elCARy73WKPg,2194
+faker_events/profiles.py,sha256=fO4ejonBJVERlNmaYcxZFwDzuo1mIlpoVvWmuwzBH0w,5134
+Faker_Events-1.5.0.dist-info/LICENSE,sha256=hcT5OScBZ8I1hwk8y06HTGGM7pLJi-k7W1up9L4YFjU,1070
+Faker_Events-1.5.0.dist-info/METADATA,sha256=Vzg4MV5zPnID9QMdeII5Kccj4MMfJm-k4v7nRGlDlTU,14060
+Faker_Events-1.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Faker_Events-1.5.0.dist-info/top_level.txt,sha256=Dfw3fIvXLxHInRKmo04ll-7l8POR6ujvUSCwUYhQFA4,13
+Faker_Events-1.5.0.dist-info/RECORD,,
