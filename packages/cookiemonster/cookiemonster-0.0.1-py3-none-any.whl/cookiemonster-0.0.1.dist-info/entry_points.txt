@@ -1,0 +1,2 @@
+[console_scripts]
+cookiemonster = cookiemonster.app:main

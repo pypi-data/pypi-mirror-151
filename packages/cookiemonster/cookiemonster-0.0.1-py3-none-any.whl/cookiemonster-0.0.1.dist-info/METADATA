@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cookiemonster
+Version: 0.0.1
+Summary: Format, lint and test only the files that have changed on the current branch.
+Home-page: https://github.com/seanh/cookiemonster
+Project-URL: Bug Tracker, https://github.com/seanh/cookiemonster/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cookiecutter
+
+Cookie Monster
+==============
