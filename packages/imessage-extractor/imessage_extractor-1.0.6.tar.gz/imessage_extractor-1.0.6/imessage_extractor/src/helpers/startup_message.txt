@@ -1,0 +1,9 @@
+Welcome to {click.style('iMessage Extractor', bold=True)}! 👋
+
+This workflow fetches iMessage chat data stored locally
+in a SQLite database named {click.style('chat.db', bold=True)}, applies useful
+transformations and defines handy views on top of the data,
+and saves a readable & writable .db SQLite database locally.
+
+It's entirely {click.style('non-destructive', bold=True)}, meaning none of the original
+chat.db data is appended to, deleted or mutated in any way.
