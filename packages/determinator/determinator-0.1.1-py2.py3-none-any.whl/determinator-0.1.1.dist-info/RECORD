@@ -1,0 +1,16 @@
+determinator/__init__.py,sha256=3K2i-svLsZsfReY8CSzrr1pa6lv62WAsZ1TFpeC1ZGw,322
+determinator/const.py,sha256=rQ6RWA2iwyB-y6jqC_i93tQ945y3KMwjurGPSUvB_M8,1049
+determinator/convert2rdf.py,sha256=4r2E4OrUypaX9dQ-M3n68-yddo905NGwUdnIfEK96OU,40351
+determinator/convert2skos.py,sha256=c2Nn08VnrGWI8M_8u3MhtKpoegrV6lKaXXizfx8ZWiE,11817
+determinator/determinator.py,sha256=YnNzzWgPPGXnicrekCCyggPE7kf5yKfM5Bxgufy2AVk,31929
+determinator/importskos.py,sha256=9pLV96AcPrssxZWX5vzuZHAoJ4-YpQgdkMLUUZ8EYSM,5120
+determinator/types.py,sha256=y-dORnbUgj8P55_gaqCnmZZHB5ne5HiXvs4IpnxY9Ns,12407
+determinator/utils.py,sha256=_RK085XHBv7FNvzqyuocO5NERKWNVntEzGvz21vznKE,562
+determinator/vocab.py,sha256=b5CmMX9ZO7xlhESiPhifUsBpdwdjA8A89U0RHo_1bOk,7292
+determinator-0.1.1.dist-info/AUTHORS.rst,sha256=ymT-NhTZNyGSrT06zyXwMtocmE3sjncSn2hWXNnXYLc,177
+determinator-0.1.1.dist-info/LICENSE,sha256=I9_6_e_Taxccl6fkl6RcyHvMWKaw_uEEIhpUHgEBTu4,1356
+determinator-0.1.1.dist-info/METADATA,sha256=5pWQ5pfCEBHwjpE42JFyjNiiFDx_G36dQ87C38bveUE,6832
+determinator-0.1.1.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+determinator-0.1.1.dist-info/entry_points.txt,sha256=_Q66LPLg8PY9CM0yQKnRSJ6QAAL4dMUQ9FjFeQemYbc,56
+determinator-0.1.1.dist-info/top_level.txt,sha256=OTLb4q43DJJ5yVeUKFWtq8mJvRwjteRt03tgtSA5wTg,13
+determinator-0.1.1.dist-info/RECORD,,
