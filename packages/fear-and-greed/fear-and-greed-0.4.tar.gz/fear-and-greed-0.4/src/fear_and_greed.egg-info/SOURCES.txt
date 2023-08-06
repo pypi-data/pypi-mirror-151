@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fear_and_greed/__init__.py
+src/fear_and_greed/cnn.py
+src/fear_and_greed.egg-info/PKG-INFO
+src/fear_and_greed.egg-info/SOURCES.txt
+src/fear_and_greed.egg-info/dependency_links.txt
+src/fear_and_greed.egg-info/requires.txt
+src/fear_and_greed.egg-info/top_level.txt
