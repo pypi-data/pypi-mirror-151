@@ -1,0 +1,24 @@
+Flask
+Flask-Login
+Flask-Mail
+Flask-Migrate
+Flask-SQLAlchemy
+Flask-WTF
+MarkupSafe>=2.0.0
+SQLAlchemy
+billiard
+celery
+cryptography
+email-validator
+email_validator
+gunicorn
+influxdb
+ldap3
+more_itertools
+paramiko
+psutil
+pyOpenSSL
+pyasn1
+pyasn1-modules
+redislite@ git+https://github.com/GluuFederation/redislite.git@master#egg=redislite
+requests
