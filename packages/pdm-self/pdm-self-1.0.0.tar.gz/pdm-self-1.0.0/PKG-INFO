@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pdm-self
+Version: 1.0.0
+Summary: UNKNOWN
+License: MIT
+Author-email: Charlie Bini <5003326+cbini@users.noreply.github.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Description: # pdm-self
+        
+        
+
