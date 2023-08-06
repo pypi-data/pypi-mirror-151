@@ -1,0 +1,9 @@
+README.md
+setup.py
+UDataLoader/__init__.py
+UDataLoader/dataloader.py
+UDataLoader/word2id
+UDataLoader.egg-info/PKG-INFO
+UDataLoader.egg-info/SOURCES.txt
+UDataLoader.egg-info/dependency_links.txt
+UDataLoader.egg-info/top_level.txt
