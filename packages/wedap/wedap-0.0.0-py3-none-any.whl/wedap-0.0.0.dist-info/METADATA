@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: wedap
+Version: 0.0.0
+Summary: weighted ensemble data analysis and plotting
+Home-page: https://github.com/darianyang/wedap
+Author: Darian T. Yang
+Author-email: dty7@pitt.edu
+License: BSD 3-Clause License        
+        Copyright (c) 2021, Darian Yang
+        All rights reserved.        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.        
+Project-URL: Documentation, https://darianyang.github.io/wedap
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: h5py
+Requires-Dist: scipy
+Requires-Dist: moviepy
+Requires-Dist: tqdm
+
+wedap
+===========================
+![tests](https://github.com/darianyang/fluorelax/actions/workflows/test.yml/badge.svg)
+
+Weighted Ensemble data analysis and plotting.
+
+This repository is currently under development.
+
+### Requirements
+
+- Numpy
+- Matplotlib
+- H5py
+- Moviepy
+- Scipy
+- Gooey
+- tqdm
+
+### GUI
+
+wedap has a GUI built using [Gooey](https://github.com/chriskiehl/Gooey) which can be launched by running `pythonw wedap.py` (on MacOSX) or `python wedap.py` with no arguments. If you wish to use the command line interface instead include the `--ignore-gooey` flag.
+
+### Installation
+I recommend first installing dependencies via conda, especially gooey.
+To install the dependencies into your python env via pip or conda:
+``` bash
+conda env create --name wedap --file requirements.txt
+conda activate wedap
+conda install -c conda-forge gooey
+pip install wedap
+```
+Or update an existing environmnent:
+``` bash
+conda activate ENV_NAME
+conda env update ENV_NAME --file requirements.txt
+conda install -c conda-forge gooey
+pip install wedap
+```
+Or pip install (you may have issues pip installing wxPython):
+``` bash
+pip install gooey
+pip install wedap
+```
+If you have the repository cloned, go into the main wedap directory:
+``` bash
+pip install gooey
+pip install .
+```
+
+Note that gooey is kindof troublesome to pip install in some systems, which is why it's not included in the requirements (although it is required). I am trying to fix this but for now I reccomend conda installing gooey.
+
+### Examples
+
+After installation, to run the CLI version and view available options:
+``` bash
+wedap --ignore-gooey --help
+```
+To start the GUI simply input:
+``` bash
+wedap
+```
+To visualize the evolution of the pcoord for the example p53.h5 file via CLI:
+``` bash
+wedap --ignore-gooey -h5 /path/to/h5/p53.h5
+```
+To do the same with the API:
+``` Python
+import wedap
+import matplotlib.pyplot as plt
+
+wedap.H5_Plot(h5="/path/to/h5/p53.h5", data_type="evolution").plot()
+plt.show()
+```
+### Contributing
+
+Features should be developed on branches. To create and switch to a branch, use the command:
+
+`git checkout -b new_branch_name`
+
+To switch to an existing branch, use:
+
+`git checkout branch_name`
+
+To submit your feature to be incorporated into the main branch, you should submit a `Pull Request`. The repository maintainers will review your pull request before accepting your changes.
+
+### Copyright
+
+Copyright (c) 2022, Darian Yang
