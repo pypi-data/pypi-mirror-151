@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: libsimba.py-platform
+Version: 0.1.7.1a0
+Summary: 
+Author: Adam Brinckman
+Author-email: abrinckm@gmail.com
+Requires-Python: >=3.7, !=2.7.*, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: hdwallet (>=2.1.1,<3.0.0)
+Requires-Dist: httpx (>=0.21.1,<0.22.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: web3 (>=5.28.0,<6.0.0)
