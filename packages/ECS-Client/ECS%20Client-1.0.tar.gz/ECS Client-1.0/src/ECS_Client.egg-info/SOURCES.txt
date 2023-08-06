@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/ECS_Client.egg-info/PKG-INFO
+src/ECS_Client.egg-info/SOURCES.txt
+src/ECS_Client.egg-info/dependency_links.txt
+src/ECS_Client.egg-info/requires.txt
+src/ECS_Client.egg-info/top_level.txt
