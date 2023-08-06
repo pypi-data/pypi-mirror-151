@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: labelling-notebook
+Version: 0.3.0
+Summary: An image annotation or labelling tool for small project
+License: MIT
+Author: Wanasit 
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=2.0.1,<3.0.0)
