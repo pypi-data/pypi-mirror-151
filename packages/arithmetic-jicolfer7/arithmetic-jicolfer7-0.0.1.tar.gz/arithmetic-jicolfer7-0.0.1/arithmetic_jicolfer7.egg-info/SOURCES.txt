@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+arithmetic_jicolfer7.egg-info/PKG-INFO
+arithmetic_jicolfer7.egg-info/SOURCES.txt
+arithmetic_jicolfer7.egg-info/dependency_links.txt
+arithmetic_jicolfer7.egg-info/top_level.txt
+myarithmetic80589/__init__.py
+myarithmetic80589/arithmetic.py
+myarithmetic80589/test_arithmetic.py
