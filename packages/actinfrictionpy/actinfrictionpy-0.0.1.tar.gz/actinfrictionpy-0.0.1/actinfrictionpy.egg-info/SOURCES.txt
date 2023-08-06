@@ -1,0 +1,11 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+actinfrictionpy/__init__.py
+actinfrictionpy/_version.py
+actinfrictionpy/equations-of-motion.py
+actinfrictionpy.egg-info/PKG-INFO
+actinfrictionpy.egg-info/SOURCES.txt
+actinfrictionpy.egg-info/dependency_links.txt
+actinfrictionpy.egg-info/requires.txt
+actinfrictionpy.egg-info/top_level.txt
