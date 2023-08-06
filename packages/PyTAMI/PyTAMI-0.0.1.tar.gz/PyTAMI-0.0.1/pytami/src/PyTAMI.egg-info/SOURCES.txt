@@ -1,0 +1,8 @@
+README.md
+setup.py
+pytami/src/pytami.py
+pytami/src/PyTAMI.egg-info/PKG-INFO
+pytami/src/PyTAMI.egg-info/SOURCES.txt
+pytami/src/PyTAMI.egg-info/dependency_links.txt
+pytami/src/PyTAMI.egg-info/requires.txt
+pytami/src/PyTAMI.egg-info/top_level.txt
