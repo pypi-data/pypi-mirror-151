@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: thisismygreatdataset
+Version: 0.0.1
+Summary: a package to load my own dataset
+Home-page: https://github.com/zemengchuan/thegreatdataset
+Author: zemengchuan
+Author-email: zemengchuan@gmail.com
+License: MIT Licence
+Keywords: pip,dataset
+Platform: any
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+load my own dataset
+
