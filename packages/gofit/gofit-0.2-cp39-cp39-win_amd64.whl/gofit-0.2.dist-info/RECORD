@@ -1,0 +1,9 @@
+gofit.cp310-win_amd64.pyd,sha256=yGX93rWVFPZjonl_kKpeCzwSSv-c0hNaKDpkKnnX-Kk,256000
+gofit-0.2.data/platlib/.load-order-gofit-0.2,sha256=wy-BqAd9rm5_gtQrsXWxdm3TyuLUPdh3D29l4NtpzCo,14
+gofit-0.2.data/platlib/msvcp140.dll,sha256=qIuMHI8nv5D-lg4Oi9VphK1IFnBxr5LZbsEFH4n4J_s,571824
+gofit-0.2.dist-info/DELVEWHEEL,sha256=Hc_4M_WzKlG37BpgJ6jLu9Lk5m-LFYFlhB4fOiIEulE,373
+gofit-0.2.dist-info/LICENSE,sha256=fKyMpGpNbcw4i4eLwRav8p2hPtaeo34a01khAolc1zc,1589
+gofit-0.2.dist-info/METADATA,sha256=u0JagRvUI7sCU-8NPTXgUWFv40y2eojb2F2_xwQtFiU,3523
+gofit-0.2.dist-info/RECORD,,
+gofit-0.2.dist-info/top_level.txt,sha256=eKvBbX8lYDCjzyJIhlw1KdUyeq9-DpgO92Cx3E4fusQ,6
+gofit-0.2.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
