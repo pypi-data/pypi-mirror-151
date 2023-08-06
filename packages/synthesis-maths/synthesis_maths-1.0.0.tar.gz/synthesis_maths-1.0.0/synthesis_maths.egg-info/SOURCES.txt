@@ -1,0 +1,9 @@
+setup.py
+synthesis_maths/__init__.py
+synthesis_maths/basic_maths.py
+synthesis_maths.egg-info/PKG-INFO
+synthesis_maths.egg-info/SOURCES.txt
+synthesis_maths.egg-info/dependency_links.txt
+synthesis_maths.egg-info/top_level.txt
+synthesis_maths/functions/__init__.py
+synthesis_maths/functions/advanced_maths.py
