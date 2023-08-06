@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: biauek
+Version: 0.1.0
+Summary: "wykop.pl - news, stories, unfounded bans, dubious claims of administration's sanity"
+Home-page: https://codeberg.org/coralpink/biauek
+Author: Coral Pink
+Author-email: coral.pink@disr.it
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# biauek
