@@ -1,0 +1,118 @@
+# textx_model
+
+#### 介绍
+以textX为基础构建出可运行条件规则语句然后输出结果的模型
+
+条件规则语句（例）："(current_medical_program = '白细胞计数') and (specimen_type = '全血') and " \
+                 "(medicine_projects in '[1,2,3]') and (time < 6)"
+                 
+1. 当里面变量是："current_medical_program = '白细胞计数';specimen_type = '全血';medicine_projects = '2';time = 5;" 
+
+   结果输出: True
+
+2. 当里面变量是："current_medical_program = '白细胞计数';specimen_type = '全血';medicine_projects = '2';time = 8;"
+   
+   结果输出: False
+
+#### 功能介绍
+包含两个模型：通用模型（general_model）和 case when 专用模型（cs_model），它们处理的条件规则语句不同。
+
+包含一个工具：字典转字符串工具（dict_to_str）
+
+1. 通用模型
+
+
+    能处理的条件规则语句（例）："(current_medical_program = '白细胞计数') and (specimen_type = '全血') and " \
+                             "(medicine_projects in '[1,2,3]') and (time < 6)"
+    
+    使用通用模型：
+    from textx_model import general_model
+
+2. case when 专用模型
+
+
+    能处理的条件规则语句（例）："case when (current_medical_program = '白细胞计数') and (specimen_type = '全血') and " \
+                             "(medicine_projects in '[1,2,3]') and (time < 6) then '提醒消息：白细胞计数的消息' else ''"
+    
+    使用case when 专用模型
+    
+    from textx_model import cs_model
+
+3. 字典转字符串工具
+
+
+    
+    from textx_tools import dict_to_str
+
+#### 安装教程
+
+1. pip install textx-model
+
+
+#### 使用说明
+
+1.  通用模型
+
+
+    from textx_model import general_model
+    
+    
+    rule = "(current_medical_program = '白细胞计数') and (specimen_type = '全血') and " \
+           "(medicine_projects in '[1,2,3]') and (time < 6)"
+           
+    true_example = "current_medical_program = '白细胞计数';specimen_type = '全血';medicine_projects = '2';time = 5;"
+    
+    false_example = "current_medical_program = '白细胞计数';specimen_type = '全血';medicine_projects = '2';time = 8;"
+    
+    gm = general_model(true_example, rule)
+    
+    print(gm.run())   # 预期结果：True
+    
+    gm = general_model(false_example, rule)
+    
+    print(gm.run())   # 预期结果：False
+    
+    
+2.  case when 专用模型
+
+
+    from textx_model import cs_model
+    
+    
+    rule = "case when (current_medical_program = '白细胞计数') and (specimen_type = '全血') and " \
+           "(medicine_projects in '[1,2,3]') and (time < 6) then '提醒消息：白细胞计数的消息' else ''"
+           
+    true_example = "current_medical_program = '白细胞计数';specimen_type = '全血';medicine_projects = '2';time = 5;"
+    
+    false_example = "current_medical_program = '白细胞计数';specimen_type = '全血';medicine_projects = '2';time = 8;"
+    
+    cs = cs_model(true_example, rule)
+    
+    print(cs.run())   # 预期结果：提醒消息：白细胞计数的消息
+    
+    cs = cs_model(false_example, rule)
+    
+    print(cs.run())   # 预期结果：''
+
+
+3.  字典转字符串工具
+
+    
+    from textx_tools import dict_to_str
+    
+    
+    data_dict = {
+    'current_medical_program': '白细胞计数',
+    'specimen_type': '全血',
+    'medicine_projects': '2',
+    'time': 8,
+    '_list': [1, 2, 3]
+    }
+    
+    """
+    预期结果： 
+    "current_medical_program = '白细胞计数';specimen_type = '全血';medicine_projects = '2';time = 8;_list = '[1,2,3]';"
+    """
+    
+    print(dict_to_str(data_dict))  
+
