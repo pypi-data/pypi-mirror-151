@@ -1,0 +1,13 @@
+kucoincli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kucoincli/client.py,sha256=ckA5zdAe95Z6wYiC1sXR6u34DtFQ_ceN1yao3tp-2z8,40898
+kucoincli/pipe.py,sha256=8Im1BYjIauMWu91Hw3EPq1E8NiwGa_erSKbgU0jl_7E,7332
+kucoincli/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kucoincli/utils/_helpers.py,sha256=c0M_9ytjh3Zh8z-skZ6_Me-LaF1MKb22tIt0AVSJxiE,2190
+kucoincli/utils/_kucoinexceptions.py,sha256=tldMRs5iSWuQQexBl9rGFSUmPMab24priAcaeqEZ_X4,323
+kucoincli/websocket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kucoincli/websocket/manager.py,sha256=LrYOITyCXbCRhWPs63wZoHBsO9i1VDrsDkvwerzMKos,1347
+kucoincli/websocket/subscribe.py,sha256=u-JdMtXufUytDe3wtC5wCDmFLiLB5UTteu7XxJ7OOaM,2496
+kucoin_cli-0.1.0.dist-info/METADATA,sha256=3p5opgoFtyGKZg3kQtjPkwXuZZHLOdRsYwJRFXuaarw,5454
+kucoin_cli-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kucoin_cli-0.1.0.dist-info/top_level.txt,sha256=FnrAI_FQEUValhag25wBgRj8RX4ZolAiKqonRN6tQa8,10
+kucoin_cli-0.1.0.dist-info/RECORD,,
