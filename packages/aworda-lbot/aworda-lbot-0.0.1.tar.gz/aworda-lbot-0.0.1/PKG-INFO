@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aworda-lbot
+Version: 0.0.1
+Summary: make ariadne better
+License: AGPLv3
+Author: Little-LinNian
+Author-email: 2544704967@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beanie (>=1.11.0,<2.0.0)
+Requires-Dist: graia-ariadne (>=0.6.16,<0.7.0)

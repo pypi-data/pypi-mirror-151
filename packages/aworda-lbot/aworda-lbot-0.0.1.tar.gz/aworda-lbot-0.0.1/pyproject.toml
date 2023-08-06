@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "aworda-lbot"
+version = "0.0.1"
+description = "make ariadne better"
+authors = ["Little-LinNian <2544704967@qq.com>"]
+license = "AGPLv3"
+packages = [
+    { include = "aworda", from = "src" }
+]
+[tool.poetry.dependencies]
+python = "^3.9"
+graia-ariadne = "^0.6.16"
+beanie = "^1.11.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "txcloud"
+default = true
+url = "https://mirrors.cloud.tencent.com/pypi/simple"
+
+
+
