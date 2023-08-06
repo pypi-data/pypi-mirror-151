@@ -1,0 +1,7 @@
+[pybtex.database.input]
+ris=pybtexris:RISParser
+suffix=pybtexris:SuffixParser
+
+[pybtex.database.input.suffixes]
+.ris=pybtexris:RISParser
+
