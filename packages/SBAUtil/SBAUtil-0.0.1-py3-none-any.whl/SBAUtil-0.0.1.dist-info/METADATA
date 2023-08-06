@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: SBAUtil
+Version: 0.0.1
+Summary: Semi-automatic Pipeline for Markerless Pose Estimation and Behavior classification of mouse.
+Home-page: https://github.com/pypa/sampleproject
+Author: Yiyang
+Author-email: yiyangzhou123@ucla.edu
+Project-URL: Bug Tracker, https://github.com/webbdevv/braindecoding
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+# SBA
+
+Untility functions for interaction classifcation.
+
+
+
+
