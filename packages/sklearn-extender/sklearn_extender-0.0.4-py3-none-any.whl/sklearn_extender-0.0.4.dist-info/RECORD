@@ -1,0 +1,11 @@
+sklearn_extender/__init__.py,sha256=SxzcXuULvc3iXKt9j0pkS9sv8PU6bxgjZUzXhJP-T4E,145
+sklearn_extender/coefficients.py,sha256=Z6gzaZm8JkaEkmFxq4rTLus8QXZ1wO2agaBFq6zr9fs,4518
+sklearn_extender/model_extender.py,sha256=IZYx3DYtLdUwo6sgkF0hDptb8a9zcWL9mT-vbiUUSF0,3954
+sklearn_extender/prediction_intervals.py,sha256=zL6p1_6zEBbVpNH_hOqc1KQKUtfwlPl1DZl-KVlmYw0,3291
+sklearn_extender/timeseries_forecast.py,sha256=CR0PlKdXHjGjR1kQfUzHVHlGcpW76TRKinbkTtbmM1Y,10151
+sklearn_extender/timeseries_splitter.py,sha256=DuximbQFIfwIRqYmKChPbkwLbpD-8N5SlWtiZE6mVp8,7502
+sklearn_extender-0.0.4.dist-info/LICENSE.txt,sha256=PzSCBArpYAPH42_MThzpZHOqqkDon4WlEnmEQrdGVtM,1090
+sklearn_extender-0.0.4.dist-info/METADATA,sha256=Fx4QMdsCdSTUvKon9DKhT8b1mPdPbnrm9cGcavyPw34,277
+sklearn_extender-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sklearn_extender-0.0.4.dist-info/top_level.txt,sha256=7CMKUBRgze-Nuf8cNw3Jzln1RpDlWo6mXvngLX2nBM8,17
+sklearn_extender-0.0.4.dist-info/RECORD,,
