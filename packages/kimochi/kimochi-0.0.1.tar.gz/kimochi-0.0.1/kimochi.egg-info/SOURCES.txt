@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+kimochi/__init__.py
+kimochi/abc.py
+kimochi.egg-info/PKG-INFO
+kimochi.egg-info/SOURCES.txt
+kimochi.egg-info/dependency_links.txt
+kimochi.egg-info/top_level.txt

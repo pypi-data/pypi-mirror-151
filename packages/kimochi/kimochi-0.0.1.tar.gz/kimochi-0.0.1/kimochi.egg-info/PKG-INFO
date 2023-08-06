@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kimochi
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: VarMonke
+License: MIT
+Platform: UNKNOWN
+Requires: aiohttp
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
