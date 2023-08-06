@@ -1,0 +1,56 @@
+[
+  {
+    "tyyppi": "muutos",
+    "tunnus": "d2f973240c9fe29d27560b7dfc1c8522f8085431",
+    "versio": "0.2.2",
+    "kuvaus": "P\u00e4ivitetty k\u00e4ytt\u00f6oikeusasiakirja"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "dda376cf29a29ddfe08672f5ab2829d0f8d69997",
+    "versio": "0.2.1",
+    "kuvaus": "Parannettu rekursion sietoa"
+  },
+  {
+    "tyyppi": "julkaisu",
+    "tunnus": "29fbc59bb99f69db6b39e2124d5258d3618e479e",
+    "versio": "0.2",
+    "kuvaus": "Versio 0.2\n* `staticmethod`-tyyppinen (argumentiton) moduulim\u00e4\u00e4re\n* sallitaan sijoitus Python 3.6 -toteutuksessa"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "efd4b5d0be3962c1512c6fe87c315d7c29cb270b",
+    "versio": "0.2",
+    "kuvaus": "PEP 517/8 -asennusm\u00e4\u00e4ritys"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "61da541803965c0e696e9e9c96536ec52e722092",
+    "versio": "0.1.3",
+    "kuvaus": "Sallitaan `staticmethod`-tyyppinen (argumentiton) moduulim\u00e4\u00e4re"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "9ba6654fadb4aba9110c406a42c8516db55c1104",
+    "versio": "0.1.2",
+    "kuvaus": "P\u00e4ivitetty asennusm\u00e4\u00e4ritys"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "8340839fd71fda628962800bf8a43e5b21a790c8",
+    "versio": "0.1.1",
+    "kuvaus": "Muutettu Python 3.6 -toteutus datakuvaajaksi: sallitaan sijoitus"
+  },
+  {
+    "tyyppi": "julkaisu",
+    "tunnus": "080435ca15e045f569bf2ef8efa92d88b4ba9efa",
+    "versio": "0.1",
+    "kuvaus": "Versio 0.1"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "b728f98b45f309a151e4725cc6023cd40ed71293",
+    "versio": "0.1",
+    "kuvaus": "Alustava toteutus"
+  }
+]
