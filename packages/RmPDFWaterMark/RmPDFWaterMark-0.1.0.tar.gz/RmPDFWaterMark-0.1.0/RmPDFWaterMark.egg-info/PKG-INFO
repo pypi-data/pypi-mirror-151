@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: RmPDFWaterMark
+Version: 0.1.0
+Summary: 若干pdf水印处理
+Home-page: UNKNOWN
+Author: xcc
+Author-email: xinchacha@xcc.com
+License: UNKNOWN
+Description: 
+        ### 处理若干个pdf水印事项
+        
+        
+        * cnki
+        ```
+        from RmWaterMarkPDF import del_cnki_waterMark
+        del_cnki_waterMark(stream)
+        stream :: 待处理文件流
+        return :: 处理后文件流
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

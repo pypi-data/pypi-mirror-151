@@ -1,0 +1,16 @@
+README.md
+setup.py
+RmPDFWaterMark/__init__.py
+RmPDFWaterMark/_version.py
+RmPDFWaterMark/cnki.py
+RmPDFWaterMark/filters.py
+RmPDFWaterMark/generic.py
+RmPDFWaterMark/merger.py
+RmPDFWaterMark/pagerange.py
+RmPDFWaterMark/pdf.py
+RmPDFWaterMark/utils.py
+RmPDFWaterMark/xmp.py
+RmPDFWaterMark.egg-info/PKG-INFO
+RmPDFWaterMark.egg-info/SOURCES.txt
+RmPDFWaterMark.egg-info/dependency_links.txt
+RmPDFWaterMark.egg-info/top_level.txt
