@@ -1,0 +1,76 @@
+{% load static %}
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h3>{{ basic_info.company_name }}</h3>
+            <p>{{ basic_info.addr|striptags }}<br><br>
+              <strong>Phone:</strong> {{ basic_info.phone }}<br>
+              <strong>Email:</strong> {{ basic_info.owner_email }}<br>
+              <strong>사업자등록번호:</strong> {{ basic_info.business_reg_number }}<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              {% for link, title in useful_links %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ link }}" target="_blank">{{ title }}</a></li>
+              {% endfor %}
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Policies</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          {% comment %}
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+          {% endcomment %}
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <a href="https://demiansoft.com" target="_blank"><strong><span>Demiansoft</span></strong></a>. All Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        {% if social.twitter %}
+        <a href="{{ social.twitter }}" class="twitter" title="{{ basic_info.clinic }} 트위터 바로가기" target="_blank"><i class="bx bxl-twitter"></i></a>
+        {% endif %}
+        {% if social.facebook %}
+        <a href="{{ social.facebook }}" class="facebook" title="{{ basic_info.clinic }} 페이스북 바로가기" target="_blank"><i class="bx bxl-facebook"></i></a>
+        {% endif %}
+        {% if social.instagram %}
+        <a href="{{ social.instagram }}" class="instagram" title="{{ basic_info.clinic }} 인스타그램 바로가기" target="_blank"><i class="bx bxl-instagram"></i></a>
+        {% endif %}
+        {% if social.youtube %}
+        <a href="{{ social.youtube }}" class="youtube" title="{{ basic_info.clinic }} 유튜브 바로가기" target="_blank"><i class="bx bxl-youtube"></i></a>
+        {% endif %}
+        {% if social.blog %}
+          <a href="{{ social.blog }}" class="blog" title="{{ basic_info.clinic }} 블로그 바로가기" target="_blank"><i class="bi bi-bootstrap-fill"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  </footer><!-- End Footer -->
