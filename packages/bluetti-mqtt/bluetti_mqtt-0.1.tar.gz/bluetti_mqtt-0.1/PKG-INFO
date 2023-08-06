@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bluetti_mqtt
+Version: 0.1
+Summary: MQTT interface to Bluetti power stations
+Home-page: http://github.com/warhammerkid/bluetti_mqtt
+Author: Stephen Augenstein
+Author-email: perl.programmer@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
