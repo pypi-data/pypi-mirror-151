@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyminc
+Version: 0.57
+Summary: Python interface to libminc
+Home-page: https://github.com/Mouse-Imaging-Centre/pyminc
+Author: Jason Lerch
+License: BSD
+Requires-Python: >=3.7
+License-File: LICENSE
