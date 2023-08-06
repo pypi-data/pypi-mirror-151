@@ -1,0 +1,14 @@
+bioontologies/__init__.py,sha256=g7aqPlxycBlYFNnhrW3GPCdaCG3LRgs1QeQp3S3BbCc,248
+bioontologies/__main__.py,sha256=WgknDIycOyRpvAHssOpfQUshGNlFDVj2KE4m5Bxc1_c,330
+bioontologies/api.py,sha256=k0jrFkkTf2yUh3CAibb8oVd6bO6YLR_VASi8ChfEzSg,42
+bioontologies/cli.py,sha256=JsHwEkqGfOeN-JawiBMo5Fp0Em2UqBbTF0WNIzVNNUo,892
+bioontologies/obograph.py,sha256=Bs3jiU9v2HuJqmN0mJNCfQNQXoAhGUFt0leLdaa_Z8A,9453
+bioontologies/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bioontologies/robot.py,sha256=pay3fdZvmW5p7Egfds1smzA2CYcGptGr-UKl_Y87qTw,5965
+bioontologies/version.py,sha256=RLiyTINCbeNNWYc_JrPMlXi3O0OhWTdz8B3M7X59T5U,1028
+bioontologies-0.0.4.dist-info/LICENSE,sha256=ve6WiK7DUzD7fEkZ_ddqaiBSMNj9ib93QYZG5UsOAH0,1076
+bioontologies-0.0.4.dist-info/METADATA,sha256=W2xX7kbzYPk064agSO3QtupUQip7qg4yoxYeN6OJqYY,8545
+bioontologies-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bioontologies-0.0.4.dist-info/entry_points.txt,sha256=puW436RiOuprq3Iobn1d70wSrn0dkkLsKISNEk8kY9s,57
+bioontologies-0.0.4.dist-info/top_level.txt,sha256=PQVo6Gd4-df-TCL8W32V9kSXjRFCeXe5M54qyhA6RCw,14
+bioontologies-0.0.4.dist-info/RECORD,,
