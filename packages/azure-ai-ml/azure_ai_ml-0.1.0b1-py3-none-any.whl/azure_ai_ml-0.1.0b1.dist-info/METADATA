@@ -1,0 +1,51 @@
+Metadata-Version: 2.0
+Name: azure-ai-ml
+Version: 0.1.0b1
+Summary: Microsoft Azure Machine Learning Client Library for Python
+Home-page: https://github.com/Azure/azure-sdk-for-python
+Author: Microsoft Corporation
+Author-email: askdocdb@microsoft.com
+Maintainer: Microsoft
+Maintainer-email: askdocdb@microsoft.com
+License: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Provides-Extra: designer
+Requires-Dist: pyyaml (<7.0.0,>=5.1.0)
+Requires-Dist: azure-identity
+Requires-Dist: msrest (>=0.6.18)
+Requires-Dist: azure-core (!=1.22.0,<2.0.0,>=1.8.0)
+Requires-Dist: azure-mgmt-core (<2.0.0,>=1.2.0)
+Requires-Dist: marshmallow (<4.0.0,>=3.5)
+Requires-Dist: jsonschema (<5.0.0,>=4.0.0)
+Requires-Dist: tqdm (<=4.63.0)
+Requires-Dist: colorama (<=0.4.4)
+Requires-Dist: pyjwt (<=2.3.0)
+Requires-Dist: azure-storage-blob (<=12.9.0,>=12.5.0)
+Requires-Dist: azure-storage-file-share (<13.0.0)
+Requires-Dist: pydash (<=4.9.0)
+Requires-Dist: pathspec (==0.9.*)
+Requires-Dist: isodate
+Requires-Dist: docker
+Requires-Dist: azure-common (<2.0.0,>=1.1)
+Requires-Dist: typing-extensions (<4.0.0,>=3.10)
+Requires-Dist: applicationinsights (<=0.11.10)
+Provides-Extra: designer
+Requires-Dist: mldesigner; extra == 'designer'
+
+# Azure Machine Learning Python SDK
+
+The Azure ML Python SDK includes a telemetry feature that collects usage and failure data about the SDK and sends it to Microsoft when you use the SDK. Telemetry data helps the SDK team understand how the SDK is used so it can be improved and the information about failures helps the team resolve problems and fix bugs.
+The SDK telemetry feature is enabled by default. To opt out of the telemetry feature, set the AZUREML_SDKV2_TELEMETRY_OPTOUT environment variable to 1 or true.
+
+
+# something
