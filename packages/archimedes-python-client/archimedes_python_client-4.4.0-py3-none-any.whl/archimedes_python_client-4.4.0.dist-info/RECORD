@@ -1,0 +1,17 @@
+archimedes/__init__.py,sha256=lZTpTykltvVcIt4cUg_PAJJ5qhUj2wjR4nVqV7bwVFk,1170
+archimedes/auth.py,sha256=S0tOD0QJS6Rkp2zCoW4gF8g_hgD-J4nH4wPs5xYy6FI,4147
+archimedes/configuration.py,sha256=4oMn1W-akTGardjLWUqWXAfhpep3g7VN9LltInGmK7U,1534
+archimedes/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+archimedes/data/api.py,sha256=mpbO9mIXJHADsqcMmrA8UbnbfY4uMOIbMOXrI-R2ya8,29636
+archimedes/data/types.py,sha256=bLmGwA5etlAvxMpas2OH66FbXRXKqAI2miNCU8-Pcpo,234
+archimedes/testdata/__init__.py,sha256=kC3qhrIQomERGT4vTiUNATpHo5DGV483yIFHFMnHw1s,62
+archimedes/testdata/datasets/rkspot.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+archimedes/testdata/testdata.py,sha256=lzjUPIGgZwHQfi19dPWuNH652qNy8btcx1-l6K8YJ94,838
+archimedes/token_cache.py,sha256=6KwKcOAKFBoPEUrptqDWRjgRCIPaJeL0SYTRtfnL1xE,586
+archimedes/utils/__init__.py,sha256=vCGs48Qkvvk41XiBnb329417_wGrqEYZfrNBcg8NUOc,177
+archimedes/utils/environ_context.py,sha256=zUy2v_ko73WeB25rGAGZNAZVhCUAKbs7sFCwDuA5WIc,859
+archimedes/utils/format.py,sha256=OK9Wn8baQw6Vhdz00GxJmdE_7Q2MuYu-clXy_56dUQU,2863
+archimedes/utils/utils.py,sha256=lsLWHUsnN683tSy_rzzkS8eLHFO__E-e3VAvIfFgde0,4487
+archimedes_python_client-4.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+archimedes_python_client-4.4.0.dist-info/METADATA,sha256=8ny9VAwh4Y1eqfenvd5Wrery_u_G8uNP4OpiPtrKJAk,632
+archimedes_python_client-4.4.0.dist-info/RECORD,,
