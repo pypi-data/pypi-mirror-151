@@ -1,0 +1,71 @@
+CHANGELOG.rst
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+docs/index.rst
+docs/contents/10_introduction.rst
+docs/contents/20_why_this_package.rst
+docs/contents/40_modules.rst
+docs/contents/cookiecutter_python.hooks.rst
+docs/contents/cookiecutter_python.rst
+docs/contents/30_usage/generate_project.rst
+docs/contents/30_usage/index.rst
+docs/contents/30_usage/installation.rst
+docs/contents/30_usage/use_cases.rst
+src/cookiecutter_python/__init__.py
+src/cookiecutter_python/__main__.py
+src/cookiecutter_python/cli.py
+src/cookiecutter_python/cookiecutter.json
+src/cookiecutter_python/py.typed
+src/cookiecutter_python.egg-info/PKG-INFO
+src/cookiecutter_python.egg-info/SOURCES.txt
+src/cookiecutter_python.egg-info/dependency_links.txt
+src/cookiecutter_python.egg-info/entry_points.txt
+src/cookiecutter_python.egg-info/not-zip-safe
+src/cookiecutter_python.egg-info/requires.txt
+src/cookiecutter_python.egg-info/top_level.txt
+src/cookiecutter_python/backend/__init__.py
+src/cookiecutter_python/backend/check_pypi.py
+src/cookiecutter_python/backend/check_pypi_handler.py
+src/cookiecutter_python/backend/cookiecutter_proxy.py
+src/cookiecutter_python/backend/input_sanitization.py
+src/cookiecutter_python/backend/main.py
+src/cookiecutter_python/backend/singleton.py
+src/cookiecutter_python/backend/user_config_proxy.py
+src/cookiecutter_python/hooks/__init__.py
+src/cookiecutter_python/hooks/post_gen_project.py
+src/cookiecutter_python/hooks/pre_gen_project.py
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/CHANGELOG.rst
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/CONTRIBUTING.md
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/LICENSE
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/MANIFEST.in
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/README.rst
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/pyproject.toml
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/.github/workflows/test.yaml
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/docs/conf.py
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/docs/index.rst
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/docs/spelling_wordlist.txt
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/docs/contents/10_introduction.rst
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/docs/contents/20_why_this_package.rst
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/docs/contents/30_usage.rst
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/docs/contents/40_modules.rst
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/docs/contents/{{ cookiecutter.pkg_name }}.rst
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/scripts/parse_version.py
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/src/{{ cookiecutter.pkg_name }}/__init__.py
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/src/{{ cookiecutter.pkg_name }}/py.typed
+src/cookiecutter_python/{{ cookiecutter.project_slug }}/tests/smoke_test.py
+src/stubs/cookiecutter/__init__.pyi
+src/stubs/cookiecutter/config.pyi
+src/stubs/cookiecutter/main.pyi
+src/stubs/requests_futures/__init__.pyi
+src/stubs/requests_futures/sessions.pyi
+tests/conftest.py
+tests/test_cli.py
+tests/test_post_hook.py
+tests/test_prehook.py
+tests/test_running_test_suite.py
+tests/data/correct_python_package_names.txt
+tests/data/test_cookiecutter.json
