@@ -1,0 +1,3 @@
+PyQt5>=5.8
+python-color-getter>=0.0.1
+pyqt-titlebar-buttons-widget>=0.0.1
