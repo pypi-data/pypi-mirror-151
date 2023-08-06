@@ -1,0 +1,6 @@
+gitignore_cli_tddschn/__init__.py,sha256=61-TarNXkFJQWjYZiOb10_sQpzksIZ-1mA7zDWTD0SQ,340
+gitignore_cli_tddschn/cli.py,sha256=T9zeIhiJhUeKfiR99-eEHn6cnQWYqisuYpRFViilkyI,6315
+gitignore_cli_tddschn-0.4.1.dist-info/entry_points.txt,sha256=9klqVT5tbgAGO85YYJWR1zYkyYU1lZ-DsheDu__-tTE,94
+gitignore_cli_tddschn-0.4.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gitignore_cli_tddschn-0.4.1.dist-info/METADATA,sha256=hqmq2MZbDj8l186c8yxAtMpEyDNOWHbqmaX9SQhzq7M,2942
+gitignore_cli_tddschn-0.4.1.dist-info/RECORD,,
