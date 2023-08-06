@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bumbo_evgeny
+Version: 0.0.1
+Summary: Bumbo Python Web Framework built for learning purposes.
+Home-page: UNKNOWN
+Author: Evgeny Titov
+Author-email: ztcccp4568@mail.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+Bumbo Python Web Framework built for learning purposes.
+
