@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: alembic-api
+Version: 0.0.3
+Summary: 
+Author: dotX12
+Author-email: hash@shitposting.team
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: SQLAlchemy (>=1.4.0,<2.0.0)
+Requires-Dist: alembic (>=1.7.0,<2.0.0)
