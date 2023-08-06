@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: selenium-chromedriver
+Version: 1.3
+Summary: Install Stable version Chromedriver for Selenium on Windows, MacOS, M1 MacOS and Linux
+Home-page: https://github.com/tezz-io/selenium-chromedriver
+Author: Tejas M R
+Author-email: totejasmr@gmail.com
+Project-URL: Bug Tracker, https://github.com/tezz-io/selenium-chromedriver/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Selenium Chromedriver
+
+[![PyPI version](https://badge.fury.io/py/selenium-chromedriver.svg)](https://badge.fury.io/py/selenium-chromedriver)
+
+Install Stable version Chromedriver for Selenium on Windows, MacOS, M1 MacOS and Linux
+
+## Usage
+
+```sh
+pip3 install selenium-chromedriver
+python3 -m selenium-chromedriver.selenium-chromedriver
+```
