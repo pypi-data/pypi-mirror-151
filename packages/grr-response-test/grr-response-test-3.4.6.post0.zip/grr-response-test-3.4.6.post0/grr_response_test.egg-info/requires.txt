@@ -1,0 +1,9 @@
+absl-py==0.9.0
+flaky==3.6.1
+pytest==6.2.2
+responses==0.12.1
+selenium==3.141.0
+google-api-python-client==1.9.3
+grr-api-client==3.4.6post0
+grr-response-client==3.4.6post0
+grr-response-server==3.4.6post0
