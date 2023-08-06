@@ -1,0 +1,5 @@
+fabric
+docker
+randomname
+colorlog
+simple_slurm_command
