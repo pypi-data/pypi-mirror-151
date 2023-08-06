@@ -1,0 +1,8 @@
+*.mypy_cache/
+notes.txt
+*.pyc
+*.pytest_cache/
+docs/build/
+*.ipynb_checkpoints
+*~$notes_Requirements.xlsx
+dist/
