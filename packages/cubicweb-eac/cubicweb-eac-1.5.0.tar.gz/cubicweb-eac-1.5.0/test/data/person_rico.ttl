@@ -1,0 +1,70 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricoform: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://testing.fr/cubicweb/{{name}}> a rico:AgentName ;
+    rico:isOrWasAgentNameOf <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:textualValue "Jean Jacques" ;
+    rico:type "authorized" .
+
+<http://testing.fr/cubicweb/{{eid}}#inst> a rico:Instantiation ;
+    rico:identifier "A123" ;
+    rico:isInstantiationOf <http://testing.fr/cubicweb/{{eid}}> .
+
+<http://testing.fr/cubicweb/{{fam1}}#agent> rico:hasFamilyAssociationWith <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:personHasFamilyRelation <http://testing.fr/cubicweb/{{eid}}#family_to_B123> .
+
+<http://testing.fr/cubicweb/{{fam2}}#agent> rico:hasFamilyAssociationWith <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:personHasFamilyRelation <http://testing.fr/cubicweb/{{eid}}#family_to_B234> .
+
+<http://testing.fr/cubicweb/{{occupation}}> a rico:OccupationType ;
+    rdfs:label "fan de poules" ;
+    rico:isOrWasOccupationTypeOf <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{eid}}#family_to_B123> a rico:FamilyRelation ;
+    rico:familyRelationConnects <http://testing.fr/cubicweb/{{fam1}}#agent>,
+        <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{eid}}#family_to_B234> a rico:FamilyRelation ;
+    rico:familyRelationConnects <http://testing.fr/cubicweb/{{fam2}}#agent>,
+        <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{eid}}> a rico:Record ;
+    rico:describesOrDescribed <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:hasDocumentaryForm ricoform:AuthorityRecord ;
+    rico:hasInstantiation <http://testing.fr/cubicweb/{{eid}}#inst> .
+
+<http://testing.fr/cubicweb/{{family}}#agent> rico:groupIsSourceOfMembershipRelation <http://testing.fr/cubicweb/{{eid}}#family_to_F123> ;
+    rico:hasOrHadMember <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{eid}}#family_to_F123> a rico:MembershipRelation ;
+    rico:membershipRelationHasSource <http://testing.fr/cubicweb/{{family}}#agent> ;
+    rico:membershipRelationHasTarget <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{eid}}#agent> a rico:Agent,
+        rico:Person ;
+    rico:agentIsTargetOfPerformanceRelation _:N99fdb5f2c68c49ca964757cf2f695b1e ;
+    rico:birthDate "2010-01-01"^^xsd:date ;
+    rico:deathDate "2050-05-02"^^xsd:date ;
+    rico:isOrWasDescribedBy <http://testing.fr/cubicweb/{{eid}}> ;
+    rico:hasFamilyAssociationWith <http://testing.fr/cubicweb/{{fam1}}#agent>,
+        <http://testing.fr/cubicweb/{{fam2}}#agent> ;
+    rico:hasOrHadAgentName <http://testing.fr/cubicweb/{{name}}> ;
+    rico:hasOrHadOccupationOfType <http://testing.fr/cubicweb/{{occupation}}> ;
+    rico:isOrWasMemberOf <http://testing.fr/cubicweb/{{family}}#agent> ;
+    rico:name "Jean Jacques" ;
+    rico:performsOrPerformed _:N5264360765f4419fa567c3dff26adc17 ;
+    rico:personHasFamilyRelation <http://testing.fr/cubicweb/{{eid}}#family_to_B123>,
+        <http://testing.fr/cubicweb/{{eid}}#family_to_B234> ;
+    rico:personIsTargetOfMembershipRelation <http://testing.fr/cubicweb/{{eid}}#family_to_F123> .
+
+_:N5264360765f4419fa567c3dff26adc17 a rico:Activity ;
+    rico:activityIsSourceOfPerformanceRelation _:N99fdb5f2c68c49ca964757cf2f695b1e ;
+    rico:hasActivityType <http://testing.fr/cubicweb/{{occupation}}> ;
+    rico:isOrWasPerformedBy <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+_:N99fdb5f2c68c49ca964757cf2f695b1e a rico:PerformanceRelation ;
+    rico:performanceRelationHasSource _:N5264360765f4419fa567c3dff26adc17 ;
+    rico:performanceRelationHasTarget <http://testing.fr/cubicweb/{{eid}}#agent> .
+

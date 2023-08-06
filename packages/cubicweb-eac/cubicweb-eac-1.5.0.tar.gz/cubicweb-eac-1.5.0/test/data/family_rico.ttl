@@ -1,0 +1,43 @@
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricoform: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+
+<http://testing.fr/cubicweb/{{name_eid}}> a rico:AgentName ;
+    rico:isOrWasAgentNameOf <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:textualValue "Famille Pigeon" ;
+    rico:type "authorized" .
+
+<http://testing.fr/cubicweb/{{eid}}#inst> a rico:Instantiation ;
+    rico:identifier "F123" ;
+    rico:isInstantiationOf <http://testing.fr/cubicweb/{{eid}}> .
+
+<http://testing.fr/cubicweb/{{eid}}> a rico:Record ;
+    rico:describesOrDescribed <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:hasDocumentaryForm ricoform:AuthorityRecord ;
+    rico:hasInstantiation <http://testing.fr/cubicweb/{{eid}}#inst> .
+
+<http://testing.fr/cubicweb/{{ar_eid}}#agent> rico:agentIsConnectedToAgentRelation <http://testing.fr/cubicweb/{{eid}}#family_to_F234> ;
+    rico:isAgentAssociatedWithAgent <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{p_eid}}#family_to_F123> a rico:MembershipRelation ;
+    rico:membershipRelationHasSource <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:membershipRelationHasTarget <http://testing.fr/cubicweb/{{p_eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{p_eid}}#agent> rico:isOrWasMemberOf <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:personIsTargetOfMembershipRelation <http://testing.fr/cubicweb/{{p_eid}}#family_to_F123> .
+
+
+<http://testing.fr/cubicweb/{{eid}}#family_to_F234> a rico:AgentToAgentRelation ;
+    rico:agentRelationConnects <http://testing.fr/cubicweb/{{eid}}#agent>,
+        <http://testing.fr/cubicweb/{{ar_eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{eid}}#agent> a rico:Agent,
+        rico:Family ;
+    rico:agentIsConnectedToAgentRelation <http://testing.fr/cubicweb/{{eid}}#family_to_F234> ;
+    rico:isOrWasDescribedBy <http://testing.fr/cubicweb/{{eid}}> ;
+    rico:hasOrHadAgentName <http://testing.fr/cubicweb/{{name_eid}}> ;
+    rico:isAgentAssociatedWithAgent <http://testing.fr/cubicweb/{{ar_eid}}#agent> ;
+    rico:groupIsSourceOfMembershipRelation <http://testing.fr/cubicweb/{{p_eid}}#family_to_F123> ;
+    rico:hasOrHadMember <http://testing.fr/cubicweb/{{p_eid}}#agent> ;
+    rico:name "Famille Pigeon" .
+
+

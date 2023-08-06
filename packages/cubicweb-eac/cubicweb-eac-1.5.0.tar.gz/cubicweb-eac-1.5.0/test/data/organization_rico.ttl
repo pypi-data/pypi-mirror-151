@@ -1,0 +1,43 @@
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix ricoform: <https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://testing.fr/cubicweb/{{name}}> a rico:AgentName ;
+    rico:isOrWasAgentNameOf <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:textualValue "Entreprise" ;
+    rico:type "authorized" .
+
+<http://testing.fr/cubicweb/{{eid}}#inst> a rico:Instantiation ;
+    rico:identifier "C123" ;
+    rico:isInstantiationOf <http://testing.fr/cubicweb/{{eid}}> .
+
+<http://testing.fr/cubicweb/{{child_of}}#agent> rico:agentIsSourceOfAgentHierarchicalRelation <http://testing.fr/cubicweb/{{child_of}}#hierarchical_to_C123> ;
+    rico:hasOrHadSubordinate <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{parent_of}}#agent> rico:agentIsTargetOfAgentHierarchicalRelation <http://testing.fr/cubicweb/{{eid}}#hierarchical_to_P243> ;
+    rico:isOrWasSubordinateTo <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{eid}}> a rico:Record ;
+    rico:hasDocumentaryForm ricoform:AuthorityRecord ;
+    rico:describesOrDescribed <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:hasInstantiation <http://testing.fr/cubicweb/{{eid}}#inst> .
+
+<http://testing.fr/cubicweb/{{eid}}#hierarchical_to_P243> a rico:AgentHierarchicalRelation ;
+    rico:agentHierarchicalRelationHasSource <http://testing.fr/cubicweb/{{eid}}#agent> ;
+    rico:agentHierarchicalRelationHasTarget <http://testing.fr/cubicweb/{{parent_of}}#agent> .
+
+<http://testing.fr/cubicweb/{{child_of}}#hierarchical_to_C123> a rico:AgentHierarchicalRelation ;
+    rico:agentHierarchicalRelationHasSource <http://testing.fr/cubicweb/{{child_of}}#agent> ;
+    rico:agentHierarchicalRelationHasTarget <http://testing.fr/cubicweb/{{eid}}#agent> .
+
+<http://testing.fr/cubicweb/{{eid}}#agent> a rico:Agent,
+        rico:CorporateBody ;
+    rico:agentIsSourceOfAgentHierarchicalRelation <http://testing.fr/cubicweb/{{eid}}#hierarchical_to_P243> ;
+    rico:agentIsTargetOfAgentHierarchicalRelation <http://testing.fr/cubicweb/{{child_of}}#hierarchical_to_C123> ;
+    rico:beginningDate "2010-01-01"^^xsd:date ;
+    rico:isOrWasDescribedBy <http://testing.fr/cubicweb/{{eid}}> ;
+    rico:endDate "2050-05-02"^^xsd:date ;
+    rico:hasOrHadAgentName <http://testing.fr/cubicweb/{{name}}> ;
+    rico:hasOrHadSubordinate <http://testing.fr/cubicweb/{{parent_of}}#agent> ;
+    rico:isOrWasSubordinateTo <http://testing.fr/cubicweb/{{child_of}}#agent> ;
+    rico:name "Entreprise" .
