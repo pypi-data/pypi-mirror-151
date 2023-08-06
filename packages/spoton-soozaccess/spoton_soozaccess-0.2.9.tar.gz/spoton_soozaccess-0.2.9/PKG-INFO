@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: spoton_soozaccess
+Version: 0.2.9
+Summary: A tool to access Spot-On API using Python
+Home-page: https://gitlab.forge.hefr.ch/pa-spot-on-demeusy/spot-on-soozaccess
+Author: Jean Demeusy
+Author-email: dev.jdu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# spot-on-soozaccess
+    
+
