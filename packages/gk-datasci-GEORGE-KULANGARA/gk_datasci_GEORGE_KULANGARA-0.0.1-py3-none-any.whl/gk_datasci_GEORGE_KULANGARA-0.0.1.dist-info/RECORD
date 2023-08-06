@@ -1,0 +1,9 @@
+example_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_package/example.py,sha256=X8MPB275LbdlIVf8Mawtah11TDi5cPI8aDrkduPD7y8,42
+example_package/example2.py,sha256=yiEa_M_gmceyaCNmlV9UurY23157oehvZmGB0eV9YGY,43
+example_package/sayhello.py,sha256=kZHa7g49lCSWUY6a0DpxIm1IXn1-AlgNDIe1ZzUfsMQ,73
+gk_datasci_GEORGE_KULANGARA-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+gk_datasci_GEORGE_KULANGARA-0.0.1.dist-info/METADATA,sha256=JR3DqQYtod3UgXZGAa_P6dXqsg5CojtDHKK7dqtveBA,742
+gk_datasci_GEORGE_KULANGARA-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gk_datasci_GEORGE_KULANGARA-0.0.1.dist-info/top_level.txt,sha256=BQmbTEGXuNRVRlcu2pp3DR1SHt9FsfBjdBeUA9zZr6Q,16
+gk_datasci_GEORGE_KULANGARA-0.0.1.dist-info/RECORD,,
