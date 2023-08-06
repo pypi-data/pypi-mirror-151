@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pynextflow
+Version: 0.1
+Summary: Nextflow pipelines with Python
+Author: Jordi Deu-Pons
+License: MPL-2
+Keywords: pipeline,workflow
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+## Description
+Create pipelines adding @nf.process and @nf.workflow decorators 
+and run them with Nextflow from python.
+
+## Example
+```
+import pynextflow as nf
+
+@nf.process(echo=True)
+def hello(cheers: str) -> nf.bash:
+    return f"echo {cheers}"
+
+with nf.Nextflow():
+    hello(["hola", "hello", "ciao"])
+```
+
+
