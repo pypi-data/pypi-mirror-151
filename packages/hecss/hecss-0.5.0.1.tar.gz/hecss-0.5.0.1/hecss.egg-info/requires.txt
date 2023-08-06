@@ -1,0 +1,8 @@
+ase
+spglib
+tqdm
+click
+matplotlib
+numpy
+scipy
+ipython

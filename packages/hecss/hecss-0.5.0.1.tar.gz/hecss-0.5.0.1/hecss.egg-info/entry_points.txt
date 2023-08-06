@@ -1,0 +1,5 @@
+[console_scripts]
+calculate_xscale = hecss.cli:calculate_xscale
+hecss_sampler = hecss.cli:hecss_sampler
+plot_bands = hecss.cli:plot_bands
+plot_stats = hecss.cli:plot_stats
