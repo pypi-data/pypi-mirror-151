@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $1 = install ]
+then
+    git clone `git remote get-url origin`.wiki wiki
+    python -m nbresnote $1 
+else
+    python -m nbresnote $@
+fi
