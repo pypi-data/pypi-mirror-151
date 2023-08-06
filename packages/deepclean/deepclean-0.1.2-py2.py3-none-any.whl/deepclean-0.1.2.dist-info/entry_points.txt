@@ -1,0 +1,3 @@
+[console_scripts]
+deepclean = deepclean.__main__:main
+
