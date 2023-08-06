@@ -1,0 +1,17 @@
+CHANGELOG.md
+CONTRIBUTORS.md
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_glue/__init__.py
+django_glue.egg-info/PKG-INFO
+django_glue.egg-info/SOURCES.txt
+django_glue.egg-info/dependency_links.txt
+django_glue.egg-info/not-zip-safe
+django_glue.egg-info/requires.txt
+django_glue.egg-info/top_level.txt
+django_glue/tests/__init__.py
+django_glue/tests/test_core.py
