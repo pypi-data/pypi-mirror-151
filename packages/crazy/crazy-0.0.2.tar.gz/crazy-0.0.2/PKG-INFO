@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: crazy
+Version: 0.0.2
+Summary: crazy simple and powerful
+Home-page: https://adalytyx.ai
+Author: Daqian
+Author-email: daqian.zhang@adalytyx.ai
+License: MIT Licence
+Keywords: dao,mysql
+Platform: any
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+
+crazy simple and powerful
+

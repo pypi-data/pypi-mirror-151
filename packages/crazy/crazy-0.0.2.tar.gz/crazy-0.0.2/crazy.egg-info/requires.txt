@@ -1,0 +1,4 @@
+redis
+PyMySQL
+DBUtils
+cryptography
