@@ -1,0 +1,4 @@
+[console_scripts]
+create_td_app_table=td_connect.td_connect:create_app_table
+print_td_app_config=td_connect.td_connect:print_app_config
+
