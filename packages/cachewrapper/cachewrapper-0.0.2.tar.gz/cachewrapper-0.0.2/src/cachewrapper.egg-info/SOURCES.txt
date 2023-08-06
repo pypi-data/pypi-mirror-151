@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/cachewrapper/__init__.py
+src/cachewrapper/core.py
+src/cachewrapper/release.py
+src/cachewrapper.egg-info/PKG-INFO
+src/cachewrapper.egg-info/SOURCES.txt
+src/cachewrapper.egg-info/dependency_links.txt
+src/cachewrapper.egg-info/top_level.txt
