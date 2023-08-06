@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: stroke-pred-p0w11
+Version: 0.3
+Home-page: https://github.com/Isaacgv/stroke_heart_prediction
+Author: Patrick Saade
+Author-email: patrick_saade@hotmail.com
+License: MIT
+Keywords: stroke prediction project
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy
+
