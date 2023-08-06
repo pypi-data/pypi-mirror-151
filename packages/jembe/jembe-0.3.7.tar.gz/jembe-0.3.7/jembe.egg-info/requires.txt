@@ -1,0 +1,12 @@
+flask>=1.1.2
+lxml>=4.5.2
+simplejson>=3.17.2
+
+[dev]
+black
+mypy
+pytest
+coverage[toml]
+watchdog[watchmedo]
+sphinx
+furo
