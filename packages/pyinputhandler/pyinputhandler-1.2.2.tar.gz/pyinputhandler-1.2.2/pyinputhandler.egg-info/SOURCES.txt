@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+inputhandler/__init__.py
+inputhandler/buffer_input.py
+inputhandler/constant.py
+inputhandler/getwch.py
+inputhandler/input_types.py
+pyinputhandler.egg-info/PKG-INFO
+pyinputhandler.egg-info/SOURCES.txt
+pyinputhandler.egg-info/dependency_links.txt
+pyinputhandler.egg-info/top_level.txt
