@@ -1,0 +1,8 @@
+Click>=7.0
+requests
+tabulate
+minio
+docker
+tqdm>=4.62.0
+aiobotocore
+aiohttp
