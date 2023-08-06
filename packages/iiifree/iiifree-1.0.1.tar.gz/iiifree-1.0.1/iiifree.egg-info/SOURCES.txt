@@ -1,0 +1,10 @@
+demo1.py
+demo2.py
+setup.py
+iiifree/__init__.py
+iiifree/demo13.py
+iiifree/demo14.py
+iiifree.egg-info/PKG-INFO
+iiifree.egg-info/SOURCES.txt
+iiifree.egg-info/dependency_links.txt
+iiifree.egg-info/top_level.txt
