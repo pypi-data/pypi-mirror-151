@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: anaml-helper
+Version: 0.0.3
+Summary: A helper library for working with features and featuresets programmatically leveraging the existing anaml_client SDK.
+Home-page: UNKNOWN
+Author: chris
+Author-email: christopher.pearce@bt.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: wheel (==0.37.1)
+Requires-Dist: anaml-client (==0.17.0)
+Requires-Dist: dataclasses (==0.6)
+Requires-Dist: uuid (==1.30)
+
+***Overview***
+***
+A helper library for working with features and featuresets programmatically leveraging the existing anaml_client SDK.
+
+***Example Usage***
+```
+from anaml_client import Anaml ##import Anaml as normal.
+from anaml_helper import AnamlHelper ##import AnamlHelper 
+
+anaml_client = Anaml(url=,apikey=,secret=,ref=) ##create Anaml class
+anaml_helper = AnamlHelper(anaml_client) ##pass Anaml to AnamlHelper
+```
+
+This will provide access to the helper methods for interacting with Features and FeatureSets via anaml sdk.
+
+The below demonstrates some examples, the full list of methods can be found here ...
+
