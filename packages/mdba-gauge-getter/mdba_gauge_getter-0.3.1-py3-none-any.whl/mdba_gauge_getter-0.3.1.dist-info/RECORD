@@ -1,0 +1,9 @@
+mdba_gauge_getter/__init__.py,sha256=ExeDI6T7fB4RjAVjx7KHZ3qSu_8wyk5t5gAeLnYZwfI,71
+mdba_gauge_getter/gauge_getter.py,sha256=xxaNxdFrclqtmaxwbOvGHEaUZMYsH0rP8C5E4NfNp8g,10038
+mdba_gauge_getter/version.py,sha256=2KwowXhmiT6-Bln7VPq9d9sRpAzJq9qLyclhp2KWmjA,21
+mdba_gauge_getter/data/bom_gauge_data.csv,sha256=7CSdj_okUpScAZbF3IRrVljxcUG8V1dggMoi8XPJKyQ,838853
+mdba_gauge_getter-0.3.1.dist-info/LICENCE,sha256=QpnRsuC5XzIev0FaZ-tSzN6wPJWsd2cCOi76BWLwvvU,144
+mdba_gauge_getter-0.3.1.dist-info/METADATA,sha256=VLdSxfPHPtbrkfCoZHBzNYWbmSMQ84eTyuj8pnTlCFY,2658
+mdba_gauge_getter-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mdba_gauge_getter-0.3.1.dist-info/top_level.txt,sha256=yqIVi_DWHONJmaHQBIoL5UjcfvkGpFQFDC7VK3Zw-3I,18
+mdba_gauge_getter-0.3.1.dist-info/RECORD,,
