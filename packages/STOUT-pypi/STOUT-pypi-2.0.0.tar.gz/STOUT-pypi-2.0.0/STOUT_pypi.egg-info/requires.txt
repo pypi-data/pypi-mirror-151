@@ -1,0 +1,5 @@
+keras==2.6.*
+pystow
+rdkit-pypi
+tensorflow-gpu==2.6.3
+unicodedata2
