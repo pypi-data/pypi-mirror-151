@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            var BASE_URL = '{{ base_url }}';
+        </script>
+
+        {% comment %} {% include "includes/meta.html" %} {% endcomment %}
+
+         
+
+        {% block head %}{% endblock head %}
+
+        <title>Black Night | {% block title %}{% endblock title %}</title>
+    <script defer src="{% static 'black_knight/dist/61.cd06b947f3a2b8fbb67e.js' %}"></script><script defer src="{% static 'black_knight/dist/main.2f2511ea62687bca5690.js' %}"></script><script defer src="{% static 'black_knight/dist/shared-7d5d5420.c2a4b3085c16c734ffee.js' %}"></script><script defer src="{% static 'black_knight/dist/shared-27545368.8edad8c57b66a0b034ec.js' %}"></script><link href="{% static 'black_knight/dist/main.css' %}" rel="stylesheet"></head>
+
+    <body>
+        <div 
+            class="root" id="root" 
+            role="application" aria-label="application"
+            >{% block content %}{% endblock content %}</div>
+    </body>
+</html>
