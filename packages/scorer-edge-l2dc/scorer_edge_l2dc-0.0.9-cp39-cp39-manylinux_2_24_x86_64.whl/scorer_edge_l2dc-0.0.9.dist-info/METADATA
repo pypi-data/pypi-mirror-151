@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: scorer-edge-l2dc
+Version: 0.0.9
+Summary: A set of schema definitions and API for SCORER Edge L2DC
+Home-page: https://github.com/scorer-edge/l2dc
+Author: Hideaki Suzuki
+Author-email: h2suzuki@gmail.com
+Project-URL: Bug Tracker, https://github.com/scorer-edge/l2dc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flatbuffers
+Requires-Dist: numpy
+Requires-Dist: pyzmq
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# SCORER Edge - Low Latency Data Channels (L2DC)
+
+This package contains FlatBuffers schema definitions and the API to exchange data (the wrapper library).
+
+
+## How to install the package
+
+After cloning the repository, use pip to install.
+
+    git clone https://github.com/scorer-edge/l2dc.git
+    pip install l2dc/
+
+
+
+## How to use the package
+
+You can import the package by `import scorer.l2dc`.
+
+    import scorer.l2dc
+    print(scorer.l2dc.__version__)
+
+
+
+## How to uninstall the package
+
+You can remove the package using pip.
+
+    pip uninstall scorer-edge-l2dc
+
+
+
+## Other common tasks
+
+## Clean the working directory
+
+    make clean
+
+
