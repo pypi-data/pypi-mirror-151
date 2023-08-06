@@ -1,0 +1,9 @@
+pyfunds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfunds/either.py,sha256=r5kg6XfTBe9URbV0kVRP5KefujR-Ml-wDjXyK1uftbk,1959
+pyfunds/option.py,sha256=tJGlp3eXNjO7y1hdVsgOb02oCAm_1fG-AT0p9SCNyaI,2373
+pyfunds/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfunds/try_.py,sha256=kczpsssHZS9bhc5xIodlNKUb_jKeqNB3H2j6CD9cj4s,4121
+pyfunds-1.1.0.dist-info/LICENSE.txt,sha256=Nf4oS-KgZZptIw-HEgyWozi4oEIDHDUisLmG1rxUE94,1068
+pyfunds-1.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyfunds-1.1.0.dist-info/METADATA,sha256=OVFl7Ji1pER6zbd1UGjgvJPEriC3dRu_Ki7xVP-69-Y,6351
+pyfunds-1.1.0.dist-info/RECORD,,
