@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: pywalletconnectv1
+Version: 0.1.0
+Summary: Simple python library that implements WalletConnect protocol v1
+Home-page: https://github.com/Toporin/pywalletconnectv1
+Author: Toporin
+Author-email: satochip.wallet@gmail.com
+License: UNKNOWN
+Project-URL: Github, https://github.com/Toporin
+Project-URL: Webshop, https://satochip.io/
+Project-URL: Telegram, https://t.me/Satochip
+Project-URL: Twitter, https://twitter.com/satochipwallet
+Project-URL: Source, https://github.com/Toporin/pywalletconnectv1/
+Project-URL: Tracker, https://github.com/Toporin/pywalletconnectv1/issues
+Description: # PyWalletConnectV1
+        
+          Licence: LGPL v3
+          Author: Toporin, based on [wallet-connect-kotlin by TrustWallet](https://github.com/trustwallet/wallet-connect-kotlin)
+          Language: Python (>= 3.6)
+          Homepage: https://github.com/Toporin/pywalletconnectv1
+        
+        ## Introduction
+        
+        [WalletConnect](https://walletconnect.org/) python SDK, implements 1.0.0 websocket based protocol.
+        
+        
+        ## Features
+        
+        - [x] Connect and disconnect
+        - [x] Approve / Reject / Kill session
+        - [x] Approve and reject `eth_sign` / `personal_sign` / `eth_signTypedData`
+        - [x] Approve and reject `eth_signTransaction` / `eth_sendTransaction`
+        - [ ] Approve and reject `bnb_sign` (binance dex orders)
+        - [ ] session persistent / recovery
+        
+        ## Installation
+        
+        TODO!
+        
+        ## Usage
+        
+        TODO!
+        See '''pyWalletConnectV1.py''' and '''wc_callback.py''' for a basic example.
+        
+        See [Satochip-Bridge](https://github.com/Toporin/Satochip-Bridge) for practical usage of this library.
+        
+        ## License & attribution
+        
+        Pywalletconnectv1 is based on [wallet-connect-kotlin by TrustWallet](https://github.com/trustwallet/wallet-connect-kotlin).
+        Pywalletconnectv1 is available under the GPLV3 license. See the LICENSE file for more info.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
