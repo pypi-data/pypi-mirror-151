@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lotr-sdk
+Version: 0.0.1
+Summary: An SDK for a Lord of The Rings API
+Home-page: https://github.com/Sharonpik/sharon_pikovski-SDK
+Author: Sharon
+Author-email: sssos@walla.com
+Project-URL: Bug Tracker, https://github.com/Sharonpik/sharon_pikovski-SDK
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+

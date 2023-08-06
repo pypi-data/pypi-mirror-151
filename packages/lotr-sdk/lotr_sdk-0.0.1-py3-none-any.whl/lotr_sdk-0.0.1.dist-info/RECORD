@@ -1,0 +1,13 @@
+lotr_sdk/__init__.py,sha256=lpSnfs2kr0VekTcX-tqgOXrtmytUpNcxD7b8eYw0SEA,94
+lotr_sdk/access_token.py,sha256=DEt-dHFWM0yIi8BXruI6jACfJG7R1OUK0wjfIVvgQCE,10
+lotr_sdk/books.py,sha256=0vXgKu53fEWrG6pdnvOIemUWEnE7N_7VOZ0gvawwh-c,4221
+lotr_sdk/chapters.py,sha256=Nf4foMGLTxc65-TTgauGx8UNgBPgFCl2hT-_H2BOZvE,5123
+lotr_sdk/characters.py,sha256=Q7fQBbJyDdG3Fh70YcvTmx45PE3jftR4ST3NskC4YgQ,9720
+lotr_sdk/init_token.py,sha256=9qmd-euVXuPpzBh7WWyuUETZneCNPakZJh1m6YymxJM,972
+lotr_sdk/movies.py,sha256=3oIUQfYu6ewsVSrWXSOzKTQtNdJf8PKMEzu6AbDPnFc,6483
+lotr_sdk/quotes.py,sha256=9enb4vfxgwRXjx2DPDjyIImnUARdZupsqlyV2uwzLdg,4766
+lotr_sdk/settings.py,sha256=13Y1owpu-lwg6Sc2bY8U9nJXUX3S3i1v-JH4SednznY,37
+lotr_sdk-0.0.1.dist-info/METADATA,sha256=AW6h940kPx2uV8MwhABOGjjKkTA5Wf1hr4fzzuIi6-c,486
+lotr_sdk-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lotr_sdk-0.0.1.dist-info/top_level.txt,sha256=R20VBjrla6oNQDSMiu2gCEK8IpnuRC3Vtx_07u2ULI4,9
+lotr_sdk-0.0.1.dist-info/RECORD,,
