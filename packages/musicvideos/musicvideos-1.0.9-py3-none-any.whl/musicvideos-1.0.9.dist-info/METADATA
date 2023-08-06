@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: musicvideos
+Version: 1.0.9
+Summary: Old slowedvideos now musicvideos, Various scripts from justcow.
+Home-page: UNKNOWN
+Author: JustCow
+Author-email: <justcow@pm.me>
+License: UNKNOWN
+Keywords: python,video,audio,justcow
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+License-File: LICENSE
+Requires-Dist: moviepy
+Requires-Dist: pedalboard
+Requires-Dist: pillow
+Requires-Dist: soundfile
+
+UNKNOWN
+
