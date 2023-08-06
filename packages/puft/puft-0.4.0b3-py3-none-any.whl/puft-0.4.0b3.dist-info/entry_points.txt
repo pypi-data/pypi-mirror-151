@@ -1,0 +1,2 @@
+[console_scripts]
+puft = puft.tools.cli:main
