@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+chi_index/__init__.py
+chi_index/model.py
+chi_index.egg-info/PKG-INFO
+chi_index.egg-info/SOURCES.txt
+chi_index.egg-info/dependency_links.txt
+chi_index.egg-info/requires.txt
+chi_index.egg-info/top_level.txt
+test/test.py
