@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TableCity
+Version: 0.0.1
+Summary: database creation and management
+Home-page: https://github.com/AliaksandrHancharou/TableCity.git
+Author: Aliaksandr Hancharou
+Author-email: mymail@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Before use, you must establish a connection to the database
+## your_database.connection_db('your_db', 'db_name', 'db_password', 'your_host')
+
