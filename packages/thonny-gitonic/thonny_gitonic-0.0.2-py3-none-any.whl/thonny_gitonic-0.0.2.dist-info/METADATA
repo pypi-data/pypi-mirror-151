@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: thonny-gitonic
+Version: 0.0.2
+Summary: manage a multi git workspace
+Home-page: https://github.com/kr-g/thonny-gitonic
+Author: k.r. goger
+Author-email: k.r.goger+thonny-gitonic@gmail.com
+License: MIT
+Keywords: python utility shell git git-workspace tkinter thonny
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Topic :: Desktop Environment
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: gitonic
+Requires-Dist: thonny (>=3.3.0)
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# thonny-gitonic 
+
+[thonny](https://thonny.org) plugin for [gitonic](https://github.com/kr-g/gitonic)
+
+open `gitonic` in thonny by pressing Control+Shift+g, or via tools menu
+
+press `ESC` key to minimize gitonic window.
+
+
+# what's new ?
+
+Check
+[`CHANGELOG`](https://github.com/kr-g/thonny-gitonic/blob/main/CHANGELOG.md)
+for latest ongoing, or upcoming news.
+
+
+# limitations
+
+Check 
+[`BACKLOG`](https://github.com/kr-g/thonny-gitonic/blob/main/BACKLOG.md)
+for open development tasks and limitations.
+
+
+# platform
+
+tested on python3, and linux
+
+
+# installation
+
+    phyton3 -m pip install thonny-gitonic
+
+
+# license
+
+thonny-gitonic is released under the following
+[`LICENSE`](https://github.com/kr-g/thonny-gitonic/blob/main/LICENSE.md)
+
+
