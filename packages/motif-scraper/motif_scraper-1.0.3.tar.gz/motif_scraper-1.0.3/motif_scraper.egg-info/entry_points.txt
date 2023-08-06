@@ -1,0 +1,3 @@
+[console_scripts]
+motif_scraper = motif_scraper.__main__:main
+

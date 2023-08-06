@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+motif_scraper/__init__.py
+motif_scraper/__main__.py
+motif_scraper.egg-info/PKG-INFO
+motif_scraper.egg-info/SOURCES.txt
+motif_scraper.egg-info/dependency_links.txt
+motif_scraper.egg-info/entry_points.txt
+motif_scraper.egg-info/requires.txt
+motif_scraper.egg-info/top_level.txt
