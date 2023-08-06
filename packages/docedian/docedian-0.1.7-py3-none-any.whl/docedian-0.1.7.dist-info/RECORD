@@ -1,0 +1,14 @@
+docedian/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docedian/data.py,sha256=yBChN4DuS7wyqbXdlBPSeK8vb8UulDc_banQKEH563A,4363
+docedian/utils.py,sha256=Qnh4ioO0n7Ajlu4i_6CLKPHQG0oMyZNHeTAkq4ApmTU,487
+docedian/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docedian/base/base.py,sha256=bLjL3b0r-zDHND5ialL9RxEcalHQ-g-OyRCKuUhPMFo,1235
+docedian/facturacion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docedian/facturacion/base.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docedian/nomina/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docedian/nomina/base.py,sha256=a_PF4FrmsC9nrKbRJMj3MxoKmQbd-1tB8Z8hjq6cirA,12252
+docedian-0.1.7.dist-info/LICENSE.txt,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+docedian-0.1.7.dist-info/METADATA,sha256=Uyh4alNAY6W59DeTMn-9OYjyM-Wpr7D2UxW0QtqMNcc,7004
+docedian-0.1.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+docedian-0.1.7.dist-info/top_level.txt,sha256=gtGqi7HmDtBRZnQFfdjDhFblyTVnrcoWEGPNnjcOnIM,9
+docedian-0.1.7.dist-info/RECORD,,
