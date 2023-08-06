@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: linglit
+Version: 0.3.0
+Summary: Programmatic access to linguistic literature
+Author: ''
+Author-email: robert_forkel@eva.mpg.de
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: clldutils (>=3.12)
+Requires-Dist: attrs
+Requires-Dist: csvw
+Requires-Dist: TexSoup
+Requires-Dist: pylatexenc
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: pyglottolog
+Requires-Dist: pycldf
+Requires-Dist: pyigt (>=1.4)
+Requires-Dist: thefuzz
+Requires-Dist: unidecode
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: speedup
+Requires-Dist: thefuzz[speedup] ; extra == 'speedup'
+Provides-Extra: test
+Requires-Dist: pytest (>=4.6) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
