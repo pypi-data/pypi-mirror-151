@@ -1,0 +1,7 @@
+udata_event_service/__init__.py,sha256=VwR9PIaemhttMomseIHYnVb81je1H0-SPx7xMrsVRLE,79
+udata_event_service/consumer.py,sha256=xecO42epOoIoUjxzlsilqzf1jyMmArcdfxMKpno6xa4,1410
+udata_event_service/producer.py,sha256=zDPdzxkfs5GpnK1CL5z_MwQJVCeN6FqB9AeTqCVGgJY,946
+udata_event_service-0.0.3.dist-info/LICENSE,sha256=jWCNdzDhk2NBI4LohdMXBiwmhIXea4k05JYqNZq_sao,1073
+udata_event_service-0.0.3.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+udata_event_service-0.0.3.dist-info/METADATA,sha256=4yI4fCYDC94diFBtr1-P8bVnb4WUJwNWD8Vg6M5MhzA,354
+udata_event_service-0.0.3.dist-info/RECORD,,
