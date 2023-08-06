@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyfzf/__init__.py
+pyfzf/py.typed
+pyfzf/__pycache__/__init__.cpython-310.pyc
+pyfzf/__pycache__/pyfzf.cpython-310.pyc
+pyfzf_iter.egg-info/PKG-INFO
+pyfzf_iter.egg-info/SOURCES.txt
+pyfzf_iter.egg-info/dependency_links.txt
+pyfzf_iter.egg-info/top_level.txt
