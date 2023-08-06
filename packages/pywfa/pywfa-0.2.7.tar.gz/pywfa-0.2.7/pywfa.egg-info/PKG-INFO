@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pywfa
+Version: 0.2.7
+Summary: Align sequences using WFA2-lib
+Home-page: https://github.com/kcleal/pywfa
+Author: Kez Cleal
+Author-email: clealk@cardiff.ac.uk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
