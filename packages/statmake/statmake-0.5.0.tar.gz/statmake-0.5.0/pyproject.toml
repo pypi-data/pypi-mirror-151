@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "statmake"
+version = "0.5.0"
+description = "Applies STAT information from a Stylespace to a variable font."
+authors = ["Nikolaus Waxweiler <nikolaus.waxweiler@daltonmaag.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/daltonmaag/statmake"
+include = ["py.typed"]
+
+[tool.poetry.dependencies]
+attrs = ">= 21.3"
+cattrs = "^22.1"
+fonttools = {version = "^4.11", extras = ["ufo"]}
+python = "^3.7"
+
+# https://medium.com/@cjolowicz/hypermodern-python-6-ci-cd-b233accfa2f6#bf20
+importlib_metadata = {version = ">=1.6.0", python = "<3.8"}
+
+[tool.poetry.dev-dependencies]
+black = "*"
+coverage = "*"
+isort = "*"
+mypy = "*"
+pylint = "*"
+pytest = "*"
+ufo2ft = "^2.7"
+ufoLib2 = ">= 0.4"
+
+[tool.poetry.scripts]
+statmake = "statmake.cli:main"
+
+[tool.black]
+target-version = ["py37"]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+known_first_party = "statmake"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
