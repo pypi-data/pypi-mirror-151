@@ -1,0 +1,9 @@
+{{ form.screen_width.as_hidden }}
+{{ form.window_width.as_hidden }}
+
+<script>
+    $(function() {
+        $("#id_screen_width").val(window.screen.width);
+        $("#id_window_width").val(window.innerWidth);
+    })
+</script>
