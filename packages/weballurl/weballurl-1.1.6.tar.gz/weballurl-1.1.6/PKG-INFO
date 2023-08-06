@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: weballurl
+Version: 1.1.6
+Summary: 获取一个指定网站所有的本站url；Gets all site urls for a specified site
+Home-page: https://github.com/zhangyg531/weballurl
+Author: zyg0531
+Author-email: 1455857826@qq.com
+License: MIT
+Download-URL: https://codeload.github.com/zhangyg531/weballurl/zip/refs/heads/main
+Description: UNKNOWN
+Keywords: url,allurl,wenallurl
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
