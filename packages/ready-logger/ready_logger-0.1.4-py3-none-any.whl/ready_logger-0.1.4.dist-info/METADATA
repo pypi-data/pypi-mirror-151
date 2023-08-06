@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ready-logger
+Version: 0.1.4
+Summary: Easily configure loggers.
+Author: Dan Kelleher
+Author-email: dan@danklabs.org
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: psutil (>=5.9.1,<6.0.0)
