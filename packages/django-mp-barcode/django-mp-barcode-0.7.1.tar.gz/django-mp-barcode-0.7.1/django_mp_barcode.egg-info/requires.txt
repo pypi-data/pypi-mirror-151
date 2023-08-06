@@ -1,0 +1,2 @@
+django-solo==2.0.0
+python-barcode==0.13.1
