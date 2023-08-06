@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rispack.egg-info/PKG-INFO
+rispack.egg-info/SOURCES.txt
+rispack.egg-info/dependency_links.txt
+rispack.egg-info/requires.txt
+rispack.egg-info/top_level.txt

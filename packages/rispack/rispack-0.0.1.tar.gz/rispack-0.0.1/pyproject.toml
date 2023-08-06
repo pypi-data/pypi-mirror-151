@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rispack"
+version = "0.1.0"
+description = ""
+authors = ["Rispar Tecnologia <tecnologia@rispar.com.br>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+SQLAlchemy = "^1.4.36"
+boto3 = "^1.23.3"
+aws-lambda-powertools = "^1.25.10"
+requests-aws-sign = "^0.1.6"
+marshmallow = "^3.15.0"
+
+[tool.poetry.dev-dependencies]
+twine = "^4.0.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
