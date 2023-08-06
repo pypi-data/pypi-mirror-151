@@ -1,0 +1,14 @@
+kiss3/__init__.py,sha256=85Z44w-sNEK8A9YlOIJWu-uyNNu8tOsytGZYRTIspIE,1566
+kiss3/ax25.py,sha256=cDOdV-xlJUvJfCTt6S9Tbo_5T2FsiUufTGGr-T7UykI,12072
+kiss3/classes.py,sha256=3IwMxjC-lyDi0qaYxNg7QxOMSIDFTukND5lFrFEYcl0,6125
+kiss3/constants.py,sha256=Gf9Kz-WwNKiKsMsatssbCBqtcAuu5ov4MUmP9Y96Kn8,2407
+kiss3/exceptions.py,sha256=GpxG1FymWeN97Ppl4x1_Glfal-THU64OKnJZG_xDfn4,492
+kiss3/fcs.py,sha256=CqrmalIcoLgcg7_rHBEvQDsdrBi2rsWOM1c1yHorz6A,2397
+kiss3/kiss.py,sha256=vdUKIWk1EH9xQcOhZHj21poX-tD1XZP8aKg6qxZo1ms,8689
+kiss3/tnc2.py,sha256=wrWnvsX0pIoIOVs6LPCevxNFn8YgWZp1kPRfhuasdhA,4041
+kiss3/util.py,sha256=3ba7wUBlMIM2LPPxWdmMjUCD2S8_cy-93eO6OZLpVKk,7737
+kiss3-8.0.0a5.dist-info/LICENSE,sha256=TFbFL7ADX9hEchOk6eNHxETzs1EdhuGTa-w8o21P4QQ,571
+kiss3-8.0.0a5.dist-info/METADATA,sha256=JMe9HtVtmZLGyYBHZKmoE-5PVuUpR2kYINE32rQk3vE,4733
+kiss3-8.0.0a5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kiss3-8.0.0a5.dist-info/top_level.txt,sha256=kylWJGr101Ub3d2RXeTPMqH8rcUA_oNYZH429KA1qU4,6
+kiss3-8.0.0a5.dist-info/RECORD,,
