@@ -1,0 +1,12 @@
+toml
+numpy
+opencv-python
+lxml
+matplotlib
+tqdm
+anytree
+pandas
+scipy
+statsmodels
+PyQt5
+c3d
