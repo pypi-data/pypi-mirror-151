@@ -1,0 +1,11 @@
+#!python
+# -*- coding: utf-8 -*-
+
+from tomso import cli
+
+parser = cli.get_parser()
+args = parser.parse_args()
+try:
+    args.func(args)
+except AttributeError:
+    parser.print_usage()
