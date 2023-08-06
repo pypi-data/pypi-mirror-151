@@ -1,0 +1,12 @@
+phytest/__init__.py,sha256=T-23BmPM4zcG1ujGE8XUqtOCt_l_V63F3LR5ajD4j5E,3396
+phytest/bio/__init__.py,sha256=Vs6w2u9NgGt0sdZ3WXcMvIkPGmQZ4y9vHzG8VE7tmmU,87
+phytest/bio/alignment.py,sha256=Q10RgsrcQzBdZ0aXNx2Fun3Lfix77U88hVamFLPEOMk,3357
+phytest/bio/sequence.py,sha256=sSjUoEQYlEPspsdtp8onuW_QllwaDDB0GSCPwaG2Nig,10421
+phytest/bio/tree.py,sha256=7gee1K7fssd_ARabsBHVQn36C2jpiVzbFkuSSd1ccPE,13146
+phytest/cli.py,sha256=uZX82B31DZu2InWK2C6sgGGA8XO7fJ5Iwh7uHgHJQJU,1533
+phytest/main.py,sha256=_RfuR2XtB0lriVZ1BAs5rBIjkT3sfD-FPJ7pSqeWpck,1141
+phytest/utils.py,sha256=X81N-t0p1vqKgBYjgVn1k3AaTUnc3ErNXGSs4zB2Zb0,413
+phytest-0.1.7.dist-info/entry_points.txt,sha256=wY7FyYojp0TaNk8iIbonigA3n3fmae3GgqWdD42IQ0M,43
+phytest-0.1.7.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+phytest-0.1.7.dist-info/METADATA,sha256=pUsMU57_FCVsya7zMVL_X1I8EuAN3C9XcNKz159_McI,6502
+phytest-0.1.7.dist-info/RECORD,,
