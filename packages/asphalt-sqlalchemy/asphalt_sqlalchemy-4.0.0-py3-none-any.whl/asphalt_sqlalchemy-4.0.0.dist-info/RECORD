@@ -1,0 +1,10 @@
+asphalt/sqlalchemy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asphalt/sqlalchemy/component.py,sha256=rltdHFdEgnqchy3VLSDLg-42uTtNeOdOr_kO0OWABKw,8266
+asphalt/sqlalchemy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asphalt/sqlalchemy/utils.py,sha256=F4s2EVm05yQUr1c26NKOG9HfO0MQUdqNam8UUSkI7Pc,3077
+asphalt_sqlalchemy-4.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+asphalt_sqlalchemy-4.0.0.dist-info/METADATA,sha256=ZVjvXBXosrvLWAdbSdNBk06djlONK-xUIoZfW3qD07w,2902
+asphalt_sqlalchemy-4.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+asphalt_sqlalchemy-4.0.0.dist-info/entry_points.txt,sha256=nGZqRVHPJuKtlREOBiB8KSt2PycFq8RsCvQH7Ngmets,83
+asphalt_sqlalchemy-4.0.0.dist-info/top_level.txt,sha256=R-2hwgwPRuCBIBZvElxlXTU7XZdVGgdOGf_8pMfkK1w,8
+asphalt_sqlalchemy-4.0.0.dist-info/RECORD,,
