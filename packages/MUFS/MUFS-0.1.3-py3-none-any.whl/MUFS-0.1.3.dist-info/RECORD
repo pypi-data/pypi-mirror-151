@@ -1,0 +1,12 @@
+mufs/Metrics.py,sha256=NbTxN_bMzDJJP7MleONLo_YOpolJGGg27clCMp8OVTU,12255
+mufs/Selection.py,sha256=IRkhUh819aeJLdirwx31veIitcBkspyVAHqOVPvX11A,10554
+mufs/__init__.py,sha256=4GwSnQG-wvSy9uNpyj9jL0EcjZrl06H4TveU4UzAQ2M,234
+mufs/_version.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+mufs/tests/MUFS_test.py,sha256=2MWvsI3QzH-NjP-5I4vcyjWWrGDL9rq4hj_A6AXeFzo,6992
+mufs/tests/Metrics_test.py,sha256=TrVcHFcEc92LRw6E0au63kO7n_TPHiFRka3He5MMxds,9075
+mufs/tests/__init__.py,sha256=3Xt7QFRUN_OCTgt-E-8uG2sJIaEeq8WxBh9CfP-B8nk,109
+MUFS-0.1.3.dist-info/LICENSE,sha256=__e5_Ep-WUJ4WGJKKQRMB3PKlFdBQ6hBlcgUU4_R7Zk,1069
+MUFS-0.1.3.dist-info/METADATA,sha256=5klHTTCUbTGeaJQWnf54sd6Z2XTBlCYXySvvmvrMiSk,2776
+MUFS-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+MUFS-0.1.3.dist-info/top_level.txt,sha256=iPk3Sbb_j8JEuv7txVtKFo7KacGjII-R1KKySLy9-po,5
+MUFS-0.1.3.dist-info/RECORD,,
