@@ -1,0 +1,5 @@
+django-codenerix
+django-codenerix-extensions
+django-codenerix-invoicing
+django-codenerix-pos
+django-codenerix-products
