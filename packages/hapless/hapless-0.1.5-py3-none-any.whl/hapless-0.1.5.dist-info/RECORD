@@ -1,0 +1,10 @@
+hapless/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hapless/cli.py,sha256=TzoQIO1YBSKzJSAee6OHBBDMmPceGk_OMgIhv5-k_80,3362
+hapless/config.py,sha256=e-J3SkLr-3p4ovvfOZsehSdlKVVv9Jp41R1Duvf3cP4,423
+hapless/hap.py,sha256=tpaVw8Q_VPVyU9jXpsNDw6NGBM5NoA5VGr4U3vyYpJQ,5945
+hapless/main.py,sha256=KUFDM3ux3OplNcVwrtuWsHli3eHsvYQnDJ366OlrPk8,10788
+hapless/utils.py,sha256=bw4QcyyUEjkQ2C7ikXj1DiW52wGoaTHu_wefZFJ6Knw,1608
+hapless-0.1.5.dist-info/entry_points.txt,sha256=WH-qenVkgWvN_a1XLHZxwfdS-rFx31MJeFUJSg5nkmc,39
+hapless-0.1.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+hapless-0.1.5.dist-info/METADATA,sha256=EcpT5_q5fsXhZ7Vtgh5LcdRzHMj4omEC9n3mY0orrHk,3613
+hapless-0.1.5.dist-info/RECORD,,
