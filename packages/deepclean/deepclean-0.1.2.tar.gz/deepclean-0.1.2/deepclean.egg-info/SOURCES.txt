@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+deepclean/__init__.py
+deepclean/__main__.py
+deepclean.egg-info/PKG-INFO
+deepclean.egg-info/SOURCES.txt
+deepclean.egg-info/dependency_links.txt
+deepclean.egg-info/entry_points.txt
+deepclean.egg-info/requires.txt
+deepclean.egg-info/top_level.txt
