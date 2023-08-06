@@ -1,0 +1,3 @@
+[console_scripts]
+grantme = grantme.main:main
+
