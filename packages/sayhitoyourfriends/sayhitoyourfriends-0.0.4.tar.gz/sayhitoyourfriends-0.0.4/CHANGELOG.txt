@@ -1,0 +1,4 @@
+Change log
+
+0.0.4
+wait(time) time.sleep but wait() basicaly lua sleep
