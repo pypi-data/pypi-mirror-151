@@ -1,0 +1,9 @@
+thingsmatrix/__init__.py,sha256=09hol5ovL6ArILJIJZ-MiscnOjKa6RjaETmtdgJpW2c,22
+thingsmatrix/apis.py,sha256=2OXXOzlhpUl6hhir5SDA1KicOVs_jcJ00B6L7JvzCYc,7517
+thingsmatrix/gredients.py,sha256=PtPJBp5EdArNQxac8g4nUr_0ocnpuWKW6AM77PqSJlU,1891
+thingsmatrix/main.py,sha256=J9Z1-g0wj9VfAlfWT6fFWX_rjGTlTX3UAM7gQbKivWs,4031
+thingsmatrix/objects.py,sha256=Kv06c3Nr92QV9z2SG76Cc4DtBvXg98ovGzJeKrfBP_A,19837
+thingsmatrix-0.7.0.dist-info/entry_points.txt,sha256=LNBVEpPGo9uJjmf6ZZoqlJOG3ZdvAzsNYaO9ydTdDn8,54
+thingsmatrix-0.7.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+thingsmatrix-0.7.0.dist-info/METADATA,sha256=iThuOfJbdr-kRvXWzJHbWp-9KY09cZroJcqoU_oPAXU,459
+thingsmatrix-0.7.0.dist-info/RECORD,,
