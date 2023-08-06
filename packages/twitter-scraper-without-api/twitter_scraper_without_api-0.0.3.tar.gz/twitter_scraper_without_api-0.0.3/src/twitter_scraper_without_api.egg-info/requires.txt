@@ -1,0 +1,12 @@
+setuptools==62.1.0
+beautifulsoup4==4.11.1
+pandas==1.3.5
+pip==22.0.4
+selenium==4.1.5
+urllib3==1.26.9
+wheel==0.37.1
+zipp==3.8.0
+requests==2.27.1
+python-dateutil==2.8.2
+pywin32-ctypes==0.2.0
+cryptography==37.0.2
