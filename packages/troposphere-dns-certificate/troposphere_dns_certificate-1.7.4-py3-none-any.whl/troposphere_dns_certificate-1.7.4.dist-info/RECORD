@@ -1,0 +1,8 @@
+troposphere_dns_certificate/__init__.py,sha256=TtWfASRmKxQFmo-TShp7bi2VN3gA93_3hQIlpZu8fqw,916
+troposphere_dns_certificate/certificate.py,sha256=K0hmhY-wa6XiBKp8I9Ji1bA16ogsL9ZKMNLYOaTUpWs,12340
+troposphere_dns_certificate/certificatemanager.py,sha256=RMecegWDNOoKfoo_Rd5K1ktzPYNS7iNzz-3Fz1f4k8Q,6063
+troposphere_dns_certificate-1.7.4.dist-info/LICENSE,sha256=LeONRAWjp09_giwtEyFncHqv2Fzw4TTBrassGXj4jo4,1069
+troposphere_dns_certificate-1.7.4.dist-info/METADATA,sha256=RCKV_zyJpL1CUdfaeLYXQJCDQMWCAq2kFRuYrBc_77w,12844
+troposphere_dns_certificate-1.7.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+troposphere_dns_certificate-1.7.4.dist-info/top_level.txt,sha256=fePyI503iQg27RYbQtjyP4vDUb2M-jDxSnfQ6wRw9p8,28
+troposphere_dns_certificate-1.7.4.dist-info/RECORD,,
