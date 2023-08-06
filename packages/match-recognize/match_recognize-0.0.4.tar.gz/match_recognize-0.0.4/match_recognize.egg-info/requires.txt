@@ -1,0 +1,4 @@
+automata-lib
+numpy
+operator
+pandas
