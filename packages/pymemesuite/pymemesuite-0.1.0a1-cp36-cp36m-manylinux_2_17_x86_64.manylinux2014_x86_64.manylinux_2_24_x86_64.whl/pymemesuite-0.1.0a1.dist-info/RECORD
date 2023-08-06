@@ -1,0 +1,17 @@
+pymemesuite-0.1.0a1.dist-info/WHEEL,sha256=_jbJVkcCKHK_TDN8QDjj-REeF90uaQ4ILgAEZZDR1h8,188
+pymemesuite-0.1.0a1.dist-info/top_level.txt,sha256=hbngsKQDnDaIKFMQ2dydIxPdfL6uq1PN7_1baaSkjfc,12
+pymemesuite-0.1.0a1.dist-info/METADATA,sha256=ppSpC9tDy3t3RVayDoigokx2vvnH1NmclSYcYnzqrH0,9344
+pymemesuite-0.1.0a1.dist-info/RECORD,,
+pymemesuite-0.1.0a1.dist-info/COPYING,sha256=wPzDeBjR3w-UjqKqcZMcGmVN5gOI4A-FTL-nHRIWv5s,1103
+pymemesuite/fimo.pyx,sha256=C-zbScQMTV_cYmNsVeu9Qo5nTFLaz5YbRgFiUodtrBU,14857
+pymemesuite/cisml.pxd,sha256=8sgaeho8oMArBonwtoTNgcgFr1SpuGx7TQ_Szmzo0Vw,1419
+pymemesuite/cisml.pyx,sha256=DD4PcbuwXru0UiQG7Wo7fe3_iqs5dwzEwneY5wljhms,11639
+pymemesuite/fimo.cpython-36m-x86_64-linux-gnu.so,sha256=FEfY3hsNhI6ZAsMmKARX-GtC9HlPo-bEhasq1psBr3o,7915776
+pymemesuite/_globals.c,sha256=WgDHVwHZ3byqyF9jF3y558qdsUGnReOjbINBgmQgnJQ,910
+pymemesuite/common.pxd,sha256=5a8T-POLy2_wRWELGJLDeJnVaRR6gGTkULblvy1vazw,2872
+pymemesuite/common.cpython-36m-x86_64-linux-gnu.so,sha256=ipsKzkzTFDLbWeY6RqjehPUKUI7kFfncRdv5TnuXlr0,8671424
+pymemesuite/__init__.py,sha256=R2TAOgsjHOK90Og5KtpLiS6UV08A2VdczC6rN9-wKFU,182
+pymemesuite/errors.pyx,sha256=TcYU-nj2I2NP9HsL3UZTLVJEcqvJoUJbChVPGPXm1Ls,857
+pymemesuite/cisml.cpython-36m-x86_64-linux-gnu.so,sha256=BhTnnPw7_Hk98-EOmGx4muui-ckI22KDb91cVdVStbU,7837528
+pymemesuite/common.pyx,sha256=Q3QOlk2L99f3zllsMc-LG-1wkXqD5MVk0xB8X2xWvpk,39347
+pymemesuite/errors.cpython-36m-x86_64-linux-gnu.so,sha256=r6VzhklkCJJ1qH1zeczaZPHHpBTnwsrZH1LyZ12nb_A,228072
