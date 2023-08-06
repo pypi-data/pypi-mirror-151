@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Notes2Py
+Version: 0.1.12
+Summary: PyQt app to manage your notes
+Home-page: https://github.com/fast-geek/Notes2Py
+Author: lav.
+Author-email: me@lavn.ml
+License: MIT
+Project-URL: Homepage, https://github.com/fast-geek/Notes2Py
+Keywords: python pyqt notes
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Notes2Py
