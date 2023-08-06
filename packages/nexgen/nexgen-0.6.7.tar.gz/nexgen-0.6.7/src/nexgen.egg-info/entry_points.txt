@@ -1,0 +1,9 @@
+[console_scripts]
+I19_nexus = nexgen.beamlines.I19_2_nxs:main
+copy_nexus = nexgen.command_line.copy_nexus:main
+generate_nexus = nexgen.command_line.nexus_generator:main
+nexgen_phil = nexgen.command_line.phil_files_cli:main
+
+[libtbx.precommit]
+nexgen = nexgen
+
