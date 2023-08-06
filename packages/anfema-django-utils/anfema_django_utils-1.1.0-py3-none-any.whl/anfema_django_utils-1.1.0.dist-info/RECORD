@@ -1,0 +1,12 @@
+anfema_django_utils/__init__.py,sha256=-PKWaRSUIbZR6T-fWxnZqiio_vytXW-iEvyoyU1ovCI,101
+anfema_django_utils/apps/__init__.py,sha256=t4cmw3-trl5STEkBjywywRkSyBu3SpwSmZgVs0YFSjI,49
+anfema_django_utils/apps/admin_modelfilter/__init__.py,sha256=FP2o3vznuxGWLLdwjKsbcXrnuuGadD35W0BZpcWRMB4,294
+anfema_django_utils/apps/admin_modelfilter/apps.py,sha256=SrROjALc2GQfEB_DBzPP4GhRqkxHB6NF3ok0nohL_pA,190
+anfema_django_utils/apps/admin_modelfilter/tests.py,sha256=d_LYR7X5gRMS4_S7p_-cESCLmNTVHqJmkTLMQMxj9ts,470
+anfema_django_utils/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anfema_django_utils/db/functions.py,sha256=bQYD2lwhIlh__tqunBgDYmzzZ_TSuqMeTatr1rPbeuY,1701
+anfema_django_utils-1.1.0.dist-info/LICENSE,sha256=z5zR1gD23-8W2fKhD2r9uqpcdlIOV6tvIcVWS3G0AwI,1068
+anfema_django_utils-1.1.0.dist-info/METADATA,sha256=Fo34JW1hPt1wQGbPBR1hIeWvzhtavi8Q95nF_goEsiA,850
+anfema_django_utils-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+anfema_django_utils-1.1.0.dist-info/top_level.txt,sha256=SwSvhKpq2fUT255BJg8uec_dfbM7OlUqP8I6sKiaFfE,20
+anfema_django_utils-1.1.0.dist-info/RECORD,,
