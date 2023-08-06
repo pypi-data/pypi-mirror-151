@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cgemail/__init__.py
+cgemail/send_email.py
+cgemail.egg-info/PKG-INFO
+cgemail.egg-info/SOURCES.txt
+cgemail.egg-info/dependency_links.txt
+cgemail.egg-info/requires.txt
+cgemail.egg-info/top_level.txt
