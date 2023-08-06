@@ -1,0 +1,27 @@
+dask
+descartes
+geojson
+matplotlib
+netCDF4
+numpy
+opencv-python
+openpiv
+pip
+pyproj
+rasterio
+scikit-image
+scipy
+shapely
+tqdm
+xarray
+
+[:platform_machine != "x86_64"]
+cython
+packaging
+pythran
+
+[dev]
+pytest
+pytest-cov
+
+[optional]
