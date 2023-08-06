@@ -1,0 +1,7 @@
+deprecate_cmsplugin_filer/__init__.py,sha256=q6ae3z8GOAhAw-DTTR2fVIUR4AzLybMJQml37_I6tiU,78
+deprecate_cmsplugin_filer/apps.py,sha256=IVhpFwsS8yGvlKtl6AuXpHavIPn4dDCxLnCDtPd_Quw,163
+deprecate_cmsplugin_filer/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deprecate_cmsplugin_filer/migrations/migration_filer_deprecation_move.py,sha256=kzC7zuRZx51CLcurXhshINf0oQuy3AH0RCLIa3Z0sz4,11854
+deprecate_cmsplugin_filer-0.1.0.dist-info/WHEEL,sha256=Ow4b_3PGmHzGIDyu_Dwdg883aXgmJzTvH-ILWI0h-NU,87
+deprecate_cmsplugin_filer-0.1.0.dist-info/METADATA,sha256=ONeYgTlpKp_Rku0czIHfgCzKo7Y7Jy9EgD5kolHgV1I,3130
+deprecate_cmsplugin_filer-0.1.0.dist-info/RECORD,,
