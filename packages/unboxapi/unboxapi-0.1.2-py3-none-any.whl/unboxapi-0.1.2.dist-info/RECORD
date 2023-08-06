@@ -1,0 +1,11 @@
+unboxapi/__init__.py,sha256=1GOloRSii-92DlcbZ-PE0IvQkWqHyyt3VECoK_g-jdI,30842
+unboxapi/api.py,sha256=VUaPhg3w1ZfZY8kZn-KKwK9bePIDa5mDOVt8WbzFn_A,6591
+unboxapi/datasets.py,sha256=iaTBz0LcUuILrIcxpOgy13JA4AK_mlCo8aq8RX1wY80,735
+unboxapi/exceptions.py,sha256=IExavtr1XtJx-QGUFneijD5rT62Hq71HGCRrta_oePA,2312
+unboxapi/models.py,sha256=o0y8BRUnzyBSJpokrYLEr3G13q4uiaXMpCN-aCKlpw8,8323
+unboxapi/tasks.py,sha256=mNTnVPbj3QL-MsFE71w223bPveRnHvBkDYxEinFSJac,555
+unboxapi/version.py,sha256=VsMu5WWPOfIl0aUI5SqdHdDzrzDWZDz6-V5vXs6AbNQ,161
+unboxapi-0.1.2.dist-info/METADATA,sha256=1v4wa8DzfnlehbyV1zt53DBCuOlVtTsYSk77uM2TYtE,2758
+unboxapi-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+unboxapi-0.1.2.dist-info/top_level.txt,sha256=Ow4uYnq9S2i7Ra6mfzXznTrtOtWLJJmLvh2aPQV_vpA,9
+unboxapi-0.1.2.dist-info/RECORD,,
