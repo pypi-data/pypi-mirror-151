@@ -1,0 +1,13 @@
+coord/celestial.py,sha256=WOvycuGK9gxtSVDJPkagPgSh9EDxcxB2jZM8DQXIOec,46157
+coord/angle.py,sha256=ktDApLKRHzfblNfrWcf_YqxfLJGqiSeHxhScqTrb_rg,19114
+coord/_coord.cpython-39-x86_64-linux-gnu.so,sha256=k-KKktDXzU9vj0iVAdZzJ77LrFcWk9_u32oPRKGm-Hs,10128
+coord/angleunit.py,sha256=1TDrpXHuEikSsMYsrewVt7nNoUgT3w_mK_eUw92peMM,5306
+coord/util.py,sha256=2kwUu1Yjd_-cJnEVb474Xyi2fA7zbkTW3yXFrRHY_94,3979
+coord/__init__.py,sha256=CflmdGEjHE4-M7CQrldM-4HrQhLK2PnttyYMcZz8_Es,2741
+coord/_version.py,sha256=FIzV0x2iUEj9WOkN2JGiQU867Qr5ISQE7llCBymAX4M,1211
+coord/include/Angle_C.h,sha256=OQzt8Z36LNSx7rFWe-ZdgLS4e-cmDfNvTV0vVZ-ERT8,1375
+LSSTDESC.Coord-1.2.3.dist-info/WHEEL,sha256=ieuC8Vv7a4Lxq8jfQJ-x1beMvjYNP_LKilYokdMTB0U,108
+LSSTDESC.Coord-1.2.3.dist-info/top_level.txt,sha256=w5sTrXesTCebhXyYv2qufOZGo0PoD1Lxgn0Q3MAXjh4,6
+LSSTDESC.Coord-1.2.3.dist-info/METADATA,sha256=RchyqCg70Em2OeychLtNwmXFUMroMm2knKs-lC4SoB8,4346
+LSSTDESC.Coord-1.2.3.dist-info/RECORD,,
+LSSTDESC.Coord-1.2.3.dist-info/LICENSE,sha256=GNUYY35w7H1fpd67fiQV9qx8uOcuSdVXUdKLcBzXDxw,1094
