@@ -1,0 +1,9 @@
+numpy
+unyt
+ceviche
+autograd
+scipy
+matplotlib
+absl-py
+pytest
+pytest-xdist
