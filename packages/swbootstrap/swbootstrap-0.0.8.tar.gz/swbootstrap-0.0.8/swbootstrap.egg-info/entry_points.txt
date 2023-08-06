@@ -1,0 +1,3 @@
+[console_scripts]
+bootstrap = src.main:main
+swbs = src.main:main
