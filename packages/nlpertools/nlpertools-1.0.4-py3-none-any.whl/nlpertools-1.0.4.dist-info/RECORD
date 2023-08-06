@@ -1,0 +1,15 @@
+nlpertools/__init__.py,sha256=VAH8QI_8P4wUeAoVKFQZ5JGTYwI8Vry7lqTI2pL2eQA,256
+nlpertools/dataprocess.py,sha256=yp50JBPv0G8vUOPUO6HoMnc_QwkuiFkvN5aGYAe3rk4,71
+nlpertools/ml.py,sha256=m0JzAoI9GQivGvKz0aM3T7MiOH8PNDA5uwhZ8do2-Wc,13091
+nlpertools/openApi.py,sha256=taffCu7v4nL6EyJfLs5MgeRf7V72ntVQ8_DZmPIQTn0,1751
+nlpertools/other.py,sha256=J9kFjSg9tutdazz0hpPKwGQC4j7ra05kKlnFaRQcwVI,6479
+nlpertools/plugin.py,sha256=lCREzGWBc8bdtH_dw2CUCDvQvWoAUD17BUVxlqToGs0,958
+nlpertools/reminder.py,sha256=8PBLQZ6SgWo33C9w1fLpHklsrQTNAsHilYA74QsgjsU,271
+nlpertools/io/__init__.py,sha256=5UXzd_utmVe-V8b4Y2mKvzifWdxj86zEuVacu_JwlbI,69
+nlpertools/io/dir.py,sha256=aOnFVOawDoNWMiVEFyFy9v9KTLIIciPjqrvoiz4HqB8,1077
+nlpertools/io/file.py,sha256=WOuWG-OCqfFfochC8e1hUCYJIJE5h19efVuaBYlHZy8,5490
+nlpertools-1.0.4.dist-info/LICENSE,sha256=scVGPXyo6qxipNL0FPQdo3nTqnTyBpn-Rec3RX4qsvA,11531
+nlpertools-1.0.4.dist-info/METADATA,sha256=mqnlKDu6xPhwx3GlebRwO7q50SmtLexLVehnoRSsCW4,1430
+nlpertools-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nlpertools-1.0.4.dist-info/top_level.txt,sha256=nMW_9SiLAs0mhUNQxlLSTgJYspzfizLaRvbLHPcHdWA,11
+nlpertools-1.0.4.dist-info/RECORD,,
