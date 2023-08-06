@@ -1,0 +1,16 @@
+LICENSE.txt
+README.rst
+setup.py
+cosmoTransitionsViana/__init__.py
+cosmoTransitionsViana/finiteT.py
+cosmoTransitionsViana/generic_potential.py
+cosmoTransitionsViana/helper_functions.py
+cosmoTransitionsViana/multi_field_plotting.py
+cosmoTransitionsViana/pathDeformation.py
+cosmoTransitionsViana/transitionFinder.py
+cosmoTransitionsViana/tunneling1D.py
+cosmoTransitionsViana.egg-info/PKG-INFO
+cosmoTransitionsViana.egg-info/SOURCES.txt
+cosmoTransitionsViana.egg-info/dependency_links.txt
+cosmoTransitionsViana.egg-info/requires.txt
+cosmoTransitionsViana.egg-info/top_level.txt

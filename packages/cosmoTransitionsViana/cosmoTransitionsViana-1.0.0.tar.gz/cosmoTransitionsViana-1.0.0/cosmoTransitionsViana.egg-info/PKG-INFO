@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cosmoTransitionsViana
+Version: 1.0.0
+Summary: A package for analyzing finite or zero-temperature cosmological phase transitions driven by single or multiple scalar fields.
+Home-page: https://github.com/vollous/CosmoTransitionsViana
+Author: J. Viana
+Author-email: jfvvchico@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+License-File: LICENSE.txt
+
+UNKNOWN
+
