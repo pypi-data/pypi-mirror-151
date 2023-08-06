@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+hicham/__init__.py
+hicham/hicham.py
+hicham.egg-info/PKG-INFO
+hicham.egg-info/SOURCES.txt
+hicham.egg-info/dependency_links.txt
+hicham.egg-info/top_level.txt
