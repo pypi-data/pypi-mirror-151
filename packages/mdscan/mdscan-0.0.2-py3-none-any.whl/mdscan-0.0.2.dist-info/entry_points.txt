@@ -1,0 +1,2 @@
+[console_scripts]
+mdscan = src.mdscan:main
