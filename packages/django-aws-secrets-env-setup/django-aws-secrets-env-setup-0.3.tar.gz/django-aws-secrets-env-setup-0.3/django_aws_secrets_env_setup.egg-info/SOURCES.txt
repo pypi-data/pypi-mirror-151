@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+django_aws_secrets_env_setup/__init__.py
+django_aws_secrets_env_setup.egg-info/PKG-INFO
+django_aws_secrets_env_setup.egg-info/SOURCES.txt
+django_aws_secrets_env_setup.egg-info/dependency_links.txt
+django_aws_secrets_env_setup.egg-info/requires.txt
+django_aws_secrets_env_setup.egg-info/top_level.txt
