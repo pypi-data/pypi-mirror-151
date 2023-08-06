@@ -1,0 +1,10 @@
+
+[full]
+s3fs
+pandas
+boto3
+awsretry
+pyarrow
+chardet
+sqlparse
+JSON-log-formatter
