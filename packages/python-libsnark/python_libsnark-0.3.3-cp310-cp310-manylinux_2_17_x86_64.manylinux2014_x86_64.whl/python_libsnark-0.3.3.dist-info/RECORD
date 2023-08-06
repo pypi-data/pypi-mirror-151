@@ -1,0 +1,13 @@
+libsnark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libsnark/_alt_bn128.cpython-310-x86_64-linux-gnu.so,sha256=q9o8olSYsz_ta8-bwuyz5CuSjqdvrJxR3U5-Lf9_oik,10878880
+libsnark/alt_bn128.py,sha256=Znqw6H3rdK2Z9EzL7DvL60S-mJRs5U9Xq-EDpCWWFvg,35666
+libsnark/setup-win32.py,sha256=m6Z-hpcv-315W1mWOjO15hUo4RIuDh-pL0Mg6PagQNo,2115
+python_libsnark-0.3.3.dist-info/LICENSE,sha256=kKVTfmne7kQ6vVdlb7A6piL0xsBK_V5zbqBEOChlWbs,1073
+python_libsnark-0.3.3.dist-info/METADATA,sha256=cUm_pe96gon7h8Igpv4SMfQqXdiUj4PY66im45Cv-2g,265
+python_libsnark-0.3.3.dist-info/WHEEL,sha256=AENPUwuTc6qB95Mrn5JB5boXegWw6oDhuwuuX0q_ONg,152
+python_libsnark-0.3.3.dist-info/top_level.txt,sha256=WEseiWNa04nzcv2tV7Qvm2uwoSRTJh4v__mNOmdJ8NI,9
+python_libsnark-0.3.3.dist-info/RECORD,,
+python_libsnark.libs/libbz2-a273e504.so.1.0.6,sha256=rG90qT6zByoD_7GEoC9BGhcYmz84nAlVGMxs0ts9bqw,70992
+python_libsnark.libs/libboost_iostreams-758e0eb7.so.1.53.0,sha256=IuvUow772Qy0R1ciDTluEfCQJ6chOFFlL2CvIqKGuco,194400
+python_libsnark.libs/libgmp-afec2dd4.so.10.2.0,sha256=QtnCh5ZFHG9wDRlKZvkHy1r2vtRfTVqOMms8hJeT-ZU,515856
+python_libsnark.libs/libgmpxx-25f6cf8d.so.4.4.0,sha256=AAgv-pYqCnvON42DUlnmP7Cqq2HgnUn-IQRRnlhqqYA,43376
