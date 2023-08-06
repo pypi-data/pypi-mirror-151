@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ipumspy
+Version: 0.2.0
+Summary: A collection of tools for working with IPUMS data
+License: Mozilla Public License 2.0 (MPL 2.0)
+Author: Kevin H. Wilson
+Author-email: kevin_wilson@brown.edu
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: Sphinx (>=4.1.2,<5.0.0); extra == "docs"
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: click (>=7.0.0,<8.0.0)
+Requires-Dist: furo (>=2021.8.31,<2022.0.0); extra == "docs"
+Requires-Dist: importlib-metadata (>=4.0.1,<5.0.0); python_version < "3.8"
+Requires-Dist: myst-parser (>=0.15.2,<0.16.0); extra == "docs"
+Requires-Dist: pandas (>=1.3.5,<2.0.0)
+Requires-Dist: pyarrow (>=3.0.0,<4.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: sphinx-autodoc-typehints (>=1.12.0,<2.0.0); extra == "docs"
+Requires-Dist: sphinx-copybutton (>=0.4.0,<0.5.0); extra == "docs"
