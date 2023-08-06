@@ -1,0 +1,3 @@
+include version.py
+recursive-include patternly/examples *
+recursive-include patternly *.ipynb *.tgz *.cfg *.md *.rst
