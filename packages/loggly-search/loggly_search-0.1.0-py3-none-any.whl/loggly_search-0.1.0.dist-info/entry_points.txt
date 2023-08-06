@@ -1,0 +1,3 @@
+[console_scripts]
+loggly-search=loggly_search.__main__:main
+
