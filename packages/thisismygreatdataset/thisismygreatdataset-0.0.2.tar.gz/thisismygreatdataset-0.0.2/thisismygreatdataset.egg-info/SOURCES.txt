@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+great_dataset/__init__.py
+great_dataset/function_set.py
+thisismygreatdataset.egg-info/PKG-INFO
+thisismygreatdataset.egg-info/SOURCES.txt
+thisismygreatdataset.egg-info/dependency_links.txt
+thisismygreatdataset.egg-info/requires.txt
+thisismygreatdataset.egg-info/top_level.txt
