@@ -1,0 +1,8 @@
+README.md
+setup.py
+tqdm_joblib/__init__.py
+tqdm_joblib.egg-info/PKG-INFO
+tqdm_joblib.egg-info/SOURCES.txt
+tqdm_joblib.egg-info/dependency_links.txt
+tqdm_joblib.egg-info/requires.txt
+tqdm_joblib.egg-info/top_level.txt
