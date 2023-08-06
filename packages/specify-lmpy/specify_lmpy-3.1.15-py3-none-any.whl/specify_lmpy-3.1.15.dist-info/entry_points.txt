@@ -1,0 +1,17 @@
+[console_scripts]
+build_grid = lmpy.tools.build_grid:cli
+calculate_pam_stats = lmpy.tools.calculate_pam_stats:cli
+convert_csv_to_lmm = lmpy.tools.convert_csv_to_lmm:cli
+convert_lmpy_to_csv = lmpy.tools.convert_lmpy_to_csv:cli
+convert_lmpy_to_geojson = lmpy.tools.convert_lmpy_to_geojson:cli
+create_point_heat_map = lmpy.tools.create_point_heat_map:cli
+create_tree_matrix = lmpy.tools.create_tree_matrix:cli
+encode_layers = lmpy.tools.encode_layers:cli
+encode_tree_mcpa = lmpy.tools.encode_tree_mcpa:cli
+mcpa_run = lmpy.tools.mcpa_run:cli
+randomize_pam = lmpy.tools.randomize_pam:cli
+split_occurrence_data = lmpy.tools.split_occurrence_data:cli
+wrangle_matrix = lmpy.tools.wrangle_matrix:cli
+wrangle_occurrences = lmpy.tools.wrangle_occurrences:cli
+wrangle_species_list = lmpy.tools.wrangle_species_list:cli
+wrangle_tree = lmpy.tools.wrangle_tree:cli
