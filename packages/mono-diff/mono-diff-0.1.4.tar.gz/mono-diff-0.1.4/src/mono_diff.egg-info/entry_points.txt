@@ -1,0 +1,3 @@
+[console_scripts]
+mono-diff = cli:main
+

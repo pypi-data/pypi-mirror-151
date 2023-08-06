@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: mono-diff
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: https://github.com/ran729/mono
+Author: Ran Sasportas
+Author-email: ran729@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: mono
+Platform: UNKNOWN
+Requires-Python: >=3.7
