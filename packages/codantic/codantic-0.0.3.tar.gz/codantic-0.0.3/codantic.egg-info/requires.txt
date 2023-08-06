@@ -1,0 +1,7 @@
+mousse
+pandas
+pycocotools
+
+[dev]
+black
+jupyter

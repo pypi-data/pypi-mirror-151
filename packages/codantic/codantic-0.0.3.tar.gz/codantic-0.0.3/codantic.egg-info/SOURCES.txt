@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+codantic/__init__.py
+codantic.egg-info/PKG-INFO
+codantic.egg-info/SOURCES.txt
+codantic.egg-info/dependency_links.txt
+codantic.egg-info/requires.txt
+codantic.egg-info/top_level.txt
+codantic/evaluator/__init__.py
+codantic/evaluator/object_detector.py
+codantic/models/__init__.py
+codantic/models/base.py
+codantic/models/face_detection.py
+codantic/models/image_captioning.py
+codantic/models/object_detection.py
