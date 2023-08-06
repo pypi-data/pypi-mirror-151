@@ -1,0 +1,7 @@
+README.md
+setup.py
+mkdocs_github_wiki_edit_url.egg-info/PKG-INFO
+mkdocs_github_wiki_edit_url.egg-info/SOURCES.txt
+mkdocs_github_wiki_edit_url.egg-info/dependency_links.txt
+mkdocs_github_wiki_edit_url.egg-info/entry_points.txt
+mkdocs_github_wiki_edit_url.egg-info/top_level.txt
