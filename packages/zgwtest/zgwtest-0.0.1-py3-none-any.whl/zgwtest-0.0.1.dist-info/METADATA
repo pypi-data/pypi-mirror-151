@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: zgwtest
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/linuxmooc/sampleproject
+Author: zgw
+Author-email: author@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# test package of zgw
