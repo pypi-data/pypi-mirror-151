@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+lichess.python.egg-info/PKG-INFO
+lichess.python.egg-info/SOURCES.txt
+lichess.python.egg-info/dependency_links.txt
+lichess.python.egg-info/top_level.txt
