@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geodemora/__init__.py
+geodemora/geodemora.py
+geodemora.egg-info/PKG-INFO
+geodemora.egg-info/SOURCES.txt
+geodemora.egg-info/dependency_links.txt
+geodemora.egg-info/not-zip-safe
+geodemora.egg-info/top_level.txt
