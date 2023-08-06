@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lichess-python
+Version: 0.4.2
+Summary: API wrapper for Lichess
+Home-page: https://github.com/RobertShanta/lichess-python
+Author: Robert Shanta
+Author-email: sdracstrops@gmail.com
+License: MIT
+Keywords: lichess-python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
+
+UNKNOWN
+
