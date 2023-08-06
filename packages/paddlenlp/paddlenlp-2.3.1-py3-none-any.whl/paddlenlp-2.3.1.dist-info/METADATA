@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: paddlenlp
+Version: 2.3.1
+Summary: Easy-to-use and Fast NLP library with awesome model zoo, supporting wide-range of NLP tasks from research to industrial applications.
+Home-page: https://github.com/PaddlePaddle/PaddleNLP
+Author: PaddleNLP Team
+Author-email: paddlenlp@baidu.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: jieba
+Requires-Dist: colorlog
+Requires-Dist: colorama
+Requires-Dist: seqeval
+Requires-Dist: multiprocess
+Requires-Dist: datasets (>=2.0.0)
+Requires-Dist: tqdm
+Requires-Dist: paddlefsl
+Requires-Dist: sentencepiece
+Requires-Dist: paddle2onnx
+
+Easy-to-use and Fast NLP library with awesome model zoo, supporting wide-range of NLP tasks from research to industrial applications.
+
