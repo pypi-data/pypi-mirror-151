@@ -1,0 +1,13 @@
+pyaiml21/__init__.py,sha256=qcYOqaE7fhi5_biM64bsQb1VX-tLPyREzsZ-6_yricM,770
+pyaiml21/_version.py,sha256=DUJxqaiqNmHm_u1RplI-0bSo2FT2-yXfMJ8n8DiLGjQ,113
+pyaiml21/aiml.py,sha256=ncGy-EJzOy9VBY-loZQPRA2xQIgHakvPRKbxUBYJvnE,1069
+pyaiml21/chatbot.py,sha256=0DuA7p0BZgMOX-QNgkNsmgw2WO2NmSuvYMjm8kyayIU,14182
+pyaiml21/exceptions.py,sha256=9xwiS616U4ngogN-hMintDLVwGaWDz3LXSLAt2BX6_s,326
+pyaiml21/kernel.py,sha256=G2O1otp6ohPjp7zmnnARgXm2JbgmjrpRraR84TYEpzE,3818
+pyaiml21/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaiml21-1.0.0a0.dist-info/LICENSE,sha256=0jfs12iPUlZl-w3qkT46pOXJ_tOh4-N5DBd1Qq0IBBY,1060
+pyaiml21-1.0.0a0.dist-info/METADATA,sha256=EvFtWNj-GsUzqwCKSEvo8sfZe_nLJep0AEnwkUsNSEs,1011
+pyaiml21-1.0.0a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyaiml21-1.0.0a0.dist-info/entry_points.txt,sha256=gcWMcfp0y3kd530uvbNgxP8MaJnS8mc-4_UWtfpxk4Y,43
+pyaiml21-1.0.0a0.dist-info/top_level.txt,sha256=PEUU9eCc926tSzA7pZOuMHIZ2IvmKKvcVNlOEETO2d8,9
+pyaiml21-1.0.0a0.dist-info/RECORD,,
