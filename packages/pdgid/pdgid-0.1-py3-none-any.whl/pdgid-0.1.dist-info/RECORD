@@ -1,0 +1,9 @@
+pdgid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdgid/pdgid.py,sha256=ppfG7Ow_nAtUjXTkU-3MIRi6hsBJ0QPrhuR16cU1mJs,4149
+pdgid/data/pdgid_data.json,sha256=kvm_z3xN7cZzzTbL2mxXqZbt6unQiS3w8LGPiOfQWF4,6345
+pdgid-0.1.dist-info/LICENSE,sha256=ugsyoUsAslX2SM6LXM0rR2yq7OW7Nq_Tu974_wor9pw,1081
+pdgid-0.1.dist-info/METADATA,sha256=urqwsTuSQAk7idOLLL52zseXXIfpmskGfceRKGheijs,2074
+pdgid-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdgid-0.1.dist-info/entry_points.txt,sha256=S4ux5XHZ4h3o21MrTT8imfc2cco-PF4gq_m2OyYKSZ8,43
+pdgid-0.1.dist-info/top_level.txt,sha256=1r9gxtYhjfwSJggQEUT9uBEVwuYMD1jj4swB_TTxK4o,6
+pdgid-0.1.dist-info/RECORD,,
