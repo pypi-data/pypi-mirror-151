@@ -1,0 +1,3 @@
+[console_scripts]
+get_cards=wekan_logstash.cli:cli
+

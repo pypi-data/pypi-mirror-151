@@ -1,0 +1,8 @@
+wekan_logstash/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wekan_logstash/cli.py,sha256=-YerArOZLJHvc2ry1KmHV5FKGXroOo4SuCPo_vB2QTI,2038
+wekan_logstash/logstash.py,sha256=xk_4LMd3B9B1pgBrkvERYCzEFIQdBhpN7p7akgNHnCY,13164
+wekan_logstash-0.1.4.dist-info/entry_points.txt,sha256=A79wSmbznGbH-Mfmrdqan7iX9A4qqWpRL9Bvb_N1CdE,52
+wekan_logstash-0.1.4.dist-info/LICENSE,sha256=BCaY54mmAXNfRY1LUtYNBjkTYwPzU4NUXBee-lS75x4,1077
+wekan_logstash-0.1.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+wekan_logstash-0.1.4.dist-info/METADATA,sha256=67YwhT9PSxCu8V8nyBL9HYU3TE0xPgoT48uPLWo5680,4041
+wekan_logstash-0.1.4.dist-info/RECORD,,
