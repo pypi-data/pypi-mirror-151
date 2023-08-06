@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+wfgenes.egg-info/PKG-INFO
+wfgenes.egg-info/SOURCES.txt
+wfgenes.egg-info/dependency_links.txt
+wfgenes.egg-info/entry_points.txt
+wfgenes.egg-info/requires.txt
+wfgenes.egg-info/top_level.txt

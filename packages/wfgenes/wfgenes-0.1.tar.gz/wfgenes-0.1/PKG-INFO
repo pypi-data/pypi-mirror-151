@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: wfgenes
+Version: 0.1
+Summary: wfgenes middleware
+Author: SCC
+Author-email: mehdi.roozmeh@kit.edu
+Requires-Python: >=3.7
+License-File: LICENSE
