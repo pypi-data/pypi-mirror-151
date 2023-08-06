@@ -1,0 +1,2 @@
+[console_scripts]
+n2y = n2y.main:cli_main
