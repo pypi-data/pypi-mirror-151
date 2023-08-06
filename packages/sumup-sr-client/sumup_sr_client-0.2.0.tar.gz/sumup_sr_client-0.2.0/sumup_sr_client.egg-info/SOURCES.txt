@@ -1,0 +1,13 @@
+setup.py
+client/__init__.py
+client/error.py
+client/sumup_schema_registry_client.py
+registry/__init__.py
+registry/sumup_schema_registry.py
+sumup_sr_client.egg-info/PKG-INFO
+sumup_sr_client.egg-info/SOURCES.txt
+sumup_sr_client.egg-info/dependency_links.txt
+sumup_sr_client.egg-info/requires.txt
+sumup_sr_client.egg-info/top_level.txt
+utils/__init__.py
+utils/schema_utils.py
