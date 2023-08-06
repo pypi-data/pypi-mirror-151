@@ -1,0 +1,13 @@
+pysem/__init__.py,sha256=92VnjBCLd4pZEFPnBr9SXUAKWDqSYZZ9jsJ3x8JPPr8,93
+pysem/data.py,sha256=urRXxUdEH0_Z7MLqm28zkQssqS736uDoCh18vIq2H7Y,546
+pysem/glosses.py,sha256=MJCFXkiYXsnxQoVwKM94twJvn4CKS6xi3FnYMYbcOEk,12226
+pysem/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysem/sense.py,sha256=UdbyPL6IdfHKduXE0NeynLbY7Cxk0_3eKTNi0mZpJCQ,2171
+pysem/data/concepticon.zip,sha256=YlOk5qVojcTDBz9kC-dryfMKc3f4e0SmxRwjY73PIoY,794969
+pysem/data/sense.csv,sha256=Q0z_gZ9TDRf5T9xHqcobB6lDspa9aXY1fVrG6FjR8Ac,204330
+pysem-0.5.0.dist-info/LICENSE,sha256=j43AMzvbG06T2eGCsQaBbuQnLQ_Kp3fE9pa6d3vfx-E,1063
+pysem-0.5.0.dist-info/METADATA,sha256=JE0MkKIQxZfX2t5pq0L59fAgyiVt51UZaBp_xRC4U64,2112
+pysem-0.5.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pysem-0.5.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pysem-0.5.0.dist-info/top_level.txt,sha256=bpz6mMimxhFuGH6p7Bsrj4wQRF2Gg1oA-oNajywghgs,6
+pysem-0.5.0.dist-info/RECORD,,
