@@ -1,0 +1,6 @@
+soda/data_sources/aws_credentials.py,sha256=x-pHct6F6aidWZFW6UMVxGtcO9Qy5IyWD-SVQFbWcK8,2421
+soda/data_sources/redshift_data_source.py,sha256=hoESKbHYtx42w4zNItYAMLTU7Bza89DRSVKEjf_a-sg,4757
+soda_core_redshift-3.0.0b13.dist-info/METADATA,sha256=XJ_BdbJ5rXLmViZBNW61nRx61Aaesakz1Jf7udte6SE,125
+soda_core_redshift-3.0.0b13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+soda_core_redshift-3.0.0b13.dist-info/top_level.txt,sha256=nh9kmM9ZWOtIXfwHLUKLl7m6xAFti83JVa2Rcxm6Zck,5
+soda_core_redshift-3.0.0b13.dist-info/RECORD,,
