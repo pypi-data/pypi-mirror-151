@@ -1,0 +1,9 @@
+osg/jupyter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osg/jupyter/comanage.py,sha256=9YMwvCcD9zDVEzwmeGjQgXay2YgJ70DDc3ztw1jdEM8,2937
+osg/jupyter/htcondor.py,sha256=T377S6JmIKwmAsvs7alJYXT2vWmL3AmAbZZdBxkoSpI,1988
+osg/jupyter/kubespawner.py,sha256=eu55eD2uCNNYxtSW7omsBox8ikExPibzEwabXYefBM8,6025
+osg/jupyter/py.typed,sha256=a6qmR_bKYPZHpXx0m-Nrg8dY7xf4QbVFcneOC38RA8o,50
+osg_jupyter-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+osg_jupyter-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+osg_jupyter-1.0.0.dist-info/METADATA,sha256=756jXhyJ_4UUG0dn4ZajqoYe9rE1TobeEt1N_VHVBew,679
+osg_jupyter-1.0.0.dist-info/RECORD,,
