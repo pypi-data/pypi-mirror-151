@@ -1,0 +1,7 @@
+httpx[http2]
+anyio
+rich
+json5
+protobuf
+click
+biliass==1.3.4
