@@ -1,0 +1,9 @@
+libsnark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libsnark/_alt_bn128.cpython-310-darwin.so,sha256=HxkVF-UHp6Sr1QkhbGipFaxuHKhm2D0YS6zU9mMQXf4,1656408
+libsnark/alt_bn128.py,sha256=Znqw6H3rdK2Z9EzL7DvL60S-mJRs5U9Xq-EDpCWWFvg,35666
+libsnark/setup-win32.py,sha256=cMHr_Let3lkUXQbqjWcH5qWTjhJg6RRki2DBSFjBY18,1583
+python_libsnark-0.3.3.dist-info/LICENSE,sha256=kKVTfmne7kQ6vVdlb7A6piL0xsBK_V5zbqBEOChlWbs,1073
+python_libsnark-0.3.3.dist-info/METADATA,sha256=qJItrYKAvWj33ZSX4ouPCoOmzf-_IUMHnw8VWKbg6mc,292
+python_libsnark-0.3.3.dist-info/WHEEL,sha256=ZpcXDw8xvXnB95GzPuvGTblRFId_5hNBEGdWCY25bL4,111
+python_libsnark-0.3.3.dist-info/top_level.txt,sha256=WEseiWNa04nzcv2tV7Qvm2uwoSRTJh4v__mNOmdJ8NI,9
+python_libsnark-0.3.3.dist-info/RECORD,,
