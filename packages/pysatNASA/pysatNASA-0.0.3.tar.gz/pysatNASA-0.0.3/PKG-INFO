@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: pysatNASA
+Version: 0.0.3
+Summary: 'pysat support for NASA Instruments'
+Home-page: https://github.com/pysat/pysatNASA
+Author: Jeff Klenzing
+Author-email: jeffrey.klenzing@nasa.gov
+License: UNKNOWN
+Description: <div align="left">
+                <img height="0" width="0px">
+                <img width="20%" src="https://raw.githubusercontent.com/pysat/pysatNASA/main/docs/figures/pysatnasa_logo.jpg" alt="pysatNASA" title="pysatNASA" </img>
+        </div>
+        
+        # pysatNASA: pysat support for NASA Space Science instruments
+        [![PyPI Package latest release](https://img.shields.io/pypi/v/pysatNASA.svg)](https://pypi.python.org/pypi/pysatNASA)
+        [![Build Status](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+        [![Coverage Status](https://coveralls.io/repos/github/pysat/pysatNASA/badge.svg?branch=main)](https://coveralls.io/github/pysat/pysatNASA?branch=main)
+        
+        [![Documentation Status](https://readthedocs.org/projects/pysatnasa/badge/?version=latest)](https://pysatnasa.readthedocs.io/en/latest/?badge=latest)
+        [![DOI](https://zenodo.org/badge/287387638.svg)](https://zenodo.org/badge/latestdoi/287387638)
+        
+        # Installation
+        
+        The following instructions provide a guide for installing pysatNASA and give
+        some examples on how to use the routines
+        
+        ### Prerequisites
+        
+        pysatNASA uses common Python modules, as well as modules developed by
+        and for the Space Physics community.  This module officially supports
+        Python 3.7+.
+        
+        | Common modules | Community modules |
+        | -------------- | ----------------- |
+        | beautifulsoup4 | cdflib            |
+        | lxml           | pysat             |
+        | netCDF4        |                   |
+        | numpy          |                   |
+        | pandas         |                   |
+        | requests       |                   |
+        | xarray         |                   |
+        
+        ## GitHub Installation
+        
+        Currently, the main way to get pysatNASA is through github.
+        
+        ```
+        git clone https://github.com/pysat/pysatNASA.git
+        ```
+        
+        Change directories into the repository folder and run the setup.py file.  For
+        a local install use the "--user" flag after "install".
+        
+        ```
+        cd pysatNASA/
+        python setup.py install
+        ```
+        
+        Note: pre-1.0.0 version
+        -----------------------
+        pysatNASA is currently in an initial development phase and requires pysat 3.0.0.  
+        
+        # Using with pysat
+        
+        The instrument modules are portable and designed to be run like any pysat instrument.
+        
+        ```
+        import pysat
+        from pysatNASA.instruments import icon_ivm
+        
+        ivm = pysat.Instrument(inst_module=icon_ivm, inst_id='a')
+        ```
+        Another way to use the instruments in an external repository is to register the instruments.  This only needs to be done the first time you load an instrument.  Afterward, pysat will identify them using the `platform` and `name` keywords.
+        
+        ```
+        import pysat
+        
+        pysat.utils.registry.register(['pysatNASA.instruments.icon_ivm'])
+        ivm = pysat.Instrument('icon', 'ivm', inst_id='a')
+        ```
+        
+Keywords: pysat,ionosphere
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
