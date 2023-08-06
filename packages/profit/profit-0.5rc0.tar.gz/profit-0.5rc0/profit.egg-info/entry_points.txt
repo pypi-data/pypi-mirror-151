@@ -1,0 +1,3 @@
+[console_scripts]
+profit = profit.main:main
+profit-worker = profit.run.worker:main
