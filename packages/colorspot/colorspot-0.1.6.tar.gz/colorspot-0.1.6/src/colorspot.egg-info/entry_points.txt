@@ -1,0 +1,3 @@
+[console_scripts]
+colorspot = colorspot.__main__:main
+
