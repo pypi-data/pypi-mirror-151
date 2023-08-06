@@ -1,0 +1,14 @@
+uvicorn==0.16.0
+loguru==0.5.3
+aioredis==2.0.0
+fastapi==0.70.1
+sqlalchemy==1.4.28
+sqlalchemy_utils==0.37.9
+asyncpg==0.25.0
+psycopg2-binary==2.9.2
+httpx==0.21.1
+phonenumbers==8.12.39
+python-jose==3.3.0
+passlib==1.7.4
+starlette~=0.16.0
+pydantic~=1.8.2
