@@ -1,0 +1,15 @@
+kmerator/__init__.py,sha256=AA4lRvHdC5W5GzZboSwLsx-YyMoj-kfkoY0WJ25xemw,115
+kmerator/ensembl.py,sha256=Fi8o7yZWahdUK-AwYBd1wNNnqFWK6sF3NJkaaUOnGyM,6021
+kmerator/fasta.py,sha256=KWvyXLoGQ0DqrSWow8gyXfcQyDPYwgTnjOcTyvc3PvI,886
+kmerator/info.py,sha256=Zy6Z7yhmvfIT5QSS72SoNrJVZtWzWzS8u5GhmZgGqug,835
+kmerator/kmerator.py,sha256=WLEl0L7EaiXGLD8Vr4MXzZExepanOy88u9kmZI7HiIY,8347
+kmerator/kmerize.py,sha256=y0DeQmet3H3zvJ9MyYPQAMCGEoCKswu_yF-Zb8__j0g,17475
+kmerator/ktools.py,sha256=gt_wHE97Gb92dTDzIl2mCiT7bwIfDGesVaqdMs8A2x0,11513
+kmerator/sequences.py,sha256=VWJIOqS6erGfcoGL7Wv1KZ_wYP5YAOQMf3kUJYKVxnU,4413
+kmerator/utils.py,sha256=4hBlzKtXHcysiB1hH6HjFHY5ZRX4Rt52xG_m2Js5uOw,8962
+kmerator2-0.4.3b0.dist-info/LICENCE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+kmerator2-0.4.3b0.dist-info/METADATA,sha256=bn_oOulz92rjq7IyU9ot3huJj4IZa938HJoDkd4rmjY,8577
+kmerator2-0.4.3b0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+kmerator2-0.4.3b0.dist-info/entry_points.txt,sha256=zNcJAP8cX7jOoLvHSOX0JRMVd-a2tT5biZMt4FEPgO8,84
+kmerator2-0.4.3b0.dist-info/top_level.txt,sha256=H-cz7mZo5sq_tRW7iG1NXfpx05c3Ri11PRJnHhk2vjo,9
+kmerator2-0.4.3b0.dist-info/RECORD,,
