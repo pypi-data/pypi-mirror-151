@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: torch-images
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: yohan-pg
+Author-email: pg.yohan@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: torch (>=1.11.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# `torch_images`
+
+Some utilities for working with images in pytorch.
