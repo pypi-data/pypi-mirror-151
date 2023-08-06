@@ -1,0 +1,17 @@
+pymemesuite/__init__.py,sha256=R2TAOgsjHOK90Og5KtpLiS6UV08A2VdczC6rN9-wKFU,182
+pymemesuite/_globals.c,sha256=WgDHVwHZ3byqyF9jF3y558qdsUGnReOjbINBgmQgnJQ,910
+pymemesuite/cisml.pxd,sha256=8sgaeho8oMArBonwtoTNgcgFr1SpuGx7TQ_Szmzo0Vw,1419
+pymemesuite/cisml.pypy37-pp73-darwin.so,sha256=TNl_V7wP2JtjWR1SXLGH8j7Ieo4a_5HdXe8ugxTEzcw,1696200
+pymemesuite/cisml.pyx,sha256=DD4PcbuwXru0UiQG7Wo7fe3_iqs5dwzEwneY5wljhms,11639
+pymemesuite/common.pxd,sha256=5a8T-POLy2_wRWELGJLDeJnVaRR6gGTkULblvy1vazw,2872
+pymemesuite/common.pypy37-pp73-darwin.so,sha256=wlXQAdh_FpYz3qY_ezP9t2dktXh5NYm706W4X5C_IU0,1800480
+pymemesuite/common.pyx,sha256=Q3QOlk2L99f3zllsMc-LG-1wkXqD5MVk0xB8X2xWvpk,39347
+pymemesuite/errors.pypy37-pp73-darwin.so,sha256=mpvN9fdfz71qTjCd8BVRWQZQI6KiXVA2YFix-w9bIqQ,60312
+pymemesuite/errors.pyx,sha256=TcYU-nj2I2NP9HsL3UZTLVJEcqvJoUJbChVPGPXm1Ls,857
+pymemesuite/fimo.pypy37-pp73-darwin.so,sha256=LWBRJSw1fFLOJB6AewU8PFUkWXXUxEBHxoo6fEuQxIQ,1734024
+pymemesuite/fimo.pyx,sha256=C-zbScQMTV_cYmNsVeu9Qo5nTFLaz5YbRgFiUodtrBU,14857
+pymemesuite-0.1.0a1.dist-info/COPYING,sha256=wPzDeBjR3w-UjqKqcZMcGmVN5gOI4A-FTL-nHRIWv5s,1103
+pymemesuite-0.1.0a1.dist-info/METADATA,sha256=XXsz1dA3CyB15ts60cxn3XArjYYTB3kVysVwRdg8zAY,9322
+pymemesuite-0.1.0a1.dist-info/WHEEL,sha256=Z5xAxRqC3dVN_QSo5arNtHhwMk5hZHoOGBzMHWH4Khk,116
+pymemesuite-0.1.0a1.dist-info/top_level.txt,sha256=hbngsKQDnDaIKFMQ2dydIxPdfL6uq1PN7_1baaSkjfc,12
+pymemesuite-0.1.0a1.dist-info/RECORD,,
