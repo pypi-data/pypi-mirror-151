@@ -1,0 +1,3 @@
+[console_scripts]
+imessage-extractor = imessage_extractor.cli:main
+

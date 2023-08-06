@@ -1,0 +1,12 @@
+altair
+click
+emoji
+nltk
+pandas
+send2trash
+sql-query-tools
+streamlit
+humanize
+plotly
+stylecloud
+watchdog

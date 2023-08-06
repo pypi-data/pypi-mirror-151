@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: imessage-extractor
+Version: 1.0.5
+Summary: Extract local iMessage data, combine with Contacts data and present an analytic app view of a user's message history
+Home-page: https://github.com/tsouchlarakis/imessage_extractor
+Author: Andoni Sooklaris
+Author-email: andoni.sooklaris@gmail.com
+License: MIT license
+Keywords: imessage_extractor
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+UNKNOWN
+
