@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+scripts/im-remind
+src/im_remind/__init__.py
+src/im_remind/__main__.py
+src/im_remind/core.py
+src/im_remind.egg-info/PKG-INFO
+src/im_remind.egg-info/SOURCES.txt
+src/im_remind.egg-info/dependency_links.txt
+src/im_remind.egg-info/requires.txt
+src/im_remind.egg-info/top_level.txt
