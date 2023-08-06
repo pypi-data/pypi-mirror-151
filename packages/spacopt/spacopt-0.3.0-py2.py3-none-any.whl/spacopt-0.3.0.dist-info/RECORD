@@ -1,0 +1,16 @@
+spacopt/Optimization_run.py,sha256=D6ayESCo283AEHxSUDmCvo1wUBAjpYonBGWZmmXIdwY,1028
+spacopt/Simulation.py,sha256=fIJQqAQu9eyXmTkMaFxM-rmdHl6gmcIEfpjrww2dJZo,11916
+spacopt/__init__.py,sha256=mU_JDznuw4Y9c1uS3Zk4lUAJ5AaW3gATp5xTevW9ZhI,540
+spacopt/calculateModule.py,sha256=pO6rNtBrrpFqcgFI27J3N8xELTfUrN4kF9Ar19lOXUw,12541
+spacopt/hyperactive_optimizer.py,sha256=F-9-jKcVqvavaIJ9--LZ5c7FDyfqgRnlvvHd5KjZng4,1159
+spacopt/plotting.py,sha256=NvpES_ie1y29AY-2UXKdNWOGdUYTBi7Ety4E31XL_XU,613
+spacopt/utils.py,sha256=28lY9NamRF5NC1ZyP5u-8yE9qx3iKWRgRGJsW5db8lo,1066
+spacopt/file_preparation/__init__.py,sha256=4G6wV0rA9Y_o_U1ITP3Yk6ZMRLJr5vuKwlMRnMVlZTY,109
+spacopt/file_preparation/configWriter.py,sha256=XivB5LtpdzBrTgiA3ybh4Krpqtm0f9QlSzIS2Egn0gA,2121
+spacopt/file_preparation/macWriter.py,sha256=E6CTLilWPxT1ZbcWOmpBYqmaZB3tlHZpK8GzsPKieFs,481
+spacopt-0.3.0.dist-info/AUTHORS.md,sha256=aOnvldicRktclxegN8Vz0_6xRVKAx65yqCYVBs54NQM,167
+spacopt-0.3.0.dist-info/LICENSE,sha256=E1KE0s-JP6zrVRyHP-uVmGBjdCw0HVKsqjCw1EqZ5dU,1089
+spacopt-0.3.0.dist-info/METADATA,sha256=7OczmlLgWRTgYzwGQzN4TZUZZN4vNTCJkKtHaPT4YcA,3163
+spacopt-0.3.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+spacopt-0.3.0.dist-info/top_level.txt,sha256=-q-bvCGouuXigwrzq99IAKom4vw5dpHXsZFB1VHDruE,8
+spacopt-0.3.0.dist-info/RECORD,,
