@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: expertai-extract
+Version: 0.1.2
+Summary: Python client for expert.ai Extract
+Home-page: https://github.com/therealexpertai/extract-python
+Author: expert.ai
+Author-email: api.support@expert.ai
+License: UNKNOWN
+Keywords: expert.ai Extract
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.6
+License-File: LICENSE
+
+    Python client for expert.ai Extract. Extract pulls out text from PDF documents in a smart way, recognizing headings, tables, body text, headers and footers. It returns text elements, page by page, with their bounding boxes and in the same order a human would read them. Extract also return general document information and possible metadata.
+
