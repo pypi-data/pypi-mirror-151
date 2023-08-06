@@ -1,0 +1,14 @@
+flaui/__init__.py,sha256=gc_hbTQIKRRTSSRDIchSkozgXYGaiO9Q-jSkrz4Qe8c,76
+flaui/_version.py,sha256=LZfsoy26dTqGqXw2jgMbtfQfBADdL43_30OPGZ900nc,518
+flaui/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flaui/lib/pythonnet_bridge.py,sha256=7YIEHYB8wPt0WQdhLgzyXly-monR8S6RSNqpG7ViH98,880
+integration_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unit_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unit_tests/flaui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unit_tests/flaui/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unit_tests/flaui/lib/test_pythonnet_bridge.py,sha256=epDgkibe3H1unm-BKUzVVX3pbye7RtY6UeyK90nD78A,343
+flaui_uiautomation_wrapper-0.0.6.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+flaui_uiautomation_wrapper-0.0.6.dist-info/METADATA,sha256=o-HpGvfSkhiahwCHWe590Weggf5XWX2rlDSd08G0ZCc,43313
+flaui_uiautomation_wrapper-0.0.6.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+flaui_uiautomation_wrapper-0.0.6.dist-info/top_level.txt,sha256=1YoJFZYz9XSd0a_Bik2pGyjNZqI1PSKlh6PAoOtKL0g,35
+flaui_uiautomation_wrapper-0.0.6.dist-info/RECORD,,
