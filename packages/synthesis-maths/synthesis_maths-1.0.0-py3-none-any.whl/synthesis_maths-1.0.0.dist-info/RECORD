@@ -1,0 +1,8 @@
+synthesis_maths/__init__.py,sha256=7rhQhbomSeGdFAWxo_YcX3-S_z_bWTDFW2mw7Og9npE,55
+synthesis_maths/basic_maths.py,sha256=FRca8iFlF7zvGSWJJQNGTmIyC0KB9uH_LitliMIKnjk,406
+synthesis_maths/functions/__init__.py,sha256=T7WiIb5Tv7GU1V-am6WLBE5Yj4JwnEcef2gEavqxo9k,32
+synthesis_maths/functions/advanced_maths.py,sha256=5HP6f2_9yj3tbSvG70DTZqS1SKoVmbtwHqhfRvsI60E,54
+synthesis_maths-1.0.0.dist-info/METADATA,sha256=zBNrizuowDZNpvA7OF8ploxRKT2jEThz5yfb99JJVNg,577
+synthesis_maths-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+synthesis_maths-1.0.0.dist-info/top_level.txt,sha256=CF0c89zKx_mFnzf9clkYbbPEiiBL3dpl2wwr386NOVs,16
+synthesis_maths-1.0.0.dist-info/RECORD,,
