@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: flightplandb
+Version: 0.6.0
+Summary: Python wrapper for the Flight Plan Database API
+Home-page: https://github.com/PH-KDX/flightplandb-py/
+Author: PH-KDX
+License: UNKNOWN
+Project-URL: Documentation, https://flightplandb-py.readthedocs.io/
+Project-URL: Issue tracker, https://github.com/PH-KDX/flightplandb-py/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: Games/Entertainment :: Simulation
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Provides-Extra: dev
+Requires-Dist: Sphinx (==4.5.0) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==1.0.0) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (~=6.2.5) ; extra == 'test'
+Requires-Dist: pytest-mock (~=3.6.1) ; extra == 'test'
+Requires-Dist: pytest-socket (~=0.4.1) ; extra == 'test'
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/PH-KDX/flightplandb-py/feature/artwork/png/240x240.png" alt="FlightPlanDB-py logo">
+</p>
+
+# FlightplanDB-py
+
+## Project status
+![Unittests and lint](https://github.com/PH-KDX/flightplandb-py/actions/workflows/test_and_lint.yml/badge.svg)
+[![PyPi](https://img.shields.io/pypi/v/flightplandb.svg)](https://pypi.org/project/flightplandb/)
+![Python](https://img.shields.io/pypi/pyversions/flightplandb.svg)
+
+## Introduction
+This is a Python 3 wrapper for the [Flight Plan Database API](https://flightplandatabase.com/dev/api). Flight Plan Database is a website for creating and sharing flight plans for use in flight simulation.
+
+For more information on Flight Plan Database, see their excellent [About page](https://flightplandatabase.com/about).
+
+## Documentation
+The documentation for this library can be found on readthedocs.io [here](https://flightplandb-py.readthedocs.io/).
+
+## Installation
+The library can be installed from PyPi using `pip install flightplandb`;
+the PyPi installation page link is [here](https://pypi.org/project/flightplandb/). For more details, see the Installation section of the documentation.
+
+## Changelog
+Before upgrading to a newer version, please read the appropriate changelog for your upgrade [here](https://flightplandb-py.readthedocs.io/en/stable/user/changelog.html).
+
