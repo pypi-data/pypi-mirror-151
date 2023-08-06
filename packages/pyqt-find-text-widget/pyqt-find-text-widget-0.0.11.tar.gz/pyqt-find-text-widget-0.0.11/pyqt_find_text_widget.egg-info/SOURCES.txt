@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pyqt_find_text_widget/__init__.py
+pyqt_find_text_widget/findTextWidget.py
+pyqt_find_text_widget.egg-info/PKG-INFO
+pyqt_find_text_widget.egg-info/SOURCES.txt
+pyqt_find_text_widget.egg-info/dependency_links.txt
+pyqt_find_text_widget.egg-info/requires.txt
+pyqt_find_text_widget.egg-info/top_level.txt
+pyqt_find_text_widget/ico/__init__.py
+pyqt_find_text_widget/ico/case.svg
+pyqt_find_text_widget/ico/close.svg
+pyqt_find_text_widget/ico/next.svg
+pyqt_find_text_widget/ico/prev.svg
+pyqt_find_text_widget/ico/regex.svg
+pyqt_find_text_widget/ico/word.svg
