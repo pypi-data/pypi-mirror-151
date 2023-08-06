@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: 6estates-idp
+Version: 0.1.2
+Summary: Python SDK for IDP API by 6Estates Pte Ltd
+Home-page: https://gitlab.6estates.com/algorithm/idp-python-sdk
+Author: guosihan
+Author-email: sihan.6estates@gmail.com
+License: BSD 2-clause
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+
+
+6Estates IDP SDK
+==================
+
+Read more on https://idp-sdk-doc.nextcenter.net/python/
+    
+    
