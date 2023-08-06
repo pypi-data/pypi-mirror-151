@@ -1,0 +1,17 @@
+kiara_plugin/language_processing/__init__.py,sha256=KXdWOXHcWChCeRPE3b2fuJGKkTZEIFZMk_d7UlEAlR0,2297
+kiara_plugin/language_processing/data_types.py,sha256=iEgkUih3CAtVpVEgIQveHYSJkKkiYC1eAZSthHu54hs,143
+kiara_plugin/language_processing/models.py,sha256=6sQqOwT9ZQHaPkADuju1nApwQjl7gsk5JWDC3YObV_U,546
+kiara_plugin/language_processing/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiara_plugin/language_processing/language_processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiara_plugin/language_processing/language_processing/lda.py,sha256=YMJ6mEMgbt_7WVOlyeQ8YGJNDA5CPYWTEyvhVXLXJhc,7443
+kiara_plugin/language_processing/language_processing/lemmatize.py,sha256=4TuAqkooJG3690Qwg0p2eO4uzhBYSrX1rAbRN4fbWi4,2723
+kiara_plugin/language_processing/language_processing/tokens.py,sha256=-Gx57BIyw5wRox3Jhf8KBzEKJGKe5ZbXhAK2vDPTc2Q,13852
+kiara_plugin/language_processing/pipelines/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiara_plugin/language_processing/pipelines/__init__.py,sha256=F5UkhTSPqsTDBmmYZwj-bfALnN7bUzNJptvqtR9XyXI,124
+kiara_plugin/language_processing/resources/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiara_plugin.language_processing-0.4.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+kiara_plugin.language_processing-0.4.1.dist-info/METADATA,sha256=4W2M4pbyh0T7rlbTkmtSAU7NDWBzW4ZtMpGzL0tCcGM,10800
+kiara_plugin.language_processing-0.4.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+kiara_plugin.language_processing-0.4.1.dist-info/entry_points.txt,sha256=Cxn1tuwZT9cIAgC-ob8JfLdsJGNXpJV7MCivLA2J-jM,362
+kiara_plugin.language_processing-0.4.1.dist-info/top_level.txt,sha256=44MjbEQSBwVAT-xIVtXYIIQBWWQjONtQxz6NrBsLttg,13
+kiara_plugin.language_processing-0.4.1.dist-info/RECORD,,
