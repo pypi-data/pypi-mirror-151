@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "coons-cli"
+version = "0.1.0"
+description = "A command line interface for coons."
+homepage = "https://github.com/chezjohnny/coons"
+license = "MIT"
+authors = ["Johnny Mariéthoz <chezjohnny@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.3"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.3.0"
+twine = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+coons = 'coons_cli:cli'
