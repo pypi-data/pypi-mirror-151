@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+flexolink/__init__.py
+flexolink/algorithmUtils.py
+flexolink/main.py
+flexolink.egg-info/PKG-INFO
+flexolink.egg-info/SOURCES.txt
+flexolink.egg-info/dependency_links.txt
+flexolink.egg-info/entry_points.txt
+flexolink.egg-info/requires.txt
+flexolink.egg-info/top_level.txt
