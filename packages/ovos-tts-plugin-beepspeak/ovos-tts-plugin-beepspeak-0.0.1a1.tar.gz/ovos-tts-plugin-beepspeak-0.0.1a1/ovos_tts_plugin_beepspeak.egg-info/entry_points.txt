@@ -1,0 +1,3 @@
+[mycroft.plugin.tts]
+ovos-tts-plugin-beepspeak = ovos_tts_plugin_beepspeak:BeepSpeak
+
