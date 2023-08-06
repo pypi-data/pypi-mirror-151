@@ -1,0 +1,16 @@
+physiofit/__init__.py,sha256=GlF9EM8OkYfflXp4Y9hWAtnouRuRoYIiTjeRkRJZBTk,23
+physiofit/__main__.py,sha256=0u_MUlo_wxT0sPq4RasXJphWH4oZRdZJtrAueG7A1iQ,986
+physiofit/logger.py,sha256=mKO8ubrlhUKpS5nrF8epuCe0JaYlGiySUH-6HqkXRZQ,369
+physiofit/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+physiofit/base/fitter.py,sha256=pAt2NCf_F1KsMtpMAFK-zpVxj0IxsImFXU8-qG2vk9w,26982
+physiofit/base/io.py,sha256=UwfnY0OK07eZqz_oUg9Sf9YEX8za4Ec2jIV3Phz7glY,20899
+physiofit/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+physiofit/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+physiofit/ui/cli.py,sha256=pDVs8mVBEQBHMPpUn90fi7S__nab4vJ8R8-Zku4zp2M,8817
+physiofit/ui/gui.py,sha256=J2KbD-423KTHrzlacJ8Y3VloblAg1ntJ4l36QIhtv14,12072
+physiofit-2.0.4.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+physiofit-2.0.4.dist-info/METADATA,sha256=-281YNiahebPnGBCW172YD3kS7099mSIhK-1jPlif5Q,4619
+physiofit-2.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+physiofit-2.0.4.dist-info/entry_points.txt,sha256=X50iSGfHV4Ump_8JCj5sHOUjHhjMmZ8sLjTmBKbWnV0,54
+physiofit-2.0.4.dist-info/top_level.txt,sha256=ttGpJxuybpKJvyxABW09m1heTXx7pIjZVKXSFPUlrT4,10
+physiofit-2.0.4.dist-info/RECORD,,
