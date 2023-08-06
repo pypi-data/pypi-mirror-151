@@ -1,0 +1,26 @@
+[project]
+name = "mina-build"
+version = "0.2.1"
+description = ""
+authors = [
+    { name = "GreyElaina", email = "GreyElaina@outlook.com" },
+]
+dependencies = [
+    "pdm-pep517>=0.12.3",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm]
+includes = [
+    "mina",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517>=0.12.0",
+]
+build-backend = "pdm.pep517.api"
