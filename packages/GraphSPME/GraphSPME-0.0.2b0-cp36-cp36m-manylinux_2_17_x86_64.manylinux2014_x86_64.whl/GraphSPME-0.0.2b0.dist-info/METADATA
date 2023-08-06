@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: GraphSPME
+Version: 0.0.2b0
+Summary: High dimensional precision matrix estimation with a known graphical structure
+Home-page: https://github.com/Blunde1/GraphSPME
+Author: Berent Ånund Strømnes Lunde
+Author-email: lundeberent@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# GraphSPME
+
+**High dimensional precision matrix estimation with a known graphical structure**
+
+Key features:
+- Works in very high dimensions
+- Non-parametric
+- Asymptotic regularization 🖖
+- Lightning fast
+
+Also available as header-only in C++, and as an R-package.
+
+
+
