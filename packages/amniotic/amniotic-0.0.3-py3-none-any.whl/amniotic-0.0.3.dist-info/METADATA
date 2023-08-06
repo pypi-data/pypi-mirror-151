@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: amniotic
+Version: 0.0.3
+Summary: A multi-output, multi-theme ambient sound mixer for Home Assistant
+Home-page: https://github.com/fmtr/amniotic
+Author: Frontmatter
+License: Copyright © 2022 Frontmatter. All rights reserved.
+Platform: UNKNOWN
+Requires-Dist: paho-mqtt
+Requires-Dist: python-vlc
+Requires-Dist: getmac
+Requires-Dist: pyyaml
+Requires-Dist: appdirs
+
+UNKNOWN
+
