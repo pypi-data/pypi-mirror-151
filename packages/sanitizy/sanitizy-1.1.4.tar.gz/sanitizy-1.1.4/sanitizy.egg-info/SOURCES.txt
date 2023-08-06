@@ -1,0 +1,8 @@
+README.md
+setup.py
+sanitizy/__init__.py
+sanitizy.egg-info/PKG-INFO
+sanitizy.egg-info/SOURCES.txt
+sanitizy.egg-info/dependency_links.txt
+sanitizy.egg-info/requires.txt
+sanitizy.egg-info/top_level.txt
