@@ -1,0 +1,2 @@
+[console_scripts]
+mits = engine.__main__:code

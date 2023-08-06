@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Mits-Engine
+Version: 1.0.10
+Summary: A basic sub-python dev langage.
+Home-page: https://github.com/mbcraft-exe/MitsEngine
+Author: MB Craft
+Author-email: mbcraft@orange.fr
+License: MB INC
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+https://github.com/mbcraft-exe/MitsEngine/blob/main/Mits%20Engine-1.0.2.tar.gz
+
