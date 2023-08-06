@@ -1,0 +1,17 @@
+tapisservice/__init__.py,sha256=rvVzRAV4Nj_8nz0mQZxWtVTPVb2ytZ1_rP1l0wyQZVc,2661
+tapisservice/auth.py,sha256=jwAK4B9RlOhNLrFnhIReKHXnBu70UG8Th0iaeliVZsw,33222
+tapisservice/config.py,sha256=eQ6rsvY6yYkrMvP8U245As_36hkTDCzFM8tggVpOAUw,6379
+tapisservice/configschema.json,sha256=h-oNnc961cKd3RY9zmvKtFgEQwBRyk1Wkm-5xt8_7y0,6052
+tapisservice/errors.py,sha256=B-bvJ2nkparB-QRVRRgdG8k3lxCpOBpYwLNszIQNMec,1040
+tapisservice/logs.py,sha256=aP0qp1_gJi4ojbCym1Ros0c51L5NF6nOybCb8d0Adk4,1455
+tapisservice/tapisdjango/__init__.py,sha256=KqMwMbwEidq4Yfkrit25YwknQ9k8UNVKY3KDmDkPYeE,174
+tapisservice/tapisfastapi/__init__.py,sha256=ff-01lc9zu7DmxDOH_I-TluRmtZkGNdxH_ql0bXJOZc,37
+tapisservice/tapisflask/__init__.py,sha256=S7IEoVUQp6YP2oOIhjxX60wrAVxU1RIMlfC4ns30glk,45
+tapisservice/tapisflask/auth.py,sha256=Vf_CzkYR8shbmbhm2XrRt88to70vsxPcWyIP2UsXR8k,2835
+tapisservice/tapisflask/resources.py,sha256=NyAxWswaAivnt6kMvENR5LreWDJkmu3x4olD2n0nZdk,1396
+tapisservice/tapisflask/utils.py,sha256=ZsuMpNc2K-dNCtGzwjwYvnECkkMzsyXmCN6kxzXU9Pg,4185
+tapisservice/tenants.py,sha256=aeKoxvCe27Av2nHt3Eeb6KBPbI3Y_vAsoP49XEH2wng,15325
+tapisservice/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tapisservice-1.1.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+tapisservice-1.1.1.dist-info/METADATA,sha256=3fh08eNEQ8ZirS7HDifun2iXDMqI3rHMRFUVxkIBhls,1151
+tapisservice-1.1.1.dist-info/RECORD,,
