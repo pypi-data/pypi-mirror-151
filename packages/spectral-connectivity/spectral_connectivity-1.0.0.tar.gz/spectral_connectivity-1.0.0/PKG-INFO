@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: spectral_connectivity
+Version: 1.0.0
+Summary: Frequency domain functional and directedconnectivity analysis tools for electrophysiologicaldata
+Home-page: https://github.com/Eden-Kramer-Lab/spectral_connectivity
+Author: Eric Denovellis
+Author-email: edeno@bu.edu
+License: GPL-3.0
+Requires-Python: >=3
+License-File: LICENSE
