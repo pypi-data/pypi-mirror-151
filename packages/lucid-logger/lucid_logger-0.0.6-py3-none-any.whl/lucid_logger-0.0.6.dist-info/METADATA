@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lucid-logger
+Version: 0.0.6
+Summary: Python Logging Library with Loading Bar
+Home-page: https://github.com/Kevin-Lago/LucidLogger
+Author: Kevin Lago
+Author-email: kevinthelago@gmail.com
+Project-URL: Bug Tracker, https://github.com/Kevin-Lago/LucidLogger/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Lucid Logger
+Custom logger package made with Python
