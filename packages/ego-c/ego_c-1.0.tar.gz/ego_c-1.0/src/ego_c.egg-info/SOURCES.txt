@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+src/c/__init__.py
+src/c/cutil.py
+src/ego_c.egg-info/PKG-INFO
+src/ego_c.egg-info/SOURCES.txt
+src/ego_c.egg-info/dependency_links.txt
+src/ego_c.egg-info/top_level.txt
+test/test_cutil.py
