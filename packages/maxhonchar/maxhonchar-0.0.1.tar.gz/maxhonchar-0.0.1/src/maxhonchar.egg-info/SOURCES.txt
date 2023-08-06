@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/maxhonchar/__init__.py
+src/maxhonchar.egg-info/PKG-INFO
+src/maxhonchar.egg-info/SOURCES.txt
+src/maxhonchar.egg-info/dependency_links.txt
+src/maxhonchar.egg-info/top_level.txt
+src/maxhonchar/logic/__init__.py
+src/maxhonchar/logic/run.py
