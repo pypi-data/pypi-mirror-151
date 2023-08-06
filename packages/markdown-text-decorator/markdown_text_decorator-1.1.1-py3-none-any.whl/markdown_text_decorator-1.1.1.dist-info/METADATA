@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: markdown-text-decorator
+Version: 1.1.1
+Summary: Text Decorator Extension for Python-Markdown.
+Author: Silver Bullet Software
+Author-email: inq.sbs@gmail.com
+Maintainer: sbs
+Maintainer-email: inq.sbs@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: markdown (>=3)
+
+[Python-Markdown]: https://python-markdown.github.io/
+
+# Text Decorator Extension for Python-Markdown
+
+This extension add Text Decorate handler to [Python-Markdown].
+
+## Spec
+
+This extension supports follwing expressions.
+
+|Type          |Markdown |HTML             |
+|:------------|:--------|:-----------------|
+|delete       |`--text--`|`<del>text</del>`|
+|insert       |`++text++`|`<ins>text</ins>`|
+|strikethrough|`~~text~~`|`<s>text</s>`    |
+|superscript  |`^^text^^`|`<sup>text</sup>`|
+|subscript    |`^text^`  |`<sub>text</sub>`|
+
+## Installation
+
+```bash
+python3 -m pip install markdown_text_decorator
+```
+
+## Usage
+
+### Code
+
+```python
+from markdown import Markdown
+
+MARKDOWN_EXTENSIONS = [
+    "markdown_text_decorator"
+]
+
+md2html = Markdown(extensions=MARKDOWN_EXTENSIONS)
+
+markdown_input = """
+
+# Markdown Text Decoration
+
+~~This is~~ strikethrough ~~line.~~
+
+++This is++ insert ++line.++ 
+
+--This is-- delete --line.--
+
+^^This is^^ superscript ^^line^^
+
+^This is^ subscript ^line^
+
+"""
+
+html_output = md2html.convert(markdown_input)
+
+print(html_output)
+
+```
+
+### Result
+
+```html
+<h1>Markdown Text Decoration</h1>
+<p><s>This is</s> strikethrough <s>line.</s></p>
+<p><ins>This is</ins> insert <ins>line.</ins></p>
+<p><del>This is</del> delete <del>line.</del></p>
+<p><sup>This is</sup> superscript <sup>line</sup></p>
+<p><sub>This is</sub> subscript <sub>line</sub></p>
+```
+
+## CHANGE LOG
+
+## v1.1.1
+
+Add unittest for strikethrough, insert, delete, superscript and subscript.
+
+### v1.1.0
+
+Support superscript and subscript.
+
+### v1.0.1
+
+Support multi-pairs in one line release.
+
+### v1.0.0
+
+Initial Release.
+
