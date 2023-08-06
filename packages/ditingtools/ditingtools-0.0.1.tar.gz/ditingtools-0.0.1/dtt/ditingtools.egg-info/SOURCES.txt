@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+dtt/app/__init__.py
+dtt/dev/__init__.py
+dtt/dev/det_pick/__init__.py
+dtt/dev/det_pick/tfDataset.py
+dtt/dev/det_pick/train.py
+dtt/dev/fmp/__init__.py
+dtt/dev/fmp/tfDataset.py
+dtt/dev/fmp/train.py
+dtt/ditingtools.egg-info/PKG-INFO
+dtt/ditingtools.egg-info/SOURCES.txt
+dtt/ditingtools.egg-info/dependency_links.txt
+dtt/ditingtools.egg-info/top_level.txt

@@ -1,0 +1,46 @@
+# DiTingTools [谛听--用于天然地震数据处理的深度学习工具包]
+This module is undergoing rapid development.
+
+该模块仍在开发阶段。
+
+## Description [简介]
+DiTingTools aims to provide modules for developing, training, evaluating, and applying deep-learning-based methods to solve data processing tasks in earthquake seismology.
+
+谛听工具包主要为开发、训练、测评和应用基于深度学习的天然地震数据处理方法提供帮助。
+
+## Getting Started [教程]
+Right now there are three example notebooks: (1) How to read DiTing50Hz dataset;(2) How to train an earthquake detection and phase picking model with DiTingTools; (3) How to train a first-motion polarity determination model with DiTingTools. More examples will be updated in the futrue.
+
+目前有三个例子：（1）如何读取谛听数据集；（2）如何训练地震检测和震相拾取模型；（3）如何训练一个初动极性判别模型。
+
+### Dependencies
+
+* tensorflow == 2.2.0
+* keras == 2.4.3
+* scipy
+* numpy
+* pyyaml
+* h5py
+* tqdm
+* scikit-learn
+* obspy
+
+### Installing
+
+-- To be updated
+
+## Authors
+
+Xiao zhuowei, Zhao ming, Chen shi.
+
+## Version History
+
+-- To be updated
+
+## License
+
+-- To be updated
+
+## Acknowledgments
+
+-- To be updated
