@@ -1,0 +1,17 @@
+#!python
+import argparse
+import PQMusic
+from sys import exit
+
+# Prevent running the app more once instance
+if PQMusic.utils.is_running():
+    exit()
+
+parser = argparse.ArgumentParser(description='PQMusic')
+parser.add_argument('--custom-theme', action='store_true',
+                    default=False,
+                    dest='custom_theme')
+parser.add_argument('-f', '--files',
+                    default=[], nargs='*', dest='files')
+args = parser.parse_args()
+PQMusic.init(args.custom_theme, args.files)
