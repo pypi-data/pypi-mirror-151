@@ -1,0 +1,31 @@
+common: &commondata
+  "container": "ubuntu-20.04"
+  "distro": "poky"
+  "envsetup": "poky/oe-init-build-env"
+  "sources": {
+    "git_trees": [
+      {
+        "url": "git://git.yoctoproject.org/poky",
+        "branch": "master-next"
+      }
+    ]
+  }
+  "target": "core-image-minimal"
+version: 1
+name: Poky next validation
+description: Build Poky for various qemu
+jobs:
+- name: next-tracking
+  bakes:
+    - { <<: *commondata, "machine": "qemuarm64"}
+    - { <<: *commondata, "machine": "qemuarm"}
+    - { <<: *commondata, "machine": "qemuarmv5"}
+    - { <<: *commondata, "machine": "qemumips64"}
+    - { <<: *commondata, "machine": "qemumips"}
+    - { <<: *commondata, "machine": "qemuppc64"}
+    - { <<: *commondata, "machine": "qemuppc"}
+    - { <<: *commondata, "machine": "qemuriscv32"}
+    - { <<: *commondata, "machine": "qemuriscv64"}
+    - { <<: *commondata, "machine": "qemux86-64"}
+    - { <<: *commondata, "machine": "qemux86"}
+
