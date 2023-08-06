@@ -1,0 +1,7 @@
+setup.py
+naver_translation/__init__.py
+naver_translation/naver_translation.py
+naver_translation.egg-info/PKG-INFO
+naver_translation.egg-info/SOURCES.txt
+naver_translation.egg-info/dependency_links.txt
+naver_translation.egg-info/top_level.txt
