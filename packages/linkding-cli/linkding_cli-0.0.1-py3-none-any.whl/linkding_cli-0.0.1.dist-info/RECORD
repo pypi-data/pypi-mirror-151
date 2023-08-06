@@ -1,0 +1,13 @@
+src/__init__.py,sha256=sphiF-modIWW_Go-X7wti6L1UsGJpB4WPvmLPvHxECw,39
+src/commands/__init__.py,sha256=EDzU-i45JWFLzudxgZZwLq-ZMx4h9plhH1gU6KoJAj4,23
+src/commands/bookmark.py,sha256=I7wkrhpxmPh9v5gPdirvXRS9oOUXWTWVwMy39EvhUro,171
+src/commands/tag.py,sha256=Tgc4cdAxQp81_xWGzYKf51XMeiTk4ZwHvxhMYF0d1kE,151
+src/helpers/__init__.py,sha256=SqIzq3zkuB18vVmSSzODit2Nn3aPtu4Zs5ievpOYNws,22
+src/helpers/logging.py,sha256=UNzXPLGaKyvHTLncb3pp3KS8Eq4dzrkCZOiBQx51mGo,206
+src/main.py,sha256=XWMQPuvCh7gjmjxnLEWVJ1iK8f_SnTb6a9sAwE38C1Q,542
+src/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkding_cli-0.0.1.dist-info/entry_points.txt,sha256=3yLGKHHQqo1Q10WJFeWv4fhH2mIi2_0j9bMKkGQ6Dpg,41
+linkding_cli-0.0.1.dist-info/LICENSE,sha256=scz6gEaGZXJPFxvuQ2FiKekDHrpn4ri_vbec1ZXqQp8,1067
+linkding_cli-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+linkding_cli-0.0.1.dist-info/METADATA,sha256=20aDS6ZoP3V2fqQQcG9IfSsoRHDlCic-HUh1ALCdJDE,2912
+linkding_cli-0.0.1.dist-info/RECORD,,
