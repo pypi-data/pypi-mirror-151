@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "just-jobs"
+version = "1.1.0"
+description = "A lightweight asynchronous Python job executor backed by Redis."
+authors = ["Elias Gabriel <me@eliasfgabriel.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+repository = "https://github.com/thearchitector/just-jobs"
+documentation = "https://justjobs.thearchitector.dev"
+keywords = ["jobs", "broker", "tasks", "celery", "redis"]
+
+include = ["just_jobs/py.typed", "CHANGELOG.md"]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+hiredis = "^2.0.0"
+redis = "^4.3.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-asyncio = "^0.15.1"
+pdoc = "^12.0.0"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
