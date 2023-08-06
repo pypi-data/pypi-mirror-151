@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: kiqtictactoe
+Version: 0.0.1
+Summary: A very basic CLI game
+Home-page: UNKNOWN
+Author: Luis Cueva
+Author-email: lecuevad@gmail.com
+License: MIT
+Description: This is a very simple CLI tictactoe, for academic purposes
+        
+        Change Log
+        =========
+        
+        0.0.1 (22/05/2022)
+        ------------------------
+        - First Release
+Keywords: tictactoe
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

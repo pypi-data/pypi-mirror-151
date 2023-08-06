@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+kiqtictactoe/__init__.py
+kiqtictactoe.egg-info/PKG-INFO
+kiqtictactoe.egg-info/SOURCES.txt
+kiqtictactoe.egg-info/dependency_links.txt
+kiqtictactoe.egg-info/top_level.txt
