@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: homeman
+Version: 1.0.2
+Summary: keep files synchronized between user home and your special home directory
+Home-page: https://gitee.com/sunn4open/homeman.git
+Author: sunn4room
+Author-email: sunn4room@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HOMEMAN
+
+a small management tool to keep files synchronized between user home and your special home directory. Default directory is $HOME/.manhome, you can change the default by enviroment variable $MAN_HOME
