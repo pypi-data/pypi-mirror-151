@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+easyscrape_bingsuggest/__init__.py
+easyscrape_bingsuggest/querysuggestions.py
+easyscrape_bingsuggest.egg-info/PKG-INFO
+easyscrape_bingsuggest.egg-info/SOURCES.txt
+easyscrape_bingsuggest.egg-info/dependency_links.txt
+easyscrape_bingsuggest.egg-info/top_level.txt
