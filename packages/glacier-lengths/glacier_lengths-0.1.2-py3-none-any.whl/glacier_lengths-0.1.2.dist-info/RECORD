@@ -1,0 +1,9 @@
+glacier_lengths/__init__.py,sha256=hFQ4EG3lELxugWX58E8MPxbUiB3NfOZPFl6yVxuE-VQ,198
+glacier_lengths/core.py,sha256=tjOJz-vemgKrbQasLcas5PxDGuVEsm853_OYMXmwUZ8,12580
+glacier_lengths/examples.py,sha256=mKz9Deu1DUROtrAVIVgP_QhhqHlOaQkxTwL1VL9bQY8,2131
+glacier_lengths/plotting.py,sha256=_QvLOLnVocQsEUkVwpc2j-YWJFNnEzzkiGQ9ulrEz6o,2700
+glacier_lengths-0.1.2.dist-info/LICENSE,sha256=N7c1bh-zFbg3MQbH4QTxhbgEUOq6M0Iq-LPbR3D3KwY,561
+glacier_lengths-0.1.2.dist-info/METADATA,sha256=rBu6JmHkpj1j__bf4PPn_h29JrvJZPKmNR0zg-FwlHw,3703
+glacier_lengths-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+glacier_lengths-0.1.2.dist-info/top_level.txt,sha256=RIj_4-EY7FqHwvz_qfz-GuZ2GhYKi_DT0l2cX2AWTBk,16
+glacier_lengths-0.1.2.dist-info/RECORD,,
