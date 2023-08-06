@@ -1,0 +1,2 @@
+PyQt5>=5.8
+pyqt-svg-abstractbutton>=0.0.1
