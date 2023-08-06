@@ -1,0 +1,9 @@
+torcwa/__init__.py,sha256=5mb7cnXZb1kTD7E-gRBVKBCpd4QYA4KAzNcFXVwq6V8,141
+torcwa/geometry.py,sha256=SOetmV3LL_pxUMyKHVlw_9XZsMRwF5qLzGvhFDHxe2s,4645
+torcwa/rcwa.py,sha256=AXEQZD55AfzxTu_16KuxV13Otn3C3Ale6MkJUGZZe50,57313
+torcwa/torch_eig.py,sha256=jnnYZTUfU1H0xQCdkVDYqYV0cTqDuqd3KEs1qXH8uMk,1517
+torcwa-0.1.0.dist-info/LICENSE,sha256=EoIpxuENDeDYJS7M0ZMTI0I5499rpERYh4blXnzfpz4,868
+torcwa-0.1.0.dist-info/METADATA,sha256=IueknPIM75hSJ9psgauRyVZ69xJMrQKsyF7jdyS6y6s,362
+torcwa-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+torcwa-0.1.0.dist-info/top_level.txt,sha256=PFDFv18RrC1lqNOe0Xv8W0YSziDrzXPI263mSM_eGW4,7
+torcwa-0.1.0.dist-info/RECORD,,
