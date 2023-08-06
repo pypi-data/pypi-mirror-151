@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+SLYLogin.egg-info/PKG-INFO
+SLYLogin.egg-info/SOURCES.txt
+SLYLogin.egg-info/dependency_links.txt
+SLYLogin.egg-info/top_level.txt
+SlyLogin/__init__.py
