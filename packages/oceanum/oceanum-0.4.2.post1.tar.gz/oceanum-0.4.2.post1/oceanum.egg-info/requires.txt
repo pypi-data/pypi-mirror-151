@@ -1,0 +1,12 @@
+click
+fsspec
+geojson_pydantic
+numpy
+pandas
+geopandas
+xarray
+shapely
+orjson
+requests
+pyarrow
+python-snappy
