@@ -1,0 +1,8 @@
+paddle_bfloat.cpython-36m-powerpc64le-linux-gnu.so,sha256=fVHO7OdAFkejN8vgAc4ZSe6lF21gs7EUuXgomgAdA8g,1968152
+paddle_bfloat-0.1.2.dist-info/top_level.txt,sha256=Jp4x4Sa7Imi8o6lYeph7h0ZPWjNmSPwOQQyknoU32jY,14
+paddle_bfloat-0.1.2.dist-info/RECORD,,
+paddle_bfloat-0.1.2.dist-info/LICENSE.txt,sha256=sjnGxZjXRqCNHhN7F_OudScyF4uKP4pe5DKYhAn9AVQ,15503
+paddle_bfloat-0.1.2.dist-info/METADATA,sha256=KhMnoU0_ZnJT-qnRWImntzRFhMjp6MBUU8QLYpfosnM,248
+paddle_bfloat-0.1.2.dist-info/WHEEL,sha256=x9HcBWFH7ZXEZcHc7Y3jyHPamTUyCzGRpDQpx747fqo,113
+paddle_bfloat.libs/libgcc_s-a2b893f1.so.1,sha256=kxjFbEJKystpENYbAs0RJK_UHa4Jwkf-NemEz-lVwqE,134352
+paddle_bfloat.libs/libstdc++-1b005a64.so.6.0.28,sha256=8x7qess-LZqBJ31Rz2hOKoqgUyQbUSEh4PtPvlkKLrM,2926512
