@@ -1,0 +1,17 @@
+spectral_connectivity/__init__.py,sha256=iJBeoAIirrIWXF8A6_yWk6CrqS_79fFXyQtXrGKXy-Q,197
+spectral_connectivity/connectivity.py,sha256=38cViToD3SkehIT3BIEIv69vPYMtD69WOINJM3BSTrM,52926
+spectral_connectivity/minimum_phase_decomposition.py,sha256=C_axQswzUWyTzNwu9_1rwCNFZowtr6j7FiYr8HmSxpA,7346
+spectral_connectivity/statistics.py,sha256=rmuE0moUjSULTAkQqs2ROMF2KbF6LCeaQ-gD9Miw678,6059
+spectral_connectivity/transforms.py,sha256=eyjiaLj_YLv4hbMNNptpcnEDeZ03qQi1Qp9z50DmtPA,26604
+spectral_connectivity/wrapper.py,sha256=TWtgh4O1YqH7856r2vZaeJ4q0rUCPKoJGAFn6688Fw4,6476
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_connectivity.py,sha256=xue4MNrlkZ6eADbpPqriZF6uVAoewHaGuM-1127Qm7M,19507
+tests/test_minimum_phase_decomposition.py,sha256=uhnyErV2h7CiQiU2Zk22VTh9tzFwixFLSfBILnObAZY,4333
+tests/test_statistics.py,sha256=vCrHe1rr58eK_R5hsLXxyejMo-Th_6zyYUcQR-NiPqY,2130
+tests/test_transforms.py,sha256=3Rujml2LH2V8TX-dJxcEBoIcC1CddTQWAsPM_eZPjj8,12085
+tests/test_wrapper.py,sha256=-P1gIsVeMYaH4kJjyF_xAK9L_5z6ehZh4bympGXARKE,7007
+spectral_connectivity-1.0.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+spectral_connectivity-1.0.0.dist-info/METADATA,sha256=AqFLZTA_z1dKIgO2OERR4q9R7Pnl5dmBAWxZaW-J9Oc,483
+spectral_connectivity-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spectral_connectivity-1.0.0.dist-info/top_level.txt,sha256=9Q-t2XvAPHHHH3iHQZjFSS7cTnwfhixm__2AgWUUM80,28
+spectral_connectivity-1.0.0.dist-info/RECORD,,
