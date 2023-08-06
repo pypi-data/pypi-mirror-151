@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "itchiodl"
+version = "2.1.0"
+description = "Python Scripts for downloading / archiving your itchio library"
+authors = ["Peter Taylor <me@et1.uk>"]
+license = "MIT"
+readme = "Readme.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "beautifulsoup4"
+beautifulsoup4 = "^4.10.0"
+clint = "^0.5.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+pylint = "^2.13.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."console_scripts"]
+"itch-download" = "itchiodl.downloader.__main__:main"
+"itch-load-bundle" = "itchiodl.bundle_tool.__main__:main"
