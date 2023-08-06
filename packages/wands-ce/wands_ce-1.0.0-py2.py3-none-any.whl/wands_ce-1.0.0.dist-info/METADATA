@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: wands-ce
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/onefeng/kevin
+Author: onefeng
+Author-email: 15198086902@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# wands
+
+## 概览
+wands项目意为“魔杖”，主要是想继承一些基础服务的用法提供接口，目前实现地址的解析。
+
+## 环境部署
+pip install wheel
+pip install twine
+
+
+python setup.py upload
+

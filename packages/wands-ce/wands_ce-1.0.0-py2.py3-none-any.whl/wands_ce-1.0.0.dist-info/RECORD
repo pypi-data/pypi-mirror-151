@@ -1,0 +1,11 @@
+wands/__init__.py,sha256=_no2J_rNXf_i_05w_8UHN5Sv_2u6O61DvWpHNiVFhbU,192
+wands/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wands/data/area_base.csv,sha256=JKZObNY_Qz4cE2sjpWFK_aW5OcmKtmXWIrqlOnluFrM,128380
+wands/data/load_data.py,sha256=92tOS4FTZOB3q8GOPfZEXvIBSIezEHYavZ6HDpvZAOA,639
+wands/parse/__init__.py,sha256=z4eFP7LPgOiiDdvBisj9iGgG-1ZIGpjoTB95q8BaJ80,79
+wands/parse/address_parse.py,sha256=t8lRlj0UUCZikjgRJ2-lNoRMNgehmUitTK7CkH3onW0,2854
+wands_ce-1.0.0.dist-info/LICENSE,sha256=3isvkyagpwVlPX8Zo3JiQV9pgT7HMu6ogTDqL2C06ro,1085
+wands_ce-1.0.0.dist-info/METADATA,sha256=wqIlTqAQluz8WJnrzv222nu_ivKif176SLdaQmV2TsE,833
+wands_ce-1.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+wands_ce-1.0.0.dist-info/top_level.txt,sha256=hQQ2Wtc7oycRX2yXgynnCVNpfQdQRP8QRI-N5uJQdIA,6
+wands_ce-1.0.0.dist-info/RECORD,,
