@@ -1,0 +1,10 @@
+umapy/__init__.py,sha256=semhdwFY_56YU6bkcgdrZ-Qvvm1t_HPLx0XdQAuO57U,400
+umapy/_helpers.py,sha256=JMZJpiODOUuZn6WqUCYkc92KbcOpmq4aC7ybQCZbgM0,9427
+umapy/client.py,sha256=xRmOABe-bgqmd5rshsZbIdiK3KIEg9XBDLHHFpvhU3U,7743
+umapy/Exceptions/__init__.py,sha256=RB2FCq8BV5vtcERt8dyujrZ5XvkJWsf11bO9bfNpOs4,25
+umapy/Exceptions/api_errors.py,sha256=EUEBQmD0CDGPm_Ezd36sj-GRkEhuBNBbqInqIJQoyVY,749
+umapy-1.0.0.dist-info/LICENSE,sha256=Y6TH5GyhAl_mDkw1ltZ51ey6ShRO_0j3RKgAw_7eCeY,1085
+umapy-1.0.0.dist-info/METADATA,sha256=XVJ50gkDZb5-NxMkHoNGzW8vtMfsd0abxnRUEI6fGNc,1032
+umapy-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+umapy-1.0.0.dist-info/top_level.txt,sha256=nIdPnMRx5raAX3M0454hQ2TQUm-0q9vobbU0xe7ZkI4,6
+umapy-1.0.0.dist-info/RECORD,,
