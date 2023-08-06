@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fissure_engine
+Version: 0.0.12
+Summary: Engine for getting fissure information in Warframe.
+Home-page: UNKNOWN
+Author: Jacob McBride
+Author-email: jake55111@gmail.com
+License: UNKNOWN
+Keywords: warframe,fissures
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+Engine for getting the current fissures for Warframe in a dictionary object.
+
