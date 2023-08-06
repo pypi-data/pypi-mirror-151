@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: robotframework-netmiko
+Version: 1.0.0
+Summary: RobotFramework Library used to wrap Netmiko
+Home-page: https://github.com/mitchmahan/robotframework-netmiko
+Author: Mitchell Mahan
+Author-email: mitchm87@gmail.com
+License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Keywords: robotframework netmiko
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# RobotFramework Netmiko Library
+
+A Netmiko library wrapper for use with RobotFramework.
+
+# Installation
+
+Install using your normal pip/pipenv installation method.
+
+```bash
+pip install robotframework-netmiko
+```
+
+# Getting Started
+
+
+# Examples
