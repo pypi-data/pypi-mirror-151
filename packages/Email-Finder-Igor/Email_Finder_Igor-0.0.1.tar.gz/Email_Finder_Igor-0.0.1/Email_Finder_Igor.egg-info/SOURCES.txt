@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Email_Finder_Igor/__init__.py
+Email_Finder_Igor/main.py
+Email_Finder_Igor.egg-info/PKG-INFO
+Email_Finder_Igor.egg-info/SOURCES.txt
+Email_Finder_Igor.egg-info/dependency_links.txt
+Email_Finder_Igor.egg-info/top_level.txt

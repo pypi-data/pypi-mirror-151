@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Email-Finder-Igor
+Version: 0.0.1
+Summary: A function that searches for mail in the string
+Home-page: https://github.com/IgorKrivchik/Email_Finder_Igor.git
+Author: Igor_K
+Author-email: k13stels@inbox.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### mail search function ###
+
+Searches for all mail in the line
+---
+
