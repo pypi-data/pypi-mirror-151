@@ -1,0 +1,3 @@
+[console_scripts]
+phased-methylation = phased_methylation.phased_methylation:main
+split-methyl-bed = phase_methylation.split_methyl_bed:main
