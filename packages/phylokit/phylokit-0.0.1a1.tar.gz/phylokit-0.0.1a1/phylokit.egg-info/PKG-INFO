@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: phylokit
+Version: 0.0.1a1
+Summary: "Experimental, do not use!"
+Home-page: https://github.com/jeromekelleher/phylokit
+Author: Jerome Kelleher
+Author-email: jerome.kelleher@bdi.ox.ac.uk
+Project-URL: Bug Tracker, https://github.com/jeromekelleher/phylokit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# phylokit
+
+Phylogenetics toolkit for the PyData Ecosystem
+
+**This package is experimental DO NOT USE!**
