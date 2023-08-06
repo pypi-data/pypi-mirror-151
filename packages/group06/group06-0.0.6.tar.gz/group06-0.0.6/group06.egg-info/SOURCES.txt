@@ -1,0 +1,14 @@
+setup.py
+group05/0318.py
+group05/0325.py
+group05/0408.py
+group05/0415.py
+group05/0513代码法和拉希里法代码.py
+group05/1.py
+group05/__init__.py
+group05/say_hello.py
+group05/thompson.py
+group06.egg-info/PKG-INFO
+group06.egg-info/SOURCES.txt
+group06.egg-info/dependency_links.txt
+group06.egg-info/top_level.txt
