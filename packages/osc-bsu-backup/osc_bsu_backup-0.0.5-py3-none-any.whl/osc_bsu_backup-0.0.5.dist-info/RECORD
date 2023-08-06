@@ -1,0 +1,11 @@
+osc_bsu_backup/__init__.py,sha256=5VtMe3cAo3Rrw-QiTw9l9Xg0AP_dGpkrB8F5AJn3pU0,47
+osc_bsu_backup/bsu_backup.py,sha256=U8aOHTJkT9uA3YNblbl7oE4uOvckH14eLBzDmdFgkjc,8469
+osc_bsu_backup/cli.py,sha256=tE_LATYFA4rwShFxZK43ukj3B2SARnn-EFwdgNU303g,4640
+osc_bsu_backup/error.py,sha256=08u7zqaCGkpWoUxNdV5UH7WJsfkOFBYCck7jkKXAGXA,177
+osc_bsu_backup/utils.py,sha256=6DPLgJaIbHkJ3ZTW_0sl0L2X_qhw89eXY4TK7yFCR0I,308
+osc_bsu_backup-0.0.5.dist-info/LICENSE,sha256=8OwganvPTu3W5JFaL_oCttjTbL0n1d4zAHOm_LYCLnU,1478
+osc_bsu_backup-0.0.5.dist-info/METADATA,sha256=U2l2rBs0onH8c3LR0Jj9nZdczw26w_C28a1-IjYcxYw,219
+osc_bsu_backup-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+osc_bsu_backup-0.0.5.dist-info/entry_points.txt,sha256=5uAUA4wGhhCGftJS-_ob5Kmq8-Ix5A-bq7a23E8NdW4,59
+osc_bsu_backup-0.0.5.dist-info/top_level.txt,sha256=-5dXOPHLyQ2bE6Y6UZnU9nGx9si52f8p6ycGV5AvIv0,15
+osc_bsu_backup-0.0.5.dist-info/RECORD,,
