@@ -1,0 +1,14 @@
+swiftbat/__init__.py,sha256=EHViJ10Tp40SQsKLTMMfp5YBP41HC6702MbKBfdcofk,2540
+swiftbat/batcatalog.py,sha256=6xSnMVON7BrcJF698V919r8jr6-qSyBB4XTsSttvoXc,6305
+swiftbat/catalog,sha256=jW6mpmwoYUd78r6F5DoaKOUB6o2zC3sK_zDTYu16BYo,245000
+swiftbat/clockinfo.py,sha256=VGEoC3eprbafWLvi2SmZzv_x5ZFMue_GIFyGXs-ArE4,8131
+swiftbat/generaldir.py,sha256=hnApixTwNUY14K_CFYy5wHXnrJHWkOsGkj9ShthZFgM,14753
+swiftbat/recent_bcttb.fits.gz,sha256=HS3zT-_F2q95S3a8ZtWjInN5SxXmudLLLaY5HN2_HP4,26834
+swiftbat/swinfo.py,sha256=8jZ-s7muQh6HhYvQRQ9uLTCYTj7E653Hs3KmA6cQz3M,57640
+swiftbat/swutil.py,sha256=1g86lcq41nY0jcVu_xzpvBM57PVaySEbE4T-CAPAllQ,15204
+swiftbat-0.1.1.dist-info/LICENSE,sha256=HjamEIbFeOcman_X0IQFDFHzBFhhw1x_qY6u1n_sgNQ,2920
+swiftbat-0.1.1.dist-info/METADATA,sha256=gv2clvjHmUYEpT1uMjmC30mIKMYaRlw4YstQLv-d_0M,2679
+swiftbat-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+swiftbat-0.1.1.dist-info/entry_points.txt,sha256=Mpmsoh7FGauZErPnbFZ_RMooPBuVQLIOk7wPSQiDroc,48
+swiftbat-0.1.1.dist-info/top_level.txt,sha256=Pk9U0gP_e1v2znfgFd1v0L6JzI6c77wPPNyed839LGo,9
+swiftbat-0.1.1.dist-info/RECORD,,
