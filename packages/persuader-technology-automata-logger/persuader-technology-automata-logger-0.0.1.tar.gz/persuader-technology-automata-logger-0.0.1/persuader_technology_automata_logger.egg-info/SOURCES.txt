@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+logger/ConfigureLogger.py
+logger/__init__.py
+logger/conf/__init__.py
+persuader_technology_automata_logger.egg-info/PKG-INFO
+persuader_technology_automata_logger.egg-info/SOURCES.txt
+persuader_technology_automata_logger.egg-info/dependency_links.txt
+persuader_technology_automata_logger.egg-info/requires.txt
+persuader_technology_automata_logger.egg-info/top_level.txt
