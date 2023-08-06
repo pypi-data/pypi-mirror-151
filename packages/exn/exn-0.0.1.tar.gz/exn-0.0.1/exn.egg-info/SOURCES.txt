@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.cfg
+setup.py
+exn/__init__.py
+exn/__main__.py
+exn.egg-info/PKG-INFO
+exn.egg-info/SOURCES.txt
+exn.egg-info/dependency_links.txt
+exn.egg-info/entry_points.txt
+exn.egg-info/not-zip-safe
+exn.egg-info/requires.txt
+exn.egg-info/top_level.txt
+tests/__init__.py

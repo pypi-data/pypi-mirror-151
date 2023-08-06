@@ -1,0 +1,3 @@
+[console_scripts]
+exn = exn.__main__:main
+
