@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tapisservice
+Version: 1.2.0
+Summary: Python lib for interacting with an instance of the Tapis API Framework's tapisservice plugin.
+Home-page: https://github.com/tapis-project/tapipy-tapisservice
+License: BSD-4-Clause
+Author: Joe Stubbs
+Author-email: jstubbs@tacc.utexas.edu
+Maintainer: Joe Stubbs
+Maintainer-email: jstubbs@tacc.utexas.edu
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML
+Requires-Dist: cryptography
+Requires-Dist: flask-cors
+Requires-Dist: jsonschema
+Requires-Dist: openapi-core (==0.12.0)
+Requires-Dist: pycrypto (==2.6.1)
+Requires-Dist: pyjwt
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: tapipy
+Project-URL: Repository, https://github.com/tapis-project/tapipy-tapisservice
+Description-Content-Type: text/markdown
+
+Tapipy plugin granting Tapis service functionality using `import tapisservice`.
