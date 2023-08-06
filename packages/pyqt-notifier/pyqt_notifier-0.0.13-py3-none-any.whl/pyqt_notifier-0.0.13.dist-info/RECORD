@@ -1,0 +1,9 @@
+pyqt_notifier/__init__.py,sha256=c0NDqHp5kfecUBfdXjINPyvPgLIRSup_ggwyMWgH8Sk,40
+pyqt_notifier/pyqtNotifier.py,sha256=DPvz5Z53MZ8JOPmFFvYT6DyJ8hyC-Si4ePBdM5fKU_Q,2428
+pyqt_notifier/ico/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqt_notifier/ico/close.svg,sha256=t8pLfzdSltvHyHqvHDADra3pzR-EUQZGFM94IVIJSqU,617
+pyqt_notifier-0.0.13.dist-info/LICENSE,sha256=MxhG1QOUqldtE27rtgWNXrExKaQRgOx0ZRphvHSGF7Q,1091
+pyqt_notifier-0.0.13.dist-info/METADATA,sha256=KVVnLMDHJk-mC50W9rlkNEmFaL_a53IOVnGOxjTLOPo,1600
+pyqt_notifier-0.0.13.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyqt_notifier-0.0.13.dist-info/top_level.txt,sha256=Ds7qopSONG4EQKEUOpm-phj33-vZMyCo6lCiKkguOv4,14
+pyqt_notifier-0.0.13.dist-info/RECORD,,
