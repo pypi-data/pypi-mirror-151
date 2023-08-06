@@ -1,0 +1,2 @@
+[console_scripts]
+portainer-deployer = portainer_deployer.app:main
