@@ -1,0 +1,4 @@
+[console_scripts]
+tray-runner-cli=tray_runner.cli:run
+tray-runner-gui=tray_runner.gui:run
+
