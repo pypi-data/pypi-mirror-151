@@ -1,0 +1,11 @@
+vids_db/__init__.py,sha256=xo_-2vlHgLwH9AE_oI7f3Z5LcR7XJyCQ1c4mbVa7i3g,110
+vids_db/database.py,sha256=mfW30kcw6sMmA79LcdjuHM5Riphd7HvilHbJBbVtlgo,3374
+vids_db/date.py,sha256=WyyzXP-gIr9M21i3QqmUuUmyGeqG0UZW5HvAJjDf29Y,1182
+vids_db/db_full_text_search.py,sha256=Ab9M-VuFXN5bYYIY0yU6n86UC3Flpm0OLj9N0PNZ7ks,4162
+vids_db/db_sqlite_video.py,sha256=rxuEhCuKc8M7tr9Q1ev7odD6QerlMUFrxV5d4atMRQQ,7409
+vids_db/models.py,sha256=iSr187zhNVpW0fnACp0XcyJ1_ISMKX_pYyuwuyo0zTo,5459
+vids_db/version.py,sha256=1T69rP-EYgJNvIYDGfuZGYk2NVFxinoIIP5DLGDiZhI,64
+vids_db-1.2.2.dist-info/METADATA,sha256=9qau-389Z0AoK0pEuyhdrcP_rxfCxkGCuxEzQD_6vNg,2894
+vids_db-1.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vids_db-1.2.2.dist-info/top_level.txt,sha256=LA_U3j7howNIuvW1o4eXpQETutouN1qcCR37MnKV2Vw,8
+vids_db-1.2.2.dist-info/RECORD,,
