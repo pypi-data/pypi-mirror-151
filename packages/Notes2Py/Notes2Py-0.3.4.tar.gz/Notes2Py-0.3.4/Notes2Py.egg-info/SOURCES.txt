@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+Notes2Py.egg-info/PKG-INFO
+Notes2Py.egg-info/SOURCES.txt
+Notes2Py.egg-info/dependency_links.txt
+Notes2Py.egg-info/entry_points.txt
+Notes2Py.egg-info/requires.txt
+Notes2Py.egg-info/top_level.txt
+notes2py/__init__.py
+notes2py/__main__.py
+notes2py/__version__.py
+notes2py/ui/__init__.py
+notes2py/ui/main.py
