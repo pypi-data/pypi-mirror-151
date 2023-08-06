@@ -1,0 +1,8 @@
+_graphspme.cpython-38-i386-linux-gnu.so,sha256=sOedR5abjLL4EXKZNYubQRAt4SFHCWYjjEPBVgLgBlc,343420
+GraphSPME.libs/libgcc_s-8b50eaaa.so.1,sha256=aEf1qbEV-lDljbUGr6ql8FAfnxyJlKTeEsHNdrBlAHM,101648
+GraphSPME.libs/libstdc++-8baf04f9.so.6.0.28,sha256=7dHa2sV5CgWXjdC4QqxbCNsm-pN9kkmNNqxtn5AaAvs,2428960
+GraphSPME-0.0.2b0.dist-info/top_level.txt,sha256=LLCCqiB0zQRfMu6mzktcYPrkRdzuaP3GHmJjEo_y3fE,21
+GraphSPME-0.0.2b0.dist-info/RECORD,,
+GraphSPME-0.0.2b0.dist-info/METADATA,sha256=LoBXf3SqyxOAC7n0xFugJDXq9RIujO0Sv4LHVeFoHMk,701
+GraphSPME-0.0.2b0.dist-info/WHEEL,sha256=IPIP1vZcU5BlBdvpqbrPk7sEu0opMRWUbxrQPqOIJVA,109
+graphspme/__init__.py,sha256=9JYPNwrDZYlEzghX3eNmQIJRVMcUDte5QSVFMzrgdWY,1671
