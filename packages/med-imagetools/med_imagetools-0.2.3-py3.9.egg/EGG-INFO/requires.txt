@@ -1,0 +1,16 @@
+h5py
+joblib
+matplotlib
+numpy
+matplotlib
+pandas
+pydicom
+pynrrd
+scikit-image
+SimpleITK
+tqdm
+torch
+torchio
+
+[debug]
+pyvis
