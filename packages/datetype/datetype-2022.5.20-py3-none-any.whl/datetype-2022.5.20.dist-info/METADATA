@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: datetype
+Version: 2022.5.20
+Summary: A type wrapper for the standard library `datetime` that supplies stricter checks, such as making 'datetime' not substitutable for 'date', and separating out Naive and Aware datetimes into separate, mutually-incompatible types.
+Author-email: Glyph <glyph@twistedmatrix.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
