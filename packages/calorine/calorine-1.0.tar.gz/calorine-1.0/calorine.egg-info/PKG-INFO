@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: calorine
+Version: 1.0
+Summary: Some like it hot
+Home-page: http://calorine.materialsmodeling.org/
+Author: calorine developer group
+Author-email: UNKNOWN
+License: Mozilla Public License 2.0 (MPL 2.0)
+Description: calorine
+        ========
+        
+        `calorine** <https://xkcd.com/910/>`_ is a Python library for managing `GPUMD <https://gpumd.zheyongfan.org/>`_ simulations.
+        The documentation can be found at https://calorine.materialsmodeling.org/.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Topic :: Scientific/Engineering :: Physics
