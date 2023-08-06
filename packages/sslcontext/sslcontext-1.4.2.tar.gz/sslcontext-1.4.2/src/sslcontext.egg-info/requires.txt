@@ -1,0 +1,9 @@
+
+[:extra == "idna"]
+idna
+
+[:extra == "pyopenssl"]
+pyopenssl
+
+[:extra == "windows-alt-default-certs"]
+wincertstore

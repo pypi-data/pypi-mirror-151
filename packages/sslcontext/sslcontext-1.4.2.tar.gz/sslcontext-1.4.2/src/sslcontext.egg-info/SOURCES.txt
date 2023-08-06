@@ -1,0 +1,15 @@
+setup.py
+src/sslcontext/__init__.py
+src/sslcontext/interface.py
+src/sslcontext/utils.py
+src/sslcontext.egg-info/PKG-INFO
+src/sslcontext.egg-info/SOURCES.txt
+src/sslcontext.egg-info/dependency_links.txt
+src/sslcontext.egg-info/requires.txt
+src/sslcontext.egg-info/top_level.txt
+src/sslcontext/_vendor/__init__.py
+src/sslcontext/_vendor/_utils.py
+src/sslcontext/_vendor/imports.py
+src/sslcontext/_vendor/pyopenssl.py
+src/sslcontext/_vendor/ssl.py
+src/sslcontext/_vendor/wait.py
