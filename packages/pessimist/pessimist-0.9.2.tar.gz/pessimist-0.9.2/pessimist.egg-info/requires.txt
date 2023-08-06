@@ -1,0 +1,7 @@
+volatile>=1.0
+toml>=0.10.2
+pep517>=0.6.0
+honesty==0.3.0a2
+highlighter>=0.1.1
+setuptools>=48.0.0
+click>=7.1.2
