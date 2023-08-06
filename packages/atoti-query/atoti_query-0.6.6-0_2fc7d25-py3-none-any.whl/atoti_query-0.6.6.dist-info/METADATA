@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: atoti-query
+Version: 0.6.6
+Summary: Package to query remote atoti sessions.
+Home-page: https://www.atoti.io
+Author: atoti
+Author-email: dev@atoti.io
+License: UNKNOWN
+Project-URL: Documentation, https://docs.atoti.io/0.6.6/lib/atoti-query/atoti_query.html
+Project-URL: Bug Tracker, https://github.com/atoti/atoti/issues
+Keywords: atoti,query
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.8, !=3.9.7
+Requires-Dist: atoti-core (==0.6.6)
+Requires-Dist: pandas
+Requires-Dist: pyarrow (~=6.0)
+Requires-Dist: typeguard (~=2.12)
+Provides-Extra: dev
+Requires-Dist: atoti ; extra == 'dev'
+Requires-Dist: premailer ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: test-utils ; extra == 'dev'
+
+UNKNOWN
+
