@@ -1,0 +1,1 @@
+Spams a community in a server!
