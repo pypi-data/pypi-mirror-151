@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: notify_py
+Version: 0.0.1
+Summary: This is a holding package for notify-py. This will soon be the main place to install.
+Home-page: https://github.com/ms7m/notify-py
+Author: Mustafa Mohamed
+Author-email: mustafa@ms7m.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+
+This is a holding package for notify-py. This will soon be the main place to install.
+
