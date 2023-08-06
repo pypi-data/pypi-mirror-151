@@ -1,0 +1,7 @@
+libusb1
+numpy
+scipy
+matplotlib
+sounddevice
+h5py
+websockets
