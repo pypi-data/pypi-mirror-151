@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+bwnormalize.egg-info/PKG-INFO
+bwnormalize.egg-info/SOURCES.txt
+bwnormalize.egg-info/dependency_links.txt
+bwnormalize.egg-info/top_level.txt
+normalize/currency/currency.py
+normalize/dates/__init__.py
+normalize/dates/convert_dates.py
+normalize/dates/normalize_dates.py
