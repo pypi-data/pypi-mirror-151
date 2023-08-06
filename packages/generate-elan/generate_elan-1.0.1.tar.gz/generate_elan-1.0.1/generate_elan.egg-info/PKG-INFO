@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: generate-elan
+Version: 1.0.1
+Summary: Automatic ELAN generation package.
+Home-page: UNKNOWN
+Author: Md. Shahad Mahmud Chowdhury
+Author-email: shahad9381@gmail.com
+License: UNKNOWN
+Keywords: STT,ASR,TTS,ELAN,annotation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# GENERATE ELAN
+
+This package reads all the audio files in the directory and generates an ELAN file for each audio file.
+
+
