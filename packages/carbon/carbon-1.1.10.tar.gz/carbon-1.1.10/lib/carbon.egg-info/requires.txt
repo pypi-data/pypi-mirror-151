@@ -1,0 +1,4 @@
+Twisted
+txAMQP
+cachetools
+urllib3
