@@ -1,0 +1,10 @@
+.idea
+build
+*.pyc
+.alkymi_cache
+.pytest_cache
+alkymi.egg-info
+dist
+.coverage
+coverage.xml
+.venv
