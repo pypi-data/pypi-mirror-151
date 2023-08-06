@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+src/b/__init__.py
+src/b/butil.py
+src/ego_b.egg-info/PKG-INFO
+src/ego_b.egg-info/SOURCES.txt
+src/ego_b.egg-info/dependency_links.txt
+src/ego_b.egg-info/top_level.txt
