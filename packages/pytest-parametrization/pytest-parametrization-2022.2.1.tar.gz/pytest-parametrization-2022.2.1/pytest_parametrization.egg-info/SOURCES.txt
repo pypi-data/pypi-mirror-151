@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+parametrization.py
+setup.cfg
+setup.py
+pytest_parametrization.egg-info/PKG-INFO
+pytest_parametrization.egg-info/SOURCES.txt
+pytest_parametrization.egg-info/dependency_links.txt
+pytest_parametrization.egg-info/requires.txt
+pytest_parametrization.egg-info/top_level.txt
+tests/test_parametrization.py
