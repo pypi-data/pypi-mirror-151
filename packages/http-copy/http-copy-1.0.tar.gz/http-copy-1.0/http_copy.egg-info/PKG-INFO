@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: http-copy
+Version: 1.0
+Summary: A simple tool to 'copy' local file or directory to a remote url (recursively) through http.
+Home-page: https://github.com/kaniblu/http-copy
+Author: Kang-Min Yoo
+Author-email: kangmin.yoo@gmail.com
+License: MIT
+Platform: Operating System :: MacOS :: MacOS X
+Platform: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+UNKNOWN
+
