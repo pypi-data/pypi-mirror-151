@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: fast-stats
+Version: 0.0.3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov[all]; extra == 'test'
+Provides-Extra: test
+License-File: LICENSE
+Summary: A fast and simple library for calculating basic statistics
+Keywords: numpy,stats,rust,fast
+Author: Zach Coleman
+Author-email: zacharywcoleman@gmail.com
+License: Apache 2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/zachcoleman/fast-stats
+
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/zachcoleman/fast-stats/CI/main)![PyPI - License](https://img.shields.io/pypi/l/fast-stats)![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fast-stats)![PyPI - Wheel](https://img.shields.io/pypi/wheel/fast-stats)
+# fast-stats
+`fast-stats` is a fast and simple library for calculating simple statistics like precision, recall, and f1-score. The library uses Python to wrap performant 
+
+The project was developed using the [maturin](https://maturin.rs) framework. 
+
+This project is still in development.
+
+### Limitations
+- The Rust code does not enable releasing the GIL
+- Only binary operations are supported at this time
+
+### Running Tests
+Tests are run with `pytest`:
+```shell
+pytest --cov=fast_stats tests
+```
