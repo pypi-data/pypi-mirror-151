@@ -1,0 +1,2 @@
+common
+mgo_serializer
