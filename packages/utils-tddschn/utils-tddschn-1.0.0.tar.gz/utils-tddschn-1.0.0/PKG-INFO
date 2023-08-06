@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: utils-tddschn
+Version: 1.0.0
+Summary: 
+Home-page: https://github.com/tddschn/utils-tddschn
+License: MIT
+Keywords: numpy,utility
+Author: Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: ipykernel (>=6.13.0,<7.0.0)
+Requires-Dist: ipython (>=8.3.0,<9.0.0)
+Project-URL: Bug Tracker, https://github.com/tddschn/utils-tddschn/issues
+Project-URL: Repository, https://github.com/tddschn/utils-tddschn
+Description-Content-Type: text/markdown
+
+
