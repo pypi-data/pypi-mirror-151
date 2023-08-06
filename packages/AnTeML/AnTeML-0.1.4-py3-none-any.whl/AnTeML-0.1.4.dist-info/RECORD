@@ -1,0 +1,11 @@
+anteml/__init__.py,sha256=H1xLtgf-ybvclFhJ6qZ4wK_FK2n0_vRPVoGuqAFVm2I,47
+anteml/attributes.py,sha256=tq7ct9MdLRzlm1oJ8LezJlox15jDpCbe8RKNLZKnZq4,7409
+anteml/elements.py,sha256=9P5mtRSEFegcjSfQejj7fvNafWyykNNquTvaeSN5A6A,24353
+anteml/entities.py,sha256=kw9et-QCLy9k4PjmI2eO1lGFD5m-ppmcoYmxOFaXt0w,904
+anteml/errors.py,sha256=obLCiW29V5rXmFDeLYnUlSsQrId6F662u9vIm50HrOQ,141
+anteml/parser.py,sha256=ywS8mMuY-Kd7kQiU1G8Y4x3WOkykF6kk4g13mBm3I3I,8192
+AnTeML-0.1.4.dist-info/LICENSE,sha256=kTmTiIFrfxYvdXbbwFKoYrSQRSksNmCkrFZTBaow7JE,7980
+AnTeML-0.1.4.dist-info/METADATA,sha256=4A2tMVSW4Y8JPt6rvW_fATRTD8beBE4LD4S4-c_8CvQ,9716
+AnTeML-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+AnTeML-0.1.4.dist-info/top_level.txt,sha256=6g6JoQ3k4_PCnlN9YiInn82Lj1wHhSHiYWpgBkniBHA,7
+AnTeML-0.1.4.dist-info/RECORD,,
