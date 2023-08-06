@@ -1,0 +1,3 @@
+[console_scripts]
+ucalcs=ucalcs.basics:main
+
