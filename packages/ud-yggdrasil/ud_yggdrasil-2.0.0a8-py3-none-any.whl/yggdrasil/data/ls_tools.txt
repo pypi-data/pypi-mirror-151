@@ -1,0 +1,4 @@
+echo off
+set base_path=%~dp0%
+set search="*.bat"
+dir /b %base_path%%search%

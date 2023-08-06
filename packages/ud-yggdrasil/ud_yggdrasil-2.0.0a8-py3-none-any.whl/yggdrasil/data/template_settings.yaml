@@ -1,0 +1,42 @@
+# Settings file for yggdrasil
+
+# Meta information (no impact on the tool's workings, for internal tracing only)
+meta:
+    author: ???
+    date: ???
+    base: ???
+
+# Key information per driver / drivers type
+base_types:
+    -   type: web
+        url_helpers: ???
+        atts_required:
+            -   name
+            -   type
+            -   url
+        atts_optional:
+            -   py_version
+    -   type: local
+        atts_required:
+            -   name
+            -   type
+            -   directory
+            -   entry_points
+        atts_optional:
+            -   py_version
+
+# Key configuration information per drivers
+configurations:
+    -   name: tool_local
+        type: local
+        py_version: 3.8 # Optional (must be installed prior to run)
+        directory: path\to\local\project\directory
+        entry_points:
+            -   name: ep_1 # Name of the entry point as will appear once installed
+                script: script_1.py # Script that will be called by the entry point
+            -   name: ep_2
+                script: script_2.py
+    -   name: tool_web # Optional (must be installed prior to run)
+        type: web
+        py_version: 3.9
+        url: git+https://www.github.com/username/repo.git

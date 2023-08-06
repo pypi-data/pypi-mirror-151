@@ -1,0 +1,5 @@
+echo off
+call "#path_venv#\Scripts\activate"
+call "#entry_point#"
+call deactivate
+echo on
