@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/proxmark3/__init__.py
+src/proxmark3/proxmark3.py
+src/proxmark3py.egg-info/PKG-INFO
+src/proxmark3py.egg-info/SOURCES.txt
+src/proxmark3py.egg-info/dependency_links.txt
+src/proxmark3py.egg-info/requires.txt
+src/proxmark3py.egg-info/top_level.txt
