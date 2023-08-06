@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: x509creds
+Version: 0.10.1
+Summary: SSLContext and SSLSocket interfaces
+Home-page: https://github.com/jose-pr/pypki
+Author: Jose A.
+Author-email: jose-pr@coqui.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (>=36)
+Requires-Dist: pyopenssl ; extra == "pyopenssl"
+
+Python x509 utilities to work load, dump a certificate, key and trust chain that can be used as credentials
+
