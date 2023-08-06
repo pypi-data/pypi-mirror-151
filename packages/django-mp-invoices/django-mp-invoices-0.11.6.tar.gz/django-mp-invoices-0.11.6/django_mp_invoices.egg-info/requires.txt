@@ -1,0 +1,2 @@
+django-mp-pagination==0.2.2
+djforms==0.0.4
