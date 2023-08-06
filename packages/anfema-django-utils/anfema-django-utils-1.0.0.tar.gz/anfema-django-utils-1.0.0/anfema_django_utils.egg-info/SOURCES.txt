@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+anfema_django_utils/__init__.py
+anfema_django_utils.egg-info/PKG-INFO
+anfema_django_utils.egg-info/SOURCES.txt
+anfema_django_utils.egg-info/dependency_links.txt
+anfema_django_utils.egg-info/requires.txt
+anfema_django_utils.egg-info/top_level.txt
+anfema_django_utils/db/__init__.py
+anfema_django_utils/db/functions.py

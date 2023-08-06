@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "anfema-django-utils"
+description = "Collection of various django related utilities"
+readme = "README.md"
+keywords = ["django", "utils"]
+license = {text = "MIT"}
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+dynamic = ["version"]
+
+
+[project.optional-dependencies]
+dev = [
+    "black",
+]
+
+
+[tool.setuptools.dynamic]
+version = {attr = "anfema_django_utils.__version__"}
+
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+extend-exclude = 'migrations'
+
+
+[tool.isort]
+line_length = 120
+profile = "black"
+known_django = "django"
+sections = ["FUTURE", "STDLIB", "DJANGO", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+extend_skip = ["migrations"]
+lines_after_imports = 2
