@@ -1,0 +1,14 @@
+Click>=8.1
+colorama
+requests
+python-dotenv
+beautifulsoup4
+lxml>=4.8.0
+shellingham
+anytree
+html2text
+python-dateutil
+tabulate==0.8.9
+pwinput
+Markdown==3.3.6
+markdownify==0.11.2
