@@ -1,0 +1,10 @@
+freshdesk/__init__.py,sha256=Ef47EoczVDj36QlZ_3NLyftjM57-KNsc6eLMcA4CZ7g,211
+freshdesk/_constants.py,sha256=GxDcSfPRMk3l6Sa21ReEqAHonXgkL7E5Q1052mgdT3Q,58
+freshdesk/client.py,sha256=mbgBRtLihFkoMn1jf95NymnsNjbYGYeFTtXVPRdQoeA,3976
+freshdesk/enumerators.py,sha256=7lFeVmn0itJfEbAB-Lo2Mk1cqk8MjAG3FGoANuL4iP0,1044
+freshdesk/store.py,sha256=Z1zMD89f6dncG6gTnkCfO-jHiPI32n7OqsqZX-rbaKE,1266
+freshworks-0.0.8.dist-info/LICENSE,sha256=iUkeX7oprbjw8QkTugwneinO8Id_V1Y-Fn6G8-9b1Qc,1069
+freshworks-0.0.8.dist-info/METADATA,sha256=f4NYrfh4sFT_Ou8iQvPkolqMviioUsXnJ2pVAR3k0mM,1233
+freshworks-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+freshworks-0.0.8.dist-info/top_level.txt,sha256=Tx3RCVSDl1JAPbgYhhttla3Hmf_sU7rVRfMHIIvDWRk,10
+freshworks-0.0.8.dist-info/RECORD,,

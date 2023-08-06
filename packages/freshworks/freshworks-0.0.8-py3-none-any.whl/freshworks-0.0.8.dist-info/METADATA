@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: freshworks
+Version: 0.0.8
+Summary: Python client library for interacting with Freshworks products.
+Home-page: https://github.com/AceofSpades5757/freshworks
+Author: Kyle L. Davis
+Author-email: AceofSpades5757.github@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+# Description
+
+Python client library for interacting with Freshworks products.
+
+# Installation
+
+`pip install freshworks`
+
+This will install the `freshdesk` package. See below for usage and additional details.
+
+# Usage
+
+## Basic
+
+``` python
+from freshdesk import Client
+
+
+fd = Client(domain='mydomain', api_key='MY_API_KEY')
+```
+
+## Different Plan
+
+``` python
+from freshdesk import Client
+from freshdesk import Plan
+
+
+fd = Client(
+    domain='mydomain',
+    api_key='MY_API_KEY',
+    plan=Plan.ESTATE,
+)
+```
+
+
