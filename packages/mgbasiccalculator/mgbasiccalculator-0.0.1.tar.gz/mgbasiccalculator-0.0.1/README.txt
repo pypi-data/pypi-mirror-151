@@ -1,0 +1,1 @@
+Basic calulator has some functions. add_num(a,b),sub_num(a,b),div_num(a,b),mult_num(a,b),try_num(a,b),exp_num(a,b)

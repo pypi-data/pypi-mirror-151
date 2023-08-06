@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+mgbasiccalculator.egg-info/PKG-INFO
+mgbasiccalculator.egg-info/SOURCES.txt
+mgbasiccalculator.egg-info/dependency_links.txt
+mgbasiccalculator.egg-info/top_level.txt
+mukulbasiccauculator/__int__.py
