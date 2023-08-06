@@ -1,0 +1,16 @@
+qdc_converter/__init__.py,sha256=tXLi4urYNKGL69D9hsAeunk2vize0zzAJwClGpaPgGk,67
+qdc_converter/cli.py,sha256=sazgPZnPS03tx-xEbdXYmSL_b-51za4GZXLmNvv0Iow,10007
+qdc_converter/gui.py,sha256=qys3YYRjSKcO2kzlfJm4EtU5fnE8QeswFZC-cfKjMps,7156
+qdc_converter/main.py,sha256=9WWrI_N1kVah8iA7OWYb4W_cr6ACYE3McQ02ZWk_pNY,2858
+qdc_converter/utils.py,sha256=diJERbSM3XHYjR9TOXmTzFstZpQ3pj3SJ3WfopjhnxU,3150
+qdc_converter/version.py,sha256=CwXL1WvLpDb0OTN4l5sHKg1R39Fodb3zWoqDbtzy7g4,16
+qdc_converter/data/images/icon.icns,sha256=eO8Nle33pzq5-d4afiGr8FJObHg0M6vDOfc_h-D1Cbc,58113
+qdc_converter/data/images/icon.ico,sha256=5UQSGNsbB1BQ2CAwFRczW9MbCsEMzaqtCx-hMq-zctw,100283
+qdc_converter/data/images/icon.png,sha256=NptkZWz-wtxydsGGVa_ZphlXvIV2LrESg-JQfq54cJ4,12128
+qdc_converter/data/locale/ru/LC_MESSAGES/messages.mo,sha256=YCcA4RR9PE56JrwlztrBLpTVOo80T65zZITfPqRlBbU,3486
+qdc_converter-2.3.dist-info/LICENSE,sha256=W18HFgoXWHucyJmVT25O_D2lF-4tXdHCOGZepWiZVN4,1069
+qdc_converter-2.3.dist-info/METADATA,sha256=lXrWypwoDzUp8j-ZgYfqzr0y-pzFOuMjtXJ0iKy8mS4,5943
+qdc_converter-2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qdc_converter-2.3.dist-info/entry_points.txt,sha256=r6ljxtCXMabqm9BJBx4XFuEmLxJs-Lvsd7ZYRhOL_Ao,54
+qdc_converter-2.3.dist-info/top_level.txt,sha256=25N8euzvBWG_t4OPi3SEFX5a1LgAr6sc_askQTrsUrU,14
+qdc_converter-2.3.dist-info/RECORD,,
