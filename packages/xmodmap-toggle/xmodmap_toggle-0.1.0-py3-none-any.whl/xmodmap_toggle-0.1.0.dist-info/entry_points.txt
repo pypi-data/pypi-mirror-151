@@ -1,0 +1,3 @@
+[console_scripts]
+xmodmap_toggle=xmodmap_toggle.main:main
+
