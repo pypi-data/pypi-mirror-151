@@ -1,0 +1,7 @@
+pytorch_ood/__init__.py,sha256=3u0vpuYlFxEtj-KCUSTrwuxdaCiZDdbgpzCCru1bdCo,103
+pytorch_ood/api.py,sha256=8OLmfy8Lifb4BvCWyj4zBuh9d52XGefHrDLhdbKb2Vg,742
+pytorch_ood-0.0.3.dist-info/LICENSE,sha256=sCskNJvx8BCnWvaR8F3J3W0pm3bJhObe3XZKfuLTvnA,11351
+pytorch_ood-0.0.3.dist-info/METADATA,sha256=luOw7RovGlEUqQ2fwFwCh3SXVkxJv7bx8NkYXzYnjCg,5912
+pytorch_ood-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytorch_ood-0.0.3.dist-info/top_level.txt,sha256=DQdb7oLs5bEbGwRkFDMkBe3xeGccj8U-P4eHsi8VOS0,12
+pytorch_ood-0.0.3.dist-info/RECORD,,
