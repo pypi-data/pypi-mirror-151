@@ -1,0 +1,7 @@
+benchling\_api\_client.models.features\_paginated\_list module
+==============================================================
+
+.. automodule:: benchling_api_client.models.features_paginated_list
+   :members:
+   :undoc-members:
+   :show-inheritance:

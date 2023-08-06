@@ -1,0 +1,7 @@
+benchling\_api\_client.api.dna\_alignments.list\_dna\_alignments module
+=======================================================================
+
+.. automodule:: benchling_api_client.api.dna_alignments.list_dna_alignments
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.aligned\_sequence module
+======================================================
+
+.. automodule:: benchling_api_client.models.aligned_sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:

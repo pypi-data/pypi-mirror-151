@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.services.dna_sequence_service module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_sdk.services.dropdown_service module" href="benchling_sdk.services.dropdown_service.html" />
+    <link rel="prev" title="benchling_sdk.services.dna_oligo_service module" href="benchling_sdk.services.dna_oligo_service.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.services.dna_sequence_service">
+<span id="benchling-sdk-services-dna-sequence-service-module"></span><h1>benchling_sdk.services.dna_sequence_service module<a class="headerlink" href="#module-benchling_sdk.services.dna_sequence_service" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DnaSequenceService</span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="benchling_sdk.services.base_service.html#benchling_sdk.services.base_service.BaseService" title="benchling_sdk.services.base_service.BaseService"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.services.base_service.BaseService</span></code></a></p>
+<p>DNA Sequences.</p>
+<p>DNA sequences are the bread and butter of the Benchling Molecular Biology suite. On Benchling, these are
+comprised of a string of nucleotides and collections of other attributes, such as annotations and primers.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences">https://benchling.com/api/reference#/DNA%20Sequences</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.archive">
+<span class="sig-name descname"><span class="pre">archive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequence_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.entity_archive_reason.html#benchling_api_client.models.entity_archive_reason.EntityArchiveReason" title="benchling_api_client.models.entity_archive_reason.EntityArchiveReason"><span class="pre">EntityArchiveReason</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dna_sequences_archival_change.html#benchling_api_client.models.dna_sequences_archival_change.DnaSequencesArchivalChange" title="benchling_api_client.models.dna_sequences_archival_change.DnaSequencesArchivalChange"><span class="pre">DnaSequencesArchivalChange</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.archive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Archive DNA sequences.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/archiveDNASequences">https://benchling.com/api/reference#/DNA%20Sequences/archiveDNASequences</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.auto_annotate">
+<span class="sig-name descname"><span class="pre">auto_annotate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auto_annotate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.auto_annotate_dna_sequences.html#benchling_api_client.models.auto_annotate_dna_sequences.AutoAnnotateDnaSequences" title="benchling_api_client.models.auto_annotate_dna_sequences.AutoAnnotateDnaSequences"><span class="pre">AutoAnnotateDnaSequences</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.async_task_link.html#benchling_api_client.models.async_task_link.AsyncTaskLink" title="benchling_api_client.models.async_task_link.AsyncTaskLink"><span class="pre">AsyncTaskLink</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.auto_annotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto-annotate DNA sequences with matching features from specified Feature Libraries.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/autoAnnotateDnaSequences">https://benchling.com/api/reference#/DNA%20Sequences/autoAnnotateDnaSequences</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.autofill_parts">
+<span class="sig-name descname"><span class="pre">autofill_parts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequence_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.async_task_link.html#benchling_api_client.models.async_task_link.AsyncTaskLink" title="benchling_api_client.models.async_task_link.AsyncTaskLink"><span class="pre">AsyncTaskLink</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.autofill_parts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Autofill DNA sequence parts.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/autofillDNASequenceParts">https://benchling.com/api/reference#/DNA%20Sequences/autofillDNASequenceParts</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.autofill_translations">
+<span class="sig-name descname"><span class="pre">autofill_translations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequence_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.async_task_link.html#benchling_api_client.models.async_task_link.AsyncTaskLink" title="benchling_api_client.models.async_task_link.AsyncTaskLink"><span class="pre">AsyncTaskLink</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.autofill_translations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Autofill DNA sequence translations.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/autofillDNASequenceTranslations">https://benchling.com/api/reference#/DNA%20Sequences/autofillDNASequenceTranslations</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.bulk_create">
+<span class="sig-name descname"><span class="pre">bulk_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequences</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.dna_sequence_bulk_create.html#benchling_api_client.models.dna_sequence_bulk_create.DnaSequenceBulkCreate" title="benchling_api_client.models.dna_sequence_bulk_create.DnaSequenceBulkCreate"><span class="pre">DnaSequenceBulkCreate</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.async_task_link.html#benchling_api_client.models.async_task_link.AsyncTaskLink" title="benchling_api_client.models.async_task_link.AsyncTaskLink"><span class="pre">AsyncTaskLink</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.bulk_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bulk create DNA sequences.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/bulkCreateDNASequences">https://benchling.com/api/reference#/DNA%20Sequences/bulkCreateDNASequences</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.bulk_get">
+<span class="sig-name descname"><span class="pre">bulk_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequence_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.dna_sequence.html#benchling_api_client.models.dna_sequence.DnaSequence" title="benchling_api_client.models.dna_sequence.DnaSequence"><span class="pre">DnaSequence</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.bulk_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bulk get DNA sequences.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/bulkGetDNASequences">https://benchling.com/api/reference#/DNA%20Sequences/bulkGetDNASequences</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.bulk_update">
+<span class="sig-name descname"><span class="pre">bulk_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequences</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.dna_sequence_bulk_update.html#benchling_api_client.models.dna_sequence_bulk_update.DnaSequenceBulkUpdate" title="benchling_api_client.models.dna_sequence_bulk_update.DnaSequenceBulkUpdate"><span class="pre">DnaSequenceBulkUpdate</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.async_task_link.html#benchling_api_client.models.async_task_link.AsyncTaskLink" title="benchling_api_client.models.async_task_link.AsyncTaskLink"><span class="pre">AsyncTaskLink</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.bulk_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bulk update DNA sequences.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/bulkUpdateDNASequences">https://benchling.com/api/reference#/DNA%20Sequences/bulkUpdateDNASequences</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.dna_sequence_create.html#benchling_api_client.models.dna_sequence_create.DnaSequenceCreate" title="benchling_api_client.models.dna_sequence_create.DnaSequenceCreate"><span class="pre">DnaSequenceCreate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dna_sequence.html#benchling_api_client.models.dna_sequence.DnaSequence" title="benchling_api_client.models.dna_sequence.DnaSequence"><span class="pre">DnaSequence</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a DNA sequence.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/createDNASequence">https://benchling.com/api/reference#/DNA%20Sequences/createDNASequence</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.get_by_id">
+<span class="sig-name descname"><span class="pre">get_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequence_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dna_sequence.html#benchling_api_client.models.dna_sequence.DnaSequence" title="benchling_api_client.models.dna_sequence.DnaSequence"><span class="pre">DnaSequence</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a DNA sequence.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/getDNASequence">https://benchling.com/api/reference#/DNA%20Sequences/getDNASequence</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.list">
+<span class="sig-name descname"><span class="pre">list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modified_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bases</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mentioned_in</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">registry_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">archive_reason</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mentions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_registry_ids_any_of</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_includes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names_any_of</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names_any_of_case_sensitive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creator_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema_fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.10)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.list_dna_sequences_sort.html#benchling_api_client.models.list_dna_sequences_sort.ListDNASequencesSort" title="benchling_api_client.models.list_dna_sequences_sort.ListDNASequencesSort"><span class="pre">ListDNASequencesSort</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_sdk.helpers.pagination_helpers.html#benchling_sdk.helpers.pagination_helpers.PageIterator" title="benchling_sdk.helpers.pagination_helpers.PageIterator"><span class="pre">PageIterator</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.dna_sequence.html#benchling_api_client.models.dna_sequence.DnaSequence" title="benchling_api_client.models.dna_sequence.DnaSequence"><span class="pre">DnaSequence</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List DNA sequences.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/listDNASequences">https://benchling.com/api/reference#/DNA%20Sequences/listDNASequences</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.unarchive">
+<span class="sig-name descname"><span class="pre">unarchive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequence_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dna_sequences_archival_change.html#benchling_api_client.models.dna_sequences_archival_change.DnaSequencesArchivalChange" title="benchling_api_client.models.dna_sequences_archival_change.DnaSequencesArchivalChange"><span class="pre">DnaSequencesArchivalChange</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.unarchive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unarchive DNA sequences.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/unarchiveDNASequences">https://benchling.com/api/reference#/DNA%20Sequences/unarchiveDNASequences</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dna_sequence_service.DnaSequenceService.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dna_sequence_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dna_sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.dna_sequence_update.html#benchling_api_client.models.dna_sequence_update.DnaSequenceUpdate" title="benchling_api_client.models.dna_sequence_update.DnaSequenceUpdate"><span class="pre">DnaSequenceUpdate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dna_sequence.html#benchling_api_client.models.dna_sequence.DnaSequence" title="benchling_api_client.models.dna_sequence.DnaSequence"><span class="pre">DnaSequence</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dna_sequence_service.DnaSequenceService.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update a DNA sequence.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences/updateDNASequence">https://benchling.com/api/reference#/DNA%20Sequences/updateDNASequence</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.services.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+  <li><a href="benchling_sdk.services.html">benchling_sdk.services package</a><ul>
+      <li>Previous: <a href="benchling_sdk.services.dna_oligo_service.html" title="previous chapter">benchling_sdk.services.dna_oligo_service module</a></li>
+      <li>Next: <a href="benchling_sdk.services.dropdown_service.html" title="next chapter">benchling_sdk.services.dropdown_service module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.services.dna_sequence_service.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

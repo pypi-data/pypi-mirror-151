@@ -1,0 +1,7 @@
+benchling\_api\_client.models.legacy\_workflow\_stage\_run module
+=================================================================
+
+.. automodule:: benchling_api_client.models.legacy_workflow_stage_run
+   :members:
+   :undoc-members:
+   :show-inheritance:

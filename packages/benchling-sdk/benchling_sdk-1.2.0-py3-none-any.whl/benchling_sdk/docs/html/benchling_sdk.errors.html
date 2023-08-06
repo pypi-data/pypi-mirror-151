@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.errors module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_api_client package" href="benchling_api_client.html" />
+    <link rel="prev" title="benchling_sdk.benchling module" href="benchling_sdk.benchling.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.errors">
+<span id="benchling-sdk-errors-module"></span><h1>benchling_sdk.errors module<a class="headerlink" href="#module-benchling_sdk.errors" title="Permalink to this headline">¶</a></h1>
+<p>Specialized Exception classes.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="benchling_sdk.errors.BenchlingError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BenchlingError</span></span><a class="headerlink" href="#benchling_sdk.errors.BenchlingError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>An error resulting from communicating with the Benchling API.</p>
+<p>This could be an error returned from the API intentionally (e.g., 400 Bad Request) or an
+unexpected transport error (e.g., 502 Bad Gateway)</p>
+<p>The json attribute is present if the API response provided a deserializable JSON body as part of the
+error description. It will be None if the response could not be parsed as JSON.</p>
+<p>The content attribute is any unparsed content returned as part of the response body.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.errors.BenchlingError.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.MutableMapping" title="(in Python v3.10)"><span class="pre">MutableMapping</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.10)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.10)"><span class="pre">bytes</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parsed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.forbidden_error.html#benchling_api_client.models.forbidden_error.ForbiddenError" title="benchling_api_client.models.forbidden_error.ForbiddenError"><span class="pre">ForbiddenError</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.not_found_error.html#benchling_api_client.models.not_found_error.NotFoundError" title="benchling_api_client.models.not_found_error.NotFoundError"><span class="pre">NotFoundError</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.bad_request_error.html#benchling_api_client.models.bad_request_error.BadRequestError" title="benchling_api_client.models.bad_request_error.BadRequestError"><span class="pre">BadRequestError</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.bad_request_error_bulk.html#benchling_api_client.models.bad_request_error_bulk.BadRequestErrorBulk" title="benchling_api_client.models.bad_request_error_bulk.BadRequestErrorBulk"><span class="pre">BadRequestErrorBulk</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.conflict_error.html#benchling_api_client.models.conflict_error.ConflictError" title="benchling_api_client.models.conflict_error.ConflictError"><span class="pre">ConflictError</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.errors.BenchlingError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.BenchlingError.content">
+<span class="sig-name descname"><span class="pre">content</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.10)"><span class="pre">bytes</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.errors.BenchlingError.content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.errors.BenchlingError.from_response">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.types.html#benchling_api_client.types.Response" title="benchling_api_client.types.Response"><span class="pre">Response</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#benchling_sdk.errors.BenchlingError" title="benchling_sdk.errors.BenchlingError"><span class="pre">BenchlingError</span></a></span></span><a class="headerlink" href="#benchling_sdk.errors.BenchlingError.from_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a BenchlingError from a generated Response.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.BenchlingError.headers">
+<span class="sig-name descname"><span class="pre">headers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">MutableMapping</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.errors.BenchlingError.headers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.BenchlingError.json">
+<span class="sig-name descname"><span class="pre">json</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.errors.BenchlingError.json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.BenchlingError.parsed">
+<span class="sig-name descname"><span class="pre">parsed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.forbidden_error.html#benchling_api_client.models.forbidden_error.ForbiddenError" title="benchling_api_client.models.forbidden_error.ForbiddenError"><span class="pre">ForbiddenError</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.not_found_error.html#benchling_api_client.models.not_found_error.NotFoundError" title="benchling_api_client.models.not_found_error.NotFoundError"><span class="pre">NotFoundError</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.bad_request_error.html#benchling_api_client.models.bad_request_error.BadRequestError" title="benchling_api_client.models.bad_request_error.BadRequestError"><span class="pre">BadRequestError</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.bad_request_error_bulk.html#benchling_api_client.models.bad_request_error_bulk.BadRequestErrorBulk" title="benchling_api_client.models.bad_request_error_bulk.BadRequestErrorBulk"><span class="pre">BadRequestErrorBulk</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.conflict_error.html#benchling_api_client.models.conflict_error.ConflictError" title="benchling_api_client.models.conflict_error.ConflictError"><span class="pre">ConflictError</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.errors.BenchlingError.parsed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.BenchlingError.status_code">
+<span class="sig-name descname"><span class="pre">status_code</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></em><a class="headerlink" href="#benchling_sdk.errors.BenchlingError.status_code" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="benchling_sdk.errors.RegistrationError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegistrationError</span></span><a class="headerlink" href="#benchling_sdk.errors.RegistrationError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>An error relating to Benchling registration.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.errors.RegistrationError.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.10)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_status</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.async_task_status.html#benchling_api_client.models.async_task_status.AsyncTaskStatus" title="benchling_api_client.models.async_task_status.AsyncTaskStatus"><span class="pre">AsyncTaskStatus</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.errors.RegistrationError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.RegistrationError.errors">
+<span class="sig-name descname"><span class="pre">errors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#benchling_sdk.errors.RegistrationError.errors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.errors.RegistrationError.from_task">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.async_task.html#benchling_api_client.models.async_task.AsyncTask" title="benchling_api_client.models.async_task.AsyncTask"><span class="pre">AsyncTask</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#benchling_sdk.errors.RegistrationError" title="benchling_sdk.errors.RegistrationError"><span class="pre">RegistrationError</span></a></span></span><a class="headerlink" href="#benchling_sdk.errors.RegistrationError.from_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a RegistrationError from a failed AsyncTask.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.RegistrationError.message">
+<span class="sig-name descname"><span class="pre">message</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#benchling_sdk.errors.RegistrationError.message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.RegistrationError.task_status">
+<span class="sig-name descname"><span class="pre">task_status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.async_task_status.html#benchling_api_client.models.async_task_status.AsyncTaskStatus" title="benchling_api_client.models.async_task_status.AsyncTaskStatus"><span class="pre">AsyncTaskStatus</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#benchling_sdk.errors.RegistrationError.task_status" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="benchling_sdk.errors.WaitForTaskExpiredError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WaitForTaskExpiredError</span></span><a class="headerlink" href="#benchling_sdk.errors.WaitForTaskExpiredError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>An error indicating an AsyncTask did not complete in the time allotted for polling.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.errors.WaitForTaskExpiredError.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.async_task.html#benchling_api_client.models.async_task.AsyncTask" title="benchling_api_client.models.async_task.AsyncTask"><span class="pre">AsyncTask</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.errors.WaitForTaskExpiredError.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.WaitForTaskExpiredError.message">
+<span class="sig-name descname"><span class="pre">message</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="headerlink" href="#benchling_sdk.errors.WaitForTaskExpiredError.message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.errors.WaitForTaskExpiredError.task">
+<span class="sig-name descname"><span class="pre">task</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.async_task.html#benchling_api_client.models.async_task.AsyncTask" title="benchling_api_client.models.async_task.AsyncTask"><span class="pre">AsyncTask</span></a></em><a class="headerlink" href="#benchling_sdk.errors.WaitForTaskExpiredError.task" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="benchling_sdk.errors.raise_for_status">
+<span class="sig-name descname"><span class="pre">raise_for_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.types.html#benchling_api_client.types.Response" title="benchling_api_client.types.Response"><span class="pre">Response</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.errors.raise_for_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate a Response for a successful HTTP status code or raise a BenchlingError.</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.benchling.html">benchling_sdk.benchling module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">benchling_sdk.errors module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+      <li>Previous: <a href="benchling_sdk.benchling.html" title="previous chapter">benchling_sdk.benchling module</a></li>
+      <li>Next: <a href="benchling_api_client.html" title="next chapter">benchling_api_client package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.errors.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

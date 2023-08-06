@@ -1,0 +1,7 @@
+benchling\_api\_client.api.feature\_libraries.update\_feature module
+====================================================================
+
+.. automodule:: benchling_api_client.api.feature_libraries.update_feature
+   :members:
+   :undoc-members:
+   :show-inheritance:

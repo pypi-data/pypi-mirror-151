@@ -1,0 +1,7 @@
+benchling\_api\_client.models.rna\_sequence\_for\_bulk\_update\_request module
+==============================================================================
+
+.. automodule:: benchling_api_client.models.rna_sequence_for_bulk_update_request
+   :members:
+   :undoc-members:
+   :show-inheritance:

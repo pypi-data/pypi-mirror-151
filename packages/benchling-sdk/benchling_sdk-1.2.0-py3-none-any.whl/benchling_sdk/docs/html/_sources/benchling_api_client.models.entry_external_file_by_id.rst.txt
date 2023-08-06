@@ -1,0 +1,7 @@
+benchling\_api\_client.models.entry\_external\_file\_by\_id module
+==================================================================
+
+.. automodule:: benchling_api_client.models.entry_external_file_by_id
+   :members:
+   :undoc-members:
+   :show-inheritance:

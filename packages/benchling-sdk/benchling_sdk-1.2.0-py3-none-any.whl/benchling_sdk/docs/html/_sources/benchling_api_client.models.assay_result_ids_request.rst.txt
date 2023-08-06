@@ -1,0 +1,7 @@
+benchling\_api\_client.models.assay\_result\_ids\_request module
+================================================================
+
+.. automodule:: benchling_api_client.models.assay_result_ids_request
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.list\_folders\_section module
+===========================================================
+
+.. automodule:: benchling_api_client.models.list_folders_section
+   :members:
+   :undoc-members:
+   :show-inheritance:

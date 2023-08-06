@@ -1,0 +1,7 @@
+benchling\_api\_client.models.box\_schema module
+================================================
+
+.. automodule:: benchling_api_client.models.box_schema
+   :members:
+   :undoc-members:
+   :show-inheritance:

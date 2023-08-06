@@ -1,0 +1,7 @@
+benchling\_api\_client.models.custom\_entities\_archive module
+==============================================================
+
+.. automodule:: benchling_api_client.models.custom_entities_archive
+   :members:
+   :undoc-members:
+   :show-inheritance:

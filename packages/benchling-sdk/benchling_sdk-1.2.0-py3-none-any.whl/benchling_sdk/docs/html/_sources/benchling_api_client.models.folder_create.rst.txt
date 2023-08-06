@@ -1,0 +1,7 @@
+benchling\_api\_client.models.folder\_create module
+===================================================
+
+.. automodule:: benchling_api_client.models.folder_create
+   :members:
+   :undoc-members:
+   :show-inheritance:

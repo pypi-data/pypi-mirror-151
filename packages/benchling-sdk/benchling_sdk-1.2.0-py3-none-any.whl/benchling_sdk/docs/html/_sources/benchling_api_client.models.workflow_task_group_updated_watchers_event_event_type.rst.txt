@@ -1,0 +1,7 @@
+benchling\_api\_client.models.workflow\_task\_group\_updated\_watchers\_event\_event\_type module
+=================================================================================================
+
+.. automodule:: benchling_api_client.models.workflow_task_group_updated_watchers_event_event_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

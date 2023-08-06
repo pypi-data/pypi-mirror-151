@@ -1,0 +1,7 @@
+benchling\_api\_client.api.batches.unarchive\_batches module
+============================================================
+
+.. automodule:: benchling_api_client.api.batches.unarchive_batches
+   :members:
+   :undoc-members:
+   :show-inheritance:

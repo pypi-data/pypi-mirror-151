@@ -1,0 +1,24 @@
+benchling\_api\_client.api.entries package
+==========================================
+
+.. automodule:: benchling_api_client.api.entries
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.entries.archive_entries
+   benchling_api_client.api.entries.bulk_get_entries
+   benchling_api_client.api.entries.create_entry
+   benchling_api_client.api.entries.get_entry
+   benchling_api_client.api.entries.get_entry_template
+   benchling_api_client.api.entries.get_external_file_metadata
+   benchling_api_client.api.entries.list_entries
+   benchling_api_client.api.entries.list_entry_templates
+   benchling_api_client.api.entries.unarchive_entries
+   benchling_api_client.api.entries.update_entry

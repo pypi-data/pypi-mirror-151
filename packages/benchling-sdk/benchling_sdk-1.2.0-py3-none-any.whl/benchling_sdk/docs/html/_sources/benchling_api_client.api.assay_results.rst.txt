@@ -1,0 +1,24 @@
+benchling\_api\_client.api.assay\_results package
+=================================================
+
+.. automodule:: benchling_api_client.api.assay_results
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.assay_results.abort_assay_results_transaction
+   benchling_api_client.api.assay_results.archive_assay_results
+   benchling_api_client.api.assay_results.bulk_get_assay_results
+   benchling_api_client.api.assay_results.commit_assay_results_transaction
+   benchling_api_client.api.assay_results.create_assay_results
+   benchling_api_client.api.assay_results.create_assay_results_in_transaction
+   benchling_api_client.api.assay_results.create_assay_results_transaction
+   benchling_api_client.api.assay_results.get_assay_result
+   benchling_api_client.api.assay_results.list_assay_results
+   benchling_api_client.api.assay_results.unarchive_assay_results

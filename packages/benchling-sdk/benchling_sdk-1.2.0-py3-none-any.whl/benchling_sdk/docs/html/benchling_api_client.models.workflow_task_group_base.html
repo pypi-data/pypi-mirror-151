@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_api_client.models.workflow_task_group_base module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_api_client.models.workflow_task_group_create module" href="benchling_api_client.models.workflow_task_group_create.html" />
+    <link rel="prev" title="benchling_api_client.models.workflow_task_group_archive_reason module" href="benchling_api_client.models.workflow_task_group_archive_reason.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_api_client.models.workflow_task_group_base">
+<span id="benchling-api-client-models-workflow-task-group-base-module"></span><h1>benchling_api_client.models.workflow_task_group_base module<a class="headerlink" href="#module-benchling_api_client.models.workflow_task_group_base" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WorkflowTaskGroupBase</span></span><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">creation_origin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.creation_origin.html#benchling_api_client.models.creation_origin.CreationOrigin" title="benchling_api_client.models.creation_origin.CreationOrigin"><span class="pre">CreationOrigin</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_creation_origin'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.user_summary.html#benchling_api_client.models.user_summary.UserSummary" title="benchling_api_client.models.user_summary.UserSummary"><span class="pre">UserSummary</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_creator'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.folder.html#benchling_api_client.models.folder.Folder" title="benchling_api_client.models.folder.Folder"><span class="pre">Folder</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_folder'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.workflow_output_summary.html#benchling_api_client.models.workflow_output_summary.WorkflowOutputSummary" title="benchling_api_client.models.workflow_output_summary.WorkflowOutputSummary"><span class="pre">WorkflowOutputSummary</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_outputs'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">responsible_team</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.team_summary.html#benchling_api_client.models.team_summary.TeamSummary" title="benchling_api_client.models.team_summary.TeamSummary"><span class="pre">TeamSummary</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_responsible_team'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tasks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.workflow_task_summary.html#benchling_api_client.models.workflow_task_summary.WorkflowTaskSummary" title="benchling_api_client.models.workflow_task_summary.WorkflowTaskSummary"><span class="pre">WorkflowTaskSummary</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_tasks'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">watchers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.user_summary.html#benchling_api_client.models.user_summary.UserSummary" title="benchling_api_client.models.user_summary.UserSummary"><span class="pre">UserSummary</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_watchers'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">web_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_web_url'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">workflow_task_schema</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.workflow_task_schema_summary.html#benchling_api_client.models.workflow_task_schema_summary.WorkflowTaskSchemaSummary" title="benchling_api_client.models.workflow_task_schema_summary.WorkflowTaskSchemaSummary"><span class="pre">WorkflowTaskSchemaSummary</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_workflow_task_schema'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_display_id'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_id'].default</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.types.Unset</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">attr_dict['_name'].default</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method generated by attrs for class WorkflowTaskGroupBase.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.additional_keys">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">additional_keys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.additional_keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.additional_properties">
+<span class="sig-name descname"><span class="pre">additional_properties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.additional_properties" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.creation_origin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">creation_origin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.creation_origin.html#benchling_api_client.models.creation_origin.CreationOrigin" title="benchling_api_client.models.creation_origin.CreationOrigin"><span class="pre">CreationOrigin</span></a></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.creation_origin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.creator">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">creator</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.user_summary.html#benchling_api_client.models.user_summary.UserSummary" title="benchling_api_client.models.user_summary.UserSummary"><span class="pre">UserSummary</span></a></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.creator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.display_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.display_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>User-friendly ID of the workflow task group</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.folder">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">folder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.folder.html#benchling_api_client.models.folder.Folder" title="benchling_api_client.models.folder.Folder"><span class="pre">Folder</span></a></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.folder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.from_dict">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src_dict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.10)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.models.workflow_task_group_base.T</span></span></span><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The ID of the workflow task group</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the workflow task group</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.outputs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">outputs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.workflow_output_summary.html#benchling_api_client.models.workflow_output_summary.WorkflowOutputSummary" title="benchling_api_client.models.workflow_output_summary.WorkflowOutputSummary"><span class="pre">WorkflowOutputSummary</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>The outputs of the workflow task group</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.responsible_team">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">responsible_team</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.team_summary.html#benchling_api_client.models.team_summary.TeamSummary" title="benchling_api_client.models.team_summary.TeamSummary"><span class="pre">TeamSummary</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.responsible_team" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.tasks">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tasks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.workflow_task_summary.html#benchling_api_client.models.workflow_task_summary.WorkflowTaskSummary" title="benchling_api_client.models.workflow_task_summary.WorkflowTaskSummary"><span class="pre">WorkflowTaskSummary</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.tasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>The input tasks to the workflow task group</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.10)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.watchers">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">watchers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.user_summary.html#benchling_api_client.models.user_summary.UserSummary" title="benchling_api_client.models.user_summary.UserSummary"><span class="pre">UserSummary</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.watchers" title="Permalink to this definition">¶</a></dt>
+<dd><p>The users watching the workflow task group</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.web_url">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">web_url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.web_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>URL of the workflow task group</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.workflow_task_schema">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">workflow_task_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.models.workflow_task_schema_summary.html#benchling_api_client.models.workflow_task_schema_summary.WorkflowTaskSchemaSummary" title="benchling_api_client.models.workflow_task_schema_summary.WorkflowTaskSchemaSummary"><span class="pre">WorkflowTaskSchemaSummary</span></a></em><a class="headerlink" href="#benchling_api_client.models.workflow_task_group_base.WorkflowTaskGroupBase.workflow_task_schema" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_api_client.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_api_client.api.html">benchling_api_client.api package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_api_client.models.html">benchling_api_client.models package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_api_client.models.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_api_client.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_api_client.html">benchling_api_client package</a><ul>
+  <li><a href="benchling_api_client.models.html">benchling_api_client.models package</a><ul>
+      <li>Previous: <a href="benchling_api_client.models.workflow_task_group_archive_reason.html" title="previous chapter">benchling_api_client.models.workflow_task_group_archive_reason module</a></li>
+      <li>Next: <a href="benchling_api_client.models.workflow_task_group_create.html" title="next chapter">benchling_api_client.models.workflow_task_group_create module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_api_client.models.workflow_task_group_base.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

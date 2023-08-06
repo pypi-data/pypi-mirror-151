@@ -1,0 +1,7 @@
+benchling\_api\_client.models.stage\_entry\_updated\_review\_record\_event module
+=================================================================================
+
+.. automodule:: benchling_api_client.models.stage_entry_updated_review_record_event
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.api.label\_templates.list\_label\_templates module
+=========================================================================
+
+.. automodule:: benchling_api_client.api.label_templates.list_label_templates
+   :members:
+   :undoc-members:
+   :show-inheritance:

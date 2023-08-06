@@ -1,0 +1,7 @@
+benchling\_api\_client.models.box\_creation\_table\_note\_part\_type module
+===========================================================================
+
+.. automodule:: benchling_api_client.models.box_creation_table_note_part_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

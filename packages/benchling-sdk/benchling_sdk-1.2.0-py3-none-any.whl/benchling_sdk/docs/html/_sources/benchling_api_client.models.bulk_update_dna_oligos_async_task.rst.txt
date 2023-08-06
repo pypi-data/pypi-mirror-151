@@ -1,0 +1,7 @@
+benchling\_api\_client.models.bulk\_update\_dna\_oligos\_async\_task module
+===========================================================================
+
+.. automodule:: benchling_api_client.models.bulk_update_dna_oligos_async_task
+   :members:
+   :undoc-members:
+   :show-inheritance:

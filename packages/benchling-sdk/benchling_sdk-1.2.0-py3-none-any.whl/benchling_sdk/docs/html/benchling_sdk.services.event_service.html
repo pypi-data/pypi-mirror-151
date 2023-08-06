@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.services.event_service module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_sdk.services.export_service module" href="benchling_sdk.services.export_service.html" />
+    <link rel="prev" title="benchling_sdk.services.entry_service module" href="benchling_sdk.services.entry_service.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.services.event_service">
+<span id="benchling-sdk-services-event-service-module"></span><h1>benchling_sdk.services.event_service module<a class="headerlink" href="#module-benchling_sdk.services.event_service" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.services.event_service.EventService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EventService</span></span><a class="headerlink" href="#benchling_sdk.services.event_service.EventService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="benchling_sdk.services.base_service.html#benchling_sdk.services.base_service.BaseService" title="benchling_sdk.services.base_service.BaseService"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.services.base_service.BaseService</span></code></a></p>
+<p>Events.</p>
+<p>The Events system allows external services to subscribe to events that are triggered in Benchling (e.g. plasmid
+registration, request submission, etc).</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Events">https://benchling.com/api/reference#/Events</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.event_service.EventService.list">
+<span class="sig-name descname"><span class="pre">list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">created_atgte</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">starting_after</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poll</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_sdk.helpers.pagination_helpers.html#benchling_sdk.helpers.pagination_helpers.PageIterator" title="benchling_sdk.helpers.pagination_helpers.PageIterator"><span class="pre">PageIterator</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.event.html#benchling_api_client.models.event.Event" title="benchling_api_client.models.event.Event"><span class="pre">Event</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.services.event_service.EventService.list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List Events.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Events/listEvents">https://benchling.com/api/reference#/Events/listEvents</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.services.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+  <li><a href="benchling_sdk.services.html">benchling_sdk.services package</a><ul>
+      <li>Previous: <a href="benchling_sdk.services.entry_service.html" title="previous chapter">benchling_sdk.services.entry_service module</a></li>
+      <li>Next: <a href="benchling_sdk.services.export_service.html" title="next chapter">benchling_sdk.services.export_service module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.services.event_service.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

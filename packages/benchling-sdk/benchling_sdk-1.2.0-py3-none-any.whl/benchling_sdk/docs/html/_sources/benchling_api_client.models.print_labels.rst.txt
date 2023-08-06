@@ -1,0 +1,7 @@
+benchling\_api\_client.models.print\_labels module
+==================================================
+
+.. automodule:: benchling_api_client.models.print_labels
+   :members:
+   :undoc-members:
+   :show-inheritance:

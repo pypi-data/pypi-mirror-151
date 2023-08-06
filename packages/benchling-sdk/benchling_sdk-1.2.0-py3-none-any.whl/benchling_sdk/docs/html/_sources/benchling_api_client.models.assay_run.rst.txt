@@ -1,0 +1,7 @@
+benchling\_api\_client.models.assay\_run module
+===============================================
+
+.. automodule:: benchling_api_client.models.assay_run
+   :members:
+   :undoc-members:
+   :show-inheritance:

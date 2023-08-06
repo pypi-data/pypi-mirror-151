@@ -1,0 +1,7 @@
+benchling\_api\_client.api.workflow\_outputs.bulk\_create\_workflow\_outputs module
+===================================================================================
+
+.. automodule:: benchling_api_client.api.workflow_outputs.bulk_create_workflow_outputs
+   :members:
+   :undoc-members:
+   :show-inheritance:

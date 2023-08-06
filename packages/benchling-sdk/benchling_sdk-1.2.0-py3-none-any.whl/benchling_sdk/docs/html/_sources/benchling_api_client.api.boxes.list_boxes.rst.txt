@@ -1,0 +1,7 @@
+benchling\_api\_client.api.boxes.list\_boxes module
+===================================================
+
+.. automodule:: benchling_api_client.api.boxes.list_boxes
+   :members:
+   :undoc-members:
+   :show-inheritance:

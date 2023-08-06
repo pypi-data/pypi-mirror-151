@@ -1,0 +1,7 @@
+benchling\_api\_client.api.aa\_sequences.create\_aa\_sequence module
+====================================================================
+
+.. automodule:: benchling_api_client.api.aa_sequences.create_aa_sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:

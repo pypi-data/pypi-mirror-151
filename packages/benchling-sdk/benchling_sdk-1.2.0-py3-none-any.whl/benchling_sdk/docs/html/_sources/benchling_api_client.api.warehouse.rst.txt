@@ -1,0 +1,15 @@
+benchling\_api\_client.api.warehouse package
+============================================
+
+.. automodule:: benchling_api_client.api.warehouse
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.warehouse.create_warehouse_credentials

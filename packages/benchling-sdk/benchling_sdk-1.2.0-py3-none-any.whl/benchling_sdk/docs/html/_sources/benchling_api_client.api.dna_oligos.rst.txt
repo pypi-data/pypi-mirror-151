@@ -1,0 +1,22 @@
+benchling\_api\_client.api.dna\_oligos package
+==============================================
+
+.. automodule:: benchling_api_client.api.dna_oligos
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.dna_oligos.archive_dna_oligos
+   benchling_api_client.api.dna_oligos.bulk_create_dna_oligos
+   benchling_api_client.api.dna_oligos.bulk_update_dna_oligos
+   benchling_api_client.api.dna_oligos.create_dna_oligo
+   benchling_api_client.api.dna_oligos.get_dna_oligo
+   benchling_api_client.api.dna_oligos.list_dna_oligos
+   benchling_api_client.api.dna_oligos.unarchive_dna_oligos
+   benchling_api_client.api.dna_oligos.update_dna_oligo

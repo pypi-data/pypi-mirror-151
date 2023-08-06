@@ -1,0 +1,7 @@
+benchling\_api\_client.api.dna\_sequences.update\_dna\_sequence module
+======================================================================
+
+.. automodule:: benchling_api_client.api.dna_sequences.update_dna_sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:

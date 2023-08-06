@@ -1,0 +1,7 @@
+benchling\_api\_client.api.registry.register\_entities module
+=============================================================
+
+.. automodule:: benchling_api_client.api.registry.register_entities
+   :members:
+   :undoc-members:
+   :show-inheritance:

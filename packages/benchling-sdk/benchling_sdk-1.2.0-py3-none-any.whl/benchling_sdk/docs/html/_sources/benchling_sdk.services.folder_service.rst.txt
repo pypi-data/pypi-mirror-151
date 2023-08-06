@@ -1,0 +1,7 @@
+benchling\_sdk.services.folder\_service module
+==============================================
+
+.. automodule:: benchling_sdk.services.folder_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

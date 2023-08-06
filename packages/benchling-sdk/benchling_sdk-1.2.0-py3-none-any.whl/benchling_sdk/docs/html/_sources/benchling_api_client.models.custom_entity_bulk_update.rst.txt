@@ -1,0 +1,7 @@
+benchling\_api\_client.models.custom\_entity\_bulk\_update module
+=================================================================
+
+.. automodule:: benchling_api_client.models.custom_entity_bulk_update
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.api.legacy\_workflows.list\_legacy\_workflow\_stages module
+==================================================================================
+
+.. automodule:: benchling_api_client.api.legacy_workflows.list_legacy_workflow_stages
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_sdk.services.custom\_entity\_service module
+======================================================
+
+.. automodule:: benchling_sdk.services.custom_entity_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.feature\_create module
+====================================================
+
+.. automodule:: benchling_api_client.models.feature_create
+   :members:
+   :undoc-members:
+   :show-inheritance:

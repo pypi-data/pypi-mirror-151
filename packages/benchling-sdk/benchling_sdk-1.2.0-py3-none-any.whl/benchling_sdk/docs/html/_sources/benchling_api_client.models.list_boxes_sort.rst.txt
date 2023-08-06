@@ -1,0 +1,7 @@
+benchling\_api\_client.models.list\_boxes\_sort module
+======================================================
+
+.. automodule:: benchling_api_client.models.list_boxes_sort
+   :members:
+   :undoc-members:
+   :show-inheritance:

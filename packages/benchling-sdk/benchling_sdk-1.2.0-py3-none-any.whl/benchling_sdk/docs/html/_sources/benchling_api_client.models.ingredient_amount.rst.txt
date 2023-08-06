@@ -1,0 +1,7 @@
+benchling\_api\_client.models.ingredient\_amount module
+=======================================================
+
+.. automodule:: benchling_api_client.models.ingredient_amount
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.batch\_schema module
+==================================================
+
+.. automodule:: benchling_api_client.models.batch_schema
+   :members:
+   :undoc-members:
+   :show-inheritance:

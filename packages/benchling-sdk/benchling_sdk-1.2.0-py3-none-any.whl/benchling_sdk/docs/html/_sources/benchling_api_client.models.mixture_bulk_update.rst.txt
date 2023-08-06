@@ -1,0 +1,7 @@
+benchling\_api\_client.models.mixture\_bulk\_update module
+==========================================================
+
+.. automodule:: benchling_api_client.models.mixture_bulk_update
+   :members:
+   :undoc-members:
+   :show-inheritance:

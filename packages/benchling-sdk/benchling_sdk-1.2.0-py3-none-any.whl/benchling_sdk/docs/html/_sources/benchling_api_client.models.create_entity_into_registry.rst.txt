@@ -1,0 +1,7 @@
+benchling\_api\_client.models.create\_entity\_into\_registry module
+===================================================================
+
+.. automodule:: benchling_api_client.models.create_entity_into_registry
+   :members:
+   :undoc-members:
+   :show-inheritance:

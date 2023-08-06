@@ -1,0 +1,21 @@
+benchling\_api\_client.api.locations package
+============================================
+
+.. automodule:: benchling_api_client.api.locations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.locations.archive_locations
+   benchling_api_client.api.locations.bulk_get_locations
+   benchling_api_client.api.locations.create_location
+   benchling_api_client.api.locations.get_location
+   benchling_api_client.api.locations.list_locations
+   benchling_api_client.api.locations.unarchive_locations
+   benchling_api_client.api.locations.update_location

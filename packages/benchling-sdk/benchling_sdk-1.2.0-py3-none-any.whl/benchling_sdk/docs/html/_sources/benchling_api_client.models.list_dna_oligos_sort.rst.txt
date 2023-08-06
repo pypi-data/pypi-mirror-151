@@ -1,0 +1,7 @@
+benchling\_api\_client.models.list\_dna\_oligos\_sort module
+============================================================
+
+.. automodule:: benchling_api_client.models.list_dna_oligos_sort
+   :members:
+   :undoc-members:
+   :show-inheritance:

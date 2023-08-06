@@ -1,0 +1,7 @@
+benchling\_api\_client.models.container\_transfer\_destination\_contents\_item module
+=====================================================================================
+
+.. automodule:: benchling_api_client.models.container_transfer_destination_contents_item
+   :members:
+   :undoc-members:
+   :show-inheritance:

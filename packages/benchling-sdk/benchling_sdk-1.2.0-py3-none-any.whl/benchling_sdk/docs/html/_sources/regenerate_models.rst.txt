@@ -1,0 +1,7 @@
+regenerate\_models module
+=========================
+
+.. automodule:: regenerate_models
+   :members:
+   :undoc-members:
+   :show-inheritance:

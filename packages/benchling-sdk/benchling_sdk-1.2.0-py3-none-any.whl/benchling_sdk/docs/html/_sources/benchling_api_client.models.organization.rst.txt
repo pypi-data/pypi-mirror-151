@@ -1,0 +1,7 @@
+benchling\_api\_client.models.organization module
+=================================================
+
+.. automodule:: benchling_api_client.models.organization
+   :members:
+   :undoc-members:
+   :show-inheritance:

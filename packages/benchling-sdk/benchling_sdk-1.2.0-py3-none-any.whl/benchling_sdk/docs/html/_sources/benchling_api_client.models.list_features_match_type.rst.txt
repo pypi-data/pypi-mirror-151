@@ -1,0 +1,7 @@
+benchling\_api\_client.models.list\_features\_match\_type module
+================================================================
+
+.. automodule:: benchling_api_client.models.list_features_match_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

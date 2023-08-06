@@ -1,0 +1,7 @@
+benchling\_api\_client.api.assay\_results.abort\_assay\_results\_transaction module
+===================================================================================
+
+.. automodule:: benchling_api_client.api.assay_results.abort_assay_results_transaction
+   :members:
+   :undoc-members:
+   :show-inheritance:

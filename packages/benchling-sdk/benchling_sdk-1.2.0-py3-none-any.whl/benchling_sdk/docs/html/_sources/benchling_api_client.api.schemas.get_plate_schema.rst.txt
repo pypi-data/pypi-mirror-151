@@ -1,0 +1,7 @@
+benchling\_api\_client.api.schemas.get\_plate\_schema module
+============================================================
+
+.. automodule:: benchling_api_client.api.schemas.get_plate_schema
+   :members:
+   :undoc-members:
+   :show-inheritance:

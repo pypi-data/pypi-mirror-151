@@ -1,0 +1,15 @@
+benchling\_api\_client.api.authentication package
+=================================================
+
+.. automodule:: benchling_api_client.api.authentication
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.authentication.generate_token

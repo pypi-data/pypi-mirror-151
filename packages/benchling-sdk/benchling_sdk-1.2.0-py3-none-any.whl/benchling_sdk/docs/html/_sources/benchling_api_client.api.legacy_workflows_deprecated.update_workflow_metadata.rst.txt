@@ -1,0 +1,7 @@
+benchling\_api\_client.api.legacy\_workflows\_deprecated.update\_workflow\_metadata module
+==========================================================================================
+
+.. automodule:: benchling_api_client.api.legacy_workflows_deprecated.update_workflow_metadata
+   :members:
+   :undoc-members:
+   :show-inheritance:

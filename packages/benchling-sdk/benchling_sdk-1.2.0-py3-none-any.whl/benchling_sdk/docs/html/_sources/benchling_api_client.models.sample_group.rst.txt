@@ -1,0 +1,7 @@
+benchling\_api\_client.models.sample\_group module
+==================================================
+
+.. automodule:: benchling_api_client.models.sample_group
+   :members:
+   :undoc-members:
+   :show-inheritance:

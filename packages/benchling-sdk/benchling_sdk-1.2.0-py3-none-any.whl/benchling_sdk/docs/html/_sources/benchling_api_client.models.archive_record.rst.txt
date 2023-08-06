@@ -1,0 +1,7 @@
+benchling\_api\_client.models.archive\_record module
+====================================================
+
+.. automodule:: benchling_api_client.models.archive_record
+   :members:
+   :undoc-members:
+   :show-inheritance:

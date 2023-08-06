@@ -1,0 +1,7 @@
+benchling\_api\_client.api.requests.bulk\_update\_request\_tasks module
+=======================================================================
+
+.. automodule:: benchling_api_client.api.requests.bulk_update_request_tasks
+   :members:
+   :undoc-members:
+   :show-inheritance:

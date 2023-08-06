@@ -1,0 +1,7 @@
+benchling\_api\_client.models.bad\_request\_error\_bulk\_error module
+=====================================================================
+
+.. automodule:: benchling_api_client.models.bad_request_error_bulk_error
+   :members:
+   :undoc-members:
+   :show-inheritance:

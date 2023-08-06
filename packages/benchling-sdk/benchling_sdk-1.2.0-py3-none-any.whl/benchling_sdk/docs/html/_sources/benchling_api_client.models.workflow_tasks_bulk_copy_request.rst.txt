@@ -1,0 +1,7 @@
+benchling\_api\_client.models.workflow\_tasks\_bulk\_copy\_request module
+=========================================================================
+
+.. automodule:: benchling_api_client.models.workflow_tasks_bulk_copy_request
+   :members:
+   :undoc-members:
+   :show-inheritance:

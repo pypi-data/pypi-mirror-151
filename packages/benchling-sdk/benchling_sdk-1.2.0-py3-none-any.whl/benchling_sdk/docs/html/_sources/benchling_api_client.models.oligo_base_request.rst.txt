@@ -1,0 +1,7 @@
+benchling\_api\_client.models.oligo\_base\_request module
+=========================================================
+
+.. automodule:: benchling_api_client.models.oligo_base_request
+   :members:
+   :undoc-members:
+   :show-inheritance:

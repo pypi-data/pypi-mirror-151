@@ -1,0 +1,7 @@
+benchling\_sdk.services.registry\_service module
+================================================
+
+.. automodule:: benchling_sdk.services.registry_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.generic\_entity module
+====================================================
+
+.. automodule:: benchling_api_client.models.generic_entity
+   :members:
+   :undoc-members:
+   :show-inheritance:

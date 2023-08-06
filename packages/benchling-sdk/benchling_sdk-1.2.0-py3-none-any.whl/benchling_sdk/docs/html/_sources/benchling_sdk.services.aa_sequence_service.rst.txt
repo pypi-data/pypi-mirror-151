@@ -1,0 +1,7 @@
+benchling\_sdk.services.aa\_sequence\_service module
+====================================================
+
+.. automodule:: benchling_sdk.services.aa_sequence_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

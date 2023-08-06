@@ -1,0 +1,7 @@
+benchling\_api\_client.models.not\_found\_error module
+======================================================
+
+.. automodule:: benchling_api_client.models.not_found_error
+   :members:
+   :undoc-members:
+   :show-inheritance:

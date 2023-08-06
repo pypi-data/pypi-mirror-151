@@ -1,0 +1,7 @@
+benchling\_api\_client.models.dna\_sequences\_archival\_change module
+=====================================================================
+
+.. automodule:: benchling_api_client.models.dna_sequences_archival_change
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_sdk.services.container\_service module
+=================================================
+
+.. automodule:: benchling_sdk.services.container_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

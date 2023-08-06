@@ -1,0 +1,7 @@
+benchling\_api\_client.api.users.get\_user module
+=================================================
+
+.. automodule:: benchling_api_client.api.users.get_user
+   :members:
+   :undoc-members:
+   :show-inheritance:

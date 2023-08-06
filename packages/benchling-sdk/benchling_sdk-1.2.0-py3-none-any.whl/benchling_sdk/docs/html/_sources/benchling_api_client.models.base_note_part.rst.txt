@@ -1,0 +1,7 @@
+benchling\_api\_client.models.base\_note\_part module
+=====================================================
+
+.. automodule:: benchling_api_client.models.base_note_part
+   :members:
+   :undoc-members:
+   :show-inheritance:

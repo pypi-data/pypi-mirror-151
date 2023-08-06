@@ -1,0 +1,7 @@
+benchling\_api\_client.models.request\_sample\_group\_create module
+===================================================================
+
+.. automodule:: benchling_api_client.models.request_sample_group_create
+   :members:
+   :undoc-members:
+   :show-inheritance:

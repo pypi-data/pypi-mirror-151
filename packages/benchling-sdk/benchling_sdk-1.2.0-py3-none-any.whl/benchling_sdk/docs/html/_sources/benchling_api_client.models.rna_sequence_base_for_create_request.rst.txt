@@ -1,0 +1,7 @@
+benchling\_api\_client.models.rna\_sequence\_base\_for\_create\_request module
+==============================================================================
+
+.. automodule:: benchling_api_client.models.rna_sequence_base_for_create_request
+   :members:
+   :undoc-members:
+   :show-inheritance:

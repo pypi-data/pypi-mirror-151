@@ -1,0 +1,24 @@
+benchling\_api\_client.api.aa\_sequences package
+================================================
+
+.. automodule:: benchling_api_client.api.aa_sequences
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.aa_sequences.archive_aa_sequences
+   benchling_api_client.api.aa_sequences.auto_annotate_aa_sequences
+   benchling_api_client.api.aa_sequences.bulk_create_aa_sequences
+   benchling_api_client.api.aa_sequences.bulk_get_aa_sequences
+   benchling_api_client.api.aa_sequences.bulk_update_aa_sequences
+   benchling_api_client.api.aa_sequences.create_aa_sequence
+   benchling_api_client.api.aa_sequences.get_aa_sequence
+   benchling_api_client.api.aa_sequences.list_aa_sequences
+   benchling_api_client.api.aa_sequences.unarchive_aa_sequences
+   benchling_api_client.api.aa_sequences.update_aa_sequence

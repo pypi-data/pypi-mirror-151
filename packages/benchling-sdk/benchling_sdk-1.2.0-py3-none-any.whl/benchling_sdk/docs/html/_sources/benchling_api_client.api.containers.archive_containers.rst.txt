@@ -1,0 +1,7 @@
+benchling\_api\_client.api.containers.archive\_containers module
+================================================================
+
+.. automodule:: benchling_api_client.api.containers.archive_containers
+   :members:
+   :undoc-members:
+   :show-inheritance:

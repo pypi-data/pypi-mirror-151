@@ -1,0 +1,7 @@
+benchling\_api\_client.models.location module
+=============================================
+
+.. automodule:: benchling_api_client.models.location
+   :members:
+   :undoc-members:
+   :show-inheritance:

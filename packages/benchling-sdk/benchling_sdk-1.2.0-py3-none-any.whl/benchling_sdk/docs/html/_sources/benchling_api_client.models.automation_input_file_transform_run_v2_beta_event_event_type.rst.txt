@@ -1,0 +1,7 @@
+benchling\_api\_client.models.automation\_input\_file\_transform\_run\_v2\_beta\_event\_event\_type module
+==========================================================================================================
+
+.. automodule:: benchling_api_client.models.automation_input_file_transform_run_v2_beta_event_event_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

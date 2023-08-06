@@ -1,0 +1,7 @@
+benchling\_api\_client.api.aa\_sequences.bulk\_get\_aa\_sequences module
+========================================================================
+
+.. automodule:: benchling_api_client.api.aa_sequences.bulk_get_aa_sequences
+   :members:
+   :undoc-members:
+   :show-inheritance:

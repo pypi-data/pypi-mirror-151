@@ -1,0 +1,7 @@
+benchling\_api\_client.api.entries.create\_entry module
+=======================================================
+
+.. automodule:: benchling_api_client.api.entries.create_entry
+   :members:
+   :undoc-members:
+   :show-inheritance:

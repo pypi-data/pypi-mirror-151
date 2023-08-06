@@ -1,0 +1,7 @@
+benchling\_api\_client.api.dropdowns.update\_dropdown module
+============================================================
+
+.. automodule:: benchling_api_client.api.dropdowns.update_dropdown
+   :members:
+   :undoc-members:
+   :show-inheritance:

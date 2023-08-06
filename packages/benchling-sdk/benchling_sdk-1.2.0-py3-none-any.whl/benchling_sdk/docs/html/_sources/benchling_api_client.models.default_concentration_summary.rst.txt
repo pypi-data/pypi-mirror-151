@@ -1,0 +1,7 @@
+benchling\_api\_client.models.default\_concentration\_summary module
+====================================================================
+
+.. automodule:: benchling_api_client.models.default_concentration_summary
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.legacy\_workflow\_sample module
+=============================================================
+
+.. automodule:: benchling_api_client.models.legacy_workflow_sample
+   :members:
+   :undoc-members:
+   :show-inheritance:

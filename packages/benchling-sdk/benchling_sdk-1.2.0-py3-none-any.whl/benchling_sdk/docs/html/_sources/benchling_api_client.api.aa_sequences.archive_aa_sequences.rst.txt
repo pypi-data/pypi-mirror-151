@@ -1,0 +1,7 @@
+benchling\_api\_client.api.aa\_sequences.archive\_aa\_sequences module
+======================================================================
+
+.. automodule:: benchling_api_client.api.aa_sequences.archive_aa_sequences
+   :members:
+   :undoc-members:
+   :show-inheritance:

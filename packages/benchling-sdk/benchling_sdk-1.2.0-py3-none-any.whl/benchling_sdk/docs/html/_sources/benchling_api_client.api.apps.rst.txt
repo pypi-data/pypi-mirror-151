@@ -1,0 +1,20 @@
+benchling\_api\_client.api.apps package
+=======================================
+
+.. automodule:: benchling_api_client.api.apps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.apps.archive_benchling_apps
+   benchling_api_client.api.apps.create_benchling_app
+   benchling_api_client.api.apps.get_benchling_app_by_id
+   benchling_api_client.api.apps.list_benchling_apps
+   benchling_api_client.api.apps.patch_benchling_app
+   benchling_api_client.api.apps.unarchive_benchling_apps

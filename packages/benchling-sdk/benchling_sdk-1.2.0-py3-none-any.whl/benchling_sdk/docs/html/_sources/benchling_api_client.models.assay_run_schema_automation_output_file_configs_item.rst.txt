@@ -1,0 +1,7 @@
+benchling\_api\_client.models.assay\_run\_schema\_automation\_output\_file\_configs\_item module
+================================================================================================
+
+.. automodule:: benchling_api_client.models.assay_run_schema_automation_output_file_configs_item
+   :members:
+   :undoc-members:
+   :show-inheritance:

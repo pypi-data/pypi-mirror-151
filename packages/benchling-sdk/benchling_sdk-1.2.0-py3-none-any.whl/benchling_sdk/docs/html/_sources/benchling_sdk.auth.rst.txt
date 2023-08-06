@@ -1,0 +1,16 @@
+benchling\_sdk.auth package
+===========================
+
+.. automodule:: benchling_sdk.auth
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_sdk.auth.api_key_auth
+   benchling_sdk.auth.client_credentials_oauth2

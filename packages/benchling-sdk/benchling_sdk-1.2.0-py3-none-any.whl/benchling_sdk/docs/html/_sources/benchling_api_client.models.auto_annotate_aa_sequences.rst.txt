@@ -1,0 +1,7 @@
+benchling\_api\_client.models.auto\_annotate\_aa\_sequences module
+==================================================================
+
+.. automodule:: benchling_api_client.models.auto_annotate_aa_sequences
+   :members:
+   :undoc-members:
+   :show-inheritance:

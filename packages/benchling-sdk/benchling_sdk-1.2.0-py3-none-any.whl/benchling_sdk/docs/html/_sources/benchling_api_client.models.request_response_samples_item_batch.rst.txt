@@ -1,0 +1,7 @@
+benchling\_api\_client.models.request\_response\_samples\_item\_batch module
+============================================================================
+
+.. automodule:: benchling_api_client.models.request_response_samples_item_batch
+   :members:
+   :undoc-members:
+   :show-inheritance:

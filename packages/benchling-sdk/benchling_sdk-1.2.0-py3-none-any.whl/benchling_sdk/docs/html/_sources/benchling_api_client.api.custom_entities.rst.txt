@@ -1,0 +1,23 @@
+benchling\_api\_client.api.custom\_entities package
+===================================================
+
+.. automodule:: benchling_api_client.api.custom_entities
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.custom_entities.archive_custom_entities
+   benchling_api_client.api.custom_entities.bulk_create_custom_entities
+   benchling_api_client.api.custom_entities.bulk_get_custom_entities
+   benchling_api_client.api.custom_entities.bulk_update_custom_entities
+   benchling_api_client.api.custom_entities.create_custom_entity
+   benchling_api_client.api.custom_entities.get_custom_entity
+   benchling_api_client.api.custom_entities.list_custom_entities
+   benchling_api_client.api.custom_entities.unarchive_custom_entities
+   benchling_api_client.api.custom_entities.update_custom_entity

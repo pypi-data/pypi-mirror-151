@@ -1,0 +1,7 @@
+benchling\_api\_client.api.requests.bulk\_get\_requests module
+==============================================================
+
+.. automodule:: benchling_api_client.api.requests.bulk_get_requests
+   :members:
+   :undoc-members:
+   :show-inheritance:

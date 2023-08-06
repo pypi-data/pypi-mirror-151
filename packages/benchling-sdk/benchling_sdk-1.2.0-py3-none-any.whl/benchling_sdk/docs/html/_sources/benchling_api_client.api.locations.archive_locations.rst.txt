@@ -1,0 +1,7 @@
+benchling\_api\_client.api.locations.archive\_locations module
+==============================================================
+
+.. automodule:: benchling_api_client.api.locations.archive_locations
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.plates\_archive\_reason module
+============================================================
+
+.. automodule:: benchling_api_client.models.plates_archive_reason
+   :members:
+   :undoc-members:
+   :show-inheritance:

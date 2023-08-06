@@ -1,0 +1,7 @@
+benchling\_api\_client.models.deprecated\_container\_volume\_for\_input module
+==============================================================================
+
+.. automodule:: benchling_api_client.models.deprecated_container_volume_for_input
+   :members:
+   :undoc-members:
+   :show-inheritance:

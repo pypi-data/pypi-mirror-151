@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.helpers.pagination_helpers module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_sdk.helpers.response_helpers module" href="benchling_sdk.helpers.response_helpers.html" />
+    <link rel="prev" title="benchling_sdk.helpers.logging_helpers module" href="benchling_sdk.helpers.logging_helpers.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.helpers.pagination_helpers">
+<span id="benchling-sdk-helpers-pagination-helpers-module"></span><h1>benchling_sdk.helpers.pagination_helpers module<a class="headerlink" href="#module-benchling_sdk.helpers.pagination_helpers" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.LengthExtractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LengthExtractor</span></span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.LengthExtractor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Extract estimated size information if available.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.LengthExtractor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.LengthExtractor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.PageIterator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageIterator</span></span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.PageIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">benchling_sdk.helpers.pagination_helpers.Model</span></code>]]</p>
+<p>Paginate arbitrary Benchling API endpoints which support the concept of a <cite>next_token</cite>.</p>
+<p><cite>next_token</cite> points to subsequent pages of results. Supporting API
+endpoints typically return a “results body” object which contains a key for <cite>next_token</cite>,
+as well as a key for a collection of results representing the current page.</p>
+<p>Any API errors encountered during retrieval of a page will be marshaled to
+<a class="reference internal" href="benchling_sdk.errors.html#benchling_sdk.errors.BenchlingError" title="benchling_sdk.errors.BenchlingError"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.errors.BenchlingError</span></code></a>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.PageIterator.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_call</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.helpers.pagination_helpers.PagedApiCall" title="benchling_sdk.helpers.pagination_helpers.PagedApiCall"><span class="pre">PagedApiCall</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">results_extractor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.helpers.pagination_helpers.ResultsExtractor" title="benchling_sdk.helpers.pagination_helpers.ResultsExtractor"><span class="pre">ResultsExtractor</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_extractor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.helpers.pagination_helpers.TokenExtractor" title="benchling_sdk.helpers.pagination_helpers.TokenExtractor"><span class="pre">TokenExtractor</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">_default_token_extractor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_extractor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.helpers.pagination_helpers.LengthExtractor" title="benchling_sdk.helpers.pagination_helpers.LengthExtractor"><span class="pre">LengthExtractor</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">_default_length_extractor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.PageIterator.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a PageIterator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>api_call</strong> – A Callable that accepts a str for the next_token</p></li>
+<li><p><strong>results_extractor</strong> – A Callable that can extract a list of models from a results body</p></li>
+<li><p><strong>token_extractor</strong> – A Callable that can extract the next_token str value from a results body</p></li>
+<li><p><strong>length_extractor</strong> – A Callable that can extract the approximated available results
+count from a response</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.PageIterator.estimated_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">estimated_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></em><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.PageIterator.estimated_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value of the Result-Count header provided by the API, if applicable.</p>
+<p>Some endpoints may not implement this header. In that case, NotImplementedError is raised.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.PageIterator.first">
+<span class="sig-name descname"><span class="pre">first</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_sdk.helpers.pagination_helpers.Model</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.PageIterator.first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the first item from the first page.</p>
+<p>Will return None if the page had zero results.
+Operates independent of iteration - calls to <cite>first</cite> after starting iteration will still
+return the first item from the first page and not the current page.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.PageIterator.next_token">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">next_token</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.PageIterator.next_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the last nextToken provided by the API, if applicable.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.PagedApiCall">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PagedApiCall</span></span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.PagedApiCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Make an HTTP call which implemented pagination.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.PagedApiCall.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.PagedApiCall.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.ResultsExtractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResultsExtractor</span></span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.ResultsExtractor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Extract results from a paginated response.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.ResultsExtractor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.ResultsExtractor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.TokenExtractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TokenExtractor</span></span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.TokenExtractor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Get the next token.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.pagination_helpers.TokenExtractor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.pagination_helpers.TokenExtractor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.helpers.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+  <li><a href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a><ul>
+      <li>Previous: <a href="benchling_sdk.helpers.logging_helpers.html" title="previous chapter">benchling_sdk.helpers.logging_helpers module</a></li>
+      <li>Next: <a href="benchling_sdk.helpers.response_helpers.html" title="next chapter">benchling_sdk.helpers.response_helpers module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.helpers.pagination_helpers.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

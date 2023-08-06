@@ -1,0 +1,7 @@
+benchling\_api\_client.models.creation\_origin module
+=====================================================
+
+.. automodule:: benchling_api_client.models.creation_origin
+   :members:
+   :undoc-members:
+   :show-inheritance:

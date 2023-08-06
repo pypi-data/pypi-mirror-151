@@ -1,0 +1,7 @@
+benchling\_sdk.services.assay\_result\_service module
+=====================================================
+
+.. automodule:: benchling_sdk.services.assay_result_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

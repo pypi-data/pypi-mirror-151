@@ -1,0 +1,22 @@
+benchling\_api\_client.api.boxes package
+========================================
+
+.. automodule:: benchling_api_client.api.boxes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.boxes.archive_boxes
+   benchling_api_client.api.boxes.bulk_get_boxes
+   benchling_api_client.api.boxes.create_box
+   benchling_api_client.api.boxes.get_box
+   benchling_api_client.api.boxes.list_box_contents
+   benchling_api_client.api.boxes.list_boxes
+   benchling_api_client.api.boxes.unarchive_boxes
+   benchling_api_client.api.boxes.update_box

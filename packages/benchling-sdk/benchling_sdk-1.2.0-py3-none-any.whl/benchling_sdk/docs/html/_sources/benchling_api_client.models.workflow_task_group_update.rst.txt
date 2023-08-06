@@ -1,0 +1,7 @@
+benchling\_api\_client.models.workflow\_task\_group\_update module
+==================================================================
+
+.. automodule:: benchling_api_client.models.workflow_task_group_update
+   :members:
+   :undoc-members:
+   :show-inheritance:
