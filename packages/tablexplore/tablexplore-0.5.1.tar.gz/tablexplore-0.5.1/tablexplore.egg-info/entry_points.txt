@@ -1,0 +1,3 @@
+[gui_scripts]
+tablexplore = tablexplore.app:main
+

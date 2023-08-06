@@ -1,0 +1,5 @@
+PySide2
+matplotlib>=3.0
+openpyxl
+pandas>=1.1
+xlrd>=1.0
