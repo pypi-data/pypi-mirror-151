@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: py_lambda_warmer
+Version: 0.1.0
+Summary: Warmer Utility for Lambda Function
+Home-page: https://github.com/satyamsoni2211/LambdaWarmerPy.git
+Author: satyam soni
+Author-email: satyamsoni@hotmail.co.uk
+License: mit
+Description: UNKNOWN
+Keywords: lambda cold start warming performance
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
