@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ghm
+Version: 0.1.2
+Summary: GitHub Mirrorer - Bulk mirror GitHub repositories
+Home-page: https://github.com/mconigliaro/ghm
+Author: Mike Conigliaro
+Author-email: mike@conigliaro.org
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Systems Administration
+Requires-Dist: PyGithub (>=1.55,<2.0)
+Requires-Dist: pygit2 (>=1.9,<2.0)
+Project-URL: Repository, https://github.com/mconigliaro/ghm
