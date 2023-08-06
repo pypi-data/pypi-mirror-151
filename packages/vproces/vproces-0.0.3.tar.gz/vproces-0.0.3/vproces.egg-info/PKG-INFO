@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vproces
+Version: 0.0.3
+Summary: An awesome package that does something
+Author: Wojciech A
+Author-email: wa@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+License-File: LICENSE.txt
+
+UNKNOWN
+
