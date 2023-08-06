@@ -1,0 +1,19 @@
+flask_toolkits copy/__init__.py,sha256=6th9QEadzoPdKAd9rMLi1duBoXKDMHrn1daQ_7K0mO0,198
+flask_toolkits copy/dependencies.py,sha256=0TJfk3WGpYnzqvK-VBjyxn7ljkEKLkrrJBfLT9bGUNo,265
+flask_toolkits copy/exceptions.py,sha256=_tSFptzRF8XvCGdNWZ2fEAMMftfSrq7Wa36267YcPV8,113
+flask_toolkits copy/fields.py,sha256=OjbougeaOxU0pB7_aPZb1h83U6xclSZKiAQlsGk_l6I,6651
+flask_toolkits copy/middleware.py,sha256=q81o3roIMwgTMrA04wQtthqB9tyg-W4QwwC2kwp0-oo,71
+flask_toolkits copy/params.py,sha256=AHsgBphevTlSUzDBFN6jz13C94_qD_cjUJdH2u_CJDw,661
+flask_toolkits copy/responses.py,sha256=aEgwXuDEIKfBlUFUeTCSSlCpUl3t50wogH5M5T6dB0A,2744
+flask_toolkits copy/routing.py,sha256=lBNt1HtbWxxJKJrGpLO4Vz6J8xI45jQO_M0n0Gsrnws,25387
+flask_toolkits copy/schemas.py,sha256=qoexyScyGnBbm_xRfQ1R9ayMxVbXgiO73nHxpugbIrY,992
+flask_toolkits copy/status.py,sha256=T2u_0aR3lA5BWc0XhyKx50kKRWjH9EWzXnNH8YY4Vbk,2859
+flask_toolkits copy/swagger/__init__.py,sha256=8ioO4t-99kv2VOBcOUnaIhObZnTstQJfM0yuzTCS8iE,1269
+flask_toolkits copy/swagger/flask_swagger_ui.py,sha256=P-b51nUsLesPgo4ZtcC_3pE7QTBsLVtCdDCmq440Bro,3034
+flask_toolkits copy/swagger/swagger.py,sha256=XtibR7-17xnsmt87haW98Hi-M_MTkALbS1ZE7H8h1aQ,12546
+flask_toolkits copy/swagger/template.py,sha256=5DVbKsfPe51aC8g5iOlFeGnm-LQJfFI761JSDjdw-r0,5776
+flask_toolkits-0.1.3.dist-info/LICENSE,sha256=g_wJo4INBdEowI61_9pIMaETRoSaa_lNf9rYVIGt-74,1068
+flask_toolkits-0.1.3.dist-info/METADATA,sha256=bVNWCnWI9tYDKHfdHl8keV5Z8S1mkCfHWtHyEFM8ILU,4765
+flask_toolkits-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flask_toolkits-0.1.3.dist-info/top_level.txt,sha256=2ZbhXciYWppfqtcCR4Jy_XiBMg9xQaf8Z-Y9Zeey_7c,20
+flask_toolkits-0.1.3.dist-info/RECORD,,
