@@ -1,0 +1,16 @@
+setup.py
+FCoRE.egg-info/PKG-INFO
+FCoRE.egg-info/SOURCES.txt
+FCoRE.egg-info/dependency_links.txt
+FCoRE.egg-info/requires.txt
+FCoRE.egg-info/top_level.txt
+FDate/DATE.py
+FDate/__init__.py
+FExt/EXT.py
+FExt/__init__.py
+FList/LIST.py
+FList/__init__.py
+FLog/LOGGER.py
+FLog/__init__.py
+FSON/DICT.py
+FSON/__init__.py
