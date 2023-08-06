@@ -1,0 +1,9 @@
+dask_regionprops/__init__.py,sha256=mAB9TaZqUkwVKQeOkv85_UbQ9QxRgaW61Gf5b8FnIqY,333
+dask_regionprops/_version.py,sha256=YNd1dEdZGzG2MvXfaTQdmMYCLOQm-rV09_xmC5Hxu5Y,142
+dask_regionprops/regionprops.py,sha256=5vZlfLjqzL86f1DaXwRef2SCjhAOYBRDcr4f9PEhPPE,5627
+dask_regionprops/utils.py,sha256=yBZlvCdCrvZvH2tuoaBnJ5wAIgytJ-IFDoe6cWJXDJ0,388
+dask_regionprops-0.3.0.dist-info/LICENSE,sha256=yTQnPuhJSi9HaTPc6NquVbjje-AAcpNOC4jiyrb5SyM,1499
+dask_regionprops-0.3.0.dist-info/METADATA,sha256=cGO73Fa7VnIrzkKHaoMm9NIfMuQsm1TEy07I12Q7cC0,4866
+dask_regionprops-0.3.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dask_regionprops-0.3.0.dist-info/top_level.txt,sha256=KuoeMKL9cHRrpORv-eQ5sxPL55_gSekAXhE35zzbmUo,17
+dask_regionprops-0.3.0.dist-info/RECORD,,
