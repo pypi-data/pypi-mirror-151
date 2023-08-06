@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pplay-pygame
+Version: 2.0.4
+Summary: A simple game abstraction framework to pygame
+Author: Prof. Esteban Clua, Prof. Anselmo Montenegro, Gabriel Saldanha, Adônis Gasiglia, Yuri Nogueira
+Author-email: esteban@ic.uff.br, anselmo@ic.uff.br, gabrielcrsaldanha@gmail.com, adonisgasiglia@id.uff.br, yurinogueira@id.uff.br
+License: GPL-2
+Project-URL: Documentation, https://www2.ic.uff.br/pplay/
+Project-URL: Code, https://github.com/yurinogueira/pplay
+Project-URL: Tracker, https://github.com/yurinogueira/pplay/issues
+Requires-Python: >=3.7,
+License-File: LICENSE.rst
+Requires-Dist: pygame (>=2.1.2)
+
+=====
+PPlay
+=====
+
+Abstraction framework for creating games in Python, built on pygame, used by Computer Science students at Universidade Federal Fluminense.
+
+More information and detailed documentation on the project website:
+https://www2.ic.uff.br/pplay/
+
+
+Installation
+------------
+
+::
+
+   pip install pplay-pygame
+
+Credits
+-------
+
+
+* Prof. Esteban Clua
+* Prof. Anselmo Montenegro
+* Gabriel Saldanha
+* Adonis Gasiglia
+* Yuri Nogueira
+
+
+Dependencies
+------------
+
+PPlay obviously depends on Python and pygame and all their dependencies.
+
+Dependencies:
+
+* Python >= 3.7
+* pygame >= 2.1.2
