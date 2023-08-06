@@ -1,0 +1,15 @@
+kevin/__init__.py,sha256=CUOnXPTxGrRn3fLIvIhbHDAX74J3gTjv6u4nGFlZs90,192
+kevin/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kevin/demo.py,sha256=MvT-D4kvho4lo1sqdHP-Ck-_m1xoZe1Vs4Ghn-dD8z0,104
+kevin/t1.py,sha256=Y_AFW5sjcTjJOqAewGVXLZVgpxObNXtFRSLq_7uFcs8,498
+kevin/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kevin/data/area_base.csv,sha256=JKZObNY_Qz4cE2sjpWFK_aW5OcmKtmXWIrqlOnluFrM,128380
+kevin/data/load_data.py,sha256=92tOS4FTZOB3q8GOPfZEXvIBSIezEHYavZ6HDpvZAOA,639
+kevin/parse/__init__.py,sha256=z4eFP7LPgOiiDdvBisj9iGgG-1ZIGpjoTB95q8BaJ80,79
+kevin/parse/address_parse.py,sha256=pW4QzoVKIrV7ts-qK5XZ0wfwo1kURZ8_yfToy5eGMa0,2854
+test/__init__.py,sha256=EsN8zc0lMOLY6v-Udx4ctMxWkwwmDTnH9Ff_MVCuK4w,154
+zakevin-1.0.0.dist-info/LICENSE,sha256=3isvkyagpwVlPX8Zo3JiQV9pgT7HMu6ogTDqL2C06ro,1085
+zakevin-1.0.0.dist-info/METADATA,sha256=aoiVjPOnA3BQA7JND69vctZ2YDBoDHrwKu0iKQ9YU20,620
+zakevin-1.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+zakevin-1.0.0.dist-info/top_level.txt,sha256=I1Ol0oHj8zvEsfdF3_UCosxHxFtl_fSQ4gvpIEwCvC0,11
+zakevin-1.0.0.dist-info/RECORD,,
