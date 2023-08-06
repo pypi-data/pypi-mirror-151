@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: archival
+Version: 0.1.0
+Summary: Describe your package in one sentence
+Home-page: https://github.com/you/archival
+Author: Anant
+Author-email: anantagarwal772@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
