@@ -1,0 +1,24 @@
+{
+  "list": {
+    "title": "Users",
+    "id": "ID",
+    "email": "Email address",
+    "tenant": "Tenant",
+    "create": "Create User"
+  },
+  "create": {
+    "title": "Create User",
+    "cancel": "Cancel",
+    "submit": "Create",
+    "email": "Email address",
+    "password": "Password",
+    "tenant": "Tenant"
+  },
+  "details": {
+    "tenant": "Tenant",
+    "id": "ID",
+    "created_at": "Created at",
+    "updated_at": "Updated at",
+    "submit": "Update"
+  }
+}
