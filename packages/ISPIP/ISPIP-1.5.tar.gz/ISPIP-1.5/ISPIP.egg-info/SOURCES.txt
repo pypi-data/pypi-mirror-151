@@ -1,0 +1,10 @@
+ReadMe.md
+setup.py
+ISPIP.egg-info/PKG-INFO
+ISPIP.egg-info/SOURCES.txt
+ISPIP.egg-info/dependency_links.txt
+ISPIP.egg-info/entry_points.txt
+ISPIP.egg-info/requires.txt
+ISPIP.egg-info/top_level.txt
+ispip/__init__.py
+ispip/ispip.py
