@@ -1,0 +1,10 @@
+startme/__init__.py,sha256=KKbqTUh8Ty6nPTGdEAfHATjRU_6S1Re-tnsou9zTXvo,496
+startme/mods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+startme/mods/ex_boot/__init__.py,sha256=XWAznMJ7vxJAX83KBRFwDlwbB1qlp2GpfffcBggq-CQ,111
+startme/mods/internal/__init__.py,sha256=bpDpckNdAa6ebqElEJrpB-g31wMqSzFn7L6TrhD8G8Q,118
+startme-0.0.2.data/scripts/startme,sha256=x-7ph5-fJm0fFK0-b23cn2dyzEKcnIIwLjAK_occnDE,1250
+startme-0.0.2.dist-info/LICENSE,sha256=ENXi1FYtD8L6LfDSweUYT16pHjolxjfqI-eLG0XiAfU,1074
+startme-0.0.2.dist-info/METADATA,sha256=hbrlh4TiA0yeldrMypnN0fOtuNcAnPT-M8VLflmKG2A,555
+startme-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+startme-0.0.2.dist-info/top_level.txt,sha256=Ajv9V2Oc772x7xMyiFdrWcJ6JKNttnwkIyKzl_alw1s,8
+startme-0.0.2.dist-info/RECORD,,
