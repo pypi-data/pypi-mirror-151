@@ -1,0 +1,24 @@
+benchling\_api\_client.api.workflow\_tasks package
+==================================================
+
+.. automodule:: benchling_api_client.api.workflow_tasks
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.workflow_tasks.archive_workflow_tasks
+   benchling_api_client.api.workflow_tasks.bulk_copy_workflow_tasks
+   benchling_api_client.api.workflow_tasks.bulk_create_workflow_tasks
+   benchling_api_client.api.workflow_tasks.bulk_update_workflow_tasks
+   benchling_api_client.api.workflow_tasks.copy_workflow_task
+   benchling_api_client.api.workflow_tasks.create_workflow_task
+   benchling_api_client.api.workflow_tasks.get_workflow_task
+   benchling_api_client.api.workflow_tasks.list_workflow_tasks
+   benchling_api_client.api.workflow_tasks.unarchive_workflow_tasks
+   benchling_api_client.api.workflow_tasks.update_workflow_task

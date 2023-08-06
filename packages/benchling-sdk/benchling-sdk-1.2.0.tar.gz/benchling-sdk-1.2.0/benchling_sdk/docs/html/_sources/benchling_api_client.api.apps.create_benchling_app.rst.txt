@@ -1,0 +1,7 @@
+benchling\_api\_client.api.apps.create\_benchling\_app module
+=============================================================
+
+.. automodule:: benchling_api_client.api.apps.create_benchling_app
+   :members:
+   :undoc-members:
+   :show-inheritance:

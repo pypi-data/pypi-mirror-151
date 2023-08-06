@@ -1,0 +1,7 @@
+benchling\_sdk.services.workflow\_task\_service module
+======================================================
+
+.. automodule:: benchling_sdk.services.workflow_task_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

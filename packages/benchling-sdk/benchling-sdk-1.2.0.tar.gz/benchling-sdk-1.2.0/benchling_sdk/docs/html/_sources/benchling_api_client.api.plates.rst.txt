@@ -1,0 +1,21 @@
+benchling\_api\_client.api.plates package
+=========================================
+
+.. automodule:: benchling_api_client.api.plates
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.plates.archive_plates
+   benchling_api_client.api.plates.bulk_get_plates
+   benchling_api_client.api.plates.create_plate
+   benchling_api_client.api.plates.get_plate
+   benchling_api_client.api.plates.list_plates
+   benchling_api_client.api.plates.unarchive_plates
+   benchling_api_client.api.plates.update_plate

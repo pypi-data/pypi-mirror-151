@@ -1,0 +1,7 @@
+benchling\_api\_client.models.dropdown\_options\_archival\_change module
+========================================================================
+
+.. automodule:: benchling_api_client.models.dropdown_options_archival_change
+   :members:
+   :undoc-members:
+   :show-inheritance:

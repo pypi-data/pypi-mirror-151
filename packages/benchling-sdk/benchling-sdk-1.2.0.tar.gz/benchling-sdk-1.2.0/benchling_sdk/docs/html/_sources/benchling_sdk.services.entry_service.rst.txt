@@ -1,0 +1,7 @@
+benchling\_sdk.services.entry\_service module
+=============================================
+
+.. automodule:: benchling_sdk.services.entry_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

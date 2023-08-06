@@ -1,0 +1,7 @@
+benchling\_api\_client.models.request\_created\_event module
+============================================================
+
+.. automodule:: benchling_api_client.models.request_created_event
+   :members:
+   :undoc-members:
+   :show-inheritance:

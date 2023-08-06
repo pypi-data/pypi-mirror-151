@@ -1,0 +1,7 @@
+benchling\_api\_client.api.entries.get\_external\_file\_metadata module
+=======================================================================
+
+.. automodule:: benchling_api_client.api.entries.get_external_file_metadata
+   :members:
+   :undoc-members:
+   :show-inheritance:

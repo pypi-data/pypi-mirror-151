@@ -1,0 +1,7 @@
+benchling\_api\_client.models.entity\_registered\_event\_event\_type module
+===========================================================================
+
+.. automodule:: benchling_api_client.models.entity_registered_event_event_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

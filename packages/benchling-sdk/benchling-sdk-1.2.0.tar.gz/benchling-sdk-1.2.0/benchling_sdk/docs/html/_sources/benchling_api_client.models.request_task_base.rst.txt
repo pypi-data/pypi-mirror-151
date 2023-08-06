@@ -1,0 +1,7 @@
+benchling\_api\_client.models.request\_task\_base module
+========================================================
+
+.. automodule:: benchling_api_client.models.request_task_base
+   :members:
+   :undoc-members:
+   :show-inheritance:

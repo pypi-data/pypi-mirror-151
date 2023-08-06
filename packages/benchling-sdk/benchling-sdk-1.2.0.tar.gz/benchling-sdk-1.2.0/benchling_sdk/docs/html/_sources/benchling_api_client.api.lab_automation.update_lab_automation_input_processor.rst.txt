@@ -1,0 +1,7 @@
+benchling\_api\_client.api.lab\_automation.update\_lab\_automation\_input\_processor module
+===========================================================================================
+
+.. automodule:: benchling_api_client.api.lab_automation.update_lab_automation_input_processor
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_sdk.services.printer\_service module
+===============================================
+
+.. automodule:: benchling_sdk.services.printer_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

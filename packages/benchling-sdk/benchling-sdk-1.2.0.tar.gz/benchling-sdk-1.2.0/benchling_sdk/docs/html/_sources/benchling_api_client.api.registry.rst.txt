@@ -1,0 +1,26 @@
+benchling\_api\_client.api.registry package
+===========================================
+
+.. automodule:: benchling_api_client.api.registry
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.registry.bulk_get_registered_entities
+   benchling_api_client.api.registry.get_registry
+   benchling_api_client.api.registry.list_batch_schemas_by_registry
+   benchling_api_client.api.registry.list_box_schemas_by_registry
+   benchling_api_client.api.registry.list_container_schemas_by_registry
+   benchling_api_client.api.registry.list_dropdowns_by_registry
+   benchling_api_client.api.registry.list_entity_schemas_by_registry
+   benchling_api_client.api.registry.list_location_schemas_by_registry
+   benchling_api_client.api.registry.list_plate_schemas_by_registry
+   benchling_api_client.api.registry.list_registries
+   benchling_api_client.api.registry.register_entities
+   benchling_api_client.api.registry.unregister_entities

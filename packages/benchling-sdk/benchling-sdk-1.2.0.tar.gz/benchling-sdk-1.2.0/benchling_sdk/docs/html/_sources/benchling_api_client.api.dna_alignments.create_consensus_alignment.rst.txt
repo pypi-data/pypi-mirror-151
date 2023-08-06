@@ -1,0 +1,7 @@
+benchling\_api\_client.api.dna\_alignments.create\_consensus\_alignment module
+==============================================================================
+
+.. automodule:: benchling_api_client.api.dna_alignments.create_consensus_alignment
+   :members:
+   :undoc-members:
+   :show-inheritance:

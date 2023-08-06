@@ -1,0 +1,7 @@
+benchling\_api\_client.models.fields module
+===========================================
+
+.. automodule:: benchling_api_client.models.fields
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.request\_write\_user\_assignee module
+===================================================================
+
+.. automodule:: benchling_api_client.models.request_write_user_assignee
+   :members:
+   :undoc-members:
+   :show-inheritance:

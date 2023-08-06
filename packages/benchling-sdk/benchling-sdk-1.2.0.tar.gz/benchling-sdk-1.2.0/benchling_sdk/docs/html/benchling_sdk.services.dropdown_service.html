@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.services.dropdown_service module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_sdk.services.entry_service module" href="benchling_sdk.services.entry_service.html" />
+    <link rel="prev" title="benchling_sdk.services.dna_sequence_service module" href="benchling_sdk.services.dna_sequence_service.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.services.dropdown_service">
+<span id="benchling-sdk-services-dropdown-service-module"></span><h1>benchling_sdk.services.dropdown_service module<a class="headerlink" href="#module-benchling_sdk.services.dropdown_service" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.services.dropdown_service.DropdownService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DropdownService</span></span><a class="headerlink" href="#benchling_sdk.services.dropdown_service.DropdownService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="benchling_sdk.services.base_service.html#benchling_sdk.services.base_service.BaseService" title="benchling_sdk.services.base_service.BaseService"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.services.base_service.BaseService</span></code></a></p>
+<p>Dropdowns.</p>
+<p>Dropdowns are registry-wide enums. Use dropdowns to standardize on spelling and naming conventions, especially
+for important metadata like resistance markers.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Dropdowns">https://benchling.com/api/reference#/Dropdowns</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dropdown_service.DropdownService.archive_options">
+<span class="sig-name descname"><span class="pre">archive_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dropdown_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropdown_option_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.dropdown_options_archive_reason.html#benchling_api_client.models.dropdown_options_archive_reason.DropdownOptionsArchiveReason" title="benchling_api_client.models.dropdown_options_archive_reason.DropdownOptionsArchiveReason"><span class="pre">DropdownOptionsArchiveReason</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dropdown_options_archival_change.html#benchling_api_client.models.dropdown_options_archival_change.DropdownOptionsArchivalChange" title="benchling_api_client.models.dropdown_options_archival_change.DropdownOptionsArchivalChange"><span class="pre">DropdownOptionsArchivalChange</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dropdown_service.DropdownService.archive_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Archive dropdown options.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Dropdowns/archiveDropdownOptions">https://benchling.com/api/reference#/Dropdowns/archiveDropdownOptions</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dropdown_service.DropdownService.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dropdown</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.dropdown_create.html#benchling_api_client.models.dropdown_create.DropdownCreate" title="benchling_api_client.models.dropdown_create.DropdownCreate"><span class="pre">DropdownCreate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dropdown.html#benchling_api_client.models.dropdown.Dropdown" title="benchling_api_client.models.dropdown.Dropdown"><span class="pre">Dropdown</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dropdown_service.DropdownService.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a dropdown.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Dropdowns/createDropdown">https://benchling.com/api/reference#/Dropdowns/createDropdown</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dropdown_service.DropdownService.get_by_id">
+<span class="sig-name descname"><span class="pre">get_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dropdown_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dropdown.html#benchling_api_client.models.dropdown.Dropdown" title="benchling_api_client.models.dropdown.Dropdown"><span class="pre">Dropdown</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dropdown_service.DropdownService.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a dropdown.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Dropdowns/getDropdown">https://benchling.com/api/reference#/Dropdowns/getDropdown</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dropdown_service.DropdownService.list">
+<span class="sig-name descname"><span class="pre">list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_sdk.helpers.pagination_helpers.html#benchling_sdk.helpers.pagination_helpers.PageIterator" title="benchling_sdk.helpers.pagination_helpers.PageIterator"><span class="pre">PageIterator</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_api_client.models.dropdown_summary.html#benchling_api_client.models.dropdown_summary.DropdownSummary" title="benchling_api_client.models.dropdown_summary.DropdownSummary"><span class="pre">DropdownSummary</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.services.dropdown_service.DropdownService.list" title="Permalink to this definition">¶</a></dt>
+<dd><p>List dropdowns.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Dropdowns/listDropdowns">https://benchling.com/api/reference#/Dropdowns/listDropdowns</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dropdown_service.DropdownService.unarchive_options">
+<span class="sig-name descname"><span class="pre">unarchive_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dropdown_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropdown_option_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dropdown_options_archival_change.html#benchling_api_client.models.dropdown_options_archival_change.DropdownOptionsArchivalChange" title="benchling_api_client.models.dropdown_options_archival_change.DropdownOptionsArchivalChange"><span class="pre">DropdownOptionsArchivalChange</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dropdown_service.DropdownService.unarchive_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unarchive dropdown options.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Dropdowns/unarchiveDropdownOptions">https://benchling.com/api/reference#/Dropdowns/unarchiveDropdownOptions</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.dropdown_service.DropdownService.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dropdown_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropdown</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.models.dropdown_update.html#benchling_api_client.models.dropdown_update.DropdownUpdate" title="benchling_api_client.models.dropdown_update.DropdownUpdate"><span class="pre">DropdownUpdate</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.dropdown.html#benchling_api_client.models.dropdown.Dropdown" title="benchling_api_client.models.dropdown.Dropdown"><span class="pre">Dropdown</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.dropdown_service.DropdownService.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update a dropdown.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Dropdowns/updateDropdown">https://benchling.com/api/reference#/Dropdowns/updateDropdown</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.services.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+  <li><a href="benchling_sdk.services.html">benchling_sdk.services package</a><ul>
+      <li>Previous: <a href="benchling_sdk.services.dna_sequence_service.html" title="previous chapter">benchling_sdk.services.dna_sequence_service module</a></li>
+      <li>Next: <a href="benchling_sdk.services.entry_service.html" title="next chapter">benchling_sdk.services.entry_service module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.services.dropdown_service.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

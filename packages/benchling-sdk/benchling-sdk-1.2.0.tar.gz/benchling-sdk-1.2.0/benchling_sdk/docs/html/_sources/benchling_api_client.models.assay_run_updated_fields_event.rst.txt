@@ -1,0 +1,7 @@
+benchling\_api\_client.models.assay\_run\_updated\_fields\_event module
+=======================================================================
+
+.. automodule:: benchling_api_client.models.assay_run_updated_fields_event
+   :members:
+   :undoc-members:
+   :show-inheritance:

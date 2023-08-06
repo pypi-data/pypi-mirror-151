@@ -1,0 +1,7 @@
+benchling\_api\_client.models.dna\_consensus\_alignment\_create\_new\_sequence module
+=====================================================================================
+
+.. automodule:: benchling_api_client.models.dna_consensus_alignment_create_new_sequence
+   :members:
+   :undoc-members:
+   :show-inheritance:

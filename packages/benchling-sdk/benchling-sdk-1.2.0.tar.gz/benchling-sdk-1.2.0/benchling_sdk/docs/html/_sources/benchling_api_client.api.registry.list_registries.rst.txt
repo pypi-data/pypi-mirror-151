@@ -1,0 +1,7 @@
+benchling\_api\_client.api.registry.list\_registries module
+===========================================================
+
+.. automodule:: benchling_api_client.api.registry.list_registries
+   :members:
+   :undoc-members:
+   :show-inheritance:

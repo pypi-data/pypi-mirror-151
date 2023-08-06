@@ -1,0 +1,7 @@
+benchling\_api\_client.models.workflow\_task\_schema\_base module
+=================================================================
+
+.. automodule:: benchling_api_client.models.workflow_task_schema_base
+   :members:
+   :undoc-members:
+   :show-inheritance:

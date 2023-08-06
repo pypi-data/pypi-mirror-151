@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.benchling module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_sdk.errors module" href="benchling_sdk.errors.html" />
+    <link rel="prev" title="benchling_sdk.services.workflow_task_service module" href="benchling_sdk.services.workflow_task_service.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.benchling">
+<span id="benchling-sdk-benchling-module"></span><h1>benchling_sdk.benchling module<a class="headerlink" href="#module-benchling_sdk.benchling" title="Permalink to this headline">¶</a></h1>
+<p>Provides the Benchling class, which is the main interface for accessing Benchling’s API functionality.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Benchling</span></span><a class="headerlink" href="#benchling_sdk.benchling.Benchling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A facade for interactions with the Benchling platform.</p>
+<p>Methods are organized into namespaces which generally correspond to Resources in Benchling’s public API doc.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference">https://benchling.com/api/reference</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth_method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_api_client.benchling_client.html#benchling_api_client.benchling_client.AuthorizationMethod" title="benchling_api_client.benchling_client.AuthorizationMethod"><span class="pre">AuthorizationMethod</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'/api/v2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">retry_strategy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.helpers.retry_helpers.html#benchling_sdk.helpers.retry_helpers.RetryStrategy" title="benchling_sdk.helpers.retry_helpers.RetryStrategy"><span class="pre">RetryStrategy</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">RetryStrategy()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_decorator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#benchling_sdk.benchling.BenchlingApiClientDecorator" title="benchling_sdk.benchling.BenchlingApiClientDecorator"><span class="pre">BenchlingApiClientDecorator</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.benchling.Benchling.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize Benchling.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> – A server URL (host and optional port) including scheme such as <a class="reference external" href="https://benchling.com">https://benchling.com</a></p></li>
+<li><p><strong>auth_method</strong> – A provider of an HTTP Authorization header for usage with the Benchling API. Pass an
+instance of benchling_sdk.auth.api_key_auth.ApiKeyAuth with a valid Benchling API token for
+authentication and authorization through HTTP Basic Authentication, or a client_id and
+client_secret pair with benchling_sdk.auth.client_credentials_oauth2.ClientCredentialsOAuth2
+for authentication and authorization through OAuth2 client_credentials Bearer token flow.</p></li>
+<li><p><strong>base_path</strong> – If provided, will append to the host. Otherwise, assumes the V2 API. This is
+a workaround until the generated client supports the servers block. See BNCH-15422</p></li>
+<li><p><strong>retry_strategy</strong> – An optional retry strategy for retrying HTTP calls on failure. Setting to None
+will disable retries</p></li>
+<li><p><strong>client_decorator</strong> – An optional function that accepts a BenchlingApiClient configured with
+default settings and mutates its state as desired</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.aa_sequences">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aa_sequences</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.aa_sequence_service.html#benchling_sdk.services.aa_sequence_service.AaSequenceService" title="benchling_sdk.services.aa_sequence_service.AaSequenceService"><span class="pre">AaSequenceService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.aa_sequences" title="Permalink to this definition">¶</a></dt>
+<dd><p>AA Sequences.</p>
+<p>AA Sequences are the working units of cells that make everything run (they help make structures, catalyze
+reactions and allow for signaling - a kind of internal cell communication). On Benchling, these are comprised
+of a string of amino acids and collections of other attributes, such as annotations.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/AA%20Sequences">https://benchling.com/api/reference#/AA%20Sequences</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.api">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">api</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.api_service.html#benchling_sdk.services.api_service.ApiService" title="benchling_sdk.services.api_service.ApiService"><span class="pre">ApiService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.api" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make custom API calls with the underlying BenchlingApiClient.</p>
+<p>A common use case for this is making calls to API endpoints which may not yet be supported in the current SDK
+release. It’s capable of making more “generic” calls utilizing our authorization scheme, as well as supporting
+some simple serialization and deserialization for custom models.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.apps">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">apps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.app_service.html#benchling_sdk.services.app_service.AppService" title="benchling_sdk.services.app_service.AppService"><span class="pre">AppService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.apps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apps.</p>
+<p>Apps provide a framework for you to customize your teams’ experiences on
+Benchling with custom applications.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Apps">https://benchling.com/api/reference#/Apps</a>
+and <a class="reference external" href="https://docs.benchling.com/docs/getting-started-benchling-apps">https://docs.benchling.com/docs/getting-started-benchling-apps</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.assay_results">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">assay_results</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.assay_result_service.html#benchling_sdk.services.assay_result_service.AssayResultService" title="benchling_sdk.services.assay_result_service.AssayResultService"><span class="pre">AssayResultService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.assay_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assay Results.</p>
+<p>Results represent the output of assays that have been performed. You can customize the schemas of results to
+fit your needs. Results can link to runs, batches, and other types.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Assay%20Results">https://benchling.com/api/reference#/Assay%20Results</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.assay_runs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">assay_runs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.assay_run_service.html#benchling_sdk.services.assay_run_service.AssayRunService" title="benchling_sdk.services.assay_run_service.AssayRunService"><span class="pre">AssayRunService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.assay_runs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assay Runs.</p>
+<p>Runs capture the details / parameters of a run that was performed. Results are usually nested under a run.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Assay%20Runs">https://benchling.com/api/reference#/Assay%20Runs</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.blobs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">blobs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.blob_service.html#benchling_sdk.services.blob_service.BlobService" title="benchling_sdk.services.blob_service.BlobService"><span class="pre">BlobService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.blobs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blobs.</p>
+<p>Blobs are opaque files that can be linked to other items in Benchling, like assay runs or results. For example,
+you can upload a blob, then upload an assay result that links to that blob by ID. The blob will then appear as
+part of the assay result in the Benchling web UI.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Blobs">https://benchling.com/api/reference#/Blobs</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.boxes">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">boxes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.box_service.html#benchling_sdk.services.box_service.BoxService" title="benchling_sdk.services.box_service.BoxService"><span class="pre">BoxService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.boxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boxes.</p>
+<p>Boxes are a structured storage type, consisting of a grid of positions that can each hold one container. Unlike
+locations, there are a maximum number of containers that a box can hold (one per position).</p>
+<p>Boxes are all associated with schemas, which define the type of the box (e.g. “10x10 Cryo Box”) along with the
+fields that are tracked and the dimensions of the box.</p>
+<p>Like all storage, every Box has a barcode that is unique across the registry.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Boxes">https://benchling.com/api/reference#/Boxes</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.client">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">client</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_api_client.client.html#benchling_api_client.client.Client" title="benchling_api_client.client.Client"><span class="pre">Client</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide access to the underlying generated Benchling Client.</p>
+<p>Should generally not be used except for advanced use cases which may not be well supported by the SDK itself.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.containers">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">containers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.container_service.html#benchling_sdk.services.container_service.ContainerService" title="benchling_sdk.services.container_service.ContainerService"><span class="pre">ContainerService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.containers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Containers.</p>
+<p>Containers are the backbone of sample management in Benchling. They represent physical containers, such as
+tubes or wells, that hold quantities of biological samples (represented by the batches inside the container).
+The container itself tracks its total volume, and the concentration of every batch inside of it.</p>
+<p>Containers are all associated with schemas, which define the type of the container (e.g. “Tube”) along with the
+fields that are tracked.</p>
+<p>Like all storage, every container has a barcode that is unique across the registry.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Containers">https://benchling.com/api/reference#/Containers</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.custom_entities">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">custom_entities</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.custom_entity_service.html#benchling_sdk.services.custom_entity_service.CustomEntityService" title="benchling_sdk.services.custom_entity_service.CustomEntityService"><span class="pre">CustomEntityService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.custom_entities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Custom Entities.</p>
+<p>Benchling supports custom entities for biological entities that are neither sequences or proteins. Custom
+entities must have an entity schema set and can have both schema fields and custom fields.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Custom%20Entities">https://benchling.com/api/reference#/Custom%20Entities</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.dna_alignments">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dna_alignments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.dna_alignments_service.html#benchling_sdk.services.dna_alignments_service.DnaAlignmentsService" title="benchling_sdk.services.dna_alignments_service.DnaAlignmentsService"><span class="pre">DnaAlignmentsService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.dna_alignments" title="Permalink to this definition">¶</a></dt>
+<dd><p>DNA Alignments.</p>
+<p>A DNA alignment is a Benchling object representing an alignment of multiple DNA sequences.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Alignments">https://benchling.com/api/reference#/DNA%20Alignments</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.dna_oligos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dna_oligos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.dna_oligo_service.html#benchling_sdk.services.dna_oligo_service.DnaOligoService" title="benchling_sdk.services.dna_oligo_service.DnaOligoService"><span class="pre">DnaOligoService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.dna_oligos" title="Permalink to this definition">¶</a></dt>
+<dd><p>DNA Oligos.</p>
+<p>DNA Oligos are short linear DNA sequences that can be attached as primers to full DNA sequences. Just like other
+entities, they support schemas, tags, and aliases.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Oligos">https://benchling.com/api/reference#/DNA%20Oligos</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.dna_sequences">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dna_sequences</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.dna_sequence_service.html#benchling_sdk.services.dna_sequence_service.DnaSequenceService" title="benchling_sdk.services.dna_sequence_service.DnaSequenceService"><span class="pre">DnaSequenceService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.dna_sequences" title="Permalink to this definition">¶</a></dt>
+<dd><p>DNA Sequences.</p>
+<p>DNA sequences are the bread and butter of the Benchling Molecular Biology suite. On Benchling, these are
+comprised of a string of nucleotides and collections of other attributes, such as annotations and primers.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/DNA%20Sequences">https://benchling.com/api/reference#/DNA%20Sequences</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.dropdowns">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dropdowns</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.dropdown_service.html#benchling_sdk.services.dropdown_service.DropdownService" title="benchling_sdk.services.dropdown_service.DropdownService"><span class="pre">DropdownService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.dropdowns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dropdowns.</p>
+<p>Dropdowns are registry-wide enums. Use dropdowns to standardize on spelling and naming conventions, especially
+for important metadata like resistance markers.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Dropdowns">https://benchling.com/api/reference#/Dropdowns</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.entries">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">entries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.entry_service.html#benchling_sdk.services.entry_service.EntryService" title="benchling_sdk.services.entry_service.EntryService"><span class="pre">EntryService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.entries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Entries.</p>
+<p>Entries are rich text documents that allow you to capture all of your experimental data in one place.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Entries">https://benchling.com/api/reference#/Entries</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.events">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">events</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.event_service.html#benchling_sdk.services.event_service.EventService" title="benchling_sdk.services.event_service.EventService"><span class="pre">EventService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.events" title="Permalink to this definition">¶</a></dt>
+<dd><p>Events.</p>
+<p>The Events system allows external services to subscribe to events that are triggered in Benchling (e.g. plasmid
+registration, request submission, etc).</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Events">https://benchling.com/api/reference#/Events</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.exports">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exports</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.export_service.html#benchling_sdk.services.export_service.ExportService" title="benchling_sdk.services.export_service.ExportService"><span class="pre">ExportService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.exports" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exports.</p>
+<p>Export a Notebook Entry.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Exports">https://benchling.com/api/reference#/Exports</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.feature_libraries">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">feature_libraries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.feature_library_service.html#benchling_sdk.services.feature_library_service.FeatureLibraryService" title="benchling_sdk.services.feature_library_service.FeatureLibraryService"><span class="pre">FeatureLibraryService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.feature_libraries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Feature Libraries.</p>
+<p>Feature Libraries are collections of shared canonical patterns that can be used to generate
+annotations on matching regions of DNA Sequences or AA Sequences.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Feature%20Libraries">https://benchling.com/api/reference#/Feature%20Libraries</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.folders">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">folders</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.folder_service.html#benchling_sdk.services.folder_service.FolderService" title="benchling_sdk.services.folder_service.FolderService"><span class="pre">FolderService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.folders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Folders.</p>
+<p>Manage folder objects.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Folders">https://benchling.com/api/reference#/Folders</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.inventory">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">inventory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.inventory_service.html#benchling_sdk.services.inventory_service.InventoryService" title="benchling_sdk.services.inventory_service.InventoryService"><span class="pre">InventoryService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.inventory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inventory.</p>
+<p>Manage inventory wide objects.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Inventory">https://benchling.com/api/reference#/Inventory</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.lab_automation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">lab_automation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.lab_automation_service.html#benchling_sdk.services.lab_automation_service.LabAutomationService" title="benchling_sdk.services.lab_automation_service.LabAutomationService"><span class="pre">LabAutomationService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.lab_automation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lab Automation.</p>
+<p>Lab Automation endpoints support integration with lab instruments, and liquid handlers to create samples or
+results, and capture transfers between containers at scale.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Lab%20Automation">https://benchling.com/api/reference#/Lab%20Automation</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.label_templates">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">label_templates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.label_template_service.html#benchling_sdk.services.label_template_service.LabelTemplateService" title="benchling_sdk.services.label_template_service.LabelTemplateService"><span class="pre">LabelTemplateService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.label_templates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Label Templates.</p>
+<p>List label templates.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Label%20Templates">https://benchling.com/api/reference#/Label%20Templates</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.locations">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">locations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.location_service.html#benchling_sdk.services.location_service.LocationService" title="benchling_sdk.services.location_service.LocationService"><span class="pre">LocationService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.locations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locations.</p>
+<p>Manage locations objects. Like all storage, every Location has a barcode that is unique across the registry.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Locations">https://benchling.com/api/reference#/Locations</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.mixtures">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mixtures</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.mixture_service.html#benchling_sdk.services.mixture_service.MixtureService" title="benchling_sdk.services.mixture_service.MixtureService"><span class="pre">MixtureService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.mixtures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mixtures.</p>
+<p>Mixtures are solutions comprised of multiple ingredients where the exact quantities of each ingredient are
+important to track. Each ingredient is uniquely identified by its component entity.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Mixtures">https://benchling.com/api/reference#/Mixtures</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.oligos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">oligos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.oligo_service.html#benchling_sdk.services.oligo_service.OligoService" title="benchling_sdk.services.oligo_service.OligoService"><span class="pre">OligoService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.oligos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Oligos.</p>
+<p>Oligos are short linear DNA sequences that can be attached as primers to full DNA sequences. Just like other
+entities, they support schemas, tags, and aliases.</p>
+<p>Please migrate to the corresponding DNA Oligos endpoints so that we can support RNA Oligos.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Oligos">https://benchling.com/api/reference#/Oligos</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.organizations">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">organizations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.organization_service.html#benchling_sdk.services.organization_service.OrganizationService" title="benchling_sdk.services.organization_service.OrganizationService"><span class="pre">OrganizationService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.organizations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Organizations.</p>
+<p>View organization objects.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Organizations">https://benchling.com/api/reference#/Organizations</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.plates">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">plates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.plate_service.html#benchling_sdk.services.plate_service.PlateService" title="benchling_sdk.services.plate_service.PlateService"><span class="pre">PlateService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.plates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plates.</p>
+<p>Plates are a structured storage type, grids of wells that each function like containers. Plates come in two
+types: a traditional “fixed” type, where the wells cannot move, and a “matrix” type. A matrix plate has similar
+functionality to a box, where the containers inside can be moved around and removed altogether.</p>
+<p>Plates are all associated with schemas, which define the type of the plate (e.g. “96 Well Plate”) along with
+the fields that are tracked, the dimensions of the plate, and whether or not the plate is a matrix plate or a
+traditional well plate.</p>
+<p>Like all storage, every Plate has a barcode that is unique across the registry.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Plates">https://benchling.com/api/reference#/Plates</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.printers">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">printers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.printer_service.html#benchling_sdk.services.printer_service.PrinterService" title="benchling_sdk.services.printer_service.PrinterService"><span class="pre">PrinterService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.printers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printers.</p>
+<p>List printers.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Printers">https://benchling.com/api/reference#/Printers</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.projects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">projects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.project_service.html#benchling_sdk.services.project_service.ProjectService" title="benchling_sdk.services.project_service.ProjectService"><span class="pre">ProjectService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.projects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Projects.</p>
+<p>Manage project objects.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Projects">https://benchling.com/api/reference#/Projects</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.registry">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">registry</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.registry_service.html#benchling_sdk.services.registry_service.RegistryService" title="benchling_sdk.services.registry_service.RegistryService"><span class="pre">RegistryService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registry.</p>
+<p>Manage registry objects.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Registry">https://benchling.com/api/reference#/Registry</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.requests">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">requests</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.request_service.html#benchling_sdk.services.request_service.RequestService" title="benchling_sdk.services.request_service.RequestService"><span class="pre">RequestService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Requests.</p>
+<p>Requests allow scientists and teams to collaborate around experimental assays and workflows.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Requests">https://benchling.com/api/reference#/Requests</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.rna_oligos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rna_oligos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.rna_oligo_service.html#benchling_sdk.services.rna_oligo_service.RnaOligoService" title="benchling_sdk.services.rna_oligo_service.RnaOligoService"><span class="pre">RnaOligoService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.rna_oligos" title="Permalink to this definition">¶</a></dt>
+<dd><p>RNA Oligos.</p>
+<p>RNA Oligos are short linear RNA sequences that can be attached as primers to full DNA sequences. Just like other
+entities, they support schemas, tags, and aliases.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/RNA%20Oligos">https://benchling.com/api/reference#/RNA%20Oligos</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.schemas">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">schemas</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.schema_service.html#benchling_sdk.services.schema_service.SchemaService" title="benchling_sdk.services.schema_service.SchemaService"><span class="pre">SchemaService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.schemas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Schemas.</p>
+<p>Schemas represent custom configuration of objects in Benchling. See <a class="reference external" href="https://docs.benchling.com/docs/schemas">https://docs.benchling.com/docs/schemas</a> in
+our documentation on how Schemas impact our developers</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Schemas">https://benchling.com/api/reference#/Schemas</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.tasks">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tasks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.task_service.html#benchling_sdk.services.task_service.TaskService" title="benchling_sdk.services.task_service.TaskService"><span class="pre">TaskService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.tasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tasks.</p>
+<p>Endpoints that perform expensive computations launch long-running tasks. These endpoints return the task ID (a
+UUID) in the response body.</p>
+<p>After launching a task, periodically invoke the Get a task endpoint with the task UUID (e.g., every 10
+seconds), until the status is no longer RUNNING.</p>
+<p>You can access a task for up to 30 minutes after its completion, after which its data will no longer be
+available.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Tasks">https://benchling.com/api/reference#/Tasks</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.teams">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">teams</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.team_service.html#benchling_sdk.services.team_service.TeamService" title="benchling_sdk.services.team_service.TeamService"><span class="pre">TeamService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.teams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Teams.</p>
+<p>View team objects.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Teams">https://benchling.com/api/reference#/Teams</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.users">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">users</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.user_service.html#benchling_sdk.services.user_service.UserService" title="benchling_sdk.services.user_service.UserService"><span class="pre">UserService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.users" title="Permalink to this definition">¶</a></dt>
+<dd><p>Benchling users.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Users">https://benchling.com/api/reference#/Users</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.warehouse">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">warehouse</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.warehouse_service.html#benchling_sdk.services.warehouse_service.WarehouseService" title="benchling_sdk.services.warehouse_service.WarehouseService"><span class="pre">WarehouseService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.warehouse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Warehouse.</p>
+<p>Manage warehouse credentials.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Warehouse">https://benchling.com/api/reference#/Warehouse</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.workflow_outputs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">workflow_outputs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.workflow_output_service.html#benchling_sdk.services.workflow_output_service.WorkflowOutputService" title="benchling_sdk.services.workflow_output_service.WorkflowOutputService"><span class="pre">WorkflowOutputService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.workflow_outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Workflow Outputs.</p>
+<p>Workflow outputs are outputs of a workflow task.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Workflow%20Outputs">https://benchling.com/api/reference#/Workflow%20Outputs</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.workflow_task_groups">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">workflow_task_groups</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.workflow_task_group_service.html#benchling_sdk.services.workflow_task_group_service.WorkflowTaskGroupService" title="benchling_sdk.services.workflow_task_group_service.WorkflowTaskGroupService"><span class="pre">WorkflowTaskGroupService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.workflow_task_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Workflow Tasks Groups.</p>
+<p>Workflow task groups are groups of workflow tasks of the same schema.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Workflow%20Task%20Groups">https://benchling.com/api/reference#/Workflow%20Task%20Groups</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.Benchling.workflow_tasks">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">workflow_tasks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.workflow_task_service.html#benchling_sdk.services.workflow_task_service.WorkflowTaskService" title="benchling_sdk.services.workflow_task_service.WorkflowTaskService"><span class="pre">WorkflowTaskService</span></a></em><a class="headerlink" href="#benchling_sdk.benchling.Benchling.workflow_tasks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Workflow Tasks.</p>
+<p>Workflow tasks encapsulate a single unit of work.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Workflow%20Tasks">https://benchling.com/api/reference#/Workflow%20Tasks</a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.BenchlingApiClientDecorator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BenchlingApiClientDecorator</span></span><a class="headerlink" href="#benchling_sdk.benchling.BenchlingApiClientDecorator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>For customizing a BenchlingApiClient client, which gives access to the underlying HTTPX layer.</p>
+<p>Functions implementing this Protocol will receive the default BenchlingApiClient and may mutate specific
+attributes, returning the updated BenchlingApiClient.</p>
+<p>A common use case for this is extending the default HTTP timeout:</p>
+<p>def higher_timeout_client(client: BenchlingApiClient) -&gt; BenchlingApiClient: return client.with_timeout(180)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.benchling.BenchlingApiClientDecorator.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.benchling.BenchlingApiClientDecorator.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">benchling_sdk.benchling module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.errors.html">benchling_sdk.errors module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+      <li>Previous: <a href="benchling_sdk.services.workflow_task_service.html" title="previous chapter">benchling_sdk.services.workflow_task_service module</a></li>
+      <li>Next: <a href="benchling_sdk.errors.html" title="next chapter">benchling_sdk.errors module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.benchling.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

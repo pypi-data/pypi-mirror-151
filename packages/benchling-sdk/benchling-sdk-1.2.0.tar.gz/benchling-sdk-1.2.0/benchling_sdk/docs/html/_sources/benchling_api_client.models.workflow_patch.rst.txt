@@ -1,0 +1,7 @@
+benchling\_api\_client.models.workflow\_patch module
+====================================================
+
+.. automodule:: benchling_api_client.models.workflow_patch
+   :members:
+   :undoc-members:
+   :show-inheritance:

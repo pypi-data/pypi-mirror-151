@@ -1,0 +1,27 @@
+benchling\_api\_client package
+==============================
+
+.. automodule:: benchling_api_client
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api
+   benchling_api_client.models
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.benchling_client
+   benchling_api_client.client
+   benchling_api_client.extensions
+   benchling_api_client.types

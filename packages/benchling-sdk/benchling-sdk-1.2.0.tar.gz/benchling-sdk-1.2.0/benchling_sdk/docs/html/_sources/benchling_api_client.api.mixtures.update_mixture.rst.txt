@@ -1,0 +1,7 @@
+benchling\_api\_client.api.mixtures.update\_mixture module
+==========================================================
+
+.. automodule:: benchling_api_client.api.mixtures.update_mixture
+   :members:
+   :undoc-members:
+   :show-inheritance:

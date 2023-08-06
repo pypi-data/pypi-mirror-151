@@ -1,0 +1,25 @@
+benchling\_api\_client.api.requests package
+===========================================
+
+.. automodule:: benchling_api_client.api.requests
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.requests.bulk_create_request_tasks
+   benchling_api_client.api.requests.bulk_get_requests
+   benchling_api_client.api.requests.bulk_update_request_tasks
+   benchling_api_client.api.requests.create_request
+   benchling_api_client.api.requests.execute_requests_sample_groups
+   benchling_api_client.api.requests.get_request
+   benchling_api_client.api.requests.get_request_fulfillment
+   benchling_api_client.api.requests.get_request_response
+   benchling_api_client.api.requests.list_request_fulfillments
+   benchling_api_client.api.requests.list_requests
+   benchling_api_client.api.requests.patch_request

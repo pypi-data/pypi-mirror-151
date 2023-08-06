@@ -1,0 +1,7 @@
+benchling\_sdk.docs package
+===========================
+
+.. automodule:: benchling_sdk.docs
+   :members:
+   :undoc-members:
+   :show-inheritance:

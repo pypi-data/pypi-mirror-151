@@ -1,0 +1,7 @@
+benchling\_api\_client.api.lab\_automation.list\_automation\_output\_processors module
+======================================================================================
+
+.. automodule:: benchling_api_client.api.lab_automation.list_automation_output_processors
+   :members:
+   :undoc-members:
+   :show-inheritance:

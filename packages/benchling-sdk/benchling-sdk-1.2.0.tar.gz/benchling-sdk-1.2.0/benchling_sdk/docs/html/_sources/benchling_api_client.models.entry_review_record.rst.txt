@@ -1,0 +1,7 @@
+benchling\_api\_client.models.entry\_review\_record module
+==========================================================
+
+.. automodule:: benchling_api_client.models.entry_review_record
+   :members:
+   :undoc-members:
+   :show-inheritance:

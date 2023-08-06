@@ -1,0 +1,7 @@
+benchling\_api\_client.models.float\_field\_definition module
+=============================================================
+
+.. automodule:: benchling_api_client.models.float_field_definition
+   :members:
+   :undoc-members:
+   :show-inheritance:

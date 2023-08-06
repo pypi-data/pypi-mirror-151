@@ -1,0 +1,7 @@
+benchling\_sdk.services.organization\_service module
+====================================================
+
+.. automodule:: benchling_sdk.services.organization_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

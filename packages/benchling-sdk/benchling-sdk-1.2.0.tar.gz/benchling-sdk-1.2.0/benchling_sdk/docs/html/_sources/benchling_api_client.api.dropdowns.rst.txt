@@ -1,0 +1,20 @@
+benchling\_api\_client.api.dropdowns package
+============================================
+
+.. automodule:: benchling_api_client.api.dropdowns
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.dropdowns.archive_dropdown_options
+   benchling_api_client.api.dropdowns.create_dropdown
+   benchling_api_client.api.dropdowns.get_dropdown
+   benchling_api_client.api.dropdowns.list_dropdowns
+   benchling_api_client.api.dropdowns.unarchive_dropdown_options
+   benchling_api_client.api.dropdowns.update_dropdown

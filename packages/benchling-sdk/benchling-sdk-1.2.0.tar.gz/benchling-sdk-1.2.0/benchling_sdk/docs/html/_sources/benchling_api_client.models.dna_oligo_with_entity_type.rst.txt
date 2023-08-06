@@ -1,0 +1,7 @@
+benchling\_api\_client.models.dna\_oligo\_with\_entity\_type module
+===================================================================
+
+.. automodule:: benchling_api_client.models.dna_oligo_with_entity_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

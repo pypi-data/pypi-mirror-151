@@ -1,0 +1,7 @@
+benchling\_api\_client.models.plate\_create\_wells\_additional\_property module
+===============================================================================
+
+.. automodule:: benchling_api_client.models.plate_create_wells_additional_property
+   :members:
+   :undoc-members:
+   :show-inheritance:

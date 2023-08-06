@@ -1,0 +1,7 @@
+benchling\_api\_client.models.plates\_bulk\_get module
+======================================================
+
+.. automodule:: benchling_api_client.models.plates_bulk_get
+   :members:
+   :undoc-members:
+   :show-inheritance:

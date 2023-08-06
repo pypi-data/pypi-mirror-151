@@ -1,0 +1,26 @@
+benchling\_api\_client.api.dna\_sequences package
+=================================================
+
+.. automodule:: benchling_api_client.api.dna_sequences
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.dna_sequences.archive_dna_sequences
+   benchling_api_client.api.dna_sequences.auto_annotate_dna_sequences
+   benchling_api_client.api.dna_sequences.autofill_dna_sequence_parts
+   benchling_api_client.api.dna_sequences.autofill_dna_sequence_translations
+   benchling_api_client.api.dna_sequences.bulk_create_dna_sequences
+   benchling_api_client.api.dna_sequences.bulk_get_dna_sequences
+   benchling_api_client.api.dna_sequences.bulk_update_dna_sequences
+   benchling_api_client.api.dna_sequences.create_dna_sequence
+   benchling_api_client.api.dna_sequences.get_dna_sequence
+   benchling_api_client.api.dna_sequences.list_dna_sequences
+   benchling_api_client.api.dna_sequences.unarchive_dna_sequences
+   benchling_api_client.api.dna_sequences.update_dna_sequence

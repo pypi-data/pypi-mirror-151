@@ -1,0 +1,7 @@
+benchling\_api\_client.models.nucleotide\_sequence\_request\_registry\_fields module
+====================================================================================
+
+.. automodule:: benchling_api_client.models.nucleotide_sequence_request_registry_fields
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,19 @@
+benchling\_api\_client.api.folders package
+==========================================
+
+.. automodule:: benchling_api_client.api.folders
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.folders.archive_folders
+   benchling_api_client.api.folders.create_folder
+   benchling_api_client.api.folders.get_folder
+   benchling_api_client.api.folders.list_folders
+   benchling_api_client.api.folders.unarchive_folders

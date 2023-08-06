@@ -1,0 +1,7 @@
+benchling\_api\_client.models.entry\_update module
+==================================================
+
+.. automodule:: benchling_api_client.models.entry_update
+   :members:
+   :undoc-members:
+   :show-inheritance:

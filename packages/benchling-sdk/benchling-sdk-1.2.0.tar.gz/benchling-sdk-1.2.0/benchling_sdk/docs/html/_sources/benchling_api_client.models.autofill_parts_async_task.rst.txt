@@ -1,0 +1,7 @@
+benchling\_api\_client.models.autofill\_parts\_async\_task module
+=================================================================
+
+.. automodule:: benchling_api_client.models.autofill_parts_async_task
+   :members:
+   :undoc-members:
+   :show-inheritance:

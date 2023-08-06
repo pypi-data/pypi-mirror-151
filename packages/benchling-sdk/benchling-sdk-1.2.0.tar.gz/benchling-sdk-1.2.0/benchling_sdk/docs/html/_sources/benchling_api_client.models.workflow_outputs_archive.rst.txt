@@ -1,0 +1,7 @@
+benchling\_api\_client.models.workflow\_outputs\_archive module
+===============================================================
+
+.. automodule:: benchling_api_client.models.workflow_outputs_archive
+   :members:
+   :undoc-members:
+   :show-inheritance:

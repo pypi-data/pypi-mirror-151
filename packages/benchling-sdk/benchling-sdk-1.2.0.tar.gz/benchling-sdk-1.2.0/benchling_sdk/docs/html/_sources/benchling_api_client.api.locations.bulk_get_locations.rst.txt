@@ -1,0 +1,7 @@
+benchling\_api\_client.api.locations.bulk\_get\_locations module
+================================================================
+
+.. automodule:: benchling_api_client.api.locations.bulk_get_locations
+   :members:
+   :undoc-members:
+   :show-inheritance:

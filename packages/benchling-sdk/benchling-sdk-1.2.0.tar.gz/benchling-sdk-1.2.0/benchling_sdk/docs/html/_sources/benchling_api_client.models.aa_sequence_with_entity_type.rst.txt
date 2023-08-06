@@ -1,0 +1,7 @@
+benchling\_api\_client.models.aa\_sequence\_with\_entity\_type module
+=====================================================================
+
+.. automodule:: benchling_api_client.models.aa_sequence_with_entity_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

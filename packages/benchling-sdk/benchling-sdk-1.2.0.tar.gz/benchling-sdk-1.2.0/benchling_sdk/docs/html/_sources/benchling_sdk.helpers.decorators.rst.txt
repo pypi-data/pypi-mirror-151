@@ -1,0 +1,7 @@
+benchling\_sdk.helpers.decorators module
+========================================
+
+.. automodule:: benchling_sdk.helpers.decorators
+   :members:
+   :undoc-members:
+   :show-inheritance:

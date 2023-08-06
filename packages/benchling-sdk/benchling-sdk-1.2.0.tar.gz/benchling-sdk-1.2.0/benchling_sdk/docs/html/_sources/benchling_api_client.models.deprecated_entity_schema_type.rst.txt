@@ -1,0 +1,7 @@
+benchling\_api\_client.models.deprecated\_entity\_schema\_type module
+=====================================================================
+
+.. automodule:: benchling_api_client.models.deprecated_entity_schema_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

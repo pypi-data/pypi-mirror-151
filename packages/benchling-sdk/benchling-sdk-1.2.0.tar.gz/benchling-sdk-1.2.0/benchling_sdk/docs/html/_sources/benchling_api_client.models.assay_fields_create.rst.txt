@@ -1,0 +1,7 @@
+benchling\_api\_client.models.assay\_fields\_create module
+==========================================================
+
+.. automodule:: benchling_api_client.models.assay_fields_create
+   :members:
+   :undoc-members:
+   :show-inheritance:

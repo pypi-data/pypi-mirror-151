@@ -1,0 +1,7 @@
+benchling\_api\_client.models.automation\_progress\_stats module
+================================================================
+
+.. automodule:: benchling_api_client.models.automation_progress_stats
+   :members:
+   :undoc-members:
+   :show-inheritance:

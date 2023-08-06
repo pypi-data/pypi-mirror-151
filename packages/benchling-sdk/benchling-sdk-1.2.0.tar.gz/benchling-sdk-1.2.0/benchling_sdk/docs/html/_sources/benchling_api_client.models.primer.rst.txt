@@ -1,0 +1,7 @@
+benchling\_api\_client.models.primer module
+===========================================
+
+.. automodule:: benchling_api_client.models.primer
+   :members:
+   :undoc-members:
+   :show-inheritance:

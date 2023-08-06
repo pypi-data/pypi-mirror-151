@@ -1,0 +1,7 @@
+benchling\_api\_client.api.folders.get\_folder module
+=====================================================
+
+.. automodule:: benchling_api_client.api.folders.get_folder
+   :members:
+   :undoc-members:
+   :show-inheritance:

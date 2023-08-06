@@ -1,0 +1,23 @@
+benchling\_api\_client.api.assay\_runs package
+==============================================
+
+.. automodule:: benchling_api_client.api.assay_runs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.assay_runs.archive_assay_runs
+   benchling_api_client.api.assay_runs.bulk_get_assay_runs
+   benchling_api_client.api.assay_runs.create_assay_runs
+   benchling_api_client.api.assay_runs.get_assay_run
+   benchling_api_client.api.assay_runs.list_assay_runs
+   benchling_api_client.api.assay_runs.list_automation_input_generators
+   benchling_api_client.api.assay_runs.list_automation_output_processors_deprecated
+   benchling_api_client.api.assay_runs.unarchive_assay_runs
+   benchling_api_client.api.assay_runs.update_assay_run

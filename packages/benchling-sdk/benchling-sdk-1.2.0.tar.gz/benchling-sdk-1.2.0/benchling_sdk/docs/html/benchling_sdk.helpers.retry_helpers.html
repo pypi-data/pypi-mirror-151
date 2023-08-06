@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.helpers.retry_helpers module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_sdk.helpers.serialization_helpers module" href="benchling_sdk.helpers.serialization_helpers.html" />
+    <link rel="prev" title="benchling_sdk.helpers.response_helpers module" href="benchling_sdk.helpers.response_helpers.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.helpers.retry_helpers">
+<span id="benchling-sdk-helpers-retry-helpers-module"></span><h1>benchling_sdk.helpers.retry_helpers module<a class="headerlink" href="#module-benchling_sdk.helpers.retry_helpers" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.retry_helpers.RetryStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RetryStrategy</span></span><a class="headerlink" href="#benchling_sdk.helpers.retry_helpers.RetryStrategy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Specify a strategy for automatically retrying failed HTTP calls.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.retry_helpers.RetryStrategy.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_tries:</span> <span class="pre">typing.Optional[int]</span> <span class="pre">=</span> <span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backoff_factor:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_codes_to_retry:</span> <span class="pre">typing.Tuple[http.HTTPStatus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">...]</span> <span class="pre">=</span> <span class="pre">(&lt;HTTPStatus.TOO_MANY_REQUESTS:</span> <span class="pre">429&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;HTTPStatus.BAD_GATEWAY:</span> <span class="pre">502&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;HTTPStatus.SERVICE_UNAVAILABLE:</span> <span class="pre">503&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;HTTPStatus.GATEWAY_TIMEOUT:</span> <span class="pre">504&gt;)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.helpers.retry_helpers.RetryStrategy.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.retry_helpers.RetryStrategy.backoff_factor">
+<span class="sig-name descname"><span class="pre">backoff_factor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="headerlink" href="#benchling_sdk.helpers.retry_helpers.RetryStrategy.backoff_factor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.retry_helpers.RetryStrategy.max_tries">
+<span class="sig-name descname"><span class="pre">max_tries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#benchling_sdk.helpers.retry_helpers.RetryStrategy.max_tries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.retry_helpers.RetryStrategy.no_retries">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">no_retries</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#benchling_sdk.helpers.retry_helpers.RetryStrategy" title="benchling_sdk.helpers.retry_helpers.RetryStrategy"><span class="pre">RetryStrategy</span></a></span></span><a class="headerlink" href="#benchling_sdk.helpers.retry_helpers.RetryStrategy.no_retries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct a noop retry strategy that will not retry.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.retry_helpers.RetryStrategy.status_codes_to_retry">
+<span class="sig-name descname"><span class="pre">status_codes_to_retry</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/http.html#http.HTTPStatus" title="(in Python v3.10)"><span class="pre">HTTPStatus</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;HTTPStatus.TOO_MANY_REQUESTS:</span> <span class="pre">429&gt;,</span> <span class="pre">&lt;HTTPStatus.BAD_GATEWAY:</span> <span class="pre">502&gt;,</span> <span class="pre">&lt;HTTPStatus.SERVICE_UNAVAILABLE:</span> <span class="pre">503&gt;,</span> <span class="pre">&lt;HTTPStatus.GATEWAY_TIMEOUT:</span> <span class="pre">504&gt;)</span></em><a class="headerlink" href="#benchling_sdk.helpers.retry_helpers.RetryStrategy.status_codes_to_retry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.retry_helpers.retry_method">
+<span class="sig-name descname"><span class="pre">retry_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.retry_helpers.retry_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorate a function to retry wrapped method if a BenchlingError is raised.</p>
+<p>The wrapped method must be a method on a subclass of <cite>BaseService</cite>,
+because the default retry strategy is taken from the <cite>self</cite> argument of the method.</p>
+<p>The decorator also adds an additional kwarg <cite>retry_strategy</cite> to the method signature.
+This can be used to override the service’s default retry strategy.</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.helpers.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+  <li><a href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a><ul>
+      <li>Previous: <a href="benchling_sdk.helpers.response_helpers.html" title="previous chapter">benchling_sdk.helpers.response_helpers module</a></li>
+      <li>Next: <a href="benchling_sdk.helpers.serialization_helpers.html" title="next chapter">benchling_sdk.helpers.serialization_helpers module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.helpers.retry_helpers.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

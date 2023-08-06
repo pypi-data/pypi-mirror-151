@@ -1,0 +1,7 @@
+benchling\_api\_client.models.container\_with\_coordinates module
+=================================================================
+
+.. automodule:: benchling_api_client.models.container_with_coordinates
+   :members:
+   :undoc-members:
+   :show-inheritance:

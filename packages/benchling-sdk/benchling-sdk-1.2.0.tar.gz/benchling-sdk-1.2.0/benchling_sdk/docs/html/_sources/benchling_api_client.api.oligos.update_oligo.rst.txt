@@ -1,0 +1,7 @@
+benchling\_api\_client.api.oligos.update\_oligo module
+======================================================
+
+.. automodule:: benchling_api_client.api.oligos.update_oligo
+   :members:
+   :undoc-members:
+   :show-inheritance:

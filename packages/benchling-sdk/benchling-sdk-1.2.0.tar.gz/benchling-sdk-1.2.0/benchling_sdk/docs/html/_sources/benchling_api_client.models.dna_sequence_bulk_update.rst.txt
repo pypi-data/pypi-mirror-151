@@ -1,0 +1,7 @@
+benchling\_api\_client.models.dna\_sequence\_bulk\_update module
+================================================================
+
+.. automodule:: benchling_api_client.models.dna_sequence_bulk_update
+   :members:
+   :undoc-members:
+   :show-inheritance:

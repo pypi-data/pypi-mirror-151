@@ -1,0 +1,7 @@
+benchling\_api\_client.models.automation\_output\_processor\_archival\_change module
+====================================================================================
+
+.. automodule:: benchling_api_client.models.automation_output_processor_archival_change
+   :members:
+   :undoc-members:
+   :show-inheritance:

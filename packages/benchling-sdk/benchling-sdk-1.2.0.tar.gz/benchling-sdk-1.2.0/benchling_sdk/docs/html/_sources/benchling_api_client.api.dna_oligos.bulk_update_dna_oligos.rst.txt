@@ -1,0 +1,7 @@
+benchling\_api\_client.api.dna\_oligos.bulk\_update\_dna\_oligos module
+=======================================================================
+
+.. automodule:: benchling_api_client.api.dna_oligos.bulk_update_dna_oligos
+   :members:
+   :undoc-members:
+   :show-inheritance:

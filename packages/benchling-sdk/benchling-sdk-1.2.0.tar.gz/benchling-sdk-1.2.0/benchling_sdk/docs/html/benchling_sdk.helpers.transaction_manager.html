@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.helpers.transaction_manager module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_sdk.models package" href="benchling_sdk.models.html" />
+    <link rel="prev" title="benchling_sdk.helpers.serialization_helpers module" href="benchling_sdk.helpers.serialization_helpers.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.helpers.transaction_manager">
+<span id="benchling-sdk-helpers-transaction-manager-module"></span><h1>benchling_sdk.helpers.transaction_manager module<a class="headerlink" href="#module-benchling_sdk.helpers.transaction_manager" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.AbortTransactionCall">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbortTransactionCall</span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.AbortTransactionCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Provide an interface for aborting an uncommitted transaction.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.AbortTransactionCall.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.AbortTransactionCall.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.AppendRowsCall">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendRowsCall</span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.AppendRowsCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Provide an interface for appending rows to an existing transaction.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.AppendRowsCall.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.AppendRowsCall.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.CommitTransactionCall">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommitTransactionCall</span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.CommitTransactionCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Provide an interface for committing a transaction.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.CommitTransactionCall.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.CommitTransactionCall.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.CreateTransactionCall">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CreateTransactionCall</span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.CreateTransactionCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Provide an interface for creating a new transaction.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.CreateTransactionCall.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.CreateTransactionCall.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.TransactionManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TransactionManager</span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.TransactionManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/contextlib.html#contextlib.AbstractContextManager" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">contextlib.AbstractContextManager</span></code></a></p>
+<p>Manage transactions in Benchling in a generic way across various implementations.</p>
+<p>Implements a Python context manager, managing state for a Benchling transaction. Upon
+exit, the transaction manager will automatically attempt to commit the transaction. If
+an error is encountered, it will instead abort the transaction and re-raise the error.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.TransactionManager.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">create_transaction_call</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.helpers.transaction_manager.CreateTransactionCall" title="benchling_sdk.helpers.transaction_manager.CreateTransactionCall"><span class="pre">CreateTransactionCall</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">commit_transaction_call</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.helpers.transaction_manager.CommitTransactionCall" title="benchling_sdk.helpers.transaction_manager.CommitTransactionCall"><span class="pre">CommitTransactionCall</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">abort_transaction_call</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.helpers.transaction_manager.AbortTransactionCall" title="benchling_sdk.helpers.transaction_manager.AbortTransactionCall"><span class="pre">AbortTransactionCall</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">append_row_call</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.helpers.transaction_manager.AppendRowsCall" title="benchling_sdk.helpers.transaction_manager.AppendRowsCall"><span class="pre">AppendRowsCall</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.TransactionManager.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize TransactionManager.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>create_transaction_call</strong> – A function for creating a transaction</p></li>
+<li><p><strong>commit_transaction_call</strong> – A function for committing a transaction</p></li>
+<li><p><strong>abort_transaction_call</strong> – A function for aborting a transaction</p></li>
+<li><p><strong>append_row_call</strong> – A function for appending a row to an existing transaction</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.TransactionManager.abort">
+<span class="sig-name descname"><span class="pre">abort</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.TransactionManager.abort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abort the transaction in progress.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.TransactionManager.append">
+<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.TransactionManager.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append a single row to an existing transaction and return the full list of pending rows.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.TransactionManager.commit">
+<span class="sig-name descname"><span class="pre">commit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.TransactionManager.commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Commit the transaction in progress.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.helpers.transaction_manager.TransactionManager.extend">
+<span class="sig-name descname"><span class="pre">extend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.helpers.transaction_manager.TransactionManager.extend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append multiple rows to an existing transaction and return the full list of pending rows.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.helpers.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+  <li><a href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a><ul>
+      <li>Previous: <a href="benchling_sdk.helpers.serialization_helpers.html" title="previous chapter">benchling_sdk.helpers.serialization_helpers module</a></li>
+      <li>Next: <a href="benchling_sdk.models.html" title="next chapter">benchling_sdk.models package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.helpers.transaction_manager.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.workflow\_output\_created\_event\_event\_type module
+==================================================================================
+
+.. automodule:: benchling_api_client.models.workflow_output_created_event_event_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

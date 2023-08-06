@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>benchling_sdk.services.task_service module &#8212; Benchling SDK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="benchling_sdk.services.team_service module" href="benchling_sdk.services.team_service.html" />
+    <link rel="prev" title="benchling_sdk.services.schema_service module" href="benchling_sdk.services.schema_service.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-benchling_sdk.services.task_service">
+<span id="benchling-sdk-services-task-service-module"></span><h1>benchling_sdk.services.task_service module<a class="headerlink" href="#module-benchling_sdk.services.task_service" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.services.task_service.TaskService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TaskService</span></span><a class="headerlink" href="#benchling_sdk.services.task_service.TaskService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="benchling_sdk.services.base_service.html#benchling_sdk.services.base_service.BaseService" title="benchling_sdk.services.base_service.BaseService"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.services.base_service.BaseService</span></code></a></p>
+<p>Tasks.</p>
+<p>Endpoints that perform expensive computations launch long-running tasks. These endpoints return the task ID (a
+UUID) in the response body.</p>
+<p>After launching a task, periodically invoke the Get a task endpoint with the task UUID (e.g., every 10
+seconds), until the status is no longer RUNNING.</p>
+<p>You can access a task for up to 30 minutes after its completion, after which its data will no longer be
+available.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Tasks">https://benchling.com/api/reference#/Tasks</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.task_service.TaskService.get_by_id">
+<span class="sig-name descname"><span class="pre">get_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.async_task.html#benchling_api_client.models.async_task.AsyncTask" title="benchling_api_client.models.async_task.AsyncTask"><span class="pre">AsyncTask</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.task_service.TaskService.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Task by ID.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/reference#/Tasks/getTask">https://benchling.com/api/reference#/Tasks/getTask</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.task_service.TaskService.wait_for_task">
+<span class="sig-name descname"><span class="pre">wait_for_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">interval_wait_seconds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_wait_seconds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_api_client.models.async_task.html#benchling_api_client.models.async_task.AsyncTask" title="benchling_api_client.models.async_task.AsyncTask"><span class="pre">AsyncTask</span></a></span></span><a class="headerlink" href="#benchling_sdk.services.task_service.TaskService.wait_for_task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for a task until completion or timeout.</p>
+<p>A blocking method which polls the Benchling API and will return an AsyncTask as
+soon as its status is not RUNNING (in progress). This does not guarantee that the
+task was successful, only that Benchling has finished executing it.</p>
+<p>If max_wait_seconds is exceeded, will raise
+<a class="reference internal" href="benchling_sdk.errors.html#benchling_sdk.errors.WaitForTaskExpiredError" title="benchling_sdk.errors.WaitForTaskExpiredError"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.errors.WaitForTaskExpiredError</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>task_id</strong> – The ID of the task to poll</p></li>
+<li><p><strong>interval_wait_seconds</strong> – time to wait between API calls in seconds</p></li>
+<li><p><strong>max_wait_seconds</strong> – maximum wait time in seconds before raising WaitForTaskExpiredError</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The completed AsyncTask. Check <cite>status</cite> for success or failure</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="benchling_api_client.models.async_task.html#benchling_api_client.models.async_task.AsyncTask" title="benchling_api_client.models.async_task.AsyncTask"><em>AsyncTask</em></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.services.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="benchling_api_client.html">benchling_api_client package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+  <li><a href="benchling_sdk.services.html">benchling_sdk.services package</a><ul>
+      <li>Previous: <a href="benchling_sdk.services.schema_service.html" title="previous chapter">benchling_sdk.services.schema_service module</a></li>
+      <li>Next: <a href="benchling_sdk.services.team_service.html" title="next chapter">benchling_sdk.services.team_service module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/benchling_sdk.services.task_service.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

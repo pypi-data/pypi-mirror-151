@@ -1,0 +1,7 @@
+benchling\_api\_client.models.assay\_runs\_bulk\_create\_response module
+========================================================================
+
+.. automodule:: benchling_api_client.models.assay_runs_bulk_create_response
+   :members:
+   :undoc-members:
+   :show-inheritance:

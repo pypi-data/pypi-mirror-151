@@ -1,0 +1,7 @@
+benchling\_api\_client.api.plates.get\_plate module
+===================================================
+
+.. automodule:: benchling_api_client.api.plates.get_plate
+   :members:
+   :undoc-members:
+   :show-inheritance:

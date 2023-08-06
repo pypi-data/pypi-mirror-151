@@ -1,0 +1,7 @@
+benchling\_sdk.services.team\_service module
+============================================
+
+.. automodule:: benchling_sdk.services.team_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

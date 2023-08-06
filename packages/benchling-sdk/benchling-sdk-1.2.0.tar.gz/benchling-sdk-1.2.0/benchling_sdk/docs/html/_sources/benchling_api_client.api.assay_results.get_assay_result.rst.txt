@@ -1,0 +1,7 @@
+benchling\_api\_client.api.assay\_results.get\_assay\_result module
+===================================================================
+
+.. automodule:: benchling_api_client.api.assay_results.get_assay_result
+   :members:
+   :undoc-members:
+   :show-inheritance:

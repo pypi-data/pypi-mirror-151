@@ -1,0 +1,22 @@
+benchling\_api\_client.api.batches package
+==========================================
+
+.. automodule:: benchling_api_client.api.batches
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.batches.archive_batches
+   benchling_api_client.api.batches.bulk_get_batches
+   benchling_api_client.api.batches.create_batch
+   benchling_api_client.api.batches.get_batch
+   benchling_api_client.api.batches.get_enitity_batches
+   benchling_api_client.api.batches.list_batches
+   benchling_api_client.api.batches.unarchive_batches
+   benchling_api_client.api.batches.update_batch

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.bad\_request\_error\_error\_type module
+=====================================================================
+
+.. automodule:: benchling_api_client.models.bad_request_error_error_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.aa\_sequence\_base\_request\_for\_create module
+=============================================================================
+
+.. automodule:: benchling_api_client.models.aa_sequence_base_request_for_create
+   :members:
+   :undoc-members:
+   :show-inheritance:

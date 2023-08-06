@@ -1,0 +1,7 @@
+benchling\_api\_client.api.locations.create\_location module
+============================================================
+
+.. automodule:: benchling_api_client.api.locations.create_location
+   :members:
+   :undoc-members:
+   :show-inheritance:

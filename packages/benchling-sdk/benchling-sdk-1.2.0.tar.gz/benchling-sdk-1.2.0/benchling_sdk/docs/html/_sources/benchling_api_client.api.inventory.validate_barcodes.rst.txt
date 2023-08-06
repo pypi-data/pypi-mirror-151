@@ -1,0 +1,7 @@
+benchling\_api\_client.api.inventory.validate\_barcodes module
+==============================================================
+
+.. automodule:: benchling_api_client.api.inventory.validate_barcodes
+   :members:
+   :undoc-members:
+   :show-inheritance:

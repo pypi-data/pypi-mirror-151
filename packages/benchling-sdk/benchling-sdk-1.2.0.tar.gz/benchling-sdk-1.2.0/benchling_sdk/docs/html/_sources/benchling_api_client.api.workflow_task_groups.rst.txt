@@ -1,0 +1,20 @@
+benchling\_api\_client.api.workflow\_task\_groups package
+=========================================================
+
+.. automodule:: benchling_api_client.api.workflow_task_groups
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.workflow_task_groups.archive_workflow_task_groups
+   benchling_api_client.api.workflow_task_groups.create_workflow_task_group
+   benchling_api_client.api.workflow_task_groups.get_workflow_task_group
+   benchling_api_client.api.workflow_task_groups.list_workflow_task_groups
+   benchling_api_client.api.workflow_task_groups.unarchive_workflow_task_groups
+   benchling_api_client.api.workflow_task_groups.update_workflow_task_group

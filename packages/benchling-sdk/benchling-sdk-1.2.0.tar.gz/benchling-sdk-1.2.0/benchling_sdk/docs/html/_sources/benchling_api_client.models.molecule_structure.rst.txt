@@ -1,0 +1,7 @@
+benchling\_api\_client.models.molecule\_structure module
+========================================================
+
+.. automodule:: benchling_api_client.models.molecule_structure
+   :members:
+   :undoc-members:
+   :show-inheritance:

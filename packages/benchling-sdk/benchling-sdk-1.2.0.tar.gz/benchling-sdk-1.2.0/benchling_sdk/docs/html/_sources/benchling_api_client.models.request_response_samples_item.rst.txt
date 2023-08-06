@@ -1,0 +1,7 @@
+benchling\_api\_client.models.request\_response\_samples\_item module
+=====================================================================
+
+.. automodule:: benchling_api_client.models.request_response_samples_item
+   :members:
+   :undoc-members:
+   :show-inheritance:

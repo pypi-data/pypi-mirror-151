@@ -1,0 +1,7 @@
+benchling\_api\_client.api.teams.get\_team module
+=================================================
+
+.. automodule:: benchling_api_client.api.teams.get_team
+   :members:
+   :undoc-members:
+   :show-inheritance:

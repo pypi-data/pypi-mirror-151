@@ -1,0 +1,7 @@
+benchling\_api\_client.models.entries\_archival\_change module
+==============================================================
+
+.. automodule:: benchling_api_client.models.entries_archival_change
+   :members:
+   :undoc-members:
+   :show-inheritance:

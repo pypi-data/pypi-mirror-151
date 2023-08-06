@@ -1,0 +1,7 @@
+benchling\_api\_client.models.batch\_create module
+==================================================
+
+.. automodule:: benchling_api_client.models.batch_create
+   :members:
+   :undoc-members:
+   :show-inheritance:

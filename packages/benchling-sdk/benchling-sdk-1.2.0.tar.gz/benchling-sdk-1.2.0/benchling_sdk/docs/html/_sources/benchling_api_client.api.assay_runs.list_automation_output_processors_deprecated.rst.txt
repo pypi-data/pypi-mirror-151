@@ -1,0 +1,7 @@
+benchling\_api\_client.api.assay\_runs.list\_automation\_output\_processors\_deprecated module
+==============================================================================================
+
+.. automodule:: benchling_api_client.api.assay_runs.list_automation_output_processors_deprecated
+   :members:
+   :undoc-members:
+   :show-inheritance:

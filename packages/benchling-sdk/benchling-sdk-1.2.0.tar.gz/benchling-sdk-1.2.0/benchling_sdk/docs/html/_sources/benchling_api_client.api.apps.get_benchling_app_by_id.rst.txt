@@ -1,0 +1,7 @@
+benchling\_api\_client.api.apps.get\_benchling\_app\_by\_id module
+==================================================================
+
+.. automodule:: benchling_api_client.api.apps.get_benchling_app_by_id
+   :members:
+   :undoc-members:
+   :show-inheritance:

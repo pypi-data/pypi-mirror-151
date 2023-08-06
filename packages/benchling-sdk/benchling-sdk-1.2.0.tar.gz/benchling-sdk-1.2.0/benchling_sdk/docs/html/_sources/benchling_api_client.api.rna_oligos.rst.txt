@@ -1,0 +1,22 @@
+benchling\_api\_client.api.rna\_oligos package
+==============================================
+
+.. automodule:: benchling_api_client.api.rna_oligos
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.rna_oligos.archive_rna_oligos
+   benchling_api_client.api.rna_oligos.bulk_create_rna_oligos
+   benchling_api_client.api.rna_oligos.bulk_update_rna_oligos
+   benchling_api_client.api.rna_oligos.create_rna_oligo
+   benchling_api_client.api.rna_oligos.get_rna_oligo
+   benchling_api_client.api.rna_oligos.list_rna_oligos
+   benchling_api_client.api.rna_oligos.unarchive_rna_oligos
+   benchling_api_client.api.rna_oligos.update_rna_oligo

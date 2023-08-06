@@ -1,0 +1,7 @@
+benchling\_api\_client.api.registry.list\_box\_schemas\_by\_registry module
+===========================================================================
+
+.. automodule:: benchling_api_client.api.registry.list_box_schemas_by_registry
+   :members:
+   :undoc-members:
+   :show-inheritance:

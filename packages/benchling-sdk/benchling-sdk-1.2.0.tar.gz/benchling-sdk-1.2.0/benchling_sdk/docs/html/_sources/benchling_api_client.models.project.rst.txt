@@ -1,0 +1,7 @@
+benchling\_api\_client.models.project module
+============================================
+
+.. automodule:: benchling_api_client.models.project
+   :members:
+   :undoc-members:
+   :show-inheritance:

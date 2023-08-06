@@ -1,0 +1,7 @@
+benchling\_api\_client.models.o\_auth\_bad\_request\_error module
+=================================================================
+
+.. automodule:: benchling_api_client.models.o_auth_bad_request_error
+   :members:
+   :undoc-members:
+   :show-inheritance:

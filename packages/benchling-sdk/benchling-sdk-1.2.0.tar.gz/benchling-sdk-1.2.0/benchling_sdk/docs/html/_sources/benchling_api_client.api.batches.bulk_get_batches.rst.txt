@@ -1,0 +1,7 @@
+benchling\_api\_client.api.batches.bulk\_get\_batches module
+============================================================
+
+.. automodule:: benchling_api_client.api.batches.bulk_get_batches
+   :members:
+   :undoc-members:
+   :show-inheritance:

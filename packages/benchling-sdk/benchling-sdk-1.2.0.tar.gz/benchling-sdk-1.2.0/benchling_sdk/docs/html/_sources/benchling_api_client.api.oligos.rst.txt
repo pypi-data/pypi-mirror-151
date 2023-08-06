@@ -1,0 +1,22 @@
+benchling\_api\_client.api.oligos package
+=========================================
+
+.. automodule:: benchling_api_client.api.oligos
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.oligos.archive_oligos
+   benchling_api_client.api.oligos.bulk_create_oligos
+   benchling_api_client.api.oligos.bulk_get_oligos
+   benchling_api_client.api.oligos.create_oligo
+   benchling_api_client.api.oligos.get_oligo
+   benchling_api_client.api.oligos.list_oligos
+   benchling_api_client.api.oligos.unarchive_oligos
+   benchling_api_client.api.oligos.update_oligo

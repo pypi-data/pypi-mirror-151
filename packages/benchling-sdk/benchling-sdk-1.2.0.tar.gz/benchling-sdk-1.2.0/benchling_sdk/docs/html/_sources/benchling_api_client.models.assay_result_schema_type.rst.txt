@@ -1,0 +1,7 @@
+benchling\_api\_client.models.assay\_result\_schema\_type module
+================================================================
+
+.. automodule:: benchling_api_client.models.assay_result_schema_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

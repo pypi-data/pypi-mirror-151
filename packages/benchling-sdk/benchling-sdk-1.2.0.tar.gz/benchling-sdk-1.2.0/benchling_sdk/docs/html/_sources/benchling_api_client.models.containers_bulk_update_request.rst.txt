@@ -1,0 +1,7 @@
+benchling\_api\_client.models.containers\_bulk\_update\_request module
+======================================================================
+
+.. automodule:: benchling_api_client.models.containers_bulk_update_request
+   :members:
+   :undoc-members:
+   :show-inheritance:

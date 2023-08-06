@@ -1,0 +1,7 @@
+benchling\_api\_client.models.assay\_run\_schemas\_paginated\_list module
+=========================================================================
+
+.. automodule:: benchling_api_client.models.assay_run_schemas_paginated_list
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+benchling\_api\_client.models.custom\_entity\_summary module
+============================================================
+
+.. automodule:: benchling_api_client.models.custom_entity_summary
+   :members:
+   :undoc-members:
+   :show-inheritance:

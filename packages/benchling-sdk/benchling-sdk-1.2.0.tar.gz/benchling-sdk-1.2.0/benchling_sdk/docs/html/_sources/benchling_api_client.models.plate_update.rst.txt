@@ -1,0 +1,7 @@
+benchling\_api\_client.models.plate\_update module
+==================================================
+
+.. automodule:: benchling_api_client.models.plate_update
+   :members:
+   :undoc-members:
+   :show-inheritance:

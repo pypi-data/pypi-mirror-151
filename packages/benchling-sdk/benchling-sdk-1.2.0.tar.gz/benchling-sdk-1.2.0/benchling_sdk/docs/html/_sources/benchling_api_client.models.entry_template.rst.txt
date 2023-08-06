@@ -1,0 +1,7 @@
+benchling\_api\_client.models.entry\_template module
+====================================================
+
+.. automodule:: benchling_api_client.models.entry_template
+   :members:
+   :undoc-members:
+   :show-inheritance:

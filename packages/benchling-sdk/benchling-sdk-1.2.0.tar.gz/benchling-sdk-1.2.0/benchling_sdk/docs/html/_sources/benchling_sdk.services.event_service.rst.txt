@@ -1,0 +1,7 @@
+benchling\_sdk.services.event\_service module
+=============================================
+
+.. automodule:: benchling_sdk.services.event_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

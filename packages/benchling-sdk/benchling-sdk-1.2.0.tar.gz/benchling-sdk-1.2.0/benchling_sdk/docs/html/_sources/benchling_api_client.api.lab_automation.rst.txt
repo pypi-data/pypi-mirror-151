@@ -1,0 +1,26 @@
+benchling\_api\_client.api.lab\_automation package
+==================================================
+
+.. automodule:: benchling_api_client.api.lab_automation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.lab_automation.archive_automation_output_processors
+   benchling_api_client.api.lab_automation.create_automation_output_processor
+   benchling_api_client.api.lab_automation.generate_input_with_automation_input_generator
+   benchling_api_client.api.lab_automation.get_automation_input_generator
+   benchling_api_client.api.lab_automation.get_automation_output_processor
+   benchling_api_client.api.lab_automation.get_lab_automation_transform
+   benchling_api_client.api.lab_automation.list_automation_output_processors
+   benchling_api_client.api.lab_automation.process_output_with_automation_output_processor
+   benchling_api_client.api.lab_automation.unarchive_automation_output_processors
+   benchling_api_client.api.lab_automation.update_automation_input_generator
+   benchling_api_client.api.lab_automation.update_automation_output_processor
+   benchling_api_client.api.lab_automation.update_lab_automation_transform

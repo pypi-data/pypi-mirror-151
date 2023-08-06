@@ -1,0 +1,7 @@
+benchling\_api\_client.models.automation\_input\_generator\_update module
+=========================================================================
+
+.. automodule:: benchling_api_client.models.automation_input_generator_update
+   :members:
+   :undoc-members:
+   :show-inheritance:

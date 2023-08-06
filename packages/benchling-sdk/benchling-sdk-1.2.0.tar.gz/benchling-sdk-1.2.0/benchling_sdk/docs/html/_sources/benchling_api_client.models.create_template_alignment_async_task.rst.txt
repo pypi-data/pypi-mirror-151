@@ -1,0 +1,7 @@
+benchling\_api\_client.models.create\_template\_alignment\_async\_task module
+=============================================================================
+
+.. automodule:: benchling_api_client.models.create_template_alignment_async_task
+   :members:
+   :undoc-members:
+   :show-inheritance:

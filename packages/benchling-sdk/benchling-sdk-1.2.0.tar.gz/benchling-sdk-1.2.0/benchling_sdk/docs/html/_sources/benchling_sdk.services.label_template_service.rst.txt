@@ -1,0 +1,7 @@
+benchling\_sdk.services.label\_template\_service module
+=======================================================
+
+.. automodule:: benchling_sdk.services.label_template_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

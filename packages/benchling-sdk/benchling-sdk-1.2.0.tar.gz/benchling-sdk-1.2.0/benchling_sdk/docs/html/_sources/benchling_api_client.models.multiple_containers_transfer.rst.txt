@@ -1,0 +1,7 @@
+benchling\_api\_client.models.multiple\_containers\_transfer module
+===================================================================
+
+.. automodule:: benchling_api_client.models.multiple_containers_transfer
+   :members:
+   :undoc-members:
+   :show-inheritance:

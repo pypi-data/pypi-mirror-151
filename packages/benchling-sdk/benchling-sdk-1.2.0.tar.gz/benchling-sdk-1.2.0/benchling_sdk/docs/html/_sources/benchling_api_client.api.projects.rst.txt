@@ -1,0 +1,18 @@
+benchling\_api\_client.api.projects package
+===========================================
+
+.. automodule:: benchling_api_client.api.projects
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.projects.archive_projects
+   benchling_api_client.api.projects.get_project
+   benchling_api_client.api.projects.list_projects
+   benchling_api_client.api.projects.unarchive_projects

@@ -1,0 +1,15 @@
+benchling\_api\_client.api.tasks package
+========================================
+
+.. automodule:: benchling_api_client.api.tasks
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_api_client.api.tasks.get_task

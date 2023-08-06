@@ -1,0 +1,7 @@
+benchling\_api\_client.models.list\_aa\_sequences\_sort module
+==============================================================
+
+.. automodule:: benchling_api_client.models.list_aa_sequences_sort
+   :members:
+   :undoc-members:
+   :show-inheritance:

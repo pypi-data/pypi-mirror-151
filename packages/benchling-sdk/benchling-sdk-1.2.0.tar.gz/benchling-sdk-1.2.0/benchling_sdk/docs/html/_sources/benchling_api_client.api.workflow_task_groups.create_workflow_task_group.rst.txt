@@ -1,0 +1,7 @@
+benchling\_api\_client.api.workflow\_task\_groups.create\_workflow\_task\_group module
+======================================================================================
+
+.. automodule:: benchling_api_client.api.workflow_task_groups.create_workflow_task_group
+   :members:
+   :undoc-members:
+   :show-inheritance:

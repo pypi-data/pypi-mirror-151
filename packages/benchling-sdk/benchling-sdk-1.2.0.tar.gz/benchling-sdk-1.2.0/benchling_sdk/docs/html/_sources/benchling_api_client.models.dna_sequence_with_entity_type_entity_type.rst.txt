@@ -1,0 +1,7 @@
+benchling\_api\_client.models.dna\_sequence\_with\_entity\_type\_entity\_type module
+====================================================================================
+
+.. automodule:: benchling_api_client.models.dna_sequence_with_entity_type_entity_type
+   :members:
+   :undoc-members:
+   :show-inheritance:

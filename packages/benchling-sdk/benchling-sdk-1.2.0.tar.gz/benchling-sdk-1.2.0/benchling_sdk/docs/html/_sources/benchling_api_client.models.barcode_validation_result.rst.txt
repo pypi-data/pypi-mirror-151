@@ -1,0 +1,7 @@
+benchling\_api\_client.models.barcode\_validation\_result module
+================================================================
+
+.. automodule:: benchling_api_client.models.barcode_validation_result
+   :members:
+   :undoc-members:
+   :show-inheritance:

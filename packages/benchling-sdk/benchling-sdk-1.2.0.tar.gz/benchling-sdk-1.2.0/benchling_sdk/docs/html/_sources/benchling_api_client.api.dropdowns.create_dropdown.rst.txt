@@ -1,0 +1,7 @@
+benchling\_api\_client.api.dropdowns.create\_dropdown module
+============================================================
+
+.. automodule:: benchling_api_client.api.dropdowns.create_dropdown
+   :members:
+   :undoc-members:
+   :show-inheritance:

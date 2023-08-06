@@ -1,0 +1,7 @@
+benchling\_api\_client.api.requests.create\_request module
+==========================================================
+
+.. automodule:: benchling_api_client.api.requests.create_request
+   :members:
+   :undoc-members:
+   :show-inheritance:

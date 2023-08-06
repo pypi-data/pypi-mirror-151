@@ -1,0 +1,7 @@
+benchling\_api\_client.models.benchling\_apps\_unarchive module
+===============================================================
+
+.. automodule:: benchling_api_client.models.benchling_apps_unarchive
+   :members:
+   :undoc-members:
+   :show-inheritance:

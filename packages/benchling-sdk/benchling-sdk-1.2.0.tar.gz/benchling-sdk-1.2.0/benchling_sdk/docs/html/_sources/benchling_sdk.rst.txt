@@ -1,0 +1,28 @@
+benchling\_sdk package
+======================
+
+.. automodule:: benchling_sdk
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_sdk.auth
+   benchling_sdk.docs
+   benchling_sdk.helpers
+   benchling_sdk.models
+   benchling_sdk.services
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_sdk.benchling
+   benchling_sdk.errors

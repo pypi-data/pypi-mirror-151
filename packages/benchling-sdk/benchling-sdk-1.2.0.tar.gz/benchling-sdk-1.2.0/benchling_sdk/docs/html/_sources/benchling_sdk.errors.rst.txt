@@ -1,0 +1,7 @@
+benchling\_sdk.errors module
+============================
+
+.. automodule:: benchling_sdk.errors
+   :members:
+   :undoc-members:
+   :show-inheritance:
