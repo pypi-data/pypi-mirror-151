@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+recursive-include appointment/static *
+recursive-include appointment/templates *
+
+recursive-exclude mytester *
+recursive-exclude mentor_ds *
+recursive-exclude medilab_ds *
+recursive-exclude medicio_ds *
