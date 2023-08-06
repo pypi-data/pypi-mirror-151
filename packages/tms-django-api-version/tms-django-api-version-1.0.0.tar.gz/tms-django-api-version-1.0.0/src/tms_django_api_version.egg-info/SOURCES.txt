@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/tms_django_api_version/__init__.py
+src/tms_django_api_version/apps.py
+src/tms_django_api_version/views.py
+src/tms_django_api_version.egg-info/PKG-INFO
+src/tms_django_api_version.egg-info/SOURCES.txt
+src/tms_django_api_version.egg-info/dependency_links.txt
+src/tms_django_api_version.egg-info/requires.txt
+src/tms_django_api_version.egg-info/top_level.txt
