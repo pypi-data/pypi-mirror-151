@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: spatial-eggplant
+Version: 0.2.3
+Summary: Landmark-based transfer of spatial transcriptomics data
+Home-page: https://github.com/almaan/eggplant
+Author: Alma Andersson
+Author-email: almaan@kth.se
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (<=1.20,>1.19)
+Requires-Dist: numba
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: anndata (>=0.7.5)
+Requires-Dist: matplotlib (>=3.3.3)
+Requires-Dist: scanpy (>=1.5.0)
+Requires-Dist: torch (>=1.8.1)
+Requires-Dist: gpytorch (>=1.4.2)
+Requires-Dist: squidpy (>=1.1.0)
+Requires-Dist: morphops (>=0.1.12)
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: kneed
+Provides-Extra: dev
+Requires-Dist: pre-commit (>=2.9.0) ; extra == 'dev'
+
+# eggplant - effortless generic GP landmark transfer
+
+[![codecov](https://codecov.io/gh/almaan/eggplant/branch/publish/graph/badge.svg?token=NFJWGVK56D)](https://codecov.io/gh/almaan/eggplant)
+[![Documentation Status](https://readthedocs.org/projects/spatial-eggplant/badge/?version=latest)](https://spatial-eggplant.readthedocs.io/en/latest/?badge=latest)
+
+
+eggplant is a tool that transfers information from multiple different spatial
+transcriptomics data sets to a single reference representing a common
+coordinate framework (CCF).
+
+The package is compatible with `scanpy` and its derivatives as well as with
+`anndata`.
+
+We refer to the
+[Documentation](https://spatial-eggplant.readthedocs.io/en/latest/eggplant.html#)
+for more information about installation and examples of use. You can also visit
+the [github](https://github.com/almaan/eggplant) page to find instructions on
+how to access example data sets and the associated manuscript.
+
+
