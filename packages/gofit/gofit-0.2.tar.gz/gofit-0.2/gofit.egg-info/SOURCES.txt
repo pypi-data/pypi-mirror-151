@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gofit.egg-info/PKG-INFO
+gofit.egg-info/SOURCES.txt
+gofit.egg-info/dependency_links.txt
+gofit.egg-info/not-zip-safe
+gofit.egg-info/top_level.txt
