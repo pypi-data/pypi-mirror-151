@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+boxtest/__init__.py
+boxtest/test.py
+boxtest.egg-info/PKG-INFO
+boxtest.egg-info/SOURCES.txt
+boxtest.egg-info/dependency_links.txt
+boxtest.egg-info/top_level.txt

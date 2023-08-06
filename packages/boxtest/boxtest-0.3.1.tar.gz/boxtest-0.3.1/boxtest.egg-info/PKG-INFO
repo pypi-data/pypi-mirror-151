@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: boxtest
+Version: 0.3.1
+Summary: A lightweight basic testing framework.
+Home-page: https://github.com/piecubed/box-test
+Author: piesquared
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# box-test
+Basic testing framework that prints beautiful errors.
+
+![](example.png)
+
+```
+from boxtest import Tester
+
+async def myAsyncTest(text):
+    print('foo')
+    print(text)
+
+def mySyncTest(framework):
+    print('Whats the best testing framework?')
+
+    if framework.lower() == 'boxtest':
+        print('boxtest is correct!')
+    else:
+        raise Exception('Wrong!')
+
+if __name__ == '__main__':
+    tester = Tester()
+
+    tester.addAsyncTest(myAsyncTest('bar'))
+    tester.addSyncTest(framework, 'unittest')
+    tester.addSyncTest(framework, 'boxtest')
+
+    tester.run()
+```
