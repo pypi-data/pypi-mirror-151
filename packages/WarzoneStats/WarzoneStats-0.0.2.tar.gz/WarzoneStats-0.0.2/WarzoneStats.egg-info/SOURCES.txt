@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+WarzoneStats/Api.py
+WarzoneStats/ApiGG.py
+WarzoneStats/ParserGG.py
+WarzoneStats/__init__.py
+WarzoneStats.egg-info/PKG-INFO
+WarzoneStats.egg-info/SOURCES.txt
+WarzoneStats.egg-info/dependency_links.txt
+WarzoneStats.egg-info/requires.txt
+WarzoneStats.egg-info/top_level.txt
