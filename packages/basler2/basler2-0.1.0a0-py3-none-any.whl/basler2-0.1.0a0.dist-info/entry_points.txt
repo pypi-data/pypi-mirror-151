@@ -1,0 +1,3 @@
+[console_scripts]
+basler2=baslertwo.__main__:main
+
