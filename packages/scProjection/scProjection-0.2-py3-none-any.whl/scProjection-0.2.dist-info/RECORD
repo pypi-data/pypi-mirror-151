@@ -1,0 +1,13 @@
+scProjection/__init__.py,sha256=-Deoqo_nB2HIpLgUyeiz28PJQIIX30Z0TpFGfGOPrH0,191
+scProjection/architectures.py,sha256=hWoyQptOy3Ky5d5xbiiZCfCjTkjV9cU2jsEEWNm6HIs,8478
+scProjection/batchBackend.py,sha256=B7AyHFjhdiGxDOdgqUujohL2MMxJo7QuJZVFt9cTarw,10659
+scProjection/deconvBackend.py,sha256=9nsvNt5RrnWnjigPGsl3nHtcQcUHLCgoDsHPya_8Stg,6986
+scProjection/deconvModel.py,sha256=lmgHhNogSScrzb3fP9Lbbm3Vxx7FEWjQQ3i2P4eSZsc,16290
+scProjection/saving_utils.py,sha256=omGH-gb8QdoZ4wRc-Tg4GrSFABGW7Zj_-ve_CC3j9u4,6399
+scProjection/utils.py,sha256=lywkIARUnJvx5DwQLNLK-uJiiolMsXumEilJ6_Gsgzk,10388
+scProjection/vaeBackend.py,sha256=EMBlXzgDAXKw-pBNIz_mnqWrWPJpcrzDJWDUPlL_vXc,21598
+scProjection/vaeTrain.py,sha256=jaMg8f3VScjQU47_WTVLNUoFXfEpOBmw8EDEeir0Kng,23731
+scProjection-0.2.dist-info/METADATA,sha256=njOlWxKgvURn17dXQoDu9eyqxeCXayMKJCODzqBWBaE,11468
+scProjection-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scProjection-0.2.dist-info/top_level.txt,sha256=bFrYTaKjsmTwiU1qwhoTGGsVw8c5VgCPsxVjuHEGtXw,13
+scProjection-0.2.dist-info/RECORD,,
