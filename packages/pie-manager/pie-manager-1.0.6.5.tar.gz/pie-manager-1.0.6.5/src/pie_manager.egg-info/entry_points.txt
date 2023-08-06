@@ -1,0 +1,2 @@
+[console_scripts]
+pie_manager = pie_manager.cli:entry_point
