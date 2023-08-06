@@ -1,0 +1,3 @@
+[console_scripts]
+based=based.cli.based.__main__:main
+
