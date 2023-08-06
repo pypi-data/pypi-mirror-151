@@ -1,0 +1,16 @@
+beautifulsoup4
+chardet
+html2text
+parse
+python-docx
+python-pptx
+requests
+Pillow
+ply
+dateparser
+pyperclip
+toml
+mammoth
+pypandoc
+pyrogram
+TgCrypto
