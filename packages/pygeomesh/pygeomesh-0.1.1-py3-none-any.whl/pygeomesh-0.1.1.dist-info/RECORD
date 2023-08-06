@@ -1,0 +1,12 @@
+PyGeomesh/__init__.py,sha256=tk2kDOUl3-k2zWx9BYU1u_3d7caQ4u_FsnG_7_TCM6o,288
+PyGeomesh/box.py,sha256=MKxfvjXuUzTfvEtbUwT7_5hjyjTC9sobW9sCAJL4OdM,18790
+PyGeomesh/cylinder.py,sha256=DaHc8XX0WIBEjZ7ScwV8u6Q14eJTrubMsqDsu084kEI,4018
+PyGeomesh/geometry.py,sha256=gu_f9sAdFG7hbkBah66ElJXnwehNFnTYzbBy_XFA2w8,2347
+PyGeomesh/point.py,sha256=AIMZAUm13x_u0JJmEY7d-LZ03oDTAB67_Q6ctme8Zgg,3303
+PyGeomesh/polygon.py,sha256=nx5RMLdqwGpd51jsof36ZbrE7HISy6kf7pA8eOgvgCo,5670
+PyGeomesh/transform.py,sha256=CbULBgXDdop-pQtnDa5IB5sgmOPLstlojd8nKySeAm0,1220
+pygeomesh-0.1.1.dist-info/LICENSE,sha256=J5wG2GyoXGjoBu_DTnqs9SxX56U9x3nq6mhzpgcIs3Y,10926
+pygeomesh-0.1.1.dist-info/METADATA,sha256=LVRFH0C9yzZxJV6ooVsxRfI6B9fEbQLlFWL6_BacQWk,2101
+pygeomesh-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygeomesh-0.1.1.dist-info/top_level.txt,sha256=0pzd9_Jx43zgxiSbpTRjZCrnvKB6dUNn7MCRfYpWhfs,10
+pygeomesh-0.1.1.dist-info/RECORD,,
