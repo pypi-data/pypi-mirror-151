@@ -1,0 +1,21 @@
+asphalt~=4.9
+SQLAlchemy[asyncio]>=1.4.30
+
+[doc]
+Sphinx>=1.5
+sphinx_rtd_theme
+sphinx-autodoc-typehints>=1.2.0
+sphinx-tabs>=3.3.1
+sphinxcontrib-asyncio>=0.2.0
+
+[test]
+aiosqlite
+pymysql
+psycopg2cffi
+pytest
+pytest-asyncio
+pytest-lazy-fixture
+
+[test:platform_python_implementation == "CPython"]
+asyncmy
+asyncpg
