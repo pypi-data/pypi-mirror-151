@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+opcng/__init__.py
+py_opc_ng.egg-info/PKG-INFO
+py_opc_ng.egg-info/SOURCES.txt
+py_opc_ng.egg-info/dependency_links.txt
+py_opc_ng.egg-info/top_level.txt
