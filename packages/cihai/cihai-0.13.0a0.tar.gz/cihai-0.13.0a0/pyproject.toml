@@ -1,0 +1,88 @@
+[tool.poetry]
+name = "cihai"
+version = "0.13.0a0"
+description = "Library for CJK (chinese, japanese, korean) language data."
+license = "MIT"
+authors = ["Tony Narlock <tony@git-pull.com>"]
+classifiers = [
+  'Development Status :: 4 - Beta',
+  "License :: OSI Approved :: MIT License",
+  'Environment :: Web Environment',
+  'Intended Audience :: Developers',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.7',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: Implementation :: PyPy',
+  "Topic :: Utilities",
+  "Topic :: Software Development :: Internationalization"
+]
+keywords = ["unihan", "sqlalchemy", "library", "cjk", "unicode", "dictionary", "dataset", "encyclopedia", "chinese", "japanese", "korean", "languages", "study"]
+homepage = "https://cihai.git-pull.com"
+readme = "README.md"
+packages = [
+    { include = "cihai" }
+]
+include = [
+    { path = "tests", format = "sdist" }
+]
+
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/cihai/cihai/issues"
+Documentation = "https://cihai.git-pull.com"
+Repository = "https://github.com/cihai/cihai"
+"Release notes" = "https://github.com/cihai/cihai/blob/master/CHANGES"
+"Q & A" = "https://github.com/cihai/cihai/discussions"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+kaptan = "*"
+sqlalchemy = "<1.4"
+appdirs = "*"
+unihan-etl = "~=0.14.0a0"
+cihai-cli = {version="~=0.9.0a0", optional=true}
+
+[tool.poetry.dev-dependencies]
+### Docs ###
+sphinx = "*"
+sphinx-argparse = "^0.2.5"
+furo = "^2022.2.23"
+sphinx-autobuild = "^2021.3.14"
+sphinx-autodoc-typehints = "~1.17.0"
+sphinx-issues = "^3.0.0"
+sphinx-inline-tabs = { version = "*", python = "^3.7" }
+sphinxext-opengraph = "*"
+sphinx-copybutton = "^0.5.0"
+sphinxext-rediraffe = "*"
+myst_parser = "~0.17.0"
+
+### Testing ###
+pytest = "*"
+pytest-rerunfailures = "*"
+pytest-watcher = "^0.2.3"
+
+### Coverage ###
+codecov = "*"
+coverage = "*"
+pytest-cov = "*"
+
+### Format ###
+black = "*"
+isort = "*"
+
+### Lint ###
+flake8 = "*"
+
+[tool.poetry.extras]
+"cli" = ["cihai-cli"]
+docs = ["sphinx", "sphinx-issues", "sphinx-argparse", "sphinx-autodoc-typehints", "sphinx-autobuild", "sphinx-copybutton", "sphinxext-opengraph", "sphinx-inline-tabs", "sphinxext-rediraffe", "myst_parser", "furo"]
+test = ["pytest", "pytest-rerunfailures", "pytest-watcher"]
+coverage = ["codecov", "coverage", "pytest-cov"]
+format = ["black", "isort"]
+lint = ["flake8"]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
