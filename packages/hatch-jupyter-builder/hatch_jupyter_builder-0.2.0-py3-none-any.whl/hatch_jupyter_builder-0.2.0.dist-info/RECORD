@@ -1,0 +1,9 @@
+hatch_jupyter_builder/__init__.py,sha256=Yr5Qf4ixBW3SMzzoYHffyct-jgnimMUj7BMVqIGcS-U,77
+hatch_jupyter_builder/hooks.py,sha256=TBjg8Rx2M_wTPpdj4MMF1V59hUxPKWLoDSatbClI9PY,149
+hatch_jupyter_builder/plugin.py,sha256=hkPuP6JRBAjREub2XJA6DzwvwSdFD9cRm47llBFM-3A,1210
+hatch_jupyter_builder/utils.py,sha256=_p0bgQnICIuFJgWeAPORxyz1--U6F27nbFo2EK_Arwg,7643
+hatch_jupyter_builder-0.2.0.dist-info/METADATA,sha256=9-Ro6v53mu5G_w9J45LfqNnJTsS4EXSZI-yGPXOhUAU,3645
+hatch_jupyter_builder-0.2.0.dist-info/WHEEL,sha256=DoGn7uYfTtEwlKJb1j0JZtkIBfu1RdR61R7YuOYnEwg,86
+hatch_jupyter_builder-0.2.0.dist-info/entry_points.txt,sha256=fh8U4aqG6Yxygpbhk_p8CkuhFGbO00yf04ZNSea3zNY,46
+hatch_jupyter_builder-0.2.0.dist-info/license_files/LICENSE.txt,sha256=JW6UF2zNyzN_vGcGLbDYg2r9HdJ16O5MX8GXm43moNQ,1109
+hatch_jupyter_builder-0.2.0.dist-info/RECORD,,
