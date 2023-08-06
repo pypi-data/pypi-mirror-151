@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+chalk/__init__.py
+chalk/bounding_box.py
+chalk/core.py
+chalk/point.py
+chalk/shape.py
+chalk/style.py
+chalk/trail.py
+chalk/transform.py
+chalk_diagrams.egg-info/PKG-INFO
+chalk_diagrams.egg-info/SOURCES.txt
+chalk_diagrams.egg-info/dependency_links.txt
+chalk_diagrams.egg-info/requires.txt
+chalk_diagrams.egg-info/top_level.txt
