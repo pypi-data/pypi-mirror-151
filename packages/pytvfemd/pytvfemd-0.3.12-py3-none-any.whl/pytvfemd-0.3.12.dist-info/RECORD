@@ -1,0 +1,10 @@
+pytvfemd/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pytvfemd/__init__.py,sha256=RIebYS2bn21lUxdwie7JqnQok8dG86V2DVYvxAFmmkw,775
+pytvfemd/inst_freq_local.py,sha256=Y1AevSRkwAnGaQuaTKcqZcuP5lpOblirJS0nL1GxLq0,2037
+pytvfemd/pytvfemd.py,sha256=IriEjOCiccgjIgSJx_ZOxAonL5IzMY60SlNsis6_iLQ,25635
+pytvfemd/splinefit.py,sha256=OTcrOpp5FbnTcMT3TAKHJJKm_ML0r2CLU384HNzr58k,7602
+pytvfemd-0.3.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pytvfemd-0.3.12.dist-info/METADATA,sha256=lZK2vJ6R19y1bzN9Ij7jyVdU66dKi1B3iAE-Uc4NanM,1169
+pytvfemd-0.3.12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pytvfemd-0.3.12.dist-info/top_level.txt,sha256=rfAbmz9ZrvFW0DptC8AutZvb98pGCCu7pzgz7u30Jtw,9
+pytvfemd-0.3.12.dist-info/RECORD,,
