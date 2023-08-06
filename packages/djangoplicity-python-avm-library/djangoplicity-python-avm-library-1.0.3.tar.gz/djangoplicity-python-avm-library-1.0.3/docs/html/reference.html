@@ -1,0 +1,1467 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Reference &mdash; Python XMP Toolkit v1.0b3 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0b3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Python XMP Toolkit v1.0b3 documentation" href="index.html" />
+    <link rel="next" title="Developers" href="developers.html" />
+    <link rel="prev" title="Using Python AVM Library" href="using.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="developers.html" title="Developers"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="using.html" title="Using Python AVM Library"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Python XMP Toolkit v1.0b3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="reference">
+<h1>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-libavm">
+<span id="avm-toolkit"></span><h2>AVM Toolkit<a class="headerlink" href="#module-libavm" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-libavm.exceptions">
+<span id="exceptions"></span><h3>Exceptions<a class="headerlink" href="#module-libavm.exceptions" title="Permalink to this headline">¶</a></h3>
+<dl class="exception">
+<dt id="libavm.exceptions.AVMListLengthError">
+<em class="property">exception </em><tt class="descclassname">libavm.exceptions.</tt><tt class="descname">AVMListLengthError</tt><a class="headerlink" href="#libavm.exceptions.AVMListLengthError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when a list is not the correct length</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="libavm.exceptions.AVMItemNotInControlledVocabularyError">
+<em class="property">exception </em><tt class="descclassname">libavm.exceptions.</tt><tt class="descname">AVMItemNotInControlledVocabularyError</tt><a class="headerlink" href="#libavm.exceptions.AVMItemNotInControlledVocabularyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raise when an string is not in a required controlled vocabulary</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-libavm.core">
+<span id="core-module"></span><h3>Core Module<a class="headerlink" href="#module-libavm.core" title="Permalink to this headline">¶</a></h3>
+<p>A module for parsing, manipulating, and serializing AVM data in the XMP format.</p>
+<div class="section" id="avmmeta">
+<h4>AVMMeta<a class="headerlink" href="#avmmeta" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.core.AVMMeta">
+<em class="property">class </em><tt class="descclassname">libavm.core.</tt><tt class="descname">AVMMeta</tt><big>(</big><em>avm_dict=None</em>, <em>xmp=None</em>, <em>version='1.1'</em><big>)</big><a class="headerlink" href="#libavm.core.AVMMeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>AVMMeta is a class offering direct access and validation of AVM metadata.  An AVM dictionary
+or XMPMeta object may be passed to the constructor.  Priority will be given to the AVM dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>avm_dict</strong> &#8211; Python dictionary containing AVM</li>
+<li><strong>xmp</strong> &#8211; XMPMeta object</li>
+<li><strong>version</strong> &#8211; AVM version, default to the current (1.1)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="libavm.core.AVMMeta.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>key</em><big>)</big><a class="headerlink" href="#libavm.core.AVMMeta.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to decompress data to a SQL-friendly string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-libavm.utils">
+<span id="utils-module"></span><h3>Utils Module<a class="headerlink" href="#module-libavm.utils" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="libavm.utils.avm_from_file">
+<tt class="descclassname">libavm.utils.</tt><tt class="descname">avm_from_file</tt><big>(</big><em>file_path</em><big>)</big><a class="headerlink" href="#libavm.utils.avm_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to retrieve the XMP packet from a file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path</strong> &#8211; Path to file</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">A dictionary with AVM data</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="libavm.utils.avm_obj_from_file">
+<tt class="descclassname">libavm.utils.</tt><tt class="descname">avm_obj_from_file</tt><big>(</big><em>file_path</em><big>)</big><a class="headerlink" href="#libavm.utils.avm_obj_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to retrieve the XMP packet from a file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path</strong> &#8211; Path to file</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">A dictionary with AVM data</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="libavm.utils.avm_to_file">
+<tt class="descclassname">libavm.utils.</tt><tt class="descname">avm_to_file</tt><big>(</big><em>file_path</em>, <em>dict={}</em>, <em>replace=False</em><big>)</big><a class="headerlink" href="#libavm.utils.avm_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to inject AVM into a file.  Preserves existing XMP in the file, while replacing
+fields passed through dict.</p>
+<p>If a field is an unordered list, then data is appended to existing values</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> &#8211; Path to file</li>
+<li><strong>dict</strong> &#8211; A dictionary containing AVM metadata</li>
+<li><strong>xmp</strong> &#8211; An XMPMeta instance</li>
+<li><strong>replace</strong> &#8211; Boolean to replace the exisiting XMP in the file.  By default it is set to False.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-todo admonition " id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">Improve avm_to_file function.  Add ability to input an XMP file</p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-libavm.datatypes">
+<span id="data-types"></span><h3>Data Types<a class="headerlink" href="#module-libavm.datatypes" title="Permalink to this headline">¶</a></h3>
+<p>Definition of various AVM specific data types</p>
+<div class="section" id="avmdata">
+<h4>AVMData<a class="headerlink" href="#avmdata" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMData">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMData</tt><big>(</big><em>ns</em>, <em>path</em>, <em>deprecated=False</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract AVM data class.  All other data classes inherit from AVMData.</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMData.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMData.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>All other data classes should define check_data() based on the type of data.
+Encoding of string into UTF-8 happens here.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMData.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMData.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMData.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMData.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves data from an XMP packet.  Should be overridden when appropriate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Object.  Depending on the data type, different objects will be returned.  If the data does not exist</td>
+</tr>
+</tbody>
+</table>
+<p>in the xmp packet, then the None object is returned</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMData.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMData.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMData.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMData.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmstring">
+<h4>AVMString<a class="headerlink" href="#avmstring" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMString">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMString</tt><big>(</big><em>ns</em>, <em>path</em>, <em>deprecated=False</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for strings</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMString.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMString.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that the data is a string or unicode, otherwise it raises a TypeError.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMString.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMString.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMString.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMString.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves data from an XMP packet.  Should be overridden when appropriate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Object.  Depending on the data type, different objects will be returned.  If the data does not exist</td>
+</tr>
+</tbody>
+</table>
+<p>in the xmp packet, then the None object is returned</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMString.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMString.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMString.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMString.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmstringcv">
+<h4>AVMStringCV<a class="headerlink" href="#avmstringcv" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMStringCV">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMStringCV</tt><big>(</big><em>ns</em>, <em>path</em>, <em>cv</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCV" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="libavm.datatypes.AVMStringCV.check_cv">
+<tt class="descname">check_cv</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCV.check_cv" title="Permalink to this definition">¶</a></dt>
+<dd><p>If a controlled vocabulary is specified, this function checks the input value against the allowed values.
+AVMItemNotInControlledVocabularyError is raised if not in the controlled vocabulary</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCV.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCV.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that the data is a string or unicode, formats the data appropriately using format_data()
+and calls check_cv()</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCV.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCV.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCV.format_data">
+<tt class="descname">format_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCV.format_data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCV.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCV.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves data from an XMP packet.  Should be overridden when appropriate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Object.  Depending on the data type, different objects will be returned.  If the data does not exist</td>
+</tr>
+</tbody>
+</table>
+<p>in the xmp packet, then the None object is returned</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCV.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCV.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCV.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCV.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmstringcvcapitalize">
+<h4>AVMStringCVCapitalize<a class="headerlink" href="#avmstringcvcapitalize" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMStringCVCapitalize">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMStringCVCapitalize</tt><big>(</big><em>ns</em>, <em>path</em>, <em>cv</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVCapitalize" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="libavm.datatypes.AVMStringCVCapitalize.check_cv">
+<tt class="descname">check_cv</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVCapitalize.check_cv" title="Permalink to this definition">¶</a></dt>
+<dd><p>If a controlled vocabulary is specified, this function checks the input value against the allowed values.
+AVMItemNotInControlledVocabularyError is raised if not in the controlled vocabulary</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVCapitalize.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVCapitalize.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that the data is a string or unicode, formats the data appropriately using format_data()
+and calls check_cv()</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVCapitalize.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVCapitalize.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVCapitalize.format_data">
+<tt class="descname">format_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVCapitalize.format_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats the data to be a capitalized string</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVCapitalize.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVCapitalize.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves data from an XMP packet.  Should be overridden when appropriate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Object.  Depending on the data type, different objects will be returned.  If the data does not exist</td>
+</tr>
+</tbody>
+</table>
+<p>in the xmp packet, then the None object is returned</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVCapitalize.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVCapitalize.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVCapitalize.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVCapitalize.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmstringcvupper">
+<h4>AVMStringCVUpper<a class="headerlink" href="#avmstringcvupper" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMStringCVUpper">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMStringCVUpper</tt><big>(</big><em>ns</em>, <em>path</em>, <em>cv</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVUpper" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="libavm.datatypes.AVMStringCVUpper.check_cv">
+<tt class="descname">check_cv</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVUpper.check_cv" title="Permalink to this definition">¶</a></dt>
+<dd><p>If a controlled vocabulary is specified, this function checks the input value against the allowed values.
+AVMItemNotInControlledVocabularyError is raised if not in the controlled vocabulary</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVUpper.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVUpper.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that the data is a string or unicode, formats the data appropriately using format_data()
+and calls check_cv()</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVUpper.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVUpper.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVUpper.format_data">
+<tt class="descname">format_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVUpper.format_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats the data to be an upper case string</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String:</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVUpper.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVUpper.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves data from an XMP packet.  Should be overridden when appropriate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Object.  Depending on the data type, different objects will be returned.  If the data does not exist</td>
+</tr>
+</tbody>
+</table>
+<p>in the xmp packet, then the None object is returned</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVUpper.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVUpper.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMStringCVUpper.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMStringCVUpper.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmurl">
+<h4>AVMURL<a class="headerlink" href="#avmurl" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMURL">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMURL</tt><big>(</big><em>ns</em>, <em>path</em>, <em>deprecated=False</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMURL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for URLs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="libavm.datatypes.AVMURL.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMURL.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the data is a string or unicode, and checks data
+against a regular expression for a URL.  If the user leaves
+off the protocol,then &#8216;<a class="reference external" href="http://">http://</a>&#8216; is attached as a default.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMURL.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMURL.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMURL.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMURL.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves data from an XMP packet.  Should be overridden when appropriate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Object.  Depending on the data type, different objects will be returned.  If the data does not exist</td>
+</tr>
+</tbody>
+</table>
+<p>in the xmp packet, then the None object is returned</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMURL.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMURL.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMURL.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMURL.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmemail">
+<h4>AVMEmail<a class="headerlink" href="#avmemail" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMEmail">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMEmail</tt><big>(</big><em>ns</em>, <em>path</em>, <em>deprecated=False</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMEmail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for email addresses.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="libavm.datatypes.AVMEmail.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMEmail.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks data is a string or unicode, and checks against a regular expression
+for an email.  If value is not a string or unicode, a TypeError is raised.
+If the value is not a proper email, then a ValueError is raised.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMEmail.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMEmail.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMEmail.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMEmail.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves data from an XMP packet.  Should be overridden when appropriate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Object.  Depending on the data type, different objects will be returned.  If the data does not exist</td>
+</tr>
+</tbody>
+</table>
+<p>in the xmp packet, then the None object is returned</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMEmail.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMEmail.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMEmail.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMEmail.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmlocalizedstring">
+<h4>AVMLocalizedString<a class="headerlink" href="#avmlocalizedstring" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMLocalizedString">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMLocalizedString</tt><big>(</big><em>ns</em>, <em>path</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMLocalizedString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for localized strings.
+(i.e. fields contained in an alt tag, such as dc:description)</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMLocalizedString.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMLocalizedString.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that the data is a string or unicode, otherwise it raises a TypeError.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMLocalizedString.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMLocalizedString.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMLocalizedString.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMLocalizedString.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves localized data from an XMP packet.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMLocalizedString.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMLocalizedString.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>After calling check_data(), injects the data into the XMP packet.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMLocalizedString.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMLocalizedString.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmfloat">
+<h4>AVMFloat<a class="headerlink" href="#avmfloat" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMFloat">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMFloat</tt><big>(</big><em>ns</em>, <em>path</em>, <em>deprecated=False</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMFloat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for float fields</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMFloat.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMFloat.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that data can be represented as a number.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMFloat.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMFloat.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMFloat.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMFloat.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves data from an XMP packet.  Should be overridden when appropriate.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Object.  Depending on the data type, different objects will be returned.  If the data does not exist</td>
+</tr>
+</tbody>
+</table>
+<p>in the xmp packet, then the None object is returned</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMFloat.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMFloat.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMFloat.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMFloat.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmunorderedlist">
+<h4>AVMUnorderedList<a class="headerlink" href="#avmunorderedlist" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMUnorderedList">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMUnorderedList</tt><big>(</big><em>ns</em>, <em>path</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic data type for lists (i.e xmp bag arrays)</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedList.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedList.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that the data type is a Python List.  Calls check_length() first.</p>
+<div class="admonition-todo admonition " id="index-1">
+<p class="first admonition-title">Todo</p>
+<p class="last">Redo this function.  Implement the dash functionality only for ordered lists.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">List (UTF-8 elements)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedList.check_length">
+<tt class="descname">check_length</tt><big>(</big><em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedList.check_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the length of the Python List.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedList.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedList.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedList.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedList.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract data from XMP packet</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">List (UTF-8 elements) or None if array does not have any elements</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedList.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedList.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>After checking length and type, inject the data to the XMP packet.
+This function replaces the existing data; it is not meant to append values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedList.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedList.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmunorderedstringlist">
+<h4>AVMUnorderedStringList<a class="headerlink" href="#avmunorderedstringlist" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMUnorderedStringList">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMUnorderedStringList</tt><big>(</big><em>ns</em>, <em>path</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedStringList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for an unordered list of strings</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedStringList.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedStringList.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that the passed data is a Python List, and checks that the elements
+are strings or unicode.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">List of strings (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedStringList.check_length">
+<tt class="descname">check_length</tt><big>(</big><em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedStringList.check_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the length of the Python List.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedStringList.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedStringList.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedStringList.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedStringList.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract data from XMP packet</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">List (UTF-8 elements) or None if array does not have any elements</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedStringList.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedStringList.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>After checking length and type, inject the data to the XMP packet.
+This function replaces the existing data; it is not meant to append values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMUnorderedStringList.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMUnorderedStringList.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmorderedlist">
+<h4>AVMOrderedList<a class="headerlink" href="#avmorderedlist" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMOrderedList">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMOrderedList</tt><big>(</big><em>ns</em>, <em>path</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for ordered lists (i.e. seq arrays)</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedList.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedList.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that the data type is a Python List.  Calls check_length() first.</p>
+<div class="admonition-todo admonition " id="index-2">
+<p class="first admonition-title">Todo</p>
+<p class="last">Redo this function.  Implement the dash functionality only for ordered lists.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">List (UTF-8 elements)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedList.check_length">
+<tt class="descname">check_length</tt><big>(</big><em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedList.check_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the length of the Python List.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedList.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedList.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedList.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedList.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract data from XMP packet</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">List (UTF-8 elements) or None if array does not have any elements</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedList.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedList.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the data before injecting to the XMP packets.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedList.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedList.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmorderedstringlist">
+<h4>AVMOrderedStringList<a class="headerlink" href="#avmorderedstringlist" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="avmorderedstringlistcv">
+<h4>AVMOrderedStringListCV<a class="headerlink" href="#avmorderedstringlistcv" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="avmorderedfloatlist">
+<h4>AVMOrderedFloatList<a class="headerlink" href="#avmorderedfloatlist" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMOrderedFloatList">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMOrderedFloatList</tt><big>(</big><em>ns</em>, <em>path</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedFloatList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for ordered lists of floats.</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedFloatList.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedFloatList.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that the data is of the correct type, length and elements
+are strings able to be represented as floats.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">List of strings (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedFloatList.check_length">
+<tt class="descname">check_length</tt><big>(</big><em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedFloatList.check_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the length of the Python List.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedFloatList.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedFloatList.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedFloatList.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedFloatList.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract data from XMP packet</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">List (UTF-8 elements) or None if array does not have any elements</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedFloatList.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>values</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedFloatList.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the data before injecting to the XMP packets.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMOrderedFloatList.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMOrderedFloatList.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="avmdate">
+<h4>AVMDate<a class="headerlink" href="#avmdate" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="libavm.datatypes.AVMDate">
+<em class="property">class </em><tt class="descclassname">libavm.datatypes.</tt><tt class="descname">AVMDate</tt><big>(</big><em>ns</em>, <em>path</em>, <em>deprecated=False</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMDate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type for Dates.</p>
+<dl class="method">
+<dt id="libavm.datatypes.AVMDate.check_data">
+<tt class="descname">check_data</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMDate.check_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks for a Python date</p>
+<div class="admonition-todo admonition " id="index-3">
+<p class="first admonition-title">Todo</p>
+<p class="last">Implement a better way to determine class.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMDate.delete_data">
+<tt class="descname">delete_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMDate.delete_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes data from an XMP packet.  Should be overridden when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMDate.get_data">
+<tt class="descname">get_data</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMDate.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>.todo:: Something funny happens here...</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Python date object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMDate.set_data">
+<tt class="descname">set_data</tt><big>(</big><em>xmp_packet</em>, <em>value</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMDate.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Injects data into an XMP packet.  Should be overridden if other
+requirements are necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="libavm.datatypes.AVMDate.to_string">
+<tt class="descname">to_string</tt><big>(</big><em>xmp_packet</em><big>)</big><a class="headerlink" href="#libavm.datatypes.AVMDate.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve data from an XMP packet in a SQL-friendly string format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">String (UTF-8)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Reference</a><ul>
+<li><a class="reference internal" href="#module-libavm">AVM Toolkit</a><ul>
+<li><a class="reference internal" href="#module-libavm.exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#module-libavm.core">Core Module</a><ul>
+<li><a class="reference internal" href="#avmmeta">AVMMeta</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-libavm.utils">Utils Module</a></li>
+<li><a class="reference internal" href="#module-libavm.datatypes">Data Types</a><ul>
+<li><a class="reference internal" href="#avmdata">AVMData</a></li>
+<li><a class="reference internal" href="#avmstring">AVMString</a></li>
+<li><a class="reference internal" href="#avmstringcv">AVMStringCV</a></li>
+<li><a class="reference internal" href="#avmstringcvcapitalize">AVMStringCVCapitalize</a></li>
+<li><a class="reference internal" href="#avmstringcvupper">AVMStringCVUpper</a></li>
+<li><a class="reference internal" href="#avmurl">AVMURL</a></li>
+<li><a class="reference internal" href="#avmemail">AVMEmail</a></li>
+<li><a class="reference internal" href="#avmlocalizedstring">AVMLocalizedString</a></li>
+<li><a class="reference internal" href="#avmfloat">AVMFloat</a></li>
+<li><a class="reference internal" href="#avmunorderedlist">AVMUnorderedList</a></li>
+<li><a class="reference internal" href="#avmunorderedstringlist">AVMUnorderedStringList</a></li>
+<li><a class="reference internal" href="#avmorderedlist">AVMOrderedList</a></li>
+<li><a class="reference internal" href="#avmorderedstringlist">AVMOrderedStringList</a></li>
+<li><a class="reference internal" href="#avmorderedstringlistcv">AVMOrderedStringListCV</a></li>
+<li><a class="reference internal" href="#avmorderedfloatlist">AVMOrderedFloatList</a></li>
+<li><a class="reference internal" href="#avmdate">AVMDate</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="using.html"
+                        title="previous chapter">Using Python AVM Library</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="developers.html"
+                        title="next chapter">Developers</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/reference.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="developers.html" title="Developers"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="using.html" title="Using Python AVM Library"
+             >previous</a> |</li>
+        <li><a href="index.html">Python XMP Toolkit v1.0b3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008-2009 European Space Agency, European Southern Observatory AND CRS4 - Centre for Centre for Advanced Studies, Research and Development in Sardinia.
+      Last updated on Mar 31, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.6.
+    </div>
+  </body>
+</html>
