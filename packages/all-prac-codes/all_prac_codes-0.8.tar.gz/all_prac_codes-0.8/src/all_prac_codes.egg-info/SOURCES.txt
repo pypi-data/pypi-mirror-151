@@ -1,0 +1,7 @@
+README.rst
+setup.cfg
+setup.py
+src/all_prac_codes.egg-info/PKG-INFO
+src/all_prac_codes.egg-info/SOURCES.txt
+src/all_prac_codes.egg-info/dependency_links.txt
+src/all_prac_codes.egg-info/top_level.txt
