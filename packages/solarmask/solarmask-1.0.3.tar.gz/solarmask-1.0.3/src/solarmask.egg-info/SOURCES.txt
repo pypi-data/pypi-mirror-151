@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/solarmask/ARDataSet.py
+src/solarmask/__init__.py
+src/solarmask/active_region.py
+src/solarmask/active_region_derived_fields.py
+src/solarmask/active_region_parameters.py
+src/solarmask/active_region_segments.py
+src/solarmask/data.py
+src/solarmask/utils.py
+src/solarmask.egg-info/PKG-INFO
+src/solarmask.egg-info/SOURCES.txt
+src/solarmask.egg-info/dependency_links.txt
+src/solarmask.egg-info/requires.txt
+src/solarmask.egg-info/top_level.txt
