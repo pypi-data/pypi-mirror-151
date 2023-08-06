@@ -1,0 +1,10 @@
+urlextract/__init__.py,sha256=cbrKlCQp2F4t7hLmA-cgAkimphw5LlGBjZZzuERz7OM,108
+urlextract/cachefile.py,sha256=pakyAwgSoWFBdLrNkF52T-Qg5DWK9uekge0x1b7hrYQ,8671
+urlextract/urlextract_core.py,sha256=9nbFsmg9uv3mS0SR4RI1w1tIcbd6BB_cYe5xSyhFvc0,34731
+urlextract/data/tlds-alpha-by-domain.txt,sha256=5CRYdF7UxxWtxV5RNuBZkMV1TmJlU4fCuNWoNrmcoFE,9976
+urlextract-1.6.0.dist-info/LICENSE,sha256=hPfz4lHs7HHZa27aD98qNtxfD6ntNswbzB6z1FzANx0,1080
+urlextract-1.6.0.dist-info/METADATA,sha256=UenwSFYZI4_88lm9CqMfYvL6SuadsCnV70FqII1A2-0,5345
+urlextract-1.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+urlextract-1.6.0.dist-info/entry_points.txt,sha256=Gqc1vqUefSFxYQ88BCGLnjopcZ1WAaatcVHgFXdh-10,59
+urlextract-1.6.0.dist-info/top_level.txt,sha256=vudCZK9qcLZ22kbwXYpUYqWN8lxMrMdwJzBzXgl6GIY,11
+urlextract-1.6.0.dist-info/RECORD,,
