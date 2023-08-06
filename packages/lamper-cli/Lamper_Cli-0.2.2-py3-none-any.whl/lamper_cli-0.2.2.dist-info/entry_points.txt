@@ -1,0 +1,3 @@
+[console_scripts]
+lamper-cli=lamper_cli.cli:cli
+
