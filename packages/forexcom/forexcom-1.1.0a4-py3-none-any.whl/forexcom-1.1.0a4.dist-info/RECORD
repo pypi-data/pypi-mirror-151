@@ -1,0 +1,13 @@
+forexcom/__init__.py,sha256=_2zmNFFYZ0bFWoKlb9H_KX6pbaBQ3hzDmlp0xfX-ADQ,180
+forexcom/client.py,sha256=n6jCYXlItrlrZrNBoEEqc1eEXGzOoZLvsFb1NpGywY0,3566
+forexcom/exceptions.py,sha256=d0jAC7Q5clOb10bkkXvcE6QPJKi1tZI2LmzF5TjrePU,569
+forexcom/lightstream.py,sha256=yUtcl-T6Y6mmPXzZx-zuIG-gLhmzmo_x8Q6b0dBai20,13700
+forexcom/rest.py,sha256=awnrgbgkfI4fA6K7hBlzdO0cDU6dGqjsYWSNdTmH0ls,5994
+forexcom/utils.py,sha256=ywPpSjmcommYJ5dGE4vODoOH7PTK4tn2sBP-X60KewY,2451
+forexcom/models/__init__.py,sha256=UayJ37KEgnQh7sI3WpFlOphFLFMuyPk-uSE3UMUE1xU,34
+forexcom/models/prices.py,sha256=mr2UczqlU494OMg_aWwG_FtSrjEk6GxHGufRPfXBsfk,1225
+forexcom-1.1.0a4.dist-info/LICENSE,sha256=EVI1sn130uKNg4FhJ2GiRTKmG_aFETs5ngDF8MR9FzI,1070
+forexcom-1.1.0a4.dist-info/METADATA,sha256=ajIyTqhdtosstRl6VTvw1f0uDkFN0ypwqYS9kCH26bQ,8013
+forexcom-1.1.0a4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+forexcom-1.1.0a4.dist-info/top_level.txt,sha256=Op0qsW8VB4Dhdv88AB1G0qv7Kdh81Gp90NRJ86qlK-c,9
+forexcom-1.1.0a4.dist-info/RECORD,,
