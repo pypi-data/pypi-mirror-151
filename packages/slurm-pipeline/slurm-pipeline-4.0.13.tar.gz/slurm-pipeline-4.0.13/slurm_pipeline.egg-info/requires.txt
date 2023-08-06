@@ -1,0 +1,9 @@
+pytest>=6.2.2
+
+[dev]
+flake8
+pycodestyle
+pytest
+
+[test]
+pytest

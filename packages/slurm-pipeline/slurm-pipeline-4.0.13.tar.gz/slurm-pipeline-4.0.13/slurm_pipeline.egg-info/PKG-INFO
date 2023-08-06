@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: slurm-pipeline
+Version: 4.0.13
+Summary: A Python class and utility script for scheduling SLURM jobs
+Home-page: https://github.com/acorg/slurm-pipeline
+Download-URL: https://github.com/acorg/slurm-pipeline
+Author: Terry Jones
+Author-email: tcj25@cam.ac.uk
+License: MIT
+Keywords: slurm,sbatch
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE.txt
+
+UNKNOWN
+
