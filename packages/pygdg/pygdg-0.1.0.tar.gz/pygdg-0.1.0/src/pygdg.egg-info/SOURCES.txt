@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pygdg/__init__.py
+src/pygdg/common.py
+src/pygdg/events.py
+src/pygdg/features.py
+src/pygdg/main.py
+src/pygdg.egg-info/PKG-INFO
+src/pygdg.egg-info/SOURCES.txt
+src/pygdg.egg-info/dependency_links.txt
+src/pygdg.egg-info/entry_points.txt
+src/pygdg.egg-info/requires.txt
+src/pygdg.egg-info/top_level.txt
