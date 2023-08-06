@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: image-segmentation-marking-aicore
+Version: 1.1.0
+Summary: An automated marking system for the image segmentation scenario
+Home-page: UNKNOWN
+Author: Ivan Ying
+Author-email: ivan@theaicore.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
