@@ -1,0 +1,12 @@
+_pyoslog.cpython-39-darwin.so,sha256=poIHQGxpHWXU3vINST4hJa2BGkZAoqnHe-imlVBsCdY,10532
+pyoslog/__init__.py,sha256=3iGCKTuhfpieJcW7SPqWOc_YwmzZkXTFFaf2ccWggCA,245
+pyoslog/__version__.py,sha256=xzktOiMTfwo40-JKxZJ8W6iVirPMeWAlEEd0SbVaTVI,310
+pyoslog/_pyoslog.c,sha256=1U-FVZ04sOqPpgY66p6GKydIfNqHjekrXQoVsJsmy8I,4035
+pyoslog/compatibility.py,sha256=MD3c1tXQxhMB4vkEHEeKOMDccAnznhIdKpueaGhW83k,513
+pyoslog/core.py,sha256=YXN0J1Y21RGTp8DMQYo2QA6kCGn3Da3PW9zbYqWWpyg,1319
+pyoslog/handler.py,sha256=xE2xmyPmzTqFKjkzf7ED6XV_YMFFnCO9h03mzTxhNWU,1432
+pyoslog-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyoslog-0.3.0.dist-info/METADATA,sha256=7qWDT6AhdFaAch0oiW060DILdEyMTYOStKnkAi2QFD4,4727
+pyoslog-0.3.0.dist-info/WHEEL,sha256=2wG-v9PA6DWKiFhqDK4DX_xrsDoanyr0LPNRAGum7R8,110
+pyoslog-0.3.0.dist-info/top_level.txt,sha256=wan5fWgKOIG686MYEa2OVnlAO6tgZuw5YcA-nr1SgRQ,17
+pyoslog-0.3.0.dist-info/RECORD,,
