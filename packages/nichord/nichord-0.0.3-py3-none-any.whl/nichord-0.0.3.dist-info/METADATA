@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nichord
+Version: 0.0.3
+Summary: Creates chord diagrams for connectivity/graph data
+Home-page: https://github.com/paulcbogdan/NiChord
+Author: paulcbogdan
+Author-email: paulcbogdan@gmail.com
+License: MIT
+Requires-Dist: nilearn
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: atlasreader
+
+`NiChord` is a Python package for visualizing functional connectivity data. This package was inspired by [NeuroMArVL](https://immersive.erc.monash.edu/neuromarvl/?example=40496078-effa-4ac3-9d3e-cb7f946e7dd1_137.147.133.145), an online visualization tool.
+
+
