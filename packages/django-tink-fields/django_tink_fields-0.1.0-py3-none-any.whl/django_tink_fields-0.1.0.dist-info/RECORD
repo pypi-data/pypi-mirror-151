@@ -1,0 +1,14 @@
+tink_fields/__init__.py,sha256=Ylg_Gp4eOtZCQVDa6qODiKDG5bSxl65d_FG2gBQh2wM,69
+tink_fields/fields.py,sha256=IHTzo7I964s07cVzEOWTWoecf5W3r9jpSKKzGXe3aJ4,5276
+tink_fields/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tink_fields/test/models.py,sha256=m_t9hdRhU9NmwXT6RDefOf89vwzps7JPpUC6vdAL2C8,1047
+tink_fields/test/test_fields.py,sha256=8jYPfcY4vZddwVJlJUIaWsvCd_4Oymn0B9B1uypCxVE,1493
+tink_fields/test/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tink_fields/test/settings/base.py,sha256=ckdfSkBeWo2FDJNB8TVySd0qhvfyIDI5BFfDUxcO9-M,107
+tink_fields/test/settings/sqlite.py,sha256=LCS3vnQpqjDv5nZIgGAMCBQm3sUORZg522FyVitcakQ,577
+django_tink_fields-0.1.0.dist-info/AUTHORS.md,sha256=-kPubQkOfmEIdeOoTYJq_0rhXbuZbT-tL75JE-ZhQFM,412
+django_tink_fields-0.1.0.dist-info/LICENSE.txt,sha256=fTWzmjOp9xMe7SF1HYgsxFMTOzSUDjP7uxE4Fgssfd0,1513
+django_tink_fields-0.1.0.dist-info/METADATA,sha256=WzYBDertg4h1VnCmbxTUXOONTHol77pXlXXtsTR9iuM,4484
+django_tink_fields-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_tink_fields-0.1.0.dist-info/top_level.txt,sha256=a6g198CWU4_PiA_QfUMCGhErscy9xS8Ro_CQbXcrvso,12
+django_tink_fields-0.1.0.dist-info/RECORD,,
