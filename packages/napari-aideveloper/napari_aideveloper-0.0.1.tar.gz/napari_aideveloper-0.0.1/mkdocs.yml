@@ -1,0 +1,11 @@
+site_name: napari_aideveloper
+site_description: A simple plugin to use with napari
+site_author: Napari Developer
+
+theme: readthedocs
+
+
+repo_url: https://github.com/githubuser/napari_aideveloper
+
+pages:
+- Home: index.md
