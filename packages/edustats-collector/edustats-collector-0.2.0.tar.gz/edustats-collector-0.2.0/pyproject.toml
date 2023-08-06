@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "edustats-collector"
+version = "0.2.0"
+description = "edustats collector client"
+authors = ["Nicola Jordan <njordan.hsr@gmail.com>"]
+packages = [
+    { include = "result_collector_client" },
+    { include = "result_collector_client/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.9.0"
+requests = "^2.27.1"
+
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.1.1"
+blue = "^0.8.0"
+pytest = "^7.1.1"
+python-dotenv = "^0.19.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
