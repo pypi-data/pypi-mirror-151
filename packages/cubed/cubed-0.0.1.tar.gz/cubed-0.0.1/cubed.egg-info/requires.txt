@@ -1,0 +1,7 @@
+dask[array]
+fsspec
+networkx
+numpy>=1.22
+pygraphviz
+rechunker
+zarr
