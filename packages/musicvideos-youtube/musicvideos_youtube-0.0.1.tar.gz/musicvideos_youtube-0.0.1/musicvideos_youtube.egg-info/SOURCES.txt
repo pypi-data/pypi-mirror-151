@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+musicvideos_youtube/__init__.py
+musicvideos_youtube/upload.py
+musicvideos_youtube.egg-info/PKG-INFO
+musicvideos_youtube.egg-info/SOURCES.txt
+musicvideos_youtube.egg-info/dependency_links.txt
+musicvideos_youtube.egg-info/requires.txt
+musicvideos_youtube.egg-info/top_level.txt

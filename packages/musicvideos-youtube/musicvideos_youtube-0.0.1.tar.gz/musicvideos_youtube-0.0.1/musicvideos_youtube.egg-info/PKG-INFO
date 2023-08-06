@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: musicvideos-youtube
+Version: 0.0.1
+Summary: Library to upload videos to youtube.
+Home-page: UNKNOWN
+Author: JustCow
+Author-email: <justcow@pm.me>
+License: UNKNOWN
+Keywords: python,musicvideos,upload,youtube,justcow
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+License-File: LICENSE
+
+UNKNOWN
+
