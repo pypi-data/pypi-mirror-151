@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cgcomponents/exceptions.py
+cgcomponents/logs.py
+cgcomponents/requests_cg.py
+cgcomponents.egg-info/PKG-INFO
+cgcomponents.egg-info/SOURCES.txt
+cgcomponents.egg-info/dependency_links.txt
+cgcomponents.egg-info/requires.txt
+cgcomponents.egg-info/top_level.txt
