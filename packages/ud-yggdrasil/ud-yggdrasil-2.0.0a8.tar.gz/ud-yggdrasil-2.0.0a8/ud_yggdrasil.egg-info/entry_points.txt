@@ -1,0 +1,3 @@
+[console_scripts]
+yggdrasil = yggdrasil.scripts:cmd_ygg
+
