@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dremel3dpy
+Version: 0.0.1
+Summary: Dremel 3D Printer API
+Author: Gustavo Stor
+Author-email: gus@storhub.io
+License: UNKNOWN
+Keywords: python,dremel,3d,printer,3d-printer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: certifi (==2022.5.18)
+Requires-Dist: charset-normalizer (==2.0.12)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: idna (==3.3)
+Requires-Dist: multidict (==6.0.2)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.9)
+Requires-Dist: validators (==0.19.0)
+Requires-Dist: yarl (==1.7.2)
+
+API for grabbing statistics and pausing/resuming/canceling/starting a printing job on a 3D20, 3D40 or 3D45 model.
+
