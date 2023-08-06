@@ -1,0 +1,16 @@
+README.md
+setup.py
+kucoin_cli.egg-info/PKG-INFO
+kucoin_cli.egg-info/SOURCES.txt
+kucoin_cli.egg-info/dependency_links.txt
+kucoin_cli.egg-info/requires.txt
+kucoin_cli.egg-info/top_level.txt
+kucoincli/__init__.py
+kucoincli/client.py
+kucoincli/pipe.py
+kucoincli/setup.py
+kucoincli/utils/__init__.py
+kucoincli/utils/_helpers.py
+kucoincli/websocket/__init__.py
+kucoincli/websocket/manager.py
+kucoincli/websocket/subscribe.py
