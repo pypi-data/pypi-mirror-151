@@ -1,0 +1,10 @@
+numpy>=1.19
+pytest>=6.2
+
+[dev]
+build
+invoke
+nbval
+pre-commit
+pytest-cov
+twine
