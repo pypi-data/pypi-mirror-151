@@ -1,0 +1,16 @@
+MANIFEST.in
+requirements-tests.txt
+setup.py
+kaniattrdict/__init__.py
+kaniattrdict/default.py
+kaniattrdict/dictionary.py
+kaniattrdict/mapping.py
+kaniattrdict/merge.py
+kaniattrdict/mixins.py
+kaniattrdict/strict.py
+kaniattrdict.egg-info/PKG-INFO
+kaniattrdict.egg-info/SOURCES.txt
+kaniattrdict.egg-info/dependency_links.txt
+kaniattrdict.egg-info/requires.txt
+kaniattrdict.egg-info/top_level.txt
+kaniattrdict.egg-info/zip-safe
