@@ -1,0 +1,6 @@
+pathvalidate
+requests
+tqdm
+pick
+beautifulsoup4
+colorama
