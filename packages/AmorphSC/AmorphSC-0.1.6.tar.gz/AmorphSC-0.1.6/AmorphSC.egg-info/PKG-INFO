@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AmorphSC
+Version: 0.1.6
+Summary: Package to permorm data analysis on amorphous semiconductors
+Home-page: https://github.com/lfabbri98/AmorphSC
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: Luca Fabbri
+Author-email: luca.fabbri98@outlook.it
+License: GNU
+Keywords: semiconductors,amorphous,KPFM,AFM,photocurrent
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

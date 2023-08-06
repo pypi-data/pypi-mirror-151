@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+AmorphSC/CV.py
+AmorphSC/KPFM.py
+AmorphSC/in_out.py
+AmorphSC/photocurrent.py
+AmorphSC.egg-info/PKG-INFO
+AmorphSC.egg-info/SOURCES.txt
+AmorphSC.egg-info/dependency_links.txt
+AmorphSC.egg-info/requires.txt
+AmorphSC.egg-info/top_level.txt
