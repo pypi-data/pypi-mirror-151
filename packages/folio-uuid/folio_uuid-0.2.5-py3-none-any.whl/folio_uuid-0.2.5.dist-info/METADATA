@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: folio-uuid
+Version: 0.2.5
+Summary: A library for generating predictive uuids for FOLIO data migrations
+Home-page: https://github.com/FOLIO-FSE/folio_uuid
+Download-URL: https://github.com/FOLIO-FSE/folio_uuid/archive/v_0_2_3.tar.gz
+Author: Theodor Tolstoy
+Author-email: pypi.teddes@tolstoy.se
+License: MIT
+Keywords: FOLIO,FOLIO_LSP,OKAPI,API Wrapper,UUID
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
