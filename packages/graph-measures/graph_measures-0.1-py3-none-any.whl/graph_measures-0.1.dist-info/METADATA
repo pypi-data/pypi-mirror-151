@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: graph-measures
+Version: 0.1
+Summary: A python package for calculating topological graph features on cpu/gpu
+Home-page: https://github.com/louzounlab/graph-measures
+Author: Itay Levinas, Roy Sh
+Author-email: kabya.amit@gmail.com
+Maintainer: Amit Kabya
+License: GPL
+Keywords: gpu graph topological features calculator
+Requires-Dist: setuptools (~=61.3.1)
+Requires-Dist: networkx (~=2.8)
+Requires-Dist: pandas (~=1.4.2)
+Requires-Dist: numpy (~=1.22.3)
+Requires-Dist: matplotlib (~=3.5.1)
+Requires-Dist: scipy (~=1.8.0)
+Requires-Dist: scikit-learn (~=1.0.2)
+Requires-Dist: python-louvain (~=0.16)
+Requires-Dist: bitstring (~=3.1.9)
+
