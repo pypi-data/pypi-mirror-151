@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: mono-diff
+Version: 0.1.5
+Summary: UNKNOWN
+Home-page: https://github.com/ran729/mono
+Author: Ran Sasportas
+Author-email: ran729@gmail.com
+License: MIT
+Description: # mono-diff
+        A mono-repo apps changed detection tool
+        
+        ## Installation - 
+            pip install mono-diff
+        
+        ## Usage -
+        Get Affected Changed -  
+        
+            mono affected --branch master
+        
+        Build flat dependency map - 
+                
+            mono build
+        
+        Get apps in repo - 
+                
+            mono apps
+Platform: UNKNOWN
+Requires-Python: >=3.7

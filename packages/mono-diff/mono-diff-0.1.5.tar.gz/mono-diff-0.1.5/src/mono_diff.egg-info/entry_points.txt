@@ -1,0 +1,3 @@
+[console_scripts]
+name = mono_diff.cli:main
+
