@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.MD
+pyproject.toml
+requirements.txt
+setup.py
+src/twitter_scraper_without_api.egg-info/PKG-INFO
+src/twitter_scraper_without_api.egg-info/SOURCES.txt
+src/twitter_scraper_without_api.egg-info/dependency_links.txt
+src/twitter_scraper_without_api.egg-info/requires.txt
+src/twitter_scraper_without_api.egg-info/top_level.txt
