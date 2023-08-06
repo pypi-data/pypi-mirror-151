@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: subsplease.py
+Version: 1.0.0
+Summary: A simple and asynchronous wrapper for SubsPlease
+Home-page: https://github.com/Normouse/subsplease.py
+Author: Normouse
+Author-email: m.normouse@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# subsplease.py 
+A simple and asynchronous wrapper for SubsPlease.
+
+# Installation
+```
+pip install subsplease.py
+```
+
+# Usage
+```python
+from subsplease import SubsPlease
+
+subsplease = SubsPlease()
+```
+
+From magnet:
+```python
+releases_magnet = await subsplease.get_latest_magnet()
+```
+
+From torrent:
+```python
+releases_torrent = await subsplease.get_latest_torrent()
+```
