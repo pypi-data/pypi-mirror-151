@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+config/install_requires.txt
+config/project_name.txt
+tests/__init__.py
+tests/test_example.py
+tfserving_grpc_helper/__init__.py
+tfserving_grpc_helper/tfserving.py
+tfserving_grpc_helper/version.py
+tfserving_grpc_helper.egg-info/PKG-INFO
+tfserving_grpc_helper.egg-info/SOURCES.txt
+tfserving_grpc_helper.egg-info/dependency_links.txt
+tfserving_grpc_helper.egg-info/requires.txt
+tfserving_grpc_helper.egg-info/top_level.txt
