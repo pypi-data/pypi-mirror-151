@@ -1,0 +1,30 @@
+===============
+Release History
+===============
+
+v0.0.4 (2022-05-17)
+-------------------
+
+- add polar plot for scales
+- implement a bunch of helper functions,
+  e.g. transposition, inversion etc.
+
+v0.0.3 (2022-04-xx)
+-------------------
+
+- forgot what was changed
+
+v0.0.2 (2022-04-10)
+-------------------
+
+- introduce Scales class
+- basic plotting
+- basic sonification
+- Travis is working
+
+v0.0.1 (2022-03-29)
+-------------------
+
+- initial Release
+- `generate_scales` implemented
+- Travis CI not working yet
