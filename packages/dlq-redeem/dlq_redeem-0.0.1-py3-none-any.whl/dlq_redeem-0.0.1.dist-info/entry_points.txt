@@ -1,0 +1,3 @@
+[console_scripts]
+redeem=dlq_redeem.cli:cli
+
