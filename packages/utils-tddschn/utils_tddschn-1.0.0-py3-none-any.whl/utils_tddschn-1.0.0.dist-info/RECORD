@@ -1,0 +1,10 @@
+utils_tddschn/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+utils_tddschn/git.py,sha256=yWCbTmdQkvB5C5tXgv60FEr6OikhOIRSCavLjDiJpKM,857
+utils_tddschn/sync/git.py,sha256=4Hq4Tm0VlNOrPvp6sduDULvplz_Ns-vaqEEPj0-fEN8,1082
+utils_tddschn/sync/numpy.py,sha256=ffGrzJwuoHhlUX72ulil00UBnvx5t1SVv0XlH3qwt4o,619
+utils_tddschn/sync/text.py,sha256=FWBQKOLznVthvMYMASrx2Gw5lqKHEOccQpBisDZ53Dw,24
+utils_tddschn/sync/utils.py,sha256=kAadt-vvS3UoRpFhdxDQi0RBzJBay_jn_3XPp5YBeAA,646
+utils_tddschn-1.0.0.dist-info/LICENSE,sha256=kwRWnGfHM3i60QbUMmPO8iV-mcawDjuN_lgFJsyVLRo,1113
+utils_tddschn-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+utils_tddschn-1.0.0.dist-info/METADATA,sha256=OJeBj0j5BhoKQ4Zfc9UNPDd_NARJzrTVEM0QsOA50so,677
+utils_tddschn-1.0.0.dist-info/RECORD,,
