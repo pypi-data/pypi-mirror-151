@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-office-tools
+Version: 0.0.1
+Summary: test for python-office
+Home-page: http://www.python4office.cn/
+Author: CoderWanFeng
+Author-email: 1957875073@qq.com
+License: MIT
+Project-URL: Bug Tracker, https://gitee.com/CoderWanFeng/python-office/issues
+Project-URL: Documentation, https://gitee.com/CoderWanFeng/python-office/blob/master/README.md
+Project-URL: Source Code, https://gitee.com/CoderWanFeng/python-office/tree/master/pip-source-code/python-office
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+-test
+
