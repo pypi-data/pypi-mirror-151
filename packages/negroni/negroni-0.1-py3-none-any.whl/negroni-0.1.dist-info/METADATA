@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: negroni
+Version: 0.1
+Summary: eNsemblE learninG foR mOdel combiNatIon in python
+Home-page: https://github.com/tommyippoz/NEGRONI
+Author: Tommaso Zoppi
+Author-email: tommaso.zoppi@unifi.it
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NEGRONI
+eNsemblE learninG foR mOdel combiNatIon in python
