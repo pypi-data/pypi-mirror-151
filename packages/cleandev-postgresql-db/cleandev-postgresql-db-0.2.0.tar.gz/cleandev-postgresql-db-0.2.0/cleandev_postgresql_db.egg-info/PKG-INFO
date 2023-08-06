@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cleandev-postgresql-db
+Version: 0.2.0
+Summary: Module for handler errors codes in your APIS
+Home-page: https://gitlab.com/cleansoftware/libs/public/cleandev-resp-builder
+Author: Daniel Rodriguez Rodriguez
+Author-email: danielrodriguezrodriguez.pks@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/cleansoftware/libs/public/cleandev-resp-builder/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# cleandev-resp-builder
+
+Con esta libreria podras constuir "Response" para las apis de una forma facil usando un fichero de codigos de error
+para retornar mensajes en tus APIS. 
+
+Olvidate de las tediosas conversiones de diccionarios a texto para tus response y evita hardcodear respuestas por tus
+endpoints.
+
+| Properties         | Requerido          | Valor por defecto | Descripción                                |
+|--------------------|--------------------|:-----------------:|--------------------------------------------|
+| name_file_codes    | :heavy_check_mark: |       -           | Nombre del archivo de los codigos de error |
+
+
+
