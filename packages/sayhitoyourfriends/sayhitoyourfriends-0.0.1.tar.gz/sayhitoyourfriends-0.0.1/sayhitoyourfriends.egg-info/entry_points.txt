@@ -1,0 +1,4 @@
+[console_scripts]
+oad = openapidocs.main:main
+openapidocs = openapidocs.main:main
+
