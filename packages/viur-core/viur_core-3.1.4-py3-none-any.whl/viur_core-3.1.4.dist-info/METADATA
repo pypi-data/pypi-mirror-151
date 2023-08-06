@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: viur-core
+Version: 3.1.4
+Summary: The core component of ViUR, a development framework for Google App Engine
+Home-page: https://github.com/viur-framework/viur-core
+Author: Mausbrand Informationssysteme GmbH
+Author-email: devs@viur.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: backports.zoneinfo (==0.2.1)
+Requires-Dist: cachetools (==5.0.0)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: charset-normalizer (==2.0.12)
+Requires-Dist: google-api-core[grpc] (==2.7.2)
+Requires-Dist: google-auth (==2.6.3)
+Requires-Dist: google-cloud-appengine-logging (==1.1.1)
+Requires-Dist: google-cloud-audit-log (==0.2.0)
+Requires-Dist: google-cloud-core (==2.3.0)
+Requires-Dist: google-crc32c (==1.3.0)
+Requires-Dist: google-cloud-datastore (==2.5.1)
+Requires-Dist: google-cloud-iam (==2.6.1)
+Requires-Dist: google-cloud-logging (==3.0.0)
+Requires-Dist: google-cloud-storage (==2.2.1)
+Requires-Dist: google-cloud-tasks (==2.8.1)
+Requires-Dist: google-resumable-media (==2.3.2)
+Requires-Dist: googleapis-common-protos[grpc] (==1.56.0)
+Requires-Dist: grpcio (==1.44.0)
+Requires-Dist: grpc-google-iam-v1 (==0.12.4)
+Requires-Dist: grpcio-status (==1.44.0)
+Requires-Dist: gunicorn (==20.1.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: jinja2 (==3.1.1)
+Requires-Dist: MarkupSafe (==2.1.1)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pillow (==9.1.0)
+Requires-Dist: protobuf (==3.20.1)
+Requires-Dist: pyparsing (==3.0.8)
+Requires-Dist: pytz (==2022.1)
+Requires-Dist: pytz-deprecation-shim (==0.1.0.post0)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: tzdata (==2022.1)
+Requires-Dist: tzlocal (==4.2)
+Requires-Dist: urllib3 (==1.26.9)
+Requires-Dist: viur-datastore (==1.2.2)
+Requires-Dist: webob (==1.8.7)
+Requires-Dist: setuptools (==62.0.0)
+
+# <img src="https://github.com/viur-framework/viur-artwork/raw/main/icons/icon-core.svg" height="128"> ViUR Core
+
+[![Documentation Status](https://readthedocs.org/projects/viur-core/badge/?version=latest)](https://viur-core.readthedocs.io/en/latest/?badge=latest)
+
+Core component and library of the [ViUR framework](https://www.viur.dev).
+
+## Usage
+
+To get started with ViUR, check out [viur-base](https://github.com/viur-framework/viur-base). It comes with a recently updated, pre-configured and well documented project template to immediately start with a new project.
+
+## Contributing
+
+ViUR is developed and maintained by [Mausbrand Informationssysteme GmbH](https://www.mausbrand.de/en), from Dortmund in Germany. We are a software company consisting of young, enthusiastic software developers, designers and social media experts, working on exciting projects for different kinds of customers. All of our newer projects are implemented with ViUR, from tiny web-pages to huge company intranets with hundreds of users.
+
+Help of any kind to extend and improve or enhance this project in any kind or way is always appreciated.
+
+We take great interest in your opinion about ViUR. We appreciate your feedback and are looking forward to hear about your ideas. Share your vision or questions with us and participate in ongoing discussions.
+
+## License
+
+Copyright © 2022 by Mausbrand Informationssysteme GmbH.<br>
+Mausbrand and ViUR are registered trademarks of Mausbrand Informationssysteme GmbH.
+
+You may use, modify and distribute this software under the terms and conditions of the GNU Lesser General Public License (LGPL). See the file LICENSE provided within this package for more information.
