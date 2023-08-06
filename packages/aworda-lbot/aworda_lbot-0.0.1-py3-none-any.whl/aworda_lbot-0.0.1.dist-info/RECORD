@@ -1,0 +1,10 @@
+aworda/lbot/__init__.py,sha256=TA16HsMm5Mj_LbcF42hUA4pLuRjaQ2Jzm7jGqnUr8_o,839
+aworda/lbot/config.py,sha256=RRfwpx7wU2nnUv86IkiimLRjbJIBlTu3I9j-w78UHx8,1556
+aworda/lbot/database.py,sha256=p_MOx80edJBYizEYimjSguly871Cu8pR_P5gPFNmyT4,621
+aworda/lbot/dispatcher.py,sha256=XQz0jGLK1JmwirQsjMTY849ihs7FjfuF9TChW8y5lAs,390
+aworda/lbot/permission.py,sha256=ZLBDeOzYjADpw-F5cVeZfl5oY0wqm36g0DVUVAK0r3Q,1517
+aworda/lbot/utils.py,sha256=3936ZElQOK-ZUy5JcU-6UzKoqm1vbpZW6qgW8OwwzLc,384
+aworda_lbot-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+aworda_lbot-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aworda_lbot-0.0.1.dist-info/METADATA,sha256=GU0BMNEEDot_gdR7jZnYxnJpsxh-imnHETBSTMwi9ec,468
+aworda_lbot-0.0.1.dist-info/RECORD,,
