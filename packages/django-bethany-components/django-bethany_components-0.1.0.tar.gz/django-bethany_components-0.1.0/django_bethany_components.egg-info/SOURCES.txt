@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_bethany_components.egg-info/PKG-INFO
+django_bethany_components.egg-info/SOURCES.txt
+django_bethany_components.egg-info/dependency_links.txt
+django_bethany_components.egg-info/requires.txt
+django_bethany_components.egg-info/top_level.txt
