@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>{{ modelify.title }}</title>
+  <link href="/static/bulma.css" rel="stylesheet">
+  <link href="/static/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet">
+<div class="task-manager">
+  <div class="left-bar">
+    <div class="upper-part">
+      <div class="actions">
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="left-content">
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="header">{{ modelify.title }}</div>
+
+    <div class="tasks-wrapper">
+      {% include 'custom_ui.html' %}
+    </div>
+  </div>
+  <div class="right-bar">
+    <div class="top-part">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-users">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+      <div class="count">1</div>
+    </div>
+       <div class=" content-categories mb-3">
+
+      <div class="label-wrapper">
+        <input class="nav-item" name="nav" type="radio" id="opt-1" checked>
+        <label class="category" for="opt-1">Call API</label>
+      </div>
+      <div class="label-wrapper">
+        <input class="nav-item" name="nav" type="radio" id="opt-2">
+        <label class="category" for="opt-2">Code</label>
+      </div>
+
+    </div>
+    <div class="right-content">
+
+
+      {% include 'form.html' %}
+
+
+    <div id="result" class="content">
+        <div class="header upcoming">Result</div>
+        <pre class="box"><code id="result-code"> </code></pre>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+{% if  modelify.model_input_type == "TABULAR" %}
+<script>
+  // Attach a submit handler to the form
+  $( "#submitPredict" ).submit(function( event ) {
+
+    // Stop form from submitting normally
+    event.preventDefault();
+
+    // Get some values from elements on the page:
+    var $form = $( this ),
+      url = $form.attr( "action" );
+      var data = {};
+      $.each($form.serializeArray(), function() {
+        data[this.name] = this.value;
+      });
+    // Send the data using post
+    $.ajax({
+                url: url,
+                type: 'post',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify([data]),
+                dataType:"json",
+                success: function( data, textStatus, jQxhr ){
+                  document.getElementById('result-code').innerHTML = "<b>Response:</b> " + JSON.stringify(data, undefined, 2);
+                },
+                error: function( error ){
+                  document.getElementById('result-code').innerHTML = "<b>Error:</b> " + JSON.stringify(error.responseText, undefined, 2);
+                }
+      });
+
+
+  });
+  </script>
+{% elif modelify.model_input_type == "IMAGE"  %}
+<script>
+  const fileInput = document.querySelector('#image-file input[type=file]');
+  fileInput.onchange = () => {
+      if (fileInput.files.length > 0) {
+      const fileName = document.querySelector('#image-file .file-name');
+      fileName.textContent = fileInput.files[0].name;
+      }
+  }
+  </script>
+  
+  <script>
+  // Attach a submit handler to the form
+  $( "#submitPredict" ).submit(function( event ) {
+  
+      // Stop form from submitting normally
+      event.preventDefault();
+  
+      // Get some values from elements on the page:
+      var file = document.getElementById("image-file-input");
+      var formData = new FormData();
+      if(file.files.length > 0){
+       
+      formData.append("image",file.files[0], file.files[0].name);
+      var $form = $( this ),
+      url = $form.attr( "action" )
+  
+      var settings = {
+        "url": url,
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+          "accept": "application/json"
+        },
+        "processData": false,
+        "mimeType": "multipart/form-data",
+        "contentType": false,
+        "data": formData,
+        success: function( data, textStatus, jQxhr ){
+          document.getElementById('result-code').innerHTML = "<b>Response:</b> " + JSON.stringify(data, undefined, 2);
+        },
+        error: function( error ){
+          document.getElementById('result-code').innerHTML = "<b>Error:</b> " + JSON.stringify(error.responseText, undefined, 2);
+        }
+      };
+
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+      });
+    }else {
+      alert("Please select an image")
+    }
+  
+  });
+  </script>
+{% endif %}
+
+</body>
+</html>

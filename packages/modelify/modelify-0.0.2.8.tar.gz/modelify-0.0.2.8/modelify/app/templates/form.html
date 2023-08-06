@@ -1,0 +1,7 @@
+{% if  modelify.model_input_type == "TABULAR" %}
+    {% include 'components/forms/tabular.html' %}
+{% elif modelify.model_input_type == "IMAGE"  %}
+    {% include 'components/forms/image.html' %}
+{% else %}
+    <td id="error"> Error </td>
+{% endif %}
