@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: quickbeutils
+Version: 1.0.0
+Summary: All sorts of utilities
+Home-page: https://github.com/eldad1221/quickbelog
+Author: Eldad Bishari
+Author-email: eldad@1221tlv.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Quick using logger
+
+### All sorts of utilities
+
+* Sending emails and Slack messages
+* Work with environment variables
+

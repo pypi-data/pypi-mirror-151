@@ -1,0 +1,12 @@
+README.md
+setup.py
+quickbeutils/__init__.py
+quickbeutils/aws_ses.py
+quickbeutils/gmail.py
+quickbeutils/helpers.py
+quickbeutils/slack.py
+quickbeutils.egg-info/PKG-INFO
+quickbeutils.egg-info/SOURCES.txt
+quickbeutils.egg-info/dependency_links.txt
+quickbeutils.egg-info/requires.txt
+quickbeutils.egg-info/top_level.txt
