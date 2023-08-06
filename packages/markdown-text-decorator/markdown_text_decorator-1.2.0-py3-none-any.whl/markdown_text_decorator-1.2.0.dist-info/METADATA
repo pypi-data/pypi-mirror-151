@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: markdown-text-decorator
+Version: 1.2.0
+Summary: Text Decorator Extension for Python-Markdown.
+Author: Silver Bullet Software
+Author-email: inq.sbs@gmail.com
+Maintainer: sbs
+Maintainer-email: inq.sbs@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: markdown (>=3)
+
+[Python-Markdown]: https://python-markdown.github.io/
+
+# Text Decorator Extension for Python-Markdown
+
+This extension add Text Decorate handler to [Python-Markdown].
+
+## Spec
+
+This extension supports follwing expressions.
+
+|Type         |Markdown  |HTML               |
+|:------------|:---------|:------------------|
+|delete       |`--text--`|`<del>text</del>`  |
+|insert       |`++text++`|`<ins>text</ins>`  |
+|mark         |`!!text!!`|`<mark>text</mark>`|
+|strikethrough|`~~text~~`|`<s>text</s>`      |
+|subscript    |`^text^`  |`<sub>text</sub>`  |
+|superscript  |`^^text^^`|`<sup>text</sup>`  |
+
+## Installation
+
+```bash
+python3 -m pip install markdown_text_decorator
+```
+
+## Usage
+
+### Sample Code
+
+```python
+from markdown import Markdown
+
+MARKDOWN_EXTENSIONS = [
+    "markdown_text_decorator"
+]
+
+md2html = Markdown(extensions=MARKDOWN_EXTENSIONS)
+
+markdown_input = """
+
+# Markdown Text Decoration
+
+~~This is~~ strikethrough ~~line.~~
+
+++This is++ insert ++line.++ 
+
+--This is-- delete --line.--
+
+^^This is^^ superscript ^^line^^
+
+^This is^ subscript ^line^
+
+!!This is!! mark !!line!!
+
+"""
+
+html_output = md2html.convert(markdown_input)
+
+print(html_output)
+
+```
+
+### Sample Output
+
+```html
+<h1>Markdown Text Decoration</h1>
+<p><s>This is</s> strikethrough <s>line.</s></p>
+<p><ins>This is</ins> insert <ins>line.</ins></p>
+<p><del>This is</del> delete <del>line.</del></p>
+<p><sup>This is</sup> superscript <sup>line</sup></p>
+<p><sub>This is</sub> subscript <sub>line</sub></p>
+<p><mark>This is</mark> mark <mark>line</mark></p>
+```
+
+### Test Result
+
+```text
+
+MarkdownTextDecoratorTestCase
+----------------------------------------------------------------------
+test_delete (__main__.MarkdownTextDecoratorTestCase)
+test for delete ... ok
+test_insert (__main__.MarkdownTextDecoratorTestCase)
+test for insert ... ok
+test_mark (__main__.MarkdownTextDecoratorTestCase)
+test for mark ... ok
+test_strikethrough (__main__.MarkdownTextDecoratorTestCase)
+test for strikethrough ... ok
+test_subscript (__main__.MarkdownTextDecoratorTestCase)
+test for subscript ... ok
+test_superscript (__main__.MarkdownTextDecoratorTestCase)
+test for superscript ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+```
+
+
+## CHANGE LOG
+
+### v1.2.0
+
+Support mark and add unittest for mark.
+
+### v1.1.1
+
+Add unittest for strikethrough, insert, delete, superscript and subscript.
+
+### v1.1.0
+
+Support superscript and subscript.
+
+### v1.0.1
+
+Support multi-pairs in one line release.
+
+### v1.0.0
+
+Initial Release.
+
