@@ -1,0 +1,17 @@
+paideia_contracts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paideia_contracts/contracts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paideia_contracts/contracts/staking/__init__.py,sha256=f3jOuvY6hYfJJBcJ4cyGH_R2V1n_w9Wy1FZ1cI--fvM,62718
+paideia_contracts/contracts/staking/ergoscript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paideia_contracts/contracts/staking/ergoscript/addStakeProxy.es,sha256=72u6NNkg3cx2MIOIJ75v3U4pG2lbV2xeaiVzZjIHAaQ,1406
+paideia_contracts/contracts/staking/ergoscript/emission.es,sha256=9rbtFazoy-IiNEgeoMPJpqJrQbcZZqQTrXvvYD8Syvg,2824
+paideia_contracts/contracts/staking/ergoscript/stake.es,sha256=o_iJFqeGAdAqXlc1MN8m-LnDZ7c5B_cORw5lSb3S70E,2352
+paideia_contracts/contracts/staking/ergoscript/stakePool.es,sha256=VmzPgHXFWJFn7UbixQ988r6gQvRK3IrJttHbf7KBUiU,2100
+paideia_contracts/contracts/staking/ergoscript/stakeProxy.es,sha256=U8G4DDBdLp5vSWaj4YObDGM5E41ug_700z5HbUI71o0,1340
+paideia_contracts/contracts/staking/ergoscript/stakeState.es,sha256=bFm4jRi423q39dVKpneggIHFlmaEhgOtY8rLYe1OZdU,6708
+paideia_contracts/contracts/staking/ergoscript/stakingIncentive.es,sha256=bXOoVC-2fD3Bgi4QWPxfvv7WJcvnwdt8xyeV4DkFCMg,2670
+paideia_contracts/contracts/staking/ergoscript/unstakeProxy.es,sha256=eS6awi5AVZm5brDVzRqTZwmn3HJiWCG-Vebsu2rDBZs,1420
+paideia_contracts-0.0.5.dist-info/LICENSE,sha256=Y4GHg4lrejH6FmOXiuJ120AQicf2ZBGvv9Yrc3n5bUM,1065
+paideia_contracts-0.0.5.dist-info/METADATA,sha256=7JQ_SGUcj6zdf50Ty0PkHYr5J7eoxcoCEJY04RnKbt0,545
+paideia_contracts-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+paideia_contracts-0.0.5.dist-info/top_level.txt,sha256=hjprFtoo9YY3bIKI1s1IGS9VPxGKmgIGsg5eZBPkXP4,18
+paideia_contracts-0.0.5.dist-info/RECORD,,
