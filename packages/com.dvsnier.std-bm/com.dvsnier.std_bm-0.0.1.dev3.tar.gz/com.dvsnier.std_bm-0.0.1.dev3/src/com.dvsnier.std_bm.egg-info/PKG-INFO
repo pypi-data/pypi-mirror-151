@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: com.dvsnier.std-bm
+Version: 0.0.1.dev3
+Summary: this is dvsnier standard branch model programming.
+Author: dvsnier
+Author-email: dovsnier@qq.com
+License: MIT
+Project-URL: Bug_Tracker, https://gitee.com/python-partner/Python-Test/issues/
+Project-URL: Documentation, https://packaging.python.org/tutorials/distributing-packages/
+Project-URL: Funding, https://donate.pypi.org/
+Project-URL: Homepage, https://gitee.com/python-partner/Python-Test/
+Project-URL: Wiki, https://gitee.com/python-partner/Python-Test/wiki/
+Project-URL: Source, https://gitee.com/python-partner/Python-Test/
+Keywords: standard branch model,development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Free For Educational Use
+Classifier: License :: Free for non-commercial use
+Classifier: License :: Freely Distributable
+Classifier: License :: Freeware
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<4,>=2.7
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: virtualenv
+License-File: LICENSE.txt
+
+# README
+
+this is standard branch model modules.
+
+The help document is shown below:
+
+```bash
+usage: dvs-bsm [-h] [-V] [-cp current-project] [-pf project-prefix] [-nd] [-r]
+               destination-project-or-list [destination-project-or-list ...]
+
+this is a standard branch model execution program.
+
+positional arguments:
+  destination-project-or-list
+                        the project directory of the branch model to be standardized
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -V, --version         the show version and exit.
+  -cp current-project, --current-project current-project
+                        the current execution directory
+  -pf project-prefix, --project-prefix project-prefix
+                        the current project prefix directory
+  -nd, --local-flag     if flags == true, do not delete branch list of local repository, otherwise delete it.
+  -r, --associate-remote
+                        if associate-remote == true, do associate branch list of remote repository, otherwise not
+                        it.
+
+```
