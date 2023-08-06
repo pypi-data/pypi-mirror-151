@@ -1,0 +1,38 @@
+name: Elixir
+
+alias: ex
+
+interceptors:
+  - docker_local:
+      condition: "'$docker' == 'None'"
+      command: docker-compose exec $service $default_command $command
+  - docker_service:
+      condition: "'$docker' != 'None' and '$docker' != 'local'"
+      command: docker-compose exec $docker $default_command $command
+
+default_configuration:
+  named_arguments:
+    - docker:
+        default: "'local'"
+    - service:
+        default: Docker.get_main_docker_compose_service()
+
+commands:
+  default_command: mix
+  deps: deps.get
+  setup: ecto.setup
+  reset: ecto.reset
+  migrate: ecto.migrate
+  up: phx.server
+  schema: phx.gen.schema
+  gettext: gettext.extract --merge
+  iex:
+    command: iex -S mix
+    include_default_command: false
+  iexup:
+    command: iex -S mix phx.server
+    include_default_command: false
+  test:
+    command: test
+    environment:
+      MIX_ENV: test
