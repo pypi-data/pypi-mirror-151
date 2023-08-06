@@ -1,0 +1,13 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+./py4macro/__init__.py
+./py4macro/py4macro.py
+py4macro.egg-info/PKG-INFO
+py4macro.egg-info/SOURCES.txt
+py4macro.egg-info/dependency_links.txt
+py4macro.egg-info/requires.txt
+py4macro.egg-info/top_level.txt
