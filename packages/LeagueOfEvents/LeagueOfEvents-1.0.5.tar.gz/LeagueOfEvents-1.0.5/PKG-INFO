@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: LeagueOfEvents
+Version: 1.0.5
+Summary: Create an event system for the League of Legends live game API
+Home-page: https://github.com/agroth01/LeagueOfEvents
+Author: Alexander Groth
+Author-email: software.agroth@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+League Of Events
+================
+
+Create custom callbacks to various in game events made possible with the League Client API
+
+## Installing
+
+Install the [PyPI Package](https://pypi.org/project/LeagueOfEvents/):
+
+    pip install LeagueOfEvents
+
+## Examples
+Basic example:
+```py
+import leagueofevents
+
+def my_death_function():
+    print("oh shucks! I died :(")
+
+def ability_level_up(ability):
+    print(f"The ability {ability.name} is now level {ability.level}!")
+
+leagueofevents.subscribe_to_event("onDeath", my_death_function)
+leagueofevents.subscribe_to_event("onAbilityLevelUp", ability_level_up)
+```
+
+# Events
+
+## onKill
+> Called when the player gets a kill
+
+    Returns: Nothing
+    
+
+## onDeath
+> Called when the player dies
+
+    Returns: Nothing
+    
+
+## onAssist
+> Called when the player gets an assist
+
+    Returns: Nothing
+    
+
+## onLevelUp
+> Called when the player levels up
+
+    Returns: Nothing
+    
+
+## onGoldGain
+> Called when the player gains gold
+
+    Returns: (int)Gold gained
+    
+
+## onGoldLost
+> Called when the player loses gold
+
+    Returns: (int)Gold lost
+    
+## onRespawn
+> Called when the player respawns
+
+    Returns: Nothing
+    
+## onAbilityLevelUp
+> Called when the player levels up an ability
+    
+    Returns: Ability
+```py
+ability.name
+ability.level
+ability.key
+```
+    
+## onItemAdded
+> Called when the player gets a new item in their inventory
+    
+    Returns: Item
+```py
+item.name
+item.count
+item.is_consumable
+```
+ 
+## onItemRemoved
+> Called when the player removes a item from their inventory
+    
+    Returns: Item
+```py
+item.name
+item.count
+item.is_consumable
+```
+
+## onGameJoin
+> Called when the player first joins a game
+
+    Returns: Nothing
+    
+
+## onGameLeave
+> Called when the player leaves a game
+
+    Returns: Nothing
+
+
