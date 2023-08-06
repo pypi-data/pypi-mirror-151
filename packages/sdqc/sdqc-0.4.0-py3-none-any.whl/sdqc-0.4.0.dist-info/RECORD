@@ -1,0 +1,16 @@
+sdqc/__init__.py,sha256=6Unre5Rig37PVfC1wtNU0TwLmep2RAlrlfFB7ObxsxQ,54
+sdqc/_version.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+sdqc/checks.py,sha256=uIb4599H-w0wglx7ZXsVhr5HdpCDhvSomibqv5eeKQ4,9344
+sdqc/checks_dict.py,sha256=7Q53Er0ekbW2eke2SqhI5CzqZkf26l8WLUzzVOVHJWM,1918
+sdqc/default-conf.ini,sha256=ucUDgk3TFruSIjYtLVJBQLqIUH3qPWidBLvNlasu5Gc,704
+sdqc/default-report-conf.json,sha256=P-MSu94gnCo9-9Zcqwe2iUOqamTiZ2j0ohzMpAcL5WI,391
+sdqc/loading.py,sha256=3YqY1ospkRrMd58vwT_J7Q3Ygf2uc6v17weH8taR9FU,12505
+sdqc/loading_examples.py,sha256=mQ26PxJBXaeoHsgP43I5-cZmPpjNOTFd2bOslQiMvi8,1906
+sdqc/main.py,sha256=kaT165k4pGRiJaqvJ9VkjRsyXOLlyaZQNZxUzuJg64c,10110
+sdqc/reports.py,sha256=c-4MN7LlIdXa31b2xXiLIrXpWmA0EfpkGMKtNPqhHtY,34537
+sdqc/tools.py,sha256=__RzP5nZqcRt4IIy8DjM5ehqrhhMRf1rjqVxNkOtXEQ,1467
+sdqc-0.4.0.dist-info/LICENSE,sha256=hkeGT-toUkdQJ_c33qIvIX_fCcQMYFpzxMBFJrmo1kw,1078
+sdqc-0.4.0.dist-info/METADATA,sha256=sIbYqmwDJzgbBl6H8B4LfeJrN7mZn5jVfnaekBMLLqk,1836
+sdqc-0.4.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+sdqc-0.4.0.dist-info/top_level.txt,sha256=M074nMThM5t6TAk_8AMrW9Hq_38KHGbpZN2PuSG_ip4,5
+sdqc-0.4.0.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+{
+    "missing_values_series": {"WARNING": 20, "ERROR": 30, "CRITICAL": 50},
+    "outlier_values": {"WARNING": 20, "ERROR": 30, "CRITICAL": 50},
+    "missing_values": {"WARNING": 20, "ERROR": 30, "CRITICAL": 50},
+    "missing_values_data": {"WARNING": 20, "ERROR": 30, "CRITICAL": 50},
+    "series_monotony": "CRITICAL",
+    "series_range": "ERROR",
+    "series_increment_type": "ERROR"
+}
+
+
