@@ -1,0 +1,5 @@
+asciitree
+scandir
+fuzzywuzzy
+python-Levenshtein
+pyparsing>=3.0
