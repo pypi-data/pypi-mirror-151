@@ -1,0 +1,11 @@
+itk_iomeshswc.libs/libtbb-a0c974ac.so.12.3,sha256=hR9M_Owl0elxvtqil2P_Mc94oql-oiwpI6M8fiNyn6g,444448
+itk/_IOMeshSWCPython.so,sha256=dr6Ys7tVuT-gtjjtnrFeLqDHyYu-A7aE9KpNHCOo4J0,951176
+itk/IOMeshSWCPython.py,sha256=yhGsF4_Fcf83nwgkXUMYLBJ88bJjSTwWWO6yuEM4Hro,2366
+itk/itkSWCMeshIOPython.py,sha256=y2p2iVEY7kT0c-qEUO0jPI7tgXYK3OomlkMWkQKXzOw,9330
+itk/Configuration/IOMeshSWC_snake_case.py,sha256=WRnLlen2jxLU1s5GGArPufZ1-DR4D7SdRd25VYoBFXE,26
+itk/Configuration/IOMeshSWCConfig.py,sha256=GFc48bUA0v-ZO2EPxhGNGnIIgtgy9LeL5imuQ-sB0z8,311
+itk_iomeshswc-0.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+itk_iomeshswc-0.1.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_iomeshswc-0.1.0.dist-info/RECORD,,
+itk_iomeshswc-0.1.0.dist-info/METADATA,sha256=dEehwTMro5MDpCEbFpMkE3MU1JlhqGkq3y3BaSUGp80,1529
+itk_iomeshswc-0.1.0.dist-info/WHEEL,sha256=M3W43ejPRc3jWOSSXL2E2b5s9LPcmWkIlF8hQD6Ie84,145
