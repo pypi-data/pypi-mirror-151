@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cherrypy-jinja2
+Version: 2.2
+Summary: CherryPy tool to render output through Jinja2 templates
+Author: Graham Clinch
+Author-email: g.clinch@lancaster.ac.uk
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: CherryPy
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: CherryPy
+Requires-Dist: Jinja2
+
+CherryPy-Jinja2
+===============
+
+CherryPy-Jinja2 is a simple CherryPy Tool to render output via Jinja2 templates.
+
+Import `cherrypy_jinja2` to make the tool available in CherryPy's default toolbox.
+
+Set `tools.jinja2.search_path` to a directory containing Jinja2 template files,
+then attach the tool to exposed methods:
+
+    class Root:
+        @cherrypy.expose
+        @cherrypy.tools.jinja2(template="index.html")
+        def index(self):
+            return {'message': "Hello"}
