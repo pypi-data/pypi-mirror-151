@@ -1,0 +1,12 @@
+README.md
+setup.py
+credict/__init__.py
+credict/api.py
+credict/encryption.py
+credict/math.py
+credict/watermark.py
+credict.egg-info/PKG-INFO
+credict.egg-info/SOURCES.txt
+credict.egg-info/dependency_links.txt
+credict.egg-info/requires.txt
+credict.egg-info/top_level.txt
