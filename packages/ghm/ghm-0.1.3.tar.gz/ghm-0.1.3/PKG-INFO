@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ghm
+Version: 0.1.3
+Summary: GitHub Mirrorer - Bulk mirror GitHub repositories
+Home-page: https://github.com/mconigliaro/ghm
+Author: Mike Conigliaro
+Author-email: mike@conigliaro.org
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Systems Administration
+Requires-Dist: PyGithub (>=1.55,<2.0)
+Requires-Dist: pygit2 (>=1.9,<2.0)
+Project-URL: Repository, https://github.com/mconigliaro/ghm
+Description-Content-Type: text/markdown
+
+# Github Mirrorer
+
+[![Continuous Integration](https://github.com/mconigliaro/ghm/actions/workflows/ci.yml/badge.svg)](https://github.com/mconigliaro/ghm/actions/workflows/ci.yml)
+
+Simple command-line utility for bulk mirroring GitHub repositories
+
+## Installation
+
+    pip install ghm
+
+## Running the Application
+
+    ghm [options] <path>
+
+Use `--help` to see available options.
+
+## Development
+
+### Getting Started
+
+    poetry install
+    poetry shell
+    ...
+
+### Running Tests
+
+    pytest
+
+### Releases
+
+1. Bump `version` in [pyproject.toml](pyproject.toml)
+1. Update [CHANGELOG.md](CHANGELOG.md)
+1. Run `make release`
+

@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "ghm"
+version = "0.1.3"
+description = "GitHub Mirrorer - Bulk mirror GitHub repositories"
+readme = "README.md"
+authors = ["Mike Conigliaro <mike@conigliaro.org>"]
+homepage = "https://github.com/mconigliaro/ghm"
+repository = "https://github.com/mconigliaro/ghm"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Systems Administration",
+]
+
+[tool.poetry.dependencies]
+pygit2 = "^1.9"
+PyGithub = "^1.55"
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+black = { version = "^22.3.0", allow-prereleases = true }
+pytest = "^7.1"
+pytest-cov = "^3.0"
+
+[tool.poetry.scripts]
+ghm = "ghm.cli:main"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov ghm -ra"
