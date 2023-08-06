@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+log2sheets/__init__.py
+log2sheets/excel_logger.py
+log2sheets/g_sheets_logger.py
+log2sheets.egg-info/PKG-INFO
+log2sheets.egg-info/SOURCES.txt
+log2sheets.egg-info/dependency_links.txt
+log2sheets.egg-info/requires.txt
+log2sheets.egg-info/top_level.txt
