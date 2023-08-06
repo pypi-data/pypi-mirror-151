@@ -1,0 +1,181 @@
+Metadata-Version: 2.1
+Name: paymatesApi
+Version: 0.1.3
+Summary: paymatesApi library is a REST API that consumes flutterwave API
+Home-page: https://github.com/derrimugisha
+Author: Derick Mugisha
+Author-email: derrimugisha@gmail.com
+License: MIT
+Keywords: django flutterwave-payments
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# paymatesAPI
+
+paymatesApi app is a REST API that consumes  [fluterwave](https://flutterwave.com/) API. <br>
+In other words you don't need to create endpoints to consume [fluterwave](https://flutterwave.com/) API, just install paymatesApi and you ready have endpoints to consume [fluterwave](https://flutterwave.com/) API in your django project.
+> **_NOTE:_** At the moment this app is based on mobile money payments in Uganda. More features will be available in the upcoming versions
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install paymatesApi.
+
+```bash
+pip install paymatesApi
+```
+
+> **_NOTE:_** The paymateAPI works together with django restframework, you have to install it first.
+
+## Usage
+* Add paymatesApi app to your django project together with django restframework
+```python
+INSTALLED_APPS = [
+      ...
+      "rest_framework",
+      "paymatesApi",
+  ]
+```
+* Include the paymatesApi URLconf in your project urls.py like this:
+ ```
+ path('paymates-api/',include('paymatesApi.urls'))
+ ```
+
+## Configuring the app
+The app needs to be configured in the settings file of the django project. At the end of the settings file of the project create a variable like this:
+```
+PUBLIC_KEY = "your flutterwave public key"
+```
+
+
+## End points to consume
+* [charge](#charge-end-point)
+* [transaction-history/str:customerName](#transaction-history-end-point)
+* [verify](#verify-end-point)
+
+## Charge end point
+The charge end point is a POST end point that we call when we are initiating payment. Below is an example on how we can call the end point 
+```
+http://127.0.0.1:8000/paymates-api/charge
+```
+Below is the body that has to be sent with this POST end point.
+```
+{
+    "amount": 7000,
+    "currency": "UGX",
+    "phoneNumber": "07777777777",
+    "email": "testertester@gmail.com",
+    "fullName": "Mugisha tester",
+    "network": "Airtel",
+    "redirect_url": "https://528e-41-210-145-113.ngrok.io/api/verify",
+    "description": "this is for testing"
+}
+```
+> **_NOTE:_** redirect_url key value is the URL that recieves details of a transaction after it has been made. verify is the end point of paymate API. This is where you put webhook url if you have one.
+
+After a POST request is made with the above body, the paymate API will communicate with the flutterwave API, and if there is nothing that has gone wrong, the below response is returned
+```
+{
+    "status": "success",
+    "message": "Charge initiated",
+    "meta": {
+        "authorization": {
+            "redirect": "https://ravemodal-dev.herokuapp.com/captcha/verify/47563:a80c5eeb68739909397deb36921864dc",
+            "mode": "redirect"
+        }
+    }
+}
+``` 
+The ``meta.authorization`` object contains the details needed to complete the transaction. The ``mode`` is ``"redirect"``, meaning you should redirect your customer to the provided URL to complete the payment.
+To complete the payment, the customer authorizes it with their mobile money provider at the provided redirect URL. For example when you go to the redirect URL you get an inteface where you prompted to enter the OTP sent via SMS on your phone. For the testing case, you can use ``123456`` as your OTP.
+
+When the payment is completed, a webhook notification is sent. Here's what the response looks like:
+```
+{
+    "verificationStatus": true,
+    "data": {
+        "status": "success",
+        "message": "Tx Fetched",
+        "data": {
+            "id": 3322850,
+            "txRef": "a7e0374c-c6ec-11ec-9df1-40f02f8abbfe",
+            "orderRef": "URF_MMGH_1651148068139_7747135",
+            "flwRef": "flwm3s4m0c1651148068308",
+            "redirectUrl": "http://127.0.0",
+            "device_fingerprint": "N/A",
+            "settlement_token": null,
+            "cycle": "one-time",
+            "amount": 6000,
+            "charged_amount": 6000,
+            "appfee": 180,
+            "merchantfee": 0,
+            "merchantbearsfee": 1,
+            "chargeResponseCode": "00",
+            "raveRef": null,
+            "chargeResponseMessage": "Pending Payment Validation",
+            "authModelUsed": "MOBILEMONEY",
+            "currency": "UGX",
+            "IP": "52.209.154.143",
+            "narration": "elselearn",
+            "status": "successful",
+            "modalauditid": "f22aaae8ed2909caf903e23053a9fabb",
+            "vbvrespmessage": "N/A",
+            "authurl": "NO-URL",
+            "vbvrespcode": "N/A",
+            "acctvalrespmsg": "Approved",
+            "acctvalrespcode": "00",
+            "paymentType": "mobilemoneyug",
+            "paymentPlan": null,
+            "paymentPage": null,
+            "paymentId": "N/A",
+            "fraud_status": "ok",
+            "charge_type": "normal",
+            "is_live": 0,
+            "retry_attempt": null,
+            "getpaidBatchId": null,
+            "createdAt": "2022-04-28T12:14:28.000Z",
+            "updatedAt": "2022-04-28T12:14:31.000Z",
+            "deletedAt": null,
+            "customerId": 1605320,
+            "AccountId": 101062,
+            "customer.id": 1605320,
+            "customer.phone": "07777777770",
+            "customer.fullName": "Anonymous Customer",
+            "customer.customertoken": null,
+            "customer.email": "testertester@gmail.com",
+            "customer.createdAt": "2022-04-25T13:30:31.000Z",
+            "customer.updatedAt": "2022-04-25T13:30:31.000Z",
+            "customer.deletedAt": null,
+            "customer.AccountId": 101062,
+            "meta": [],
+            "flwMeta": {}
+        }
+    }
+}
+```
+From there, we can now verify the transaction by looking at key status value of the data object.
+## verify end point
+ verify is a GET request for paymatesAPI, which is made to return a response for verification after the completion of the transaction.
+ This end point acts as a webhook if you set it in the ``redirect_url`` of the body of the charge end point
+ 
+## transaction-history end point
+transaction-history is a GET request that you can use to call the paymateAPI like ``http://127.0.0.1:8000/paymates-api/transaction-history/[[fullname]]`` where [[fullname]] is a specific fullname of the person you are trying to retrieve.
+When you call that end point, a transaction history of the person named is returned in a json response.
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change
+from [paymates-repository](https://github.com/derrimugisha/paymates).
+
