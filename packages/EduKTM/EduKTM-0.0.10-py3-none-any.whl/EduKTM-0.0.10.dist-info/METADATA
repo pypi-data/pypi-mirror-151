@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: EduKTM
+Version: 0.0.10
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: numpy (>=1.16.5)
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: networkx
+Provides-Extra: test
+Requires-Dist: pytest (>=4) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.6.0) ; extra == 'test'
+Requires-Dist: pytest-flake8 ; extra == 'test'
+
+UNKNOWN
+
