@@ -1,0 +1,17 @@
+stoke/__init__.py,sha256=tuYs5H_L-EpuVslIu14E-S80os5RizGpUQTsCiFl8fI,1222
+stoke/_version.py,sha256=Y2cGjr5uDbQBrkJWjDPyTd-ZeZaBuNvPwKQBKmK8M5A,498
+stoke/configs.py,sha256=WCB_9gJMRFaoU486a1fusw6tC-Y_-gSvHyiZtcfcBOs,34515
+stoke/data.py,sha256=KJWq_pzUm-fHnTQCkC0tQd9c-Mtj3Qrmd6qqqekBPzw,19696
+stoke/distributed.py,sha256=24W12VZT9KA0wLYb1oKBlKxra44BeVa7mTyoQXUlE8U,49842
+stoke/extensions.py,sha256=6wfFHcOJ1Y27ciLrB43ZJXEBWviEPPTk1jYG-TGrHHI,11856
+stoke/fp16.py,sha256=TCdW4w7GcK0Slkx4lUyVcWJCWzBE8Qvstm_lNEVZtDo,25357
+stoke/io_ops.py,sha256=i6UzEOBmwWT5wwmpFrj6KMm1hBkgGFVa_3lQ_YqugcU,28086
+stoke/status.py,sha256=-o-qMI82UEoqk4aeLYQYX93rtuoGH7D2NjRM1-bxIsM,22789
+stoke/stoke.py,sha256=Mv0Kqbap0KRYDWLa2t8dj193Xqw-cyskwj1o14kZOuE,49851
+stoke/utils.py,sha256=G-pfXh0bosxREYS9YGuL0gDC38peA7BcHBhlSJSqbBc,2699
+stoke-0.2.1.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+stoke-0.2.1.dist-info/METADATA,sha256=haMUly5EyPsoUagzL1B6WGv9Gyq6pYtjmjbbG4Fi3kA,15555
+stoke-0.2.1.dist-info/NOTICE.txt,sha256=UsIZSUfqamwDE6sXDl_9pr3ls1nNvV8dEvsJWZvVTpQ,928
+stoke-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stoke-0.2.1.dist-info/top_level.txt,sha256=f3G_7WAzIPYgSrLHv7PL7DaUDwgb92SoEjRNs8HDRSg,6
+stoke-0.2.1.dist-info/RECORD,,
