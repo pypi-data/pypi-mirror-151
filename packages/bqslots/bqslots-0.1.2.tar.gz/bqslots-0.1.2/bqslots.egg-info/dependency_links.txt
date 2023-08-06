@@ -1,0 +1,4 @@
+google-cloud-bigquery-reservation==1.6.0
+backoff==1.11.1
+google-cloud-storage==1.31.0
+pytz
