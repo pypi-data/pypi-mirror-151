@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+libsvmdata/__init__.py
+libsvmdata/datasets.py
+libsvmdata.egg-info/PKG-INFO
+libsvmdata.egg-info/SOURCES.txt
+libsvmdata.egg-info/dependency_links.txt
+libsvmdata.egg-info/requires.txt
+libsvmdata.egg-info/top_level.txt
+libsvmdata/tests/test_datasets.py
