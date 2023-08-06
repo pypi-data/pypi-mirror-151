@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: django-websocketclient
+Version: 0.1.0
+Summary: A persistent websocket client for Django
+Author: Kiran Kumbhar
+Author-email: kiranpk189@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=4.0.4,<5.0.0)
+Requires-Dist: websockets (>=10.3,<11.0)

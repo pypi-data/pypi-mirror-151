@@ -1,0 +1,11 @@
+websocketclient/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+websocketclient/client.py,sha256=FNqFXP9GoSoHl5hWGKbfC0PVGPdG2wfqfYt_bBMGA70,2813
+websocketclient/config.py,sha256=dBe_FyWPrrALUFI__0gK57t9zNC8xqDmio6hSfJ58do,694
+websocketclient/handlers.py,sha256=WJPXwQuOYp3h8UOsgNPLBw4NmLWmODPRTdfiZjWSBmY,692
+websocketclient/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+websocketclient/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+websocketclient/management/commands/runwebsocketclient.py,sha256=xSNBQ40DbbobDMgT-NSYqZRkBBQMv0FryETFXS-s870,1268
+django_websocketclient-0.1.0.dist-info/LICENSE,sha256=1gvPHm7qjUnW9Jw0WdWfF-SXgeiczIPsLIiIDI8rU7g,1070
+django_websocketclient-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_websocketclient-0.1.0.dist-info/METADATA,sha256=rBNC-Pd3eGo5tRNdpEmJcK01Epxo9isuRM6bAs0tqrk,429
+django_websocketclient-0.1.0.dist-info/RECORD,,
