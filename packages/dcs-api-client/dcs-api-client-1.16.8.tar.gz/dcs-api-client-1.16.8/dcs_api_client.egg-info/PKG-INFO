@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dcs-api-client
+Version: 1.16.8
+Summary: DCS (Gitea) API.
+Home-page: https://github.com/unfoldingWord-dev/python-dcs-api-client
+Author-email: 
+Keywords: Swagger,DCS (Gitea) API.
+
+    This documentation describes the DCS (Gitea) API.  # noqa: E501
+    
