@@ -1,0 +1,10 @@
+README.rst
+setup.py
+PyJoplin/__init__.py
+PyJoplin.egg-info/PKG-INFO
+PyJoplin.egg-info/SOURCES.txt
+PyJoplin.egg-info/dependency_links.txt
+PyJoplin.egg-info/not-zip-safe
+PyJoplin.egg-info/top_level.txt
+PyJoplin/helpers/__init__.py
+PyJoplin/helpers/http_helper.py
