@@ -1,0 +1,4 @@
+[console_scripts]
+xlingual_papers_recommender = xlingual_papers_recommender.app:main
+xlingual_papers_recommender_ds_loader = xlingual_papers_recommender.tools.csv_inputs.csv_inputs_view:main
+xlingual_papers_recommender_reports = xlingual_papers_recommender.tools.reports:main
