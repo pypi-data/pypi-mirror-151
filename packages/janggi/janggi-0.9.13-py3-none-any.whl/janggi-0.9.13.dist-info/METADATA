@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: janggi
+Version: 0.9.13
+Summary: Python library for Korean chess Janggi
+Home-page: https://github.com/sungho-cho/pyjanggi
+Author: Sungho Cho
+Author-email: didog9595@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: pygame (==2.1.2)
+
+# PyJanggi
+PyJanggi is a Python library for a Korean chess called [Janggi](https://en.wikipedia.org/wiki/Janggi).
+It provides functionalities to simulate a game, maintain a game board, list all possible moves, make a move, and validate a move.
