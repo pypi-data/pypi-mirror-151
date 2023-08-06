@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+heavydb=sqlalchemy_heavyai.heavyai:HeavyAIDialect_heavyai
+

@@ -1,0 +1,12 @@
+sqlalchemy_heavyai/__init__.py,sha256=WHJeqmc8AmOJIJoxYA2dzdrSI-TPNQeJMviir5jYgBI,496
+sqlalchemy_heavyai/base.py,sha256=lDnMiHyKJYQz2_Pc3_M_oVGRFMqAHgUctHBpBum6oO0,25275
+sqlalchemy_heavyai/heavyai.py,sha256=gui_zbqtXiQyFGKM0-NMpbRdFg_3GLFrOP_Wtit9-_k,231
+sqlalchemy_heavyai/provision.py,sha256=QX8Y2_SlfkDEpH5_j-qhuqrFLmBFQQ_5mZ37Yz2WVe0,226
+sqlalchemy_heavyai/requirements.py,sha256=K2qofRKwpvmb5AA36_dUjNxu8JyocewETtvmIifzoEM,1766
+sqlalchemy_heavyai/util.py,sha256=vYgS9suhopRmA-eiILdAd0_MEuUabHQMHkLioQH_iO0,1236
+sqlalchemy_heavyai/version.py,sha256=ELQAom3CNZAa0FXlGTP1Fp6CgL9eS1O6_f0GxhYlqNk,401
+sqlalchemy_heavyai-1.0.dist-info/entry_points.txt,sha256=ewNCXqd6l3bE6kyZPqNiNMd_-Sb4-NS9usAKOeT1caE,81
+sqlalchemy_heavyai-1.0.dist-info/LICENSE.md,sha256=gMVkDEhg-a74vlSKzUTEsJxuoTD6_NQNYjKAWC0HZbs,1065
+sqlalchemy_heavyai-1.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+sqlalchemy_heavyai-1.0.dist-info/METADATA,sha256=281og0cj5CBb6LJe2CkxvYqhk-3rlq8JrObocGRoku8,1806
+sqlalchemy_heavyai-1.0.dist-info/RECORD,,
