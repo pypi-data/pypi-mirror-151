@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: battle-cats-game-modder-cmd-line-version
+Version: 1.0.6
+Summary: A battle cats tool for modifying, encrypting, and decrypting game files
+Home-page: https://github.com/j0912345/BCGM-Python-cmd-line-version
+Author: jo912345
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colored
+Requires-Dist: tk
+Requires-Dist: alive-progress
+Requires-Dist: pycryptodomex
+Requires-Dist: requests
+
+# read this please!
+this is a port of the GUI [BCGM-python](https://github.com/fieryhenry/BCGM-Python) to a command line because i can't get wxpython to install.  
+read [this](https://github.com/fieryhenry/BCGM-Python) for instructions on how to use
