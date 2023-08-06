@@ -1,0 +1,34 @@
+{% include "templates/pkg/version.py.template" %}
+
+import warnings  # noqa: E402 pylint: disable=wrong-import-position
+
+# check nengo version
+try:
+    import nengo.version
+except ImportError:
+    # nengo not installed, can't check version
+    pass
+else:
+    minimum_nengo_version = (3, 0, 0)
+
+    # for release versions of nengo-dl, this should be the latest released
+    # nengo version. for dev versions of nengo-dl, this should be the current
+    # nengo dev version.
+    latest_nengo_version = (3, 2, 0)
+
+    if nengo.version.version_info < minimum_nengo_version:  # pragma: no cover
+        raise ValueError(
+            (
+                "NengoDL does not support Nengo version {nengo_version}. "
+                "Upgrade with 'pip install --upgrade --no-deps nengo'."
+            ).format(nengo_version=nengo.version.version)
+        )
+    elif nengo.version.version_info > latest_nengo_version:  # pragma: no cover
+        warnstr = (
+            "This version of NengoDL has not been tested with your Nengo version "
+            "({nengo_version}). The latest fully supported version is {latest_version}."
+        ).format(
+            nengo_version=nengo.version.version,
+            latest_version=".".join(str(x) for x in latest_nengo_version),
+        )
+        warnings.warn(warnstr)
