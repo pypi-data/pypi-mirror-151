@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: compactem
+Version: 0.9.9rc1
+Summary: compactem
+Home-page: https://bitbucket.org/aghose/compactem
+Author: Abhishek Ghose
+License: Apache 2.0
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This library implements a set of algorithms to create compact models: smaller versions of 
+                        models with accuracy similar to their original version.  
+                        
+                        See https://compactem.readthedocs.io/en/latest/index.html
