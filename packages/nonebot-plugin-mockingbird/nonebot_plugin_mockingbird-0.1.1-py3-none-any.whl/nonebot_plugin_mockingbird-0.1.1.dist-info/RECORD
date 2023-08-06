@@ -1,0 +1,10 @@
+nonebot_plugin_mockingbird/__init__.py,sha256=dGFXtPxEeSxyLRL1Y2FWPgpSHqC-WTfN3fEmJjEnNRA,8016
+nonebot_plugin_mockingbird/config.py,sha256=Q1R_w33y7O7nwPzVUq0th4A53NIRFjb2chZ7pnh3QiA,3022
+nonebot_plugin_mockingbird/data_source.py,sha256=FIH3zHIz7m39dPuY3NDdYHdAxlOVqnnQZOe-ASr_PLs,2439
+nonebot_plugin_mockingbird/download.py,sha256=xAk-KBojOyzLxyW9TkAygcYLYN3nNTt_C5Bb3OIzLP4,2887
+nonebot_plugin_mockingbird/resource/config.json,sha256=pjQ6WRavENEjyBAGDU-Py_umi2ZM1iDq8YNjQ80iUH4,73
+nonebot_plugin_mockingbird/resource/model_list.json,sha256=fg6MflQHzfvtbfO9EBkyikW3MWyh652hRmB2BxSUI-8,245
+nonebot_plugin_mockingbird-0.1.1.dist-info/LICENSE,sha256=RIQPXMRA3jMi5YjrrFN5gMZrQMJiEdzzF6rrdGsBkQY,1087
+nonebot_plugin_mockingbird-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nonebot_plugin_mockingbird-0.1.1.dist-info/METADATA,sha256=e4NgA5fjP05nrNXxNu7s1zHcou-MJssqyeFjnKz2Zps,2211
+nonebot_plugin_mockingbird-0.1.1.dist-info/RECORD,,
