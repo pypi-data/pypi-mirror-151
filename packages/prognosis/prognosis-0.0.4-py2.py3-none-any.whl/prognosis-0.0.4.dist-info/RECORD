@@ -1,0 +1,10 @@
+prognosis/__init__.py,sha256=EoCqzAJiQCbL_bDCA1jR-d-YPcSm8lvuaEyPHUvGOHk,149
+prognosis/country.py,sha256=pZSIOnh8eYtXTIYJ7kRjzVtFBR4Ee8_XfF57eS0ymkM,2165
+prognosis/helper.py,sha256=6Sorlt7bsmt3OQOJlXbphKIAam7DTp3fiZPn6NUneAM,890
+prognosis/yields.py,sha256=CfQO-zY1kPFs6WI25tkM0St1TZxrVcKofizNvrW4ZOU,1862
+prognosis/com/__init__.py,sha256=HVr_S_8gczAmdTI3QMZ2a6tcEUM2m2iXG6wm_JzBLBo,141
+prognosis/com/country.py,sha256=sciPpAUHnCjUppWsC9yD_DFenF_0UvReH01OV2WjA1Y,3649
+prognosis-0.0.4.dist-info/METADATA,sha256=6D6M15tdqWhjv1fXC8o_p-2LaRAc5WxOTBYKA00OwZM,1612
+prognosis-0.0.4.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+prognosis-0.0.4.dist-info/top_level.txt,sha256=GveuCivF6w1uvsazw65wxKDdFEzW19nx_5n6W5EY_dg,10
+prognosis-0.0.4.dist-info/RECORD,,
