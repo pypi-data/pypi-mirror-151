@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: startme-examples
+Version: 0.1
+Summary: Example plugins for startme
+Home-page: https://github.com/yaroslaff/startme-examples
+Author: Yaroslav Polyakov
+Author-email: yaroslaff@gmail.com
+License: Apache Software License
+Platform: UNKNOWN
+Requires-Dist: startme
+
+Example plugin modules for startme
+
+
