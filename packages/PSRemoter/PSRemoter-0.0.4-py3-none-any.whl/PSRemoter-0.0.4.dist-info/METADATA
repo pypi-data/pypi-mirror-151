@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PSRemoter
+Version: 0.0.4
+Summary: Execute PowerShell script on remote host
+Home-page: UNKNOWN
+Author: Daniel Mandelblat
+License: UNKNOWN
+Keywords: powershell,remote powershell,execute powershell,powershell domain,domain,windows remote,windows server
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+Github page: https://github.com/danielMandelblat/PythonPackages/tree/master/PowerShellRemoteExecuter 
+
