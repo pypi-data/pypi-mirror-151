@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: anfema-django-utils
+Version: 1.0.0
+Summary: Collection of various django related utilities
+License: MIT
+Keywords: django,utils
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+
+# anfema-django-utils
+
+Collection of various django related utilities, helpers & small apps.
+
+## Release process
+
+Steps required to create a new release and publish the package on PyPI: 
+
+1. Bump `__version__` in `anfema_django_utils/__ini__.py`
+2. Create a new release on GitHub with the tag `v<version>`
