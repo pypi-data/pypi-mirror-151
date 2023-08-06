@@ -1,0 +1,13 @@
+TermGFX/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TermGFX/colors.py,sha256=H0x_3COZrCMbsiuRQ050goyhM4e3-UVlXfVJzQxlSW4,266
+TermGFX/engine.py,sha256=00V1FSWNs92iCtFbspe3jzD_rIWnttaRGdKkfBYS5M8,3657
+TermGFX/gol.py,sha256=_F4MwdgxKxe78acEJErnqNUHJlU8OEfL-4drCgS3qNE,2236
+TermGFX/lines.py,sha256=iosiOpWNBtFUmW3a0xRphw_eY6qviI0JCHNEsCr_nXw,288
+TermGFX/rects.py,sha256=BKwBigTjGSPD7Vrw6xM-NI38ZGwhQXi95YdGixLzCt4,322
+TermGFX/shapes.py,sha256=D6FJyh7IMyldQDrUtR8on96uefq7RMqSYn2vycz89Cc,7354
+TermGFX/test.py,sha256=CvSzWOoHIuZN1j4Aociee3LgCx3mz5ZAQvDnrzk94wc,190
+TermGFX-0.2.0.dist-info/LICENSE,sha256=pEC_xr2UrVj4oVz5zCSrZnA9dTe8Xbc_9AcPqlw_RwQ,1083
+TermGFX-0.2.0.dist-info/METADATA,sha256=aFOvAk08PVasSVEoWQgrSdGQ4RJDgCMycJYnqMgJAhc,2877
+TermGFX-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+TermGFX-0.2.0.dist-info/top_level.txt,sha256=_RhtxeP-uS2mbrh_i9sRO1iKkwkojzBwQdDGZnJFidY,8
+TermGFX-0.2.0.dist-info/RECORD,,
