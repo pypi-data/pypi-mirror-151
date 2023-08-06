@@ -1,0 +1,5 @@
+setup.py
+metatune.egg-info/PKG-INFO
+metatune.egg-info/SOURCES.txt
+metatune.egg-info/dependency_links.txt
+metatune.egg-info/top_level.txt
