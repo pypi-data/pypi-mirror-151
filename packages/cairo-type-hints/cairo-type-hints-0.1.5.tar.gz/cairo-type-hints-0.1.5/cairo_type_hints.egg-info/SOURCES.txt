@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cairo_type_hints/__init__.py
+cairo_type_hints/cairo.ebnf
+cairo_type_hints/console.py
+cairo_type_hints.egg-info/PKG-INFO
+cairo_type_hints.egg-info/SOURCES.txt
+cairo_type_hints.egg-info/dependency_links.txt
+cairo_type_hints.egg-info/entry_points.txt
+cairo_type_hints.egg-info/requires.txt
+cairo_type_hints.egg-info/top_level.txt
