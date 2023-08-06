@@ -1,0 +1,8 @@
+PyYAML<6.0.0,>=5.4.1
+pydantic[dotenv]<2.0.0,>=1.8.2
+radical.entk
+MDAnalysis
+numpy>=1.20
+tqdm
+h5py==2.10.0
+pathos
