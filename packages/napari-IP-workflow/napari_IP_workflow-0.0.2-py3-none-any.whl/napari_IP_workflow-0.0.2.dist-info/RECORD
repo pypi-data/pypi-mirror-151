@@ -1,0 +1,11 @@
+napari_ip_workflow/__init__.py,sha256=Nxiogo9ABIkEMsZrqHEcSonLVv3mMTxKvJGZYXAlD8M,23
+napari_ip_workflow/ipfunctions.py,sha256=jw7V6YU1E6WawNbLmNc6bYY5qavEU97Wg7isQJg4mjI,3834
+napari_ip_workflow/napari.yaml,sha256=yoWHvwC9O2iSNjAwsCjOWP1oA4wc_NsVtV6kts6pfJU,356
+napari_ip_workflow/segwidget.py,sha256=KaarSeQcZ81_yYeOSKQi-dNNs74CLrokm-wrT8IeVhI,4312
+napari_ip_workflow/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_IP_workflow-0.0.2.dist-info/LICENSE,sha256=yjcqfZJWCx-p9tgytEDovNYtmt-ohwyYKH3qtm2YMQ4,35148
+napari_IP_workflow-0.0.2.dist-info/METADATA,sha256=BioPisAuTk5d689YwGCCJIAO9pzAVReVKdluBNGiNNc,4356
+napari_IP_workflow-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_IP_workflow-0.0.2.dist-info/entry_points.txt,sha256=JAfFtwm0etiNnvDXs7J6OBwW9rh-I-pOdwLINYBpwWQ,70
+napari_IP_workflow-0.0.2.dist-info/top_level.txt,sha256=rgSgOFKJarzIMSI0MbPYyDyFF0-xxPzTkrTXy-wWYBE,19
+napari_IP_workflow-0.0.2.dist-info/RECORD,,
