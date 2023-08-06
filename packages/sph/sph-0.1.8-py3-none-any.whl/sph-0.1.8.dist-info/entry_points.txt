@@ -1,0 +1,3 @@
+[console_scripts]
+sph=sph.sph:be_helpful
+
