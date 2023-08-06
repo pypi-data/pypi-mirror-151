@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jamie.egg-info/PKG-INFO
+jamie.egg-info/SOURCES.txt
+jamie.egg-info/dependency_links.txt
+jamie.egg-info/top_level.txt
+src/__init__.py
+src/jamie_hello.py
