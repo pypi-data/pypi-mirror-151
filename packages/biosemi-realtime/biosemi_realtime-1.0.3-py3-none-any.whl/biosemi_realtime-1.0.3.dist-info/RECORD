@@ -1,0 +1,15 @@
+biosemi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biosemi/real_time_app.py,sha256=aAeqblieZuOle1CNW3jFoyIsE-P5OG_hlFjhJRTq6uE,2991
+biosemi/main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biosemi/main/biosemiTcpRealTime.py,sha256=bjPO7BqY501xIxDoKBbJBlbSqKsvkE-9Y1rMP7FQGVs,22938
+biosemi/main/main_window.py,sha256=A1hEMWSTOrU62QVvjfov5uVlDTmYhOS_Q7Gm3qG7H7c,35974
+biosemi/main/py_averager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biosemi/main/py_averager/javerager_test.py,sha256=DgJ4_qHvz_VWi2sCkw59otErjt17QwdYXbYrKm51fCQ,3608
+biosemi/main/py_averager/weightedAverage.py,sha256=RA2sJWQ5SL41yjZFbiw0ATda3yKdYRQ93hKiU5sdvw0,51556
+biosemi/test_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biosemi/test_server/test_server.py,sha256=5XgtLxk_FQvb4y9azs8TkVZk70bnMAeHebL5D5hfOrw,4530
+biosemi_realtime-1.0.3.dist-info/LICENSE.txt,sha256=Vgyqau-BfgjycboFqQwFe88d45yU9jYeZNGbAIrahTI,1040
+biosemi_realtime-1.0.3.dist-info/METADATA,sha256=8nL3TZ_ty6qBvDbfN03ykBtYyxjkmetXTIx7ciqjXPs,1949
+biosemi_realtime-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+biosemi_realtime-1.0.3.dist-info/top_level.txt,sha256=kR0owlrJ3LIB0ofYwyPmWbj1X2BldTgejs75yeh41j4,8
+biosemi_realtime-1.0.3.dist-info/RECORD,,
