@@ -1,0 +1,9 @@
+lawsql_trees/__init__.py,sha256=L0Bq6vumvG9ynp1i7i6a0WBh6tYRpVZ0Kt00RoRHeJk,180
+lawsql_trees/branch.py,sha256=t4KPNNDNK9Bd0uHV4dRvIhhVJIbr7O4u3aE39SsuHDg,6735
+lawsql_trees/codification.py,sha256=SmeGPMJI2W_gFetjd2ZeGGO4Xomnhj1EQs8uCi2-vqE,4966
+lawsql_trees/statute.py,sha256=JvEB8cT1Zh1qd95ckeFz2cmPHSYVEYBwP5NoDaaXcnQ,8159
+lawsql_trees/statute_formatter.py,sha256=tGpAXDiuY6nI7vTA25ZERw3Nvv_-OUSGPEoB78pFSyU,4271
+lawsql_trees/statute_unformatted.py,sha256=nTbwkXyJRj7snO7p2ih2oAimrllutdo3pDeN21Z8BrE,3192
+lawsql_trees-0.0.39.dist-info/WHEEL,sha256=KXNDfOTTCr-VyxnCJDozfJ6nmi3hNN9RABDaCXBsNak,85
+lawsql_trees-0.0.39.dist-info/METADATA,sha256=KTkno4W7GyvtUFQqJc-nzUlWxesOuDP_mS7eAgj6oBs,706
+lawsql_trees-0.0.39.dist-info/RECORD,,
