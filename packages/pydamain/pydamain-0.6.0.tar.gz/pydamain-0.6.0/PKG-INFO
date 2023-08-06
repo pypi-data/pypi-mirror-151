@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pydamain
+Version: 0.6.0
+Summary: 도메인 주도 설계 라이브러리.
+Home-page: https://github.com/by-Exist/pydamain
+License: Apache-2.0
+Author: Jongbeom-Kwon
+Author-email: bolk9652@naver.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: typing-extensions (>=4.2.0,<5.0.0)
+Project-URL: Repository, https://github.com/by-Exist/pydamain
+Description-Content-Type: text/markdown
+
+# Pydamain
+
+작성중...
