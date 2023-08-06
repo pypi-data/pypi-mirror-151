@@ -1,0 +1,9 @@
+
+[:python_version < "3.7"]
+typing_extensions
+
+[toml]
+tomli
+
+[yaml]
+pyyaml
