@@ -1,0 +1,58 @@
+<macro>
+def macro_gen(data):
+	if 'generate' in data:
+		return data, {"generate": True}
+
+def macro_source(data):
+    if 'main' in data:
+        return data, {"main": True}
+    elif 'change' in data:
+        return data, {"change": True}
+    elif 'security' in data:
+        return data, {"security": True}   
+</macro>
+
+#-------------------------------------------------- {{ignore}}
+echo "Log Configuration" <group name="configure.log"> {{_start_}}
+#-------------------------------------------------- {{ignore}}
+    log {{ignore}}
+    <group name="file">
+        file-id {{file-id}} 
+            description "{{description}}"
+            <group name="compact-flash-location">
+            location {{primary}}: 
+            </group>
+            rollover {{rollover}} retention {{retention}} 
+        exit {{ignore}}
+    </group>
+        <group name="log-events.chassis">
+        event-control "{{event}}" {{event-id}} {{generate | re(r'generate') | macro('macro_gen')}}
+        </group>
+        <group name="syslog">
+        syslog {{syslog-id | DIGIT}}
+            description "{{description | PHRASE}}"
+            address {{address}}
+        </group>
+        exit {{_end_}}
+        <group name="snmp-trap-group">
+        snmp-trap-group {{log-id | DIGIT | _start_ }}
+            description "{{description}}"
+            <group name="trap-target">
+            trap-target "{{name | _start_ }}" address {{address}} {{snmp-version}} notify-community "{{notify-community}}" security-level {{security-level}}
+            trap-target "{{name | _start_ }}" address {{address}} {{snmp-version}} notify-community "{{notify-community}}"
+            </group>
+        </group>
+        exit {{_end_}}
+        <group>
+        log-id {{log-id}} 
+            description "{{description}}"
+            <group name="source">
+            from {{source | _start_ | macro('macro_source')}}
+            from {{source | _start_ | macro('macro_source')}} {{security | macro('macro_source')}}
+            from {{source | _start_ | macro('macro_source')}} {{security | macro('macro_source')}} {{change | macro('macro_source')}}
+            </group>
+            to {{destination}}
+        exit {{_end_}}
+        </group>
+    exit {{_end_}}
+</group>
