@@ -1,0 +1,11 @@
+sandinvest/__init__.py,sha256=p7SV7ITN-C8IRSQ2_DnxC4qCijFaurvckt3_hErRlzM,652
+sandinvest/__version__.py,sha256=NRI5MU3gYtH6QeGg-NHo82KTsGRs2bKSsw1dhosOqbQ,368
+sandinvest/api.py,sha256=gwlCw_zSPMt_OU9h8DJsNz_J0qprhnwxP27eLfFJMCc,2417
+sandinvest/client.py,sha256=1uxeKmDv9dP19lREI3smvx3avVZkpOUAeC2B4Y35Tdc,4818
+sandinvest/error.py,sha256=50a2u_0nI1bUedWaXjJGwLS3xsqHmL96PHtobrHbSas,1244
+sandinvest/fields.py,sha256=NJUwQBrVF3VEgM6lo_c6t2cy-SpW_MaaMryXEzqr4Rg,1479
+sandinvest/utils.py,sha256=wb7If_DrhOYtBjVjmwdets1PDiZPPsJAMT3jdHaTycY,511
+SandInvest-0.4.2.dist-info/METADATA,sha256=2S3kzzbYFxzDxLj5ACPUFpFFINNSBDGZJTFdKEq77S4,8847
+SandInvest-0.4.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+SandInvest-0.4.2.dist-info/top_level.txt,sha256=lOvFxFDEYr_andRf_2g7_3c1BvRpoG2Tic-CwCbSNGM,11
+SandInvest-0.4.2.dist-info/RECORD,,
