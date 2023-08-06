@@ -1,0 +1,34 @@
+{% extends 'whyus/_common.html' %}
+{% load static %}
+
+{% block whyus %}
+<!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="fas fa-star"></i></div>
+              {% autoescape off %}
+              <h4 class="title"><a href="">{{ whyus.major.title }}</a></h4>
+              <p class="description">{{ whyus.major.contents | first }}</p>
+              {% endautoescape %}
+            </div>
+          </div>
+          {% for item in whyus.minor %}
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="{% cycle '200' '300' '400' '500' %}">
+              <div class="icon"><i class="fas {{ item.icon }}"></i></div>
+              {% autoescape off %}
+              <h4 class="title"><a href="">{{ item.title }}</a></h4>
+              <p class="description">{{ item.contents }}</p>
+              {% endautoescape %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+{% endblock %}
