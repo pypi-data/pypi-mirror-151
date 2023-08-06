@@ -1,0 +1,15 @@
+trame/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/matplotlib.py,sha256=tRBOyyIRBEcpazaz2rB8dGDInt3BsGFLsCImFgiqMLo,38
+trame/widgets/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/widgets/matplotlib.py,sha256=ifRq5gkQUy86JQIah2N4RRGE-ptkTY7vqGAt9F7CDnE,150
+trame_matplotlib/LICENSE,sha256=JxmBE8KpohRh29ulqaImObpOZfl8FSA_vHAaFdb01gA,1504
+trame_matplotlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_matplotlib/module/__init__.py,sha256=uA8WnkwYB0UL2vDS7fngcFrIOHpPtvtmQdU1TuwnyIw,392
+trame_matplotlib/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_matplotlib/widgets/matplotlib.py,sha256=eT2BLGP7UfiH8jUuKHwWbWgTbGJTienTTN_74zjaruo,1633
+trame_matplotlib-2.0.0rc3.dist-info/LICENSE,sha256=JxmBE8KpohRh29ulqaImObpOZfl8FSA_vHAaFdb01gA,1504
+trame_matplotlib-2.0.0rc3.dist-info/METADATA,sha256=plfjwvjRWo-LY0UM3-xxosc9D3LqzFrWcvdWBm4MnSQ,3254
+trame_matplotlib-2.0.0rc3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trame_matplotlib-2.0.0rc3.dist-info/top_level.txt,sha256=sbgu6hbXnaRrmEd_9silm0e9Nje59Mn9O3zqWu7A8uA,23
+trame_matplotlib-2.0.0rc3.dist-info/RECORD,,
