@@ -1,0 +1,12 @@
+h5py
+logging
+matplotlib
+numpy
+pandas
+scipy
+seaborn
+fiona
+shapely
+rasterio
+geopandas
+
