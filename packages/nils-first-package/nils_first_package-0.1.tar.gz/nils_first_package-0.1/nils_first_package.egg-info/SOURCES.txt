@@ -1,0 +1,10 @@
+setup.py
+nils_first_package/Binomialdistribution.py
+nils_first_package/Gaussiandistribution.py
+nils_first_package/Generaldistribution.py
+nils_first_package/__init__.py
+nils_first_package.egg-info/PKG-INFO
+nils_first_package.egg-info/SOURCES.txt
+nils_first_package.egg-info/dependency_links.txt
+nils_first_package.egg-info/not-zip-safe
+nils_first_package.egg-info/top_level.txt
