@@ -1,0 +1,15 @@
+tqdm
+torch
+numpy
+scikit-learn
+onnx
+onnxruntime>=1.7
+tabulate
+thop
+pandas
+
+[tests]
+pytest
+pytest-cov
+black
+sphinx
