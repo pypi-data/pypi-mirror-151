@@ -1,0 +1,15 @@
+README.md
+setup.py
+nisanyan_cli/__init__.py
+nisanyan_cli/__main__.py
+nisanyan_cli/_langlist.py
+nisanyan_cli/_utils.py
+nisanyan_cli/cli.py
+nisanyan_cli/request.py
+nisanyan_cli/tree.py
+nisanyan_cli.egg-info/PKG-INFO
+nisanyan_cli.egg-info/SOURCES.txt
+nisanyan_cli.egg-info/dependency_links.txt
+nisanyan_cli.egg-info/entry_points.txt
+nisanyan_cli.egg-info/requires.txt
+nisanyan_cli.egg-info/top_level.txt
