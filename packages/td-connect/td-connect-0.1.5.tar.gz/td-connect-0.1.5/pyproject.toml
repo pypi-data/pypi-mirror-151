@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "td-connect"
+version = "0.1.5"
+description = "Authentication manager for TD Ameritrade REST APIs."
+authors = ["Dan Kelleher <dan@danklabs.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-dateutil = "^2.8.2"
+requests = "^2.26.0"
+websockets = "^10.1"
+aiohttp = "^3.8.1"
+ready-logger = "^0.1.0"
+SQLAlchemy = "^1.4.36"
+pydantic = "^1.9.1"
+psycopg2 = "^2.9.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-asyncio = "^0.16.0"
+pylama = {extras = ["all"], version = "^8.3.6"}
+black = "^21.12b0"
+jupyter = "^1.0.0"
+python-dotenv = "^0.19.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+create_td_app_table = 'td_connect.td_connect:create_app_table'
+print_td_app_config = 'td_connect.td_connect:print_app_config'
