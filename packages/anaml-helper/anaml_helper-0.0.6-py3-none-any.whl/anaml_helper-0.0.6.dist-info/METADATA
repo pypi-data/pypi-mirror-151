@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: anaml-helper
+Version: 0.0.6
+Summary: A helper library for working with features and featuresets programmatically leveraging the existing anaml_client SDK.
+Home-page: UNKNOWN
+Author: chris
+Author-email: christopher.pearce@bt.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: wheel (==0.37.1)
+Requires-Dist: anaml-client (==0.17.0)
+Requires-Dist: dataclasses (==0.6)
+Requires-Dist: uuid (==1.30)
+
+***Overview***
+***
+A helper library for working with features and featuresets programmatically leveraging the existing anaml_client SDK.
+
+***Example Usage***
+```
+from anaml_client import Anaml ##import Anaml as normal.
+from anaml_helper import AnamlHelper ##import AnamlHelper 
+
+anaml_client = Anaml(url=,apikey=,secret=,ref=) ##create Anaml class
+anaml_helper = AnamlHelper(anaml_client) ##pass Anaml to AnamlHelper
+```
+
+This will provide access to the helper methods for interacting with Features and FeatureSets via anaml sdk. N.B - `The library is currently limited to working only with Features and FeatureSet objects`.
+
+The below contains some examples and a list of available methods.
+
+**Feature Methods**
+- create_feature
+- update_feature_aggregate
+- update_feature_attributes
+- update_feature_description
+- update_feature_entityRestrictions
+- update_feature_filter
+- update_feature_labels
+- update_feature_name
+- update_feature_postAggregateExpr
+- update_feature_select
+- update_feature_table
+- update_feature_template
+- update_feature_to_DayWindow
+- update_feature_to_OpenWindow
+- update_feature_to_RowWindow
+
+```
+#Creating EventFeature
+anaml_helper.create_feature("feature_name", 
+               attributes=[{"key": "OWNER", "value": "C11_HH360"},
+                           {"key": "CREATOR", "value": "my_email@domain.com"}],
+               labels=["label1", "label2"],
+               select="bill_accnt_key",
+               description="feature description",
+               template=None,
+               table=383,
+               filter="bill_accnt_key is not null",
+               aggregate="count",
+               post_aggregate=None,
+               entity_ids=[4])
+
+#Updating feature labels
+anaml_helper.update_feature_labels(feature_id=3467,labels=['label1','label2','label3'])
+
+#Updating feature filter
+anaml_helper.update_feature_filter(feature_id=3467, filter="accnt_id is not null")
+
+#Updating feature name
+anaml_helper.update_feature_name(feature_id=3457, name="modified_feature_name")
+
+#Updating feature window to DayWindow
+anaml_helper.update_feature_to_DayWindow(feature_id=3467, days=30)
+
+#Updating feature window to RowWindow
+anaml_helper.update_feature_to_RowWindow(feature_id=3467, rows=10_000)
+```
+
+**FeatureSet Methods**
+- create_featureset
+- update_featureset_attributes
+- update_featureset_description
+- update_featureset_entity
+- update_featureset_features
+- update_featureset_labels
+- update_featureset_name
+
+```
+#Creating FeatureSet
+anaml_helper.create_featureset(
+    name="featureset_name",
+    entity=4,
+    description="featureset description.",
+    labels=["featureset_label1","featureset_label2"],
+    attributes=[{"key": "OWNER", "value": "C11_HH360"}],
+    features=[3467]
+)
+
+#Updating featureset name
+anaml_helper.update_featureset_name(featureset_id=440,name="new_featureset_name")
+
+#Updating featureset description
+anaml_helper.update_featureset_description(featureset_id=440,description="new featureset description")
+
+#Updating featureset entity
+anaml_helper.update_featureset_entity(featureset_id=333, entity_id=3)
+```
+
