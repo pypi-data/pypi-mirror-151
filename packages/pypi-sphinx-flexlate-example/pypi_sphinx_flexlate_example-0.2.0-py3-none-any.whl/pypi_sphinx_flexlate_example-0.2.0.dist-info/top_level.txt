@@ -1,0 +1,4 @@
+_examples
+examples
+pypi_sphinx_flexlate_example
+tests
