@@ -1,0 +1,12 @@
+jord/__init__.py,sha256=P24Qm6UwumoCHzyunLFvTvoycdpz899dFfQ_VTxPqco,3437
+jord/exif.py,sha256=3912oUU3C_23M95_qj7rZ6ZY3ZaEvG5g819chpGhOow,174
+jord/tiff.py,sha256=luedE3Gg4e32QgOUevUbHe3sBpYPhsGgf6COG_OVXSY,369
+jord/gdal_utilities/__init__.py,sha256=RhIUe4MFmoqCIdMUBAfgU3whcl6h4oXMpsB0m0V5fLU,72
+jord/gdal_utilities/conversion.py,sha256=bNLdho-pNui1EACvnUFTbiBazgALceGInJgH5w-Y9LA,1661
+jord/gdal_utilities/enums.py,sha256=_u7Jjgl9fv9e74Ets8QKDw2dOCyb-o-QiiyVgxX4NSE,218
+jord/gdal_utilities/importing.py,sha256=CgrqJTf46rd4TM1zvU8FUaB0XpVneltk3TvvDnmDhZE,622
+Jord-0.0.2.dist-info/LICENSE.md,sha256=tNZxZ_CArGUyTUZcUdSnI7HfThjZznqGkS97eb_qph0,10644
+Jord-0.0.2.dist-info/METADATA,sha256=xNHguf_oRHQRRzs_JfqSyV9zOgpQMEw9vCWOFUK5T0U,7247
+Jord-0.0.2.dist-info/WHEEL,sha256=ooAAk5YJ6bNSTeML7MM1iETtwnSAPO5uF-aPrbGp5-A,93
+Jord-0.0.2.dist-info/top_level.txt,sha256=R_SO0GtkgAtdaSDSvXl29LonyRc_TRdnP-YSWHmWfHw,5
+Jord-0.0.2.dist-info/RECORD,,

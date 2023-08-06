@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: Jord
+Version: 0.0.2
+Home-page: https://github.com/aivclab/jord
+Download-URL: https://github.com/aivclab/jord/releases
+Author: Christian Heider Nielsen
+Author-email: christian.heider@alexandra.dk
+Maintainer: Christian Heider Nielsen
+Maintainer-email: christian.heider@alexandra.dk
+License: Apache License, Version 2.0
+Keywords: python computer vision neo droid
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: devpack
+Requires-Dist: neodroid
+Requires-Dist: numpy (>=1.20.2)
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: tqdm
+Requires-Dist: Pillow (>=9.0.0)
+Requires-Dist: matplotlib (>=3.4.1)
+Requires-Dist: pip
+Requires-Dist: h5py
+Requires-Dist: torch (>=1.11.0)
+Requires-Dist: torchvision
+Requires-Dist: pycocotools (>=2.0.2)
+Requires-Dist: albumentations (>=0.5.2)
+Requires-Dist: opencv-python (>=4.5.1.48)
+Requires-Dist: seaborn
+Requires-Dist: munin
+Requires-Dist: PyWavelets
+Requires-Dist: imageio
+Requires-Dist: pypng
+Requires-Dist: sorcery
+Requires-Dist: black[jupyter]
+Provides-Extra: all
+Requires-Dist: pip ; extra == 'all'
+Requires-Dist: twine (>=1.13.0) ; extra == 'all'
+Requires-Dist: black[jupyter] (>=21.5b0) ; extra == 'all'
+Requires-Dist: black[jupyter] ; extra == 'all'
+Requires-Dist: sphinx (>=4.0.1) ; extra == 'all'
+Requires-Dist: sorcery ; extra == 'all'
+Requires-Dist: torch (>=1.11.0) ; extra == 'all'
+Requires-Dist: tqdm ; extra == 'all'
+Requires-Dist: numpy (>=1.20.2) ; extra == 'all'
+Requires-Dist: seaborn ; extra == 'all'
+Requires-Dist: mock ; extra == 'all'
+Requires-Dist: scikit-image ; extra == 'all'
+Requires-Dist: mistune (==0.8.4) ; extra == 'all'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'all'
+Requires-Dist: neodroid ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: PyWavelets ; extra == 'all'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'all'
+Requires-Dist: pip (>=19.0.3) ; extra == 'all'
+Requires-Dist: torchvision ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.11.1) ; extra == 'all'
+Requires-Dist: coveralls (>=1.6.0) ; extra == 'all'
+Requires-Dist: Pillow (>=9.0.0) ; extra == 'all'
+Requires-Dist: opencv-python (>=4.5.1.48) ; extra == 'all'
+Requires-Dist: h5py ; extra == 'all'
+Requires-Dist: wheel (>=0.33.0) ; extra == 'all'
+Requires-Dist: matplotlib (>=3.4.1) ; extra == 'all'
+Requires-Dist: munin ; extra == 'all'
+Requires-Dist: m2r2 ; extra == 'all'
+Requires-Dist: pypng ; extra == 'all'
+Requires-Dist: imageio ; extra == 'all'
+Requires-Dist: dlib ; extra == 'all'
+Requires-Dist: pre-commit (>=2.17.0) ; extra == 'all'
+Requires-Dist: albumentations (>=0.5.2) ; extra == 'all'
+Requires-Dist: pycocotools (>=2.0.2) ; extra == 'all'
+Requires-Dist: pytest (>=4.4.1) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pip ; extra == 'dev'
+Requires-Dist: twine (>=1.13.0) ; extra == 'dev'
+Requires-Dist: black[jupyter] (>=21.5b0) ; extra == 'dev'
+Requires-Dist: sphinx (>=4.0.1) ; extra == 'dev'
+Requires-Dist: black[jupyter] ; extra == 'dev'
+Requires-Dist: sorcery ; extra == 'dev'
+Requires-Dist: torch (>=1.11.0) ; extra == 'dev'
+Requires-Dist: tqdm ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: seaborn ; extra == 'dev'
+Requires-Dist: scikit-image ; extra == 'dev'
+Requires-Dist: mistune (==0.8.4) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'dev'
+Requires-Dist: neodroid ; extra == 'dev'
+Requires-Dist: scipy ; extra == 'dev'
+Requires-Dist: PyWavelets ; extra == 'dev'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'dev'
+Requires-Dist: pycocotools (>=2.0.2) ; extra == 'dev'
+Requires-Dist: pip (>=19.0.3) ; extra == 'dev'
+Requires-Dist: torchvision ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.11.1) ; extra == 'dev'
+Requires-Dist: coveralls (>=1.6.0) ; extra == 'dev'
+Requires-Dist: Pillow (>=9.0.0) ; extra == 'dev'
+Requires-Dist: opencv-python (>=4.5.1.48) ; extra == 'dev'
+Requires-Dist: h5py ; extra == 'dev'
+Requires-Dist: wheel (>=0.33.0) ; extra == 'dev'
+Requires-Dist: albumentations (>=0.5.2) ; extra == 'dev'
+Requires-Dist: munin ; extra == 'dev'
+Requires-Dist: m2r2 ; extra == 'dev'
+Requires-Dist: pypng ; extra == 'dev'
+Requires-Dist: imageio ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.17.0) ; extra == 'dev'
+Requires-Dist: numpy (>=1.20.2) ; extra == 'dev'
+Requires-Dist: matplotlib (>=3.4.1) ; extra == 'dev'
+Requires-Dist: pytest (>=4.4.1) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mistune (==0.8.4) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'docs'
+Requires-Dist: m2r2 ; extra == 'docs'
+Requires-Dist: sphinx (>=4.0.1) ; extra == 'docs'
+Provides-Extra: extra
+Provides-Extra: samples
+Requires-Dist: dlib ; extra == 'samples'
+Provides-Extra: setup
+Provides-Extra: tests
+Requires-Dist: pytest (>=4.4.1) ; extra == 'tests'
+Requires-Dist: mock ; extra == 'tests'
+
+<!--![header](.github/images/header.png)-->
+
+<p align="center">
+  <img src=".github/images/header.svg" alt='header' />
+</p>
+
+<h1 align="center">Jord</h1>
+
+<!--# Jord-->
+
+| [![Build Status](https://travis-ci.org/aivclab/jord.svg?branch=master)](https://travis-ci.org/aivclab/jord) | [![Coverage Status](https://coveralls.io/repos/github/aivclab/vision/badge.svg?branch=master)](https://coveralls.io/github/aivclab/vision?branch=master)  | [![GitHub Issues](https://img.shields.io/github/issues/aivclab/vision.svg?style=flat)](https://github.com/aivclab/vision/issues)  |  [![GitHub Forks](https://img.shields.io/github/forks/aivclab/vision.svg?style=flat)](https://github.com/aivclab/vision/network) | [![GitHub Stars](https://img.shields.io/github/stars/aivclab/vision.svg?style=flat)](https://github.com/aivclab/vision/stargazers) |[![GitHub License](https://img.shields.io/github/license/aivclab/vision.svg?style=flat)](https://github.com/aivclab/vision/blob/master/LICENSE.md) |
+|---------------------------------------------------------------------------------------------------------------|---|---|---|---|---|
+
+<p align="center" width="100%">
+  <a href="https://www.python.org/">
+    <img alt="python" src=".github/images/python.svg" height="40" align="left">
+  </a>
+  <a href="http://pytorch.org/" style="float: right;">
+    <img alt="pytorch" src=".github/images/pytorch.svg" height="40" align="right" >
+  </a>
+</p>
+<p align="center" width="100%">
+  <a href="http://www.numpy.org/">
+    <img alt="numpy" src=".github/images/numpy.svg" height="40" align="left">
+  </a>
+  <a href="https://github.com/tqdm/tqdm" style="float:center;">
+    <img alt="tqdm" src=".github/images/tqdm.gif" height="40" align="center">
+  </a>
+</p>
+
+# Authors
+
+* **Christian Heider Nielsen** - [cnheider](https://github.com/cnheider)
+* [Other contributors](https://github.com/aivclab/jord/contributors)
