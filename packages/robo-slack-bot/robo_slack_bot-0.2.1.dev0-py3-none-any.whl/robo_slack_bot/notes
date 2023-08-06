@@ -1,0 +1,31 @@
+notes
+# def send_elastic(host='http://localhost:9200', resipe_dict=None):
+        # """Send a recipe to elasticsearch
+
+        # Args:
+        #     host (str, required): Ful FQDN of the elasticseach node . Defaults to 'http://localhost:9200'.
+        #     resipe_dict (dict, required): Dictionary contins the recipie details . Defaults to None.
+        # """
+        # try:
+        #     logging.info("elastic started")
+        #     index_name= "week_" + str(time_maths()[3])
+
+        #     client = Elasticsearch(host)
+        #     logging.debug("Elastic info: " + str(client.info()))
+        #     logging.debug("Elastic index: " + str(index_name))
+        #     logging.debug("Elastic recipe: " + str(resipe_dict))
+        #     document= json.dumps(resipe_dict, indent=4)
+        #     logging.debug("Elastic document: " + str(document))
+        #     response = client.index(index=index_name.lower(),document=document)
+        #     # get the response deom the client
+        #     logging.debug("Elastic response: " + str(response))
+        #     logging.info("Index is: " +response.get('result'))
+        #     logging.info("elastic finished")
+        # except Exception as e:
+        #     logging.error("Exception: " + str(e))
+
+
+        https://44ee-62-60-61-111.eu.ngrok.io
+
+
+        curl -XPOST -H "Content-Type: application/json"  -d '{"url": "https://www.bbcgoodfood.com/recipes/tuna-sundried-tomato-pasta-bake"}' https://44ee-62-60-61-111.eu.ngrok.io/api/v1/recipe_details

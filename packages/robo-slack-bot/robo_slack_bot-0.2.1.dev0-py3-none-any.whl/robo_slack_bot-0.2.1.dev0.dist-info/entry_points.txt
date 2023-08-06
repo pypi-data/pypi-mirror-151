@@ -1,0 +1,5 @@
+[console_scripts]
+eve-bot=robo_slack_bot.eve_bot:main
+recipe-scraper=robo_slack_bot.recipe_scraper:main
+slack-channel-cleaner=robo_slack_bot.slack_cleaner:main
+
