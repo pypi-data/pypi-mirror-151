@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: xlsx-evaluate
+Version: 0.1.1
+Summary: Calculate XLSX formulas
+Home-page: https://github.com/devind-team/xlsx_evaluate
+License: MIT
+Keywords: openpyxlsx,xlsx,formulas,evaluate
+Author: Victor
+Author-email: lyferov@yandex.ru
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/devind-team/xlsx_evaluate
+Description-Content-Type: text/markdown
+
+# Calculate XLSX formulas
+
+[![CI](https://github.com/devind-team/xlsx_evaluate/workflows/Release/badge.svg)](https://github.com/devind-team/devind-django-dictionaries/actions)
+[![Coverage Status](https://coveralls.io/repos/github/devind-team/xlsx_evaluate/badge.svg?branch=main)](https://coveralls.io/github/devind-team/devind-django-dictionaries?branch=main)
+[![PyPI version](https://badge.fury.io/py/xlsx_evaluate.svg)](https://badge.fury.io/py/xlsx_evaluate)
+[![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://opensource.org/licenses/MIT)
+
+
+This library is fork [xlcalculator](https://github.com/bradbase/xlcalculator).
+
+
