@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: snake_and_camel
+Version: 1.0.1
+Summary: Simple Python Functions to convert snake case to camel case and vice versa
+Author: Thiago Lima de Oliveira
+License-File: license.txt

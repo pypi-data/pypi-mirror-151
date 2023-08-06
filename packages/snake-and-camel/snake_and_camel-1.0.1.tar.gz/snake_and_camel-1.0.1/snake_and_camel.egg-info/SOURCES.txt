@@ -1,0 +1,9 @@
+README.md
+license.txt
+setup.py
+snake_and_camel/__init__.py
+snake_and_camel/snake_and_camel.py
+snake_and_camel.egg-info/PKG-INFO
+snake_and_camel.egg-info/SOURCES.txt
+snake_and_camel.egg-info/dependency_links.txt
+snake_and_camel.egg-info/top_level.txt
