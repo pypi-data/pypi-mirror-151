@@ -1,0 +1,3 @@
+[console_scripts]
+synapsegenie = synapsegenie.__main__:main
+
