@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pyrams
+Version: 0.8.3
+Summary: Set of tools for working with RAMS data
+Home-page: https://github.com/lsterzinger/pyrams
+Author: Lucas Sterzinger
+Author-email: lsterzinger@ucdavis.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: metpy
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: xarray
+Requires-Dist: matplotlib
+Requires-Dist: shapely
+Requires-Dist: netCDF4
+
+# PyRAMS 
+## Useful tools for working with RAMS data
+
+[![Documentation Status](https://readthedocs.org/projects/pyrams/badge/?version=stable)](https://pyrams.readthedocs.io/en/stable/?badge=stable)[![DOI](https://zenodo.org/badge/176599749.svg)](https://zenodo.org/badge/latestdoi/176599749)
+
+
+
+Documentation can be [found here](https://pyrams.readthedocs.io/en/stable)
+
+Install from conda-forge:
+```
+conda install -c conda-forge pyrams
+```
+
+or with pip:
+```
+pip install pyrams
+``` 
+PyRAMS is distributed under an [MIT License](LICENSE)
+
+

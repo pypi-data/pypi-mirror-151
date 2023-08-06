@@ -1,0 +1,11 @@
+pyrams/__init__.py,sha256=neAMqrzc8MA7iLJa9xhSNgIgdeagQcRtmeZgarTVUfw,104
+pyrams/_version.py,sha256=otnwfmvJLUamPajTPUaIekiO9mA-2HPi-_h_E0N-uOQ,22
+pyrams/data_tools.py,sha256=tz6ULMQllx8L0y0w7SQ4VmTnAhnRAOhmU6iocYQjypw,17584
+pyrams/rams-vars.json,sha256=xEMu_-dVGsXE8BT4Qqqj4QRjpmEI8vXdldjLENL92_o,29715
+pyrams/thermo.py,sha256=-u4pbwiaRMZarZbwCanP0OLRMh_R7NPxISiyOL9eRS8,2690
+pyrams/xarray.py,sha256=RUkkEOv3WOsUuzGhIq9VrF5V-pgL23UFW2d2Oh1OP_0,2721
+pyrams-0.8.3.dist-info/LICENSE,sha256=mvhNdMBtm_1qrMmOp5FAprGRG00noh-d7uGUOMGXulo,1074
+pyrams-0.8.3.dist-info/METADATA,sha256=EidLg08O8zgTNfUVMp_WY-tm1o-2Rmhh-yiRjn5lcIc,1237
+pyrams-0.8.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyrams-0.8.3.dist-info/top_level.txt,sha256=wPxNgvf-2KsxzCM-sj6am799wc-jG5mwSxrNIoI46ZQ,7
+pyrams-0.8.3.dist-info/RECORD,,
