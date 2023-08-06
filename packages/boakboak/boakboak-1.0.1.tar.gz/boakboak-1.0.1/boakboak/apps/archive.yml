@@ -1,0 +1,14 @@
+# archive.yml
+# archives files and folders, call like: python -m boakboak archive -m 'message'
+name: archive
+# path to package top folder, if app is package then  __init__.py should be one level below
+# test: cd appPath --> then run cmds
+appPath: /python_venvs/501_utils/60_hotkey/prc/archive
+# mandatory calling arguments for subprocess to be run
+cmds:
+  - python
+  - -m
+  - archive
+# optional argument if package uses args or kwargs
+defaultArgs:
+  - -m removed group logic from boakboak, only apps now!
