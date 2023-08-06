@@ -1,0 +1,15 @@
+summon/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+summon/__main__.py,sha256=2VANVXt9cnvlehtmfvpNlGOqSar21RlMvS9EC09XXII,933
+summon/_plugin_spec.py,sha256=6fIxKnV_lTBA2kq9xukZhLEmuv8JHCB1TaiqYzEKRKE,266
+summon/_typer_app.py,sha256=Zca5WcWYvI7KVVxox_VMjxpHjDWQEfLospgBjjK52fU,66
+summon/error.py,sha256=gt7g9HWtcD0MWN09KXqeO58to5_bsZ1Jo_AVyjHXg90,89
+summon/exec.py,sha256=Zgk8_0_lAnk8xxOyTK-jKBddMIK29zGDLM0_AovnmRc,2680
+summon/plugins.py,sha256=X7fhV3G7SCzicdsIuGoaEye06NBASpeipfrjQzs_0y4,59
+summon/project.py,sha256=NjQM6nusCAhIIFDtMVHKK-WpBtHkwlxHaraULe8sfxo,837
+summon/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+summon/tasks.py,sha256=nJ1pnqcZnHgYeVrCBIIkJfh5aojFZqjIYwb7lesPJtk,171
+summon_tasks-0.1.1.dist-info/entry_points.txt,sha256=Thw3NH0JBLhrAVr-lmozNFarguiIz8n86aEp7wJ04pU,47
+summon_tasks-0.1.1.dist-info/LICENSE.md,sha256=AvnIDwhHVxc9F8PXv_0IwKKKmYzuQdSCeHpgKWmVh6E,1154
+summon_tasks-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+summon_tasks-0.1.1.dist-info/METADATA,sha256=akThYZ4TOi_BRV1-xq-izv7CFzfIv3lukWRaA9PVhmM,1073
+summon_tasks-0.1.1.dist-info/RECORD,,
