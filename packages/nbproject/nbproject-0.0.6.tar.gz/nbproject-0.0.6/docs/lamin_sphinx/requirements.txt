@@ -1,0 +1,6 @@
+ablog
+dirsync
+myst_nb
+git+https://github.com/pydata/pydata-sphinx-theme.git
+sphinxext-opengraph
+sphinx-autodoc-typehints
