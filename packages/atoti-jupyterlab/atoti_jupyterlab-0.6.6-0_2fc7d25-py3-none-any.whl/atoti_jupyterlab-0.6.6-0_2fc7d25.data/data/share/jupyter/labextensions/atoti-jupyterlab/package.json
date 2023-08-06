@@ -1,0 +1,92 @@
+{
+  "name": "atoti-jupyterlab",
+  "version": "0.6.6",
+  "private": true,
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prebuild-lib": "node scripts/generateSdkThemes.mjs",
+    "build-lib": "tsc --build tsconfig.json",
+    "build-labextension": "jupyter labextension build .",
+    "build-all": "run-s build-lib build-labextension",
+    "build": "yarn run build-lib",
+    "start-lib": "tsc --watch",
+    "start-labextension": "jupyter labextension watch .",
+    "start": "run-p start-lib start-labextension"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@emotion/core": "^10.0.27",
+    "@jupyterlab/application": "^3.4.2",
+    "@jupyterlab/apputils": "^3.4.2",
+    "@jupyterlab/builder": "^3.4.2",
+    "@jupyterlab/cells": "^3.4.2",
+    "@jupyterlab/coreutils": "^5.4.2",
+    "@jupyterlab/docregistry": "^3.4.2",
+    "@jupyterlab/nbformat": "^3.4.2",
+    "@jupyterlab/notebook": "^3.4.2",
+    "@jupyterlab/observables": "^4.4.2",
+    "@jupyterlab/outputarea": "^3.4.2",
+    "@jupyterlab/rendermime": "^3.4.2",
+    "@jupyterlab/rendermime-interfaces": "^3.4.2",
+    "@jupyterlab/services": "^6.4.2",
+    "@jupyterlab/settingregistry": "^3.4.2",
+    "@lumino/algorithm": "^1.9.1",
+    "@lumino/coreutils": "^1.12.0",
+    "@lumino/disposable": "^1.10.1",
+    "@lumino/signaling": "^1.10.1",
+    "@lumino/widgets": "^1.32.0",
+    "antd": "4.12.2",
+    "fast-json-patch": "^3.1.1",
+    "immer": "^8.0.0",
+    "lodash-es": "^4.17.21",
+    "re-resizable": "^6.9.9",
+    "react": "^17.0.2",
+    "react-dnd": "^11.1.1",
+    "react-dnd-html5-backend": "^11.1.1",
+    "react-dom": "^17.0.2",
+    "react-error-boundary": "^3.1.4",
+    "react-intl": "5.8.6",
+    "tree-to-flat-map": "^1.0.1",
+    "use-subscription": "^1.7.0"
+  },
+  "devDependencies": {
+    "@activeviam/activepivot-client": "5.0.11",
+    "@activeviam/activeui-scripts": "5.0.11",
+    "@activeviam/activeui-sdk": "5.0.11",
+    "@activeviam/plugin-menu-item-open-drillthrough": "5.0.11",
+    "@activeviam/plugin-widget": "5.0.11",
+    "@activeviam/utils-react": "5.0.11",
+    "@activeviam/widget": "5.0.11",
+    "@atoti/shared": "0.6.6",
+    "@types/lodash-es": "^4.17.6",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.12",
+    "@types/use-subscription": "^1.0.0",
+    "execa": "^6.1.0",
+    "npm-run-all": "^4.1.5",
+    "pkg-dir": "^6.0.1",
+    "tempy": "^3.0.0",
+    "typescript": "^4.6.4"
+  },
+  "bundledDependencies": [
+    "@activeviam/activepivot-client",
+    "@activeviam/activeui-sdk",
+    "@activeviam/plugin-menu-item-open-drillthrough",
+    "@activeviam/plugin-widget",
+    "@activeviam/utils-react",
+    "@activeviam/widget",
+    "@atoti/shared"
+  ],
+  "//": "Keep the `@jupyterlab` and `@lumino` packages in sync with the version declared in `atoti-jupyterlab/setup.py`.",
+  "jupyterlab": {
+    "extension": true,
+    "outputDir": "../../python/atoti-jupyterlab/atoti_jupyterlab/labextension",
+    "_build": {
+      "load": "static/remoteEntry.f10f90fb799dbc870e72.js",
+      "extension": "./extension"
+    }
+  }
+}
