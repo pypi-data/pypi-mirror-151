@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+csromer/__init__.py
+csromer.egg-info/PKG-INFO
+csromer.egg-info/SOURCES.txt
+csromer.egg-info/dependency_links.txt
+csromer.egg-info/requires.txt
+csromer.egg-info/top_level.txt
