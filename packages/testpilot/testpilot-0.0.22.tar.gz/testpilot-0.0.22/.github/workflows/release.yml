@@ -1,0 +1,30 @@
+name: Release
+on: [workflow_dispatch]
+jobs:
+  github:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Create GitHub release
+        run: gh release create --generate-notes "$(gh release view --json name | jq .name | xargs bin/next_version)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  pypi:
+    needs: github
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Publish PyPI release
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install --upgrade build twine
+          python3 -m build
+          python3 -m twine upload --verbose dist/*
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+          TWINE_NONINTERACTIVE: true
