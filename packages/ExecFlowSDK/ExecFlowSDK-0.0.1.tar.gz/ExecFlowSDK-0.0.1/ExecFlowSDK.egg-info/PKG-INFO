@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ExecFlowSDK
+Version: 0.0.1
+Summary: OpenModel Wrapper Software Development Kit.
+Home-page: https://github.com/H2020-OpenModel/WP3-WrapperSDK/
+Author: SINTEF
+Author-email: Team4.0@SINTEF.no
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+Wrapper SDK
