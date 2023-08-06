@@ -1,0 +1,8 @@
+README.md
+scrapy_demo_cloudwatch_log.py
+setup.py
+scrapy_demo_cloudwatch_log.egg-info/PKG-INFO
+scrapy_demo_cloudwatch_log.egg-info/SOURCES.txt
+scrapy_demo_cloudwatch_log.egg-info/dependency_links.txt
+scrapy_demo_cloudwatch_log.egg-info/requires.txt
+scrapy_demo_cloudwatch_log.egg-info/top_level.txt
