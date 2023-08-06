@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+aiowc/__init__.py
+aiowc/api.py
+aiowc/oauth.py
+aiowc/params.py
+aiowc.egg-info/PKG-INFO
+aiowc.egg-info/SOURCES.txt
+aiowc.egg-info/dependency_links.txt
+aiowc.egg-info/requires.txt
+aiowc.egg-info/top_level.txt
