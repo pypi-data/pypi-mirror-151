@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: ramanfitter
+Version: 0.0.1
+Summary: A Raman peak finder and model fitter
+Home-page: https://github.com/pypa/sampleproject
+Author: John Ferrier
+Author-email: <jo.ferrier@northeastern.edu>
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Keywords: python,raman,fitter,raman fitter,lorentzian,gaussian,voigt
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# ramanfitter
+
+This package seeks to provide and easy and efficient matter for fitting Raman data with Lorentzian, Gaussian, or Voigt models.
+
+Developed by John Ferrier, NEU Physics (c) 2022
+
+## Quickstart Example
+
+For a simple run,
+```python
+import os
+import numpy as np
+from ramanfitter import RamanFitter
+
+filename    = os.path.join( 'path', 'to', 'data.csv' )      # Get File
+data        = np.genfromtxt( filename, delimiter = ',' )    # Open File
+
+x           = data[ :, 0 ]                                  # Parse x-values
+y           = data[ :, 1 ]                                  # Parse y-values
+
+RF          = RamanFitter( x = x, y = y, autorun = True )   # Run Fitter automatically
+
+components  = RF.comps                                      # Returns a dictionary of each curve plot
+curveParams = RF.params                                     # Returns a dictionary of the parameters of each Lorentzian, Gaussian, or Voigt curve
+bestFitLine = RF.fit_line                                   # Returns the plot data of the model
+```
+
+For more control over parameters
+
+```python
+import os
+import numpy as np
+from ramanfitter import RamanFitter
+
+filename    = os.path.join( 'path', 'to', 'data.csv' )      # Get File
+data        = np.genfromtxt( filename, delimiter = ',' )    # Open File
+
+x           = data[ :, 0 ]                                  # Parse x-values
+y           = data[ :, 1 ]                                  # Parse y-values
+
+RF          = RamanFitter( x = x, y = y, autorun = False )  # Run Fitter automatically
+
+
+''' Each step ran when autorun = False '''
+RF.NormalizeData()
+x, smooth_y             = RF.Denoise( x, y, ShowPlot = True )
+x_pks, y_pks, ndc_pks   = RF.FindPeaks( Threshold = 15., showPlot = True )
+RF.FitData( type = 'Voigt', showPlot = True )
+
+
+components  = RF.comps                                      # Returns a dictionary of each curve plot
+curveParams = RF.params                                     # Returns a dictionary of the parameters of each Lorentzian, Gaussian, or Voigt curve
+bestFitLine = RF.fit_line                                   # Returns the plot data of the model
+```
