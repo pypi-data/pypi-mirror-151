@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+optmagic/__init__.py
+optmagic/argument.py
+optmagic/pytest_action.py
+optmagic.egg-info/PKG-INFO
+optmagic.egg-info/SOURCES.txt
+optmagic.egg-info/dependency_links.txt
+optmagic.egg-info/requires.txt
+optmagic.egg-info/top_level.txt
+optmagic/tests/expose_the_class.py
+optmagic/tests/simple_car_class.py
+optmagic/tests/test_via_shell.py

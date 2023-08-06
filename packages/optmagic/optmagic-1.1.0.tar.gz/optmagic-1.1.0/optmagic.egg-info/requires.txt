@@ -1,0 +1,6 @@
+docstring_parser
+
+[tests]
+pytest
+matplotlib
+pbs3
