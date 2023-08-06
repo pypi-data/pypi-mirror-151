@@ -1,0 +1,11 @@
+README.md,sha256=XkU_-bw6Wt8mnn6uiFlpSr5IKA_gxajkYeK6ZPVI3mU,876
+pygarn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygarn/base.py,sha256=rlyV_PPitiTU_lCKjQjkI2cLx5JNUye-goePCHNkurU,5219
+pygarn/growth.py,sha256=-3BpYtQObkHrB6bD8YtY_scwJIo2iS7pK7gc-iLMtbg,5721
+pygarn/old_growth.py,sha256=mOf2pqjazddEZ1QeBz-Z3ZUhDG2hm7ejB0_i-AL7ACM,7577
+pygarn/shrink.py,sha256=2v65waxhj664AOE_iIyMpRf-nblWGhLIfxzQe9lvDms,2781
+pyproject.toml,sha256=ZhSXGIwOPYFRAT6nCUb26nf8N-n6ncBR_fwEIvotHmQ,1341
+pygarn-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pygarn-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pygarn-0.1.0.dist-info/METADATA,sha256=eYeSa4g7jke6ryzfu2m0Q55x8CimrhapPHK0jXHcELk,1587
+pygarn-0.1.0.dist-info/RECORD,,
