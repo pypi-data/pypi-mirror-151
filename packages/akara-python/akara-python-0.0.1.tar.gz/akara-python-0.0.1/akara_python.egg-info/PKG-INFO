@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: akara-python
+Version: 0.0.1
+Summary: A library to perform spelling suggestions for the Khmer language.
+Home-page: https://github.com/Socret360
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: Socret Lee
+Author-email: lee.socret@gmail.com
+License: GNU General Public License v3.0 or later (GPL-3.0-or-later)
+Keywords: KHMER,SPELL,CHECKER
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
