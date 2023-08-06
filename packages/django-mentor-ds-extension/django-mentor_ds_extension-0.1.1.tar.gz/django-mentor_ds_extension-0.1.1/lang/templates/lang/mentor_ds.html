@@ -1,0 +1,11 @@
+<!-- language selection -->
+<div class="btn-group btn-group-sm mx-4" role="group" aria-label="Language Selection">
+  {% for item in lang.list %}
+    {% if item == lang.selected %}
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio_{{ item }}" autocomplete="off" checked>
+    {% else %}
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio_{{ item }}" autocomplete="off">
+    {% endif %}
+    <a href="{% url 'mentor_ds:buildup' item %}" class="btn btn-outline-success">{{ item|upper }}</a>
+  {% endfor %}
+</div>
