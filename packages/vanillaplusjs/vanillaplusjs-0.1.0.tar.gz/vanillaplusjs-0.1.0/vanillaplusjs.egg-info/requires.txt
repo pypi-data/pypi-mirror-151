@@ -1,0 +1,7 @@
+pillow
+pytypeutils
+requests
+loguru
+html5lib
+watchdog
+fasteners
