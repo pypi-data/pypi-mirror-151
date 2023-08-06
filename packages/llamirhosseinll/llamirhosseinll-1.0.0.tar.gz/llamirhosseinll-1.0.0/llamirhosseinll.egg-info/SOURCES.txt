@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.py
+llamirhosseinll/__init__.py
+llamirhosseinll/pdf2text.py
+llamirhosseinll.egg-info/PKG-INFO
+llamirhosseinll.egg-info/SOURCES.txt
+llamirhosseinll.egg-info/dependency_links.txt
+llamirhosseinll.egg-info/top_level.txt
