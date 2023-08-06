@@ -1,0 +1,11 @@
+jnormcorre/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jnormcorre/motion_correction.py,sha256=YALDgbLJo2_BFJUdvz0jc-UOKOs8PHs1j0Nh3O17Pgc,112560
+jnormcorre/onephotonmethods.py,sha256=ojHFqGLeniju16ihljnQeBkfTj3Uew0kfHuaW3kE8Ac,1139
+jnormcorre/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jnormcorre/utils/movies.py,sha256=lgd4MJya6dfTsLMsw5sUunfaBqmGKc94EF7Xkni9mmg,52443
+jnormcorre/utils/timeseries.py,sha256=bxNmORpLCphArYG4eemj4AGYWrSbM8W__ZkJO07h8AA,15602
+jnormcorre/utils/traces.py,sha256=602Uw8H8jYA4JkMnBtjxsEGvscRheOD0ZScIm87JAko,4154
+jnormcorre-0.0.5.dist-info/METADATA,sha256=cGe2m7x6X2gvDuy0NHvpWSXdbOojIEesKarww1YD99k,500
+jnormcorre-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jnormcorre-0.0.5.dist-info/top_level.txt,sha256=jkeOMZmnopqpRp_VWV1HIBFSlBj1sEn-KO3FAm7m704,11
+jnormcorre-0.0.5.dist-info/RECORD,,
