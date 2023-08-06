@@ -1,0 +1,11 @@
+podcast_recommendation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+podcast_recommendation/algorithm.py,sha256=585x8GfWbW6cEpYCusOr9FFlk31QoiAkpmYqBQkKuBo,10906
+podcast_recommendation/data/categories_sample.csv,sha256=gz8Ah11sRIQrDnp0FkHjRUNdy1e_cUFgGXwSRITR9WQ,34737
+podcast_recommendation/data/ratings_sample.csv,sha256=_0ykCVZn0f1KpidsS8e-A0gvokUWB87uGPCQzkusbdc,53509
+podcast_recommendation/data/x_train.csv,sha256=lBl8C5D1DrQqTsaonPlDd5sU-VF5DWYLfkm2DX_lTMs,103607
+podcast_recommendation/data/y_train.csv,sha256=yrQX81h7mC11VS5OIAlvh3CryERjup-2VGAObvopaV8,1418
+podcast_recommendation-0.1.4.dist-info/LICENSE,sha256=SHGhtgQyENxD9_cQTuRIn6NP4o74NMcPlXiOzemY_oM,1089
+podcast_recommendation-0.1.4.dist-info/METADATA,sha256=lOWthGUVsT0fOSkkBzneo-SbK9BlUV4OX2FUSY8s9Ic,665
+podcast_recommendation-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+podcast_recommendation-0.1.4.dist-info/top_level.txt,sha256=MUvJK0dO-FxC-vZN5YugGnwmlQNUODG_2aiCpboQiGQ,23
+podcast_recommendation-0.1.4.dist-info/RECORD,,
