@@ -1,0 +1,17 @@
+README
+setup.cfg
+setup.py
+PyFastNER/CFastCNER.pyx
+PyFastNER/FastCNER.py
+PyFastNER/FastNER.py
+PyFastNER/IOUtils.py
+PyFastNER/ReplicationFunctionsLambda.py
+PyFastNER/WildCardFunctions.py
+PyFastNER/__init__.py
+PyFastNER/version.py
+PyFastNER.egg-info/PKG-INFO
+PyFastNER.egg-info/SOURCES.txt
+PyFastNER.egg-info/dependency_links.txt
+PyFastNER.egg-info/requires.txt
+PyFastNER.egg-info/top_level.txt
+conf/crule_test.tsv
