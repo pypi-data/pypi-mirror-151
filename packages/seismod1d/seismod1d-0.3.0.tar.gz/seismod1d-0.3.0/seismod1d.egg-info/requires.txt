@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+scipy
+lasio
+segyio
+bruges
+scikit-learn
