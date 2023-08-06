@@ -1,0 +1,12 @@
+cs_sync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cs_sync/__main__.py,sha256=IUj2-WFlJZVbBlYmhGfQ97pQO84PyGs9NKwRvr_ytcg,68
+cs_sync/github.py,sha256=DQU4Xo-8uYIpDKrtFlh5l_FAsbNnFzC7_bqZiYS9_js,3568
+cs_sync/handlers.py,sha256=NAe3TelYMjq6JLL0eVZFq55UGd8VrMr2RMYZQO4P5FE,6668
+cs_sync/helpers.py,sha256=5X7JLu5Q7fVggNWRtEGkkEButD8dcetuzApU38cOz5I,560
+cs_sync/main.py,sha256=r-z5pPpez7rUzH4RU1o7T1jHXVMG8hHV6fbkT-uBFx8,3366
+cs_sync-0.1.4.dist-info/LICENSE,sha256=CTyoQ2_Z70wYXc2OBDnUwR_0KACqEPqqCQnYv2bMAz8,1164
+cs_sync-0.1.4.dist-info/METADATA,sha256=7C6Do0TxizETw7V4OUkdP3JU7SAZ3pS6c3q3aDENUSM,2659
+cs_sync-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cs_sync-0.1.4.dist-info/entry_points.txt,sha256=MTKPEusSP701RawwVCXNMrfAupFIP-y_-if7dv-n60Q,45
+cs_sync-0.1.4.dist-info/top_level.txt,sha256=m87bYlvUE2V0UBlpFlJJV6n1lEhqTIdwjdpY1MxKblw,8
+cs_sync-0.1.4.dist-info/RECORD,,
