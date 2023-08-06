@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+MySqlTable/__init__.py
+MySqlTable/main.py
+MySqlTable.egg-info/PKG-INFO
+MySqlTable.egg-info/SOURCES.txt
+MySqlTable.egg-info/dependency_links.txt
+MySqlTable.egg-info/top_level.txt

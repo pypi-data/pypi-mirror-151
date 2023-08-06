@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: MySqlTable
+Version: 0.0.1
+Summary: This is SqlTable
+Home-page: https://github.com/DzmitryKukharenka/MySqlTable
+Author: KukharenkaDzmitry
+Author-email: dimsiko@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MY_SQL_TABLE
+
+---------------
+You can use this sql table
+---------------
+
