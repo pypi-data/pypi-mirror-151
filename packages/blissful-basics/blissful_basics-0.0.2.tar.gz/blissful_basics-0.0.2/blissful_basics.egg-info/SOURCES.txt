@@ -1,0 +1,7 @@
+setup.py
+blissful_basics/__init__.py
+blissful_basics.egg-info/PKG-INFO
+blissful_basics.egg-info/SOURCES.txt
+blissful_basics.egg-info/dependency_links.txt
+blissful_basics.egg-info/requires.txt
+blissful_basics.egg-info/top_level.txt
