@@ -1,0 +1,16 @@
+arfs/__init__.py,sha256=MHIWqAadeowNuPi3Ejm5asrHzXw9Sx_F7XOFRrslXUE,396
+arfs/__version__.py,sha256=RcFxLsprANUi_79UqnH4DBtW_2Ho3Jp2GoJswdx57_s,292
+arfs/allrelevant.py,sha256=9euIWX_8jkhNw45le8GqRw_W1Ru2iT8IZrwyWN7GJg8,91147
+arfs/featselect.py,sha256=_lbbSEHoFdMVe9tB7lM-0Of28yVT5gqbWjeqfuXxUI8,60275
+arfs/sampling.py,sha256=OGZEc-H65JqOiUJ8p9V8fKjSeHZylZAkBBqGiGKQ0E0,16079
+arfs/utils.py,sha256=u6u_7_3xoywOAQG4RpVMiOS0RrX5n8nywwhpVYZ5aSw,29402
+arfs/dataset/data/housing.zip,sha256=wz2VIroC2Ls-GCKoujs_dvS_OcELm6fBM04MkohsVu0,645468
+arfs/dataset/descr/housing.rst,sha256=SnrVgrWUfZ89y1SuuS30NaMdlqHrDvG4GyvvK7qJAXY,1400
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_allrelevant.py,sha256=nrzrLoCguxYLHF8WhRZA2jmTztyNnI7mSuITloxaJLo,9855
+tests/test_featselect.py,sha256=Y9ne6hDPx9BMAIxBxyQS5fgPED9yjbG20qBFX79MZWo,21902
+arfs-0.3.8.dist-info/LICENSE.md,sha256=0I4FH-NIzdwAq2X9BvPcgUEaTMBKaPEUAsKh6lWcJ3g,1091
+arfs-0.3.8.dist-info/METADATA,sha256=12DCGf4zf8F1wOXoVKLWS0yHDh8oxANWzsyjVhm4Ew8,10947
+arfs-0.3.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+arfs-0.3.8.dist-info/top_level.txt,sha256=g9zaTGgBw6EVou6qxFWq_ebaRULuvldcAW2yOFwB6ho,11
+arfs-0.3.8.dist-info/RECORD,,
