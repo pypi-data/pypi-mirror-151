@@ -1,0 +1,9 @@
+pgml_extension/__init__.py,sha256=tqoHrqliRojLNicy9MfxO3HwsixU8FgJN6OZfiocdb8,34
+pgml_extension/datasets.py,sha256=wkscvnnjcZmwWVwVzAJ5fLc-ALmYQOmWsim6adtL22E,9939
+pgml_extension/exceptions.py,sha256=o2JIYZW8pGo7nU2-llCAZHquQH482XMaAOfUXCgGSWs,124
+pgml_extension/model.py,sha256=vAWRraqg2mjURqucOTXIh3UZ66wYBIiXvdSee4WCBhE,32921
+pgml_extension/sql.py,sha256=_fWYnz3dP4gFVNUSQurbZICAMQsddAOYDIGFD0-Dynk,458
+pgml_extension-0.9.2.dist-info/METADATA,sha256=lTachMWGA98A0KC166kaY_UhKuuYz-j9f9DYlfTjQuU,1246
+pgml_extension-0.9.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pgml_extension-0.9.2.dist-info/top_level.txt,sha256=CtsxgmGghifw8PsKMUCtk0zFM9CVgn7ufOLm_L07J0U,15
+pgml_extension-0.9.2.dist-info/RECORD,,
