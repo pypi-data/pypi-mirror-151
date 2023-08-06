@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: amap-distance-matrix
+Version: 0.4.3
+Summary: amap distance matrix service based on Redis and MySQL
+Home-page: https://github.com/Euraxluo/distance_matrix
+License: The MIT LICENSE
+Author: Euraxluo
+Author-email: euraxluo@outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyMySQL[cryptography] (>=1.0.2,<2.0.0)
+Requires-Dist: SQLAlchemy (>=1.4.35,<2.0.0)
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: cryptography (>=36.0.2,<37.0.0)
+Requires-Dist: polyline (>=1.4.0,<2.0.0)
+Requires-Dist: pydantic (==1.9.0)
+Requires-Dist: python-geohash (>=0.8.5,<0.9.0)
+Requires-Dist: redis
+Project-URL: Repository, https://github.com/Euraxluo/distance_matrix
+Description-Content-Type: text/markdown
+
+### distance_matrix 
+- name = "amap_distance_matrix"
+- version = "0.4.3"
+- description = "amap distance matrix service based on Redis/Cluster Redis and MySQL"
+- authors = ["Euraxluo <euraxluo@outlook.com>"]
+- license = "The MIT LICENSE"
+- readme = "README.md"
+- homepage = "https://github.com/Euraxluo/distance_matrix"
+- repository = "https://github.com/Euraxluo/distance_matrix"
+
+#### install
+`pip install amap-distance-matrix`
+
+![](https://gitee.com/Euraxluo/images/raw/master/pycharm/MIK-RHfzjB.png)
+
+# Note
+this project is only a pilot project
