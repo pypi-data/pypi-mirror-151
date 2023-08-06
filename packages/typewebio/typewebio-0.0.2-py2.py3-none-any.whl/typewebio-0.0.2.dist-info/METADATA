@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: typewebio
+Version: 0.0.2
+Summary: Write interactive web app in declaration way.
+Home-page: https://github.com/luxuncang/TypeWebIo
+Author: ShengXin Lu
+Author-email: luxuncang@qq.com
+License: MIT
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: pywebio
+
+https://github.com/luxuncang/TypeWebIo
+
