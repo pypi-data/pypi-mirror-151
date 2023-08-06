@@ -1,0 +1,3 @@
+[console_scripts]
+wonk=wonk.cli:handle_command_line
+
