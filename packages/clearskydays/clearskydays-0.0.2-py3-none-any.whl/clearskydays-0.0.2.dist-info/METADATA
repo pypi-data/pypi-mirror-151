@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: clearskydays
+Version: 0.0.2
+Summary: A simple Python module that determines clear sky days based on solar ultraviolet radiation measurements.
+Home-page: UNKNOWN
+Author: Abel Delgado Villalba
+Author-email: adelgado@pol.una.py
+License: MIT
+Keywords: clear sky days,solar ultraviolet radiation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/plain
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# Description: clearskydays is a simple Python module that determines clear sky days based on solar ultraviolet radiation measurements. 
+
+# Installation: pip install clearskydays
+
+# Author: Abel Delgado Villalba. Facultad Politecnica - Universidad Nacional de Asuncion, Paraguay. email: <adelgado@pol.una.py>
+
+# Acknowledgments: The author thanks Dr. Marcelo de Paula Correa (Universidade Federal de Itajuba, Brazil), an expert researcher in atmospheric sciences and biometeorology, for his important scientific contribution to this work.
+
+
+
+
+Version 0.0.2 (20-05-2022 03:00 UTC) Second Release
+
+
