@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vbbpy
+Version: 1.1.6
+Summary: A python wrapper for the VBB REST-API by derhuerst
+Home-page: https://github.com/Colum31/vbb-pythonWrapper
+Author: colum31
+License: MIT
+Requires-Python: >3.6
+License-File: LICENSE
