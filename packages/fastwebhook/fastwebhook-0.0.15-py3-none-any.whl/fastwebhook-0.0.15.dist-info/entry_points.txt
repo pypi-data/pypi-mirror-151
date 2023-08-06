@@ -1,0 +1,3 @@
+[console_scripts]
+fastwebhook = fastwebhook.core:run_server
+fastwebhook_install = fastwebhook.core:install_service
