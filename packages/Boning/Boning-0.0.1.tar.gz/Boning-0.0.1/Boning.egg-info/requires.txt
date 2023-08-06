@@ -1,0 +1,13 @@
+bonelate
+bonerator
+
+[command]
+typer
+
+[parse]
+pyparsing
+
+[server]
+fastapi
+pydantic
+uvicorn>=0.3.0
