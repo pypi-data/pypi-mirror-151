@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: smallgraphlib
+Version: 0.3.0
+Summary: Simple library for handling small graphs, including Tikz code generation.
+Home-page: https://github.com/wxgeo/smallgraphlib
+License: GPL-3.0-or-later
+Author: Nicolas Pourcelot
+Author-email: nicolas.pourcelot@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/wxgeo/smallgraphlib
