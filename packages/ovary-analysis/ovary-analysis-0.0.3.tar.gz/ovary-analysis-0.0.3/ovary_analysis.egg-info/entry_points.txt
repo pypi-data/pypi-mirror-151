@@ -1,0 +1,3 @@
+[console_scripts]
+follicle-finder = ovary_analysis.follicle_finder:cli
+
