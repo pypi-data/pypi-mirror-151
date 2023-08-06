@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: daliuge-translator
+Version: 2.3.0
+Summary: Data Activated 流 (flow) Graph Engine - Graph Translation
+Home-page: https://github.com/ICRAR/daliuge
+Author: ICRAR DIA Group
+Author-email: rtobar@icrar.org
+License: LGPLv2+
+Description: The SKA-SDK prototype for the Execution Framework component
+Platform: UNKNOWN
