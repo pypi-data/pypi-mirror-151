@@ -1,0 +1,8 @@
+django_etna/auth/legacy_auth.py,sha256=cU6paN_tTG_9Vt2npRmavAxu7xzX2TFBx91lREUo5tc,6947
+django_etna/auth/test.py,sha256=UbeGveXkiAHCpSlExu07EBBezVJ1iS5w_JwQmo7aBTE,2016
+django_etna/auth/user.py,sha256=hLfetk0brTKuKOcUgpsumAO9SLyh2w9kG80jRYmnJwQ,1504
+django_etna/auth/utils.py,sha256=MZT963uUbKSrBbmFuTM7too2UzBEZ0D2mnkbjNcfDtg,936
+django_etna-1.0.0b5.dist-info/METADATA,sha256=Y6DtTJz0mp3rgVXtjZmp0E3Y1JliNQsZmNSpfD8imi0,581
+django_etna-1.0.0b5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_etna-1.0.0b5.dist-info/top_level.txt,sha256=E94k6899orq7-NDdPW2h4l6sA9ZbLrgbb0CUDZSc9oM,17
+django_etna-1.0.0b5.dist-info/RECORD,,
