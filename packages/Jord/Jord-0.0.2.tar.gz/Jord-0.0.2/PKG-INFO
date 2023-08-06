@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: Jord
+Version: 0.0.2
+Home-page: https://github.com/aivclab/jord
+Download-URL: https://github.com/aivclab/jord/releases
+Author: Christian Heider Nielsen
+Author-email: christian.heider@alexandra.dk
+Maintainer: Christian Heider Nielsen
+Maintainer-email: christian.heider@alexandra.dk
+License: Apache License, Version 2.0
+Keywords: python computer vision neo droid
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: samples
+Provides-Extra: tests
+Provides-Extra: setup
+Provides-Extra: extra
+Provides-Extra: all
+License-File: LICENSE.md
+
+<!--![header](.github/images/header.png)-->
+
+<p align="center">
+  <img src=".github/images/header.svg" alt='header' />
+</p>
+
+<h1 align="center">Jord</h1>
+
+<!--# Jord-->
+
+| [![Build Status](https://travis-ci.org/aivclab/jord.svg?branch=master)](https://travis-ci.org/aivclab/jord) | [![Coverage Status](https://coveralls.io/repos/github/aivclab/vision/badge.svg?branch=master)](https://coveralls.io/github/aivclab/vision?branch=master)  | [![GitHub Issues](https://img.shields.io/github/issues/aivclab/vision.svg?style=flat)](https://github.com/aivclab/vision/issues)  |  [![GitHub Forks](https://img.shields.io/github/forks/aivclab/vision.svg?style=flat)](https://github.com/aivclab/vision/network) | [![GitHub Stars](https://img.shields.io/github/stars/aivclab/vision.svg?style=flat)](https://github.com/aivclab/vision/stargazers) |[![GitHub License](https://img.shields.io/github/license/aivclab/vision.svg?style=flat)](https://github.com/aivclab/vision/blob/master/LICENSE.md) |
+|---------------------------------------------------------------------------------------------------------------|---|---|---|---|---|
+
+<p align="center" width="100%">
+  <a href="https://www.python.org/">
+    <img alt="python" src=".github/images/python.svg" height="40" align="left">
+  </a>
+  <a href="http://pytorch.org/" style="float: right;">
+    <img alt="pytorch" src=".github/images/pytorch.svg" height="40" align="right" >
+  </a>
+</p>
+<p align="center" width="100%">
+  <a href="http://www.numpy.org/">
+    <img alt="numpy" src=".github/images/numpy.svg" height="40" align="left">
+  </a>
+  <a href="https://github.com/tqdm/tqdm" style="float:center;">
+    <img alt="tqdm" src=".github/images/tqdm.gif" height="40" align="center">
+  </a>
+</p>
+
+# Authors
+
+* **Christian Heider Nielsen** - [cnheider](https://github.com/cnheider)
+* [Other contributors](https://github.com/aivclab/jord/contributors)
