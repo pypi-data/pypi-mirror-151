@@ -1,0 +1,11 @@
+talked/__init__.py,sha256=VnGCb2GQOTApntHJoZbR9ids2hSHbMa1rXgj2WbVQfM,1947
+talked/__main__.py,sha256=zQYbdNv207tH_8NBhKACWOupoLm8J4hAG1RyLZkYbOw,713
+talked/ffmpeg.py,sha256=9a_XoehmbcmYVvqfUusgc2-6xI9ECipMbOtpushYtII,3401
+talked/main.py,sha256=2KslmQjsaN0C8uFL-WOw-bkfMU-GWvT_9AnQZdI-rzM,2302
+talked/recorder.py,sha256=lxYzzOGdr0FT9iTanZptP94ZnRF4UdfygT7PXL0XRkA,11938
+talked/static/custom_css.js,sha256=kYN0k_lv7UX0HAOJoINJOhp3ZoopI0J2XmEFudeTysE,582
+talked-0.4.0.dist-info/entry_points.txt,sha256=fg_a65rGw2i_YGLesW23SORu9eunCZO5YWUgedf-B6I,42
+talked-0.4.0.dist-info/LICENSE,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+talked-0.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+talked-0.4.0.dist-info/METADATA,sha256=xc9GsUQi6jWyUjWuYIjaFkH4nuxu0qqK0-jLFWDCE9w,13510
+talked-0.4.0.dist-info/RECORD,,

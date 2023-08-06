@@ -1,0 +1,3 @@
+[console_scripts]
+talked=talked:__main__
+
