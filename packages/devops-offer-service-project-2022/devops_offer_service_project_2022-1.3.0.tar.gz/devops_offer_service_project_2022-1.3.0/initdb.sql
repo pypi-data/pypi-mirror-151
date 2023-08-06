@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS offers (
+    id SERIAL PRIMARY KEY,
+    date TIMESTAMP NOT NULL,
+    position VARCHAR(255) NOT NULL,
+    requirements VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    agent_application_link VARCHAR(255) NOT NULL
+)
