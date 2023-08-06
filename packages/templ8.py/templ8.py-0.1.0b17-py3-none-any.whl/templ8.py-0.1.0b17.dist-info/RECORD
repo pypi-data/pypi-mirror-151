@@ -1,0 +1,16 @@
+templ8/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+templ8/blessing.py,sha256=47cXfGfwdwhPsIM4BzGfnJ6FMUM13OHTVazRHG0u0Uk,3214
+templ8/divine.py,sha256=a0pUnoqKdaxEBzKjec3dVYb4cisKnoVDCqsvD8C0W0E,3724
+templ8/genesis.py,sha256=P3MtWtbrE0MSyGvWTrLZhpia5fX1XESpQglXiK1YIo4,672
+templ8/help_args.py,sha256=aSuOHRfy08Ef7Kr7O4S03rzObsrm2wWpxZac5EYnElQ,6058
+templ8/main.py,sha256=gzJMQ8aZplsCCvRHpJwJsgFR3TB2yIBZ6AOMlef3ZUw,1860
+templ8/neo.py,sha256=eYwqIWMSAGcIQefs2Ip-IW04F_BYGVv9TDT1YFFA6TE,1786
+templ8/pandoc.py,sha256=-aR3FW-DPtLyEnt2D2LoeTDlITkcCm_7rA9wv1NwmuM,1192
+templ8/programstate.py,sha256=mUC20spcXFYRoFlo19if_pUEN27FtXCmpmYGTIpyGkM,2389
+templ8/radio.py,sha256=s7POCfQZwpaXQB0TxIhZw6clFJnQTs4CylU8PL6t1nM,4172
+templ8.py-0.1.0b17.dist-info/LICENSE,sha256=u5iqJIBvPccIF4ZkGqK57Vvk-Dg5jQ4YQR6lVrePX6k,1085
+templ8.py-0.1.0b17.dist-info/METADATA,sha256=BhOkIrjoSFP4_nAYbr0vnphiTGkTLKAndQBWFF9R6KY,7941
+templ8.py-0.1.0b17.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+templ8.py-0.1.0b17.dist-info/entry_points.txt,sha256=53jT7fEIcz_niNLQyH4sz1fAcXhKuZrHCQn-Nr3LREQ,44
+templ8.py-0.1.0b17.dist-info/top_level.txt,sha256=P1yEUlChggfvGCkMgY4TitHThx4lrt8xd4zGUhgjH1U,7
+templ8.py-0.1.0b17.dist-info/RECORD,,
