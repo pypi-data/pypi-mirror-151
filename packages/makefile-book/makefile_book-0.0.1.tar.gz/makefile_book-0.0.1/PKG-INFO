@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: makefile_book
+Version: 0.0.1
+Summary: Dive into Book.
+Author-email: xinetzone <735613050@qq.com>
+Maintainer-email: xinetzone <735613050@qq.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: sphinx>=4.5
+Requires-Dist: invoke
+Requires-Dist: d2py
+Requires-Dist: xyzstyle
+Requires-Dist: sphinx-book-theme ; extra == "doc"
+Requires-Dist: ablog ; extra == "doc"
+Requires-Dist: myst-nb ; extra == "doc"
+Requires-Dist: sphinx-thebe ; extra == "doc"
+Requires-Dist: sphinx-copybutton ; extra == "doc"
+Requires-Dist: sphinx-comments ; extra == "doc"
+Requires-Dist: plotly ; extra == "doc"
+Requires-Dist: pandas ; extra == "doc"
+Requires-Dist: matplotlib ; extra == "doc"
+Requires-Dist: sphinxcontrib-mermaid ; extra == "doc"
+Requires-Dist: sphinx-panels ; extra == "doc"
+Requires-Dist: sphinx-inline-tabs ; extra == "doc"
+Requires-Dist: sphinx-automodapi ; extra == "doc"
+Project-URL: Home, https://github.com/xinetzone/d2py
+Provides-Extra: doc
+
+# makefile-book
+
+[![PyPI](https://img.shields.io/pypi/v/makefile-book.svg)](https://pypi.org/project/makefile-book/) [![GitHub issues](https://img.shields.io/github/issues/xinetzone/makefile-book)](https://github.com/xinetzone/makefile-book/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/makefile-book)](https://github.com/xinetzone/makefile-book/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/makefile-book)](https://github.com/xinetzone/makefile-book/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/makefile-book)](https://github.com/xinetzone/makefile-book/blob/main/LICENSE) ![repo size](https://img.shields.io/github/repo-size/xinetzone/makefile-book.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/makefile-book.svg)](https://github.com/xinetzone/makefile-book/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/makefile-book.svg)](https://github.com/xinetzone/makefile-book/watchers) [![watcher](https://img.shields.io/github/watchers/xinetzone/pytorch-book.svg)](https://github.com/xinetzone/pytorch-book/watchers) [![Documentation Status](https://readthedocs.org/projects/makefile-book/badge/?version=latest)](https://makefile-book.readthedocs.io/zh/latest/?badge=latest) [![Downloads](https://pepy.tech/badge/makefile-book/week)](https://pepy.tech/project/makefile-book)  [![Downloads](https://pepy.tech/badge/makefile-book)](https://pepy.tech/project/makefile-book)
+
+## 支持 PyPI
+
+需要安装 `makefile-book` 包：
+
+```shell
+pip install makefile-book
+```
+
