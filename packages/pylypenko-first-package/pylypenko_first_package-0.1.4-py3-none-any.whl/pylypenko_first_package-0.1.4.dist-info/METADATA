@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pylypenko-first-package
+Version: 0.1.4
+Summary: My(Volodymyr Pylypenko) first package
+Home-page: https://github.com/VovaPylypenko
+Author: Volodymyr Pylypenko
+Author-email: pylypenko@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+pylypenko_first_package
+
+### Build
+```bash
+python setup.py sdist bdist_wheel
+```
+
+### Check
+```bash
+twine check dist/*
+```
+
+### Send to test.pypi
+```bash
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+```
+
+### Send to pypi
+```bash
+twine upload dist/*
+```
+
+
