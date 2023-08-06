@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: irispreppy
+Version: 0.9.1
+Home-page: https://github.com/OfAaron3/irispreppy
+Author: Aaron W. Peat
+Author-email: a.peat.1@research.gla.ac.uk
+License: MIT
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: astropy (<=4.2.0)
+Requires-Dist: scipy
+Requires-Dist: beatifulsoup4
+
