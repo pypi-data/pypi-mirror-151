@@ -1,0 +1,51 @@
+[tool.poetry]
+authors = [
+  "Francisco Del Roio <francipvb@hotmail.com>",
+]
+description = "FastAPI integration with firebase"
+exclude = [
+  "tests/",
+  "app/",
+]
+name = "fastapi-firebase"
+readme = "README.md"
+version = "0.3.0"
+
+[tool.poetry.dependencies]
+fastapi = ">0.60.0<1.0.0"
+firebase-admin = "^5.2.0"
+python = "^3.8"
+python-multipart = "^0.0.5"
+
+[tool.poetry.dev-dependencies]
+aiofiles = "^0.8.0"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+ipython = "^8.0.1"
+isort = "^5.10.1"
+mypy = "^0.931"
+pre-commit = "^2.17.0"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+uvicorn = {extras = ["standard"], version = "^0.17.3"}
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.isort]
+line_length = 100
+profile = "black"
+
+[tool.black]
+line-length = 100
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-ra -q --cov=fastapi_firebase"
+minversion = "6.0"
+testpaths = [
+  "tests",
+]
