@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pykawaii/__init__.py
+pykawaii/cache.py
+pykawaii/client.py
+pykawaii/http.py
+pykawaii.egg-info/PKG-INFO
+pykawaii.egg-info/SOURCES.txt
+pykawaii.egg-info/dependency_links.txt
+pykawaii.egg-info/requires.txt
+pykawaii.egg-info/top_level.txt
+pykawaii/models/__init__.py
+pykawaii/models/nsfw.py
+pykawaii/models/sfw.py
