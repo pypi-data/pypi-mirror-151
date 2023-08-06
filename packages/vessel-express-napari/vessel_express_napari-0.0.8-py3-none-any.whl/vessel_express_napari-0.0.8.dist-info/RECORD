@@ -1,0 +1,13 @@
+vessel_express/__init__.py,sha256=iFxVUdxT4Sfh3dcGBaOrMkKkavhlHFwuF5R-mOhB6c8,161
+vessel_express/_dock_widget.py,sha256=LOCjcPZh_LYSnknYiEAE16VTrZODqp0o3YpB04oVCkw,51991
+vessel_express/_reader.py,sha256=EN07zt7dLAkoWcp9tW0ac6rW4iLLbYJlOiFv3bLM-RU,2840
+vessel_express/utils.py,sha256=-gyVJIJ9TBhpf7c-NCBXjZCsMCBwohYEK6OaQoubXAE,2020
+vessel_express/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vessel_express/_tests/test_dock_widget.py,sha256=TPWiNsQNDd9atn8T6dC55vHlskzFVAw_zpgRDDiL27Y,1335
+vessel_express/_tests/test_reader.py,sha256=o-svr3oweaOC1V324dhTMmaL7nn-3WlXIV5wAW2T0Uc,1108
+vessel_express_napari-0.0.8.dist-info/LICENSE,sha256=phC346G2QfFiWjkmXHX3vrVViLDxBMkFAsPappnFsBc,1487
+vessel_express_napari-0.0.8.dist-info/METADATA,sha256=GiITQXz-2Fessmz8dYZMhmdKj7Aq5BF97gdmIFfBYSk,4293
+vessel_express_napari-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vessel_express_napari-0.0.8.dist-info/entry_points.txt,sha256=1G4rHRy2RCZqX9cqdla2kGb5mieVhdCC94zxAUcnMR0,55
+vessel_express_napari-0.0.8.dist-info/top_level.txt,sha256=L_n6Jjtjy9XhQgL0QDkNAm1ob4dg91REUVpqs1qIDZg,15
+vessel_express_napari-0.0.8.dist-info/RECORD,,
