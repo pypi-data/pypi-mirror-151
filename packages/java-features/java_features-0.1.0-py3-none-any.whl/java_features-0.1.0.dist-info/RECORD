@@ -1,0 +1,12 @@
+java_features/FeaturesCalculation.py,sha256=Y5WrcsZ6K4nK_cwTDCzjDMlrmpnfcVL7650MbITrOvQ,14965
+java_features/__init__.py,sha256=WvFN0H8ecEH4dTahAK0dcyGm3xAX2Yy7_BOJL-FKhxg,161
+java_features/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+java_features/utilities/java_raw_tokenizer.py,sha256=pX0tuuq89Zmi8wXzC8UBzFyR4TNgGrNS6p5MagGWIN4,17451
+java_features/utilities/main_utility.py,sha256=wa60SGhjlgtXSZZhNoAKa-eq7hxeTdb73i-bC-z6dLA,14173
+java_features/utilities/scoring_utility.py,sha256=-yYw-p6iaLUl5T1TOFylwXKMakrbEs3X_HDBy--wmBc,18230
+java_features/utilities/stats_scoring_utility.py,sha256=UOQHeB2WN2hMDj9HnFmexrWbsdxzyCgyCmlv-4-m-V8,7802
+java_features-0.1.0.dist-info/LICENSE,sha256=544n26ElCWg5iCz7FwqLoNcWLIvhxcd1aszxMKUaXdk,1069
+java_features-0.1.0.dist-info/METADATA,sha256=g97b3efglstgn1hda1vvDDUABC_Ftd6qB5g59ntsYiU,4370
+java_features-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+java_features-0.1.0.dist-info/top_level.txt,sha256=hvzAC59wmprl9_tbfoSggH9oc4sTnRXZR7Z7hf8VQ_c,14
+java_features-0.1.0.dist-info/RECORD,,
