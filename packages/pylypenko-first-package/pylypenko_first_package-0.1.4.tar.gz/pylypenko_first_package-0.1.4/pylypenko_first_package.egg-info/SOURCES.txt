@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+pylypenko_first_package/__init__.py
+pylypenko_first_package/main.py
+pylypenko_first_package.egg-info/PKG-INFO
+pylypenko_first_package.egg-info/SOURCES.txt
+pylypenko_first_package.egg-info/dependency_links.txt
+pylypenko_first_package.egg-info/top_level.txt
