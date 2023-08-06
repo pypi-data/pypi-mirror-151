@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: workflow-nodes
+Version: 0.15.0
+Summary: Collection of tools for use in workflows.
+Home-page: https://gitlab.com/iam-cms/workflows/workflow-nodes
+Author: Karlsruhe Institute of Technology
+License: Apache-2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7,<3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: click (<9.0.0,>=8.0.0)
+Requires-Dist: defusedxml (<1.0.0)
+Requires-Dist: graphviz (<1.0.0)
+Requires-Dist: kadi-apy (<0.24.0,>=0.21.0)
+Requires-Dist: matplotlib (<4.0.0)
+Requires-Dist: openpyxl (<4.0.0)
+Requires-Dist: pandas (<2.0.0)
+Requires-Dist: pylatex (<2.0.0)
+Requires-Dist: qrcode (<8.0.0)
+Requires-Dist: scipy (<2.0.0,>=1.5.1)
+Requires-Dist: xmlhelpy (<0.10.0,>=0.9.1)
+Provides-Extra: all
+Requires-Dist: paramiko (<3.0.0) ; extra == 'all'
+Requires-Dist: scp (<1.0.0) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: beautifulsoup4 (==4.11.1) ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: build (==0.7.0) ; extra == 'dev'
+Requires-Dist: jinja2 (==3.1.2) ; extra == 'dev'
+Requires-Dist: myst-parser (==0.17.2) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.19.0) ; extra == 'dev'
+Requires-Dist: pylint (==2.13.9) ; extra == 'dev'
+Requires-Dist: Sphinx (==4.5.0) ; extra == 'dev'
+Requires-Dist: sphinx-click (==3.0.2) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==1.0.0) ; extra == 'dev'
+Requires-Dist: tox (==3.25.0) ; extra == 'dev'
+Requires-Dist: twine (==4.0.0) ; extra == 'dev'
+Provides-Extra: ssh
+Requires-Dist: paramiko (<3.0.0) ; extra == 'ssh'
+Requires-Dist: scp (<1.0.0) ; extra == 'ssh'
+
+# workflow-nodes
+
+**workflow-nodes** is a collection of various tools written in Python 3, which
+are also usable inside a *workflow* as nodes. Each node is an executable
+command line tool providing the `--xmlhelp` interface, which can be used to
+obtain a machine readable representation of any command line tool and its
+parameters (see also
+[xmlhelpy](https://gitlab.com/iam-cms/workflows/xmlhelpy)). There are nodes for
+many different tasks, including data conversion, transport and visualization
+tools.
+
+For installation and usage instructions, please see the documentation:
+
+* Stable (reflecting the latest release):
+  https://workflow-nodes.readthedocs.io/en/stable/
+* Latest (reflecting the *develop* branch):
+  https://workflow-nodes.readthedocs.io/en/latest/
