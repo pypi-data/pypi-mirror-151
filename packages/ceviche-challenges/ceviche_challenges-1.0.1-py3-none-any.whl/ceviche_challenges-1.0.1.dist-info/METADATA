@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ceviche-challenges
+Version: 1.0.1
+Home-page: https://github.com/google/ceviche-challenges
+Author: Google LLC
+Author-email: noreply@google.com
+License: Apache 2.0
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: unyt
+Requires-Dist: ceviche
+Requires-Dist: autograd
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: absl-py
+Requires-Dist: pytest
+Requires-Dist: pytest-xdist
+
