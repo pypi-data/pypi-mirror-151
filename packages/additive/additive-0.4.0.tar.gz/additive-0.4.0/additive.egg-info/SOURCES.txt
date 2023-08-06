@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+additive/__init__.py
+additive/additive.py
+additive.egg-info/PKG-INFO
+additive.egg-info/SOURCES.txt
+additive.egg-info/dependency_links.txt
+additive.egg-info/top_level.txt
