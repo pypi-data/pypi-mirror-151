@@ -1,0 +1,10 @@
+aws_cdk/aws_servicecatalogappregistry/__init__.py,sha256=yChKl3Suq3YVe4eBgop7-a8l8Vptml1KupsNXIAYCxs,62873
+aws_cdk/aws_servicecatalogappregistry/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_servicecatalogappregistry/_jsii/__init__.py,sha256=JWY7j-KlbZz1IOR7_hP2hLa0iCoraRHaU3m8aLGzS5o,422
+aws_cdk/aws_servicecatalogappregistry/_jsii/aws-servicecatalogappregistry@1.157.0.jsii.tgz,sha256=nIEgTWvyEnSV277Q7FjrAW-dyERQao-9i5uS2HSdAe0,48744
+aws_cdk.aws_servicecatalogappregistry-1.157.0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_servicecatalogappregistry-1.157.0.dist-info/METADATA,sha256=tqz43ocwS5pZQrhLyk1Q7rAJ6iygUY-J0wsMALITZTM,5781
+aws_cdk.aws_servicecatalogappregistry-1.157.0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_servicecatalogappregistry-1.157.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_servicecatalogappregistry-1.157.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_servicecatalogappregistry-1.157.0.dist-info/RECORD,,
