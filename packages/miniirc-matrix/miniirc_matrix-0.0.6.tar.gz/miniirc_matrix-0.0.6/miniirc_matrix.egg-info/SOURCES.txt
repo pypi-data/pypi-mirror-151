@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+miniirc_matrix.py
+setup.py
+miniirc_matrix.egg-info/PKG-INFO
+miniirc_matrix.egg-info/SOURCES.txt
+miniirc_matrix.egg-info/dependency_links.txt
+miniirc_matrix.egg-info/requires.txt
+miniirc_matrix.egg-info/top_level.txt
