@@ -1,0 +1,1 @@
+from .configrator import manager

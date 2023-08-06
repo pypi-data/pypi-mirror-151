@@ -1,0 +1,8 @@
+README.md
+setup.py
+configrator/__init__.py
+configrator/configrator.py
+configrator.egg-info/PKG-INFO
+configrator.egg-info/SOURCES.txt
+configrator.egg-info/dependency_links.txt
+configrator.egg-info/top_level.txt
