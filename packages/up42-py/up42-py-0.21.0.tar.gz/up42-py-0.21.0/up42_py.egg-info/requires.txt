@@ -1,0 +1,11 @@
+requests
+requests-oauthlib
+tenacity
+tqdm
+geojson
+rasterio
+geopandas
+folium
+branca
+matplotlib
+descartes
