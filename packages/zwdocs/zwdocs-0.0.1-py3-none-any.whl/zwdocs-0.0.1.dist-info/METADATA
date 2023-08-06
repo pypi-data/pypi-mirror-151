@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: zwdocs
+Version: 0.0.1
+Summary: Personal Document Utilities
+Home-page: https://github.com/njzhaowei/zwdocs
+Author: Zhao Wei
+Author-email: yewberry@163.com
+License: Apache 2.0
+Platform: all
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: zwutils
+Requires-Dist: beautifulsoup4
+Requires-Dist: PyMuPDF
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: Pillow
+
+# ZWDOCS
+Personal Document Utilities  
