@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/qir.py
+src/qir.egg-info/PKG-INFO
+src/qir.egg-info/SOURCES.txt
+src/qir.egg-info/dependency_links.txt
+src/qir.egg-info/requires.txt
+src/qir.egg-info/top_level.txt
