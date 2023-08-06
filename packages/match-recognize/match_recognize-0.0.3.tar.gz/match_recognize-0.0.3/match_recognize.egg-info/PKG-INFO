@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: match-recognize
+Version: 0.0.3
+Summary: match_recognize pattern detection
+Home-page: UNKNOWN
+Author: Mohga Emam
+Author-email: mohgasolimane@gmail.com
+License: MIT
+Description: match recognize support for python users with a built in automata
+Keywords: match_recognize,pattern recognition,automata
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

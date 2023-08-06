@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+match_recognize/__init__.py
+match_recognize.egg-info/PKG-INFO
+match_recognize.egg-info/SOURCES.txt
+match_recognize.egg-info/dependency_links.txt
+match_recognize.egg-info/top_level.txt
