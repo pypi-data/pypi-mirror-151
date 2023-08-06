@@ -1,0 +1,4 @@
+configs
+mongo_database
+tweet_creation
+twitter_collection
