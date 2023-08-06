@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/jsonreadwrite/__init__.py
+src/jsonreadwrite/jsonreadwrite.py
+src/jsonreadwrite.egg-info/PKG-INFO
+src/jsonreadwrite.egg-info/SOURCES.txt
+src/jsonreadwrite.egg-info/dependency_links.txt
+src/jsonreadwrite.egg-info/top_level.txt
