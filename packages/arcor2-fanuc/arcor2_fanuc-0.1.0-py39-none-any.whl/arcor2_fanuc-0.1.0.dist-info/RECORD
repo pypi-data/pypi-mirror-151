@@ -1,0 +1,11 @@
+arcor2_fanuc/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+arcor2_fanuc/__init__.py,sha256=l7GuqwFKxk79MXzWazHFaHr2z9wXJXzReiYP2-eFCKI,238
+arcor2_fanuc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_fanuc/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_fanuc/scripts/fanuc.py,sha256=F072mzvCP5agUgikqMMh4KVjaweQ5bvBZHvPGSz-7hA,16315
+arcor2_fanuc-0.1.0.dist-info/METADATA,sha256=FnCYG1vjY0UEjckockLQvmzbOfuN_AHC066ary1NMks,2284
+arcor2_fanuc-0.1.0.dist-info/WHEEL,sha256=ZvcC9yJ-3jt0s3Z9GqWdFU0zAv0WwFaltzmW3pHC9do,93
+arcor2_fanuc-0.1.0.dist-info/entry_points.txt,sha256=MIfNfnfA2ciiRw4cyAQzzN-OUQwS95aZf9UOmKggjlA,66
+arcor2_fanuc-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_fanuc-0.1.0.dist-info/top_level.txt,sha256=0vfhtq6FEAdTapOdkb2YQefBYbVUcxnUUCHO4olyEPA,13
+arcor2_fanuc-0.1.0.dist-info/RECORD,,
