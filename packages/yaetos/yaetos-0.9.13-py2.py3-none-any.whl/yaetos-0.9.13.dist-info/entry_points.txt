@@ -1,0 +1,2 @@
+[console_scripts]
+yaetos = yaetos.scripts.install_env:YaetosCmds
