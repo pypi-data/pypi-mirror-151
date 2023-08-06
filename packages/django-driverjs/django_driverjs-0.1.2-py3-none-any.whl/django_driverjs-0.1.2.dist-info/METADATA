@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: django-driverjs
+Version: 0.1.2
+Summary: Django wraper over Driver.js
+Home-page: https://github.com/iwalucas/django-driverjs/
+Author: Lucas
+Author-email: teppss@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+
+django-driverjs
+=================
+django-driverjs is a wrapper for the [Driver.js](https://github.com/kamranahmedse/driver.js) library.
+
+Installation
+------------
+
+Run
+``pip install django-driverjs``.  
+Once this step is complete add
+``"driverjs"`` to your ``INSTALLED_APPS`` setting in your ``settings.py``
+file and run ``python manage.py migrate`` to update your database.
+
+
+Usage
+-----
+
+#1 On the django admin panel create a driver and its steps.
+
+#2 Load the tag and render the javascript:
+``{% load driverjs %}``
+
+``{%setup_driver 'your_driver_slug' %}``
+
+#3 Choose a place to start it with:
+``[your_driver_slug]_driver.start();``
+So if your driver's slug is new_features, a new variable will be declared: ``new_features_driver``
+
+
+

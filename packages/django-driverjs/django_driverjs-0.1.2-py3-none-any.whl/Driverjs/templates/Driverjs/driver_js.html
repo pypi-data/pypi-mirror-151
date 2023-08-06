@@ -1,0 +1,23 @@
+<script>
+    
+    var {{driver.slug}}_options = {{driver_options|safe}};
+    {{driver.slug}}_options.onHighlightStarted = eval({{driver.slug}}_options.onHighlightStarted);
+    {{driver.slug}}_options.onHighlighted = eval({{driver.slug}}_options.onHighlighted);
+    {{driver.slug}}_options.onDeselected = eval({{driver.slug}}_options.onDeselected);
+    {{driver.slug}}_options.onReset = eval({{driver.slug}}_options.onReset);
+    {{driver.slug}}_options.onNext = eval({{driver.slug}}_options.onNext);
+    {{driver.slug}}_options.onPrevious = eval({{driver.slug}}_options.onPrevious);
+    
+
+
+    var {{driver.slug}}_driver = new Driver({{driver.slug}}_options);
+    window.addEventListener("load", function() { 
+        var driver_steps = {{driver_steps|safe}};
+        driver_steps.forEach(element => {
+            element.onNext = eval(element.onNext);
+            element.onPrevious = eval(element.onPrevious);
+        });
+        {{driver.slug}}_driver.defineSteps(driver_steps);
+    }); 
+    
+</script> 
