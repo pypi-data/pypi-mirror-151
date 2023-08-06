@@ -1,0 +1,6 @@
+README.md
+setup.py
+little_t.egg-info/PKG-INFO
+little_t.egg-info/SOURCES.txt
+little_t.egg-info/dependency_links.txt
+little_t.egg-info/top_level.txt
