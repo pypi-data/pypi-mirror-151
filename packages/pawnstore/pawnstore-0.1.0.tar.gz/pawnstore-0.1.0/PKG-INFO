@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pawnstore
+Version: 0.1.0
+Summary: chess library to import your PGN games in a local database
+Home-page: https://github.com/KraYmer/pawnstore
+Author: Fabrice Laporte
+Author-email: kraymer@gmail.com
+License: MIT
+Description: )
+Keywords: chess
+Platform: ALL
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Classifier: Topic :: Games/Entertainment :: Board Games
+Requires-Python: >=3.6
+Provides-Extra: test
