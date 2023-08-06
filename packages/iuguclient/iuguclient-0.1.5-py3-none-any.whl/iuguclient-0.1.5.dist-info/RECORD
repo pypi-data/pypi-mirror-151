@@ -1,0 +1,17 @@
+LICENSE.txt,sha256=mHGILKoNqIaWouC-C0Ehokz18zHC_2ZNnLH4Op0FLyo,1078
+iuguclient/__init__.py,sha256=55IWZVn9pMgb68M9PCn9Jm3PSN6lAPd1OryHZVvSfP8,415
+iuguclient/action.py,sha256=E1zG75WVSlJrnFSHkp2C_nFcKY3bEvbPywkTxtRsldU,496
+iuguclient/customer.py,sha256=uMbnSseE3Bk99MBVaUmHpX1kUxf87MgO590H-aSEszU,2222
+iuguclient/exception.py,sha256=FVmg0iLn5uIRmk7x36P-PVxZtV58EOom5JF9uiX_wfA,113
+iuguclient/invoice.py,sha256=o96ILlTQhTxEACMmVbFOuzz_6bilgdru5ZlIjQu85Yo,1686
+iuguclient/iuguapi.py,sha256=QKrI1sdUYK1ii2Tv303KuSNS7b2QvTrGcP71Ow9PDAw,1899
+iuguclient/marketplace.py,sha256=EdAvJU9IQpNcxcyjqWCjNG0Jdzj-8zjOwzejQ-jJSiw,808
+iuguclient/plan.py,sha256=K8Rh811Sd6AfM9T9oI-RflgQbD_g1MiW04Q1flSReY8,1686
+iuguclient/subscription.py,sha256=jSKBRVqo105Q4Z2u09C0aDpooff_bq7-DX8X9cZZukY,1807
+iuguclient/token.py,sha256=267H82krCJ_LFZQuufPce6uOqGW-pBwowo5mbFI-n8U,725
+iuguclient/transfer.py,sha256=kKUXrtDNkFrLb1vLXkY_HV6Y9Mr-oKDA1KBPZ15uIvM,647
+iuguclient/version.py,sha256=WF8MWoeHt5YS186Q50C4uZRYbiC3YSmjMBYmsTaSW74,24
+iuguclient-0.1.5.dist-info/LICENSE.txt,sha256=mHGILKoNqIaWouC-C0Ehokz18zHC_2ZNnLH4Op0FLyo,1078
+iuguclient-0.1.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+iuguclient-0.1.5.dist-info/METADATA,sha256=dGu29u1eCycyj4lIuhY4oHGOVJPKaQaWF1Qw3UFWh6I,1571
+iuguclient-0.1.5.dist-info/RECORD,,

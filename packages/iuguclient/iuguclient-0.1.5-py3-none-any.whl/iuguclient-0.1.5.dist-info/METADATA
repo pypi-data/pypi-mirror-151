@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: iuguclient
+Version: 0.1.5
+Summary: 
+Home-page: https://github.com/erickod/iugu-client
+License: MIT
+Author: Erick Duarte
+Author-email: erickod@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Project-URL: Repository, https://github.com/erickod/iugu-client
+Description-Content-Type: text/markdown
+
+# Iugu
+
+The Iugu provides a Python REST APIs to create, process and manage payments.
+
+## Installation
+
+Using pip:
+
+    $ pip install iuguclient
+
+## Usage
+
+You should import and create an iugu instance using your [api token](https://dev.iugu.com/reference#section-criando-suas-chaves-de-api-api-tokens):
+
+```py
+import iugu
+api = iugu.config(token=IUGU_API_TOKEN)
+```
+
+After that you can use the instance to iniciate the module you need, example:
+
+```py
+# token api
+iugu_token_api = iugu.Token()
+# customer api
+iugu_customer_api = iugu.Customer()
+```
+
+To see all available modules, check the [iugu folder](https://github.com/iugu/iugu-python/tree/master/iugu) of this project.
+
+## Documentation
+
+Visit [iugu.com/referencias/api](http://iugu.com/referencias/api) for api reference or [iugu.com/documentacao](http://iugu.com/documentacao) for full documentation
+
+
+## Original project
+https://github.com/iugu/iugu-python
