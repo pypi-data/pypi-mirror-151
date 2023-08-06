@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fieldsTurn.egg-info/PKG-INFO
+fieldsTurn.egg-info/SOURCES.txt
+fieldsTurn.egg-info/dependency_links.txt
+fieldsTurn.egg-info/requires.txt
+fieldsTurn.egg-info/top_level.txt
+fieldsturn/__init__.py
+fieldsturn/fieldsFunc.py
+fieldsturn/fieldsReplace.py
+fieldsturn/fieldsTurn.py
+fieldsturn/filter.py
+fieldsturn/funCustom.py
+fieldsturn/test.py
+fieldsturn/test2.py
