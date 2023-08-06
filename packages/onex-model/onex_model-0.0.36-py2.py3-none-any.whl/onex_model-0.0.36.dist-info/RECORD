@@ -1,0 +1,12 @@
+onex_model/__init__.py,sha256=C4tTZu6jQug2gR42YDMdyo-pFYQLdbY-VXHn92nwu_E,4195
+onex_model/onex_model.py,sha256=W4dDL-FAlhQcSvwVdzHdW7bLj2KZ2eF2X3-o4jfug3k,258746
+onex_model/onexmodel_pb2.py,sha256=03n2SO8l4A58Gfr5goPB0gMZO3S2L56rzRrFzjhRy3c,200100
+onex_model/onexmodel_pb2_grpc.py,sha256=DOQwf5mYXlHK6iC1UnoTBmXv9FQU4-_ZWjxF3XR9L4s,5588
+onex_model/docs/onexmodel.proto,sha256=t907japf0WN4KzIL90i6LFHJgyyb0ImsZkgCbKrNEPI,49893
+onex_model/docs/openapi.html,sha256=EpZYcXG1F2OjH_wD7N9TU6YIz-ccwNwab8OVNE0AK0A,1243382
+onex_model/docs/openapi.json,sha256=1mMjIO93X5cxkIKHr48jCXeQA92G3zparcYd_g6UstQ,84158
+onex_model/docs/openapi.yaml,sha256=gUjtV7yPQC1Q3okfDZX_VPX0-ZERUc2LL2vlcTECEsw,48404
+onex_model-0.0.36.dist-info/METADATA,sha256=HjLjEQU7U2uNrRL_dj5ACBMhDzcqjyTbmJMtelXfn2c,729
+onex_model-0.0.36.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+onex_model-0.0.36.dist-info/top_level.txt,sha256=yThmv6VxRZT56WG42YuMypklgMYg_kkqAKkIw_tQP5s,11
+onex_model-0.0.36.dist-info/RECORD,,
