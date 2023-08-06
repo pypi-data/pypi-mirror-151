@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cappy/__init__.py
+src/cappy_grand_creators.egg-info/PKG-INFO
+src/cappy_grand_creators.egg-info/SOURCES.txt
+src/cappy_grand_creators.egg-info/dependency_links.txt
+src/cappy_grand_creators.egg-info/top_level.txt
+test/test.py
