@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pydumpck
+Version: 1.0.0
+Summary: a pyfile decomplier base on pycdc for windows
+Home-page: https://github.com/serfend/pydumpck
+Author: serfend
+Author-email: serfend@foxmail.com
+License: MIT Licence
+Keywords: pydumpck,decomplier,pe,elf,pyc,pyz
+Platform: any
+Description-Content-Type: text/x-rst
+
+Add a fallback short description here
+
