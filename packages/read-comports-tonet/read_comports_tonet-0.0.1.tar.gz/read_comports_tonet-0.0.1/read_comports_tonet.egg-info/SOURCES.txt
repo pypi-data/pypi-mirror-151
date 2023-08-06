@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+read_comports_tonet/__init__.py
+read_comports_tonet/app.py
+read_comports_tonet.egg-info/PKG-INFO
+read_comports_tonet.egg-info/SOURCES.txt
+read_comports_tonet.egg-info/dependency_links.txt
+read_comports_tonet.egg-info/requires.txt
+read_comports_tonet.egg-info/top_level.txt
