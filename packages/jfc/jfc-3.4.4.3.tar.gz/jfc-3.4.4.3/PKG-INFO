@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: jfc
+Version: 3.4.4.3
+Summary: Jina Flow Companion - search and index from the CLI
+Home-page: https://github.com/alexcg1/jfc
+License: Apache-2.0
+Keywords: Jina,search
+Author: Alex C-G
+Author-email: alex.cg@jina.ai
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jina (>=3.4.4,<4.0.0)
+Project-URL: Repository, https://github.com/alexcg1/jfc
+Description-Content-Type: text/markdown
+
+# JFC
+
+### Jina Flow Companion
+
+That's right: Jina Flow Companion. Not Jentucky Fried Chicken, or Jesus Fiona Christ.
+
+## What does it do?
+
+A simple CLI to:
+
+- Index data from a folder, file, text string, CSV, or (coming soon) DocArray on Jina Cloud
+- Search data via string or file
+
+## Features
+
+- Read config from YAML (coming soon) or command-line arguments
+- Connect via REST, gRPC, or WebSocket gateways
+
+### Install
+
+This will be implemented soon:
+
+```
+pip install jfc
+```
+
+### Index
+
+```
+jfc index <data> -h https://foo.wolf.jina.ai
+```
+
+Where `<data>` is a CSV file or glob
+
+### Search
+
+```
+jfc search <data> -h https://foo.wolf.jina.ai
+```
+
+Where `<data>` is a file or string
+
+### Arguments
+
+| Argument | Meaning                                            | 
+| ---      | ---                                                | 
+| `-h`     | URL to host                                        | 
+| `-n`     | Number of documents to index OR return from search |
+
+### Notes
+
+- JFC doesn't do any preprocessing of data. What you input is what you get
+- This is alpha-quality software that I built to scratch an itch. Don't expect miracles ;)
+

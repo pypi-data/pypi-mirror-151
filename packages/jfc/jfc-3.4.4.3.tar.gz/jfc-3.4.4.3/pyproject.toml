@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "jfc"
+version = "3.4.4.3"
+description = "Jina Flow Companion - search and index from the CLI"
+license = "Apache-2.0"
+authors = ["Alex C-G <alex.cg@jina.ai>"]
+readme = "README.md"
+homepage = "https://github.com/alexcg1/jfc"
+repository = "https://github.com/alexcg1/jfc"
+keywords = ["Jina", "search"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+jina = "^3.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jfc = "jfc.jfc:main"
