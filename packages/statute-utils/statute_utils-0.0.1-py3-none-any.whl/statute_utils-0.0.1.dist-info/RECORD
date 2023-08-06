@@ -1,0 +1,15 @@
+statute_utils/__init__.py,sha256=vAOvhTH0M-VCZzrXT4fH8gm0gpb8GOL2Aduqg4vDDYI,479
+statute_utils/assigner.py,sha256=JL8J0tfU4QuVsY2G8vWqoR-OenNTu40z8b7zfOXLTQw,1169
+statute_utils/formula/__init__.py,sha256=Ts1lL-hLGo60H4RsAmIm5H7izKDBOR6PSWfa3y6Qm7k,347
+statute_utils/formula/base.py,sha256=cP9wrM_-gexMXLu9ikHMn5BCEwhRj0IYpGmO9gL8_pk,5789
+statute_utils/formula/named.py,sha256=0M4t4PA5co6PyCiNT9Zv1s9pPDwJFA50zZZvcwvQ6yc,17381
+statute_utils/formula/provisions.py,sha256=0wFROLwOjoE7orxOfdInTuFI6PIKp44ujES7MI2P18M,3344
+statute_utils/formula/serials.py,sha256=fcrAotb1yD20lUzLCLgatiMQMLZKWqbyhOCBQwNgozw,10988
+statute_utils/spanner.py,sha256=ku0YEHZfOYnWDdgbms8bHyO0MjtFqw9NHfpROLFJ91M,3216
+statute_utils/statute_id.py,sha256=jLAwObe8POhWeDOULOCofMra8wCHyi7AGZMwW89ITak,3196
+statute_utils/statute_matcher.py,sha256=CUt8qogW1aEomqoOvF02sHIfvAa1fi4A2i8dJpxzjV4,7526
+statute_utils/statute_regex.py,sha256=zDrnm6RTK4Xywrf58Arx8pET4NZVj1PiQWeSiXUz8Oc,158
+statute_utils/styler.py,sha256=Q7NVKCtTvYHUQOYkbBr_fIAA6CxORj6nvJP3kVDmKlQ,2726
+statute_utils-0.0.1.dist-info/WHEEL,sha256=KXNDfOTTCr-VyxnCJDozfJ6nmi3hNN9RABDaCXBsNak,85
+statute_utils-0.0.1.dist-info/METADATA,sha256=pHzFvI7xqGxiNNg0vgnBrN0a3Tuz4-bF-tJM5-hWP7o,342
+statute_utils-0.0.1.dist-info/RECORD,,
