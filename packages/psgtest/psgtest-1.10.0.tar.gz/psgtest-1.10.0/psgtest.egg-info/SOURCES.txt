@@ -1,0 +1,11 @@
+README.md
+setup.py
+psgtest/__init__.py
+psgtest/psgtest.py
+psgtest/psgtest_icon.ico
+psgtest.egg-info/PKG-INFO
+psgtest.egg-info/SOURCES.txt
+psgtest.egg-info/dependency_links.txt
+psgtest.egg-info/entry_points.txt
+psgtest.egg-info/requires.txt
+psgtest.egg-info/top_level.txt
