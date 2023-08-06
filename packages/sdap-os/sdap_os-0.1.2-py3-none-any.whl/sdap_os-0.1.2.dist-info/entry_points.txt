@@ -1,0 +1,3 @@
+[console_scripts]
+sdap-cmd = sdap.main:main
+sdap-serv = sdap.webapp:main

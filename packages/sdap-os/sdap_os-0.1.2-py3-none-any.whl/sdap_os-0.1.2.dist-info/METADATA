@@ -1,0 +1,243 @@
+Metadata-Version: 2.1
+Name: sdap-os
+Version: 0.1.2
+Summary: Demo of usage of object storage for SDAP
+Home-page: 
+Download-URL: 
+Author: SDAP
+Author-email: thomas.g.loubrieu@jpl.nasa.gov
+License: apache-2.0
+Keywords: sdap,cog,s3
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (==1.20.20)
+Requires-Dist: matplotlib (==3.5.0)
+Requires-Dist: geopandas (==0.10.2)
+Requires-Dist: utm (==0.7.0)
+Requires-Dist: rioxarray (==0.9.0)
+Requires-Dist: xarray (==0.20.2)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: pyproj (==3.3.0)
+Requires-Dist: ray[default] (==1.9.0)
+Requires-Dist: numpy (==1.21.4)
+Requires-Dist: fsspec (==2021.11.1)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: aiohttp (==3.8.1)
+Requires-Dist: scipy (==1.7.3)
+Requires-Dist: OWSLib (==0.25.0)
+Requires-Dist: s2sphere (==0.2.5)
+Requires-Dist: flask-restful (==0.3.9)
+Requires-Dist: flask-apispec (==0.11.1)
+Provides-Extra: client
+Requires-Dist: jupyterlab (==3.3) ; extra == 'client'
+Requires-Dist: ipympl (==0.9.1) ; extra == 'client'
+Provides-Extra: dev
+Requires-Dist: cartopy (==0.20.1) ; extra == 'dev'
+Requires-Dist: twine (==4.0.0) ; extra == 'dev'
+Provides-Extra: ingestion
+Requires-Dist: netCDF4 (==1.5.8) ; extra == 'ingestion'
+
+SDAP experiment with object storage and other technologies (ray.io, xarray...)
+
+# Features
+
+- Applies simple algorithms on earth observation datasets
+
+- Read Cloud Optimized GeoTiff on S3 bucket
+- Manage S3 bucket with public access or with access keys
+- Manage datasets in any CRS (WGS84, UTM, ...)
+- Manage multi-band datasets
+- 
+
+- Algorithms managed:
+    - Spatial Mean: on a x,y,t range averages on x,y dimensions
+    - EVI: linear combinations of multi-band spectra
+    
+
+# Prerequisites
+
+- python 3.9
+- datasets on s3
+
+
+# Configure application and test
+
+The collection configuration should follow the template found on `src/sdap/test/data_access/collection-config.yaml` 
+
+If some of the data you need to access on S3 requires authentication, use a secrets files as the one provided in example `src/sdap/test/data_access/secrets.yaml`. 
+
+You have one secret configuration (e.g. AWS credential) per collection.
+
+Install and run tests:
+
+    pip install -e '.[dev]'
+    python setup.py test &> out.log &
+
+
+
+# Run
+
+## As a command line (suitable for serverless deployments)
+
+Use command line 
+
+        sdap-cmd --help
+
+For example with `EVI` operator:
+
+        sdap-cmd --conf ./src/sdap/test/data_access/collection-config.yaml \
+             --collection hls \
+             --x-range -71.24 -71.23 \
+             --y-range 42.40 42.42 \
+             --time-range 2017-01-01T00:00:00.000000+00:00 2017-06-01T00:00:00.000000+00:00 \
+             --operator-name EVI \
+             --operator-args '[[0,0,-2.5,2.5,0,0,0],[0,0,2.4,1,0,0,1]]' \
+             --plot
+
+With `SpatialMean` operator:
+
+        sdap-cmd --conf ./src/sdap/test/data_access/collection-config.yaml \
+             --secrets my_secrets.yaml \
+             --collection hls \
+             --bbox -71.24 42.40 -71.23 42.42 \
+             --time-range 2017-01-01T00:00:00.000000+00:00 2017-06-01T00:00:00.000000+00:00 \
+             --operator-name SpatialMean
+
+        sdap-cmd --conf ./src/sdap/test/data_access/collection-config.yaml \
+             --collection maiac \
+             --bbox -71.25 42.39 -71.23 42.42 \
+             --time-range 2019-01-01T00:00:00.000000+00:00 2019-02-01T00:00:00.000000+00:00 \
+             --operator-name SpatialMean
+
+
+             
+## As a service
+
+Starts a web server with an API:
+
+    sdap-serv  --conf src/sdap/test/data_access/collection-config.yaml --secrets my_secrets.yaml
+
+
+Test the service, you can use the jupyter notebook(s) provided on `src/sdap/notebook`
+
+You can run it locally by running:
+
+    pip install -e '.[client]'
+    jupyter-lab
+
+Then select the notebook in the jupyuter web console and execute it, step by step.
+
+
+# Resource allocation
+
+The resources needed to run the application can be estimated as follows:
+
+- maximum size of 1 tile for each worker = T = 64 * x * y * t * obs dim, for example 64*3660*3660*1*6 = 5Gb
+- maximum size of the user result returned to the user = R = 64*x*y*t*obs dims
+- number of parallels workers: n
+
+
+Total RAM = T*n + R
+
+Number of CPU = n
+
+
+# For developers
+
+    pip install -e '.[dev]'
+
+Do you work, aad unit tests
+
+Validate
+
+    python setup.py test
+
+Package
+
+    Upgrade version in `src/sdap/VERSION.txt`
+
+    python setup.py sdist bdist_wheel
+
+Create and publish the docker image
+
+    docker build . -t tloubrieu/sdap-os:0.1.1
+    docker push tloubrieu/sdap-os:0.1.1   
+
+Create the kubernetes namespace:
+
+    kubectl create namespace sdap-os
+
+Deploy the ray.io operator:
+
+(See instructions on https://docs.ray.io/en/latest/cluster/kubernetes.html#ray-helm)
+
+    git clone https://github.com/ray-project/ray.git
+    cd ray/deploy/charts 
+    helm -n ray install sdap-cluster --create-namespace ./ray
+
+Deploy the helm chart
+
+    helm install sdap-os ./helm/sdap-os --dependency-update -n sdap-os
+
+Stop the service:
+
+    helm delete sdap-os -n sdap-os
+
+
+On a local deployment with single node, the node might be tainted to prevent pods from being deployed on it. In this case you can run something like:
+
+    kubectl taint node docker-desktop node.kubernetes.io/disk-pressure:NoSchedule-
+
+(see https://stackoverflow.com/questions/62991596/1-nodes-had-taints-that-the-pod-didnt-tolerate-in-kubernetes-cluster for more details)
+
+# Use with local minio
+
+Set minio server (not used in the development yet)
+
+Standalone minio:
+
+Server install:
+
+    brew install minio/stable/minio
+
+Start the server
+
+    export MINIO_ROOT_USER=myminio
+    export MINIO_ROOT_PASSWORD=minio123AB
+
+    minio server /Users/loubrieu/Documents/sdap/minio --address localhost:9000 --console-address localhost:19000
+
+Client
+
+    brew install minio/stable/mc
+    mc --help
+
+Create server alias:
+
+    mc alias set minio http://localhost:9000 myminio minio123AB
+
+Create a bucket:
+
+    mc mb hls
+
+
+## Copy test datasets
+
+Create a bucket:
+
+    mc mb hls
+
+
+Copy some files:
+
+    mc cp data/hls/s1_output_latlon_HLS_S30_T18TYN_2019263_cog.tif minio/hls
+    mc cp data/hls/s1_output_latlon_HLS_S30_T18TYN_2019260_cog.tif minio/hls
+    mc cp data/hls/s1_output_latlon_HLS_S30_T18TYN_2019253_cog.tif minio/hls
+
+
