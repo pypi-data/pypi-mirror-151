@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=60", "wheel"]
+#build-backend = "setuptools.build_meta"
+
+[tool.coverage.run]
+cover_pylib = true
+parallel = true
+include = ["*/nc_py_install/*"]
+omit = ["*/tests/*", "*/cloud_py_api/python/lib/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "DeprecationWarning",
+    "DEPRECATED"
+]
+
+[tool.black]
+line-length = 110
+target-versions = ["py39"]
+preview = true
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint]
+master.py-version = "3.9"
+master.unsafe-load-any-extension = "yes"
+design.max-attributes = 8
+basic.good-names = [
+    "a", "b", "c", "d", "e", "f", "i", "j", "k", "r", "v",
+    "ex", "_", "fp", "fd", "im",
+]
+reports.output-format = "colorized"
+similarities.ignore-imports = "yes"
+messages_control.disable = [
+    "missing-function-docstring",
+    "line-too-long",
+]
+
+[tool.mypy]
+warn_no_return = true
+strict_optional = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]

@@ -1,0 +1,14 @@
+include nc_py_install/*
+include README.md
+include CHANGELOG.md
+include pyproject.toml
+
+graft tests
+
+exclude *.yaml
+exclude *.yml
+exclude CODE_OF_CONDUCT.md
+exclude SECURITY.md
+
+prune docs
+prune docker
