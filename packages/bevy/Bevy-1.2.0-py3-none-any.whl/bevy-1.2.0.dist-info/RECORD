@@ -1,0 +1,12 @@
+bevy/__init__.py,sha256=WTH5hmhEwAYRLYIFskd4p7aVaBphz3TYPhq3QdY_3Ts,101
+bevy/base_context.py,sha256=1n0rPH-HnR2PP4wRgn3Xp38bRzORWq2oEbCVcm4VRN0,807
+bevy/context.py,sha256=gUTAsAqMIuRFnAczeCcvxDQtzbz9XklSigTlz4bMXcc,3840
+bevy/function_provider.py,sha256=_A1qCVfCNBX7TGlp7-oHUTxNfmdh7mLsOqyp_5aTRwg,2660
+bevy/inject.py,sha256=v32hQBr3uCwW4pz0XE0AsPoarHqC1YOtbIEzgwpRbR8,2101
+bevy/null_context.py,sha256=HIcF6IpS1CfKA5g75Y_yIZsOiABcNysNxYSmCwIz62o,548
+bevy/provider.py,sha256=DDZ4lxdVldImPEdgXY5BYf8z4H-XpYKbEXj18P8kVuc,2589
+bevy/sentinel.py,sha256=H69v5WvpzZ9AtUE0M8GLmQ0hvsGW8n9lKJEf7cP1LGg,459
+bevy-1.2.0.dist-info/LICENSE,sha256=JnpmFHGtncdHGBgAQPR8vKICZwkfgANkWfJGfr55lcs,1076
+bevy-1.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+bevy-1.2.0.dist-info/METADATA,sha256=YrA0HIZZPJxWhl4GzKxWF4h1gBZvSBkg-hcZndeuE9A,3987
+bevy-1.2.0.dist-info/RECORD,,
