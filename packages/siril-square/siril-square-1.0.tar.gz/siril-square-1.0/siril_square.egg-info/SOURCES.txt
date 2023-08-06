@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+siril_square.egg-info/PKG-INFO
+siril_square.egg-info/SOURCES.txt
+siril_square.egg-info/dependency_links.txt
+siril_square.egg-info/entry_points.txt
+siril_square.egg-info/top_level.txt
+square/__init__.py
+square/__main__.py
