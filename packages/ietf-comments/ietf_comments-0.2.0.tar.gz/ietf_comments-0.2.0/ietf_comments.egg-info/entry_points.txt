@@ -1,0 +1,3 @@
+[console_scripts]
+ietf-comments = ietf_comments.ui:ietf_comments_cli
+rfced-comments = ietf_comments.ui:rfced_comments_cli

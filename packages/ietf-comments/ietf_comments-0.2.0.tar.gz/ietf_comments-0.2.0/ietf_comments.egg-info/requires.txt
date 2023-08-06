@@ -1,0 +1,8 @@
+commonmark
+pygithub
+blessings
+requests
+
+[dev]
+mypy
+black
