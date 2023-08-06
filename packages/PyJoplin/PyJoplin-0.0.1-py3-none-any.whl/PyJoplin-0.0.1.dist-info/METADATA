@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PyJoplin
+Version: 0.0.1
+Summary: A Python interface of Joplin.
+Home-page: https://github.com/songs18/PyJoplin
+Author: songs18
+Author-email: songs18@example.com
+License: MIT
+Platform: all
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+
+=============
+PyJoplin
+=============
+A Python interface of Joplin.
+
+
+
+
