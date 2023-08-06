@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e -u -o pipefail
+
+python -m pytest
+python -m bandit -r auth0_jwt_validator/
+python -m safety check
