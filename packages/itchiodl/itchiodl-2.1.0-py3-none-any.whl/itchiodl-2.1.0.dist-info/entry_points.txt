@@ -1,0 +1,4 @@
+[console_scripts]
+itch-download=itchiodl.downloader.__main__:main
+itch-load-bundle=itchiodl.bundle_tool.__main__:main
+
