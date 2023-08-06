@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ArchR_h5ad/__init__.py
+ArchR_h5ad.egg-info/PKG-INFO
+ArchR_h5ad.egg-info/SOURCES.txt
+ArchR_h5ad.egg-info/dependency_links.txt
+ArchR_h5ad.egg-info/requires.txt
+ArchR_h5ad.egg-info/top_level.txt
