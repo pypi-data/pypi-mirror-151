@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Trinnuty
+Version: 0.0.1
+Author: IglooDevelopment
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: numpy
+Requires-Dist: sqlaclhemy
+Requires-Dist: sqlite3
+
+A work in progress. This will never be the fastest module, but should provide some pretty good looking and easy to use visualizations for mathematical matrix operations.
