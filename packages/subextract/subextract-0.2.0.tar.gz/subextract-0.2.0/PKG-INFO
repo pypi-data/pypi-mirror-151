@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: subextract
+Version: 0.2.0
+Summary: CLI for easy extraction of subtitles from mkv files
+License: GPL-3.0
+Author: disrupted
+Author-email: hi@salomonpopp.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: langcodes (>=3.3.0,<4.0.0)
