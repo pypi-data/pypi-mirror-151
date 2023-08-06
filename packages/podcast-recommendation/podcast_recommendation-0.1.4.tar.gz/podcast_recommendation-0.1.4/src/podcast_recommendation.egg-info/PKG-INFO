@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: podcast-recommendation
+Version: 0.1.4
+Summary: Podcast recommendation algorithm in Neo4j
+Home-page: https://github.com/ManuelAlejandroMartinezFlores/PodcastRecommendation
+Author: Manuel Martinez
+Author-email: manuelalejandromartinezf@gmail.com
+Project-URL: Bug Tracker, https://github.com/ManuelAlejandroMartinezFlores/PodcastRecommendation/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PodcastRecommendation
+Podcast Recommendation Algorithm

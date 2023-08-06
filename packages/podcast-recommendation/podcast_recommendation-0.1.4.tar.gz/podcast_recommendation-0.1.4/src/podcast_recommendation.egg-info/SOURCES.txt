@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/podcast_recommendation/__init__.py
+src/podcast_recommendation/algorithm.py
+src/podcast_recommendation.egg-info/PKG-INFO
+src/podcast_recommendation.egg-info/SOURCES.txt
+src/podcast_recommendation.egg-info/dependency_links.txt
+src/podcast_recommendation.egg-info/top_level.txt
+src/podcast_recommendation/data/categories_sample.csv
+src/podcast_recommendation/data/ratings_sample.csv
+src/podcast_recommendation/data/x_train.csv
+src/podcast_recommendation/data/y_train.csv
