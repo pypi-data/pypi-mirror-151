@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: persuader-technology-automata-logger
+Version: 0.0.2
+Summary: Automata Logger
+Author: Persuader Technology
+Author-email: software@persuader.technology
+License: UNLICENSE
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Automata Logger
+
+## Packaging
+`python3 -m build`
+
+## Usage
+1. `ConfigureLogger()`
+2. `logging.info('test')` or `logging.getLogger('--REF-NAME--)`
