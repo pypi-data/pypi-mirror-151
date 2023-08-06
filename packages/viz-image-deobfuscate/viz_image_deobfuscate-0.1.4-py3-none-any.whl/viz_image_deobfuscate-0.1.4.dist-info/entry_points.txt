@@ -1,0 +1,3 @@
+[console_scripts]
+image-deobfuscate-cli=viz_image_deobfuscate.cli:main
+
