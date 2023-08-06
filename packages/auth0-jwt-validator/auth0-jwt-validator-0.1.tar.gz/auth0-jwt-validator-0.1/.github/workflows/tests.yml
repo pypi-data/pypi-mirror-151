@@ -1,0 +1,44 @@
+name: Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Dependencies
+        run: pip install -e .[ci]
+
+      - name: Run style and code checks
+        run: |
+          python -m isort --check auth0_jwt_validator/
+          python -m black --check auth0_jwt_validator/
+          python -m flake8 auth0_jwt_validator/
+
+      - name: Run unit tests
+        run: |
+          python -m pytest
+
+      - name: Run security checks
+        run: |
+          python -m bandit -r auth0_jwt_validator/
+          python -m safety check
