@@ -1,0 +1,7 @@
+jupyter-server-proxy
+
+[dev]
+black
+ruamel.yaml
+pytest
+pytest-cov
