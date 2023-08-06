@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dcCodeDeploy/__init__.py
+dcCodeDeploy/dcCodeDeploy.py
+dcCodeDeploy.egg-info/PKG-INFO
+dcCodeDeploy.egg-info/SOURCES.txt
+dcCodeDeploy.egg-info/dependency_links.txt
+dcCodeDeploy.egg-info/top_level.txt

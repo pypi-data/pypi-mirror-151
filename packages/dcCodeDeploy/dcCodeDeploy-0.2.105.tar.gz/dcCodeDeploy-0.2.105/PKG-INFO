@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dcCodeDeploy
+Version: 0.2.105
+Summary: Deploys code to various tagets (AWS, internal VMs, etc) based on tags
+Home-page: https://github.com/devopscenter/dcCodeDeploy
+Download-URL: https://github.com/devopscenter/dcCodeDeploy/tarball/
+Author: Josh devops.center, Bob devops.center, Gregg devops.center
+Author-email: josh@devops.center, bob@devops.center, gjensen@devops.center
+License: UNKNOWN
+Keywords: testing,logging,example
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
