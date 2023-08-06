@@ -1,0 +1,13 @@
+h5py
+matplotlib
+numpy
+pandas
+scipy
+seaborn
+
+## optional packages
+# shapely
+# logging
+# fiona
+# rasterio
+# geopandas
