@@ -1,0 +1,13 @@
+generic_repository/__init__.py,sha256=tyf-_JHc8crbO0nMx8WxHBjuGxDnQp1whjTnXdImwDA,615
+generic_repository/base.py,sha256=EAoPVPGh1Bduh7izy9ndHbqnCM3qfZlpp_59akyN0YM,3061
+generic_repository/cached.py,sha256=hrt_ECuKnQOCEgRGHGnp4_2j4MMtMTELWhEjOKNjDwU,2534
+generic_repository/composition.py,sha256=o-r-ZpaILKJGMeghl0Nt7AvdHjxWlSPxP5QE_zFQnHg,3517
+generic_repository/database.py,sha256=GkAdeCAHhd1vDHDejOzo92y4bv7Vt1dk_5s9qRaLcS0,7038
+generic_repository/exceptions.py,sha256=yF26zUtVHdJKZX-WTPw3JU1ZA8KlhPPStMmZYk-44js,253
+generic_repository/http.py,sha256=2E_iLm4SOdwHESIMpgIsvHggOZ9A2hnORc0DGnvsFOI,9893
+generic_repository/mapper.py,sha256=1SKDBs3h4B1kcnhZUhSFJF-1alY_ktdIrqzDVvmdExc,9052
+generic_repository/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generic_repository/pydantic.py,sha256=jiWmcnmb00f9OzCyvv0IOAIsoiuuzdkuU6iVH1Kz7UQ,1730
+generic_repository-1.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+generic_repository-1.1.0.dist-info/METADATA,sha256=f1WjbZMNtS7eiD05gU5xP5sVXK330nPX4jCQQziFhRM,734
+generic_repository-1.1.0.dist-info/RECORD,,
