@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: s7smaths
+Version: 1.0.1
+Summary: Synthesis math
+Home-page: UNKNOWN
+Author: Pieter Rossouw
+Author-email: pieter@synthesis.co.za
+License: UNKNOWN
+Keywords: python,math
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Library with utterly non-unique math methods for use hopefully nowhere
+
