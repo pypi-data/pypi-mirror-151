@@ -1,0 +1,14 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+passwordtest/PassCLI.py
+passwordtest/__init__.py
+passwordtest/__main__.py
+passwordtest/main.py
+passwordtest.egg-info/PKG-INFO
+passwordtest.egg-info/SOURCES.txt
+passwordtest.egg-info/dependency_links.txt
+passwordtest.egg-info/entry_points.txt
+passwordtest.egg-info/not-zip-safe
+passwordtest.egg-info/top_level.txt

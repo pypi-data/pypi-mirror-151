@@ -1,0 +1,3 @@
+[console_scripts]
+passwordtest = passwordtest.PassCLI:Mainprogram
+
