@@ -1,0 +1,9 @@
+zwdocs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zwdocs/__version__.py,sha256=pwnV3roDnJE3gxISBEviAIcYz5Rc-GeQtmYuBJD51Qo,292
+zwdocs/pdf.py,sha256=r-rB5dGPp5N0RHAeX5Vp5b43TH3pwGnrhBivhWxBO4U,9457
+zwdocs/utils.py,sha256=K58LoGwZOV7Z5QP_GuTWCXI8c1tjumuqOaUGiVdo1DA,893
+zwdocs-0.0.2.dist-info/LICENSE,sha256=I_f_xY0pVAAylQ71iSOWd7SIyxri3_g1_-HICC-_SbQ,1052
+zwdocs-0.0.2.dist-info/METADATA,sha256=pP8n9sD3yrP5v3NCxdyze7aqSqBOEaq-cEJopPuZ7UY,695
+zwdocs-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+zwdocs-0.0.2.dist-info/top_level.txt,sha256=XSJnoMe4om-Kuqy3YxQcYLGHsuJeSPo5QhyD7BUzs3s,7
+zwdocs-0.0.2.dist-info/RECORD,,
