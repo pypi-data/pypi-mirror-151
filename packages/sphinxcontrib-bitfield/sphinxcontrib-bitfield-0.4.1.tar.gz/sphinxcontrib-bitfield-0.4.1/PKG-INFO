@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-bitfield
+Version: 0.4.1
+Summary: Sphinx "bitfield" extension
+Home-page: https://github.com/Arth-ur/sphinxcontrib-bitfield
+Author: Arthur Gay
+License: BSD
+Keywords: sphinx,extension,documentation,bitfield,bytefield,diagram,renderer,svg
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
