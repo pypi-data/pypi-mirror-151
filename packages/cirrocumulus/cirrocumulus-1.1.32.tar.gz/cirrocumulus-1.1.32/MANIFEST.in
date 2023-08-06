@@ -1,0 +1,5 @@
+recursive-include cirrocumulus/client/ *
+recursive-include public/ *
+exclude .gitignore Dockerfile .idea
+prune docs
+prune test-data
