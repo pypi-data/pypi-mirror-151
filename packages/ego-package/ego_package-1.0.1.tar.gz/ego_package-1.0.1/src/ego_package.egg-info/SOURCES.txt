@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/ego_package.egg-info/PKG-INFO
+src/ego_package.egg-info/SOURCES.txt
+src/ego_package.egg-info/dependency_links.txt
+src/ego_package.egg-info/top_level.txt
+src/net_utils/__init__.py
+src/net_utils/ftp_utils.py
+src/net_utils/http_utils.py
+src/net_utils/tcp_utils.py
