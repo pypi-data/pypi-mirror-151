@@ -1,0 +1,9 @@
+README.md
+setup.py
+pymathics/__init__.py
+pymathics/add.py
+pymathics.egg-info/PKG-INFO
+pymathics.egg-info/SOURCES.txt
+pymathics.egg-info/dependency_links.txt
+pymathics.egg-info/not-zip-safe
+pymathics.egg-info/top_level.txt
