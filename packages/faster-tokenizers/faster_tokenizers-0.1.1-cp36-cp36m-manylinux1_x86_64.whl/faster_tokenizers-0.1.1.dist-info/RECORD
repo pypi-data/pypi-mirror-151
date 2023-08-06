@@ -1,0 +1,16 @@
+faster_tokenizers/__init__.py,sha256=5JbKDNgcZNQu3Mq3vIR3F5jRBC3nhxazipU5hMcx9JI,1527
+faster_tokenizers/commit.log,sha256=sqeO6vG8Bo9wU44GF8pUzb9mIJc0uCzTNwPIIILVXlg,41
+faster_tokenizers/core_tokenizers.so,sha256=5Y1T79hBK0bhpJOoNOEWhrQiYz4rnB-982icbd2lTOg,2587360
+faster_tokenizers/libicudata.so.70,sha256=xnitRZwhXXWIGuCFxyhEqTxBEda2_Z5Zyi6T-Ij0YV4,29471816
+faster_tokenizers/libicuuc.so.70,sha256=98CU9G2L6RU6Y6r5qpul8BY_gcxdKs9b8Ga0sqk9_b8,2522272
+faster_tokenizers/models/__init__.py,sha256=kB9aFRe9dzSAi_gAxaCM-RJSKak4RgssqdV_ZHOnvcE,646
+faster_tokenizers/normalizers/__init__.py,sha256=gTW7Fc5TunAl9oLR0qrO1tiUm8RwP4WW9vpwVBeXbW0,651
+faster_tokenizers/postprocessors/__init__.py,sha256=AcbQRUQVFPpu5slfFcKJWlTKOpWFtralexVOgxbyCvk,654
+faster_tokenizers/pretokenizers/__init__.py,sha256=LvswMBdc8yelNcBaiIk6HenuX-H9YZ3bG8v7q1DaE88,653
+faster_tokenizers/tokenizers_impl/__init__.py,sha256=TWAJJ6ie7iPfA66fGZsfeFnfGfupY-EbWfZrFrGyxIM,702
+faster_tokenizers/tokenizers_impl/base_tokenizer.py,sha256=ndtn-g4tFDrgTF4Li6MxEaihAdQaWdifz6xW1ATa-z8,5752
+faster_tokenizers/tokenizers_impl/ernie.py,sha256=fC481jsviXPg3lvB0o_4RDqI9FMjNuChCobVaym2VuI,4081
+faster_tokenizers-0.1.1.dist-info/METADATA,sha256=uAg172EySyvKj7fz6gZ_5DtPUtEOTWu_yL5EqqrFg5Q,997
+faster_tokenizers-0.1.1.dist-info/WHEEL,sha256=IODkjaibdQL4Y0ih2utemBolHCvYTfxEeli_9oQOqGs,109
+faster_tokenizers-0.1.1.dist-info/top_level.txt,sha256=fK1yKOUEQMzNEre6bj8GQFe3T9B0_2bbSndCQ9uf70c,18
+faster_tokenizers-0.1.1.dist-info/RECORD,,
