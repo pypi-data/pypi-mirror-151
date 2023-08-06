@@ -1,0 +1,7 @@
+torch_logs/__init__.py,sha256=xC3ZmiATorKk2TrKfRZb7bZWwN7HG6MYEupXip4Z9NY,158
+torch_logs/high_level.py,sha256=90-u4otoBXfDLOflvtbBiLGTWt7IQT1TU4CdK5YZ1E0,1078
+torch_logs/imports.py,sha256=1IwsZA2ZY6pJOw_ZQrCPXk1TV_sf_psu3kvmZg2ISMY,174
+torch_logs/low_level.py,sha256=UIVXRAD7F9PF_-oUjtK8-zFSbSwWQqlddbkuBL84y0A,864
+torch_logs-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+torch_logs-0.1.0.dist-info/METADATA,sha256=sK9lB0BP1ObChzI7B5I06EK3O0QfeHP5Xel7XhyAd1k,423
+torch_logs-0.1.0.dist-info/RECORD,,
