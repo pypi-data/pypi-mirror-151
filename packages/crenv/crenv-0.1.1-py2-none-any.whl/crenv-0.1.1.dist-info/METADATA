@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: crenv
+Version: 0.1.1
+Summary: RL Environment for Cryptocurrency Research
+Home-page: UNKNOWN
+Author: Crinstaniev
+Author-email: zhuangzesen@gmail.com
+License: MIT
+Keywords: RL,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: plotly
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: gym
+
+# cryptoEnv
+
+Customizable reinforcement learning framework for blockchain studies.
+
+
