@@ -1,0 +1,15 @@
+django
+Django
+fallback
+flashpolicies
+formedness
+metapolicies
+metapolicy
+online
+plugin
+prolog
+Silverlight
+subdomains
+untrusted
+UTF
+wildcard
