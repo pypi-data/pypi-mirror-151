@@ -1,0 +1,10 @@
+isbinary/__init__.py,sha256=lwYlMincvNSlK2MRovdeRrbfOCTh6YgaQQuTcy2Zs2Q,450
+isbinary/__main__.py,sha256=sL-5Q3bf-gLAWbCNLGk1fQaKxpCa6-v1yCfuGioIKZ4,67
+isbinary/_chardet.py,sha256=pEuxniuziRzzmL3q-bzlQNwzDc2fy_2gZwToJG5NJGc,501
+isbinary/check.py,sha256=KoR5GSuwmtfG_CJ-HaQHHPMiBdjmhDMyJ8nUsvKC3zM,5170
+isbinary/cli.py,sha256=DQb3-PaQ9YxPKrgGtJZ4AN19_HDbKMdZZz4yAwwmsYc,580
+isbinary/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isbinary-1.0.1.dist-info/LICENSE.txt,sha256=XGDFGsMUKbGAQ8MCdpUQg72EZGd-uLdptl_4AKIu1-Q,1532
+isbinary-1.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+isbinary-1.0.1.dist-info/METADATA,sha256=GDkNN7pNI1v2pC5x6ZI0ZguMv438FIC_j9WrrrPCU2I,4093
+isbinary-1.0.1.dist-info/RECORD,,
