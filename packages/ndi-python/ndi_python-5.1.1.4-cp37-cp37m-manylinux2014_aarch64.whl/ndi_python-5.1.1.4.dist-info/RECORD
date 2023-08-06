@@ -1,0 +1,11 @@
+NDIlib/NDIlib.cpython-37m-aarch64-linux-gnu.so,sha256=2urSBa0gEcOvoSMcietRGAOh7u6A0Ar7iykLI2DYavA,3366040
+NDIlib/__init__.py,sha256=CRdWVRodofOXHVxwah4bkRE-d3gxoUdBqWV_kZhjJ2s,181
+NDIlib/libndi.so,sha256=xhoD9DB8dLCVs0BuoOEqxscIM4iOg57c213BBS6Tzs4,3422704
+NDIlib/libndi.so.5,sha256=xhoD9DB8dLCVs0BuoOEqxscIM4iOg57c213BBS6Tzs4,3422704
+NDIlib/libndi.so.5.1.1,sha256=xhoD9DB8dLCVs0BuoOEqxscIM4iOg57c213BBS6Tzs4,3422704
+NDIlib/libndi_licenses.txt,sha256=YZnySQ_nDVcJRAXbLh_clg_-UtQIvjZg3B6ECRPKZ_o,10744
+ndi_python-5.1.1.4.dist-info/LICENSE,sha256=dvT00dhoQSNTs2iqysXildouPDjZgCx8-IQgN-ux8Vo,1073
+ndi_python-5.1.1.4.dist-info/METADATA,sha256=uUwSzhtoHi4qK0uniL7bblVM5PBnsGoojYLP8s0b-t8,3677
+ndi_python-5.1.1.4.dist-info/WHEEL,sha256=1ypQYb-9auMHmiP9NqtJYPz_DNOy0j89hM8mkywmSU8,113
+ndi_python-5.1.1.4.dist-info/top_level.txt,sha256=FMl4dvrqNd3R2GTYS3r9O-OGw0aCd44HxRUFcWzvym0,7
+ndi_python-5.1.1.4.dist-info/RECORD,,
