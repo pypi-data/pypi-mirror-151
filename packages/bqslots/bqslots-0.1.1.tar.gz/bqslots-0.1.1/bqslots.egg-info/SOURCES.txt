@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+bqslots/__init__.py
+bqslots/lock.py
+bqslots/slots_allocation.py
+bqslots.egg-info/PKG-INFO
+bqslots.egg-info/SOURCES.txt
+bqslots.egg-info/dependency_links.txt
+bqslots.egg-info/not-zip-safe
+bqslots.egg-info/requires.txt
+bqslots.egg-info/top_level.txt
