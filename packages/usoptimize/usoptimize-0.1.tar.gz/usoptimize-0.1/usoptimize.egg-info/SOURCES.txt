@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+usoptimize/__init__.py
+usoptimize/cli.py
+usoptimize/convert.py
+usoptimize.egg-info/PKG-INFO
+usoptimize.egg-info/SOURCES.txt
+usoptimize.egg-info/dependency_links.txt
+usoptimize.egg-info/entry_points.txt
+usoptimize.egg-info/requires.txt
+usoptimize.egg-info/top_level.txt
+usoptimize/qtfaststart2/__init__.py
+usoptimize/qtfaststart2/exceptions.py
+usoptimize/qtfaststart2/processor.py
