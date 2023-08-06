@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+complex_number/__init__.py
+complex_number/complex_number.py
+complex_number.egg-info/PKG-INFO
+complex_number.egg-info/SOURCES.txt
+complex_number.egg-info/dependency_links.txt
+complex_number.egg-info/top_level.txt
+tests/__init__.py
+tests/test_complex_number.py
