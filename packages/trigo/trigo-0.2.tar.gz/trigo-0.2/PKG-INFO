@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: trigo
+Version: 0.2
+Summary: Package to calculate trigonometric ratios
+Home-page: UNKNOWN
+Author: Sahil Rajwar
+Author-email: justsahilrajwar2004@gmail.com
+License: MIT
+Keywords: trigonometry,trigo,calculator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+License-File: License.txt
+
+This library is written in python and for educational purpose, to calculate the trigonometric functions, the parameter of each functions should be integer neither boolian nor strings values.
+
+All the parameter will be taken as radian not in degrees.
+
+Trigonometric Functions:
+sin
+cos
+tan
+cosec
+sec
+cot
+
+
+
+

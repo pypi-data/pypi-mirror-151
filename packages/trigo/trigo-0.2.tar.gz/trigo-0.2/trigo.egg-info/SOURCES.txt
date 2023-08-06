@@ -1,0 +1,10 @@
+License.txt
+MANIFEST.in
+README.txt
+setup.py
+trigo/__init__.py
+trigo.egg-info/PKG-INFO
+trigo.egg-info/SOURCES.txt
+trigo.egg-info/dependency_links.txt
+trigo.egg-info/requires.txt
+trigo.egg-info/top_level.txt
