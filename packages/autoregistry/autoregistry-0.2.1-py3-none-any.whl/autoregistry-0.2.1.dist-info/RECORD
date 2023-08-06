@@ -1,0 +1,7 @@
+autoregistry/__init__.py,sha256=8h1qT8mcBFMx1X5TV-gaRCqmNOuAgC0yUr2ZPQcH0fA,245
+autoregistry/config.py,sha256=ynan7yuTAnYu_33oE6Iem-ei7u27GVs74CR88-cg8SI,1919
+autoregistry/registry.py,sha256=1cWLY56SyUCzck4QIS6qvB07a0b9o7Xx_pzJj3dMblU,4171
+autoregistry-0.2.1.dist-info/LICENSE,sha256=8UsgBIwSOTy5kgBlxH-twDAhCw-cq5hJzgpooGPt7cU,11357
+autoregistry-0.2.1.dist-info/WHEEL,sha256=KXNDfOTTCr-VyxnCJDozfJ6nmi3hNN9RABDaCXBsNak,85
+autoregistry-0.2.1.dist-info/METADATA,sha256=xceHeDL0rbuzfLKCZ0a5j19-mJrQCrFwx-iK6XHxjWA,4016
+autoregistry-0.2.1.dist-info/RECORD,,
