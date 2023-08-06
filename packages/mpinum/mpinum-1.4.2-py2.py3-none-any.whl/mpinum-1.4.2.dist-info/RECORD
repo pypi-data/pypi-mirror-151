@@ -1,0 +1,14 @@
+mpinum/__init__.py,sha256=4l0nlwBmPyutI6bnzJ3oNx7JPfWwVvuDtfU-Jf-TDKg,731
+mpinum/pnCubeDecomp.py,sha256=UZiHcsx4O_INpIz_PSf9bZQxfbHtTYXHcKSwK6r3rIc,6909
+mpinum/pnDistArray.py,sha256=wKMGOgpURHuKuFDNDRhUfwpNEPyyG_5dghT5Uh04xzQ,10529
+mpinum/pnDomainPartitionIter.py,sha256=oPszBlmQWZMT8Q0dywk84xyTguABZJoF0Rupe8DgjUU,4702
+mpinum/pnGhostedDistArray.py,sha256=JeX-yQSI5aiH6q2GAuGFra0bnj0BsoQVICP8dW7fShc,7831
+mpinum/pnLaplacian.py,sha256=bODztu8ZVJy0m2ZPAwlz5IixEI195NzxBWw0ripoIMY,3904
+mpinum/pnMultiArrayIter.py,sha256=fWhuKw5mlVWD3WHPOp7f3GTYTJAwUWw0IJ-Dpapk2zM,4222
+mpinum/pnPartition.py,sha256=mNBAVQtpvbDTvzMYr1pK57vlEfKqkhUgOWZh_P0H7MA,2689
+mpinum/pnStencilOperator.py,sha256=ZTu1ajGHQgL1x-MIhEbsovckiHXRbL_HaD0tKNjxIyI,5651
+mpinum-1.4.2.dist-info/LICENSE,sha256=wYQbq16J7ZmSUIcBkfPstpToN_kukbNDsqH8wDmC4iM,1069
+mpinum-1.4.2.dist-info/METADATA,sha256=Vz1nqBZ3PYiNWMjqN12faKXLZe3DYkWF_kSOFQRkrpQ,4382
+mpinum-1.4.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+mpinum-1.4.2.dist-info/top_level.txt,sha256=cUM6giIG1kRE5sFUQTZshOxkdVPd6qc8Nmwc7YUEBbo,7
+mpinum-1.4.2.dist-info/RECORD,,
