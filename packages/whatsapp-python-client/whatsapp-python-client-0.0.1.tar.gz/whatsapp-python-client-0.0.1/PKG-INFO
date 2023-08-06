@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: whatsapp-python-client
+Version: 0.0.1
+Summary: Opensource python wrapper to WhatsApp Cloud API
+Home-page: https://github.com/open-code-ocean/whatsapp-python-client.git
+Author: Sagar Gajare
+Author-email: sggajare360@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: PyWhatsApp,WhatsApp API in Python Cilent,whatsbot,whatsbot-libary,WhatsApp Cloud API Wrapper,WhatsApp API in Python,WhatsApp API in Python Wrapper
+Platform: UNKNOWN
+Requires-Python: >=3.6

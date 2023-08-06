@@ -1,0 +1,8 @@
+README.md
+setup.py
+whatsapp_python_client.egg-info/PKG-INFO
+whatsapp_python_client.egg-info/SOURCES.txt
+whatsapp_python_client.egg-info/dependency_links.txt
+whatsapp_python_client.egg-info/requires.txt
+whatsapp_python_client.egg-info/top_level.txt
+whatsbot/__init__.py
