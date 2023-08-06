@@ -1,0 +1,14 @@
+vids_db_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vids_db_server/app.py,sha256=M-kg5pRnOhrK14prZ4ojQ0YIIuwzDqzMpOrjlNacsa0,7710
+vids_db_server/cmd.py,sha256=RNJCjJZbd5a4UoLcT-HPC56hh9WQBOxRqSWzeIYz3z8,367
+vids_db_server/date.py,sha256=K6kGPMKXaYitIvzTGaJ2KPTf3BeuGa3N6hxjwHB1Cm0,1123
+vids_db_server/rss.py,sha256=OH_R2F-0GqQaw7epKGs3cnLrUcfJ5kpOOdMCW_Vx1Uk,2364
+vids_db_server/version.py,sha256=LLFrcf2GVpCKubRGipq1aE80QuMlTsod9L-C-dCyEUA,66
+vids_db_server/www/index.html,sha256=EjtoXuDAcoFMmFnwTq_Ec7CTW_kXj0KjjCLeo8Mda90,2521
+vids_db_server/www/preview.jpg,sha256=Zakq50yKlm3oVKEPnNhA4GbAm7CjO9WgK7LP7P8_ZDk,34403
+vids_db_server-1.0.0.dist-info/LICENSE,sha256=a2JyND2dMx1tjqmGCht1NHM0ZkeSmupqoPhBvj4Xdso,1085
+vids_db_server-1.0.0.dist-info/METADATA,sha256=uh-bNghl8dwzZXQVDUkiCvtRWl0X0kicMu_2ua-n-3w,2031
+vids_db_server-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vids_db_server-1.0.0.dist-info/entry_points.txt,sha256=QJXSE9sOaJmrmn0mz_20zOeY1JPcGLfYD_Std80u5LI,59
+vids_db_server-1.0.0.dist-info/top_level.txt,sha256=dV7xl8061WdOYa3BnaJ0alsFzpRrBHEklItP6KchImI,15
+vids_db_server-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+vids_db_server = vids_db_server.cmd:main

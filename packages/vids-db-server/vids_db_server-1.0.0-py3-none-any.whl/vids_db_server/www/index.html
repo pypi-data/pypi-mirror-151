@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Video Clipper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site_name" content="Video DB">
+    <meta property="twitter:site" content="@perpetualmaniac">
+    <meta property="twitter:creator" content="@perpetualmaniac">
+    <meta property="twitter:url" content="https://github.com/zackees/vids_db_server">
+    <meta property="twitter:title" content="Online DB of videoss">
+    <meta property="twitter:description" content="Online DB of videos">
+    <meta property="twitter:image" content="/preview.jpg">
+
+
+    <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "NewsArticle",
+                "headline": "VideoClipper clip online videos and save them.",
+                "name": "VideoClipper",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "/preview.jpg"
+                },
+                "datePublished": "2022-04-5T13:35:00-0500",
+            }
+        ]
+    }
+    </script>
+
+
+</head>
+
+<style>
+    @keyframes spinner {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    body {
+        background: url("preview.jpg");
+        background-size: contain;
+        background-position: 0% 50%;
+        background-color: gray;
+        background-blend-mode: screen;
+    }
+</style>
+
+<body>
+    <div style="margin: 5%;">
+        <H1>Video DB</H1>
+        Try out the <a href="/docs">api</a>.
+        <p>This is a demo front end for the Video DB system <a
+                href="https://github.com/zackees/vids_db_server">vids_db</a> as the
+            backend.
+        </p>
+        <div style="margin-bottom: 20px;"></div>
+
+
+        <h3>Add Video Json:</h3>
+        <textarea name="json_data" id="json_data" placeholder="Enter Json Text"
+            style="width:100%; height:100px"></textarea><br>
+        <input type="text" value="" placeholder="API_KEY"></input>
+        <input type="button" value="Submit" id="submit">
+
+        <div id=" spinner">
+        </div>
+        <div id="main_content"></div>
+    </div>
+
+
+</body>
+
+
+<!-- import jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    // const button = document.firstElementById("submit");
+</script>
+
+</html>
