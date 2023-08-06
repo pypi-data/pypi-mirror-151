@@ -1,0 +1,16 @@
+tblite-0.2.1.dist-info/RECORD,,
+tblite-0.2.1.dist-info/METADATA,sha256=hWKxbipWUo7eoz9zQBsRK2PiSTIVnxNgO0uenK-8p5s,5652
+tblite-0.2.1.dist-info/WHEEL,sha256=eJRy5EO7j7AS6siNg2_4WrepWaqYAqEDmOFWle03zHo,137
+tblite-0.2.1.data/data/share/licenses/mctc-lib/jsonfortran/LICENSE,sha256=k-pNn2bPf0WYKSqPTj-Xl_EEZb03_E1J0HxsA8L2PYg,2849
+tblite-0.2.1.data/purelib/tblite/test_library.py,sha256=BLef6Ah1cRl2btBxxjUmtxAvGe82C9PFeGjEzLqG_fM,937
+tblite-0.2.1.data/purelib/tblite/test_interface.py,sha256=Fo4O2LekHbQ_xw57CbdEx52lzBk9ugQAIfjJF0VTPrM,16880
+tblite-0.2.1.data/purelib/tblite/ase.py,sha256=pc6FP6GRkLJxGka0WSXgisoMm5hMGSjPAiyUbZ01HI4,10735
+tblite-0.2.1.data/purelib/tblite/library.py,sha256=ikiXfzdJIT3hBA7JBcZplcszzwWSTwp9OYcirKQvKuI,11774
+tblite-0.2.1.data/purelib/tblite/__init__.py,sha256=g-049UosjoiiYZQbPerTUf6X18mAC0IW082O-PGTyQA,797
+tblite-0.2.1.data/purelib/tblite/interface.py,sha256=4MFQlN0_lKZvkJka2cYymlc86H3HY38HDiVjubVAe6w,19238
+tblite-0.2.1.data/purelib/tblite/test_ase.py,sha256=lSHCrO35bogHGP1_qFQmAC5q2XOlTEBFv2kJZDsW2l0,7760
+tblite/_libtblite.cpython-310-x86_64-linux-gnu.so,sha256=7mTx5M8v_7svq5CfN0hypfSt1iZL13nFhHrosY_hJao,3076528
+tblite.libs/libopenblasp-r0-0dd85158.3.20.so,sha256=176-fnw6cV0AV-6srQQcGnxmbnio6-A6D3peVHQ52Pc,37990672
+tblite.libs/libgomp-ab04e1bc.so.1.0.0,sha256=v50gIN7yWJn_KelSwX5Z1_z23J4X7O9A-oke7LIrGLo,1040376
+tblite.libs/libgfortran-33c2541c.so.5.0.0,sha256=e_5OfNJwVrx-eI6wyocexfo6ekZ_qOITWMcWiSkGEEQ,7035552
+tblite.libs/libquadmath-9894622a.so.0.0.0,sha256=2kwuw5yw2TVZivvsB_wZiSnu5x5l5MI-roeqdFmXkds,800648
