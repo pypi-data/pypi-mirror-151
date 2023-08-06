@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: neuralwatermark
+Version: 0.1.0
+Summary: 
+Author: Doodle
+Author-email: saurabh.pandey.2171993@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: torch (>=1.11.0,<2.0.0)
