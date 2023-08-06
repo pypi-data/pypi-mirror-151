@@ -1,0 +1,2 @@
+[console_scripts]
+webeye = webeye.__main__:main
