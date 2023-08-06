@@ -1,0 +1,7 @@
+openpyxl
+pandas
+pytest
+requests
+rispy
+stqdm
+tqdm
