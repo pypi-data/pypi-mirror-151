@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: biosemi-realtime
+Version: 1.0.5
+Summary: This python package allows real-time averaging in the time- and frequency-domain with SNR estimations.
+Home-page: https://gitlab.com/jundurraga/biosemi_real_time
+Author: Jaime A. Undurraga
+Author-email: jaime.undurraga@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+License-File: LICENSE.txt
+
+
+          This package provides a real-time averager which allows time- and frequency-domain averages. Data are averaged
+          via bayesian weighted average and SNR in the time and frequency domain are provided.  
+          
