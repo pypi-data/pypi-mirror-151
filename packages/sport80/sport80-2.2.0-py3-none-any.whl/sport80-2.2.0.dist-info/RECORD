@@ -1,0 +1,11 @@
+sport80/__init__.py,sha256=7faiTOrX939O9EN7iEQy1oeTP9yDWbBszBBtL85AyrA,284
+sport80/helpers.py,sha256=LnZyTNjbiNDnR1IxD4lrvSCRvozz22BG_hlb4thPe40,6149
+sport80/pages_enum.py,sha256=Li1GQuvW3W6C4foq-H_7QpHqCtuVYOEEyhhXLpl4RVQ,1363
+sport80/request_dataclasses.py,sha256=FBUjkzQBy_MpHwf9Sqpu2eTqQ08CuaH-ebQKAcj-9LI,1377
+sport80/sport80.py,sha256=KZd_9rDtNtsonxCJqhAYj2YCsOC5M78cPyfyu0f57pM,1135
+sport80/sport80_http_client.py,sha256=1MCl0-AWE019hC0az9p3UriqN7EqxBUXQevDFq7LLEw,7845
+sport80-2.2.0.dist-info/LICENSE,sha256=qQZ-IRm1_YrxsBNShpdBfyw8Gd41cuwpGYH7WTRCZTY,1519
+sport80-2.2.0.dist-info/METADATA,sha256=xQQs0tZkXCSHySly1angNnuBS0m1SAMQ_kSgcQ7O7kw,461
+sport80-2.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sport80-2.2.0.dist-info/top_level.txt,sha256=G_VsAqhnCLEeFzxvoUvJWZOaM3FKkMRJRlzN2wT-VBs,8
+sport80-2.2.0.dist-info/RECORD,,
