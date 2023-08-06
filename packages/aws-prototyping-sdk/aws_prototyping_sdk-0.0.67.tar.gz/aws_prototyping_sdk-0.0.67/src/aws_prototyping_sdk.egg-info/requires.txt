@@ -1,0 +1,5 @@
+aws-cdk-lib<3.0.0,>=2.24.1
+constructs<11.0.0,>=10.1.9
+jsii<2.0.0,>=1.59.0
+projen<0.57.0,>=0.56.15
+publication>=0.0.3
