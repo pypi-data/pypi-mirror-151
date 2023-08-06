@@ -1,0 +1,3 @@
+[console_scripts]
+nwalign3 = nwalign3:main
+
