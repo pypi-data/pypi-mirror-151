@@ -1,0 +1,86 @@
+change log
+==========
+
+0.2.5 (2022-04-18)
+==================
+- Making new post request method for new endpoints
+- Added endpoints for SWAP Market
+- Added endpoints for FIP 
+- Added partner APIs
+- Added payment gateway API
+- Code refactored and documentation errors fixed
+- Updated documentation for all endpoints
+- Updated socket endpoint - Live executed orders endpoint not available 
+- Fixed minor bugs
+- Porting new V1 endpoints for stop & bracket order status
+
+0.2.4 (2021-10-25)
+==================
+- Minor spell check
+- Added market order for cost and quantity
+- Updated market order
+- Updated documentation
+- Updated setup
+- Added market orders
+
+0.2.3 (2021-09-14)
+==================
+- Merge branch 'master' of https://github.com/bitbns-official/bitbnspy
+- updating readme
+- updated documentation
+- Merge pull request #68 from its-mohnish/master
+- updated
+- Updated readme.md
+- Updated bitbns to include public endpoints
+- Merge pull request #67 from sanket-buyhatke/public-endpoints
+- adding public endpoint - fetchOHLCV
+- addin public endpoints - fetchTrades
+- adding public endpoints - fetchOrderBook
+- adding public endpoints - fetchTickers
+- Merge pull request #65 from its-mohnish/master
+- Merge branch 'bitbns-official:master' into master
+- Adding github headers - final
+- Adding github headers for direct links
+- Merge pull request #64 from its-mohnish/master
+- Update README.md
+- Update README.md
+- Update README.md
+- updating version to 0.2.2
+- Updating changelog for version 0.2.2
+- Updating github repo
+
+0.2.2 (2021-08-18)
+==================
+
+- Merge branch 'master' of https://github.com/bitbns-official/bitbnspy
+- 'Updated setup and bitbnspy'
+- Merge pull request #63 from its-mohnish/master
+- Removed package_dir
+- Added Retries
+- Merge pull request #61 from sanket-buyhatke/master
+- updated docs websockets to support ticker data
+- updated websockets to support stream ticker data
+- Merge pull request #55 from sanket-buyhatke/master
+- minor changes in documentation - Added socket documentation
+- Merge pull request #53 from its-mohnish/patch-6
+
+0.2.1 (2021-06-21)
+==================
+
+- updating additional package
+- Merge pull request #47 from its-mohnish/master
+- Delete python-package.yml
+- Delete sample_test.py
+- Adding python-package.yml
+- sample python testing
+- Merge branch 'master' into master
+- Merge pull request #36 from its-mohnish/patch-5
+- Merge pull request #35 from its-mohnish/patch-4
+- Merge pull request #34 from its-mohnish/patch-3
+- Merge pull request #33 from its-mohnish/patch-2
+- Removed unnecessary files, fixed python installation issue
+- Merge pull request #31 from its-mohnish/patch-1
+- Merge pull request #37 from sanket-buyhatke/master
+- adding bug report template for issues
+
+===================
