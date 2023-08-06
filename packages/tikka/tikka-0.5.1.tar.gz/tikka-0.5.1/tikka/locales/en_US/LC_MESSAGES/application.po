@@ -1,0 +1,555 @@
+# Tikka translation file
+# Copyright (C) 2020 Duniter project
+# Vincent Texier <vit@free.fr>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 17:40+0200\n"
+"PO-Revision-Date: 2020-12-16 14:59+CET\n"
+"Last-Translator: Vincent Texier <vit@free.fr>\n"
+"Language-Team: fr_FR <vit@li.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: UTF-8\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: tikka/domains/entities/amounts.py:61
+msgid "Units"
+msgstr ""
+
+#: tikka/domains/entities/amounts.py:94
+#, python-brace-format
+msgid "UD {symbol}"
+msgstr ""
+
+#: tikka/domains/entities/amounts.py:100
+#: tikka/slots/pyqt/resources/gui/widgets/currency_rc.py:103
+msgid "Universal Dividend"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_account_add_rc.py:162
+msgid "Add account"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_account_add_rc.py:163
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:127
+msgid "V1 address"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_account_add_rc.py:164
+msgid "Secret ID"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_account_add_rc.py:165
+#: tikka/slots/pyqt/resources/gui/windows/wallet_save_rc.py:85
+#: tikka/slots/pyqt/resources/gui/windows/account_import_rc.py:142
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:125
+#: tikka/slots/pyqt/resources/gui/windows/account_create_rc.py:145
+#: tikka/slots/pyqt/resources/gui/windows/account_unlock_rc.py:103
+#: tikka/slots/pyqt/resources/gui/windows/wallet_password_change_rc.py:126
+#: tikka/slots/pyqt/resources/gui/windows/address_add_rc.py:60
+#: tikka/slots/pyqt/resources/gui/widgets/account_list_rc.py:60
+msgid "Address"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_account_add_rc.py:166
+#: tikka/slots/pyqt/resources/gui/windows/v1_account_add_rc.py:167
+#: tikka/slots/pyqt/resources/gui/windows/wallet_save_rc.py:87
+#: tikka/slots/pyqt/resources/gui/windows/account_import_rc.py:143
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:128
+#: tikka/slots/pyqt/resources/gui/windows/account_create_rc.py:147
+#: tikka/slots/pyqt/resources/gui/windows/account_unlock_rc.py:104
+#: tikka/slots/pyqt/resources/gui/windows/wallet_password_change_rc.py:125
+msgid "Password"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_account_add_rc.py:168
+#: tikka/slots/pyqt/resources/gui/windows/wallet_save_rc.py:89
+#: tikka/slots/pyqt/resources/gui/windows/account_import_rc.py:144
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:129
+#: tikka/slots/pyqt/resources/gui/windows/account_create_rc.py:146
+#: tikka/slots/pyqt/resources/gui/windows/account_create_rc.py:148
+#: tikka/slots/pyqt/resources/gui/windows/wallet_password_change_rc.py:128
+msgid "Change"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/wallet_save_rc.py:84
+msgid "Save wallet"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/wallet_save_rc.py:86
+msgid "File format"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/wallet_save_rc.py:88
+msgid "EWIF"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/wallet_save_rc.py:90
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:122
+msgid "Browse files..."
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/account_import_rc.py:139
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:125
+msgid "Import account"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/account_import_rc.py:140
+#: tikka/slots/pyqt/resources/gui/windows/account_create_rc.py:143
+msgid "Mnemonic"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/account_import_rc.py:141
+#: tikka/slots/pyqt/resources/gui/windows/account_create_rc.py:144
+msgid "Mnemonic language"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/configuration_rc.py:90
+msgid "Configuration"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/configuration_rc.py:91
+msgid "Language"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/configuration_rc.py:92
+msgid "Restart application to apply language change"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/configuration_rc.py:93
+#: tikka/slots/pyqt/windows/main.py:301
+msgid "Currency"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:121
+msgid "Import a V1 wallet"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:123
+msgid "File Password"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:124
+#: tikka/slots/pyqt/resources/gui/windows/account_unlock_rc.py:105
+#: tikka/slots/pyqt/resources/gui/windows/wallet_password_change_rc.py:124
+#: tikka/slots/pyqt/windows/v1_wallet_import.py:94
+#: tikka/slots/pyqt/windows/wallet_password_change.py:103
+#: tikka/slots/pyqt/windows/account_unlock.py:89
+msgid "Show"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/v1_wallet_import_rc.py:126
+msgid "Path"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/transfer_rc.py:121
+msgid "Transfer"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/transfer_rc.py:122
+msgid "Send"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/transfer_rc.py:123
+#: tikka/slots/pyqt/resources/gui/windows/transfer_rc.py:124
+msgid "Fees"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/transfer_rc.py:125
+msgid "Amount"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/transfer_rc.py:126
+msgid "Recipient"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/transfer_rc.py:127
+msgid "Sender"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/account_create_rc.py:142
+msgid "Create account"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:108
+msgid "MainWindow"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:109
+msgid "Acco&unts"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:110
+msgid "&Help"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:111
+msgid "Net&work"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:112
+msgid "&V1 accounts"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:113
+msgid "&Account list"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:114
+msgid "A&dd an address"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:115
+#: tikka/slots/pyqt/resources/gui/windows/address_add_rc.py:59
+msgid "Add an address"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:116
+msgid "&Create an account"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:117
+msgid "&Import a wallet"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:118
+msgid "Import a wallet"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:119
+msgid "&Quit"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:120
+msgid "Ğ1 &licence"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:121
+msgid "&Configuration"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:122
+msgid "&About"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:123
+msgid "&Nodes"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:124
+msgid "Import acc&ount"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:126
+msgid "&Add account"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/main_window_rc.py:127
+msgid "C&urrency"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/account_unlock_rc.py:102
+msgid "Unlock account"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/about_rc.py:60
+msgid "About"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/about_rc.py:61
+msgid ""
+"A free software desktop client for Duniter. \n"
+"Manage your Ğ1 accounts securely and easily!"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/about_rc.py:63
+msgid "Version x.y.z"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/about_rc.py:64
+msgid "Author"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/about_rc.py:65
+msgid "Author list"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/wallet_password_change_rc.py:123
+#: tikka/slots/pyqt/widgets/account_menu.py:75
+msgid "Change wallet password"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/windows/wallet_password_change_rc.py:127
+msgid "New password"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/nodes_rc.py:67
+#: tikka/slots/pyqt/windows/main.py:325
+msgid "Network nodes"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/nodes_rc.py:68
+msgid "Entry point"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/nodes_rc.py:69
+msgid "Connection to entry point"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/nodes_rc.py:70
+#: tikka/slots/pyqt/widgets/nodes.py:65
+msgid "Connect"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/nodes_rc.py:71
+msgid "Refresh nodes from network"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/nodes_rc.py:72
+#: tikka/slots/pyqt/resources/gui/widgets/currency_rc.py:106
+#: tikka/slots/pyqt/resources/gui/widgets/account_rc.py:74
+msgid "Refresh"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/currency_rc.py:101
+msgid "Currency parameters"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/currency_rc.py:102
+msgid "Monetary Mass"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/currency_rc.py:104
+msgid "Members"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/currency_rc.py:105
+msgid "Name"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/currency_rc.py:107
+msgid "Symbol"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/account_rc.py:72
+msgid "Account"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/account_rc.py:73
+msgid "0"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/account_list_rc.py:57
+#: tikka/slots/pyqt/resources/gui/widgets/account_list_rc.py:58
+#: tikka/slots/pyqt/windows/main.py:255
+msgid "Account list"
+msgstr ""
+
+#: tikka/slots/pyqt/resources/gui/widgets/licence_rc.py:29
+#: tikka/slots/pyqt/windows/main.py:313
+msgid "Ğ1 licence"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:51
+#: tikka/slots/pyqt/windows/account_create.py:57
+msgid "English"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:52
+#: tikka/slots/pyqt/windows/account_create.py:58
+msgid "French"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:53
+#: tikka/slots/pyqt/windows/account_create.py:59
+msgid "Chinese simplified"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:54
+#: tikka/slots/pyqt/windows/account_create.py:60
+msgid "Chinese traditional"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:55
+#: tikka/slots/pyqt/windows/account_create.py:61
+msgid "Italian"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:56
+#: tikka/slots/pyqt/windows/account_create.py:62
+msgid "Japanese"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:57
+#: tikka/slots/pyqt/windows/account_create.py:63
+msgid "Korean"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:58
+#: tikka/slots/pyqt/windows/account_create.py:64
+msgid "Spanish"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:110
+msgid "Mnemonic or language not valid!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:169
+#: tikka/slots/pyqt/windows/v1_account_add.py:167
+msgid "Change wallet password?"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_import.py:171
+#: tikka/slots/pyqt/windows/v1_account_add.py:169
+#, python-brace-format
+msgid ""
+"A wallet already exists for this account. Change password for {address} "
+"wallet?"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/address_add.py:72
+msgid "Account address is not valid!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/address_add.py:79
+#: tikka/slots/pyqt/windows/v1_wallet_import.py:146
+msgid "Account already exists!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/transfer.py:63
+msgid "Transfer/payment would kill account"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/transfer.py:64
+msgid "Balance too low to send value"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/transfer.py:193
+msgid "Invalid!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/transfer.py:195
+msgid "Invalid address! Please check it again."
+msgstr ""
+
+#: tikka/slots/pyqt/windows/transfer.py:234
+msgid "Unknown!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/transfer.py:237
+msgid ""
+"Account balance unknown! Send only one unit and make sure the owner can get "
+"it"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/transfer.py:323
+msgid "Transfer failed. Please check logs to understand why"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/transfer.py:334
+msgid "Transfer done"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/v1_wallet_import.py:91
+#: tikka/slots/pyqt/windows/wallet_password_change.py:100
+#: tikka/slots/pyqt/windows/account_unlock.py:86
+msgid "Hide"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/v1_wallet_import.py:128
+msgid "Unable to decrypt file!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/v1_wallet_import.py:133
+msgid "File password is not valid!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/v1_wallet_import.py:167
+msgid "Choose wallet file"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/wallet_password_change.py:129
+#: tikka/slots/pyqt/windows/wallet_password_change.py:134
+#: tikka/slots/pyqt/windows/account_unlock.py:103
+#: tikka/slots/pyqt/windows/account_unlock.py:109
+msgid "Password is not valid!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/v1_account_add.py:118
+msgid "Error generating account wallet!"
+msgstr ""
+
+#: tikka/slots/pyqt/windows/account_unlock.py:114
+msgid "Account is unlocked"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/nodes.py:64
+msgid "Reconnect"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/node_menu.py:57
+msgid "Copy peer ID to clipboard"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/node_menu.py:63
+#: tikka/slots/pyqt/widgets/node_menu.py:107
+msgid "Delete entry point"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/node_menu.py:104
+msgid "Delete entry point {}?"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/account_menu.py:58
+msgid "Copy address to clipboard"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/account_menu.py:65
+msgid "Unlock account access"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/account_menu.py:68
+msgid "Make a transfer"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/account_menu.py:71
+msgid "Lock account access"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/account_menu.py:79
+msgid "Wallet password forgotten"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/account_menu.py:85
+#: tikka/slots/pyqt/widgets/account_menu.py:151
+msgid "Withdraw account"
+msgstr ""
+
+#: tikka/slots/pyqt/widgets/account_menu.py:152
+#, python-brace-format
+msgid "Withdraw account {address}?"
+msgstr ""
+
+#: tikka/slots/pyqt/models/nodes.py:39
+msgid "Block"
+msgstr ""
+
+#: tikka/slots/pyqt/models/nodes.py:40
+msgid "Entry points"
+msgstr ""
+
+#: tikka/slots/pyqt/models/nodes.py:41
+msgid "Software"
+msgstr ""
+
+#: tikka/slots/pyqt/models/nodes.py:42
+msgid "Version"
+msgstr ""
+
+#: tikka/slots/pyqt/models/nodes.py:43
+msgid "Peer ID"
+msgstr ""
