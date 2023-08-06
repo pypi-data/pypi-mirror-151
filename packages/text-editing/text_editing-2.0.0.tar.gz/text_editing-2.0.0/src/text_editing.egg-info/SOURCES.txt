@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/character_attributes/__init__.py
+src/color/__init__.py
+src/font/__init__.py
+src/highlight/__init__.py
+src/text_editing.egg-info/PKG-INFO
+src/text_editing.egg-info/SOURCES.txt
+src/text_editing.egg-info/dependency_links.txt
+src/text_editing.egg-info/top_level.txt
