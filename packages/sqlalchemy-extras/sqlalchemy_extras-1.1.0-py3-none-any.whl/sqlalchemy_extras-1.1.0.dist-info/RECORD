@@ -1,0 +1,6 @@
+sqlalchemy_extras/__init__.py,sha256=yEuwTOOrIuMW2bt6pMu-7sZmLEXK_IOXa9fLeXCvRrU,120
+sqlalchemy_extras/models.py,sha256=jwInZOnIf_bmzsxni3jlKyC1z_LfIFdZsxJCtPJke1Y,3803
+sqlalchemy_extras/utils.py,sha256=f4LJLzpMLRQtX3n_BJhVLQvLBh9eLkbOfkxqxvzWvP4,1858
+sqlalchemy_extras-1.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+sqlalchemy_extras-1.1.0.dist-info/METADATA,sha256=d8GDSjRdwqLLJ1GPJ8aSClAL3kclW2H1xaey32vsPwc,496
+sqlalchemy_extras-1.1.0.dist-info/RECORD,,
