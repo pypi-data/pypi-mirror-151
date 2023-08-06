@@ -1,0 +1,11 @@
+async_solipsism/__init__.py,sha256=aJzxTpzLgNh3z5D7q-4HF48Mk6rb4QY-0jhrU7iJAuA,846
+async_solipsism/clock.py,sha256=2tXGOFieMiENmcZ6gOldypAiv7ZKn7mq-SOysojRJzg,1466
+async_solipsism/exceptions.py,sha256=gNVPia6Y2MPdJE4BaJWWalrZE8k5ZkzmDsOBKvdCdhk,1006
+async_solipsism/loop.py,sha256=t875dhYnNyQ-vqtUOMvYPsoJal4abq-xLPPLpr2g3cc,8160
+async_solipsism/selector.py,sha256=3PYJVGsLNDMHOlEFPOSo1nfAiBNQw3PU-9ow_-gKfxY,2385
+async_solipsism/socket.py,sha256=VqthnFFvkQwNcOYC529YUA0keN9zV0hpOmscKWUTtn4,7537
+async_solipsism-0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+async_solipsism-0.5.dist-info/METADATA,sha256=aq6xHltB-cFmEg1ApQV66lMMCgze9cmF34s057AsFC0,7339
+async_solipsism-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+async_solipsism-0.5.dist-info/top_level.txt,sha256=uriotaefQLxhdSwDaPJsIMmhYuhu_gpGcddCKj3UKn8,16
+async_solipsism-0.5.dist-info/RECORD,,
