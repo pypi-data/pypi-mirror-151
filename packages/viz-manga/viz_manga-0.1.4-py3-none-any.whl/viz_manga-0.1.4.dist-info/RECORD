@@ -1,0 +1,9 @@
+viz_manga/__init__.py,sha256=S41bj-oOKnj1QkAVOG713Lvqnq9gRlDGyXJGovFEBoU,105
+viz_manga/cli.py,sha256=U0qvNbws6bKmGHR9utJxS4HAJ6AUriaKbxAmYvcX8V4,3849
+viz_manga/manga_details.py,sha256=4vzUfGOlOy8RV4eQyt2WHDeRwJAv2f-PMFXrtBGoKfw,2523
+viz_manga/manga_fetch.py,sha256=3o3fl_-jJywH8QahvPEHQIbbhgpgcOV3YdhGlRtCUJQ,4855
+viz_manga-0.1.4.dist-info/entry_points.txt,sha256=lOHEgBp2Bc9WvXoNAM18ZdTbvZI5OjnsZGwtrFCRT8o,52
+viz_manga-0.1.4.dist-info/LICENSE,sha256=Fd_gDyoluqLfK2U__rxycOKBs07dfUd96_qQqNgrm7M,1069
+viz_manga-0.1.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+viz_manga-0.1.4.dist-info/METADATA,sha256=aYFBVhOcLFUUD5i1Rc_-GimAOskmu98Pg3mhijCdE_A,5823
+viz_manga-0.1.4.dist-info/RECORD,,
