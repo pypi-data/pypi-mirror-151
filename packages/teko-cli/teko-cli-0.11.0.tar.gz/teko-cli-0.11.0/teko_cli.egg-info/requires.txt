@@ -1,0 +1,9 @@
+requests
+jinja2
+tabulate
+typer
+colorama
+dataclasses-json
+ruamel.yaml
+python-dotenv
+bs4
