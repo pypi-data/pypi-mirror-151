@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/fernet/__init__.py
+src/fernet_cli.egg-info/PKG-INFO
+src/fernet_cli.egg-info/SOURCES.txt
+src/fernet_cli.egg-info/dependency_links.txt
+src/fernet_cli.egg-info/entry_points.txt
+src/fernet_cli.egg-info/top_level.txt
