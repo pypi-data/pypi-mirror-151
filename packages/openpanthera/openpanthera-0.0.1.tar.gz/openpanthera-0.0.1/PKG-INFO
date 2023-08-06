@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: openpanthera
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/Soldy/openPanthera
+Author: Soldy
+License: UNKNOWN
+Description: # openPanthera
+        
+        ## Install
+        
+        ```
+        pip3 install openPanthera
+        
+        ```
+        
+        
+        ## Usage
+        
+        ```
+        python3 menu.py
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Provides-Extra: dev
