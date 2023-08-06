@@ -1,0 +1,13 @@
+PyOpenSSL==22.0.0
+appdirs==1.4.4
+httpq==1.1.1
+toolbox==1.8.1
+
+[dev]
+pytest
+pytest-cov
+coveralls
+sphinx
+sphinx-copybutton
+sphinx-autobuild
+furo
