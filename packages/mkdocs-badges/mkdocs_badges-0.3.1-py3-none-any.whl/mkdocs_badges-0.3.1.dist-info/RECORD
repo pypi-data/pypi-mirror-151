@@ -1,0 +1,16 @@
+mkdocs_badges/__init__.py,sha256=pMhFqDtzLNeKd2f-zq71wQK-epGXVrlI4QzfC0cF3Kg,426
+mkdocs_badges/badge_handler.py,sha256=b2LJGolWjYcrzr-g6DlcJsIq0iqVNoIkOJKk7JfgoAg,3419
+mkdocs_badges/badge_html.py,sha256=Nc3Re7_zLDg_qNlcDhKsNAA8x8PRJnO9z1yIdHw_Xpk,2213
+mkdocs_badges/install_badge.py,sha256=JrqAn2dtheWO6MDUM42cZwmqGE_P3xPFynxB9_j7F1w,1810
+mkdocs_badges/parser.py,sha256=QwC-Co0mgne6rUMqo0XrFte_lwA0JTEDkw2me8RPPrk,9805
+mkdocs_badges/plugin.py,sha256=QN5BBrGaVUXfo4uZuO5urwW-kxg3YyXbrP9fUX8IYt0,3296
+mkdocs_badges/assets/__init__.py,sha256=4GYjEEpHeQhvnTijs10jzmr0T0DsrTEwUwjEBZB2NVE,1071
+mkdocs_badges/assets/badge.css,sha256=2clcCa4r5Cokv4Qc_2aJ7fY-PK6CcV8lFuffwfngRc8,1156
+mkdocs_badges/assets/badge.js,sha256=MCOTB_2KPaEeSlk6n8iiu6tAVvLhXnlCjeLuCJ0wi2Q,2942
+mkdocs_badges/assets/install_badge_data.json,sha256=qM4Nrylnp5uDmSAhlCQL99xHY58SdlUow-c17FmxtvU,1341
+mkdocs_badges-0.3.1.dist-info/LICENSE,sha256=bbSVKh1ngBh7-Mh_Xfk69Flx_5Q9JnvsQArHe_AXhok,1063
+mkdocs_badges-0.3.1.dist-info/METADATA,sha256=gonI4j72ruapZfdF3JNLQJmMMJB_UAozx3ZMDpvFJh4,2080
+mkdocs_badges-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mkdocs_badges-0.3.1.dist-info/entry_points.txt,sha256=j1aKq5IgDjr6PiUXbFbsYQfivIrflZpraZP4s6ekw2Y,53
+mkdocs_badges-0.3.1.dist-info/top_level.txt,sha256=GL3yDsTms5S8QDUiKyUTD6ctPBK0uL07kU_vb7nyf_E,14
+mkdocs_badges-0.3.1.dist-info/RECORD,,
