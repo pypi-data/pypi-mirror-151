@@ -1,0 +1,11 @@
+docutils < 0.18
+sphinxcontrib-issuetracker
+tqdm
+requests
+pytest
+pytest-cov
+pytest-recording
+codecov
+vcrpy
+PyYAML
+simplejson
