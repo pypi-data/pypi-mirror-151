@@ -1,0 +1,12 @@
+creversi/GGF.py,sha256=Upa-ijjAOzOBecFrvldNqo1jw1mv4wkgdvKppv3evzY,1028
+creversi/__init__.py,sha256=8wTgchG2_oeqpH2NDKB7QryTI5Nswy0boJzDOFcCcNE,25
+creversi/creversi.cp310-win_amd64.pyd,sha256=KV8TpPT_ODESm93Xb12hxjnpHEFix8Wg9PVMIaASUbM,189440
+creversi/gym_reversi/__init__.py,sha256=nAwOKlT3-w8ANV2iN0ULSuzCN--FVscKe2Vb5zcVLbQ,137
+creversi/gym_reversi/envs/__init__.py,sha256=54zoLqUtYCyH0gSB4b8VCd_-yqK6hoYvyde6KRSCKHo,131
+creversi/gym_reversi/envs/reversi_env.cp310-win_amd64.pyd,sha256=JsdCwlqlUGIP92OUq5goMM4Ktj5G7OGmEtTqKFRwVk0,52224
+creversi/gym_reversi/envs/reversi_vec_env.cp310-win_amd64.pyd,sha256=5Stm40rRJ234P9yHRmSYe7o7FDyKQ5Bamv_-lys0eYc,50176
+creversi-0.0.1.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+creversi-0.0.1.dist-info/METADATA,sha256=jJ-nNJ2XkPrebvUrEwEP6-1CzI8e49W34hoM1w--tzQ,155
+creversi-0.0.1.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+creversi-0.0.1.dist-info/top_level.txt,sha256=H6yOul77diCpekEMX_LRGSdO36mx0QrI3p9WcsJUhkM,9
+creversi-0.0.1.dist-info/RECORD,,
