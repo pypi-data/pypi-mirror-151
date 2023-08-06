@@ -1,0 +1,2 @@
+[console_scripts]
+google-calendar-to-sqlite = google_calendar_to_sqlite.cli:cli

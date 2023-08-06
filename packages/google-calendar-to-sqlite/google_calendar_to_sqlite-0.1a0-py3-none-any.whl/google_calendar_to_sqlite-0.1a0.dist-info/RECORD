@@ -1,0 +1,9 @@
+google_calendar_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+google_calendar_to_sqlite/cli.py,sha256=Ml6VEN73l_IF8QvsGfjq9vVAqnYNCLjGxsQSnz2aUiM,7488
+google_calendar_to_sqlite/utils.py,sha256=ANzPKZsiG28pKaVSxAAaDhjThK27dQ0jwLvfH8sIJkM,4372
+google_calendar_to_sqlite-0.1a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+google_calendar_to_sqlite-0.1a0.dist-info/METADATA,sha256=qjMUHReqSnDoF6sY46a9yjjBZqrIUtMY1R8X0bbNfyE,8060
+google_calendar_to_sqlite-0.1a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+google_calendar_to_sqlite-0.1a0.dist-info/entry_points.txt,sha256=ZZRfGCUrNOX0sDHaVbGouyKBSHL2iqRLhG5fRUGqel8,80
+google_calendar_to_sqlite-0.1a0.dist-info/top_level.txt,sha256=deFn3ujdFEerq1Qu9Ubwifo4mt8vpGeCSqs3Y4keEMw,26
+google_calendar_to_sqlite-0.1a0.dist-info/RECORD,,
