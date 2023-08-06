@@ -1,0 +1,5 @@
+
+      [console_scripts]
+      swbs = swbootstrap.src.main:bootstrap
+      bootstrap = swbootstrap.src.main:bootstrap
+      
