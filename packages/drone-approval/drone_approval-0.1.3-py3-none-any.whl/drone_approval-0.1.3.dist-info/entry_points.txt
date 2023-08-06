@@ -1,0 +1,3 @@
+[console_scripts]
+drone-approval-cli=drone_approval.cli:main
+
