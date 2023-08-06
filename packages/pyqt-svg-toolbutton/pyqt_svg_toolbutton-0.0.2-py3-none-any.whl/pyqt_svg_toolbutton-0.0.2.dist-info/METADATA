@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pyqt-svg-toolbutton
+Version: 0.0.2
+Summary: PyQt SVG icon QToolButton
+Home-page: https://github.com/yjg30737/pyqt-svg-toolbutton.git
+Author: Jung Gyu Yoon
+Author-email: yjg30737@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt5 (>=5.8)
+Requires-Dist: pyqt-svg-abstractbutton (>=0.0.1)
+
+
+# pyqt-svg-toolbutton
+
+PyQt SVG icon QToolButton
+
+
+
+Parent class of this is `QToolButton` and <a href="https://github.com/yjg30737/pyqt-svg-abstractbutton.git">`SvgAbstractButton`</a>. (Multiple inheritance)
+
+
+
+If you want to use svg supporting `QPushButton` instead of `QToolButton`, use <a href="https://github.com/yjg30737/pyqt-svg-button.git">pyqt-svg-button</a>. 
+
+
+
+## Requirements
+
+* PyQt5 >= 5.8
+
+
+
+## Install
+
+`python -m pip install pyqt-svg-toolbutton`
+
+
+
+## Included Packages
+
+* <a href="https://github.com/yjg30737/pyqt-svg-abstractbutton.git">pyqt-svg-abstractbutton</a>
+
+
+
