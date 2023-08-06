@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: upkie_description
+Version: 1.1.0
+Summary: URDF description for the Upkie wheeled biped.
+Author-email: Stéphane Caron <stephane.caron@normalesup.org>
+Maintainer-email: Stéphane Caron <stephane.caron@normalesup.org>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Project-URL: Changelog, https://github.com/tasts-robots/upkie_description/blob/master/CHANGELOG.md
+Project-URL: Source, https://github.com/tasts-robots/upkie_description
+Project-URL: Tracker, https://github.com/tasts-robots/upkie_description/issues
+
+# Upkie wheeled biped robot
+
+<img src="https://user-images.githubusercontent.com/1189580/169594012-2d685579-2b66-4470-9def-57bd0656b420.png" align="right" width="300">
+
+URDF description for the [Upkie](https://www.youtube.com/watch?v=NO_TkHGS0wQ) wheeled biped. See also:
+
+- [3D print files](https://www.printables.com/model/127831-upkie-wheeled-biped-robot/files)
+- [Build instructions](https://www.printables.com/model/127831-upkie-wheeled-biped-robot)
+
+Upkie's head derives from the chassis of the [mjbots quad](https://github.com/mjbots/quad).
+
+## Python module
+
+This module helps retrieve Upkie's model from a Python program. Assuming we import it by:
+
+```python
+import upkie_description
+```
+
+We can then use the following paths:
+
+<dl>
+    <dt>
+        <code>upkie_description.path</code>
+    </dt>
+    <dd>
+        Path to the ``upkie_description`` folder itself.
+    </dd>
+    <dt>
+        <code>upkie_description.meshes_path</code>
+    </dt>
+    <dd>
+        Path to the ``meshes`` folder.
+    </dd>
+    <dt>
+        <code>upkie_description.urdf_path</code>
+    </dt>
+    <dd>
+        Path to the ``upkie.urdf`` URDF file of the model.
+    </dd>
+</dl>
+
