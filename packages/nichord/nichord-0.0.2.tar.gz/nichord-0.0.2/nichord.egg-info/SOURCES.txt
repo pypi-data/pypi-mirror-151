@@ -1,0 +1,14 @@
+README.md
+setup.py
+nichord/__init__.py
+nichord/chord.py
+nichord/combine.py
+nichord/convert.py
+nichord/coord_labeler.py
+nichord/glassbrain.py
+nichord/patch_RendererAgg.py
+nichord.egg-info/PKG-INFO
+nichord.egg-info/SOURCES.txt
+nichord.egg-info/dependency_links.txt
+nichord.egg-info/requires.txt
+nichord.egg-info/top_level.txt
