@@ -1,0 +1,4 @@
+redis==4.3.1
+persuader-technology-automata-core>=0.4.1
+persuader-technology-automata-utilities>=0.0.8
+persuader-technology-automata-logger>=0.0.1
