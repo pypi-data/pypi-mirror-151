@@ -1,0 +1,9 @@
+spicypy/__init__.py,sha256=EcKQJN8SnpHXcSqIE8RSgoU8RirD6o4QbJORNpNBDbI,410
+spicypy/control/__init__.py,sha256=oEsLj1l9hADaxc3-FyzpqUhZSETEuMTvAjBpeaCAWos,149
+spicypy/control/system.py,sha256=pJr26keeUEhtkKwy6VgaW0WC7PRQnNVWG1ERBVi3Ef4,1380
+spicypy/signal/__init__.py,sha256=oEsLj1l9hADaxc3-FyzpqUhZSETEuMTvAjBpeaCAWos,149
+spicypy/signal/time_series.py,sha256=a7nfRL5zteyNfPB0eqlorS336BlKCltzskBw7Np27I8,346
+spicypy-0.2.1.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+spicypy-0.2.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+spicypy-0.2.1.dist-info/METADATA,sha256=WrOMfhwGWMONSIx4DTLCzH7XzCPrf2IVWKQ0aPUXAU0,2709
+spicypy-0.2.1.dist-info/RECORD,,
