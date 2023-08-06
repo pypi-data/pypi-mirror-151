@@ -1,0 +1,11 @@
+numpy
+scipy
+gdal
+numba
+
+[dev]
+pytest
+black
+flake8
+sphinx>=1.7
+pre-commit
