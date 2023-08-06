@@ -1,0 +1,14 @@
+quickbase_json/__init__.py,sha256=R4ZYBLU28ttFpyn6onBoxBydWYNeZF9PKvUApQUvs2o,86
+quickbase_json/auth.py,sha256=5j6gdjB1TNy0f_58tXlx6RyL-v-4TSbaFJWCj4LNBWE,1624
+quickbase_json/client.py,sha256=JFNETX9OdXs5rsv8p21nUCr6Kb1mMcOibbABl15wwTg,7150
+quickbase_json/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickbase_json/helpers.py,sha256=K5YRa9ZY6U23eczzThhXQFnT0OnI_vjnvDgLIk9WBv4,6945
+quickbase_json/qb_insert_update_response.py,sha256=hrF1K-Ee4mfrVygnIWbTG5GVG7GtpiIpSVZOuczYPU0,1451
+quickbase_json/qb_linked_record.py,sha256=QIi4B3IG6V-46k9Few1GeJHXe93S0jSZrV01WGpUe0s,1122
+quickbase_json/qb_response.py,sha256=dO4BxdXHEWkDI2zdXvZnOl2D-uhD9QOpl3DZ1ehnzaA,9936
+quickbase_json/xml_stuff.py,sha256=Z4TfBBuE7unSvez2tIHkHrdi9EoZcrdETOgoasiBpQQ,501
+quickbase_json_api_client-0.2.0.dist-info/LICENSE,sha256=KsUlenax4CUMnhBjj5-GuOg22s4vuAI1lUXPGvEloXw,1076
+quickbase_json_api_client-0.2.0.dist-info/METADATA,sha256=HZ9JXdeTCRUr6kZBbsoctJSJlZbqljp8Z_2FNpAUdFw,4596
+quickbase_json_api_client-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quickbase_json_api_client-0.2.0.dist-info/top_level.txt,sha256=QMAhfxRbrBd-B38Cc-bzrimhmUFYQCY2Aj9u7FX1rdQ,15
+quickbase_json_api_client-0.2.0.dist-info/RECORD,,
