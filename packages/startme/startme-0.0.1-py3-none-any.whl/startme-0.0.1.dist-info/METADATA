@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: startme
+Version: 0.0.1
+Summary: autostart python classes
+Home-page: https://github.com/yaroslaff/startme
+Author: Yaroslav Polyakov
+Author-email: yaroslaff@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# startme
+autostart for python applications/modules inside single virtualenv
+
+
