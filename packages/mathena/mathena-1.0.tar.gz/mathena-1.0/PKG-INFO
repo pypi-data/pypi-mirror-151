@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: mathena
+Version: 1.0
+Summary: it eases maths
+Home-page: https://github.com/Naman23-coder/mathena
+Author: Naman Sharma
+Author-email: namansharma232009@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# mathena
+A python library that eases maths 
+
+# Install
+
+```bash
+pip install mathena
+```
+
+# functions
+
+cubebroot
+```py
+import mathena
+print(mathena.cuberoot(27))
+```
+
+prime factorization
+
+```py
+import mathena
+print(mathena.prime_factorization(27))
+```
+
+is a perfect square
+
+```py
+import mathena
+print(mathena.is_perfect_square(4))
+
+```
+
+is a perfect cube
+
+```py
+import mathena
+print(mathena.is_perfect_cube(27))
+
+```
+
+
