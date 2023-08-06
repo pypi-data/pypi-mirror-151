@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+wands/__init__.py
+wands/data/__init__.py
+wands/data/area_base.csv
+wands/data/load_data.py
+wands/parse/__init__.py
+wands/parse/address_parse.py
+wands_ce.egg-info/PKG-INFO
+wands_ce.egg-info/SOURCES.txt
+wands_ce.egg-info/dependency_links.txt
+wands_ce.egg-info/top_level.txt
