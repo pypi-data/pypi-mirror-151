@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: lofarSun
+Version: 0.3.11
+Summary: tools to process the lofar solar data
+Home-page: https://github.com/Pjer-zhang/LOFAR_Solar
+Author: Peijin
+Author-email: pjer1316@gmail.com
+License: MIT
+Download-URL: https://github.com/Pjer-zhang/LOFAR_Solar/archive/master.zip
+Keywords: LOFAR,Solar,radio
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LOFAR Sun Tools
+
+ Handy scripts and modules for the LOFAR data processing for Solar and Space Weather.
+ Installation guide [doc/install.md](doc/install.md)
+ For docker user: [lofarsundocker](https://github.com/Pjer-zhang/lofarsunDocker)
+
+## Data Type
+
+* (.MS) Interferometry raw data, measurement set. [doc/interferometry.md](doc/interferometry.md)
+* (.h5) Beamformed data, HDF5 format. [doc/beamformed.md](doc/beamformed.md)
+* (xxx-cube.fits) Beamformed data, fits cube.[doc/beamformed.md](doc/beamformed.md)
+* (xxx-image.fits) Interferometry image data.[doc/interferometry.md](doc/interferometry.md)
+
+
