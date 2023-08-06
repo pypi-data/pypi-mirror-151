@@ -1,0 +1,10 @@
+README.rst
+setup.py
+boosmap/connector.py
+boosmap/handler.py
+boosmap/settings.py
+django_boosmap.egg-info/PKG-INFO
+django_boosmap.egg-info/SOURCES.txt
+django_boosmap.egg-info/dependency_links.txt
+django_boosmap.egg-info/requires.txt
+django_boosmap.egg-info/top_level.txt
