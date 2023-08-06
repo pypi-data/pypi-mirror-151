@@ -1,0 +1,15 @@
+nextmusic/__init__.py,sha256=tHxYLFqufB9foKhaa71OpguzGKX1x0HOYLZYzH5nSj0,1308
+nextmusic/_classes.py,sha256=mPIlooppFXipSCPhMYKUq37qHUbODGXFkyR_UFUVLlE,775
+nextmusic/_version.py,sha256=YtUyAXiiOHwESv4zvzi974DxfB49JhPeAz-KNOtUwwQ,221
+nextmusic/checks.py,sha256=qB_E5Rgaz0SYdXoE1u-eya8iyZq-nyWLzLHlSAWEFSM,921
+nextmusic/errors.py,sha256=ony1M9PitCI_tbV88UPktm87FmNH-WYTcROmqASRLi8,576
+nextmusic/events.py,sha256=al-4A3qj-6NWv3WCoj_lw5N9amd45J2NfONy4n2P4gs,1800
+nextmusic/ext.py,sha256=c3k9oa5SKW9nzoNVuDqO9KAVpR_qJU0ri_BZq8CE96M,7086
+nextmusic/music.py,sha256=dfEv1KBqtX9KKo4MDUqIU9L84dIobVVdjZwW-VPiZg8,10194
+nextmusic/paginator.py,sha256=NMiGRieU38djhJ_jkkSkl4zAZWuWpP2nvK-1ywfwhHk,3788
+nextmusic/player.py,sha256=HAz0m8NVjspO5Y_WNGbZfg3A6-aPEvjLc3z-G9VTTro,4030
+nextmusic-0.0.4.dist-info/LICENCE,sha256=E6W-DQvVZdOTpjpUfxQqzgkdWZa5lyl3WPjMwTrQGNk,1063
+nextmusic-0.0.4.dist-info/METADATA,sha256=iUvTmTp9uA9mLz2oNtrxDrJ1Dq9hxy52754S2BKllF8,2426
+nextmusic-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nextmusic-0.0.4.dist-info/top_level.txt,sha256=QhXDamr1BA6Gqbk4NCFPjm384Mv_Vn8ODVvflhiMXUg,10
+nextmusic-0.0.4.dist-info/RECORD,,
