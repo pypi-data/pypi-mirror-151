@@ -1,0 +1,9 @@
+credict/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+credict/api.py,sha256=rk9aPbI0X3fP9aHX2cxDhsa3YNR4mplkOMkHXQm4q4I,8828
+credict/encryption.py,sha256=ADFOF2_Q1Z5XRagnpgdePesAiZNRkoLF7FMKnEZRmKk,3146
+credict/math.py,sha256=pIww77hDV8kRLTFUiMNnM-EdMjvZTzeUruulQxiSFAc,4365
+credict/watermark.py,sha256=9c5auL-hWamyN-t8BGSAOtU_pAF-bPAVx2pHQFk73to,1570
+credict-0.1.1.dist-info/METADATA,sha256=wfZzr3oVEfmInDwR9J3NLueXVKUri7PJfToOcdDGPMw,958
+credict-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+credict-0.1.1.dist-info/top_level.txt,sha256=tch5oGXYYP7uNKHhTREx3_bR-0CkS2mml5i1R4fprOc,8
+credict-0.1.1.dist-info/RECORD,,
