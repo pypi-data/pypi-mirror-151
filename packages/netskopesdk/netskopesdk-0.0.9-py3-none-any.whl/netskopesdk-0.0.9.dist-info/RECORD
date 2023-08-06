@@ -1,0 +1,12 @@
+netskope/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+netskope/api/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+netskope/api/iterator/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+netskope/api/iterator/const.py,sha256=XsoeWJgVPc0nR6y_diU4-LwtCKDEiGDAuwi8c8pkg18,388
+netskope/api/iterator/netskope_iterator.py,sha256=d_n4ISXLQwNuPx4AP4GVWUlnlqP4F9kP_IsgHr95Rno,2907
+netskope/api/iterator/netskope_iterator_client.py,sha256=SE5I9HFbxBhiqGAApQob9TWIejYHxayFc6XNBG0OdTU,3045
+netskope/api/iterator/operation.py,sha256=gUhoo8mPEszVo6R_R_9dL5IOC3_jRR0p3VS9FcowXb4,244
+netskopesdk-0.0.9.dist-info/LICENSE,sha256=GcXt57BXdiM5qPBiQJj2MQP_59bPwyIidxYQWmgwbuQ,1516
+netskopesdk-0.0.9.dist-info/METADATA,sha256=1uPFb3KtTjYOjT0THHOiBLcVPZkgJ0Sj-ocqLSJLqXc,2386
+netskopesdk-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+netskopesdk-0.0.9.dist-info/top_level.txt,sha256=g7oBmSTJ8NEFCU_PIRQdAH9qWT2i7Yyk0r72M40Xb8Y,9
+netskopesdk-0.0.9.dist-info/RECORD,,
