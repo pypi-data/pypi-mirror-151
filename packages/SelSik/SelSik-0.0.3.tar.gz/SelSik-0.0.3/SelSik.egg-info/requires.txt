@@ -1,0 +1,11 @@
+setuptools
+wheel
+Kekik
+KekikTaban
+KekikSpatula
+asyncio
+aiohttp
+selenium
+webdriver_manager
+selenium-stealth
+parsel
