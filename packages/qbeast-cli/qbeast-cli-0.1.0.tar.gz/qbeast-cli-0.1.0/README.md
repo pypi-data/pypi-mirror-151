@@ -1,0 +1,19 @@
+# Qbeast CLI
+| :exclamation: Warning: Still under development. Do not use in production environments   |
+|-----------------------------------------|
+
+A command line interface for qbeast-sharing
+
+
+### 1. Usage (WIP)
+Examples of usage
+
+##### 1.1 Create a share (including schema, table and percentage of share)
+```
+qbeast expo create s3://my-bucket/my/table/path share_name schema_name table_name --percentage=50
+```
+
+##### 1.2 Invite a user to a share
+```
+qbeast expo invite share_name_with_suffix user_name user_email
+```

@@ -1,0 +1,12 @@
+README.md
+setup.py
+qbeast/__init__.py
+qbeast/main.py
+qbeast/sharing.py
+qbeast/utils.py
+qbeast_cli.egg-info/PKG-INFO
+qbeast_cli.egg-info/SOURCES.txt
+qbeast_cli.egg-info/dependency_links.txt
+qbeast_cli.egg-info/entry_points.txt
+qbeast_cli.egg-info/requires.txt
+qbeast_cli.egg-info/top_level.txt
