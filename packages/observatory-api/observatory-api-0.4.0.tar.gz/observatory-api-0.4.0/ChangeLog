@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.4.0
+-----
+
+* Build Observatory API Image & Push to Google Cloud Artifact Registry (#558)

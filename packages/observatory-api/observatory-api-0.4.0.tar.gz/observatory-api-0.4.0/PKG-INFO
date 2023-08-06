@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: observatory-api
+Version: 0.4.0
+Summary: UNKNOWN
+Home-page: https://github.com/The-Academic-Observatory/observatory-platform
+Author: Curtin University
+Author-email: agent@observatory.academy
+License: Apache License Version 2.0
+Project-URL: Bug Tracker, https://github.com/The-Academic-Observatory/observatory-platform/issues
+Project-URL: Documentation, https://observatory-platform.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/The-Academic-Observatory/observatory-platform
+Description: ## Observatory API
+        
+        
+Keywords: science,data,workflows,academic institutes,observatory-api
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: tests

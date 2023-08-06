@@ -1,0 +1,1562 @@
+swagger: '2.0'
+info:
+  title: Observatory API
+  description: |
+    The REST API for managing and accessing data from the Observatory Platform.
+  version: 1.0.0
+  contact:
+    email: agent@observatory.academy
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+{# API Client specific settings #}
+{%- if api_client %}
+host: api.observatory.academy
+schemes:
+  - https
+produces:
+  - application/json
+securityDefinitions:
+  # This section configures basic authentication with an API key.
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
+security:
+  - api_key: []
+{%- endif %}
+
+{# Cloud Endpoints specific settings #}
+{%- if cloud_endpoints %}
+host: ${host}
+x-google-backend:
+  address: ${backend_address}
+  protocol: h2
+schemes:
+  - https
+produces:
+  - application/json
+securityDefinitions:
+  # This section configures basic authentication with an API key.
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
+security:
+  - api_key: []
+{%- endif %}
+
+{# Tag settings #}
+{%- if api_client %}
+tags:
+- name: Observatory
+  description: the Observatory API
+{%- set reports_tag="Observatory" -%}
+{%- set organisation_tag="Observatory" -%}
+{%- set workflow_tag="Observatory" -%}
+{%- set workflow_type_tag="Observatory" -%}
+{%- set table_type_tag="Observatory" -%}
+{%- set dataset_type_tag="Observatory" -%}
+{%- set dataset_release_tag="Observatory" -%}
+{%- set dataset_tag="Observatory" -%}
+{%- set bigquery_bytes_processed_tag="Observatory" -%}
+{% else %}
+tags:
+- name: Reports
+  description: Query data to build Open Access reports.
+- name: Organisation
+  description: Create, read, update, delete and list information about organisations.
+- name: Workflow
+  description: Create, read, update, delete and list information about workflows.
+- name: WorkflowType
+  description: Create, read, update, delete and list information about the type of workflows that exist.
+- name: TableType
+  description: Create, read, update, delete and list information about the type of tables that exist.
+- name: DatasetType
+  description: Create, read, update, delete and list information about the type of datasets that exist.
+- name: DatasetRelease
+  description: Create, read, update, delete and list information about the dataset release info.
+- name: Dataset
+  description: Create, read, update, delete and list information about the dataset info.
+- name: BigQueryBytesProcessed
+  description: Create, read, update, delete and list information about the number of bytes processed in BigQuery Query jobs.
+{%- set reports_tag="Reports" -%}
+{%- set organisation_tag="Organisation" -%}
+{%- set workflow_tag="Workflow" -%}
+{%- set workflow_type_tag="WorkflowType" -%}
+{%- set table_type_tag="TableType" -%}
+{%- set dataset_type_tag="DatasetType" -%}
+{%- set dataset_release_tag="DatasetRelease" -%}
+{%- set dataset_tag="Dataset" -%}
+{%- set bigquery_bytes_processed_tag="BigQueryBytesProcessed" -%}
+{%- endif %}
+
+{# Operation id namespace #}
+{%- if api_client %}
+{%- set operation_id_namespace="" -%}
+{% else %}
+{%- set operation_id_namespace="observatory.api.server.api." -%}
+{%- endif %}
+
+paths:
+  /v1/query:
+    get:
+      operationId: {{ operation_id_namespace }}queryv1
+      tags:
+        - {{ reports_tag }}
+      summary: Search the Observatory API
+      description: Search the Observatory API
+      parameters:
+        - in: query
+          name: agg
+          description: The aggregation level
+          required: true
+          enum:
+            - author
+            - country
+            - funder
+            - group
+            - institution
+            - publisher
+          type: string
+        - name: subset
+          in: query
+          description: The required subset
+          required: true
+          enum:
+            - citations
+            - collaborations
+            - disciplines
+            - events
+            - funders
+            - journals
+            - oa-metrics
+            - output-types
+            - publishers
+          type: string
+        - name: index_date
+          in: query
+          description: Index date, defaults to latest
+          required: false
+          format: date
+          type: string
+        - name: from
+          in: query
+          description: Start year (included)
+          required: false
+          type: integer
+          minimum: 4
+          maximum: 4
+        - name: to
+          in: query
+          description: End year (not included)
+          required: false
+          type: integer
+          minimum: 4
+          maximum: 4
+        - name: limit
+          in: query
+          description: Limit number of results (max 10000)
+          required: false
+          type: integer
+          maximum: 10000
+        - name: scroll_id
+          in: query
+          description: The scroll id
+          required: false
+          type: string
+        - name: pit_id
+          in: query
+          description: The PIT id
+          required: false
+          type: string
+        - name: search_after_no
+          in: query
+          description: The search after key
+          required: false
+          type: integer
+        - name: search_after_text
+          in: query
+          description: The search after key
+          required: false
+          type: string
+        {% for param in query_filter_parameters %}
+        - name: {{ param }}
+          in: query
+          type: array
+          items:
+            type: string
+          collectionFormat: multi
+        {% endfor %}
+      responses:
+        200:
+          description: Successfully return query results
+          schema:
+            $ref: '#/definitions/QueryResponse'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+      produces:
+        - application/json
+
+  /v1/workflow_type:
+    get:
+      tags:
+      - {{ workflow_type_tag }}
+      summary: get a WorkflowType
+      operationId: {{ operation_id_namespace }}get_workflow_type
+      description: |
+        Get the details of a WorkflowType by passing it's id or type_id.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: WorkflowType id
+        required: false
+        type: integer
+      - in: query
+        name: type_id
+        description: WorkflowType type_id
+        required: false
+        type: string
+      responses:
+        200:
+          description: the fetched WorkflowType
+          schema:
+            $ref: '#/definitions/WorkflowType'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    post:
+      tags:
+      - {{ workflow_type_tag }}
+      summary: create a WorkflowType
+      operationId: {{ operation_id_namespace }}post_workflow_type
+      description: |
+        Create a WorkflowType by passing a WorkflowType object, without an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: WorkflowType to create
+        required: true
+        schema:
+          $ref: '#/definitions/WorkflowType'
+      responses:
+        201:
+          description: WorkflowType created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/WorkflowType'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    put:
+      tags:
+      - {{ workflow_type_tag }}
+      summary: create or update a WorkflowType
+      operationId: {{ operation_id_namespace }}put_workflow_type
+      description: |
+        Create a WorkflowType by passing a WorkflowType object, without an id. Update an existing WorkflowType by
+        passing a WorkflowType object with an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: WorkflowType to create or update
+        required: true
+        schema:
+          $ref: '#/definitions/WorkflowType'
+      responses:
+        200:
+          description: WorkflowType updated
+          schema:
+            $ref: '#/definitions/WorkflowType'
+        201:
+          description: WorkflowType created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/WorkflowType'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    delete:
+      tags:
+      - {{ workflow_type_tag }}
+      summary: delete a WorkflowType
+      operationId: {{ operation_id_namespace }}delete_workflow_type
+      description: |
+        Delete a WorkflowType by passing it's id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: WorkflowType id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: WorkflowType deleted
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/workflow_types:
+    get:
+      tags:
+      - {{ workflow_type_tag }}
+      summary: Get a list of WorkflowType objects
+      operationId: {{ operation_id_namespace }}get_workflow_types
+      description: |
+        Get a list of WorkflowType objects
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: limit
+        description: the maximum number of results to return
+        required: true
+        type: integer
+      responses:
+        200:
+          description: a list of WorkflowType objects
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/WorkflowType'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/workflow:
+    get:
+      tags:
+      - {{ workflow_tag }}
+      summary: get a Workflow
+      operationId: {{ operation_id_namespace }}get_workflow
+      description: |
+        Get the details of a Workflow by passing it's id.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: Workflow id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: the fetched Workflow
+          schema:
+            $ref: '#/definitions/Workflow'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    post:
+      tags:
+      - {{ workflow_tag }}
+      summary: create a Workflow
+      operationId: {{ operation_id_namespace }}post_workflow
+      description: |
+        Create a Workflow by passing a Workflow object, without an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: Workflow to create
+        required: true
+        schema:
+          $ref: '#/definitions/Workflow'
+      responses:
+        201:
+          description: Workflow created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/Workflow'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    put:
+      tags:
+      - {{ workflow_tag }}
+      summary: create or update a Workflow
+      operationId: {{ operation_id_namespace }}put_workflow
+      description: |
+        Create a Workflow by passing a Workflow object, without an id. Update an existing Workflow by
+        passing a Workflow object with an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: Workflow to create or update
+        required: true
+        schema:
+          $ref: '#/definitions/Workflow'
+      responses:
+        200:
+          description: Workflow updated
+          schema:
+            $ref: '#/definitions/Workflow'
+        201:
+          description: Workflow created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/Workflow'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    delete:
+      tags:
+      - {{ workflow_tag }}
+      summary: delete a Workflow
+      operationId: {{ operation_id_namespace }}delete_workflow
+      description: |
+        Delete a Workflow by passing it's id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: Workflow id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Workflow deleted
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/workflows:
+    get:
+      tags:
+      - {{ workflow_tag }}
+      summary: Get a list of Workflow objects
+      operationId: {{ operation_id_namespace }}get_workflows
+      description: |
+        Get a list of Workflow objects and optionally filter via a Workflow id and or an Organisation id.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: workflow_type_id
+        description: filter workflows by a WorkflowType id
+        required: false
+        type: integer
+      - in: query
+        name: organisation_id
+        description: filter workflows by an Organisation id
+        required: false
+        type: integer
+      - in: query
+        name: limit
+        description: the maximum number of results to return
+        required: true
+        type: integer
+      responses:
+        200:
+          description: a list of Workflow objects
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Workflow'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/organisation:
+    get:
+      tags:
+        - {{ organisation_tag }}
+      summary: get an Organisation
+      operationId: {{ operation_id_namespace }}get_organisation
+      description: |
+        Get the details of an Organisation by passing its id.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: Organisation id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: the fetched Organisation
+          schema:
+            $ref: '#/definitions/Organisation'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    post:
+      tags:
+        - {{ organisation_tag }}
+      summary: create an Organisation
+      operationId: {{ operation_id_namespace }}post_organisation
+      description: |
+        Create an Organisation by passing an Organisation object, without an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: Organisation to create
+        required: true
+        schema:
+          $ref: '#/definitions/Organisation'
+      responses:
+        201:
+          description: Organisation created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/Organisation'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    put:
+      tags:
+        - {{ organisation_tag }}
+      summary: create or update an Organisation
+      operationId: {{ operation_id_namespace }}put_organisation
+      description: |
+        Create an Organisation by passing an Organisation object, without an id. Update an existing Organisation by
+        passing an Organisation object with an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: Organisation to create or update
+        required: true
+        schema:
+          $ref: '#/definitions/Organisation'
+      responses:
+        200:
+          description: Organisation updated
+          schema:
+            $ref: '#/definitions/Organisation'
+        201:
+          description: Organisation created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/Organisation'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    delete:
+      tags:
+        - {{ organisation_tag }}
+      summary: delete an Organisation
+      operationId: {{ operation_id_namespace }}delete_organisation
+      description: |
+        Delete an Organisation by passing it's id.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: id
+          description: Organisation id
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Organisation deleted
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/organisations:
+    get:
+      tags:
+        - {{ organisation_tag }}
+      summary: Get a list of Organisations
+      operationId: {{ operation_id_namespace }}get_organisations
+      description: |
+        Gets a list of organisations
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: limit
+        description: the maximum number of results to return
+        required: true
+        type: integer
+      responses:
+        200:
+          description: a list of Organisation objects
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Organisation'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/table_type:
+    get:
+      tags:
+      - {{ table_type_tag }}
+      summary: get a TableType
+      operationId: {{ operation_id_namespace }}get_table_type
+      description: |
+        Get the details of a TableType by passing it's id or type_id.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: TableType id
+        required: false
+        type: integer
+      - in: query
+        name: type_id
+        description: TableType type_id
+        required: false
+        type: string
+      responses:
+        200:
+          description: the fetched TableType
+          schema:
+            $ref: '#/definitions/TableType'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    post:
+      tags:
+      - {{ table_type_tag }}
+      summary: create a TableType
+      operationId: {{ operation_id_namespace }}post_table_type
+      description: |
+        Create a TableType by passing a TableType object, without an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: TableType to create
+        required: true
+        schema:
+          $ref: '#/definitions/TableType'
+      responses:
+        201:
+          description: TableType created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/TableType'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    put:
+      tags:
+      - {{ table_type_tag }}
+      summary: create or update a TableType
+      operationId: {{ operation_id_namespace }}put_table_type
+      description: |
+        Create a TableType by passing a TableType object, without an id. Update an existing TableType by
+        passing a TableType object with an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: TableType to create or update
+        required: true
+        schema:
+          $ref: '#/definitions/TableType'
+      responses:
+        200:
+          description: TableType updated
+          schema:
+            $ref: '#/definitions/TableType'
+        201:
+          description: TableType created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/TableType'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    delete:
+      tags:
+      - {{ table_type_tag }}
+      summary: delete a TableType
+      operationId: {{ operation_id_namespace }}delete_table_type
+      description: |
+        Delete a TableType by passing it's id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: TableType id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: TableType deleted
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/table_types:
+    get:
+      tags:
+      - {{ table_type_tag }}
+      summary: Get a list of TableType objects
+      operationId: {{ operation_id_namespace }}get_table_types
+      description: |
+        Get a list of TableType objects
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: limit
+        description: the maximum number of results to return
+        required: true
+        type: integer
+      responses:
+        200:
+          description: a list of TableType objects
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/TableType'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/dataset_type:
+    get:
+      tags:
+      - {{ dataset_type_tag }}
+      summary: get a DatasetType
+      operationId: {{ operation_id_namespace }}get_dataset_type
+      description: |
+        Get the details of a DatasetType by passing it's id or type_id.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: DatasetType id
+        required: false
+        type: integer
+      - in: query
+        name: type_id
+        description: DatasetType type_id
+        required: false
+        type: string
+      responses:
+        200:
+          description: the fetched DatasetType
+          schema:
+            $ref: '#/definitions/DatasetType'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    post:
+      tags:
+      - {{ dataset_type_tag }}
+      summary: create a DatasetType
+      operationId: {{ operation_id_namespace }}post_dataset_type
+      description: |
+        Create a DatasetType by passing a DatasetType object, without an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: DatasetType to create
+        required: true
+        schema:
+          $ref: '#/definitions/DatasetType'
+      responses:
+        201:
+          description: DatasetType created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/DatasetType'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    put:
+      tags:
+      - {{ dataset_type_tag }}
+      summary: create or update a DatasetType
+      operationId: {{ operation_id_namespace }}put_dataset_type
+      description: |
+        Create a DatasetType by passing a DatasetType object, without an id. Update an existing DatasetType by
+        passing a DatasetType object with an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: DatasetType to create or update
+        required: true
+        schema:
+          $ref: '#/definitions/DatasetType'
+      responses:
+        200:
+          description: DatasetType updated
+          schema:
+            $ref: '#/definitions/DatasetType'
+        201:
+          description: DatasetType created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/DatasetType'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    delete:
+      tags:
+      - {{ dataset_type_tag }}
+      summary: delete a DatasetType
+      operationId: {{ operation_id_namespace }}delete_dataset_type
+      description: |
+        Delete a DatasetType by passing it's id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: DatasetType id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: DatasetType deleted
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/dataset_types:
+    get:
+      tags:
+      - {{ dataset_type_tag }}
+      summary: Get a list of DatasetType objects
+      operationId: {{ operation_id_namespace }}get_dataset_types
+      description: |
+        Get a list of DatasetType objects
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: limit
+        description: the maximum number of results to return
+        required: true
+        type: integer
+      responses:
+        200:
+          description: a list of DatasetType objects
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/DatasetType'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/dataset_release:
+    get:
+      tags:
+      - {{ dataset_release_tag }}
+      summary: get a DatasetRelease
+      operationId: {{ operation_id_namespace }}get_dataset_release
+      description: |
+        Get the details of a DatasetRelease by passing it's id.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: DatasetRelease id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: the fetched DatasetRelease
+          schema:
+            $ref: '#/definitions/DatasetRelease'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    post:
+      tags:
+      - {{ dataset_release_tag }}
+      summary: create a DatasetRelease
+      operationId: {{ operation_id_namespace }}post_dataset_release
+      description: |
+        Create a DatasetRelease by passing a DatasetRelease object, without an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: DatasetRelease to create
+        required: true
+        schema:
+          $ref: '#/definitions/DatasetRelease'
+      responses:
+        201:
+          description: DatasetRelease created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/DatasetRelease'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    put:
+      tags:
+      - {{ dataset_release_tag }}
+      summary: create or update a DatasetRelease
+      operationId: {{ operation_id_namespace }}put_dataset_release
+      description: |
+        Create a DatasetRelease by passing a DatasetRelease object, without an id. Update an existing DatasetRelease by
+        passing a DatasetRelease object with an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: DatasetRelease to create or update
+        required: true
+        schema:
+          $ref: '#/definitions/DatasetRelease'
+      responses:
+        200:
+          description: DatasetRelease updated
+          schema:
+            $ref: '#/definitions/DatasetRelease'
+        201:
+          description: DatasetRelease created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/DatasetRelease'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    delete:
+      tags:
+      - {{ dataset_release_tag }}
+      summary: delete a DatasetRelease
+      operationId: {{ operation_id_namespace }}delete_dataset_release
+      description: |
+        Delete a DatasetRelease by passing it's id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: DatasetRelease id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: DatasetRelease deleted
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/dataset_releases:
+    get:
+      tags:
+      - {{ dataset_release_tag }}
+      summary: Get a list of DatasetRelease objects
+      operationId: {{ operation_id_namespace }}get_dataset_releases
+      description: |
+        Get a list of DatasetRelease objects
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: limit
+        description: the maximum number of results to return
+        required: true
+        type: integer
+      - in: query
+        name: dataset_id
+        description: the dataset_id to fetch release info for
+        required: false
+        type: integer
+      responses:
+        200:
+          description: a list of DatasetRelease objects
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/DatasetRelease'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/dataset:
+    get:
+      tags:
+        - {{ dataset_tag }}
+      summary: get a Dataset
+      operationId: {{ operation_id_namespace }}get_dataset
+      description: |
+        Get the details of a Dataset by passing its id.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: id
+        description: Dataset id
+        required: true
+        type: integer
+      responses:
+        200:
+          description: the fetched Dataset
+          schema:
+            $ref: '#/definitions/Dataset'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    post:
+      tags:
+        - {{ dataset_tag }}
+      summary: create a Dataset
+      operationId: {{ operation_id_namespace }}post_dataset
+      description: |
+        Create a Dataset by passing a Dataset object, without an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: Dataset to create
+        required: true
+        schema:
+          $ref: '#/definitions/Dataset'
+      responses:
+        201:
+          description: Dataset created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/Dataset'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    put:
+      tags:
+        - {{ dataset_tag }}
+      summary: create or update a Dataset
+      operationId: {{ operation_id_namespace }}put_dataset
+      description: |
+        Create a Dataset by passing a Dataset object, without an id. Update an existing Dataset by
+        passing an Dataset object with an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: Dataset to create or update
+        required: true
+        schema:
+          $ref: '#/definitions/Dataset'
+      responses:
+        200:
+          description: Dataset updated
+          schema:
+            $ref: '#/definitions/Dataset'
+        201:
+          description: Dataset created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/Dataset'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    delete:
+      tags:
+        - {{ dataset_tag }}
+      summary: delete a Dataset
+      operationId: {{ operation_id_namespace }}delete_dataset
+      description: |
+        Delete a Dataset by passing it's id.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: id
+          description: Dataset id
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Dataset deleted
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/datasets:
+    get:
+      tags:
+        - {{ dataset_tag }}
+      summary: Get a list of Datasets
+      operationId: {{ operation_id_namespace }}get_datasets
+      description: |
+        Gets a list of datasets
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: limit
+        description: the maximum number of results to return
+        required: true
+        type: integer
+      - in: query
+        name: workflow_id
+        description: Workflow id to filter for
+        required: false
+        type: integer
+      responses:
+        200:
+          description: a list of Dataset objects
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Dataset'
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+  /v1/bigquery_bytes_processed:
+    get:
+      tags:
+      - {{ bigquery_bytes_processed_tag }}
+      summary: get a BigQueryBytesProcessed
+      operationId: {{ operation_id_namespace }}get_bigquery_bytes_processed
+      description: |
+        Get the total bytes processed by a BigQuery project for the last 24 hours.
+      produces:
+      - application/json
+      parameters:
+      - in: query
+        name: project
+        description: the project id
+        required: true
+        type: string
+      responses:
+        200:
+          description: the fetched BigQueryBytesProcessed
+          schema:
+            type: integer
+            description: The total number of BigQuery bytes used for the project in the last 24 hours
+            example: 126538
+        400:
+          description: bad input parameter
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+    post:
+      tags:
+      - {{ bigquery_bytes_processed_tag }}
+      summary: create a BigQueryBytesProcessed
+      operationId: {{ operation_id_namespace }}post_bigquery_bytes_processed
+      description: |
+        Create a BigQueryBytesProcessed by passing a BigQueryBytesProcessed object, without an id.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        description: BigQueryBytesProcessed to create
+        required: true
+        schema:
+          $ref: '#/definitions/BigQueryBytesProcessed'
+      responses:
+        201:
+          description: BigQueryBytesProcessed created, returning the created object with an id
+          schema:
+            $ref: '#/definitions/BigQueryBytesProcessed'
+        401:
+          {% if api_client -%}description: API key is missing or invalid{%- endif %}
+          $ref: '#/responses/UnauthorizedError'
+
+#  /v2/query:
+#    get:
+#      operationId: app.searchv2
+#      tags:
+#        - Query
+#      summary: An example of how to create v2 of an API endpoint
+#      description: An example of how to create v2 of an API endpoint
+#      responses:
+#        '200':
+#          description: Successfully return query results
+
+definitions:
+  QueryResponse:
+    type: object
+    properties:
+      version:
+        type: string
+        description: The API version
+        example: 'v1'
+      index:
+        type: string
+        description: The full name of the elasticsearch index that is searched
+        example: 'citations-country-20201212'
+      scroll_id:
+        type: string
+        description: The scroll id that can be used to get the next batch of results (only active for 1min)
+        example: 'FGluY2x1ZGVfY29udGV4dF91dWlkDXF1ZXJ5QW5kRmV0Y2gBFlFkWThoZy1FUTZPQ2JhcXpGSnFjTEEAAAAAALEIyRZYRkVGWmNSRVRqU0VpTFdYbGFPUERR'
+      returned_hits:
+        type: integer
+        description: The number of returned hits (can be less than total_hits if a limit is set)
+        example: 10000
+      total_hits:
+        type: integer
+        description: The number of total hits
+        example: 126538
+      schema:
+        type: object
+        description: The schema for an individual hit
+        example: ''
+      results:
+        type: array
+        description: A list of the actual results (one dictionary per hit)
+        items:
+          type: object
+
+  WorkflowType:
+    type: object
+    properties:
+      id:
+        type: integer
+        example: 1
+      type_id:
+        type: string
+        example: onix
+        minLength: 1
+        maxLength: 250
+      name:
+        type: string
+        example: Scopus
+        minLength: 1
+        maxLength: 250
+      created:
+        type: string
+        format: date-time
+        example: 2020-01-01T20:01:05Z
+        readOnly: true
+      modified:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        readOnly: true
+
+  Workflow:
+    type: object
+    properties:
+      id:
+        type: integer
+        example: 1
+      name:
+        type: string
+        example: Curtin University ONIX Workflow
+        minLength: 1
+        maxLength: 250
+        x-nullable: true
+      extra:
+        type: object
+        example: {'view-id': '830'}
+        minLength: 1
+        maxLength: 512
+        x-nullable: true
+      tags:
+        type: string
+        example: oaebu
+        minLength: 1
+        maxLength: 250
+        x-nullable: true
+      organisation:
+        $ref: '#/definitions/Organisation'
+      workflow_type:
+        $ref: '#/definitions/WorkflowType'
+      datasets:
+        type: array
+        items:
+          $ref: '#/definitions/Dataset'
+      created:
+        type: string
+        format: date-time
+        example: 2020-01-01T20:01:05Z
+        readOnly: true  
+      modified:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        readOnly: true
+
+  Organisation:
+    type: object
+    x-nullable: true
+    properties:
+      id:
+        type: integer
+        example: 1
+      name:
+        type: string
+        example: Curtin University
+        minLength: 1
+        maxLength: 250
+      project_id:
+        type: string
+        example: curtin-dev
+        minLength: 6
+        maxLength: 30
+        x-nullable: true
+      download_bucket:
+        type: string
+        example: curtin-dev-download
+        minLength: 3
+        maxLength: 222
+        x-nullable: true
+      transform_bucket:
+        type: string
+        example: curtin-dev-transform
+        minLength: 3
+        maxLength: 222
+        x-nullable: true
+      workflows:
+        type: array
+        readOnly: true
+        items:
+          $ref: '#/definitions/Workflow'
+      created:
+        type: string
+        format: date-time
+        example: 2020-01-01T20:01:05Z
+        readOnly: true
+      modified:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        readOnly: true
+
+  TableType:
+    type: object
+    properties:
+      id:
+        type: integer
+        example: 1
+      type_id:
+        type: string
+        example: bq_partitioned
+        minLength: 1
+        maxLength: 250
+      name:
+        type: string
+        example: BigQuery partitioned table
+        minLength: 1
+        maxLength: 250
+      created:
+        type: string
+        format: date-time
+        example: 2020-01-01T20:01:05Z
+        readOnly: true
+      modified:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        readOnly: true
+
+  DatasetType:
+    type: object
+    properties:
+      id:
+        type: integer
+        example: 1
+      type_id:
+        type: string
+        example: onix
+        minLength: 1
+        maxLength: 250
+      name:
+        type: string
+        example: ONIX dataset
+        minLength: 1
+        maxLength: 250
+      extra:
+        type: object
+        example: {'isbn_field': 'ISBN', 'type': 'snapshot'}
+        minLength: 1
+        maxLength: 512
+        x-nullable: true
+      table_type:
+        $ref: '#/definitions/TableType'
+      created:
+        type: string
+        format: date-time
+        example: 2020-01-01T20:01:05Z
+        readOnly: true
+      modified:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        readOnly: true
+
+  DatasetRelease:
+    type: object
+    properties:
+      id:
+        type: integer
+        example: 1
+      start_date:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+      end_date:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        x-nullable: true
+      dataset:
+        $ref: '#/definitions/Dataset'
+      created:
+        type: string
+        format: date-time
+        example: 2020-01-01T20:01:05Z
+        readOnly: true
+      modified:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        readOnly: true
+
+  Dataset:
+    type: object
+    properties:
+      id:
+        type: integer
+        example: 1
+      name:
+        type: string
+        example: RoR
+        minLength: 1
+        maxLength: 250
+      workflow:
+        $ref: '#/definitions/Workflow'
+      service:
+        type: string
+        example: google
+        minLength: 1
+        maxLength: 250
+      address:
+        type: string
+        example: curtin_gcp_project_id.my_dataset_id.my_table
+        minLength: 1
+        maxLength: 250
+      created:
+        type: string
+        format: date-time
+        example: 2020-01-01T20:01:05Z
+        readOnly: true
+      modified:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        readOnly: true
+      dataset_type:
+        $ref: '#/definitions/DatasetType'
+
+  BigQueryBytesProcessed:
+    type: object
+    properties:
+      id:
+        type: integer
+        example: 1
+      project:
+        type: string
+        example: coki
+        minLength: 3
+        maxLength: 222
+      total:
+        type: integer
+        example: 0
+      created:
+        type: string
+        format: date-time
+        example: 2020-01-01T20:01:05Z
+        readOnly: true
+      modified:
+        type: string
+        format: date-time
+        example: 2020-01-02T20:01:05Z
+        readOnly: true
+
+responses:
+  UnauthorizedError:
+    description: API key is missing or invalid
+    headers:
+      WWW_Authenticate:
+        type: string
