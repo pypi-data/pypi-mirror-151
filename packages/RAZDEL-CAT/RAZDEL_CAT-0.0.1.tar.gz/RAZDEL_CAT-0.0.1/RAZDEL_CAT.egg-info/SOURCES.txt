@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+RAZDEL_CAT/__INIT__.PY
+RAZDEL_CAT/main.py
+RAZDEL_CAT.egg-info/PKG-INFO
+RAZDEL_CAT.egg-info/SOURCES.txt
+RAZDEL_CAT.egg-info/dependency_links.txt
+RAZDEL_CAT.egg-info/top_level.txt

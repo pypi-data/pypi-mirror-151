@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: RAZDEL_CAT
+Version: 0.0.1
+Summary: This is work is bd
+Home-page: https://github.com/tamarskir/RAZDEL_CAT.git
+Author: NIKOLAEV
+Author-email: nic155k@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#PRODUCT DATABASE
+---
+You can make a selection from the  section and category tables
+---
+
+
