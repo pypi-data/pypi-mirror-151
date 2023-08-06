@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: afxano-keras
+Version: 0.0.2
+Summary: A small package of extensions for keras
+Home-page: https://github.com/jaypmorgan/afxano-keras
+Author: Jay Morgan
+Author-email: jay@morganwastaken.com
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# afxano-keras
