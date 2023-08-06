@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: smartprint
+Version: 0.0.5
+Summary: Include the variable name in print statements
+Home-page: https://github.com/abcnishant007/smartprint
+Author: Nishant Kumar
+Author-email: abc.nishant007@gmail.com
+Project-URL: Bug Tracker, https://github.com/abcnishant007/smartprint/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Smart print
+Save a few seconds with every print statement 
+
+- Everytime you want to print something, you lose a few seconds to type in the name of the variable being printed
+- Worse still, your IDE helps you autocomplete long variable names but does not complete in the comments
+```
+
+```
+
+Enter smart print: 
+```
+from smartprint import smartprint as sprint
+
+a = 25
+sprint (a)
+``` 
+
+Output: 
+```
+a : 25
+```
+
+
