@@ -1,0 +1,10 @@
+botocore>=1.12.54
+
+[:python_version < "3.8"]
+typing-extensions>=3.7
+
+[dax]
+amazon-dax-client<3.0.0,>=2.0.0
+
+[signals]
+blinker<2.0,>=1.3
