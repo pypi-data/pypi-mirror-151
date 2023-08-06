@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: database-stein-watkins-huge
+Version: 20110713.dev0
+Project-URL: Home, https://www.sagemath.org
+Maintainer-email: The Sage Developers <sage-devel@googlegroups.com>
+License: Public Domain
+Requires-Dist: database-stein-watkins-mini
