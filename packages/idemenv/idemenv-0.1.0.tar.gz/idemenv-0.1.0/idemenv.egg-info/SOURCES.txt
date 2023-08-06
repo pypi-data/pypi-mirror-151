@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+idemenv/conf.py
+idemenv/scripts.py
+idemenv/version.py
+idemenv.egg-info/PKG-INFO
+idemenv.egg-info/SOURCES.txt
+idemenv.egg-info/dependency_links.txt
+idemenv.egg-info/entry_points.txt
+idemenv.egg-info/requires.txt
+idemenv.egg-info/top_level.txt
+idemenv/idemenv/cli.py
+idemenv/idemenv/init.py
+idemenv/idemenv/ops.py
