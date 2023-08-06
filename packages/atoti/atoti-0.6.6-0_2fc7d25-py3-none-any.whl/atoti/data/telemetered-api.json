@@ -1,0 +1,201 @@
+{
+  "atoti": {
+    "Cube": [
+      "create_date_hierarchy",
+      "create_parameter_hierarchy_from_column",
+      "create_parameter_hierarchy_from_members",
+      "create_parameter_simulation",
+      "explain_query",
+      "query"
+    ],
+    "Hierarchy": [
+      "isin"
+    ],
+    "Level": [
+      "isin"
+    ],
+    "Session": [
+      "__init__",
+      "close",
+      "create_cube",
+      "create_scenario",
+      "create_table",
+      "delete_scenario",
+      "endpoint",
+      "explain_mdx_query",
+      "export_translations_template",
+      "link",
+      "query_mdx",
+      "read_csv",
+      "read_numpy",
+      "read_pandas",
+      "read_parquet",
+      "read_spark",
+      "read_sql",
+      "start_transaction",
+      "visualize",
+      "wait"
+    ],
+    "Table": [
+      "append",
+      "drop",
+      "head",
+      "join",
+      "load_csv",
+      "load_kafka",
+      "load_numpy",
+      "load_pandas",
+      "load_parquet",
+      "load_spark",
+      "load_sql"
+    ],
+    "exceptions.AtotiException": [
+      "with_traceback"
+    ],
+    "exceptions.AtotiJavaException": [
+      "with_traceback"
+    ],
+    "hierarchies.Hierarchies": [
+      "update"
+    ],
+    "measures.Measures": [
+      "update"
+    ],
+    "agg": [
+      "count_distinct",
+      "long",
+      "max",
+      "max_member",
+      "mean",
+      "median",
+      "min",
+      "min_member",
+      "prod",
+      "quantile",
+      "short",
+      "square_sum",
+      "std",
+      "sum",
+      "sum_product",
+      "var"
+    ],
+    "array": [
+      "len",
+      "max",
+      "mean",
+      "min",
+      "n_greatest",
+      "n_greatest_indices",
+      "n_lowest",
+      "n_lowest_indices",
+      "negative_values",
+      "nth_greatest",
+      "nth_lowest",
+      "positive_values",
+      "prefix_sum",
+      "prod",
+      "quantile",
+      "quantile_index",
+      "replace",
+      "sort",
+      "std",
+      "sum",
+      "var"
+    ],
+    "": [
+      "at",
+      "close",
+      "copy_tutorial",
+      "date_diff",
+      "date_shift",
+      "filter",
+      "parent_value",
+      "rank",
+      "shift",
+      "total",
+      "value",
+      "where"
+    ],
+    "comparator": [
+      "first_members"
+    ],
+    "experimental.agg": [
+      "distinct"
+    ],
+    "experimental.finance": [
+      "irr"
+    ],
+    "experimental.stats.beta": [
+      "cdf",
+      "pdf",
+      "ppf"
+    ],
+    "experimental.stats.chi2": [
+      "cdf",
+      "pdf",
+      "ppf"
+    ],
+    "experimental.stats.f": [
+      "cdf",
+      "pdf",
+      "ppf"
+    ],
+    "experimental.stats.normal": [
+      "cdf",
+      "pdf",
+      "ppf"
+    ],
+    "experimental.stats.t": [
+      "cdf",
+      "pdf",
+      "ppf"
+    ],
+    "math": [
+      "abs",
+      "ceil",
+      "cos",
+      "erf",
+      "erfc",
+      "exp",
+      "floor",
+      "isnan",
+      "log",
+      "log10",
+      "max",
+      "min",
+      "round",
+      "sin",
+      "sqrt",
+      "tan"
+    ],
+    "query": [
+      "create_basic_authentication",
+      "create_token_authentication"
+    ],
+    "scope": [
+      "cumulative",
+      "origin",
+      "siblings"
+    ],
+    "string": [
+      "concat"
+    ]
+  },
+  "atoti_query": {
+    "QueryCube": [
+      "query"
+    ],
+    "QueryHierarchy": [
+      "isin"
+    ],
+    "QueryLevel": [
+      "isin"
+    ],
+    "QuerySession": [
+      "__init__",
+      "link",
+      "query_mdx",
+      "visualize"
+    ]
+  }
+}

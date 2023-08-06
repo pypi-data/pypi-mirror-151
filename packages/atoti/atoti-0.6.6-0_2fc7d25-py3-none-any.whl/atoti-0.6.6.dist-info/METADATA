@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: atoti
+Version: 0.6.6
+Summary: Design, explore and deploy efficient and flexible data models
+Home-page: https://www.atoti.io
+Author: atoti
+Author-email: dev@atoti.io
+License: UNKNOWN
+Project-URL: Documentation, https://docs.atoti.io/0.6.6
+Project-URL: Bug Tracker, https://github.com/atoti/atoti/issues
+Keywords: atoti,aggregation,calculation,chart,data,dataviz,pivot-table,visualization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+Requires-Python: >=3.8, !=3.9.7
+License-File: atoti/LICENSE
+Requires-Dist: atoti-core (==0.6.6)
+Requires-Dist: atoti-query (==0.6.6)
+Requires-Dist: jdk4py (~=17.0)
+Requires-Dist: numpy (~=1.22)
+Requires-Dist: pandas
+Requires-Dist: py4j (~=0.10.9)
+Requires-Dist: pyarrow
+Requires-Dist: typeguard
+Requires-Dist: typing-extensions
+Provides-Extra: aws
+Requires-Dist: atoti-aws (==0.6.6) ; extra == 'aws'
+Provides-Extra: azure
+Requires-Dist: atoti-azure (==0.6.6) ; extra == 'azure'
+Provides-Extra: dev
+Requires-Dist: pyspark ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: scipy ; extra == 'dev'
+Requires-Dist: test-utils ; extra == 'dev'
+Requires-Dist: pytz ; extra == 'dev'
+Provides-Extra: gcp
+Requires-Dist: atoti-gcp (==0.6.6) ; extra == 'gcp'
+Provides-Extra: jupyterlab
+Requires-Dist: atoti-jupyterlab (==0.6.6) ; extra == 'jupyterlab'
+Provides-Extra: kafka
+Requires-Dist: atoti-kafka (==0.6.6) ; extra == 'kafka'
+Provides-Extra: plus
+Requires-Dist: atoti-plus (==0.6.6) ; extra == 'plus'
+Provides-Extra: sql
+Requires-Dist: atoti-sql (==0.6.6) ; extra == 'sql'
+
+UNKNOWN
+
