@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zdpy
+Version: 0.1.0
+Summary: 
+Author: michael-drozdov-zocdoc
+Author-email: 86305671+michael-drozdov-zocdoc@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.23.4,<2.0.0)
+Requires-Dist: datadog (>=0.44.0,<0.45.0)
+Requires-Dist: mock (>=4.0.3,<5.0.0)
+Requires-Dist: python-dateutil (>=2.4.2)
+Requires-Dist: pytz (==2013.7)
