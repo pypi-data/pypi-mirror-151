@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pbt-database"
+    version = "1.3.2"
+packages = [
+    { include = "database" },
+    { include = "tests" },
+]
+
+description = "Database driver"
+readme = "README.md"
+authors = ["everhide <i.tolkachnikov@gmail.com>"]
+include = [".example.env"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+asyncpg = "0.25.0"
+psycopg2-binary = "2.9.3"
+SQLAlchemy = "^1.4.36"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+addopts = 'tests -p no:warnings -s'
+asyncio_mode = 'auto'
+python_files = 'test_*.py tests_*.py'
+log_cli = 0
+log_level = 'CRITICAL'

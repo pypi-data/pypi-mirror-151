@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pbt-database
+Version: 1.3.2
+Summary: Database driver
+Author: everhide
+Author-email: i.tolkachnikov@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy (>=1.4.36,<2.0.0)
+Requires-Dist: asyncpg (==0.25.0)
+Requires-Dist: psycopg2-binary (==2.9.3)
+Description-Content-Type: text/markdown
+
+[![N|Solid](https://294904.selcdn.ru/git/logo.png)](https://portalbilet.ru/)
+## Database driver
+
+Provide PostgresSQL Model built-ins with i18n support.
+
+Use as package with service core and setup with env variables.
+
+## Maintain
+Use poetry for all:
+```sh
+poetry install
+poetry build
+poetry publish
+```
+
+## CI/CD Options
+
+| option          | type  | info     |
+| -----           | ----- | -----    |
+| **DB_HOST**       | str   |  Host    |
+| **DB_PORT**       | int   |  Port    |
+| **DB_NAME**       | str   | Database |
+| **DB_USER**       | str   | Username |
+| **DB_PASSWORD**   | str   | Password |
+
+
+## Testing
+```.sh
+pytest tests
+```
+| :warning: Check database connection before launch - all data will be erased!|
+|-----------------------------------------------------------------------------|
+
+## License
+```
+MIT © PortalBilet Team, 2022
+```
+
