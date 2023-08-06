@@ -1,0 +1,8 @@
+soda-core==3.0.0b13
+u8darts<1.0.0,>=0.7.0
+pydantic<2.0.0,>=1.8.1
+inflection==0.5.1
+httpx<2.0.0,>=0.18.1
+PyYAML<6.0.0,>=5.4.1
+prophet>=1.0.0
+pystan==2.19.1.1
