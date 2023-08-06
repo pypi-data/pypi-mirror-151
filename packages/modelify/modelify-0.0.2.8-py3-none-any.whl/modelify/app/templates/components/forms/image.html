@@ -1,0 +1,24 @@
+<form id="submitPredict"  style="height:200px; overflow: auto;" action="/predict" enctype='multipart/form-data'>
+
+    <div class="field">
+        <label class="label is-size-7">Image: </label>
+          <div id="image-file" class="file is-fullwidth has-name">
+    <label class="file-label">
+    <input class="file-input" id="image-file-input" type="file" name="image">
+    <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+    <span class="file-name">
+      No file uploaded
+    </span>
+    </label>
+    </div>
+        </div>
+        <button type="submit" class="predict-send-btn">Predict</button>
+    
+    </form>

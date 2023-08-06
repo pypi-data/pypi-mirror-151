@@ -1,0 +1,11 @@
+<form id="submitPredict"  style="height:200px; overflow: auto;" action="/predict">
+
+    {% for key, value in modelify.inputs_to_pydantic().__fields__.items() %}
+<div class="task">
+ <label for="">{{ value.name }}</label>
+ <input class="uk-input" name="{{ value.name }}" type="number" step="any" placeholder="float">
+</div>
+{% endfor %}
+<button type="submit" class="predict-send-btn">Predict</button>
+
+</form>
