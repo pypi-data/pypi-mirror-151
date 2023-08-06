@@ -1,0 +1,2 @@
+[console_scripts]
+trans = transfv.__main__:main
