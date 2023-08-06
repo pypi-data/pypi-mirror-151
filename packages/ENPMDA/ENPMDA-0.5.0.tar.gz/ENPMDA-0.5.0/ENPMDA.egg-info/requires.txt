@@ -1,0 +1,5 @@
+mdanalysis>=2.0.0
+dask[complete]
+distributed
+numpy
+pandas
