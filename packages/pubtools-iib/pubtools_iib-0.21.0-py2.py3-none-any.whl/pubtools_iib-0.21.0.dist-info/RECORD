@@ -1,0 +1,9 @@
+pubtools/__init__.py,sha256=sNtbxFIa4RDomMe3hGhhhxhIHbLKCtdEXY-nun4r-q8,85
+pubtools/iib/__init__.py,sha256=3QRCXOqh3OZAcpopFym0tcgvFnfFbbmd4CFhuXy4Cns,20
+pubtools/iib/iib_ops.py,sha256=zHKwTjHiPwPL1zTbAxU-mGpYLfS-Gj4kerIuXNIRkmw,10485
+pubtools/iib/utils.py,sha256=d4sbjtwnqPN3EbkroKyShbTKWzpGX_mRZk-Liw4PWSY,2643
+pubtools_iib-0.21.0.dist-info/METADATA,sha256=GLRN_4QvQIiBFPdunXjPonkzWUz3boDmxbvCz856cmw,4485
+pubtools_iib-0.21.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pubtools_iib-0.21.0.dist-info/entry_points.txt,sha256=FvcNa9b5r6h6zGr6YXdRZgJKT-zIsSOOb9CoyquJK9g,159
+pubtools_iib-0.21.0.dist-info/top_level.txt,sha256=OojGd4bFkXX5XG4HOnyDjk9j-gLOzB0AOBI8msYhmdY,9
+pubtools_iib-0.21.0.dist-info/RECORD,,
