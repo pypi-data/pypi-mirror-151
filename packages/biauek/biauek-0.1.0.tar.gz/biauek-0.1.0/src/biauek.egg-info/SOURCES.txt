@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/biauek.egg-info/PKG-INFO
+src/biauek.egg-info/SOURCES.txt
+src/biauek.egg-info/dependency_links.txt
+src/biauek.egg-info/top_level.txt
