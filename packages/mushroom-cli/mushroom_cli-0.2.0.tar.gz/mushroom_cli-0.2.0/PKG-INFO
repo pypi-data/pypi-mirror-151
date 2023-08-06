@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mushroom_cli
+Version: 0.2.0
+Summary: This is a library for generating the command line interfaces for python scripts.
+Home-page: UNKNOWN
+Author: Asriel
+Author-email: sariellian@icloud.com
+License: MIT
+Description: UNKNOWN
+Platform: any
