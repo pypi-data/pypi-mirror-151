@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mcl_google_cloud_bigquery
+Version: 2022.5.23.11.54.56
+Summary: The mcl_google_cloud_bigquery package.
+Author-email: Manuel Castillo-Lopez <manucalop@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pyyaml
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: pandas
+Requires-Dist: pandas-gbq
+Project-URL: Home, https://github.com/manucalop/mcl_google_cloud_bigquery
+
+
