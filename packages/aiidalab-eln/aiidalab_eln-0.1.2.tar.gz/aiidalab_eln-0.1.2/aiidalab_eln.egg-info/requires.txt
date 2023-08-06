@@ -1,0 +1,10 @@
+aiida-core<3",>=1.1.0
+ase
+cheminfopy>=0.6.0
+ipywidgets
+pytojcamp
+requests
+
+[dev]
+bumpver==2021.1114
+pre-commit==2.10.1
