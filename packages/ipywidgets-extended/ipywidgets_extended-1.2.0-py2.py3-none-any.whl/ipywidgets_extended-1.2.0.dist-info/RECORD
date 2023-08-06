@@ -1,0 +1,15 @@
+ipywidgets_extended/__init__.py,sha256=M-HBFTTXGhkUGmXLSJgs1RM-dLVitwBexfnl1o-pHPI,300
+ipywidgets_extended/dropdown.py,sha256=zMH2nPuI9PqKkK5d-F_jdTWpr9YcDBv1RN0CnvOzUu4,9684
+ipywidgets_extended/version.py,sha256=M-R6NAY_-vD2qZ0QUhY2mRvQQk-CTVARiEBJVDD6I58,115
+ipywidgets_extended/labextension/ipywidgets-extended-1.2.0.tgz,sha256=ieEmlkAVbsjjfi426fEu-6B-oe5aOYd5rhDJkgGil0k,4340
+ipywidgets_extended/nbextension/__init__.py,sha256=NOGnAa8V0zgR3ySc9G8R2tKJyCaH_7MRLtgC7EHgf_M,288
+ipywidgets_extended/nbextension/static/extension.js,sha256=Pgc0VEmUy8pee55ZQSBvm-NHlaW2bUwP8eEheRXdZAY,429
+ipywidgets_extended/nbextension/static/index.js,sha256=biSATySG0KNgFsJPo-ilrB-e0okzYRTbiYbwNC9TMZk,4926
+ipywidgets_extended/nbextension/static/index.js.map,sha256=u90HdJCwjrVYufvmjSHY7X9GGJ_Grz08ZiI0C-qzIx8,8286
+ipywidgets_extended-1.2.0.data/data/etc/jupyter/nbconfig/notebook.d/ipywidgets_extended.json,sha256=2AzQ_dg4ZF5_xQ_H1SdJ6piUicLakwyg5soEZzGJQ9A,73
+ipywidgets_extended-1.2.0.data/data/share/jupyter/nbextensions/ipywidgets_extended/extension.js,sha256=Pgc0VEmUy8pee55ZQSBvm-NHlaW2bUwP8eEheRXdZAY,429
+ipywidgets_extended-1.2.0.dist-info/LICENSE,sha256=qru0v5NcoIGLqHoVSTfqTwIx810sMxX4eCW5EICry54,1507
+ipywidgets_extended-1.2.0.dist-info/METADATA,sha256=Rbqth2Ho83DN2H_3v4dRMyXyDeGCrlvFqHNSqjvmvXg,2559
+ipywidgets_extended-1.2.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+ipywidgets_extended-1.2.0.dist-info/top_level.txt,sha256=LNxm4NVAb6F8KiKMC9o72-Vv6nhi_yEjWhuykO6AKko,20
+ipywidgets_extended-1.2.0.dist-info/RECORD,,
