@@ -1,0 +1,4 @@
+persuader-technology-automata-logger>=0.0.1
+persuader-technology-automata-exchange-transform-repository>=0.0.6
+persuader-technology-automata-exchange-repository>=0.1.0
+persuader-technology-automata-config>=0.0.8
