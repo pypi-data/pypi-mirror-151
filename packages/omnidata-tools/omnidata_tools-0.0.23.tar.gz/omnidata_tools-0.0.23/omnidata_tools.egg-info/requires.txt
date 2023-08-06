@@ -1,0 +1,4 @@
+fastcore>=1.3.21
+multiprocess>=0.70.12.2
+aria2p[tui]>=0.10.4
+tqdm
