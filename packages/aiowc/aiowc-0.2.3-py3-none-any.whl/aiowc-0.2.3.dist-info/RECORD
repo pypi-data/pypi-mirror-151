@@ -1,0 +1,9 @@
+aiowc/__init__.py,sha256=b09Bo1LjY8wukBNxtZLWgkPABIokFs73qArbSNPUo7w,337
+aiowc/api.py,sha256=1gVdams_mtOqntqj2yVVByxeWRnBjySS-9UQ8BB7W8s,5322
+aiowc/oauth.py,sha256=x7laDfwa_RHpWwKedWEOzT2R6SlJZ4NjwqcR14PHRtQ,4358
+aiowc/params.py,sha256=vS0DBWmlOQlvpTrxi55jJmeiSTXEf6ohcWDAk5trpY0,599
+aiowc-0.2.3.dist-info/LICENSE,sha256=EMZQDL5NPgfOaXNjJJCGNkV8mdJH6KbFu3bt4MWCF8g,1097
+aiowc-0.2.3.dist-info/METADATA,sha256=cqozqB5-OLQ46z0nO-rsE-hor0-ze8bDhFIRbluqBWo,2243
+aiowc-0.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiowc-0.2.3.dist-info/top_level.txt,sha256=YAk5WUbQwkA9ciJ7JPOiOiD9UuDmdQF7-z9pXSCDrRE,6
+aiowc-0.2.3.dist-info/RECORD,,
