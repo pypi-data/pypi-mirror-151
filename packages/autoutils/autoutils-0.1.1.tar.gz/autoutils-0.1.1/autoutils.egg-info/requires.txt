@@ -1,0 +1,8 @@
+persiantools>=2.0
+redis>=4.0
+requests>=2.0
+urllib3>=1.0
+sshtunnel>=0.1
+paramiko>=2.0
+func-timeout>=4.0
+blessings>=1.0
