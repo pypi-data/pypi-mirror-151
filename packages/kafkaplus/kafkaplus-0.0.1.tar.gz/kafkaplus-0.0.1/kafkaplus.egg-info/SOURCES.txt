@@ -1,0 +1,9 @@
+README.md
+kafkaplus.py
+setup.py
+kafkaplus.egg-info/PKG-INFO
+kafkaplus.egg-info/SOURCES.txt
+kafkaplus.egg-info/dependency_links.txt
+kafkaplus.egg-info/entry_points.txt
+kafkaplus.egg-info/requires.txt
+kafkaplus.egg-info/top_level.txt
