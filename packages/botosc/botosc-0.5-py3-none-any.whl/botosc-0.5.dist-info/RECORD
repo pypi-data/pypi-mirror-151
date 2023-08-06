@@ -1,0 +1,11 @@
+botosc/__init__.py,sha256=wfy91ShLzuRyVmVFaFPjer73X3WDdedvu_W43ndK0Ug,39
+botosc/connector.py,sha256=FN--Pyb1gU2hzJRForWWoz3ypVZYLyL3bh4lqto4GeY,97971
+botosc/mixin.py,sha256=HUjZHCxKrtHqxQqYwBl1SPbTW2XnrpEUAJokfgA5rsI,280
+botosc/model.py,sha256=3oGTv6UUHipmDQHAEdICP13nmq104LmnwpBTTOTL97U,32255
+botosc/utils.py,sha256=gpMz-XUd7sFYpeo645nZxpMtjnkMRIBQ7oD4QAFDJKw,287
+botosc_gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botosc_gen/main.py,sha256=r_OoLD-BJ04PDNPCWA3mja0YSGOKYj6k_kUlzN5n98s,12933
+botosc-0.5.dist-info/METADATA,sha256=Raci8F3jIxvBdFASqhYWj9a2rEg2F6YY1ax41gkAacY,293
+botosc-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+botosc-0.5.dist-info/top_level.txt,sha256=3EfCUn0gAUT16tsqaoc2slrBq0kRGNs79rGaXNx7G3Q,18
+botosc-0.5.dist-info/RECORD,,
