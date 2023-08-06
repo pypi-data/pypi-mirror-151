@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dtypes/__init__.py
+src/dtypes/fwd.py
+src/dtypes/structify.py
+src/dtypes/typedefs.py
+src/dtypes/voidy.py
+src/dtypes.egg-info/PKG-INFO
+src/dtypes.egg-info/SOURCES.txt
+src/dtypes.egg-info/dependency_links.txt
+src/dtypes.egg-info/top_level.txt
