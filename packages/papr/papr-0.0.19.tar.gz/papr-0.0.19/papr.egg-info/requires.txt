@@ -1,0 +1,4 @@
+Markdown
+bs4
+pyyaml
+termcolor
