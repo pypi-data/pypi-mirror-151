@@ -1,0 +1,12 @@
+emcommon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emcommon/common.py,sha256=TikwiMVgPjy56VmfvwaJs0SVfKeuixWvkxJ_OImQZTU,664
+emcommon/constellations.py,sha256=EIJNZy7S_3FjgaIQdDOywQJQn-ms3Qcz5Hf0SgcjM-g,651
+emcommon/items.py,sha256=0yCOPOWEAuc67IbVPJI5Ox_4Tav47N_6vc0UB5NckeE,1346
+emcommon/regions.py,sha256=_mG8G2CbgGufhtAxaigqw-oT73xOFs4pJBhtrv0h030,1041
+emcommon/systems.py,sha256=jcr2se4-E8AfC2QR8Pesl0uQuY31ua01cNCQGAr157Q,1383
+emcommon/universe.py,sha256=zpMIbKWnYzj619whtMVS3G75Lm9EIdkjFSyL-RSZWEs,1150
+emcommon-0.1.10.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+emcommon-0.1.10.dist-info/METADATA,sha256=qij_apoj5rLiyZB0DdBsvzCgRN0ZdnImO8czWC7vgx0,686
+emcommon-0.1.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+emcommon-0.1.10.dist-info/top_level.txt,sha256=6-ecFjJPugcxfKHZJ_bvh-1-OtZnxyH2-fytiouC4fY,9
+emcommon-0.1.10.dist-info/RECORD,,
