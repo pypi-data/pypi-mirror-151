@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: VectorUtils
+Version: 1.4.0
+Summary: Some Vector utils...
+Home-page: UNKNOWN
+Author: Monkvy
+Author-email: moluecke@gmx.de
+License: UNKNOWN
+Keywords: python,physics,vector,2d,3d
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# VectorUtils
+Some vector utils...
+
+
