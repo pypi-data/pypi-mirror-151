@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ArtemixCalculator/__init__.py
+ArtemixCalculator/subfolder/__init__.py
+artemioxtesteando22.egg-info/PKG-INFO
+artemioxtesteando22.egg-info/SOURCES.txt
+artemioxtesteando22.egg-info/dependency_links.txt
+artemioxtesteando22.egg-info/requires.txt
+artemioxtesteando22.egg-info/top_level.txt
