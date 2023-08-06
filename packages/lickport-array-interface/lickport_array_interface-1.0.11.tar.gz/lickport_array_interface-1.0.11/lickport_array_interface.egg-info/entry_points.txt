@@ -1,0 +1,3 @@
+[console_scripts]
+lai = lickport_array_interface.lickport_array_interface:main
+

@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+lickport_array_interface/__about__.py
+lickport_array_interface/__init__.py
+lickport_array_interface/lickport_array_interface.py
+lickport_array_interface.egg-info/PKG-INFO
+lickport_array_interface.egg-info/SOURCES.txt
+lickport_array_interface.egg-info/dependency_links.txt
+lickport_array_interface.egg-info/entry_points.txt
+lickport_array_interface.egg-info/requires.txt
+lickport_array_interface.egg-info/top_level.txt
