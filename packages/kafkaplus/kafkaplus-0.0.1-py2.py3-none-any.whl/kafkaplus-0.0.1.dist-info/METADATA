@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: kafkaplus
+Version: 0.0.1
+Summary: Kafka操作工具。
+Home-page: https://github.com/kancyframework/python-plugins/tree/main/kafkaplus
+Author: kancy
+Author-email: 793272861@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: kafka
+Requires-Dist: kafka-python
+
+
+### 使用手册
+
+**快速开始**
+
+1）生产者
+```python
+import kafkaplus
+
+producer = kafkaplus.getProducer("localhost:9092")
+# 发送一条消息
+producer.send("test_topic", "data-a")
+
+# 同步发送一条消息
+producer.sendSync("test_topic", "data-b")
+
+# 批量发送消息
+producer.sendBatch("test_topic", "data1", "data2", "data3")
+```
+
+2）消费者
+```python
+import kafkaplus
+
+# 接收消息的回调函数
+def callback(data, **kwargs):
+    print(data)
+    print(kwargs)
+
+consumer = kafkaplus.getConsumer("localhost:9092")
+# 监听topic，使用回调函数处理消息
+consumer.onListener("test_topic",group="G-test",callback=callback)
+```
+
