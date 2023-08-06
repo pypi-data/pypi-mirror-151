@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "verifydump"
+version = "1.0.0"
+description = "A tool for verifying compressed (.chd/.rvz) disc dumps against a Datfile"
+license = "MIT"
+authors = ["j68k"]
+readme = "README.md"
+homepage = "https://github.com/j68k/verifydump"
+repository = "https://github.com/j68k/verifydump.git"
+classifiers = [
+    "Environment :: Console",
+    "Topic :: Games/Entertainment",
+    "Topic :: System :: Archiving :: Compression",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.11" # The upper-bound here is just because that is required for PyInstaller.
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+black = "^22.3.0"
+pre-commit = "^2.17.0"
+pyinstaller = "^5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+verifydump = 'verifydump.console:verifydump_main'
+# The following commands are useful for testing, but aren't production-ready for users:
+#convertdump = 'verifydump.console:convertdump_main'
+#convertgditocue = 'verifydump.console:convertgditocue_main'
+#testgditocueconversion = 'verifydump.console:testgditocueconversion_main'
+
+[tool.black]
+line-length = 1000000
