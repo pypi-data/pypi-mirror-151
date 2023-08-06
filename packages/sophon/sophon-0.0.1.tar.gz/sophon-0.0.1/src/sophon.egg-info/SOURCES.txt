@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/sophon/__init__.py
+src/sophon/sail.py
+src/sophon/version.py
+src/sophon.egg-info/PKG-INFO
+src/sophon.egg-info/SOURCES.txt
+src/sophon.egg-info/dependency_links.txt
+src/sophon.egg-info/top_level.txt

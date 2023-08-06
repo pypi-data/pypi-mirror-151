@@ -1,0 +1,80 @@
+<pre>
+   _____             __                      ____      ____
+  / ___/____  ____  / /_  ____  ____        /  _/___  / __/__  ________  ____  ________
+  \__ \/ __ \/ __ \/ __ \/ __ \/ __ \______ / // __ \/ /_/ _ \/ ___/ _ \/ __ \/ ___/ _ \
+ ___/ / /_/ / /_/ / / / / /_/ / / / /_____// // / / / __/  __/ /  /  __/ / / / /__/  __/
+/____/\____/ .___/_/ /_/\____/_/ /_/     /___/_/ /_/_/  \___/_/   \___/_/ /_/\___/\___/
+          /_/
+</pre>
+
+# Sophon-Inference
+
+Sophon Inference, which supplies a bunch of high level APIs, 
+is a upper module in BMNNSDK to help user deploying deep-learning inference networks and deep vision primitives on Sophon TPU rapidly.
+
+### SAIL: Sophon Artificial Intelligent Library for online deployment.
+* It's a wrapper of bmruntime, bmdecoder, bmcv, bmlib;
+* Provide both C++ and Python APIs;
+* Automatically manage memory of tensors;
+
+```
+## Prerequisites and Compilation
+
+- **BMNNSDK2**                        Required
+- **CMake**                           Required
+- **OpenCV3(at least 3.4.6)**         Required for C++ samples
+- **Python3**                         Optional for python samples
+- **Sphinx**                          Optional for documents
+
+```shell
+# install bmnnsdk2
+cd bmnnsdk2/scripts
+# extract libs adaptable to the OS
+./install_lib.sh nntc
+# remove old driver and install the new one, 'pcie' for x86_64 and 'arm_pcie' for aarch64
+sudo ./remove_driver_pcie.sh      # for x86_64
+sudo ./uninstall_driver_pcie.sh   # for x86_64
+# configure the environment. 'pcie' for x86_64 and 'arm_pcie' for aarch64
+source ./envsetup_pcie.sh         # for x86_64
+
+# compilation
+mkdir build
+cd build
+cmake ..
+make
+```
+
+## Testing
+
+TODO
+
+## Contributing
+
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Authors
+
+* haipeng.wan   - Initial work
+* hong.liu      - Initial work
+* juntao.tong   - Initial work
+* lian.he       - Initial work
+* mike.wu       - Initial work
+* tong.liu      - Initial work
+* zhenpeng.xiao - Initial work
+* huaishan.yuan - Contributor
+* shanglin.guo  - Contributor
+* zhiju.huang   - Maintainer
+
+See also the list of [Contributors](CODEOWNERS) who participated in this project.
+
+## Coding Style Guide
+
+This project contains codes written in C++, Python and Shell. We refer to Google Style Guides with some minor modifications.
+
+[Coding Style Guide](https://google.github.io/styleguide/cppguide.html)
+
+## License
+
+This project is licensed under the Apache License, Version 2.0.
+
+[License Detail](LICENSE)
