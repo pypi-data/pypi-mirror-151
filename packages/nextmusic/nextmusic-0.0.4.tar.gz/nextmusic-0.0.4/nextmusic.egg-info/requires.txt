@@ -1,0 +1,4 @@
+async-timeout
+wavelink
+nextcord.py
+psutil
