@@ -1,0 +1,15 @@
+tap_tiktok_business/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_tiktok_business/auth.py,sha256=E-HMTh3IdI5RegZPJDSshfD_pa76CSrt8e4jWoeEYrk,5051
+tap_tiktok_business/client.py,sha256=3VNR47NMNweDkAlV3wc3vU8D6mkIgrwr3jsjmr2Ve1I,4850
+tap_tiktok_business/schemas/accounts.schema.json,sha256=qCxe4S6AWizloR2JkL_VqCNu-KpRhjpRr3Cb6crWedk,4181
+tap_tiktok_business/schemas/comments.schema.json,sha256=2putR-EUehlYU6_FNEVo4WbsqsMo7Vf7EvCITSOV2vE,916
+tap_tiktok_business/schemas/videos.schema.json,sha256=Y3MMG-X3BHsiRqgKwp2D4AttO0hoEtacsCF4GHYivEQ,2297
+tap_tiktok_business/streams.py,sha256=EuKypE-zllOgZ7sTVpmyyfEOLol_n1YuTPbj-712v1A,3869
+tap_tiktok_business/tap.py,sha256=fu0XpEtY6DypKv_qLA-aZ232vXWcwVIec4GZXzpXEBY,1789
+tap_tiktok_business/tests/__init__.py,sha256=kTFXCcHWKQVKTxSvUHhMP6KOCKGoxrnszh_JT3M7t6Y,42
+tap_tiktok_business/tests/test_core.py,sha256=5jB8LDW_efxWLr7PZp8S2tnYDJch9wIXEBb-_f3X8tU,1119
+tap_tiktok_business-0.0.1.dist-info/entry_points.txt,sha256=WjgfF6xwrmfvh6Hfpm6oVUnDrxcb_4PdrftHhHQzn1U,85
+tap_tiktok_business-0.0.1.dist-info/LICENSE.md,sha256=SK0jg-fVCPjvmuL360j4yW-D-hDYK6FfO91Iz0bolHk,11342
+tap_tiktok_business-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tap_tiktok_business-0.0.1.dist-info/METADATA,sha256=dWuCuXCT6g4ClAfIyHoc_oU2zdFEcsouly8Z11MD2Vw,623
+tap_tiktok_business-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+tap-tiktok-business=tap_tiktok_business.tap:TapTiktokBusiness.cli
+
