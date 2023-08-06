@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sql2pandas
+Version: 0.0.2
+Summary: Turn SQL into Pandas Statements
+Home-page: https://github.com/cudbg/sql2pandas
+Author: Eugene Wu
+License: MIT
+Keywords: database pandas engine compiler
+Requires-Python: >=3.6
+License-File: LICENSE
