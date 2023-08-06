@@ -1,0 +1,3 @@
+[console_scripts]
+aws-list-subnets = aws_list_subnets.main:main
+
