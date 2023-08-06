@@ -1,0 +1,9 @@
+scibench/__init__.py,sha256=j-KoVc7bEqSHmAbFEdY1JeFwBjxkIIzOXpPOJcIRUrA,792
+scibench/__main__.py,sha256=erc15ny-gB4Yhtlmf0PxMntvtrcMzBUgYF1qJDYwQV4,1427
+scibench/experiment.py,sha256=wIMnPP_r9kY0olzIPbjZtEa0r_c3VIgRnORoRyFzAeI,5744
+scibench/helpers.py,sha256=pv3yxdbwulAtBkFq5arDMkJ-pvyhMTdDKb4cTZOYdww,5171
+scibench/registry.py,sha256=iqCEkikEn6NTmL_-RdGUuosCvM6OSgT15EJXrW7dqME,10988
+scibench-0.0.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+scibench-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+scibench-0.0.1.dist-info/METADATA,sha256=HzwyT3W2x9kvBzChbIzWlHBpXv4FjbHxPYmbvZBaB2c,3374
+scibench-0.0.1.dist-info/RECORD,,
