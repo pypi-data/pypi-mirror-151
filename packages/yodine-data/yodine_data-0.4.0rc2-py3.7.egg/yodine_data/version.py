@@ -1,0 +1,4 @@
+VERSION_TUPLE = (0, 4, 0)
+VERSION_POSTFIX = "-rc2"
+
+VERSION_STR = ".".join(str(v) for v in VERSION_TUPLE) + VERSION_POSTFIX
