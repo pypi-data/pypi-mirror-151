@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+podmesh/__init__.py
+podmesh/core.py
+podmesh/hookspecs.py
+podmesh/main.py
+podmesh.egg-info/PKG-INFO
+podmesh.egg-info/SOURCES.txt
+podmesh.egg-info/dependency_links.txt
+podmesh.egg-info/requires.txt
+podmesh.egg-info/top_level.txt
