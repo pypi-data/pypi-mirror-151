@@ -1,0 +1,11 @@
+README.md
+setup.py
+pandas_parallel_apply/__init__.py
+pandas_parallel_apply/data_frame_parallel.py
+pandas_parallel_apply/pandas_parallel_apply.py
+pandas_parallel_apply/series_parallel.py
+pandas_parallel_apply.egg-info/PKG-INFO
+pandas_parallel_apply.egg-info/SOURCES.txt
+pandas_parallel_apply.egg-info/dependency_links.txt
+pandas_parallel_apply.egg-info/requires.txt
+pandas_parallel_apply.egg-info/top_level.txt
