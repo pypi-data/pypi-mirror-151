@@ -1,0 +1,11 @@
+tflite2tensorflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tflite2tensorflow/mediapipeCustomOp.py,sha256=_e00Odg_wBdQs9iAMWLI9vvEVm1J9iwf0RMslYqsyVU,13781
+tflite2tensorflow/tflite2tensorflow.py,sha256=fbZMTTP0i9txm0wOa3Wh_pe0BGOsSJSDYPiP0un1-dc,293503
+tflite2tensorflow/view_npy.py,sha256=HC14k6ZYUK0uAgqb_ycbID2kVj2qehLGPd_xoYccbwI,607
+tflite2tensorflow-1.21.1.data/scripts/tflite2tensorflow,sha256=uBrG3oJ6wBKsQ6DjccJcY-O9BuTfPWsYlrRl2z1ohfw,293489
+tflite2tensorflow-1.21.1.data/scripts/view_npy,sha256=t5679ca40joKY1EMr-jVwm2Vnym8JAlYNO1nWbkBI3E,593
+tflite2tensorflow-1.21.1.dist-info/LICENSE,sha256=heZVlann4DgNufjP0smk5Iqpi96Setg8MXw__f6AZgw,1070
+tflite2tensorflow-1.21.1.dist-info/METADATA,sha256=ifUTyNGPEG7OL6pC0Wgq0e-iRxsz77LoJ8xyGlgp6d4,24415
+tflite2tensorflow-1.21.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tflite2tensorflow-1.21.1.dist-info/top_level.txt,sha256=t5QhA6c2bXaxVk8ET4s_6XfxNopjyj_70N8XefxO4io,18
+tflite2tensorflow-1.21.1.dist-info/RECORD,,
