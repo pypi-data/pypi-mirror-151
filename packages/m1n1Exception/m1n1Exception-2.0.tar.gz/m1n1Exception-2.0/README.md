@@ -1,0 +1,1 @@
+Errors handler for MiniExploit's python projects
