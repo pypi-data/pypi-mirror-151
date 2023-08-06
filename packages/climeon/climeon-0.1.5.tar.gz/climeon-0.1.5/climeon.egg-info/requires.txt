@@ -1,0 +1,4 @@
+matplotlib
+msal
+pandas
+requests
