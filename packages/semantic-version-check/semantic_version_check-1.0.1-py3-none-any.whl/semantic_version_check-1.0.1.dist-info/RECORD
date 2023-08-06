@@ -1,0 +1,10 @@
+semantic_version_check/__init__.py,sha256=KcEjPiOEgEhxloCRunxflWWHEy0aP4sBCekkYzlo9-Y,100
+semantic_version_check/__main__.py,sha256=WzF6agm0_NB99ec7aU0uXjzckeL0NW6NwD44pV7du6g,359
+semantic_version_check/cli.py,sha256=4P-ufFjDljcEXFsKzqEPGyiFIZdxbE_qdOqQiAZ1n14,333
+semantic_version_check/main.py,sha256=d7csiTimyzCb9ULcEWK3KESQKyiMXKjuxkn0PcWiRPA,1157
+semantic_version_check/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semantic_version_check-1.0.1.dist-info/METADATA,sha256=xx7Q1j_IYRL7OKzjWmNWIAfjms9LHdN8mCELSk0UXE0,8897
+semantic_version_check-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+semantic_version_check-1.0.1.dist-info/entry_points.txt,sha256=OtPDvnSTvJTFRCz-d1NEbh6aaNxCeJjVBth4ftCK4IY,80
+semantic_version_check-1.0.1.dist-info/top_level.txt,sha256=6KGx6bwuTOCysk5KyQ7r-HY66Gtvk8G61kkKR9WnZ6A,23
+semantic_version_check-1.0.1.dist-info/RECORD,,
