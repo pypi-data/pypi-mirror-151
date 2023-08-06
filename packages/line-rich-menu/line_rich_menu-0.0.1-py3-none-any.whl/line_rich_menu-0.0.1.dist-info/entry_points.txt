@@ -1,0 +1,3 @@
+[console_scripts]
+line_rich_menu=line_rich_menu.cli.main:main_cli
+
