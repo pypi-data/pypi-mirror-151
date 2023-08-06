@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: torchrecsys
+Version: 0.1.0
+Summary: Lightweight pytorch library to build recommender systems.
+Author: Jaime Ferrando Huertas
+Author-email: fhjaime96@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
