@@ -1,0 +1,107 @@
+*$py.class
+build/
+.cache
+celerybeat.pid
+celerybeat-schedule
+*.cover
+.coverage
+.coverage.*
+coverage.xml
+db.sqlite3
+db.sqlite3-journal
+develop-eggs/
+.dist
+dist/
+# Distribution / packaging
+# Django stuff:
+.dmypy.json
+dmypy.json
+docs/_build/
+# dotenv
+downloads/
+*.egg
+*.egg-info/
+.eggs/
+eggs/
+.env
+env/
+ENV/
+env.bak/
+# Environments
+# Flask stuff:
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+htmlcov/
+.hypothesis/
+.idea/
+# IDE settings
+#   install all needed dependencies.
+.installed.cfg
+# Installer logs
+instance/
+.ipynb_checkpoints
+# IPython
+ipython_config.py
+# Jupyter Notebook
+lib/
+lib64/
+# locals
+local_settings.py
+*.log
+*.manifest
+# mkdocs documentation
+*.mo
+# mypy
+.mypy_cache/
+nosetests.xml
+.nox/
+parts/
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+pip-delete-this-directory.txt
+# pipenv
+#Pipfile.lock
+pip-log.txt
+pip-wheel-metadata/
+*.pot
+profile_default/
+# PyBuilder
+__pycache__/
+*.py[cod]
+*.py,cover
+# pyenv
+# PyInstaller
+__pypackages__/
+.pyre/
+# Pyre type checker
+.pytest_cache/
+.Python
+.python-version
+.ropeproject
+# Rope project settings
+# SageMath parsed files
+*.sage.py
+.scrapy
+# Scrapy stuff:
+sdist/
+share/python-wheels/
+/site
+*.so
+*.spec
+# Sphinx documentation
+.spyderproject
+# Spyder project settings
+.spyproject
+target/
+.timestamp
+.tox/
+# Translations
+# Unit test / coverage reports
+#  Usually these files are written by a python script from a template
+var/
+.venv
+venv/
+venv.bak/
+# virtualenv
+.vscode/
+.webassets-cache
+wheels/
