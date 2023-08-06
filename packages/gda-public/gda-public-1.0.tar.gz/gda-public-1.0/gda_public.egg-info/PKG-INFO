@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gda-public
+Version: 1.0
+Summary: Several fundamental TDA tools by Geometric Data Analytics Inc. 
+Author-email: "Geometric Data Analytics, Inc." <abraham.smith@geomdata.com>
+License: GNU AGPL
+Description-Content-Type: text/markdown
+Provides-Extra: extras
+Provides-Extra: testing
+License-File: LICENSE

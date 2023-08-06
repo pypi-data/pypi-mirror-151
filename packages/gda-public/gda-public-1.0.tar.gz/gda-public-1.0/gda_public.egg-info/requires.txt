@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+
+[extras]
+matplotlib
+bokeh
+jupyter
+
+[testing]
+pytest
+pytest-cov
+pytest-html
+pytest-timeout
+pytest-xdist
