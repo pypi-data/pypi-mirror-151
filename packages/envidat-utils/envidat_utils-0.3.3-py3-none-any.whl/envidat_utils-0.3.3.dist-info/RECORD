@@ -1,0 +1,12 @@
+envidat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envidat/__version__.py,sha256=8KcCYTXH99C2-gCLuPILJvtT9YftRWJsartIx6TQ2ZY,22
+envidat/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envidat/api/v1.py,sha256=5emxJGnPnEgRcy-QBYdYVKsPjM4sR7-QEn_gxbEIFoE,2879
+envidat/s3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envidat/s3/bucket.py,sha256=Z71LxIVMfUUjNWtJOZM5byoqjsnnnx3swgImyv3oZQI,22780
+envidat/s3/exceptions.py,sha256=ywRkh5z0wrgfOFkl_A73UsIa9fYxx3r1G9bGFl5b7rM,2437
+envidat/utils.py,sha256=Wr_v7ZoXjk6t7Vd1NM1y0SodyNAfXUwlJbQgXUJxAXQ,3048
+envidat_utils-0.3.3.dist-info/WHEEL,sha256=6dj3VwBXrByyKJtG7fF3cvJMeAn2Gjr14tOXtWZMFj8,88
+envidat_utils-0.3.3.dist-info/METADATA,sha256=-qodW0UWMEgrOGqMbX2LktJhMagtcwVg9M0bixV5tqM,1004
+envidat_utils-0.3.3.dist-info/license_files/LICENCE,sha256=gWqMBxgqrz0a9KWhubfT5LJIEJ2H02KbeX8pp-YbkTI,1071
+envidat_utils-0.3.3.dist-info/RECORD,,
