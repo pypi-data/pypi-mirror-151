@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/swittch/__init__.py
+src/swittch/client.py
+src/swittch/utils.py
+src/swittch.egg-info/PKG-INFO
+src/swittch.egg-info/SOURCES.txt
+src/swittch.egg-info/dependency_links.txt
+src/swittch.egg-info/requires.txt
+src/swittch.egg-info/top_level.txt

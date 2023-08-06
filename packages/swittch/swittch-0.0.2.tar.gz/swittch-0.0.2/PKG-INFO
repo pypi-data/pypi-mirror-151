@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: swittch
+Version: 0.0.2
+Summary: Client for the Swittch business transaction platform (https://swittch.net)
+Home-page: https://github.com/Senseware/swittch-client
+License: GNU GPL v3
+Keywords: swittch,client
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Swittch
+Swittch is a business transaction platform that streamlines trade between businesses.
+More information is available at https://swittch.net .
+
+
+This is the Python client of Swittch
