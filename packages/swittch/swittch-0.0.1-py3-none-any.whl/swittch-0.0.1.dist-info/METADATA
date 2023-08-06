@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: swittch
+Version: 0.0.1
+Summary: Client for the Swittch business transaction platform (https://swittch.net)
+License: GNU GPL v3
+Keywords: swittch,client
+License-File: LICENSE
+Requires-Dist: requests
+
