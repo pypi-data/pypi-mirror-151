@@ -1,0 +1,19 @@
+Change Log
+==========
+
+V0.0.1 21/05/2022 
+-----------------
+- First release
+
+V0.0.2 21/05/2022
+-----------------
+- Bug fixes
+
+V0.0.3 21/05/2022
+-----------------
+- Added register function
+
+v0.0.4 21/05/2022
+-----------------
+- Added view account function
+- Added genPassword function
