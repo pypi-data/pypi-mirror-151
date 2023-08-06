@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyfluent-iterables
+Version: 1.0.1
+Summary: Fluent API wrapper for Python collections
+Home-page: https://github.com/mifeet/pyfluent-iterables
+License: MIT
+Keywords: wrapper,fluent,interface,functional
+Author: Jan Michelfeit
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Documentation, https://github.com/mifeet/pyfluent-iterables/blob/main/README.md
+Project-URL: Repository, https://github.com/mifeet/pyfluent-iterables
+Description-Content-Type: text/markdown
+
+# pyfluent-iterables
+Fluent API wrapper for Python collections.
+
