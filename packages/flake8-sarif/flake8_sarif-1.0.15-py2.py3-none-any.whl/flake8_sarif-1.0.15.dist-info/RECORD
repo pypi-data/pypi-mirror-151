@@ -1,0 +1,9 @@
+flake8_sarif_reporter/__init__.py,sha256=49ANwSj6GvckaXrhFCS6YOeYKtVCBOP5ym3ZYclvAIE,61
+flake8_sarif_reporter/reporters.py,sha256=xC45ubUZIqyWHaW-wbX6rS9MnTivW8bJontSefPI38I,8459
+flake8_sarif_reporter/sarifdata.py,sha256=orO-B1oy-pu01e4WHxxRzDQcIjBst0dAqKluGcuqw-c,1816
+flake8_sarif-1.0.15.dist-info/LICENSE,sha256=7C-1984vEMlfd-5n-Udo4AEMCyAyVZKsiohtkSEpGu8,1097
+flake8_sarif-1.0.15.dist-info/METADATA,sha256=iDDbAonSw1tACmI9tCCSgrPwC5CmwMfWm-8YKvZWWvw,1641
+flake8_sarif-1.0.15.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+flake8_sarif-1.0.15.dist-info/entry_points.txt,sha256=3pZFUn2SwVfVu4tudlHNHvy0_lwz_YO6qQqLkcXCZMo,70
+flake8_sarif-1.0.15.dist-info/top_level.txt,sha256=DCdIFV5DHGYVEH_X4zexwBWYb-r4za3vbCit9UmzZy8,22
+flake8_sarif-1.0.15.dist-info/RECORD,,
