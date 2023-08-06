@@ -1,0 +1,40 @@
+name: Upload to PIP
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: "Installs dependencies"
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install setuptools wheel twine python-semantic-release
+
+      - name: "Builds and uploads to PyPI"
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "action@github.com"
+          semantic-release version
+          semantic-release publish
+          python3 setup.py sdist
+          python3 -m twine upload dist/*
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
