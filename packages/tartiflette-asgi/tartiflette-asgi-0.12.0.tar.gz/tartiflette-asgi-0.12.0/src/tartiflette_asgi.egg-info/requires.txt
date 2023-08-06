@@ -1,0 +1,5 @@
+starlette<1.0,>=0.13
+tartiflette<1.5,>=1.0
+
+[:python_version < "3.8"]
+typing-extensions
