@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: costngn-cli
+Version: 0.0.17
+Summary: A CLI to interact with several cloud services providers
+Home-page: https://github.com/infrangn/costngn-cli-dev
+Author: Michael Johnson - Pedro Tibiletti
+Author-email: pedro.tibiletti@gmail.com
+License: MIT
+Keywords: costngn-cli  python package
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+Requires-Dist: typer
+Requires-Dist: toml
+Requires-Dist: boto3
+Requires-Dist: pandas
+Requires-Dist: termcolor
+Requires-Dist: hcloud
+Requires-Dist: linode-api4
+
+CLI for AWS, Digital Ocean, Hetzner and Linode cloud services administration
