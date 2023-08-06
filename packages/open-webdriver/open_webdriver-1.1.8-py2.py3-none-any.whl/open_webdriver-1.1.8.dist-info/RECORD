@@ -1,0 +1,9 @@
+open_webdriver/__init__.py,sha256=jySNLTar8oyPBz1UL8NGmbTmwuYpHlm6QI23525c9aA,169
+open_webdriver/demo_app.py,sha256=bDYpEoXWVCW_CgtJ-EAikMY0LMN8MQuy2wGWTdKZq_M,384
+open_webdriver/open_webdriver.py,sha256=69qXCOFrhbqqRIRFWXBdDbzTx9SQ8yqOYn9rPhB10lM,2610
+open_webdriver/version.py,sha256=RPnUYv4s-0Wdii9O6wXAye66uAiCdtPFs0rbipE7Kro,66
+open_webdriver-1.1.8.dist-info/LICENSE,sha256=a2JyND2dMx1tjqmGCht1NHM0ZkeSmupqoPhBvj4Xdso,1085
+open_webdriver-1.1.8.dist-info/METADATA,sha256=hDKBiZDcAm6KMAWF4TAxO6T4XSMbgyJXKM86a-ZinAc,5749
+open_webdriver-1.1.8.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+open_webdriver-1.1.8.dist-info/top_level.txt,sha256=LmxzY5MlUI_il2d52fL2WvAKqHwbQ9RR3OFJwHYDHY8,15
+open_webdriver-1.1.8.dist-info/RECORD,,
