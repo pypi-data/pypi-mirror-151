@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+ArchPy/__init__.py
+ArchPy/base.py
+ArchPy/data_transfo.py
+ArchPy/ineq.py
+ArchPy/inputs.py
+ArchPy/tpgs.py
+ArchPy/libraries/cov_facies.dll
+Geoarchpy.egg-info/PKG-INFO
+Geoarchpy.egg-info/SOURCES.txt
+Geoarchpy.egg-info/dependency_links.txt
+Geoarchpy.egg-info/requires.txt
+Geoarchpy.egg-info/top_level.txt
