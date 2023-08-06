@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+macq.egg-info/PKG-INFO
+macq.egg-info/SOURCES.txt
+macq.egg-info/dependency_links.txt
+macq.egg-info/requires.txt
+macq.egg-info/top_level.txt
