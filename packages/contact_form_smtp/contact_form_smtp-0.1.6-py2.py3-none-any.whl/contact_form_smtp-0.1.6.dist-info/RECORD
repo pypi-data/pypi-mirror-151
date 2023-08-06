@@ -1,0 +1,9 @@
+contact_form_smtp/__init__.py,sha256=QYyR97BdcBsRPLD8f-7rm_yHAlY1gKK_NGe2Zga73gc,204
+contact_form_smtp/app.py,sha256=t1di8MTIr1NFh54PfuVDZHQ24EZYjuxU3LDgyCZ5dKc,202
+contact_form_smtp/cli.py,sha256=KSReSZbv1iMXCqO_zt_pG3YxMv3scCzBtfSaKq3Oz7Q,1359
+contact_form_smtp/version.py,sha256=agByn-hcFRxQu4u7rFTlSu4viO7VkEe-xzhqzFGNHaI,127
+contact_form_smtp-0.1.6.dist-info/entry_points.txt,sha256=YulKnBWFiFK-4fWLDNQykwYP2gsAB3oDCeWHpxnqfI4,53
+contact_form_smtp-0.1.6.dist-info/LICENSE,sha256=jckHDSsX1b_CdhJDNaLRfFvZV3iproIxckmg9uTfShQ,1071
+contact_form_smtp-0.1.6.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+contact_form_smtp-0.1.6.dist-info/METADATA,sha256=eEA_xDboAKxMncqERvCQanKEKKRPNO3VHq5ecryK4xQ,1931
+contact_form_smtp-0.1.6.dist-info/RECORD,,
