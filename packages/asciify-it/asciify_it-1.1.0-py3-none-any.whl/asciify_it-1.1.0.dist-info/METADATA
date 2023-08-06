@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: asciify-it
+Version: 1.1.0
+Summary: Convert your images to awesome ASCII arts!
+Home-page: https://gitlab.com/Mathematician2000/ascii-art
+Author: AArtur & Mathematician2000
+Author-email: asciify@mail.ru
+License: MIT License
+Project-URL: Documentation, https://ascii-art.readthedocs.io/en/latest
+Keywords: ASCII,images,CLI
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: nptyping
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
+# asciify
+
+Create amazing ASCII arts on-the-fly with `asciify` Python package!
+
+## Features
+- Algorithm for image transformation into an ASCII art!
+- Python library `asciify` with command line interface (powered by `click`)
+- `Flask` server application
+- Deployed on [Heroku](https://asciify-it.herokuapp.com)
+
+## Dependencies
+- click
+- numba
+- numpy
+- Pillow
+- scipy
+- tqdm
+
+## Quick start
+To install `asciify` simply run
+
+`pip install asciify-it`
+
+Now you can use `asciify` CLI tool as follows:
+
+`$ asciify mylittlepony.png -w 45 -h 43 -o result.txt -f path/to/arial.ttf -s 48 -q`
+
+More info can be found on the [documentation](https://ascii-art.readthedocs.io/en/latest) page.
+
+## Authors
+- [AArtur](https://gitlab.com/AAArtur)
+- [Mathematician2000](https://gitlab.com/Mathematician2000)
