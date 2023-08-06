@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+jupyter_projector_proxy/__init__.py
+jupyter_projector_proxy.egg-info/PKG-INFO
+jupyter_projector_proxy.egg-info/SOURCES.txt
+jupyter_projector_proxy.egg-info/dependency_links.txt
+jupyter_projector_proxy.egg-info/entry_points.txt
+jupyter_projector_proxy.egg-info/requires.txt
+jupyter_projector_proxy.egg-info/top_level.txt
+jupyter_projector_proxy/icons/pycharm.svg

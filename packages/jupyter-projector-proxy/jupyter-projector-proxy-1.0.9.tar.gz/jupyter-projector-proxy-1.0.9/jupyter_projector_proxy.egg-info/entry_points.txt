@@ -1,0 +1,15 @@
+[jupyter_serverproxy_servers]
+clion = jupyter_projector_proxy:setup_clion
+datagrip = jupyter_projector_proxy:setup_datagrip
+goland = jupyter_projector_proxy:setup_goland
+idea = jupyter_projector_proxy:setup_intellij
+intellij-idea-community = jupyter_projector_proxy:setup_intellij_idea_community
+intellij-idea-educational = jupyter_projector_proxy:setup_intellij_idea_educational
+intellij-idea-ultimate = jupyter_projector_proxy:setup_intellij_idea_ultimate
+phpstorm = jupyter_projector_proxy:setup_phpstorm
+pycharm = jupyter_projector_proxy:setup_pycharm
+pycharm-community = jupyter_projector_proxy:setup_pycharm_community
+pycharm-educational = jupyter_projector_proxy:setup_pycharm_educational
+pycharm-professional = jupyter_projector_proxy:setup_pycharm_professional
+rubymine = jupyter_projector_proxy:setup_rubymine
+webstorm = jupyter_projector_proxy:setup_webstorm
