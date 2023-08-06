@@ -1,0 +1,2 @@
+# Gym Janggi
+Gym Janggi provides an reinforcement learning environment for Korean chess called [Janggi](https://en.wikipedia.org/wiki/Janggi). As an [OpenAI Gym](https://gym.openai.com/) environment, this package can be used for reinforcement learning algorithms, such as AlphaZero.
