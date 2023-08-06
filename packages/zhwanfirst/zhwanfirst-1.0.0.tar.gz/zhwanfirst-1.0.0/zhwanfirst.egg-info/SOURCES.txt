@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+zhwanfirst/__init__.py
+zhwanfirst/gifconverter.py
+zhwanfirst.egg-info/PKG-INFO
+zhwanfirst.egg-info/SOURCES.txt
+zhwanfirst.egg-info/dependency_links.txt
+zhwanfirst.egg-info/not-zip-safe
+zhwanfirst.egg-info/requires.txt
+zhwanfirst.egg-info/top_level.txt
