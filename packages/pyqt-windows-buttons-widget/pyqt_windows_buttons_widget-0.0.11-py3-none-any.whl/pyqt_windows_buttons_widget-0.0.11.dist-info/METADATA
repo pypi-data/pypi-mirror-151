@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pyqt-windows-buttons-widget
+Version: 0.0.11
+Summary: PyQt Windows titlebar buttons (e.g. min/max/close button) widget
+Home-page: https://github.com/yjg30737/pyqt-windows-buttons-widget.git
+Author: Jung Gyu Yoon
+Author-email: yjg30737@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt5 (>=5.8)
+Requires-Dist: python-color-getter (>=0.0.1)
+Requires-Dist: pyqt-titlebar-buttons-widget (>=0.0.1)
+
+
+# pyqt-windows-buttons-widget
+
+PyQt Windows titlebar buttons (e.g. min/max/close button) widget
+
+
+
+## Requirements
+
+* PyQt5 >= 5.8
+
+
+
+## Setup
+
+`python -m pip install pyqt-windows-buttons-widget`
+
+
+
+## Imported Package
+
+* <a href="https://github.com/yjg30737/pyqt-titlebar-buttons-widget.git">pyqt-titlebar-buttons-widget</a> - Parent widget
+
+
+
+## Usage
+
+* `WindowsButtonsWidget(base_widget: QWidget, hint=['min', 'max', 'close'])` - Constructor. The argument `base_widget` is used for matching the color of buttons with `QWidget`(including `QMenuBar`)'s base color.
+
+* `getMinimizedBtn()`, `getMaximizedBtn()`, `getCloseBtn()`.
+
+* This module is used for <a href="https://github.com/yjg30737/pyqt-custom-titlebar-window.git">pyqt-custom-titlebar-window</a>'s Windows style button. You can see the example of this module's usage on the documentation at the link above.
+
+
+
