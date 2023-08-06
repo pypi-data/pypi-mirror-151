@@ -1,0 +1,9 @@
+ssi4onnx/__init__.py,sha256=itY2kekCUtm3MQPjqpNOhOGITcTbJEy1PsdEtXZdNYw,87
+ssi4onnx/__main__.py,sha256=2RSCQ7d4lc6CwD-rlGn9UicPFg-P5du7ZD_yh-kuBEU,57
+ssi4onnx/onnx_shape_inference.py,sha256=4ln9cYxj8BxtSmJnrhv8bzpxwJ0-ot15pWmjdUIvL7Y,4233
+ssi4onnx-1.0.0.dist-info/LICENSE,sha256=5v_Kxihy8i6mzHVl349ikSREaIdsl9YeUnX1KBDLD2w,1070
+ssi4onnx-1.0.0.dist-info/METADATA,sha256=dBfCYQsWocNk2_5Hn56-_Krmz90O5rFCVWa6WMAP_g8,4035
+ssi4onnx-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ssi4onnx-1.0.0.dist-info/entry_points.txt,sha256=EOZMGqfaHVYsYs3CiW0I6kQ1rxF3qwury6iryI6kivU,44
+ssi4onnx-1.0.0.dist-info/top_level.txt,sha256=JRxckUrtiRkeVPOTIehd5EYYdLq6UFiEuqs3huuUcxs,9
+ssi4onnx-1.0.0.dist-info/RECORD,,
