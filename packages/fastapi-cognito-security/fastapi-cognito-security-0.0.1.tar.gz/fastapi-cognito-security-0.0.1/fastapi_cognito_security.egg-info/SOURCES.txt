@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+fastapi_cognito_security/__init__.py
+fastapi_cognito_security.egg-info/PKG-INFO
+fastapi_cognito_security.egg-info/SOURCES.txt
+fastapi_cognito_security.egg-info/dependency_links.txt
+fastapi_cognito_security.egg-info/requires.txt
+fastapi_cognito_security.egg-info/top_level.txt
