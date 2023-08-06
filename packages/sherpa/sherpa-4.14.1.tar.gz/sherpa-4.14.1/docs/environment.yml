@@ -1,0 +1,16 @@
+name: sherpa
+
+channels:
+  - defaults
+  - astropy
+
+dependencies:
+  - python=3.7
+  - numpy
+  - pandoc
+  - pip
+  - pip:
+    - ipykernel
+    - nbsphinx
+    - sphinx-astropy
+    - sphinx_rtd_theme>=1.0.0
