@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "pypika-tortoise"
+version = "0.1.5"
+description = "Forked from pypika and streamline just for tortoise-orm"
+authors = ["long2ice <long2ice@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/tortoise/pypika-tortoise"
+repository = "https://github.com/tortoise/pypika-tortoise.git"
+documentation = "https://github.com/tortoise/pypika-tortoise"
+keywords = ["postgresql", "Tortoise-ORM", "mysql", "sqlite", "sql"]
+packages = [
+    { include = "pypika" }
+]
+include = ["CHANGELOG.md", "LICENSE", "README.md"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+pyproject-flake8 = "*"
+isort = "*"
+black = "*"
+pytest = "*"
+pylint = "*"
+bandit = "*"
+pytest-xdist = "*"
+pytest-cov = "*"
+twine = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py36', 'py37', 'py38', 'py39']
+
+[tool.mypy]
+pretty = true
+ignore_missing_imports = true
+
+[tool.flake8]
+ignore = 'E501,W503,E203'
+max-line-length = 150
+per-file-ignores = ['pypika/__init__.py:F401', 'pypika/dialects/__init__.py:F401']
