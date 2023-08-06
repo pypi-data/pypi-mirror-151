@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: credict
+Version: 0.1.2
+Summary: Python interface for Credict smart contracts on Ethereum.
+Home-page: https://github.com/phurwicz/credict-py
+Author: Pavel
+Author-email: pavelhurwicz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1.4.0)
+Requires-Dist: tqdm (>=4.0)
+Requires-Dist: rich (>=11.0.0)
+Requires-Dist: deprecated (>=1.1.0)
+
+# credict-py
+
+Python interface for smoother interaction with the Credict Ethereum smart contract, namely encryption and watermark mechanisms.
+
+## Install
+
+`pip install credict`
+
+## Sample Usage 
+
+Please refer to [`Credict.ipynb`](Credict.ipynb) for sample code and [`local_config.py`](local_config.py) for configurations.
+
