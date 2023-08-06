@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+djforms/__init__.py
+djforms/fields.py
+djforms/widgets.py
+djforms.egg-info/PKG-INFO
+djforms.egg-info/SOURCES.txt
+djforms.egg-info/dependency_links.txt
+djforms.egg-info/requires.txt
+djforms.egg-info/top_level.txt
