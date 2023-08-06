@@ -1,0 +1,15 @@
+include phased_methylation/minimap2_example_data/MT-human.fa
+include phased_methylation/minimap2_example_data/MT-orang.fa
+include phased_methylation/minimap2_example_data/test.bam
+include phased_methylation/minimap2_example_data/test.bam.bai
+include phased_methylation/longshot_example_data/genome.fa
+include phased_methylation/longshot_example_data/genome.fa.fai
+include phased_methylation/longshot_example_data/ground_truth_variants.vcf.gz
+include phased_methylation/longshot_example_data/ground_truth_variants.vcf.gz.tbi
+include phased_methylation/longshot_example_data/out.vcf.gz
+include phased_methylation/longshot_example_data/out.vcf.gz.tbi
+include phased_methylation/longshot_example_data/pacbio_reads_30x.bam
+include phased_methylation/longshot_example_data/pacbio_reads_30x.bam.bai
+include phased_methylation/ecoli_example_data/draft.fa
+include phased_methylation/ecoli_example_data/reads.fasta
+include phased_methylation/ecoli_example_data/fast5_files/*

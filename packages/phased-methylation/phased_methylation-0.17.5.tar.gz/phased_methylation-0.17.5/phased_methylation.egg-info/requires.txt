@@ -1,0 +1,11 @@
+cython
+pandas
+pysam
+pybedtools
+pyfaidx
+megalodon
+GPUtil
+nvsmi
+psutil
+tabulate
+tempfifo
