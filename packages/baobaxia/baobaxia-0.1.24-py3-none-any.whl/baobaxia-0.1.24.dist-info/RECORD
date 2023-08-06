@@ -1,0 +1,15 @@
+baobaxia/__init__.py,sha256=DzUCuyLR0DySsp1Zpv0unZ5m_Xa-dYEghpv4D5bud88,259
+baobaxia/acervo.py,sha256=7hWSN_9ToFmXgWOSDmYIJHZx_kEmNB7tK-Y-GkaGFpI,20119
+baobaxia/client.py,sha256=c5JARaXPDtHETVyhXJK0xiPGVIrxKnIv9MaHgKcwV_U,11318
+baobaxia/install.py,sha256=BirKUr5g9M8B59CLwqZymX6mY0M4wQNpLXsv9gkCduo,7156
+baobaxia/rest.py,sha256=1uebFjIo6BaU4bqx-ABZPMpHwb9Z7uKT3P6jQaK9xLw,27613
+baobaxia/root.py,sha256=y4rLafo7MacAkl92d-aTrsxtaxBJduQ4QVzY3hI4aQ8,32845
+baobaxia/saberes.py,sha256=ZRCZ6wMCKoEhf6YuW7VqTEs5uSWwhfRj1PFOsppxeCY,12788
+baobaxia/sankofa.py,sha256=NY2U4u7Gwh0qXL6M6dlweYPbjZ1eWBq2mtNZqinjOe0,8220
+baobaxia/util.py,sha256=g2KaqkqVCdegBUlOOvNDhLHXwmCvQgkADuySSUM6Uzs,239
+baobaxia-0.1.24.dist-info/LICENSE,sha256=F7VC-9J9EElCIgqBPlONVnYLg47T5wCQ3a8H_dcTlGQ,35059
+baobaxia-0.1.24.dist-info/METADATA,sha256=l3rvUV4AU-Ynm4TSbpKsZfjF3fpohJ8joHQFM38Gqqk,5769
+baobaxia-0.1.24.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+baobaxia-0.1.24.dist-info/entry_points.txt,sha256=P73sL7kK6OJm8MmNCuc4-EXPFvTX4od2bMR1F4kLorA,60
+baobaxia-0.1.24.dist-info/top_level.txt,sha256=x48ofppQXS43A-dooAcjHSgPym9rqOYUFXT2mwdCQfk,9
+baobaxia-0.1.24.dist-info/RECORD,,
