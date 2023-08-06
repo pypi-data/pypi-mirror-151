@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/napari_IP_workflow.egg-info/PKG-INFO
+src/napari_IP_workflow.egg-info/SOURCES.txt
+src/napari_IP_workflow.egg-info/dependency_links.txt
+src/napari_IP_workflow.egg-info/entry_points.txt
+src/napari_IP_workflow.egg-info/requires.txt
+src/napari_IP_workflow.egg-info/top_level.txt
+src/napari_ip_workflow/__init__.py
+src/napari_ip_workflow/ipfunctions.py
+src/napari_ip_workflow/napari.yaml
+src/napari_ip_workflow/segwidget.py
+src/napari_ip_workflow/_tests/__init__.py
