@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: django-mentor-components
+Version: 0.0.9
+Summary: components collection for mentor_ds
+Home-page: https://www.demiansoft.com
+Author: hyungjin kim
+Author-email: hj3415@gmail.com
+Project-URL: Bug Tracker, https://pypi.org/project/util-demian/
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+django-mentor_components
+==========
+
+components collection for mentor_ds
+
+Supported components
+------------
+# 필수 컴포넌트
+'popup',
+'base',
+'hero',
+
+# 선택 공통 컴포넌트
+'counts',
+'about',
+'whyus',
+'testimonials',
+'team',
+'faq',
+'contact',
+
+# 선택 유니크 컴포넌트
+'courses',
+'features',
+'events',
+'pricing',
+
+

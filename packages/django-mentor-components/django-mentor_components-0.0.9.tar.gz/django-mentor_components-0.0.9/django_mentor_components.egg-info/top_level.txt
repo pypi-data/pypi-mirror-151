@@ -1,0 +1,6 @@
+courses
+events
+features
+mentor_ds
+mytester
+pricing
