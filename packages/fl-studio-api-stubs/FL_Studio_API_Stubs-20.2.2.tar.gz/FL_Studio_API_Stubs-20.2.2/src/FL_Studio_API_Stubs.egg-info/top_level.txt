@@ -1,0 +1,14 @@
+arrangement
+channels
+device
+fl_context
+general
+launchMapPages
+midi
+mixer
+patterns
+playlist
+plugins
+transport
+ui
+utils
