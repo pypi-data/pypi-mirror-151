@@ -1,0 +1,13 @@
+aiohttp_serve/__init__.py,sha256=0RrqfH4B5yjpCewuM4gyv8tEYu1VyJZG9WcO8kHz98E,70
+aiohttp_serve/_config.py,sha256=synTCjI4fchbOpGeaKoSt2-Re8eGaAj5K01Fjm9bak4,4038
+aiohttp_serve/_logging.py,sha256=3XbPfiNo90M7gL5MbTGOiNH2HyPXFLSqvzZyLBgZm7w,1458
+aiohttp_serve/_main.py,sha256=tzFl6eDCv7NLOVRx1Usufk1KVjlH6l0YUnsdI6X9hHw,835
+aiohttp_serve/_socket.py,sha256=kscaf0k-RXIMk4Mccn9kohrm4eaFTsJQr2vnx3jAkPI,2277
+aiohttp_serve/_supervisor.py,sha256=-VQeRkM79Qe07QPKElSKQpd33QPXNxP9s-EKuaKA30U,1750
+aiohttp_serve/_utils.py,sha256=SdQ6sc2dEq5-PDCV1X772f0kTJ5Ca_GBMvIla9a7vOM,1147
+aiohttp_serve/_worker.py,sha256=E4U_xR8kVvrjydSz5I58sOWR8qtT-Z8Ns8Npn7slj5Y,4950
+aiohttp_serve-0.1.0.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+aiohttp_serve-0.1.0.dist-info/METADATA,sha256=tZUU_f1Tm75G4g4_K1wLfRuknmsoeyR434W7YQ5F5Jk,2176
+aiohttp_serve-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aiohttp_serve-0.1.0.dist-info/top_level.txt,sha256=MKq_GgcYwR9mMzzhDipt1Wv6ze6bL2RZGbW97Xtfplk,14
+aiohttp_serve-0.1.0.dist-info/RECORD,,
