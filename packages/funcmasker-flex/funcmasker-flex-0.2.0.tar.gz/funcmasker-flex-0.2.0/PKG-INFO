@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: funcmasker-flex
+Version: 0.2.0
+Summary: BIDS App for U-net brain masking of fetal bold MRI
+License: MIT
+Author: Ali Khan
+Author-email: alik@robarts.ca
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pygments (>=2.10.0,<3.0.0)
+Requires-Dist: batchgenerators (==0.21)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: nnunet-inference-on-cpu-and-gpu (==1.6.6)
+Requires-Dist: pygraphviz (>=1.7,<2.0)
+Requires-Dist: snakebids (>=0.4.0)
+Requires-Dist: snakemake (>=6.12.3,<7.0.0)
