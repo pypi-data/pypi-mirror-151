@@ -1,0 +1,11 @@
+negroni/__init__.py,sha256=N0nmFSEz34TYjPpzUky1Emdy_C6M4HvRhsD76_rNuRs,4030
+negroni/classifiers/NEGRONILearner.py,sha256=ptRv1e16NY2NvuOIJ3g6cD5BP-IRBdbS6seFE-aA-qQ,1512
+negroni/classifiers/NEGRONIWrapper.py,sha256=-KUtMG_m-4Gcd_r3RuWIg0AsvJbAP0pazKsIElPxS_4,715
+negroni/classifiers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+negroni-0.2.data/scripts/negroni,sha256=7pUvuL0FXM5600rCsoAIwjSCQ_f-83-ddH4YfCdo3O8,57
+negroni-0.2.data/scripts/negroni-script,sha256=l7fYdg1LbFnlVkDoJvWfNUrZJqBpk4vqN_vn_KSfFo8,50
+negroni-0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+negroni-0.2.dist-info/METADATA,sha256=1c6kw9Y0Uj8GAcdplr6xg0YjHcHAvhnWM_733XBTmk8,989
+negroni-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+negroni-0.2.dist-info/top_level.txt,sha256=AKnO9t4d7iF123IGbzRgzyBuwkvsRO0h1-WbbyJ_o3U,8
+negroni-0.2.dist-info/RECORD,,
