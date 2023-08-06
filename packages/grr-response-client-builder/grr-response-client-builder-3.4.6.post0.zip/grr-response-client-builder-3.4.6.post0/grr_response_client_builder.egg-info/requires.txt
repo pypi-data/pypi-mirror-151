@@ -1,0 +1,6 @@
+distro==1.5.0
+grr-response-client==3.4.6post0
+grr-response-core==3.4.6post0
+PyInstaller==3.6
+fleetspeak-client-bin==0.1.11
+olefile==0.46
