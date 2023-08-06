@@ -1,0 +1,315 @@
+import os
+import pathlib
+import configparser
+import urllib
+import requests
+from requests.exceptions import RequestException
+import rich
+from rich.console import Console
+from loci_spotbugs import __version__, PROG_NAME
+from xml.parsers.expat import ExpatError
+import defusedxml.minidom as mdxml
+
+LOCI_CONFIG_DIR = "loci"
+LOCI_CONFIG_FILENAME = "loci-config.ini"
+LOCI_PROJECT_FILENAME = ".loci-project.ini"
+
+console = Console()
+
+
+class LociError(Exception):
+    pass
+
+
+# This function from https://github.com/tensorflow/tensorboard/blob/master/tensorboard/uploader/util.py
+# Apache 2 licensed
+def get_user_config_directory():
+    """Returns a platform-specific root directory for user config settings."""
+    # On Windows, prefer %LOCALAPPDATA%, then %APPDATA%, since we can expect the
+    # AppData directories to be ACLed to be visible only to the user and admin
+    # users (https://stackoverflow.com/a/7617601/1179226). If neither is set,
+    # return None instead of falling back to something that may be world-readable.
+    if os.name == "nt":
+        appdata = os.getenv("LOCALAPPDATA")
+        if appdata:
+            return appdata
+        appdata = os.getenv("APPDATA")
+        if appdata:
+            return appdata
+        return None
+    # On non-windows, use XDG_CONFIG_HOME if set, else default to ~/.config.
+    xdg_config_home = os.getenv("XDG_CONFIG_HOME")
+    if xdg_config_home:
+        return xdg_config_home
+    return os.path.join(os.path.expanduser("~"), ".config")
+
+
+def get_loci_dir() -> str:
+    loci_dir = pathlib.Path(get_user_config_directory(), LOCI_CONFIG_DIR)
+    # Create the directory if it doesn't exist yet.
+    loci_dir.mkdir(parents=True, exist_ok=True)
+    return str(loci_dir)
+
+
+def get_loci_config_location() -> str:
+    return str(pathlib.Path(get_loci_dir(), LOCI_CONFIG_FILENAME))
+
+
+def get_loci_config():
+    try:
+        config = configparser.ConfigParser()
+        config.sections()
+        config.read(get_loci_config_location())
+        return config
+    except configparser.Error:
+        print_error("Unable to read config file at " + get_loci_config_location())
+        raise LociError
+
+
+def is_loci_setup() -> bool:
+    try:
+        config = get_loci_config()
+        if config["default"]["api_key"] is not None and config["default"]["loci_server"] is not None:
+            return True
+        return False
+    except LociError:
+        return False
+    except KeyError:
+        return False
+
+
+def write_loci_config_value(key, value):
+    try:
+        config = get_loci_config()
+    except LociError:
+        pass
+
+    if "default" not in config:
+        config["default"] = {}
+    config["default"][key] = value
+
+    with open(get_loci_config_location(), "w") as configfile:
+        config.write(configfile)
+
+
+def get_loci_config_value(key):
+    try:
+        config = get_loci_config()
+        if "default" not in config:
+            return None
+        if key not in config["default"]:
+            return None
+        return config["default"][key]
+    except LociError:
+        return None
+
+
+def loci_api_req(api_url, method="GET", data={}, params={}, show_loading=True):
+    url = urllib.parse.urljoin(get_loci_config_value("loci_server"), api_url)
+    headers = {"X-API-KEY": get_loci_config_value("api_key")}
+
+    try:
+        if show_loading:
+            with working():
+                r = requests.request(method, url, headers=headers, timeout=5, json=data, params=params)
+        else:
+            r = requests.request(method, url, headers=headers, timeout=5, json=data, params=params)
+
+        if r.ok:
+            if len(r.text) == 0:
+                # Handles cases where there's a 204 or something with non content, but success.
+                return {}
+            res = r.json()
+            return res
+        elif r.status_code == 400:
+            # This is similar to a 422, but we generate this, not FastAPI.
+            print_error("The input given was incorrect, please check all your parameters.", fatal=False)
+            print_error("    Details: [bold]%s[/bold]" % r.json()["detail"])
+        elif r.status_code == 401:
+            print_error("Your credentials are not correct, please check your API key configuration.", fatal=False)
+            print_error("    Details: [bold]%s[/bold]" % r.json()["detail"])
+            return None
+        elif r.status_code == 403:
+            print_error("You do not appear to have permissions to perform that action.", fatal=False)
+            print_error("    Details: [bold]%s[/bold]" % r.json()["detail"])
+            return None
+        elif r.status_code == 404:
+            print_error("Not found.", fatal=False)
+            print_error("    Details: [bold]%s[/bold]" % r.json()["detail"])
+            return None
+        elif r.status_code == 422:
+            print_error("The input given was incorrect, please check all your parameters.")
+            # The reason we don't give details here is that a 422 is normally automatically generated by the server,
+            # not something we can control and to which we can add details.
+            return None
+        else:
+            print_error("The server has returned an unknown error. Please see the server logs for more information.")
+            return None
+    except RequestException:
+        print_error("The Loci server did not respond. Is the URL correct and the server at [bold]%s[/bold] running?"
+                    % get_loci_config_value("loci_server"))
+        return None
+
+
+def _print_line(header, msg):
+    rich.print(header, msg)
+
+
+def print_info(msg):
+    _print_line("[[bold blue]INFO[/bold blue]]", msg)
+
+
+def print_success(msg):
+    _print_line("[[bold green]SUCCESS[/bold green]]", msg)
+
+
+def print_warning(msg):
+    _print_line("[[bold yellow]WARN[/bold yellow]]", msg)
+
+
+def print_error(msg, fatal=True):
+    _print_line("[[bold red]ERROR[/bold red]]", msg)
+
+    if fatal:
+        quit(-1)
+
+
+def print_version():
+    rich.print("[bold]%s[/bold] v%s" % (PROG_NAME, __version__))
+
+
+def working():
+    return console.status("Working...")
+
+
+def get_project_id_from_config_in_dir(fq_directory):
+    config = configparser.ConfigParser()
+    config.sections()
+
+    current_dir = fq_directory
+    last_dir = ""
+
+    while True:
+        try:
+            config.read(pathlib.Path(current_dir, LOCI_PROJECT_FILENAME))
+            return int(config["default"]["project_id"]), config["default"]["project_name"]
+        except KeyError:
+            if current_dir == pathlib.Path.home() or current_dir == last_dir:
+                return None, None
+            last_dir = current_dir
+            current_dir = os.path.dirname(current_dir)
+
+
+def calculate_artifact_from_fq_filename(fq_file_path, src_root_dir="_src"):
+    # Next, we need to figure out if we can autodetect the full artifact filename (usually by looking
+    # for the source root directory).
+    tmp_srd = "/" + src_root_dir + "/"
+    if tmp_srd in fq_file_path:
+        # Easy mode, slice away the source root dir and everything before it.
+        idx = fq_file_path.index(tmp_srd)
+        return fq_file_path[idx+len(tmp_srd):]
+
+
+class Bug():
+    def __init__(self,
+                 bug_type: str,
+                 severity_rank: int,
+                 src_filename: str,
+                 src_line: int,
+                 sink_filename: str,
+                 sink_line: int):
+        self.bug_type = bug_type
+        self.severity_rank = severity_rank
+        self.src_filename = src_filename
+        self.src_line = src_line
+        self.sink_filename = sink_filename
+        self.sink_line = sink_line
+
+    def get_src_artifact(self):
+        return self.src_filename + ":" + self.src_line
+
+    def get_sink_artifact(self):
+        return self.sink_filename + ":" + self.sink_line
+
+    def __str__(self):
+        tmp_dict = {}
+        tmp_dict["bug_type"] = self.bug_type
+        tmp_dict["severity_rank"] = self.severity_rank
+        tmp_dict["src_filename"] = self.src_filename
+        tmp_dict["src_line"] = self.src_line
+        tmp_dict["sink_filename"] = self.sink_filename
+        tmp_dict["sink_line"] = self.sink_line
+
+        return str(tmp_dict)
+
+
+def get_text(nodelist):
+    rc = []
+    for node in nodelist:
+        if node.nodeType == node.TEXT_NODE:
+            rc.append(node.data)
+    return ''.join(rc)
+
+
+def open_results_file_and_get_results(input_filename):
+    full_results_list = []
+
+    print_info("Opening SpotBugs XML Results file...")
+    try:
+        with open(input_filename) as fd:
+            cm_dom = mdxml.parse(fd)
+    except FileNotFoundError:
+        print_error(f"Failed to open the file '{input_filename}'. Please check to make sure it exists.")
+        quit(-1)
+    except ExpatError:
+        print_error(f"Failed to parse the file '{input_filename}'. It does not appear to be valid XML.")
+        quit(-1)
+    if cm_dom.firstChild.nodeName != "BugCollection":
+        print_error(f"Failed to parse the file '{input_filename}'. It does not appear to be a valid "
+                    "SpotBugs results file.")
+        quit(-1)
+    if cm_dom.firstChild.getAttribute("version") != "4.5.3":
+        print_warning(f"Detected SpotBugs file version '{cm_dom.firstChild.getAttribute('version')}'. This importer "
+                      "was built against v4.5.3. Open an issue if any problems arise.")
+
+    print_success("SpotBugs file loaded.")
+    print_info("Loading results into memory...")
+
+    # Everything that follows is based on the state of SpotBugs files as of May 2022.
+    bugs_instance_list = cm_dom.getElementsByTagName("BugInstance")
+
+    for bug in bugs_instance_list:
+        if bug.getAttribute("category") != "SECURITY":
+            # Not a security bug.
+            continue
+        vuln_type = bug.getAttribute('type')
+        severity_rank = int(bug.getAttribute('rank'))
+
+        src_sl_element = bug.getElementsByTagName("SourceLine")[0]
+        src_filename = src_sl_element.getAttribute("sourcepath")
+        src_line = src_sl_element.getAttribute("start")
+
+        sink_sl_element = bug.getElementsByTagName("Method")[0].getElementsByTagName("SourceLine")[0]
+        sink_filename = sink_sl_element.getAttribute("sourcepath")
+        sink_line = sink_sl_element.getAttribute("start")
+
+        bug = Bug(vuln_type, severity_rank, src_filename, src_line, sink_filename, sink_line)
+
+        full_results_list.append(bug)
+
+    print_success("All results loaded into memory.")
+    return full_results_list
+
+
+def open_results_file_and_get_basepath(input_filename):
+    # Only run this AFTER the function open_results_file_and_get_results
+    try:
+        with open(input_filename) as fd:
+            cm_dom = mdxml.parse(fd)
+    except FileNotFoundError:
+        print_error(f"Failed to open the file '{input_filename}'. Please check to make sure it exists.")
+        quit(-1)
+
+    basepath = get_text(cm_dom.firstChild.getElementsByTagName("Project")[0]
+                        .getElementsByTagName("SrcDir")[0].childNodes)
+    return basepath
