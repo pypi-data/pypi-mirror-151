@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+AlgebraicExpressionParser/__init__.py
+AlgebraicExpressionParser/exceptions/Exceptions.py
+AlgebraicExpressionParser/exceptions/__init__.py
+AlgebraicExpressionParser/expression/Expression.py
+AlgebraicExpressionParser/expression/__init__.py
+Algebraic_Expression_Parser.egg-info/PKG-INFO
+Algebraic_Expression_Parser.egg-info/SOURCES.txt
+Algebraic_Expression_Parser.egg-info/dependency_links.txt
+Algebraic_Expression_Parser.egg-info/requires.txt
+Algebraic_Expression_Parser.egg-info/top_level.txt
