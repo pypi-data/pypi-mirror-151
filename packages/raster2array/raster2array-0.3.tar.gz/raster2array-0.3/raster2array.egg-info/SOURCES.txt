@@ -1,0 +1,9 @@
+setup.py
+raster2array/__init__.py
+raster2array/raster2array.py
+raster2array.egg-info/PKG-INFO
+raster2array.egg-info/SOURCES.txt
+raster2array.egg-info/dependency_links.txt
+raster2array.egg-info/not-zip-safe
+raster2array.egg-info/requires.txt
+raster2array.egg-info/top_level.txt
