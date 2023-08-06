@@ -1,0 +1,16 @@
+aiohttp[speedups]
+beautifulsoup4
+ruamel.yaml
+requests
+cloudscraper
+webdriver-manager
+selenium
+price-parser
+
+[dev]
+black
+isort
+
+[test]
+pytest
+pytest-cov
