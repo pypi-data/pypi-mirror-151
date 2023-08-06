@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: grmrcnn
+Version: 0.0.11
+Summary: This is for object detection model by combining Gradcam++ with MaskRCNN
+Home-page: https://github.com/xalphonseinbaraj/grmrcnn.git
+Author: AlphonseInbarajXavier
+Author-email: xalphonse@gmail.com
+License: MIT license
+Keywords: gradcam++ with mask rcnn
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+
+This is for object detection model by combining Gradcam++ with MaskRCNN
+
+
