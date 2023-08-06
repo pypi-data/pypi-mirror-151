@@ -1,0 +1,10 @@
+moviepy
+pydub
+pedalboard
+yt_dlp
+pillow
+soundfile
+requests
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
