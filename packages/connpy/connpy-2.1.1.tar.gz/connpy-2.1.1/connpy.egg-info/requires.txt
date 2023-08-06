@@ -1,0 +1,6 @@
+inquirer
+pexpect
+pycryptodome
+
+[fuzzysearch]
+pyfzf
