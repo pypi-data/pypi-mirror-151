@@ -1,0 +1,209 @@
+@page {
+    size: {{ config.size }};
+    margin: 1.5cm .5cm .5cm .5cm;
+    @top-right {
+        background: {{ config.header_color }};
+        color: {{ config.page_number_color }};
+        content: counter(page);
+        font-size: 15pt;
+        height: 1cm;
+        text-align: center;
+        width: 1cm;
+    }
+
+    @top-center {
+        background: {{ config.header_color }};
+        content: '';
+        display: block;
+        height: .05cm;
+        width: 100%;
+    }
+
+    @top-left {
+        content: string(heading);
+        font-size: 15pt;
+        height: 1cm;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+@page :blank {
+    @top-left {
+        background: none;
+        content: ''
+    }
+
+    @top-center {
+        content: none
+    }
+
+    @top-right {
+        content: none
+    }
+}
+
+@page :first {
+    background: url({{ config.asset_dir }}/img/cover_background.svg) no-repeat center;
+    background-size: cover;
+    margin: 0;
+}
+
+@page cover {
+  background-size: cover;
+  margin: 0;
+  background-color: {{ config.color }};
+}
+
+@page narrow {
+    margin: 1.5cm 2cm .5cm 2cm;
+}
+
+html {
+    color: #393939;
+    font-family: Fira Sans;
+    font-size: 11pt;
+    font-weight: 500;
+    /* line-height: 1.5; */
+}
+
+h2, h3, h4 {
+    color: black;
+    font-weight: 400;
+}
+
+h2 {
+    break-before: always;
+    font-size: 20pt;
+    font-weight: bold;
+    string-set: heading content();
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+article {
+    margin: 0;
+}
+
+.mid {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#cover {
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    height: 297mm;
+}
+
+
+#contact section p {
+    text-align: center;
+}
+
+.columns section {
+    columns: 2;
+    column-gap: 1cm;
+}
+
+.columns section p {
+    text-align: justify;
+}
+
+.mtable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mtable td{
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 3px;
+}
+
+#itable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.f40 {
+    font-size: 40pt;
+}
+.f36 {
+    font-size: 36pt;
+}
+.f19 {
+    font-size: 19pt;
+}
+.f18 {
+    font-size: 18pt;
+}
+.f16 {
+    font-size: 16pt;
+}
+.f14 {
+    font-size: 14pt;
+}
+.f12 {
+    font-size: 12pt;
+}
+.f8 {
+    font-size: 8pt;
+}
+
+.nobreak {
+    page-break-inside: avoid;
+}
+
+.meeting p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.list h3 {
+    border-bottom: .05cm solid {{ config.color }};
+}
+
+#readings {
+    page: narrow;
+}
+#index th {
+    text-align: center;
+}
+#index tr:nth-child(even) {
+    background: #eee
+}
+#index tr:nth-child(odd) {
+    background: #fff
+}
+
+.ntable {
+    width: 100%;
+}
+
+.ntable td {
+    border-bottom: 1px solid black;
+}
+
+.ziplist {
+  text-align: center;
+  width: 100%;
+}
+
+#backcover {
+  text-align: center;
+  align-content: space-between;
+  page: cover;
+}
+
+#backcover div {
+  margin-left: 2cm;
+  margin-right: 2cm;
+}

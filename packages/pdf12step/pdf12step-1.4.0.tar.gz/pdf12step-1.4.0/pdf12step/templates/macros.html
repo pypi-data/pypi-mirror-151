@@ -1,0 +1,25 @@
+{% macro title(meeting) %}
+{{ link(meeting.url, meeting.name, meeting.id_display) }}
+{%- endmacro %}
+
+{% macro location(meeting) %}
+{{ link(meeting.location_url, meeting.location) }}
+{%- endmacro %}
+
+{% macro zoom_link(meeting, show_id=False) %}
+{% if show_id %}{% set text = meeting.conference_id_formatted %}{% else %}{% set text = 'Join on Zoom' %}{% endif %}
+{% if meeting.conference_url %}{{ link(meeting.conference_url, text) }}{% endif %}
+{%- endmacro %}
+
+{% macro phone_link(meeting) %}
+{% if meeting.conference_phone %}{{ link('tel:' + meeting.conference_phone, 'Join on Phone') }}{% endif %}
+{%- endmacro %}
+
+{% macro address_link(meeting) %}
+{{ link('https://www.google.com/maps/search/?api=1&query=' + meeting.latlon, meeting.address_display) }}
+{%- endmacro %}
+
+{%- macro codes(meeting, sep=' ') %}
+{%- set result = codify(meeting.types)|join(sep) -%}
+{%- if result %}{{ result }}{% endif -%}
+{%- endmacro -%}

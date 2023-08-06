@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+{% import 'macros.html' as macros with context %}
+
+
+{% block body %}
+<div class="columns">
+
+  <section class="cover">
+    <h1>{{ config.author }}</h1>
+    <p>{{ config.address }}<br /><b>{{ now.strftime('%B %Y') }} Directory</b></p>
+    <p><i>Last updated: {{ now.strftime('%m/%d/%Y') }}</i></p>
+
+    <a href="{{ config.qrcode_url }}"><img src="{{ qrcode }}" /></a>
+
+    <p class="contact">
+      {{ config.email }}<br />
+      {{ config.phone }}
+    </p>
+    <hr />
+    <p class="codes">
+      {% for code, name in filtered_codes %}
+      <b>{{ code }}</b>={{ name }},
+      {% endfor %}
+    </p>
+  </section>
+  {% for name1, group1 in meetings.by_value('day', sort=True) %}
+
+  {% if config.group1_header %}
+  <div class="group1header">
+    <h4>{{ DAYS[name1|int] }}</h4>
+  </div>
+  {% endif %}
+  <section>
+    <table>
+      {% for time, meets in group1.by_value('time').items()|sort %}
+      <tr class="meetrow">
+        <td class="timecol">{{ meets[0].time_display }} {{ meets[0].day_display[:2] }}</td>
+        <td class="meetings">
+          {% for meet in meets %}
+          <div class="nobreak">
+            <span class="meetname">{{ macros.title(meet) }}</span>
+            <span class="meettypes">({{ macros.codes(meet, ', ') }})</span><br>
+            {% if meet.notes %}<span class="notes">{{ meet.notes_list|join('|') }}</span><br />{% endif %}
+            <span class="location">{% if meet.location %}{{ macros.location(meet) }}</span><br />{% endif %}
+            <span class="address">{{ macros.address_link(meet) }}</span>
+          </div>
+          {% if not loop.last %}<hr/>{% endif %}
+          {% endfor %}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </section>
+  {% endfor %}
+  <section class="ntable nobreak">
+    <h4>Notes</h4>
+    <table>
+      {% for i in range(25) %}
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </section>
+  <section>
+        <img src="alcoholics-anonymous-logo2.png"/>
+    </section>
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+<article id="cover" class="mid">
+<div>
+  <p>
+    <span class="f36 b" style="color: white">
+      {{ config.author.split()|join('<br/>')|safe }}
+      <span class="f18">of</span> <br />
+      Alcoholics <br />Anonymous
+    </span>
+  </p>
+  <br /><br />
+  <br /><br />
+  <br /><br />
+  <p style="text-align: center;">
+    <span class="f40 b">{{ now.strftime('%B %Y') }}</span><br />
+    <span class="f36 b">Directory</span><br>
+    <span class="f19 b">Last updated: {{ now.strftime('%d/%m/%Y') }}</span>
+  </p>
+
+  <table class="f18">
+    <tr>
+      <td>
+        <a href="{{ config.qrcode_url }}"><img src="{{ qrcode }}" /></a>
+      </td>
+      <td>
+        Scan this QR
+        code to go directly to<br/>
+        {{ config.qrcode_url }}<br/>
+        for the most up-to-date
+        meeting list.
+      </td>
+    </tr>
+  </table>
+
+  <p style="text-align: center; width: 100%" class="f14">
+    Telephone: {{ config.phone }}<br />
+    {% if config.fax %}Fax: {{ config.fax }}<br />{% endif %}
+    Email: {{ config.email }}<br />
+    <b>{{ config.website }}</b><br />
+    <b>This book may not be used as a mailing list.</b>
+    <p class="f8">
+      <br/>
+  </p>
+
+</div>
+</article>

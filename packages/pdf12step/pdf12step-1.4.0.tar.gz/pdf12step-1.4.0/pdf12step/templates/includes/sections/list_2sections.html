@@ -1,0 +1,32 @@
+{% for name1, group1 in meetings.by_value(config.section_group1).items() %}
+<article class="list">
+    <h2>{{ name1 }}</h2>
+    {% for name2, group2 in group1.by_value(config.section_group2, sort=True) %}
+    {% if config.section_group2 == 'day' %}
+      {% set name2 = DAYS[name2] %}
+    {% endif %}
+    {% if config.section_group1 == 'region_display' %}
+      {% set rkey = name1 %}
+    {% else %}
+      {% set rkey = name2 %}
+    {% endif %}
+
+        {% set zips = zipcodes_by_region[rkey] %}
+        {% if not zips %}
+            {% set zips = group2.zipcodes %}
+        {% endif %}
+        {% set zips = zips|join(', ') %}
+        <h3>{{ name1 }} - {{ name2 }} {% if zips|length < 40 %}<span style="float: right;">{{ zips }}</span>{% endif %}</h3>
+            <article class="meeting">
+              {% if zips|length > 40 %}<p class="ziplist">{{ zips }}</p>{% endif %}
+            <table class="mtable">
+            {% for meeting in group2.sort('time') %}
+                {% include 'includes/info.html' %}
+            {% endfor %}
+            </table>
+            </article>
+            <br/>
+
+    {% endfor %}
+</article>
+{% endfor %}

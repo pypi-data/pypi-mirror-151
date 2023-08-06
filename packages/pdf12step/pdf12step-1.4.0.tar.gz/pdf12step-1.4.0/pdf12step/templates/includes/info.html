@@ -1,0 +1,43 @@
+{% import 'macros.html' as macros with context %}
+<tr class="f12 nobreak">
+    <td style="width: 8ch;">{{ meeting.time_display }}</td>
+    <td style="width: 40%;">
+        {% block meeting_title %}<b>{{ macros.title(meeting) }}</b>{% endblock %}
+        {% set codes = macros.codes(meeting) %}
+        {% block meeting_codes %}
+            {% if codes %}
+                <br/>{{ codes }}
+            {% endif %}
+            {% if meeting.location %}
+                <br/>{{ macros.location(meeting) }}
+            {% endif %}
+        {% endblock %}
+    </td>
+    <td style="width: 100%;">
+        {% if meeting.is_conference %}
+            {% if config.show_links %}
+                {% if meeting.conference_url %}
+                    {% block zoom_link %}{{ macros.zoom_link(meeting) }}{% endblock %}
+                {% endif %}
+                {% if meeting.conference_phone %}
+                    {% if meeting.conference_url and meeting.conference_phone %}|{% endif %}
+                    {% block phone_link %}{{ macros.phone_link(meeting) }}{% endblock %}
+                {% endif %}
+            {% endif %}
+            {% if meeting.conference_notes_display %}
+                {% if meeting.conference_url or meeting.conference_phone %}<br/>{% endif %}
+                {{ meeting.conference_notes_display }}
+            {% endif %}
+        {% endif %}
+        {% if meeting.notes %}
+            {% if meeting.is_conference %}<br/>{% endif %}{{ meeting.notes_list|join('|') }}
+        {% endif %}
+        {% if meeting.zipcode %}
+            {% block meeting_address %}
+            <br/>
+            {{ macros.address_link(meeting) }}
+            {% endblock %}
+        {% endif %}
+
+    </td>
+</tr>

@@ -1,0 +1,12 @@
+{% for x in range(config.notes_pages) %}
+<article id="notes-{{ x }}" class="f14">
+<section>
+<h2>Notes</h2>
+<table class="ntable">
+    {% for i in range(32) %}
+    <tr><td>&nbsp;</td></tr>
+    {% endfor %}
+</table>
+</section>
+</article>
+{% endfor %}

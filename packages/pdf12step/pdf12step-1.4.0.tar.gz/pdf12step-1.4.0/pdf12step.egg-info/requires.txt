@@ -1,0 +1,7 @@
+requests
+weasyprint
+pyyaml
+Flask
+Flask-WeasyPrint
+qrcode
+click
