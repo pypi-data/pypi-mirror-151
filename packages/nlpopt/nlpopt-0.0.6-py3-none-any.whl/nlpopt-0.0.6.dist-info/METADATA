@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nlpopt
+Version: 0.0.6
+Summary: A numerical package for optimization
+Home-page: UNKNOWN
+Author: Johannes P. Maree
+Author-email: phillip.maree@sintef.no
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+A numerical package for formulating and solving optimal control problems
+
