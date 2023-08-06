@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: schoolware
+Version: 0.0.2
+Summary: A SchoolWare Wrapper writen in Python
+Home-page: UNKNOWN
+Author: Bjarne Verschorre
+Author-email: bjarne.verschorre@protonmail.com
+License: UNKNOWN
+Project-URL: Tracker, https://github.com/BjarneVerschorre/schoolware.py/issues
+Keywords: python,schoolware,school,wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+
+# SchoolWare.py
+
+An API wrapper for the SchoolWareAPI made in Python.
+
+
+
+
+![Logo](https://www.wisa.be/webouders/images/schoolwareLogo.png)
+
+## Installation
+
+Clone the repository and install the requirements
+
+```bash
+  git clone https://github.com/bjarneverschorre/schoolware.py
+  cd schoolware.py
+  pip3 install -r requirements.txt
+```
+
+## Usage/Examples
+
+```py
+import json
+from SchoolWare import SchoolWare
+
+SW = SchoolWare("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX") # Your SchoolWare Token
+
+agenda = SW.get_agenda()
+print(json.dumps(agenda, indent=2))
+```
+
+## Features
+
+- [x]  Get agenda items
+- [ ]  Get scores
+
+
+## Authors
+
+- [@bjarneverschorre](https://www.github.com/bjarneverschorre)
+
+
+
+
