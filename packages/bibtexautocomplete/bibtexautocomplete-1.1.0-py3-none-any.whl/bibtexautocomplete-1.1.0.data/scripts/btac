@@ -1,0 +1,5 @@
+#!python
+
+from bibtexautocomplete.core.main import main
+
+main()
