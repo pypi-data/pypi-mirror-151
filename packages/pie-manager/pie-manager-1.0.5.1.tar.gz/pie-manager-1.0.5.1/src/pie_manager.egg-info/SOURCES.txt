@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pie_manager/__init__.py
+src/pie_manager/__main__.py
+src/pie_manager/cli.py
+src/pie_manager/click_fix.py
+src/pie_manager/fileio.py
+src/pie_manager/sysreqs.py
+src/pie_manager.egg-info/PKG-INFO
+src/pie_manager.egg-info/SOURCES.txt
+src/pie_manager.egg-info/dependency_links.txt
+src/pie_manager.egg-info/entry_points.txt
+src/pie_manager.egg-info/top_level.txt
