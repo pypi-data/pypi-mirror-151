@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "clichessdrill"
+version = "0.1.16"
+description = ""
+authors = ["Daniel Schweigert <dan.schweigert@gmail.com>"]
+license = "MIT"
+include = [
+    "LICENSE",
+    "gameplans/daniel-01.json",
+    "docs/screenshots/game_play_1.png",
+    "docs/screenshots/game_play_2.png",
+    "docs/screenshots/game_play_3.png",
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+docopt = "^0.6.2"
+python-chess = "^1.999"
+chess = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+clichessdrill="clichessdrill.main:main"
