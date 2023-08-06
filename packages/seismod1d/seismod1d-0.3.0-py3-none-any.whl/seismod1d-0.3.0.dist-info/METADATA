@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: seismod1d
+Version: 0.3.0
+Summary: Create synthetic seismic 
+Home-page: https://github.com/equinor/seismod1d
+Author: Equinor ASA
+Author-email: eidi@equinor.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: lasio
+Requires-Dist: segyio
+Requires-Dist: bruges
+Requires-Dist: scikit-learn
+
+
+Create synthetic seismic
+
+
