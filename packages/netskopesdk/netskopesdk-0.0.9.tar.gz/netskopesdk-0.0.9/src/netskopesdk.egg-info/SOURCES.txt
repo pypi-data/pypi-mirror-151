@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/netskope/__init__.py
+src/netskope/api/__init__.py
+src/netskope/api/iterator/__init__.py
+src/netskope/api/iterator/const.py
+src/netskope/api/iterator/netskope_iterator.py
+src/netskope/api/iterator/netskope_iterator_client.py
+src/netskope/api/iterator/operation.py
+src/netskopesdk.egg-info/PKG-INFO
+src/netskopesdk.egg-info/SOURCES.txt
+src/netskopesdk.egg-info/dependency_links.txt
+src/netskopesdk.egg-info/requires.txt
+src/netskopesdk.egg-info/top_level.txt
