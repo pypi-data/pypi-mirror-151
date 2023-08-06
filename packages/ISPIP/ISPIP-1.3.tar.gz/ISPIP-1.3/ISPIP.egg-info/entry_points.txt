@@ -1,0 +1,3 @@
+[console_scripts]
+ispip = ispip.ispip:main
+
