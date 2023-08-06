@@ -1,0 +1,2 @@
+bleak==0.10
+crownstone-ble~=2.1
