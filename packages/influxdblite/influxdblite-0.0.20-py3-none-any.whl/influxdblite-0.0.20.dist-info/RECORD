@@ -1,0 +1,9 @@
+influxdb_lite/__init__.py,sha256=QbKZ4P-ggEtMoZq0skl8HBtripQCKbs8JtkpNzWXRPs,90
+influxdb_lite/attributes.py,sha256=JK-2qkDwJSAUYhB2GQo1iTHVVfCFvuU60aUo3AiezaI,1882
+influxdb_lite/client.py,sha256=zzWwIdeeQkbQn3GoXs5zdsQ_yykW0PMkhL-g277buTU,14425
+influxdb_lite/measurement.py,sha256=xVja2maq7YI3vUD2waO5mJ7n-WYNQoiaJ7O0Nem6fCo,974
+influxdblite-0.0.20.dist-info/LICENSE,sha256=YqxrLRMolJ8SCfh3gY6gPXRegaWCLp2VfoGpmEmXkqE,1072
+influxdblite-0.0.20.dist-info/METADATA,sha256=9WCFM7wCvYMWzS_Sc-J0bGmLca4aVrgIWHSBh0lZcMw,783
+influxdblite-0.0.20.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+influxdblite-0.0.20.dist-info/top_level.txt,sha256=kjjYDHxgMqLImRrzQ0_xYwhS604VhL-22qbZjE8lWEY,14
+influxdblite-0.0.20.dist-info/RECORD,,
