@@ -1,0 +1,15 @@
+richdb/__init__.py,sha256=ierM7SHfYr5BibWoTHt_wTUIzTHvwD48TkxQvuoCrTw,263
+richdb/mdict.py,sha256=fC7kS2zjxotjnvRfRtL-00vKYy6qn42WW2XQk0Y4OJ0,3075
+richdb/richdb.py,sha256=BjCb58fLiHkOpPxuDvrsGnXC6KSUboYi6Yyl5xqdpq8,1333
+richdb/runlog.py,sha256=Ftoi6YK9AWYMYx1XBSthfcHXziLfE9c6vXAebUVGkC8,1588
+richdb/tests.py,sha256=twhK2aymPd9HQNcUkR6EYANGdWDHN1AHaqgC5QVFSQI,1832
+richdb/utils.py,sha256=UurDIjKSfBpybvlpBDWKgBU2LC24JXqQLUu3GeiOEFU,2321
+richdb/vdict.py,sha256=mD6wYi2fXbBTN0ovXU4CFkGrjM7IjsMJRcTlA8UIKDE,9405
+richdb/version.py,sha256=Q5qdMXVQpqPlbwT1tsBIh-5r4qp64rYXN7UWd84Zumc,45
+richdb/wull.py,sha256=UiTNjyQ1FIrib28BnugYDi6djHIlr63Qj_1EXtuvjdk,4453
+richdb/ztime.py,sha256=hjkx-xmJ9QjjffMZLK8d18QkAXG3VpSLZMhNnD3GuVw,8994
+richdb-0.0.7.dist-info/LICENSE,sha256=JHMkv_C56PwQWLoQ58LM0ODPPi84l6SjemyNcjFsEpk,1087
+richdb-0.0.7.dist-info/METADATA,sha256=iEFgqs4onw50nmd8wRN49U-EqL_jXrY230CapqdoPpQ,10011
+richdb-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+richdb-0.0.7.dist-info/top_level.txt,sha256=o3JX6cX71jrvF3zYFzVPDdRvjRTC7FgnuFXtvVT1UNI,34
+richdb-0.0.7.dist-info/RECORD,,
