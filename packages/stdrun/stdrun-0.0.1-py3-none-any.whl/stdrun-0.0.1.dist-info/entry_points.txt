@@ -1,0 +1,2 @@
+[console_scripts]
+stdrun = stdrun.__main__:main

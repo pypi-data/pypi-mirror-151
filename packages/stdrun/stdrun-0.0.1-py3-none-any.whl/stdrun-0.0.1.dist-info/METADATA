@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: stdrun
+Version: 0.0.1
+Summary: Python library and utility to handle process standard output and errors
+Home-page: https://github.com/joaompinto/stdrun
+Author: João Pinto
+Author-email: lamego.pinto@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stdrun
+
+Check [documentation][doc] page .
+
+[doc]: https://joaompinto.github.io/stdrun/stdrun.html
