@@ -1,0 +1,125 @@
+{% load static %}
+{% load base_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    {% endblock %}
+
+    <title>
+     {{ basic_info.company_name }} | {{ seo.small_title }}
+    </title>
+
+    {% block seo %}
+      {% make_seo %}
+    {% endblock %}
+
+    {% block link %}
+      {% make_favicons %}
+      {% make_fonts font_link %}
+
+      {% block vendor_css %}
+        {% make_vendor_css %}
+      {% endblock %}
+
+      <!-- 적용 우선 순위상 vendor 이후에 와야 한다. -->
+      <!-- Template Main CSS File -->
+      <link href="{% static theme|add:'/css/navbar.css' %}" rel="stylesheet">
+      <link href="{% static theme|add:'/css/colors/'|add:color|add:'.css' %}" rel="stylesheet">
+      <link href="{% static theme|add:'/css/style.css' %}" rel="stylesheet">
+
+      <!-- 컴포넌트 CSS는 각자 컴포넌트에서 책임지고 로드한다. -->
+    {% endblock %}
+  </head>
+  <body>
+  {% block header %}
+  <!-- Header block -->
+  {% include theme|add:'/header.html' %}
+  {% endblock %}
+
+  {% block contents %}
+  <!-- Contents block -->
+  {% load hero_tags %}
+  {% make_hero %}
+
+  <main id="main">
+    {% for component, is_use, _, _ in components %}
+      {% if is_use %}
+        {% if component == 'popup' %}
+          {% load popup_tags %}
+          {% make_popup %}
+        {% elif component == 'whyus' %}
+          {% load whyus_tags %}
+          {% make_whyus %}
+        {% elif component == 'about' %}
+          {% load about_tags %}
+          {% make_about %}
+        {% elif component == 'intro' %}
+          {% load intro_tags %}
+          {% make_intro %}
+        {% elif component == 'counts' %}
+          {% load counts_tags %}
+          {% make_counts %}
+        {% elif component == 'testimonials' %}
+          {% load testimonials_tags %}
+          {% make_testimonials %}
+        {% elif component == 'faq' %}
+          {% load faq_tags %}
+          {% make_faq %}
+        {% elif component == 'features' %}
+          {% load features_tags %}
+          {% make_features %}
+        {% elif component == 'team' %}
+          {% load team_tags %}
+          {% make_team %}
+        {% elif component == 'contact' %}
+          {% load contact_tags %}
+          {% make_contact %}
+        {% elif component == 'courses' %}
+          {% load courses_tags %}
+          {% make_courses %}
+        {% elif component == 'pricing' %}
+          {% load pricing_tags %}
+          {% make_pricing %}
+        {% elif component == 'events' %}
+          {% load events_tags %}
+          {% make_events %}
+        {% elif component == 'analytics' %}
+          {% make_analytics %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </main>
+  {% endblock %}
+
+  {% block footer %}
+  <!-- Footer block -->
+  {% include theme|add:'/footer.html' %}
+  {% endblock %}
+
+  <!-- Goto top arrow -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  {% block js %}
+    {% block vendor_js %}
+      {% make_vendor_js %}
+    {% endblock %}
+
+    <!-- Template Main JS File -->
+    <script src="{% static theme|add:'/js/main.js' %}"></script>
+
+    <!-- Initiailizing tooltip -->
+    <!-- It must be positioned after popper.min.js and bootstrap.min.js -->
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+  {% endblock %}
+  </body>
+</html>
