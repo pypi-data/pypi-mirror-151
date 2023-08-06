@@ -1,0 +1,5 @@
+torch_dataclasses/__init__.py,sha256=tUTZt3-eqR9xjF_Im7lelSrWBjYt40s7Iv3CYB7Ne4s,44
+torch_dataclasses/dataclassmodule.py,sha256=FKp0cIdGGpr0aRujJ-IYFDHi8gvZlzYktQ5BsEBQPB0,533
+torch_dataclasses-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+torch_dataclasses-0.1.1.dist-info/METADATA,sha256=zfDeoIPOOnK8FC-kBfwSXigHcSNt3plLG9BIzQp8wWY,646
+torch_dataclasses-0.1.1.dist-info/RECORD,,
