@@ -1,0 +1,9 @@
+bslib/__init__.py,sha256=i1OTn1AdngdvNxFCdH3rIUEtMcHkWARFlEpONKBbGMI,73
+bslib/_version.py,sha256=XU-g2NUqfDsm3gbg7JkEBfPdfV2qFUazmZMbwWm2J0Q,495
+bslib/bslib.py,sha256=UdY0e6dfanYSFM7Bt2VFj5bgilcB1cBZVlkdIiX_CY4,27552
+bslib/bslib_database.csv,sha256=De1sB-INsT7LJIx-N8Z3fdE9Ps3ZwMQXxmId-X_tVa0,2649
+bslib-0.4.dist-info/LICENSE,sha256=WAPBrMVxvLZ0e0SjWcenn1BNxZ21AWrV-JHQJIeoq3Q,1100
+bslib-0.4.dist-info/METADATA,sha256=dm5HoTMW3EK6NCHF0-I-4KaeHjWTh2WXH5yZHhN-gFw,2982
+bslib-0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bslib-0.4.dist-info/top_level.txt,sha256=_LUngD5PQwGgDtMSHJKEypJSUCwASNGO3oR2ZkJkpzw,6
+bslib-0.4.dist-info/RECORD,,
