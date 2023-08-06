@@ -1,0 +1,13 @@
+transtab/__init__.py,sha256=uRhJgCdA5w1ZjAf-1-7_LwNIGkwI5eWN8rT1QylTpj0,61
+transtab/constants.py,sha256=vEyKjk4krU5HBp8ELmQBKQ758T92qm6oM6rv_vRmHjM,328
+transtab/dataset.py,sha256=_a9Bgd42XP1ktPk58ke0eEV4TbtyAqBqglZRQVUI-7w,11073
+transtab/evaluator.py,sha256=DHdAazepo_iYRS0BhCDYSYiMe1PNV4nkKoEXnXA27eE,5652
+transtab/modeling_transtab.py,sha256=I6YaqinHzsS-DD6VqsRNGZdefah5tk8o6GAEO-gjKaY,46751
+transtab/trainer.py,sha256=8fE8SBAQJBcEuMyHh-nRw3uVikrhlZXcn6XcMfWtBok,13576
+transtab/trainer_utils.py,sha256=b3sIAbTiossgMdv1NCyMdfK-wpfqTTuA50DvN45eXC4,5626
+transtab/transtab.py,sha256=ZuCJPaICPZNZCsv0h-GI_m3T6ShBr62eGrM6Zls4Coc,12247
+transtab-0.0.1.dist-info/LICENSE,sha256=7-GkOMltlpTLkXknedL2OJ2mg5-lpCSUZvE-wD3tKPI,1316
+transtab-0.0.1.dist-info/METADATA,sha256=LR-BFOPKjS0bVWrZbLaFw3RYkdV1zySuKsQhpAoiqOc,3411
+transtab-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+transtab-0.0.1.dist-info/top_level.txt,sha256=Lz2XgRdZ7xs8CJYVRfDHiOjoSmTrf-kOntgLfU8Tquc,9
+transtab-0.0.1.dist-info/RECORD,,
