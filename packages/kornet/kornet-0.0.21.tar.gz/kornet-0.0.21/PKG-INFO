@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kornet
+Version: 0.0.21
+Summary: A library for mass execution of ssh commands on remote machines fleet.
+Home-page: https://github.com/subatiq/kornet
+Download-URL: https://github.com/subatiq/kornet/archive/refs/tags/0.0.19.tar.gz
+Author: Vladimir Semenov
+Author-email: subatiq@gmail.com
+License: MIT
+Keywords: ssh,automation,orchestration
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
