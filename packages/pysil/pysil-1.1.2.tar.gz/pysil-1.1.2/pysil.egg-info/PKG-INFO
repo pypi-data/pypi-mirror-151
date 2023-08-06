@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pysil
+Version: 1.1.2
+Summary: system information gathering made simple
+Home-page: https://github.com/Bamboooz/pysil
+Author: Bamboooz
+Author-email: bambusixmc@gmail.com
+License: MIT
+Keywords: system
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+pysil - python system information library
+useful library to get system, hardware and network
+information in python. docs: https://github.com/Bamboooz/pysil
+
+CHANGELOG
+
+1.0.1 - windows support done (10.05.22)
+
+1.0.2 - released beta linux support (12.05.22)
+
+1.0.3 - added to pypi (13.05.22)
+
+1.0.4 - core not loading bugfix (13.05.22)
+
+1.0.5 - working pip install (13.05.22)
+
+1.0.6 - added changelog (14.05.22)
+
+1.0.7 - added proper readme file (14.05.22)
+
+1.0.8 - linux support + display info functions, changed license from LGPL-2.1 to MIT (16.05.22)
+
+1.0.9 - battery information + new system information ( tasklist + av's installed ) (16.05.22)
+
+1.1.0 - random tests (17.05.22)
+
+1.1.1 - removed linux support cause of amount of bugs, device info added (17.05.22)
+
+1.1.2 - added linux support again, added sound info, network speeds, ping (19.05.22)
+
