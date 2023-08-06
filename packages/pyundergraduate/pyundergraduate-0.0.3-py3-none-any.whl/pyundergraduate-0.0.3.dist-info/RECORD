@@ -1,0 +1,11 @@
+pyundergraduate/Differentiation.py,sha256=EhlTM4mtXTAxodfwIfLx587395tng_cbhRQs1sS8ebE,4586
+pyundergraduate/Integration.py,sha256=z3u15GxSTVwcQsf8JFcYzas-7eMq5BLE_bRp7Ym7xWs,9627
+pyundergraduate/Interpolation.py,sha256=MZFKQDEzkUyObO1RG8zdbX1jT3EcFQQULp4ry8cRc4Y,9136
+pyundergraduate/ODE_Solvers.py,sha256=CCDLJoNpDNpvkNyMBFHEf8hscFOKcIb64rxII7WPQeo,19371
+pyundergraduate/RootFinder.py,sha256=dPG0Gn12gS9goZ9c5quhJ8NWOP6wKBTITghEHbxZ2hA,4343
+pyundergraduate/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyundergraduate-0.0.3.dist-info/LICENSE,sha256=5dJ1vqb0hh-PUGdUjhUhPEEBD29NkUnd1jRrf9zX6vA,1077
+pyundergraduate-0.0.3.dist-info/METADATA,sha256=xeMqsYLT-o56AW3eqaT2JrCfGFNutKwmd-HoXy77rL0,6768
+pyundergraduate-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyundergraduate-0.0.3.dist-info/top_level.txt,sha256=LvYgdyV8nhvUKkWAQlbiNcvsb8MVsfh8LIYPxvNOaX8,16
+pyundergraduate-0.0.3.dist-info/RECORD,,
