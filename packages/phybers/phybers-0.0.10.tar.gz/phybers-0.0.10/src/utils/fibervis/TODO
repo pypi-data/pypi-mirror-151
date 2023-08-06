@@ -1,0 +1,212 @@
+TODO:
+	* valid data in atlas based parallel segmentation should be created smarter
+	
+	* Parallelize applyMatrix in bundleCFunctions.c with OpenMP.
+	
+	* detach workspace (opengl context) and visualization objects management
+	
+	* delete camera reference from Volume Object in GLContext.py. And change the switch case to dict, with key and constructor for values
+	
+	* Segmentation check that texture max size is going to fit all fiber validators, if not, change render method
+
+	* Segmentation base 2D texture for valid fiber: find size for width and height in a smart way!
+
+	* shunting yard out parameter to connect with numpy out parameter
+
+	* Prune data in segmentationhandler, like self.elements
+
+	* delete single rois
+
+	* multiple contexts
+	
+	* Message system more cohesive ******
+
+	* ROI.py modificar finalModel to self.model
+
+	* Shader class with posible buffers included as dic, and set with setattrib on visualization Object.
+
+	* Maybe change the GLContext.py, eliminate all the shader updates and migrate them to the shader object itself
+	and pass the corresponding parameters from GLContext.py 
+
+	* Modify GLContext to fit previous modifies
+	* Modify volume fragment shader, so it matches with the lighting config that is present in the bundle and mesh vertex shader
+
+	* Meshes:
+		- Add support for vtk format.
+
+	* Journal (frontiers in Neuroinformatics).
+
+	* Improve memory managment (delete objects actually doesn't deletes them)
+
+	* Console to run scripts over the data
+
+	* Objetos con sus datos (Su responsabilidad es Dibujarse y eliminarse de correcta forma cuando es requerido por el object hander). escenas con multiples objetos y demases(se Encarga del dibujado de la escena), pueden existir multiples escenas y ser dibujadas aparte.. objeto holder con todo lo cargado (se encarga de lo necesario para tenerlos en la memoria).
+
+	* Fix bounding box from 0,0,0-1,1,1 to (-0.5)-(0.5)
+
+	* modify segmentationHandler to incorpore all different drawing methods and assign the respective function to each method when creating an inherited obj.
+
+	* Volume render in cubes when no interpolated (**) Marching cubes
+
+	* Al momento de agregar datos .bundle que no se muera el programa cuando esten los .bundlesdata
+
+
+EMERGENCY:
+
+FREEZED:
+
+	* fix GlContext parse mesh modification.
+
+	* OctreeObject: If octree pool overflows it should create a second pool
+
+	* Object class is not rotating the right way when multiples changes happend in the system, axis of rotation and center are weird
+		- Rotation at the center of the object? or at the center of the view?
+
+	* improve make file for c extensions
+
+	* ROI with identifier that uses to name it in viewer tool
+
+	* OBB to use in roi from MRI
+
+DOING:
+	* Export function for trk and trc
+
+	* Finish and test atlas class.
+
+	* Program DICOM reader for MRI data. *** transform to NIFT1 ***
+
+	* Fixing panning speed. Proportional to the pixels.
+
+DONE:
+	* Meshes:
+		- Add support for more formats (GIFTI - NIFTI).
+	
+	* clear gl in segmentations and roi
+
+	* separate roisegmentation and datastruct octree from the same file
+	
+	* 21 point resample for atlas based segmentation
+
+	* Fix bounding box after apply matrix.
+
+	* Fix color for fibers not selected in atlas based segmentation.
+	
+	* TCK format reader
+
+	* modifiy volume render so it can draw solid or full transparent mris
+
+	* trk loading from c (too slow from python)
+	
+	* change class name Object
+
+	* fixed volume and slice object created over a translated, scaled and/or rotated mri object.
+	
+	* roi segmentation had problems detecting when multiple models were applied on original bundle (model matrix were copied, but not the inverse one)
+
+	* Nicole's code implementation. Narciso & Andrea code.
+	
+	* improve per cent representation of inplace segmentation ------ done, but needs to be check
+
+	* SEGMENTATION update fibervalidator and discard primitives on geometry shader 
+
+	* Unify draw for all segmentation methods (and other methods)
+	
+	* model matrix on slice mess up visualization **** and the same with volume render
+	
+	* Fix roisegmentation shunting yard alg... when ur input doesnt match the n of rois or valid operators
+		throws error to user
+
+	* mesh improve normal calculation (001_Lwhite)
+		- normals calculated were float64, and float32 were need
+
+	* added mesh front2back or back2front sorting option in visdialog
+
+	* change roivalidator from np.int32 to np.bool or np.int8
+
+	* Roi segmentation missing Logic Functionality
+
+	* Mesh eye should be transformed with invM of mesh.model
+	
+	* ROISegmentation update detection when segmentation is modify
+		- Rotate and Scale is messing things up.
+
+	* Try to eliminate Lepra from mesh.
+		- Calculate centroid from triangle. calculate distance from eye. sort from back to front. create ebo to draw.
+		- discard normals that dont reflect light.
+		- how to draw multiples transparent models?
+
+	* Repair ctrl press orbit coordinate system
+		- camera was saving screen coordinates. Now it recieves dx and dy.
+	
+	* BUNDLE invert model in ROI segmentation
+
+	* Fix always detect for rois when are changed
+	* Export to File and Export to Bundle Object -- ROISegmentation
+	* Mouse control for scaling, moving and rotating
+
+	------------- 20 - 08 - 2018 Reunion ---------------------------
+
+
+	* Finish implementation of roi segmentation.
+		- If nothing is selected must show every fiber.
+		
+	* contrast & bright per MRI
+	* identify sender for meshGB function.
+
+	* mesh color selection widget.
+
+	* Include bundle file formats (read & write):
+		- TRK
+	
+	* Fix volume-rendering modules
+		- Lighting is not working properly
+			## Model matrix is messing with the gradient estimation
+			gradient estimation is scaling the axis x,y&z rotated by model
+
+	* Mesh GB is showing on root item, and trying to retrieve refObj.drawableLines.
+	* mesh groupbox is showing after deliting the mesh. causes crash
+
+	------------- 12 - 07 - 2018 Reunion ---------------------------
+
+	* Fixed volume-rendering modules
+		- Implement TestObject results into volume class.
+		- Fix dplane and dplanestep when normal is parallel to x and y axes.
+
+	* Slice:
+		- Discard values under X.
+		- Checkbox for interpolation on/off in 3d texture.
+		- change self.model to identity
+
+	* Load slice groupbox values from slice & mesh object.
+
+	* Modify all shaders from:
+		- Model -> M
+		- View -> V
+		- Proj -> P
+
+	* In slice object, save axis to visualize and change pos2axis & axis only if need it
+	* Clean reference to volume render in camera, after being deleted
+	* slice rendering set arbitrary axis
+	* Modify mesh opacity in visualization dialog
+	
+	* Options for modifying the color for the mesh and the opacity
+
+	* Make slice modification exclusive to objects with the identifier as slice render
+	* Fix dplane in slice object.
+
+	* Slice visualization.
+		- Implement slice object
+		- Connect visualization window with slice object.
+		- Delete shader from MRI object.
+
+	* Delete TestObject, testing.vs and testing.fs (they were created in order to test algorithms for volume render)
+
+	* Separate shader volume-slice into volume and slice
+
+	* Fix volume-rendering modules
+		- Working with TestObject class
+		## in int vertexIdx doesnt work well, had to change it to in float vertexIdx, and cast it back to int
+	
+	* Include several files on the visualizer.
+
+	* Recode software to Python (front-end) and some C (back-end).
