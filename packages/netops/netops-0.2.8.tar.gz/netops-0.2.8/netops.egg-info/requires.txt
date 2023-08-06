@@ -1,0 +1,14 @@
+certifi
+cryptography==2.8
+fpdf
+jinja2
+nornir
+nornir-netmiko
+nornir-pyez
+nornir-utils
+pynetbox
+python-slugify
+pyyaml
+pyzabbix
+requests
+rich
