@@ -1,0 +1,39 @@
+# cached files
+__pycache__/
+*.py[cod]
+
+# project hidden
+mandelia/**/*.c
+mandelia/**/*.cpp
+mandelia/**/*.html
+mandelia/**/*.so
+
+wheelhouse/
+
+# installation package
+.eggs
+*.egg-info/
+dist/
+build/
+
+# environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# pycharm
+.idea/
+
+# vscode
+.vscode/
+*.code-workspace
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+mypy.ini
