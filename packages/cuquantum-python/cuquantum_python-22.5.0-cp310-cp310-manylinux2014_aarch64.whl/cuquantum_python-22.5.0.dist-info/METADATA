@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cuquantum-python
+Version: 22.5.0
+Summary: Python APIs for cuQuantum
+Home-page: https://github.com/NVIDIA/cuQuantum
+Author: NVIDIA Corporation
+Author-email: cuquantum-python@nvidia.com
+License: BSD-3-Clause
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.0
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.1
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.2
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.3
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.4
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.5
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.6
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: typing-extensions
+Requires-Dist: cuquantum (>=22.3.*)
+
