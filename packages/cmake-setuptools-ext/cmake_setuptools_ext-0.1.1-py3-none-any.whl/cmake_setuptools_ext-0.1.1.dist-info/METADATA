@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cmake-setuptools-ext
+Version: 0.1.1
+Summary: An extension for setuptools when building Python/cmake projects
+Home-page: https://github.com/vanandrew/cmake-setuptools-ext
+Author: Andrew Van
+Author-email: vanandrew@wustl.edu
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: all
+Requires-Dist: black (>=20.8b0) ; extra == 'all'
+Requires-Dist: pytest (>=6.2.5) ; extra == 'all'
+Requires-Dist: coverage (>=5.5) ; extra == 'all'
+Requires-Dist: pytest-pycodestyle (>=2.2.0) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black (>=20.8b0) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.5) ; extra == 'dev'
+Requires-Dist: coverage (>=5.5) ; extra == 'dev'
+Requires-Dist: pytest-pycodestyle (>=2.2.0) ; extra == 'dev'
+
+# cmake-setuptools-ext
+[![Python package](https://github.com/vanandrew/cmake-setuptools-ext/actions/workflows/python-package.yml/badge.svg)](https://github.com/vanandrew/cmake-setuptools-ext/actions/workflows/python-package.yml)
+[![Upload Python Package](https://github.com/vanandrew/cmake-setuptools-ext/actions/workflows/python-publish.yml/badge.svg)](https://github.com/vanandrew/cmake-setuptools-ext/actions/workflows/python-publish.yml)
+
+An extension for setuptools when building Python/cmake projects
