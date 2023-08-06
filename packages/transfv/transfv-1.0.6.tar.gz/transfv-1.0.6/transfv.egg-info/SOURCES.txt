@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+transfv/__init__.py
+transfv/__main__.py
+transfv/argument.py
+transfv/configuration.py
+transfv/constants.py
+transfv/prints.py
+transfv/thirdside.py
+transfv/translator.py
+transfv.egg-info/PKG-INFO
+transfv.egg-info/SOURCES.txt
+transfv.egg-info/dependency_links.txt
+transfv.egg-info/entry_points.txt
+transfv.egg-info/requires.txt
+transfv.egg-info/top_level.txt
