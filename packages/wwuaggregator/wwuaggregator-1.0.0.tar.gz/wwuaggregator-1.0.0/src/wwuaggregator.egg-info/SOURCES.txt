@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/wwuaggregator/__init__.py
+src/wwuaggregator.egg-info/PKG-INFO
+src/wwuaggregator.egg-info/SOURCES.txt
+src/wwuaggregator.egg-info/dependency_links.txt
+src/wwuaggregator.egg-info/requires.txt
+src/wwuaggregator.egg-info/top_level.txt
