@@ -1,0 +1,7 @@
+result_collector_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+result_collector_client/collector.py,sha256=4iwxmT7yKPMYnNxg8O1geligPHRARD_vlcWxfX3DN28,2256
+result_collector_client/models.py,sha256=J2R2acZOAltSDwPcgp5B9koDwJQoAxkkh0X6xvh82ws,3827
+result_collector_client/submitter.py,sha256=UnCkMHMUAT6Tknnww7VaGjgftvBElYjwV9aO-p86Qv4,2756
+edustats_collector-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+edustats_collector-0.2.0.dist-info/METADATA,sha256=Bas6ZcBYJmCHWHAlg07vxS_In6l2w3vDZ69CcgzQ43o,366
+edustats_collector-0.2.0.dist-info/RECORD,,
