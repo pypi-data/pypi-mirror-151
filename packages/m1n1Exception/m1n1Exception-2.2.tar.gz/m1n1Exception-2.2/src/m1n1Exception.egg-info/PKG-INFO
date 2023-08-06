@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: m1n1Exception
+Version: 2.2
+Summary: Errors handler for MiniExploit's python projects
+Home-page: https://github.com/Mini-Exploit/m1n1Exception
+Author: MiniExploit
+Author-email: miniexploitttt@gmail.com
+Project-URL: Bug Tracker, https://github.com/Mini-Exploit/m1n1Exception/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Errors handler for MiniExploit's python projects
