@@ -1,0 +1,4 @@
+[console_scripts]
+libretranslate = app.main:main
+ltmanage = app.manage:manage
+
