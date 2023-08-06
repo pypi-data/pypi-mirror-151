@@ -1,0 +1,265 @@
+Metadata-Version: 2.1
+Name: SandInvest
+Version: 0.4.1
+Summary: SandInvest是一款专注于量化开发的金融数据接口，开始体验吧！
+Home-page: UNKNOWN
+Author: SandQuant
+Author-email: data@sandquant.com
+License: UNKNOWN
+Keywords: SandInvest,Data API
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+
+# <img src="http://www.sandquant.com/icon/sandquant_icon_pure.png" width="50px" height="50px" /> SandInvest
+
+**SandInvest**是一款专注于量化开发的金融数据接口，开始体验吧！
+
+[![Downloads](https://pepy.tech/badge/sandinvest)](https://pepy.tech/project/sandinvest) [![Downloads](https://pepy.tech/badge/sandinvest/month)](https://pepy.tech/project/sandinvest) [![Downloads](https://pepy.tech/badge/sandinvest/week)](https://pepy.tech/project/sandinvest)
+
+![](https://img.shields.io/static/v1?label=python&labelColor=e7c16a&message=3.7&color=0b3558) ![](https://img.shields.io/static/v1?label=SandInvest&labelColor=e7c16a&message=Beta-0.2&color=0b3558)
+
+![](https://img.shields.io/static/v1?label=pandas&labelColor=e7c16a&message=>1.2.4&color=109E97) ![](https://img.shields.io/static/v1?label=requests&labelColor=e7c16a&message=≥2.27.1&color=109E97)
+
+<br><br>
+
+## 安装 Install
+
+```
+pip install sandinvest
+```
+
+当下载速度慢时，可以通过镜像下载：
+
+```
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple sandinvest
+```
+
+<br>
+
+## 更新 Update
+
+```
+pip install --upgrade sandinvest
+```
+
+<br>
+
+## 注册与登录 Register & Login
+
+1.   首次使用`sandinvest`需要先进行**注册**，登录信息将存储在本地电脑，以便用于下次导入时自动登录，注册无论信息正确与否都会打印`Register Success!`，表明注册信息已经正确存储，但还未验证：
+
+```python
+>>> import sandinvest as si 
+>>> si.register('your_account', 'your_password') 
+Register Success!
+```
+
+<br>
+
+2.   当再次导入`sandinvest`模块，将自动调用注册信息进行登录，并打印验证结果：
+
+>   <img src="http://www.sandquant.com/icon/warning.png" width="25px" height="25px" />如果没有打印任何东西，表明没有注册成功，需要重新调用`register`进行注册
+
+-   如果注册信息正确<img src="http://www.sandquant.com/icon/check.png" width="25px" height="25px" />，将打印`Welcome, SandInvest!`；
+
+```python
+>>> import sandinvest as si
+Welcome, SandInvest!
+```
+
+-   如果注册信息错误<img src="http://www.sandquant.com/icon/singleWrong.png" width="25px" height="25px" />，将打印`account, password 参数错误，账号密码验证失败！`，程序不会报错，但后续将无法调用接口；
+
+```python
+>>> import sandinvest as si
+account, password 参数错误，账号密码验证失败！
+```
+
+<br>
+
+3.   如果每次需要登录不同的账号，可以通过`login`函数进行**手动登录**，但这显然会麻烦一点，因为你每次都需要输入账号密码：
+
+-   如果登录信息正确<img src="http://www.sandquant.com/icon/check.png" width="25px" height="25px" />，将打印`Welcome, SandInvest!`；
+
+```python
+>>> import sandinvest as si
+>>> si.login('your_account', 'your_password') 
+Welcome, SandInvest!
+```
+
+-   如果登录信息错误<img src="http://www.sandquant.com/icon/singleWrong.png" width="25px" height="25px" />，将抛出`AttributeError`错误；
+
+```python
+>>> import sandinvest as si
+>>> si.login('wrong_account', 'wrong_password') 
+Traceback (most recent call last):
+	...
+AttributeError: account, password 参数错误，账号密码验证失败！
+```
+
+<br>
+
+## API速览 Quick Look
+
+<img src="http://www.sandquant.com/icon/doc.png" width="25px" height="25px" />完整API使用说明及注意事项，请查看官方文档
+
+<img src="http://www.sandquant.com/icon/fix.png" width="25px" height="25px" />如有其他问题，可向官方反馈
+
+<br>
+
+```python
+>>> import sandinvest as si
+Welcome, SandInvest!
+...
+>>> si.description()
+'欢迎使用SandQuantAPI！接口账号请添加官网微信：SandQuant-01，申请注册。'
+```
+
+### 获取交易日历
+
+-   获取一段时间的交易日历，以列表形式返回
+
+```python
+>>> si.get_calendar(start_date=20200101, end_date=20200201, type_=list) 
+['2020-01-02', '2020-01-03', '2020-01-06', '2020-01-07', '2020-01-08', '2020-01-09', '2020-01-10', '2020-01-13', '2020-01-14', '2020-01-15', '2020-01-16', '2020-01-17', '2020-01-20', '2020-01-21', '2020-01-22', '2020-01-23']
+```
+
+-   获取指定日期过去3天的交易日历
+
+```python
+>>> si.get_calendar(date='2020-01-01', offset=3) 
+         time
+0  2019-12-31
+1  2019-12-30
+2  2019-12-27
+```
+
+-   获取指定日期未来3天的交易日历
+
+```python
+>>> si.get_calendar(date='2020-01-01', offset=-3) 
+         time
+0  2020-01-02
+1  2020-01-03
+2  2020-01-06
+```
+
+### 获取基础信息
+
+-   获取贵州茅台基础信息
+
+```python
+>>> si.get_summary(codes='600519.SH') 
+        code  name symbol   company_cn                 company_en   list_date delist_date market board
+0  600519.SH  贵州茅台   GZMT  贵州茅台酒股份有限公司  Kweichow Moutai Co., Ltd.  2001-08-27  9999-12-31    SSE  上证主板
+```
+
+-   获取指定日期正在交易的股票
+
+```python
+>>> si.get_summary(date=20100101).head()['code'] 
+0    000001.SZ
+1    000002.SZ
+2    000004.SZ
+3    000005.SZ
+4    000006.SZ
+```
+
+-   获取指定日期上市的股票
+
+```python
+>>> si.get_summary(list_date=20220408)[['code', 'name']] 
+        code  name
+0  688337.SH  普源精电
+```
+
+-   获取指定日期退市的股票
+
+```python
+>>> si.get_summary(delist_date='2020-07-02')[['code', 'name']]
+        code  name
+0  601558.SH  退市锐电
+```
+
+###  获取行情数据
+
+-   获取指定代码一段时间的不复权行情
+
+```python
+>>> si.get_price(codes='600519.SH', start_date=20100101, end_date=20100131, adj=0).head()   
+         time       code    open    high     low   close     volume       amount
+0  2010-01-04  600519.SH  172.00  172.00  169.31  169.94  4430488.0  753405632.0
+1  2010-01-05  600519.SH  170.99  171.50  169.00  169.44  3151318.0  535720416.0
+2  2010-01-06  600519.SH  168.99  169.50  166.31  166.76  3988903.0  666073283.0
+3  2010-01-07  600519.SH  166.76  167.19  161.88  163.72  4882555.0  801445248.0
+4  2010-01-08  600519.SH  164.00  164.00  160.10  162.00  3670209.0  593162176.0
+```
+
+-   获取指定日期历史5天的前复权行情
+
+```python
+>>> si.get_price(codes='600519.SH', date=20220101, offset=5, adj=1).head()                
+         time       code    open     high     low    close      volume        amount
+0  2021-12-27  600519.SH  2168.0  2168.00  2112.0  2131.82  3755590.35  8.020678e+09
+1  2021-12-28  600519.SH  2133.0  2155.50  2116.6  2138.18  2765070.24  5.901941e+09
+2  2021-12-29  600519.SH  2150.0  2154.25  2041.0  2041.00  5404902.46  1.119563e+10
+3  2021-12-30  600519.SH  2041.0  2088.98  2028.0  2075.00  3526136.29  7.272867e+09
+4  2021-12-31  600519.SH  2070.0  2072.98  2028.0  2050.00  2966491.25  6.061415e+09
+```
+
+-   获取指定日期未来5天的收益率和涨跌停价格
+
+```python
+>>> si.get_price(codes='600519.SH', date=20220101, offset=-5, 
+                 fields=['pct_change', 'limit_up', 'limit_down']).head() 
+         time       code  pct_change  limit_up  limit_down
+0  2022-01-04  600519.SH        0.06   2255.00     1845.00
+1  2022-01-05  600519.SH       -1.33   2256.35     1846.11
+2  2022-01-06  600519.SH       -2.06   2226.40     1821.60
+3  2022-01-07  600519.SH       -2.03   2180.44     1784.00
+4  2022-01-10  600519.SH        1.24   2136.20     1747.80
+```
+
+### 获取股本数据
+
+-   获取指定日期的股本信息
+
+```python
+>>> si.get_shares(codes=['000001.SZ', '600519.SH'], date=20220105) 
+         time       code  total_shares  float_shares     total_cap     float_cap  turnover
+0  2022-01-05  000001.SZ  1.940592e+10  1.940576e+10  3.328115e+11  3.328087e+11      1.00
+1  2022-01-05  600519.SH  1.256198e+09  1.256198e+09  2.542544e+12  2.542544e+12      0.23
+```
+
+-   获取指定日期未来5天的总市值数据
+
+```python
+>>> si.get_shares(codes='600519.SH', date=20220105, offset=-5, fields=si.shares.total_cap_) 
+         time       code     total_cap
+0  2022-01-05  600519.SH  2.542544e+12
+1  2022-01-06  600519.SH  2.490060e+12
+2  2022-01-07  600519.SH  2.439536e+12
+3  2022-01-10  600519.SH  2.469685e+12
+4  2022-01-11  600519.SH  2.437715e+12
+```
+
+<br>
+
+<div align='center'>
+	<img src="http://www.sandquant.com/icon/qrcode_500px.png" width="150px" height="150px" />
+</div>
+<div align='center'>
+    <strong>SandQuant公众号</strong>
+</div>
+
+
+
+
+
