@@ -1,0 +1,17 @@
+sptag/SPTAG.py,sha256=TsqzUF3SAAo32NjVwd0nU45s1lT_MpqBzTe-bseGYxY,5715
+sptag/SPTAGClient.py,sha256=Dia2EOSy5s3-FyM4CHQu0zcGWGG46TMQMu0I5VjREDs,4305
+sptag/_SPTAG.exp,sha256=8h2Tq350UbjtAxN9QCO0Ie9HLbNew_Ukd-1zofNFzEI,757
+sptag/_SPTAG.lib,sha256=FCKCTsXztper5yfwvTCSfrIUBwQLFxcEoBM58vI0NA0,1716
+sptag/_SPTAG.pdb,sha256=a7MLe6H60-iB88bkZAZe8pYftUnkm67RbF84IB4EUqo,9236480
+sptag/_SPTAG.pyd,sha256=1Lo2xf_SONOenSvWRAp6vh88SN9Ylnj5WGI-6SQSEyQ,1134080
+sptag/_SPTAGClient.exp,sha256=V6dg30D-kG9hRT2AlUIXUdrp5AWGO_ClQjqGpLnuk9g,787
+sptag/_SPTAGClient.lib,sha256=QzstzOWRxJSiSqSOauYAhyBLQNX2No_pnUYpCB875OI,1896
+sptag/_SPTAGClient.pdb,sha256=E13Fda22JyxciTLm2GbnyHp22i_jNT9701HpVQzYHf4,5419008
+sptag/_SPTAGClient.pyd,sha256=lB-KU5S61HNzhrF-Vv2Mru5-Pfr19SUUMAvrlOV10vc,231936
+sptag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sptag/version.py,sha256=bMIenWosteoeUs51RbaWVZetIuzRhWymuyy-n0rfK0I,21
+sptag-1.0.1.dist-info/LICENSE,sha256=OBBqvYogiP3Oa6Z5sZSdJTqN68q67NqO07zavVvgFN0,1181
+sptag-1.0.1.dist-info/METADATA,sha256=P44wOFYSAu9pgL8YCZOxt8PLCkWuYvaOhJXuZxk5S-g,6473
+sptag-1.0.1.dist-info/WHEEL,sha256=i9qQj8KaD8_YEW0Vc2oS56fKju23RkQ-FVz-QmzVakQ,98
+sptag-1.0.1.dist-info/top_level.txt,sha256=lKwyWn5CCQxE86QWkFWMhI_ILCSGAgFPuoX4lIQNAr4,6
+sptag-1.0.1.dist-info/RECORD,,
