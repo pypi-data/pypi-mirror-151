@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pymeteosource
+Version: 1.2.1
+Summary: Meteosource API wrapper library
+Home-page: https://github.com/Meteosource/pymeteosource/archive/v1.2.1.tar.gz
+Author: Meteosource
+Author-email: support@meteosource.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: pandas
