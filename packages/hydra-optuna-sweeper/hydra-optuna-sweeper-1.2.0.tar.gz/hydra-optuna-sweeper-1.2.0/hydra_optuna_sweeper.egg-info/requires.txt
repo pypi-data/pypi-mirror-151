@@ -1,0 +1,2 @@
+hydra-core>=1.1.0.dev7
+optuna<3.0.0,>=2.10.0
