@@ -1,0 +1,2 @@
+[console_scripts]
+databusclient = databusclient.__main__:main
