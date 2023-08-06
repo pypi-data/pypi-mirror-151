@@ -1,0 +1,14 @@
+pandoramoon/__init__.py,sha256=quSr09q8se1MPAk7LtdBzIBKrSmg5a2otgtjS4yy7O8,122
+pandoramoon/eclipse.py,sha256=YaZRuGJ-6F7UGDG22VM9dVQ73QtKqzAg4NmdOACdkuI,6587
+pandoramoon/ellipse.py,sha256=w_IPGwrNazbweMIHFD8KvjB8B2LNWG4vaKYPg66pC4k,2373
+pandoramoon/grids.py,sha256=6c2cbOTauOGgOsxh_khgkvkOI1eI9ZAAMs-ZCxJvQ94,3005
+pandoramoon/helpers.py,sha256=UAdr4StpGP5WjwsP4uRI6ubYEx2mRFjiOgqad6_wjNs,724
+pandoramoon/occult.py,sha256=cItieWDMuTxCjrsuEYvPG10r6JYh8GaFNbgMo97xB0U,15049
+pandoramoon/pandora.py,sha256=Y918uCk3qPEg6Agv4275vyZ9E29GBYNaBRtCRHRS3Bg,13788
+pandoramoon/star_colors.csv,sha256=Desy82rpZ0gKJm7v6T5yTiynMTjzvejbHPsj1YepXAM,1384
+pandoramoon/version.py,sha256=8BJYXKUqFrslFAIpCO_kiQc8Phw_ANXttefv9_ia_lI,27
+pandoramoon-1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pandoramoon-1.0.dist-info/METADATA,sha256=2HDxC3sMOXsw1uDbUQu_gjTP-_8MxFCqKh74n92doRI,3790
+pandoramoon-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pandoramoon-1.0.dist-info/top_level.txt,sha256=65IIg9E0f0e_JUHa2uEBPztT-m8nCblxE7sD0dakBuw,12
+pandoramoon-1.0.dist-info/RECORD,,
