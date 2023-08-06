@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyromaniac
+Version: 0.2.1
+Summary: Helper modules for pyro.
+Author: Harald Vohringer
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyro-ppl (>=1.8.0,<2.0.0)
