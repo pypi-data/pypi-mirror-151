@@ -1,0 +1,12 @@
+lz4/__init__.py,sha256=e_8j-K4TJx38qcPNjoZP_pNDo8IpE4D2ZWl4p50iV_8,646
+lz4/_version.cp310-win32.pyd,sha256=ALrd-r00O1_7ETxkV0DqAvtNeOL559RO0rRJd6eVZNk,9216
+lz4/version.py,sha256=QzOpFy5jLOd2GAOUlx71-NeyvfWRaHd4YZ6tcuiPRKw,147
+lz4/block/__init__.py,sha256=DSUbS7zMlKKeLs8JO9riOBO5Q_lVoSB-nwgjfhBeXt0,71
+lz4/block/_block.cp310-win32.pyd,sha256=d89wX4j2ta2v7lVo7b3YWI5ywmmotV77G4OGuV7V3TM,60416
+lz4/frame/__init__.py,sha256=ZnJ4sJ1HStPpmJpo0q_CGm9fDEui3Tt3V8DmMi68SZM,32025
+lz4/frame/_frame.cp310-win32.pyd,sha256=VIBF8agtlZlTdb6fAthqGQgEPJ04BVH6coUhvnbAK2A,95232
+lz4-4.0.1.dist-info/LICENSE,sha256=p9ZdHdTcyG3KXRfUaqShx3ZpybcvVfKY6eIhLykFwM8,1523
+lz4-4.0.1.dist-info/METADATA,sha256=ASV1-o5I1HCVp6ABIfcpORguaANOLaGQXsi2h966yUg,3758
+lz4-4.0.1.dist-info/WHEEL,sha256=l5uI7e2vYDQsG8-BdAxXE9BLA-oyyyoK5DyD9-hAApg,98
+lz4-4.0.1.dist-info/top_level.txt,sha256=cX6_gxFUdNSo40TfxrGpTCgu7epGm3yW3m2k7irTDzI,4
+lz4-4.0.1.dist-info/RECORD,,
