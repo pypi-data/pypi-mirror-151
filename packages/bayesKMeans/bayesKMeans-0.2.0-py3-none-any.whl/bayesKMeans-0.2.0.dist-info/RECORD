@@ -1,0 +1,11 @@
+bayeskmeans/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bayeskmeans/bayes_kmeans.py,sha256=nPiVEMVnbS9EN6gkJgA4QVuhtT0i6269YnYdiEi-Dr4,4396
+bayeskmeans/bayes_methods.py,sha256=9ZdAcy6bq7U5hdTPZPAWNtPxEnAY4hPut9_RtwTYRn4,960
+bayeskmeans/bayes_parameters.py,sha256=zf0dzG8pGA0s9_gqzNRBW0MZLHBjZRaMnd2RwkVdNtU,2436
+bayeskmeans/bayes_visualize.py,sha256=0JFNwqRat2hPJ5_auZl-wLCFhi9YdA6b8hM0a-KbQPw,1538
+bayeskmeans/main.py,sha256=76Yi4rYbpHNsCnSR559yW-DiNnP-j6ujDhE0lU99ucI,814
+bayesKMeans-0.2.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+bayesKMeans-0.2.0.dist-info/METADATA,sha256=w-4qTs5hOSAUMXnHf6zGOfX50Sfv2Ri6IXh0eQbZZNY,465
+bayesKMeans-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bayesKMeans-0.2.0.dist-info/top_level.txt,sha256=4U_sjCaK9gw4fjRh1Ta8Z6EtcAtPNx-JpWaLhgVsCe8,12
+bayesKMeans-0.2.0.dist-info/RECORD,,
