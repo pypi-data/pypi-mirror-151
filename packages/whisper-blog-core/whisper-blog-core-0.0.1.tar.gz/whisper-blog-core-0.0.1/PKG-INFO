@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: whisper-blog-core
+Version: 0.0.1
+Summary: A lightweight modularized blog engine
+Home-page: https://ciel.dev/whisper/
+Author: TechCiel
+Author-email: whisper@ciel.dev
+License: AGPL-3.0
+Project-URL: Source Code, https://github.com/TechCiel/whisper
+Project-URL: Issue Tracker, https://github.com/TechCiel/whisper/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Whisper
+
+A highly modularized multi-purpose blog engine, based on [Flask](https://github.com/pallets/flask).
+
+## Installation
+
+WIP
+
+## License
+
+The Whisper blog engine is released under GNU Affero General Public License (version 3) from the Free Software Foundation. A copy of the license should be included with every copy of Whisper, you can also read the license text [here](https://www.gnu.org/licenses/agpl-3.0.html).
+
+We consider all plugins developed for Whisper constitute a derivative work, though it's still a grey area in law. Thus, writing plugins for Whisper is super-welcomed, as long as they also inherit and is released under AGPLv3. If you feel against this, we suggest you to seek a non-GPL alternative.
