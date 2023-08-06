@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: circleso
+Version: 0.1.0.dev1
+Summary: Implementation of Circles in Python
+Home-page: https://github.com/photon-niko/circles/
+License: GPL-3.0
+Keywords: circles,graphical,esoteric,esolang,programming,language,graph,image
+Author: Calico Niko
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: opencv-python (>=4.5.5,<5.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Project-URL: Repository, https://github.com/photon-niko/circles/
+Description-Content-Type: text/markdown
+
+# Circles!
+
+This is an implementation of Circles which is a yet to be implemented graphical esolang created by [PythonshellDebugwindow](https://github.com/PythonshellDebugwindow).
+
+I think this is a nice esolang so I'm gonna implement this.
+
+# Circles?
+
+* Make sure `pip` is up-to-date.
+  ```
+  python -m pip install pip --upgrade
+  ```
+* O
+  ```
+  python -m pip install circleso
+  ```
+* Interpret Circles programs with
+  ```
+  python -m circles path/to/program.png
+  ```
+* For more options and or thingies, do
+  ```
+  python -m circles --help
+  ```
+# Thoughts on standards
+
+I don't think you really need to have standards since it's entirely possible to detect circles of any size with opencv
+
