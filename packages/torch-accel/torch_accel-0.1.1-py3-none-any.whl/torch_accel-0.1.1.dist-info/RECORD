@@ -1,0 +1,6 @@
+torch_accel/__init__.py,sha256=I5l0ZW1uNCpdjMohOzIR8Lk7L0Abc-x5Fxy-NRxxBg4,29
+torch_accel/amp.py,sha256=m8TAiFKmv93vo1CPcnCB_bZgj1lu-ZtiIuEN4YJCzCA,447
+torch_accel/ddp.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+torch_accel-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+torch_accel-0.1.1.dist-info/METADATA,sha256=jEOJ2wpNboKZ6vd9ag5f7yTVzWl-Q7q767YQh6BHuWk,405
+torch_accel-0.1.1.dist-info/RECORD,,
