@@ -1,0 +1,2 @@
+[console_scripts]
+cloud-download = cloud_downloader.cloud_downloader:start_cloud_downloader

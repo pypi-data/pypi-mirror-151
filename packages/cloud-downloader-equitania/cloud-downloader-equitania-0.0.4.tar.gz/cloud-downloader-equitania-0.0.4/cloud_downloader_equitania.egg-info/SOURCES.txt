@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+cloud_downloader/__init__.py
+cloud_downloader/cloud_downloader.py
+cloud_downloader/utils.py
+cloud_downloader_equitania.egg-info/PKG-INFO
+cloud_downloader_equitania.egg-info/SOURCES.txt
+cloud_downloader_equitania.egg-info/dependency_links.txt
+cloud_downloader_equitania.egg-info/entry_points.txt
+cloud_downloader_equitania.egg-info/requires.txt
+cloud_downloader_equitania.egg-info/top_level.txt
