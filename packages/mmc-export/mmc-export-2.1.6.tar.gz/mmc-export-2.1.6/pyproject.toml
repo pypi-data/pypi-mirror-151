@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "mmc-export"
+version = "2.1.6"
+description = "Export MMC modpack to other modpack formats"
+authors = ["RozeFound"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/RozeFound/mmc-export"
+
+keywords = [
+    "minecraft",
+    "mods",
+    "modpack",
+    "converter",
+    "MultiMC"
+]
+
+packages = [
+    { include = "mmc_export" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+murmurhash2 = "^0.2.9"
+aiohttp = "^3.7.4"
+tomli = "^1.2.1"
+pytoml = "^0.1.21"
+tenacity = "^8.0.1"
+Werkzeug = "^2.1.2"
+jsonpickle = "^2.1.0"
+cryptography = "^37.0.2"
+aiohttp-client-cache = {extras = ["all"], version = "^0.6.1"}
+xxhash = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.0"
+
+[tool.poetry.scripts]
+mmc-export = "mmc_export:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
