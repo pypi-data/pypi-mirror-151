@@ -1,0 +1,10 @@
+syntax: glob
+*.pyc
+*.egg-info
+.eggs
+.pytest_cache
+__pycache__
+build
+dist
+silorider/version.py
+
