@@ -1,0 +1,2 @@
+[napari.plugin]
+vessel-express-napari = vessel_express
