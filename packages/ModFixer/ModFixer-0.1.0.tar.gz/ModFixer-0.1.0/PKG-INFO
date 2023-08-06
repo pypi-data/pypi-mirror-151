@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ModFixer
+Version: 0.1.0
+Summary: CLI for on the fly GFX packing to load as a Cemu graphic pack for quick and efficient testing.
+Home-page: https://github.com/ArchLeaders/ModFixer
+Author: ArchLeaders
+Author-email: archleadership28@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# BOTW Mod Fixer
+
+A simple tool to recalculate the RSTB and pack various archives on the fly within a Cemu graphic pack for quick and efficient testing.
+

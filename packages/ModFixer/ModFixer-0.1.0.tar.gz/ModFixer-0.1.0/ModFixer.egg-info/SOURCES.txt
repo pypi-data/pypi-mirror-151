@@ -1,0 +1,11 @@
+README.md
+setup.py
+ModFixer.egg-info/PKG-INFO
+ModFixer.egg-info/SOURCES.txt
+ModFixer.egg-info/dependency_links.txt
+ModFixer.egg-info/entry_points.txt
+ModFixer.egg-info/not-zip-safe
+ModFixer.egg-info/requires.txt
+ModFixer.egg-info/top_level.txt
+modfixer/__init__.py
+modfixer/__main__.py

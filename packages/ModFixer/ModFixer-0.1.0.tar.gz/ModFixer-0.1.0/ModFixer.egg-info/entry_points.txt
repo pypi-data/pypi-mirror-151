@@ -1,0 +1,2 @@
+[console_scripts]
+modfixer = modfixer.__main__:main
