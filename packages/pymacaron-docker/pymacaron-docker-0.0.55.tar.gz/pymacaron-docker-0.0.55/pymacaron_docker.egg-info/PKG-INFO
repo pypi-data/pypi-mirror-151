@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pymacaron-docker
+Version: 0.0.55
+Summary: Package a PyMacaron microservice into a Docker image
+Home-page: https://github.com/pymacaron/pymacaron-docker
+Author: Erwan Lemonnier
+Author-email: erwan@lemonnier.se
+License: BSD
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# pymacaron-docker
+
+Tools for packaging a PyMacaron microservice as a Docker image.
+
+See more at [pymacaron.com](http://pymacaron.com/deploy.html)
+
+
+## Generating a new pymacaron/base image
+
+To generate a new pymacaron/base image, run:
+
+```
+./bin/pymdockerbase --push
+```
+
+By default, the generated new base image gets tagged with a version number
+generated from today's date and the commit number.
+
+You can see available [pymacaron base images here](https://hub.docker.com/repository/docker/pymacaron/base).
+
+To give the most recent image the 'stable' tag, do:
+
+* First make sure the image is indeed stable by using it as the base image to various pymacaron services for a while
+
+* Then give it the stable tag and push back to docker.io:
+
+```
+docker pull pymacaron/base:<LATEST_VERSION>
+docker tag pymacaron/base:<LATEST_VERSION> pymacaron/base:stable
+# Optionally: do 'docker login'
+docker push pymacaron/base:stable
+```
+
+## bin/pymdocker
+
+Build a pymacaron docker image and/or push it to a docker repository. For
+details:
+
+```
+pymdocker --help
+```
+
+
+## Author
+
+Erwan Lemonnier<br/>
+[github.com/pymacaron](https://github.com/pymacaron)</br>
+[github.com/erwan-lemonnier](https://github.com/erwan-lemonnier)<br/>
+[www.linkedin.com/in/erwan-lemonnier/](https://www.linkedin.com/in/erwan-lemonnier/)
+

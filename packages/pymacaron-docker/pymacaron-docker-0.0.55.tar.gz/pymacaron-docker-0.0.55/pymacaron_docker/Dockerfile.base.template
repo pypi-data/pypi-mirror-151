@@ -1,0 +1,21 @@
+FROM phusion/baseimage:bionic-1.0.0
+LABEL "version": "<VERSION>" \
+      "description": "pymacaron base image with python 3.8" \
+      "maintainer": "Erwan Lemonnier <erwan@lemonnier.se>"
+
+# install dependencies
+RUN apt-get update
+RUN apt-get -qq update && apt-get install -y --fix-missing python3.8 python3.8-dev python-pip python3-pip python3-setuptools libffi-dev libssl-dev libjpeg8 libjpeg8-dev libopenjp2-7-dev libxml2-dev libxslt-dev libcurl4-openssl-dev redis-server build-essential autoconf libtool pkg-config cmake git
+
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN pip install -U pip virtualenv
+
+# install virtualenv and pip base packages
+RUN mkdir /pym
+ADD requirements.txt /pym
+RUN echo "<VERSION>" > /pym/BASEVERSION
+RUN virtualenv -p python3.8 /pym/virtenv
+RUN /bin/bash -c "source /pym/virtenv/bin/activate; pip install -r /pym/requirements.txt --upgrade"
+RUN rm /pym/requirements.txt
