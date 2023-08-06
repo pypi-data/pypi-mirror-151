@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: MiV-OS
+Version: 0.0.4
+Summary: Python software for analysis and computing framework used in MiV project.
+Home-page: https://github.com/GazzolaLab/MiV-OS
+Author: GazzolaLab
+Author-email: skim449@illinois.edu
+License: MIT
+Download-URL: https://github.com/GazzolaLab/MiV-OS/archive/refs/tags/0.0.4.tar.gz
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: McsPyDataTools
+Requires-Dist: numba (>=0.51.0)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: omegaconf
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: quantities
+Requires-Dist: scikit-learn
+Requires-Dist: scipy (>=1.5.2)
+Requires-Dist: seaborn
+Requires-Dist: sklearn
+Requires-Dist: tqdm (>=4.61.1)
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx (==4.4.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==1.0.0) ; extra == 'docs'
+Requires-Dist: sphinx-book-theme ; extra == 'docs'
+Requires-Dist: readthedocs-sphinx-search (==0.1.1) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: docutils ; extra == 'docs'
+
+
+<div align='center'>
+<h1> MiV-OS: Spike Analysis and Computing Framework </h1>
+
+[![License][badge-LICENSE]][link-LICENSE]
+[![Release pypi][badge-pypi]][link-pypi]
+[![Build Status][badge-CI]][link-CI]
+[![Documentation Status][badge-docs-status]][link-docs-status]
+[![Downloads][badge-pepy-download-count]][link-pepy-download-count]
+[![codecov][badge-codecov]][link-codecov]
+
+[//]: # (Remove this line for the first release)
+_The package is under pre-alpha development. First Alpha release target mid-May 2022._
+
+</div>
+
+---
+
+Python analysis and computing framework developed for Mind-in-Vitro(MiV) project.
+
+## Installation
+[![PyPI version][badge-pypi]][link-pypi]
+
+MiV-OS is compatible with Python 3.8+. The easiest way to install is using python installation package (PIP)
+
+~~~bash
+$ pip install MiV-OS
+~~~
+
+## Documentation
+[![Documentation Status][badge-docs-status]][link-docs-status]
+
+Documentation of the package is available [here][link-docs-status]
+
+## Contribution
+
+If you would like to participate, please read our [contribution guideline](CONTRIBUTING.md)
+
+The development of MiV-OS is lead by the [Gazzola Lab][link-lab-website] at the University of Illinois at Urbana-Champaign.
+
+## List of publications and submissions
+
+## Citation
+
+```
+@misc{MiV-OS,
+  author = {Gazzola Lab},
+  title = {MiV-OS: Analysis and Computation Framework on MiV System and Simulator},
+  year = {2022},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/GazzolaLab/MiV-OS}},
+}
+```
+
+We ask that any publications which use MiV-OS package to cite the following papers:
+
+```
+```
+
+## Developers ✨
+_Names arranged alphabetically_
+- Arman Tekinalp
+- Andrew Dou
+- Austin Ellis-Mohr
+- Gaurav Upadhyay
+- [Seung Hyun Kim](https://github.com/skim0119)
+
+[//]: # (Collection of URLs.)
+
+[link-lab-website]: http://mattia-lab.com/
+[link-docs-status]: https://miv-os.readthedocs.io/en/latest/?badge=latest
+[link-CI]: https://github.com/GazzolaLab/MiV-OS/actions
+[link-LICENSE]: https://github.com/GazzolaLab/MiV-OS/blob/main/LICENSE
+[link-pypi]: https://badge.fury.io/py/MiV-OS
+[link-pepy-download-count]: https://pepy.tech/project/MiV-OS
+[link-codecov]: https://codecov.io/gh/GazzolaLab/MiV-OS
+
+[//]: # (Collection of Badges)
+
+[badge-docs-status]: https://readthedocs.org/projects/miv-os/badge/?version=latest
+[badge-CI]: https://github.com/GazzolaLab/MiV-OS/workflows/CI/badge.svg
+[badge-LICENSE]: https://img.shields.io/apm/l/atomic-design-ui.svg?style=flat
+[badge-pypi]: https://badge.fury.io/py/MiV-OS.svg
+[badge-pepy-download-count]: https://pepy.tech/badge/MiV-OS
+[badge-codecov]: https://codecov.io/gh/GazzolaLab/MiV-OS/branch/main/graph/badge.svg?token=OM5LYWF5KP
+
+
