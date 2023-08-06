@@ -1,0 +1,2 @@
+import wordleimageeditor.image_maker
+from wordleimageeditor.image_maker import make_image
