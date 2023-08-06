@@ -1,0 +1,11 @@
+tch_geometric/tch_geometric.pyi,sha256=8EdiQ0WOa5vkfOaAZ2M5AZz6FIs7ds4PmZ38S2BLpZE,4099
+tch_geometric/__init__.py,sha256=wZHXCaLiCA28MonUJpz1V3fd4TpyEnO_kXiErOJtbsM,55
+tch_geometric/tch_geometric.abi3.so,sha256=eW_oh0Kf1-C6grKbnOO8wCPaJnAceKc88m69SCjGL64,5056520
+tch_geometric/utils.py,sha256=GW7tvwIwP47X3495Dg1XoStntr9yi9smANaz51tMxtw,1584
+tch_geometric-0.1.0.dist-info/top_level.txt,sha256=py1bkJaIgmaHIFK_KO5bRSXV34TjXlvWxgfZVyRfhYo,14
+tch_geometric-0.1.0.dist-info/RECORD,,
+tch_geometric-0.1.0.dist-info/METADATA,sha256=gwbQFB3XchmDl2CUYo02F5SSSegynxTR9eSgG0h-sZI,263
+tch_geometric-0.1.0.dist-info/WHEEL,sha256=A25lwoLvZC3fgLQQcYEB1FsXok6O9wi7zbG0jmJvJ4E,148
+tch_geometric.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+tch_geometric.libs/libc10-f6ad7933.so,sha256=iJW14zT1y-wXH4Eu4j_HjdCAcvVhY2vi5jat3uHzhz8,868184
+tch_geometric.libs/libgomp-a34b3233-7923ba20.so.1,sha256=kGSUB6GOGtDu3bFHM7wzvZRjnkizGNegyTWOigNlN_I,188808
