@@ -1,0 +1,15 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/cookieutils/__init__.py
+src/cookieutils/clear.py
+src/cookieutils/codes.py
+src/cookieutils/colors.py
+src/cookieutils/key.py
+src/cookieutils/keys.py
+src/cookieutils/testing.py
+src/cookieutils.egg-info/PKG-INFO
+src/cookieutils.egg-info/SOURCES.txt
+src/cookieutils.egg-info/dependency_links.txt
+src/cookieutils.egg-info/top_level.txt

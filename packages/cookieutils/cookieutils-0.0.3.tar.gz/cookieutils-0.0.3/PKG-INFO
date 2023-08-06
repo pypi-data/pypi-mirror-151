@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cookieutils
+Version: 0.0.3
+Summary: A ton of usefull utils for python console applications
+Home-page: https://github.com/Epic-Oreo/cookieutils
+Author: Epic Oreo
+Author-email: none@example.com
+Project-URL: Bug Tracker, https://github.com/Epic-Oreo/cookieutils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+CookieUtils
+=========================
+A modual for usfull utilitys i always needed
+
+Install
+--------
+To install the modual run
+```console
+pip install cookieutils
+```
+for more info visit [https://epic-oreo.gitbook.io/cookie-utils/](https://epic-oreo.gitbook.io/cookie-utils/)
