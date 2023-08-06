@@ -1,0 +1,15 @@
+edge_playback/__init__.py,sha256=95se4mtgOpf4ufg-c2415fPy_sqn8RjQ5UF8X0Cgkms,1394
+edge_playback/__main__.py,sha256=J69AD2VczlQrf7vLX__WkPv_UcBW6rHemIO_GefGiEs,165
+edge_tts/__init__.py,sha256=FVNlfijGT9eVfpDCe8DmtVo6bAt-i6NFakpCuhIAlOM,136
+edge_tts/__main__.py,sha256=Tsu2VczZNea0xElye5rC1uzHC1BNgLeEzLehn20tT4w,94
+edge_tts/communicate.py,sha256=0v3VxjgMr1PcEv7GUtFRDscJGqZnRehqsH2CohQRgGM,14968
+edge_tts/constants.py,sha256=pTCeUadGhqY7dEgzusqmoCIqxd8OVbHTVvo3TK9dteo,415
+edge_tts/list_voices.py,sha256=K6NcIKZyBBGgXOoq3dZ8oN3MWvN3zMWVqy-X-SJOGWc,1361
+edge_tts/submaker.py,sha256=AxeVw4XmSClKGU9ubYAHrmi0Zww_UDv_xQj7mM8Hovs,3162
+edge_tts/util.py,sha256=kDzLyQayWjUzFybZCdBHeHF-1wIYxxCVxIJC8HBeRAg,4854
+edge_tts-4.0.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+edge_tts-4.0.10.dist-info/METADATA,sha256=K-XLxJyabiLL3vSeQBlDPEgqjzKcVhIYr3xSJ6JlXYA,4497
+edge_tts-4.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+edge_tts-4.0.10.dist-info/entry_points.txt,sha256=F5POZmYBoqcK0aiTEedluaCvsJitJtAa3K2b8i7u12A,97
+edge_tts-4.0.10.dist-info/top_level.txt,sha256=lxYRVU1wLS0a2YHxkXYU1l6CNieX--fJn-HedzhwzPk,23
+edge_tts-4.0.10.dist-info/RECORD,,
