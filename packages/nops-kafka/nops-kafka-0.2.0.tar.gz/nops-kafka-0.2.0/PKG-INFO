@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nops-kafka
+Version: 0.2.0
+Summary: Kafka tooling used in nOps.io
+Author: nOps Engineers
+Author-email: eng@nops.io
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: kafka_python (>2.0.0)
+Requires-Dist: msgpack (>1.0.0)
