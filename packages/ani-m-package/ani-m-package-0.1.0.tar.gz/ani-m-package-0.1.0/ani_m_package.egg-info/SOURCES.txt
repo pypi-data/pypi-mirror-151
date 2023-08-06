@@ -1,0 +1,8 @@
+setup.py
+ani-m-package/__init__.py
+ani-m-package/main.py
+ani_m_package.egg-info/PKG-INFO
+ani_m_package.egg-info/SOURCES.txt
+ani_m_package.egg-info/dependency_links.txt
+ani_m_package.egg-info/requires.txt
+ani_m_package.egg-info/top_level.txt
