@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cgelib
+Version: 0.7.2
+Summary: Description of my package
+Home-page: https://bitbucket.org/genomicepidemiology/cge_package
+Author: Center for Genomic Epidemiology
+Author-email: food-cgehelp@dtu.dk
+License: UNKNOWN
+Project-URL: Bug Tracker, https://bitbucket.org/genomicepidemiology/cge_package/issues
+Project-URL: CGE website, http://genomicepidemiology.org
+Project-URL: CGE webtools, http://genomicepidemiology.org/services
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: python-dateutil
+Requires-Dist: GitPython
+
+# README #
+
+
+## Installation
+
+```bash
+git clone https://bitbucket.org/genomicepidemiology/cgelib.git
+cd cgelib
+python -m pip install .
+
+```
+
+
