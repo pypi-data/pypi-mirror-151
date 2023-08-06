@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: boakboak
+Version: 1.0.4
+Summary: Plugin service that runs your python programs anywhere without install.
+Home-page: https://gitlab.com/larsmielke2/boakboak
+Author: Lars Mielke
+Author-email: info@while-ai.org
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<!-- README.md -->
+
+# Aliased Shell runner for python projects
+
+This runs your python projects/packages from anywhere inside your shell, without the need to install the package or change directory. 
+NOTE: Currently only pipenvs are implemented. Only tested on Windows 10. 
+Feel free to clone and extend.
+
+NOTE: a sample packageAlias.yml file can be found here: https://gitlab.com/larsmielke2/boakboak/-/tree/main/boakboak/apps
+
+
+# Install
+- pipenv install boakboak
+
+
+### dependencies
+- python 3.6 - 3.10
+- pyyaml
+
+
+
+# Problem boakboak tries to solve?
+I have some python based services, which I want to run occasionally from anywhere inside the
+shell using an aliased shell call.
+
+Most importantly: I dont want to install all these services into my main environment.
+
+For example:
+- I want to save my files to a archive directory, for which I have a archive.py module.
+- I want to convert a table to a json or yaml file for which I use a convert.py package.
+
+I want to be able to flexibly add/remove these services from the aliased shell call.
+
+
+# Usage
+Create and packageAlias.yml file and name it like the shell call alias you like to use.
+Example file:
+- name like: /apps/packageAlias.yml
+- call like: boak packageAlias -my parameters
+
+
+## Steps
+
+#### Example: Imaginary project which uses a archive.py module to archive files and folders.
+- I will run my module from the shell, using "python -m archive -c 'my_archive_comment'" as I always do.
+- From the sucessfully executed shell command, I copy the path, cmds and optional args to archive.yml
+- I save the created .yml file in: boakboak/boakboak/apps/archive.yml
+- The resulting .yml file has to look like this example: https://gitlab.com/larsmielke2/boakboak/-/tree/main/boakboak/apps
+
+From the shell, I now call:
+- boak archive -c 'my_archive_comment'
+
+
+## How it works
+
+boakboak will use the parameters from apps/packageAlias.yml, to run your project/package
+- It takes appPath and finds your project/package (returns the first dir with .venv in it)
+- It uses .venv file/folder or project name (if Pipfile is found), to identify the executable
+- It uses a subprocess call, to run your cmds using identified python.exe
+
+## Release notes
+### Version 1.0.0, 05-2022
+- python 3.6 - 3.10
+- venvs: pipenv
+- os: tested on Windows 10
+
+### Version 1.0.3, 05-2022
+- some technical changes, i.e. README.md
+
+### Version 1.0.4, 05-2022
+- last known executable is automatically added to apps.yml files
+MIT License
+
+Copyright (c) 2022 Lars Mielke
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
