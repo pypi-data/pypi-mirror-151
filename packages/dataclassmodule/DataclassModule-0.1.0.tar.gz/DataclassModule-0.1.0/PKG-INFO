@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dataclassmodule
+Version: 0.1.0
+Summary: dataclass + nn.Module
+License: MIT
+Author: yohan-pg
+Author-email: pg.yohan@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: torch (>=1.11.0,<2.0.0)
