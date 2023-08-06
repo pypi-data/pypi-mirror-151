@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['asyncodbc']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['pyodbc']
+
+setup_kwargs = {
+    'name': 'asyncodbc',
+    'version': '0.1.1',
+    'description': 'Forked from aioodbc and make improvement',
+    'long_description': 'asyncodbc\n=========\n.. image:: https://travis-ci.com/tortoise/asyncodbc.svg?branch=master\n    :target: https://travis-ci.com/tortoise/asyncodbc\n.. image:: https://coveralls.io/repos/tortoise/asyncodbc/badge.svg?branch=master&service=github\n    :target: https://coveralls.io/github/tortoise/asyncodbc?branch=master\n.. image:: https://img.shields.io/pypi/v/asyncodbc.svg\n    :target: https://pypi.python.org/pypi/asyncodbc\n\n**asyncodbc** is a Python 3.5+ module that makes it possible to access ODBC_ databases\nwith asyncio_. It relies on the awesome pyodbc_ library and preserves the same look and\nfeel. *asyncodbc* was written using `async/await` syntax (PEP492_) and thus is not compatible\nwith Python versions older than 3.5.  Internally *asyncodbc* employs threads to avoid\nblocking the event loop, threads_ are not that as bad as you think!. Other\ndrivers like motor_ use the same approach.\n\n**asyncodbc** is fully compatible and tested with uvloop_. Take a look at the test\nsuite, all tests are executed with both the default event loop and uvloop_.\n\nSupported Databases\n-------------------\n\n**asyncodbc** should work with all databases supported by pyodbc_. But for now the\nlibrary has been tested with: **SQLite**, **MySQL** and **PostgreSQL**. Feel\nfree to add other databases to the test suite by submitting a PR.\n\nBasic Example\n-------------\n\n**asyncodbc** is based on pyodbc_ and provides the same api, you just need\nto use  ``yield from conn.f()`` or ``await conn.f()`` instead of ``conn.f()``\n\nProperties are unchanged, so ``conn.prop`` is correct as well as\n``conn.prop = val``.\n\n\n.. code:: python\n\n    import asyncio\n    import asyncodbc\n\n\n    loop = asyncio.get_event_loop()\n\n\n    async def test_example():\n        dsn = \'Driver=SQLite;Database=sqlite.db\'\n        conn = await asyncodbc.connect(dsn=dsn, loop=loop)\n\n        cur = await conn.cursor()\n        await cur.execute("SELECT 42 AS age;")\n        rows = await cur.fetchall()\n        print(rows)\n        print(rows[0])\n        print(rows[0].age)\n        await cur.close()\n        await conn.close()\n\n    loop.run_until_complete(test_example())\n\n\nConnection Pool\n---------------\nConnection pooling is ported from aiopg_ and relies on PEP492_ features:\n\n.. code:: python\n\n    import asyncio\n    import asyncodbc\n\n\n    loop = asyncio.get_event_loop()\n\n\n    async def test_pool():\n        dsn = \'Driver=SQLite;Database=sqlite.db\'\n        pool = await asyncodbc.create_pool(dsn=dsn, loop=loop)\n\n        async with pool.acquire() as conn:\n            cur = await conn.cursor()\n            await cur.execute("SELECT 42;")\n            r = await cur.fetchall()\n            print(r)\n            await cur.close()\n            await conn.close()\n        pool.close()\n        await pool.wait_closed()\n\n    loop.run_until_complete(test_pool())\n\n\nContext Managers\n----------------\n`Pool`, `Connection` and `Cursor` objects support the context management\nprotocol:\n\n.. code:: python\n\n    import asyncio\n    import asyncodbc\n\n\n    loop = asyncio.get_event_loop()\n\n\n    async def test_example():\n        dsn = \'Driver=SQLite;Database=sqlite.db\'\n\n        async with asyncodbc.create_pool(dsn=dsn, loop=loop) as pool:\n            async with pool.acquire() as conn:\n                async with conn.cursor() as cur:\n                    await cur.execute(\'SELECT 42 AS age;\')\n                    val = await cur.fetchone()\n                    print(val)\n                    print(val.age)\n\n    loop.run_until_complete(test_example())\n\n\nInstallation\n------------\n\nIn a linux environment pyodbc_ (hence *asyncodbc*) requires the unixODBC_ library.\nYou can install it using your package manager, for example::\n\n      $ sudo apt-get install unixodbc\n      $ sudo apt-get install unixodbc-dev\n\nthen::\n\n   pip install asyncodbc\n\n\nRun tests\n---------\n\nFor testing purposes you need to install docker_ and the development\nrequirements::\n\n    $ pip install -r requirements-dev.txt\n\nIn order to simplify development you should install the provided docker container.\nThis way you don\'t need to install any databases or other system libraries, everything happens inside the container.\n\nThen just execute::\n\n    $ make docker_build\n    $ make docker_test\n\nThe test will automatically pull images and build containers with\nthe required databases.\n\n*NOTE:* Running tests requires Python 3.6 or higher.\n\n\nOther SQL Drivers\n-----------------\n\n* aiopg_ - asyncio client for PostgreSQL\n* aiomysql_ - asyncio client form MySQL\n\n\nRequirements\n------------\n\n* Python_ 3.5+\n* pyodbc_\n* uvloop_ (optional)\n\n\n.. _Python: https://www.python.org\n.. _asyncio: http://docs.python.org/3.4/library/asyncio.html\n.. _pyodbc: https://github.com/mkleehammer/pyodbc\n.. _uvloop: https://github.com/MagicStack/uvloop\n.. _ODBC: https://en.wikipedia.org/wiki/Open_Database_Connectivity\n.. _aiopg: https://github.com/tortoise/aiopg\n.. _aiomysql: https://github.com/tortoise/aiomysql\n.. _PEP492: https://www.python.org/dev/peps/pep-0492/\n.. _unixODBC: http://www.unixodbc.org/\n.. _threads: http://techspot.zzzeek.org/2015/02/15/asynchronous-python-and-databases/\n.. _docker: https://docs.docker.com/engine/installation/\n.. _motor: https://emptysqua.re/blog/motor-0-7-beta/\n',
+    'author': 'long2ice',
+    'author_email': 'long2ice@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/tortoise/asyncodbc',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
