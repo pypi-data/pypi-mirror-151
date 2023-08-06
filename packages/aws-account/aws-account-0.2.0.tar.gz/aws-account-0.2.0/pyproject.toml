@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "aws-account"
+version = "0.2.0"
+authors = ["M. Rollwagen <rollwagen@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/rollwagen/aws-account"
+description = "Print out AWS account and identity information to verify which account/organization is currently in use."
+
+[tool.poetry.scripts]
+aws-account = 'aws_account.cli:main'
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4"
+click = ">=8.0.3"
+boto3 = "<1.23.3"
+colorama = ">=0.4"
+mypy-boto3-sts = "<=1.22.10"
+mypy-boto3-sso = "<=1.22.10"
+mypy-boto3-iam = "<=1.22.10"
+
+[tool.poetry.dev-dependencies]
+yapf = "*"
+toml = "*"
+types-colorama = "*"
+botocore-stubs = "*"
+boto3-stubs = {extras = ["essential", "sts", "sso", "iam"], version = "<1.22.14"}
+pytest = "*"
+flake8 = "*"
+black = "*"
+mypy = "*"
+pyre-check = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.yapf]
+based_on_style = "pep8"

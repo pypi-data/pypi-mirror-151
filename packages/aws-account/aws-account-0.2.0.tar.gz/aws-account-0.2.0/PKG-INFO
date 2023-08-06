@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: aws-account
+Version: 0.2.0
+Summary: Print out AWS account and identity information to verify which account/organization is currently in use.
+Home-page: https://github.com/rollwagen/aws-account
+License: Apache-2.0
+Author: M. Rollwagen
+Author-email: rollwagen@gmail.com
+Requires-Python: >=3.9,<4
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (<1.23.3)
+Requires-Dist: click (>=8.0.3)
+Requires-Dist: colorama (>=0.4)
+Requires-Dist: mypy-boto3-iam (<=1.22.10)
+Requires-Dist: mypy-boto3-sso (<=1.22.10)
+Requires-Dist: mypy-boto3-sts (<=1.22.10)
+Project-URL: Repository, https://github.com/rollwagen/aws-account
