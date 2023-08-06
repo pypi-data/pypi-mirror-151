@@ -1,0 +1,13 @@
+fsRPCClient/__init__.py,sha256=yGfaIJEsXvQP0WwJvsZ2ogY36tWnWvvlqhOChkR9UVI,1194
+fsRPCClient/abcs.py,sha256=PCf-V_QgtCJugVrWsf8OfbbXImZYgCznuHmRmg7-1Yo,7922
+fsRPCClient/client.py,sha256=cSMM4a5eI9TnVppd9AfFbS5YiDvMrCIaaIwlKK7Ezr0,17431
+fsRPCClient/clientSocket.py,sha256=bs_ixDB6mmYZzogSmYZZ1k8Ug4zP_o1H3K_3_j8IIBs,18178
+fsRPCClient/exceptions.py,sha256=VuiABw25kUaySlTAJ-saZLCZ4rucVX-3CsX5f2YSSaU,782
+fsRPCClient/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsRPCClient/requestObj.py,sha256=YAm9RNrrFbFEmjRXrR7iLJupdqCbYOzOktjyW0N_IZg,2643
+fsRPCClient/utils.py,sha256=mQEgCpwRtRqxYHkAvlU9H9iaiYWRfvQWgNd-QPsB84M,2010
+python_fsrpcclient-0.3.1.dist-info/LICENSE.md,sha256=21gDL02AEGtDFn2p2ZXHllLyVhrdyZ4ZgAjjmr_XSXY,724
+python_fsrpcclient-0.3.1.dist-info/METADATA,sha256=9csPjydV25phf56Lg44BQKZfOdcPhrkZrE8UvGz73lk,2655
+python_fsrpcclient-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_fsrpcclient-0.3.1.dist-info/top_level.txt,sha256=Pla9fzDZDb5vPXBSfSoz8lfBtAx3RWMqz4XfIZiJp_4,12
+python_fsrpcclient-0.3.1.dist-info/RECORD,,
