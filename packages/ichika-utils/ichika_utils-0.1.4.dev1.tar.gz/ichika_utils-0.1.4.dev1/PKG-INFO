@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ichika-utils
+Version: 0.1.4.dev1
+Summary: Asynchronous Statistics Utils for Ichika
+Home-page: https://github.com/No767/Ichika-Utils
+License: MIT
+Author: No767
+Author-email: 73260931+No767@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: numba (>=0.55.1,<0.56.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: scikit-learn (>=1.1.1,<2.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Requires-Dist: uvloop (>=0.16.0,<0.17.0)
+Project-URL: Repository, https://github.com/No767/Ichika-Utils
+Description-Content-Type: text/markdown
+
+# Ichika Utils
+
+A set of utils used by Ichika. This is not production ready, and not even ready for anything. this is highly experimental.
