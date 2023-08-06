@@ -1,0 +1,8 @@
+pymumble
+pyalsaaudio
+gpiozero
+schema
+pyyaml
+pyOpenSSL
+numpy
+psutil
