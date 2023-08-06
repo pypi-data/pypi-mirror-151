@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+_config.yml
+pyCacheTemizleyici.sh
+pypiYukleyici.sh
+setup.py
+.github/FUNDING.yml
+SelSik/__init__.py
+SelSik.egg-info/PKG-INFO
+SelSik.egg-info/SOURCES.txt
+SelSik.egg-info/dependency_links.txt
+SelSik.egg-info/requires.txt
+SelSik.egg-info/top_level.txt
