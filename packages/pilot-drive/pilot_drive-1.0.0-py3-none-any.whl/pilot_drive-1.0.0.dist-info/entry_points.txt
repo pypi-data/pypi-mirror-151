@@ -1,0 +1,3 @@
+[console_scripts]
+pilot-drive = pilot_drive.main:main
+
