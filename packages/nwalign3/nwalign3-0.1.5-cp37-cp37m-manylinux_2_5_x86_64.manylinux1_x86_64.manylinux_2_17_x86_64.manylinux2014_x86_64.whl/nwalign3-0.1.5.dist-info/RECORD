@@ -1,0 +1,13 @@
+nwalign3/cnwalign.c,sha256=xNNTguZPwwuFb_xJIpM_7QHyvjXwsQLAtjYmm0Letjo,382046
+nwalign3/nwserver.py,sha256=AM7q6fN9QQp4Zws-QCeyW3bAC9DYF3nIUIBKBOGv4Ug,1542
+nwalign3/wrappers.py,sha256=FvfkxbcOA4aYeLWKTeP6Kk2pQ6JVX_pEmrnnCc_mbOo,1463
+nwalign3/cnwalign.cpython-37m-x86_64-linux-gnu.so,sha256=-DMuSyDQUimpVJDIl8klnwfqnJjE86Nlx8KwQAzDz8s,459392
+nwalign3/__init__.py,sha256=DQKHDJrtSHH2_2AL8kJHw9KDbVj22gsIKFkNWdvQ6aE,3471
+nwalign3/matrices/BLOSUM62,sha256=7jMEl7Vws5RtKB3HjmCJpWkwDrv75eo2tI-VxqyXDxI,2061
+nwalign3/matrices/PAM250,sha256=xqMxt6AQ1pUSlKJH8tlfLO2UD1YaV7CD94e2wq8weqY,2059
+nwalign3/matrices/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nwalign3-0.1.5.dist-info/WHEEL,sha256=OIRQU1YCtkkQX7nHuv3EmrPX--h1XHkz7mB98oBEAMQ,221
+nwalign3-0.1.5.dist-info/top_level.txt,sha256=wo0tlE-CLYU5_gxVQ7CHUogIBw_LubUpM7bJR8RR2z4,27
+nwalign3-0.1.5.dist-info/METADATA,sha256=if44ROmtW7nudypxTP64DBtAikbpTk29yuDRkfUyN80,785
+nwalign3-0.1.5.dist-info/RECORD,,
+nwalign3-0.1.5.dist-info/entry_points.txt,sha256=2YPIpb-q-RDBj9Mg42v7aU3RwMo2Qxvrr7LPON5QM3k,43

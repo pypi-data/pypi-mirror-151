@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nwalign3
+Version: 0.1.5
+Summary: Needleman-Wunsch global sequence alignment
+Home-page: https://github.com/briney/nwalign3
+Author: Bryan Briney
+Author-email: briney@scripps.edu
+License: BSD
+Keywords: sequence bioinformatics alignment needleman-wunsch
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Text Processing
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: cython
+
