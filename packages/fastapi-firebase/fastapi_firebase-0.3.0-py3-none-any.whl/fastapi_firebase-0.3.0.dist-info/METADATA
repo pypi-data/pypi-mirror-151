@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: fastapi-firebase
+Version: 0.3.0
+Summary: FastAPI integration with firebase
+Author: Francisco Del Roio
+Author-email: francipvb@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>0.60.0)
+Requires-Dist: firebase-admin (>=5.2.0,<6.0.0)
+Requires-Dist: python-multipart (>=0.0.5,<0.0.6)
+Description-Content-Type: text/markdown
+
+# FastAPI Firebase integration
+
+This package contains some utilities to work with firebase in a FastAPI project.
+
+## Example usage
+
+For example, if you want to send the firebase app name:
+
+```python
+from fastapi import FastAPI, Depends
+from fastapi_firebase import setup_firebase, firebase_app
+from firebase_admin.app import App
+
+app=FastAPI()
+
+setup_firebase(app)
+
+@app.get("/appname")
+def get_appname(fb_app: App = Depends(firebase_app)):
+    return fb_app.name
+
+```
+
+See the `setup_firebase` documentation for how to initialize.
+
