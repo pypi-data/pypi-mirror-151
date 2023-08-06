@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytest-assertcount
+Version: 0.0.2
+Summary: Plugin to count actual number of asserts in pytest
+Home-page: https://github.com/Old-Shatterhand/pytest-assertcount
+Author: Roman Joeres
+Author-email: romanjoeres@gmail.com
+License: MIT
+Keywords: pytest,plugin,assert
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Classifier: Framework :: Pytest
+Requires-Python: >=3.0
+License-File: LICENSE
+
+UNKNOWN
+
