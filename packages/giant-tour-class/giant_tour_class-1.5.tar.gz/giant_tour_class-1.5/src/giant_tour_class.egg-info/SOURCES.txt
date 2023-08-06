@@ -1,0 +1,7 @@
+setup.py
+src/GiantTour.py
+src/giant_tour_class.egg-info/PKG-INFO
+src/giant_tour_class.egg-info/SOURCES.txt
+src/giant_tour_class.egg-info/dependency_links.txt
+src/giant_tour_class.egg-info/requires.txt
+src/giant_tour_class.egg-info/top_level.txt
