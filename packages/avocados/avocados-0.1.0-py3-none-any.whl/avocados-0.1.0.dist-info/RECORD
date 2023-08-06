@@ -1,0 +1,11 @@
+avocados/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avocados/asgi.py,sha256=G8goh4bw9P_SSy1LazpjtyC7M3bamePKvR2bbzLHpxQ,409
+avocados/serializers.py,sha256=cf_rv4Uf7UBIHfI2GNyXyPWusyM_tKm3G_3b4FqhDMY,516
+avocados/settings.py,sha256=lWxM0ZjyzEtnh22iguYX1alCThoOp5AbdpXiooICCO0,3373
+avocados/urls.py,sha256=LHWzVtS_Z0x-nIrKv6sSw3rZSSAzX1coU2CznR7a__Q,858
+avocados/views.py,sha256=vG0t-QkWW3sLh9Lh5Emb9F6GznM5c9hUlbXJqBtA1Wc,1046
+avocados/wsgi.py,sha256=Bec-fSudnE_GC4RInAAdQdZYC2LSWTsWRvmHnqgLguo,409
+avocados-0.1.0.dist-info/METADATA,sha256=cUgaTVijW62tRtL4qpniTz16v-SFnn8K5foxu05RA28,275
+avocados-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+avocados-0.1.0.dist-info/top_level.txt,sha256=zSmjZinD6mAPPhbZ3opSkBdVt2Ij3X21IvUukybjdfQ,9
+avocados-0.1.0.dist-info/RECORD,,
