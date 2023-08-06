@@ -1,0 +1,2 @@
+[console_scripts]
+sbat = sbat.main:main
