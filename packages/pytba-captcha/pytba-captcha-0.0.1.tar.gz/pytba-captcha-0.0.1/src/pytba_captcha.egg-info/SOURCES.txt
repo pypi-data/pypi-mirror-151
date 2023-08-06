@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/pytba_captcha.py
+src/pytba_captcha.egg-info/PKG-INFO
+src/pytba_captcha.egg-info/SOURCES.txt
+src/pytba_captcha.egg-info/dependency_links.txt
+src/pytba_captcha.egg-info/requires.txt
+src/pytba_captcha.egg-info/top_level.txt
