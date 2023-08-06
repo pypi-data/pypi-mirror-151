@@ -1,0 +1,13 @@
+LICENSE
+LICENSE-MIT
+MANIFEST.in
+README.md
+README.rst
+pyproject.toml
+setup.py
+kyuda/__init__.py
+kyuda/script_helpers.py
+kyuda.egg-info/PKG-INFO
+kyuda.egg-info/SOURCES.txt
+kyuda.egg-info/dependency_links.txt
+kyuda.egg-info/top_level.txt
