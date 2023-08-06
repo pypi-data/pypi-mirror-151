@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+aws_list_subnets/__init__.py
+aws_list_subnets/main.py
+aws_list_subnets.egg-info/PKG-INFO
+aws_list_subnets.egg-info/SOURCES.txt
+aws_list_subnets.egg-info/dependency_links.txt
+aws_list_subnets.egg-info/entry_points.txt
+aws_list_subnets.egg-info/requires.txt
+aws_list_subnets.egg-info/top_level.txt
