@@ -1,0 +1,38 @@
+name: Upload to PIP
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_TOKEN }}
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: "Installs dependencies"
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install setuptools wheel python-semantic-release
+
+      - name: "Builds and uploads to PyPI"
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "action@github.com"
+          semantic-release publish
+        env:
+          PYPI_USERNAME: __token__
+          PYPI_TOKEN: ${{ secrets.PYPI }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
