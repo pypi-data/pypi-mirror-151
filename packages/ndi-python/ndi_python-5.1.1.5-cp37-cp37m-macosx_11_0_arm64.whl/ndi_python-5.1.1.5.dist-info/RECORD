@@ -1,0 +1,9 @@
+NDIlib/NDIlib.cpython-37m-darwin.so,sha256=renrwUvkTixjvfFtcfAAepT5OsBl0RWw-a4GFAw0fQc,6895576
+NDIlib/__init__.py,sha256=CRdWVRodofOXHVxwah4bkRE-d3gxoUdBqWV_kZhjJ2s,181
+NDIlib/libndi.dylib,sha256=I_VRcNeGaIQne37SUPX2EcOnl3JxDjt1bQZvYSupTtQ,28197824
+NDIlib/libndi_licenses.txt,sha256=ErYyi-oduz28Ye_MLMVUpGMYT-71Y2AbYhh-U4Iutyk,10952
+ndi_python-5.1.1.5.dist-info/LICENSE,sha256=dvT00dhoQSNTs2iqysXildouPDjZgCx8-IQgN-ux8Vo,1073
+ndi_python-5.1.1.5.dist-info/METADATA,sha256=xcvekgIk060ua8Uic6gitVGZF3-5Gsu8iz8erRnDb5Q,3622
+ndi_python-5.1.1.5.dist-info/WHEEL,sha256=P9Q66WANSepj6IpJIe6dJDn-3xxJ0dTqEFWxH1slCsI,109
+ndi_python-5.1.1.5.dist-info/top_level.txt,sha256=FMl4dvrqNd3R2GTYS3r9O-OGw0aCd44HxRUFcWzvym0,7
+ndi_python-5.1.1.5.dist-info/RECORD,,
