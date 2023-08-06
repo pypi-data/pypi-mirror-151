@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+prefect_kubernetes/__init__.py
+prefect_kubernetes/_version.py
+prefect_kubernetes.egg-info/PKG-INFO
+prefect_kubernetes.egg-info/SOURCES.txt
+prefect_kubernetes.egg-info/dependency_links.txt
+prefect_kubernetes.egg-info/requires.txt
+prefect_kubernetes.egg-info/top_level.txt
