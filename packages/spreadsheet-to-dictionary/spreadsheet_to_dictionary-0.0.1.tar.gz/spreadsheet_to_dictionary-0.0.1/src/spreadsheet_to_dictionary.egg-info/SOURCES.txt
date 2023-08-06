@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/spreadsheet_to_dictionary/__init__.py
+src/spreadsheet_to_dictionary/generate.py
+src/spreadsheet_to_dictionary.egg-info/PKG-INFO
+src/spreadsheet_to_dictionary.egg-info/SOURCES.txt
+src/spreadsheet_to_dictionary.egg-info/dependency_links.txt
+src/spreadsheet_to_dictionary.egg-info/requires.txt
+src/spreadsheet_to_dictionary.egg-info/top_level.txt
