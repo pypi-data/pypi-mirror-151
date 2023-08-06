@@ -1,0 +1,8 @@
+flashpolicies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flashpolicies/policies.py,sha256=YyBttIQwubIouJPkkLrvWug6y-CoRl5kJ7hSOJ0Hi6U,10751
+flashpolicies/views.py,sha256=_copdXH53iI8TVLPsByu1O-QTUrh_MGB0QwVucMzRRc,4087
+django_flashpolicies-1.14.dist-info/LICENSE,sha256=qvrJn_weIjQKJN-USOpS9p_NYB7mAKnWNO_vXKL3ma4,1524
+django_flashpolicies-1.14.dist-info/METADATA,sha256=GDGe5ihftg6-kpmMXbYThJSUUMJ6gUscTggCfCq91WA,2135
+django_flashpolicies-1.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_flashpolicies-1.14.dist-info/top_level.txt,sha256=kveSdV4qmGhCmXYU1xKJ4lVfs2UntcP--CP13qyK93c,14
+django_flashpolicies-1.14.dist-info/RECORD,,
