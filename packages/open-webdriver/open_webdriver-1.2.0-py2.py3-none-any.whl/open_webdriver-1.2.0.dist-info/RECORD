@@ -1,0 +1,15 @@
+open_webdriver/__init__.py,sha256=DMo7qkzpD2LhFT8oW9UoN2011aLokDaNXINoHdqzlXA,321
+open_webdriver/demo_app.py,sha256=5jb0tApg_fMnfkpyrTB5G1llXzhzq5I7OV_w8gaIc8Y,428
+open_webdriver/download_chromium.py,sha256=peMOjM3wvln2tNP1bcxl3oYeTehbaAkG4pbP6gBlwEY,2137
+open_webdriver/open_webdriver.py,sha256=vS0uRYZZvlTRypZmcIVGidF88EUGxjn6Mdl5A0tPN9o,2002
+open_webdriver/path.py,sha256=iC87UnLMuRn30k1TvreAf-oRQfH0A1hUmHHPNjJe2fY,269
+open_webdriver/version.py,sha256=5EVv-BbgXFjalJ8pGCfbHjX-910w8rkZyZM26IPynCI,66
+open_webdriver/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+open_webdriver/tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+open_webdriver/tests/unit/test_webdriver.py,sha256=MG8gDuqg3IoiyeS3LcQLLbop6UiJy1XJhXtS728XXPk,1760
+open_webdriver-1.2.0.dist-info/LICENSE,sha256=a2JyND2dMx1tjqmGCht1NHM0ZkeSmupqoPhBvj4Xdso,1085
+open_webdriver-1.2.0.dist-info/METADATA,sha256=TiS6jxGTLrYYOmnjjG1TFLHCWknndBr5S0uSD2YGZ-g,6310
+open_webdriver-1.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+open_webdriver-1.2.0.dist-info/entry_points.txt,sha256=EWMSEMLxxuaRLr0PVtjx1fTD2ACz3MD5JOs8wB2uxx0,61
+open_webdriver-1.2.0.dist-info/top_level.txt,sha256=LmxzY5MlUI_il2d52fL2WvAKqHwbQ9RR3OFJwHYDHY8,15
+open_webdriver-1.2.0.dist-info/RECORD,,
