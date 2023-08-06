@@ -1,0 +1,4 @@
+youtube-dl
+aiohttp[speedups]
+ujson
+python-Levenshtein
