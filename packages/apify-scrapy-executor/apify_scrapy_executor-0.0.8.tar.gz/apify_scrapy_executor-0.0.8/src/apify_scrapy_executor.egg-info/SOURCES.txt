@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/apify-scrapy-executor/__init__.py
+src/apify-scrapy-executor/apify_scrapy_executor.py
+src/apify_scrapy_executor.egg-info/PKG-INFO
+src/apify_scrapy_executor.egg-info/SOURCES.txt
+src/apify_scrapy_executor.egg-info/dependency_links.txt
+src/apify_scrapy_executor.egg-info/top_level.txt
