@@ -1,0 +1,9 @@
+setup.py
+s7smaths/__init__.py
+s7smaths/basic_maths.py
+s7smaths.egg-info/PKG-INFO
+s7smaths.egg-info/SOURCES.txt
+s7smaths.egg-info/dependency_links.txt
+s7smaths.egg-info/top_level.txt
+s7smaths/functions/__init__.py
+s7smaths/functions/advanced_maths.py
