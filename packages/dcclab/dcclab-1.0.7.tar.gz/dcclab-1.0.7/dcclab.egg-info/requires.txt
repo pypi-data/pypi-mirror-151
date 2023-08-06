@@ -1,0 +1,16 @@
+keyring
+sshtunnel
+mysql-connector-python
+requests
+matplotlib
+numpy
+scikit-image
+scipy
+czifile>=2019.6.18
+tifffile
+read-lif
+opencv-python
+xlrd
+seaborn
+imagecodecs
+deprecated
