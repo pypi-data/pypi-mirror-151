@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ishakpdf/__init__.py
+ishakpdf/pdf2image.py
+ishakpdf/pdf2text.py
+ishakpdf.egg-info/PKG-INFO
+ishakpdf.egg-info/SOURCES.txt
+ishakpdf.egg-info/dependency_links.txt
+ishakpdf.egg-info/top_level.txt
