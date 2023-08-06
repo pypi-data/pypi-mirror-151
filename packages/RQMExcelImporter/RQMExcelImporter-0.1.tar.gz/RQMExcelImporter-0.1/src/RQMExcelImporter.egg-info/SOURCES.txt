@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/RQMExcelImporter/__init__.py
+src/RQMExcelImporter.egg-info/PKG-INFO
+src/RQMExcelImporter.egg-info/SOURCES.txt
+src/RQMExcelImporter.egg-info/dependency_links.txt
+src/RQMExcelImporter.egg-info/requires.txt
+src/RQMExcelImporter.egg-info/top_level.txt
