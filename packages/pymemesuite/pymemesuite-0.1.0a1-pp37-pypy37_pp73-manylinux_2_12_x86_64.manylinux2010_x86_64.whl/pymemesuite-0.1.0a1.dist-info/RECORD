@@ -1,0 +1,17 @@
+pymemesuite-0.1.0a1.dist-info/WHEEL,sha256=l9NQ_lYlajZeVcpo3YCn_Vjka6d_cJPHq5-VNv0DkrM,162
+pymemesuite-0.1.0a1.dist-info/top_level.txt,sha256=hbngsKQDnDaIKFMQ2dydIxPdfL6uq1PN7_1baaSkjfc,12
+pymemesuite-0.1.0a1.dist-info/METADATA,sha256=4l0s644rsVMiVlIGHgOV5Am6Io6RU8GEASPaBSQC_Ds,9342
+pymemesuite-0.1.0a1.dist-info/RECORD,,
+pymemesuite-0.1.0a1.dist-info/COPYING,sha256=wPzDeBjR3w-UjqKqcZMcGmVN5gOI4A-FTL-nHRIWv5s,1103
+pymemesuite/cisml.pypy37-pp73-x86_64-linux-gnu.so,sha256=NuAcQ9UoBD0rD7Pw8NjD7j5WQzaOf6tAS3rYSnmcwbg,1952200
+pymemesuite/fimo.pyx,sha256=C-zbScQMTV_cYmNsVeu9Qo5nTFLaz5YbRgFiUodtrBU,14857
+pymemesuite/common.pypy37-pp73-x86_64-linux-gnu.so,sha256=WeZxLhLXL2xikW4C5hd5Ql3VqDrQ6ZUll4PpBU9DVh4,2103416
+pymemesuite/cisml.pxd,sha256=8sgaeho8oMArBonwtoTNgcgFr1SpuGx7TQ_Szmzo0Vw,1419
+pymemesuite/errors.pypy37-pp73-x86_64-linux-gnu.so,sha256=9S1k8p6qMEd57e8Wpt00KL_pHp2lW1IjqxcS81H85QY,53944
+pymemesuite/cisml.pyx,sha256=DD4PcbuwXru0UiQG7Wo7fe3_iqs5dwzEwneY5wljhms,11639
+pymemesuite/_globals.c,sha256=WgDHVwHZ3byqyF9jF3y558qdsUGnReOjbINBgmQgnJQ,910
+pymemesuite/common.pxd,sha256=5a8T-POLy2_wRWELGJLDeJnVaRR6gGTkULblvy1vazw,2872
+pymemesuite/__init__.py,sha256=R2TAOgsjHOK90Og5KtpLiS6UV08A2VdczC6rN9-wKFU,182
+pymemesuite/errors.pyx,sha256=TcYU-nj2I2NP9HsL3UZTLVJEcqvJoUJbChVPGPXm1Ls,857
+pymemesuite/common.pyx,sha256=Q3QOlk2L99f3zllsMc-LG-1wkXqD5MVk0xB8X2xWvpk,39347
+pymemesuite/fimo.pypy37-pp73-x86_64-linux-gnu.so,sha256=UBF35M62sSZvgHmTDEhC8NL5w8oFhk5steA5Ac__Jso,1992848
