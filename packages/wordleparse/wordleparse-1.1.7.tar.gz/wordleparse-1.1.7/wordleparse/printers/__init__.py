@@ -1,0 +1,4 @@
+from wordleparse.printers.printers import GamePrinter
+from wordleparse.printers.crosswordle_printer import crosswordle_printer
+from wordleparse.printers.squardle_printer import squardle_printer
+from wordleparse.printers.diffle_printer import diffle_printer
