@@ -1,0 +1,12 @@
+pykawaii/__init__.py,sha256=5M9fZLKaN6Fm8eXtdFdbOA17UGQtFCx_VtRUb76CE0M,1327
+pykawaii/cache.py,sha256=KPXmi_XgblvYeEbonH4vFNjIESDyW7hQ_AH0SxooktM,1706
+pykawaii/client.py,sha256=Qb0AmAc66_n5YCANlAFBASqMK-mmDRuNBUm4W49NsJk,1920
+pykawaii/http.py,sha256=NDXJIlG4DQYIGUq6yFj3YaOfuIYMxjK8f2In4fFB3sI,1623
+pykawaii/models/__init__.py,sha256=8ZBoruJb0HqHgNWxk6rdU8EfUFLtRkmD0AuK16Q6AcE,1137
+pykawaii/models/nsfw.py,sha256=E5y5IgEt2ajk760r2jykkDIR224-D9OPEDoy5LNdBFs,2413
+pykawaii/models/sfw.py,sha256=nd_Ctf5QY_rm_9y0DD7ke-9kdpl8tC5uEV5I1ESyY1w,9071
+pykawaii-3.2.0.dist-info/LICENSE,sha256=SzYQmKz8M-S5Sdsqb80oI_1Ef1dfEJPcrkFQ2msfqf0,1084
+pykawaii-3.2.0.dist-info/METADATA,sha256=jhFn_UyJNFGAqeI8hIrqjkYVQsDTby43yO5XJFnfcdo,1448
+pykawaii-3.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pykawaii-3.2.0.dist-info/top_level.txt,sha256=ldvCRRCkdfNOnuOSe3qO4DD-pdAqAf1mVk8ZZLvLvEo,9
+pykawaii-3.2.0.dist-info/RECORD,,
