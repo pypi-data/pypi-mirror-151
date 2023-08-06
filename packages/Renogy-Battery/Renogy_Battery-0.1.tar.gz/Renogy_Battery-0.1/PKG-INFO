@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Renogy_Battery
+Version: 0.1
+Summary: Designed to interface with the Renogy LFP100S line of batteries
+Home-page: https://github.com/epfenninger
+Author: UNKNOWN
+Author-email: epfenni@gmail.com
+License: MIT
+Download-URL: https://github.com/epfenninger/Renogy_Battery/archive/refs/heads/main.zip
+Description: UNKNOWN
+Keywords: Renogy,LFP100S,Modbus
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
