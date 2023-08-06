@@ -1,0 +1,6 @@
+scikit-learn~=1.0.2
+
+[dev]
+pytest>=7.1.2
+check-manifest
+twine

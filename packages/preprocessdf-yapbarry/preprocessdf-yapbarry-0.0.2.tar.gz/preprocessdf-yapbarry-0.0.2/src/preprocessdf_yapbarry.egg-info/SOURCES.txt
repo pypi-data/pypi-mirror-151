@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/preprocessdf_yapbarry.egg-info/PKG-INFO
+src/preprocessdf_yapbarry.egg-info/SOURCES.txt
+src/preprocessdf_yapbarry.egg-info/dependency_links.txt
+src/preprocessdf_yapbarry.egg-info/requires.txt
+src/preprocessdf_yapbarry.egg-info/top_level.txt

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: preprocessdf-yapbarry
+Version: 0.0.2
+Summary: handy functions to preprocess your dataframes or numpy arrays
+Author: Barry Yap
+Author-email: yapweiminbarry@gmail.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# Hello World
+
+This is an project that contains preprocessing techniques for numpy arrays and panda dataframes.
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install preprocessdf-yapbarry
+```
+
+## Usage
+
+```python
+from preprocessdf import preprocess
+
+# Pass your dataframe (aka df) into the preprocess class
+p = preprocess(df)
+
+# Do standard scaling on your dataframe values
+p.standard_scale()
+```
+
+## For developers
+
+```bash
+pip install -e .[dev]
+```
