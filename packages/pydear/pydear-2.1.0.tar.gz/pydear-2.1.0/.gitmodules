@@ -1,0 +1,10 @@
+[submodule "_external/imgui"]
+	path = _external/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "_external/imnodes"]
+	path = _external/imnodes
+	url = https://github.com/Nelarius/imnodes.git
+[submodule "_external/picovg"]
+	path = _external/picovg
+	url = https://github.com/ousttrue/picovg.git
+

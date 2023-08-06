@@ -1,0 +1,26 @@
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "cSpell.words": [
+        "cdef",
+        "cindex",
+        "cmake",
+        "glfw",
+        "imgui",
+        "mediump",
+        "pointee",
+        "pydear"
+    ],
+    "cmake.generator": "Ninja",
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "cmake.configureOnOpen": true
+}
