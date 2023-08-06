@@ -1,0 +1,3 @@
+[console_scripts]
+auto-guild=auto_guild:run
+
