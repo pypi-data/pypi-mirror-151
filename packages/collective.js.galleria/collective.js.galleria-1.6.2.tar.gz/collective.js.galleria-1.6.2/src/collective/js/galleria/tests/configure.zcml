@@ -1,0 +1,24 @@
+<configure xmlns:gs="http://namespaces.zope.org/genericsetup"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns="http://namespaces.zope.org/zope">
+
+  <gs:registerProfile name="1001-previous"
+    title="Previous bundle"
+    description='Configuration previous of version 1001'
+    directory="profiles/1001-previous"
+    for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <utility
+      factory="collective.js.galleria.tests.HiddenProfiles"
+      name="collective.js.galleria-hiddenprofiles-tests"
+      />
+
+  <browser:page
+      for="*"
+      name="collective.js.galleria.test"
+      permission="zope.Public"
+      template="galleria.pt"
+      />
+
+</configure>

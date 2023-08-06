@@ -1,0 +1,11 @@
+setuptools
+plone.app.registry
+plone.resource
+Products.CMFPlone>=5.2
+
+[test]
+plone.app.robotframework[debug]
+plone.app.testing
+plone.testing
+zope.component
+zope.configuration

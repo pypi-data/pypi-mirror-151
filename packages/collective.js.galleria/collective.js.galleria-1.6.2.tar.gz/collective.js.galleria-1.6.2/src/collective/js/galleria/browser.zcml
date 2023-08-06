@@ -1,0 +1,11 @@
+<configure
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.js.galleria">
+
+  <plone:static
+      directory="resources"
+      type="plone"
+      name="collective.js.galleria"
+      />
+
+</configure>
