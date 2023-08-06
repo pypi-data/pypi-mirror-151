@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: noapicode
+Version: 0.1
+Summary: Consume APIs. No code
+Home-page: https://gitlab.com/d8544/noapicode
+Author: noapicode.com
+Author-email: contact@noapicode.com
+License: MIT
+Download-URL: https://gitlab.com/d8544/noapicode/-/archive/0.01/noapicode-0.01.tar.gz
+Description: UNKNOWN
+Keywords: noapicode,no,api,code
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
