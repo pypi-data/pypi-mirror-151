@@ -1,0 +1,13 @@
+transfv/__init__.py,sha256=0uOcjjTn-878x73LxaHuwM9Uoy170VNxowsFoX3vK-U,1590
+transfv/__main__.py,sha256=hq8O9vqJHjwdiGiHiMD6ztUkmU2Y2dP_UukgKdeQ0ik,63
+transfv/argument.py,sha256=OYPhzGwTv7F_Ky5oUs-QoNH3OsG-2Sd0MuWy3JZynAU,477
+transfv/configuration.py,sha256=s82MkFNbNuOdJWDL0N5zMTqZPhcgs3dzQ-6dfit-9IM,2903
+transfv/constants.py,sha256=j0BVsG-2Mfzt-yCqoupjzgsil4xMsTkMNaJ8_zKIKBo,664
+transfv/prints.py,sha256=R6mR3E1QuCwAvoosI9-zsOOLJTnBfY3z7qYMkVm7ASg,1063
+transfv/translator.py,sha256=_aDrKQ74Nd46AtMzct8_Vn7gQLIZ8TOJq516dzKGxPE,1136
+transfv-1.0.5.dist-info/LICENSE,sha256=iZikwSKukeyCKXZxTaaP38xhRC944MmYeOf_EkwCGMU,1066
+transfv-1.0.5.dist-info/METADATA,sha256=kjcnH19kVE_1YteMiG2yiL4bj6FTj0t06P_3-Rru9Dk,843
+transfv-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+transfv-1.0.5.dist-info/entry_points.txt,sha256=tUCCg-dXCPP2NJ6FdH-VkzHmMTrASgNHltlUqSTHevI,48
+transfv-1.0.5.dist-info/top_level.txt,sha256=30qeviHpqqE3qbwpApR4ma3lqpKBGhZgU-AfCQdpPkU,8
+transfv-1.0.5.dist-info/RECORD,,
