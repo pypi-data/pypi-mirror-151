@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: discordCommunity
+Version: 0.0.1
+Summary: A Community Nuker library for discord.py
+Home-page: UNKNOWN
+Author: DestructiveLone
+Author-email: lambo.blac123@gmail.com
+License: MIT
+Keywords: discord
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
+
+Spams a community in a server!
+
+Version Changes
+=====================================================
+
+0.0.1 (05/19/2022)
+---------------------------------
+- First Release
+- Community Flood
+- In Development
+
