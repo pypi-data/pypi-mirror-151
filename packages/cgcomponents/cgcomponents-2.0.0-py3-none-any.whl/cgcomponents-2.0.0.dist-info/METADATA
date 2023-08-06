@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: cgcomponents
+Version: 2.0.0
+Summary: Components para scrapping da CG.
+Home-page: https://github.com/ramirooliveiracg/cgcomponents
+Author: Gabriel Dalacorte e Rogerio Filho
+Author-email: gnunes.servico@gmail.com, crofilho2@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Portal Components
+
+## Getting Started
+#### Dependencies
+You need Python 3.7 or later to use **portalcomponents**.
+```
+pip install setuptools
+pip install wheel
+pip install twine
+```
+#### Installation
+Clone this repo to your local machine using:
+```
+git clone https://github.com/ramirooliveiracg/cgcomponents.git
+```
+## Features
+- File structure for PyPI packages
+- Setup with package informations
+- License example
