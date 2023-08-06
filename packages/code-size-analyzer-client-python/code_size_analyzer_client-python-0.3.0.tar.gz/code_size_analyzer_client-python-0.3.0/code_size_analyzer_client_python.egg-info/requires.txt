@@ -1,0 +1,6 @@
+urllib3>=1.25.3
+python-dateutil
+click
+opentelemetry-api
+opentelemetry-instrumentation-urllib3
+otel_extensions>=0.1.2
