@@ -1,0 +1,8 @@
+numpy
+xarray
+
+[dev]
+pre-commit
+tox
+sphinx
+sphinx_rtd_theme
