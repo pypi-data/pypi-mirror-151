@@ -1,0 +1,13 @@
+pysondb/__init__.py,sha256=5HYktVNYl2wgJA8k1ALptTmDmHlkhJqwe6NcNw5PyVs,45
+pysondb/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysondb/cli.py,sha256=krrJlE13ulavYm73DKw6XbzTTJqQjf0p1mKi8kNAXR8,3734
+pysondb/db.py,sha256=mqkVPR1PSP96sx7JfWdH8oeglyzR11SPxNIqBZdupGY,10761
+pysondb/db_types.py,sha256=H5EaR6qfdkS-Fw6ruV0c6yQfGTXHhdxfRC7uyU8NrxQ,566
+pysondb/errors.py,sha256=EUsdb4L3jlsKENlZuoUTkAlsE2DDZAhs--ovyCaMHFo,535
+pysondb/utils.py,sha256=DKKQuEfM6sfD5iH8XC2M64FaKdHb15n1uvwkcsp0_N8,2397
+pysondb_v2-2.0.0.dist-info/LICENSE,sha256=r80TMekhbwBYl8Y7Jia14gJdsFPpyc_Ie-cuIcIXQ0Y,1067
+pysondb_v2-2.0.0.dist-info/METADATA,sha256=A_BXsYhSA3gENiBNOkZOzKWDn6puihnjIyXZPTqqf1w,7443
+pysondb_v2-2.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pysondb_v2-2.0.0.dist-info/entry_points.txt,sha256=GflfXq4eGq0FCqXQ7ycDEAFe_u23O0qYRfYY-fZUoY8,46
+pysondb_v2-2.0.0.dist-info/top_level.txt,sha256=jGCoFdOw9u0pEQjf7bEUUXkAl_sk2Y2Tng18fn-9KFY,8
+pysondb_v2-2.0.0.dist-info/RECORD,,
