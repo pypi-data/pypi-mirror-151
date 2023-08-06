@@ -1,0 +1,8 @@
+pydantic~=1.9
+beautifultable~=1.0
+
+[all]
+selenium~=4.1
+
+[web]
+selenium~=4.1
