@@ -1,0 +1,5 @@
+aws-requests-auth
+bcrypt
+boto3
+numpy
+requests>=2.13.0
