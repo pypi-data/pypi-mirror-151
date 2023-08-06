@@ -1,0 +1,15 @@
+README.md
+setup.py
+sbat/__init__.py
+sbat/analysis.py
+sbat/jellyfish.py
+sbat/main.py
+sbat/nanopore.py
+sbat/utils.py
+sbat.egg-info/PKG-INFO
+sbat.egg-info/SOURCES.txt
+sbat.egg-info/dependency_links.txt
+sbat.egg-info/entry_points.txt
+sbat.egg-info/requires.txt
+sbat.egg-info/top_level.txt
+test/test_utils.py
