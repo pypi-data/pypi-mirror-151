@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dnasim
+Version: 0.0.1
+Summary: DNA Computing simulations in Python
+Home-page: http://github.com/hritog/dnasim
+Author: Hristo Georgiev
+Author-email: hristo.a.georgiev@gmail.com
+License: Apache 2.0
+License-File: LICENSE.txt

@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+dnasim/__init__.py
+dnasim.egg-info/PKG-INFO
+dnasim.egg-info/SOURCES.txt
+dnasim.egg-info/dependency_links.txt
+dnasim.egg-info/not-zip-safe
+dnasim.egg-info/top_level.txt
