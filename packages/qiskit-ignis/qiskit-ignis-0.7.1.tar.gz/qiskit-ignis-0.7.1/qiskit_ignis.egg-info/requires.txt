@@ -1,0 +1,17 @@
+numpy>=1.13
+qiskit-terra>=0.15.1
+retworkx>=0.8.0
+scipy!=0.19.1,>=0.19
+setuptools>=40.1.0
+
+[cvx]
+cvxpy>=1.0.15
+
+[iq]
+scikit-learn>=0.17
+
+[jit]
+numba
+
+[visualization]
+matplotlib>=2.1
