@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: tweety-nss
+Version: 0.3.5
+Summary: An easy Twitter Scraper
+Home-page: https://github.com/mahrtayyab/tweety
+Author: Tayyab Kharl
+Author-email: tayyabmahr@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: TWITTER,TWITTER SCRAPE,SCRAPE TWEETS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
