@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pydamain
+Version: 0.4.6
+Summary: 도메인 주도 설계 라이브러리.
+Home-page: https://github.com/by-Exist/pydamain
+License: Apache-2.0
+Author: Jongbeom-Kwon
+Author-email: bolk9652@naver.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: aiosmtplib
+Provides-Extra: sqlalchemy
+Requires-Dist: SQLAlchemy (>=1.4.36,<2.0.0); extra == "sqlalchemy"
+Requires-Dist: aiosmtplib (>=1.1.6,<2.0.0); extra == "aiosmtplib"
+Requires-Dist: typing-extensions (>=4.2.0,<5.0.0)
+Project-URL: Repository, https://github.com/by-Exist/pydamain
+Description-Content-Type: text/markdown
+
+# Pydamain
+
+작성중...
