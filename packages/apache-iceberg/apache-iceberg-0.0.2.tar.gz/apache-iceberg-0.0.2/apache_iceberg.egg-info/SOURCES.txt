@@ -1,0 +1,6 @@
+README.md
+setup.py
+apache_iceberg.egg-info/PKG-INFO
+apache_iceberg.egg-info/SOURCES.txt
+apache_iceberg.egg-info/dependency_links.txt
+apache_iceberg.egg-info/top_level.txt
