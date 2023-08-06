@@ -1,0 +1,5 @@
+async-timeout
+wavelink
+nextcord
+psutil
+rich
