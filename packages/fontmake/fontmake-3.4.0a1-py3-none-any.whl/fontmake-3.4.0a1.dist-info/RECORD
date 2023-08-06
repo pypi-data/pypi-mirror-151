@@ -1,0 +1,14 @@
+fontmake/__init__.py,sha256=cc4OdxXG34_YoHbQJ4Wk_vcJIKcQAWmt7JxxR5gDOms,108
+fontmake/__main__.py,sha256=jLO2pip8bKsoQP2FQj71Pr1qzlhe4m2wMFiHrEBccKQ,22904
+fontmake/_version.py,sha256=qiXT10Esa3xqd-ikhvJKNFdoVXJpVnLVkynqUba_eW8,144
+fontmake/compatibility.py,sha256=RlV26wsz9yWOtz28xMnC4kIEdaYxnq5qxIWgjN0IuSA,3049
+fontmake/errors.py,sha256=WBlzH__Hs7Qe_bjxryakpZVn5VZB5FEtZJg8-8eHkd8,1439
+fontmake/font_project.py,sha256=TqX5I4BtpyDNo4QiUFMFem03wuzlLEjSYE3SM8rIFu4,54686
+fontmake/instantiator.py,sha256=bsDplHgYWuorpD-hJmKYc1HugYBgzVeBhNj2yelM1Hs,31062
+fontmake/ttfautohint.py,sha256=vZ3Rinv8_KYrmYRQ--rYzJadP7NgXSJUgcwuFaUTPyw,3288
+fontmake-3.4.0a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fontmake-3.4.0a1.dist-info/METADATA,sha256=e6qMLvKP_bBFJeZr-Qj1K0VV3hZ0Ce8d_pBHSUjf9TY,7834
+fontmake-3.4.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fontmake-3.4.0a1.dist-info/entry_points.txt,sha256=WU-CQP5XE3AiK2ESd4R6JS2v_BesFNT67NRWL6Zj08s,53
+fontmake-3.4.0a1.dist-info/top_level.txt,sha256=iKKuQoDu_Cbw2gIn-vII8QSWwbRLZJmwTrmXJpby69E,9
+fontmake-3.4.0a1.dist-info/RECORD,,
