@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mcproto
+Version: 0.0.1a1
+Summary: Library providing easy interactions with minecraft sevrers
+License: MPL-2.0
+Author: ItsDrike
+Author-email: itsdrike@protonmail.com
+Requires-Python: >=3.8,<4
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
