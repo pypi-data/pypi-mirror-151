@@ -1,0 +1,15 @@
+coverage
+black
+flake8
+freezegun
+isort
+mypy
+pytest>=6.0
+pytest-cov
+pytest-sugar
+pytest-httpx
+types-freezegun
+types-PyYAML
+types-tabulate
+types-ujson
+types-simplejson
