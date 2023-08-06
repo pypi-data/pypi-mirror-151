@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/rabbitmonitor/__init__.py
+src/rabbitmonitor/__main__.py
+src/rabbitmonitor.egg-info/PKG-INFO
+src/rabbitmonitor.egg-info/SOURCES.txt
+src/rabbitmonitor.egg-info/dependency_links.txt
+src/rabbitmonitor.egg-info/entry_points.txt
+src/rabbitmonitor.egg-info/requires.txt
+src/rabbitmonitor.egg-info/top_level.txt
