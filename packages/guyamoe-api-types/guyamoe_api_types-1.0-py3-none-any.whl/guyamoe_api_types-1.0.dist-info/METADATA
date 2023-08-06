@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: guyamoe-api-types
+Version: 1.0
+Summary: Types for the api at guya.moe
+Home-page: https://github.com/TypedAPIs/guyamoe
+Author: PythonCoderAS
+Author-email: sarkaraoyan@gmail.com
+Project-URL: Bug Tracker, https://github.com/TypedAPIs/guyamoe/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: typing-extensions
+
+guyamoe Python API Types
+------------------------
+
+This package contains the Python types for the ``guyamoe`` API.
+
+View the `generated Python documentation <https://typedapis.github.io/guyamoe/index.html>`_.
+
+View the `generated TypeScript documentation <https://typedapis.github.io/guyamoe/js/index.html>`_.
+
+View the `TypeScript code <https://github.com/TypedAPIs/guyamoe/tree/main/js>`_.

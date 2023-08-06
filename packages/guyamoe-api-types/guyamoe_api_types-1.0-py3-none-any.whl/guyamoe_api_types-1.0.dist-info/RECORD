@@ -1,0 +1,14 @@
+guyamoe_api_types/__init__.py,sha256=zTPD2kuadRPCqCdlRgsM0TndrlEwWW3b0ZlCjNUfyNw,346
+guyamoe_api_types/all_groups.py,sha256=4FGDYAPWMkQkxVPmL_fKLe5txU9st2HXN99zd_lPOn0,112
+guyamoe_api_types/all_series.py,sha256=PlLAqyz_QqvMiNSS--c7cDXn1k3ox0cPMvX7cikvhDY,1436
+guyamoe_api_types/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guyamoe_api_types/search_index.py,sha256=9Qa3QLuIO43wW_NrmEth6JySF2I2NnY5DTNhXLA_jrk,914
+guyamoe_api_types/series.py,sha256=mjIbzh0mnOO9m2f-Ka0HHMX4EmNO-MbHdbYJIjleHUg,3261
+guyamoe_api_types/series_groups.py,sha256=x6CYW3ssvSyxoF_ud5uh711663WR1ucO2Jr4ih0Huh8,381
+guyamoe_api_types/series_page_data.py,sha256=fg7VEXhKDkeZwzHGTJtAigUCqWFw8vZR7YiAV-vX_9M,4818
+guyamoe_api_types/series_volume_cover.py,sha256=dyytGvvworamGh36PBWl5rPjyx0twKRBeQ9SRwKjsak,334
+guyamoe_api_types/series_volume_covers.py,sha256=DPHp9UD3FNQaiYDOEs8-y_kO237ElaedVUXqpA4o2W4,445
+guyamoe_api_types-1.0.dist-info/METADATA,sha256=fD6qgmom8EOtVnMeCBgfNm64z-VQk9pa8CCs2HTZTwc,906
+guyamoe_api_types-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+guyamoe_api_types-1.0.dist-info/top_level.txt,sha256=elRvG0Q1pQH2dJTYkGjILS_njbkmkzIvOnoCBDq_VQs,18
+guyamoe_api_types-1.0.dist-info/RECORD,,
