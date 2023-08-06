@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: geom_tools
+Version: 0.2.5
+Summary: Simple tools for wavefront obj IO and processing.
+Home-page: https://github.com/Daiver/pygeom_tools
+Author: Daiver
+Author-email: ra22341@ya.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
