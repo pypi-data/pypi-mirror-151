@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+
+recursive-include departments/static *
+recursive-include departments/templates *
+
+recursive-exclude _data *
+recursive-exclude _static *
+recursive-exclude mytester *
+recursive-exclude medilab_ds *
