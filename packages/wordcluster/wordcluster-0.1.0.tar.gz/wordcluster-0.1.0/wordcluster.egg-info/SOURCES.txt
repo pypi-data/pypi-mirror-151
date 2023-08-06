@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wordcluster/__init__.py
+wordcluster.egg-info/PKG-INFO
+wordcluster.egg-info/SOURCES.txt
+wordcluster.egg-info/dependency_links.txt
+wordcluster.egg-info/top_level.txt

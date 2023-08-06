@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: wordcluster
+Version: 0.1.0
+Summary: A algoirthm for clustering similar words in a list
+Home-page: 
+Author: Dr. Suat ATAN
+Author-email: suatatan@gmail.com
+License: MIT
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# wordcluster
+
+
+
+About this project...
+
+## Installation
+
+Installation instructions...
+
+## Usage
+
+Usage instructions...
+
+## Test
+
+Testing instructions...
