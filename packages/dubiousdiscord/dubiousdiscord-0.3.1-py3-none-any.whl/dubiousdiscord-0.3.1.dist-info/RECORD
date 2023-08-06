@@ -1,0 +1,16 @@
+dubious/Interaction.py,sha256=ExiPcLBIBK3n7kMO_8konOv3LYabqaBnnn-xC6e6BEw,2475
+dubious/Machines.py,sha256=mO5llnSuN_hado6GOIo2NaEfXYgXFLH49y49z5AeAXo,4710
+dubious/Pory.py,sha256=QsFU4jFT1MEfbEorKHhXTPvb4Xvfw3WMIIx6PV3A8KY,9055
+dubious/Register.py,sha256=eQ99f05JDds5PfbUAOeAE4BSYIpOuTBXlLueXgXQwQ8,2946
+dubious/__init__.py,sha256=vkldtW1Y82L84RrlmNjmpSZp9jJ_F1txqE0_dH5pxsg,178
+dubious/discord/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dubious/discord/api.py,sha256=E-fwuEosVmOYgXKnzG0lnkhoJ71lF5yycGuGiugVEaY,37168
+dubious/discord/core.py,sha256=g-XRr6Fq346QEnlMTdaMFJDnJ45RyU0HhcOFGqFgqms,7154
+dubious/discord/enums.py,sha256=pv6CWXUqKLgwbZxnw0_6xweYYflhZthe9TU-IGoP6U0,7195
+dubious/discord/make.py,sha256=cjWuXByh-vTMzwNrCVu2srE7AershLj1Ef0FRtkdB3E,5622
+dubious/discord/rest.py,sha256=kY1vgkWwwJwkEpXJKf-_TvKUE3SkC1DiSi8u1Ithtys,13350
+dubiousdiscord-0.3.1.dist-info/LICENSE,sha256=J5TGxsxPfcxWDGGosDdGyqzRUaNt19MJcd70YDNOnqo,1068
+dubiousdiscord-0.3.1.dist-info/METADATA,sha256=E21-EJmDMOEk6jo5JUfxlet51ivh82GMDcsqUPsfhiw,747
+dubiousdiscord-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dubiousdiscord-0.3.1.dist-info/top_level.txt,sha256=UbNdRTs-o__st1Nwo5HLmSq51-p9D4X9RnSIDoisDh0,8
+dubiousdiscord-0.3.1.dist-info/RECORD,,

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dubiousdiscord
+Version: 0.3.1
+Summary: A python wrapper for the Discord API that takes advantage of Discord Interactions.
+Home-page: https://github.com/lapraswastaken/dubiousdiscord
+Author: lapras
+Author-email: carl.likes.lua@gmail.com
+Project-URL: Bug Tracker, https://github.com/lapraswastaken/dubiousdiscord/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp[speedups]
+Requires-Dist: websockets
+Requires-Dist: pydantic
+
