@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tdvutil
+Version: 0.0.2
+Summary: A few simple helper classes used by TDV Alinsa
+Home-page: https://github.com/alinsavix/python-tdvutil
+Author-email: TDV Alinsa <alinsa-github@lupine.org>
+License: UNKNOWN
+Project-URL: Homepage, https://github.com/alinsavix/python-tdvutil
+Project-URL: Bug Reports, https://github.com/alinsavix/python-tdvutil/issues
+Project-URL: Source, https://github.com/alinsavix/python-tdvutil
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+UNKNOWN
+
