@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: newArithmeticpkg1239
+Version: 0.1.1
+Summary: my arithmetic package
+Home-page: http://pypi.python.org/pypi/newArithmeticpkg1239/
+Author: I.P.M
+Author-email: myemail@example.com
+License: LICENSE
+Platform: UNKNOWN
+License-File: LICENSE
+
+This is my first package.
+
