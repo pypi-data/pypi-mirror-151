@@ -1,0 +1,8 @@
+/***********************************************
+         Invenio Theme Form Overrides
+***********************************************/
+
+.ui.form .field small {
+    color: @grey;
+    margin-top: 0.4em !important;
+}
