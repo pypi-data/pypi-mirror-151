@@ -1,0 +1,5 @@
+tensorflow
+tensorflow-io
+numpy
+soundfile
+numba
