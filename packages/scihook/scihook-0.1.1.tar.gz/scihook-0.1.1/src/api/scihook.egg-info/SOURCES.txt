@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/api/CMakeLists.txt
+src/api/SciHook.cc
+src/api/scihook_module.cc
+src/api/scihook/__init__.py
+src/api/scihook/scihook.py
+src/api/scihook.egg-info/PKG-INFO
+src/api/scihook.egg-info/SOURCES.txt
+src/api/scihook.egg-info/dependency_links.txt
+src/api/scihook.egg-info/not-zip-safe
+src/api/scihook.egg-info/requires.txt
+src/api/scihook.egg-info/top_level.txt
+src/api/scihook/include/SciHook.h
