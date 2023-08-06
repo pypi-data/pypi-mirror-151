@@ -1,0 +1,2 @@
+[console_scripts]
+bjutlogin = src.main:main
