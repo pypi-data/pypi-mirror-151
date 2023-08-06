@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: tms-django-api-version
+Version: 1.0.0
+Summary: Simple API endpoint for app versionning
+Home-page: https://github.com/tms-software/django-api-version
+Author: Franck COUTOULY
+Author-email: franck.coutouly@tms-software.ch
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: django
+Requires-Dist: djangorestframework
+
+# Django API Version
+
+Simple api endpoint to display version from config
+
+Create a `version.py` file containing the `VERSION` variable besides your `settings.py`
+
+```python
+VERSION='0.0.1'
+#You can also use an environment variable with the following
+import os
+VERSION=os.getenv('MY_VERSION', 'unknown')
+```
+
+Then import the version in your `settings.py`
+
+```python
+from <project>.version import VERSION
+```
+
+And finally add the views in your urls
+
+```python
+path(
+    "version/",
+    version_views.VersionView.as_view(),
+    name="version",
+)
+```
+
+Then the version will be return on the corresponding endpoint.
+
