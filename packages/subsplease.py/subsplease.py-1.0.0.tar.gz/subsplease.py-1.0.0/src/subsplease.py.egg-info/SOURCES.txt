@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/subsplease/__Init__.py
+src/subsplease/release.py
+src/subsplease/subsplease.py
+src/subsplease.py.egg-info/PKG-INFO
+src/subsplease.py.egg-info/SOURCES.txt
+src/subsplease.py.egg-info/dependency_links.txt
+src/subsplease.py.egg-info/top_level.txt
