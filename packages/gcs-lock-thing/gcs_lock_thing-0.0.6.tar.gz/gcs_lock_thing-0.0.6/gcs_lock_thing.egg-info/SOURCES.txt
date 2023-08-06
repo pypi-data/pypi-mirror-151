@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+gcs_lock_thing/__init__.py
+gcs_lock_thing/lock.py
+gcs_lock_thing.egg-info/PKG-INFO
+gcs_lock_thing.egg-info/SOURCES.txt
+gcs_lock_thing.egg-info/dependency_links.txt
+gcs_lock_thing.egg-info/not-zip-safe
+gcs_lock_thing.egg-info/requires.txt
+gcs_lock_thing.egg-info/top_level.txt
