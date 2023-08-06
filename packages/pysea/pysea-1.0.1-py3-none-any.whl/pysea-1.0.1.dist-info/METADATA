@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pysea
+Version: 1.0.1
+Summary: PySea is a very easy to use python lib, based and working over opensea api no need to for api key or login information...
+Home-page: UNKNOWN
+Author: Jojiv2
+License: UNKNOWN
+Keywords: opensea,pyton opensea,NFT
+Platform: UNKNOWN
+Requires-Dist: urllib3
+
+UNKNOWN
+
