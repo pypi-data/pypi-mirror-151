@@ -1,0 +1,15 @@
+fedml_aws/__init__.py,sha256=hVoN8nxdZ2K9jnjkTH3iFmVowe8uAlQAuM1BM_Pg4PI,175
+fedml_aws/build_and_push.sh,sha256=Nl9FvRZazuzg2tlNHVvTAeTsSc9NHGtavLoRpjXO1sU,2352
+fedml_aws/dbconnection.py,sha256=8HrZbdyUwfmfgoJKFjo2iWC-L4y28dpiNO8bFjxPQUE,9031
+fedml_aws/dwcsagemaker.py,sha256=qkGc4uqsONZD8_7fb21qwwjBxjKRBH8ZjbbOWq3lGLg,22560
+fedml_aws/install_kubectl.sh,sha256=K05jB9mv9ZxyBydRDOgH9QUCyjX3IgTGc81ZvEJX5ds,199
+fedml_aws/logger.py,sha256=rggU9se2rV1dgtgwAUzwsr0oCIrxginnEkzFmbrULTs,656
+fedml_aws/predictor.py,sha256=6TZMtaWcsU7ULc6hxQjzwamvewWvnv858u0HQe_Lgxw,4647
+fedml_aws/script_generator.py,sha256=Bl5e8P45aqDipYYpq0-Joirk6GDYDuhqW48og9PnRn4,16482
+fedml_aws-2.0.0.data/scripts/build_and_push.sh,sha256=Nl9FvRZazuzg2tlNHVvTAeTsSc9NHGtavLoRpjXO1sU,2352
+fedml_aws-2.0.0.data/scripts/install_kubectl.sh,sha256=K05jB9mv9ZxyBydRDOgH9QUCyjX3IgTGc81ZvEJX5ds,199
+fedml_aws-2.0.0.dist-info/LICENSE.txt,sha256=yWfUeqSfmr87z6JOdsR1D9P-TKAwZCtWozTwKHdHrGI,11307
+fedml_aws-2.0.0.dist-info/METADATA,sha256=HtLGeJqp3FyonUAs11nmcbBCYg_BTdUcv-l2QpHYDvU,460
+fedml_aws-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fedml_aws-2.0.0.dist-info/top_level.txt,sha256=ipnBAaUHEwCdLmLNmSsVqPMgd-yj8p7R0ADrUgkLOew,10
+fedml_aws-2.0.0.dist-info/RECORD,,
