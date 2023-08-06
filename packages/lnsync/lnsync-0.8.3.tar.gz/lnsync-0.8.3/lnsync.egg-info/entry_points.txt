@@ -1,0 +1,6 @@
+[console_scripts]
+lnsync = lnsync_pkg.lnsync:main32
+lnsync-nopreset = lnsync_pkg.lnsync:main_nopreset
+lnsync32 = lnsync_pkg.lnsync:main32
+lnsync64 = lnsync_pkg.lnsync:main64
+
