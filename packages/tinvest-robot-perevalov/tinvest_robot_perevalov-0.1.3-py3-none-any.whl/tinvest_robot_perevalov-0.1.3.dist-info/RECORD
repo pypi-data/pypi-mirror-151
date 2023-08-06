@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_config.py,sha256=rDEOxMWeu8wVdfzQeI4rfyDOs06mv0tyb9FxVFGNeOY,219
+tinvest_robot_perevalov/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinvest_robot_perevalov/_config.py,sha256=n-60-FVVDSFzu5qGls81wBYZmtKu4vb1UkGsBZ5uPjI,270
+tinvest_robot_perevalov/_db.py,sha256=i94-ANWesjdmUYt5cdSsY009GHbwByFwJISHeRPmPXw,4233
+tinvest_robot_perevalov/news_fetcher.py,sha256=dSg5vrw0Q0KHr_Q8q5fUgBuQNg72XVh3-BO6rYNFpgg,1817
+tinvest_robot_perevalov/sentiment_analyzer.py,sha256=frCLldDhJv-Ry3jH4VBqZtbVgsDkM1gh28fooa0lY2A,1867
+tinvest_robot_perevalov/trader.py,sha256=s7IlN8Si7ogeeooq7fi263VT5MwDA5WGtyMaZk2Tbj0,9621
+tinvest_robot_perevalov-0.1.3.dist-info/METADATA,sha256=vICaQ2AxEFZisdWf2lUb7Ql4CqVMLLbE-FB2QGdOY6I,10753
+tinvest_robot_perevalov-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tinvest_robot_perevalov-0.1.3.dist-info/top_level.txt,sha256=zXoFJkMLUizjnXqoG92SR1js5EyINfZ8AAi9gxBl1QA,30
+tinvest_robot_perevalov-0.1.3.dist-info/RECORD,,
