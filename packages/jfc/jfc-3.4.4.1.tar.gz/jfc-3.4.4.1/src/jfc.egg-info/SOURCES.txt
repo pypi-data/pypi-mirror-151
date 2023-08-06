@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jfc.egg-info/PKG-INFO
+src/jfc.egg-info/SOURCES.txt
+src/jfc.egg-info/dependency_links.txt
+src/jfc.egg-info/entry_points.txt
+src/jfc.egg-info/requires.txt
+src/jfc.egg-info/top_level.txt
