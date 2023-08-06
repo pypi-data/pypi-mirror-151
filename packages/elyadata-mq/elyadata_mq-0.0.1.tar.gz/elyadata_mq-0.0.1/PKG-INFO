@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: elyadata_mq
+Version: 0.0.1
+Summary: A kafka tools package that aims to facilitate using message queues
+Author: Saifeddine ABIDI
+Author-email: saifeddine.abidi@elyadata.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+![alt text](ressources/broker_tools.png)
+
+_____________________________________________________________________
+Broker-tools is a set of utility functions that allow working with different types of broker (Kafka, RabbitMQ,...).
+
+The main goal of **Broker-tools** project is to reduce boileplate code in all Elyadata projects that uses messqge queue or streaming functionalities, via a predefined and tested set of tools that can be used in any situation.
+_______________________________
+
+### :warning: This package is under construction, it is not yet ready for use :warning: ###
+_______________________________
+
+### :ballot_box_with_check:	 Roadmap ###
+
+* [x] Initialize the project repository in bitbucket
+* [ ] Initialize the project structure
+* [ ] Add an abstract class for all brokers
+* [ ] Add kafka Synchronus producer/consumer
+* [ ] Add kafka Asynchronus producer/consumer

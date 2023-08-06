@@ -1,0 +1,5 @@
+aiokafka==0.7.2
+confluent-kafka==1.7.0
+loguru
+pydantic
+typing_extensions~=3.7.4
