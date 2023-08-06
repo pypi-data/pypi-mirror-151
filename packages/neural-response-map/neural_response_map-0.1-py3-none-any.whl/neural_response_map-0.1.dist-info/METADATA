@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: neural-response-map
+Version: 0.1
+Summary: Library to visualize the activations of the hidden layers of artificial neural networks
+Home-page: https://github.com/joancerretani
+Author: Joan Alberto Cerretani
+Author-email: joancerretani@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: math
+Requires-Dist: sklearn
+Requires-Dist: tensorflow
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
