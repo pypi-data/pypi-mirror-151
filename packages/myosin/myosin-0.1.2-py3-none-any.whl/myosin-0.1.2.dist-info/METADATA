@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: myosin
+Version: 0.1.2
+Summary: Lightweight state management engine for posix compliant systems
+Home-page: https://github.com/ztnel/myosin
+Author: Christian Sargusingh
+Author-email: christian@leapsystems.online
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+
+Lightweight state management engine for posix compliant systems
+
+
