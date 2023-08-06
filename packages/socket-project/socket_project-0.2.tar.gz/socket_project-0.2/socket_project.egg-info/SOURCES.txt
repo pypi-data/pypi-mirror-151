@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+socket_project/__init__.py
+socket_project/test_connect.py
+socket_project.egg-info/PKG-INFO
+socket_project.egg-info/SOURCES.txt
+socket_project.egg-info/dependency_links.txt
+socket_project.egg-info/top_level.txt
