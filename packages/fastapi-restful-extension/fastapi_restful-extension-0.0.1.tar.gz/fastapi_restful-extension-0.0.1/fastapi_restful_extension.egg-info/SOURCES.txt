@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fastapi_restful/__init__.py
+fastapi_restful_extension.egg-info/PKG-INFO
+fastapi_restful_extension.egg-info/SOURCES.txt
+fastapi_restful_extension.egg-info/dependency_links.txt
+fastapi_restful_extension.egg-info/requires.txt
+fastapi_restful_extension.egg-info/top_level.txt
