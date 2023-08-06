@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Screen-Any
+Version: 1.0.0
+Summary: A simple module to check tv screen is On or off using import Screen_Any, import cv2 then image = cv2.imread(your image) then Screen_TV.Check_Screen(image) function.
+Author: Manish_Bendale
+Author-email: bendalemanish23@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+UNKNOWN
+
