@@ -1,0 +1,3 @@
+[console_scripts]
+tw-md=tw_md.cli:cli
+
