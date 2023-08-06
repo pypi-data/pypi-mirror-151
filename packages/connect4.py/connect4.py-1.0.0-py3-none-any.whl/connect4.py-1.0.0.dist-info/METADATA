@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: connect4.py
+Version: 1.0.0
+Summary: Simply play connect 4.
+Home-page: https://github.com/AiroPi/connect4-python-module
+Author: airo.pi_
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE
+Provides-Extra: testing
+Requires-Dist: flake8 (>=4.0.1) ; extra == 'testing'
+Requires-Dist: tox (>=3.25.0) ; extra == 'testing'
+Requires-Dist: pytest (>=7.1.2) ; extra == 'testing'
+Requires-Dist: mypy (>=0.950) ; extra == 'testing'
+
