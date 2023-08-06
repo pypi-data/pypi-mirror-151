@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gym-janggi
+Version: 0.9.18
+Summary: OpenAI Gym environment for Korean chess Janggi
+Home-page: https://github.com/sungho-cho/gym-janggi
+Author: Sungho Cho
+Author-email: didog9595@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gym (==0.23.1)
+Requires-Dist: janggi (==0.9.16)
+
+# Gym Janggi
+Gym Janggi provides an reinforcement learning environment for Korean chess called [Janggi](https://en.wikipedia.org/wiki/Janggi). As an [OpenAI Gym](https://gym.openai.com/) environment, this package can be used for reinforcement learning algorithms, such as AlphaZero.
