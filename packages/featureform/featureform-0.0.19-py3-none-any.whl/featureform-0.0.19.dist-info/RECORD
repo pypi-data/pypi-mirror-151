@@ -1,0 +1,15 @@
+featureform/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+featureform/__main__.py,sha256=vkUoLlkcsZRTbXSCvLBFR2M3YbgrVCZ6lmL1ioYYAtk,26
+featureform/cli.py,sha256=1FUKOF0aiTn0YiSy7wOVxDjeCZ6k0LHiHACEFeWqwK8,2667
+featureform/metadata_pb2.py,sha256=69H_3sr6fIMOGHai2ugPMpBWfKdSwfEuKLRXFA6Y-8k,92067
+featureform/metadata_pb2_grpc.py,sha256=txiw921X96_aEidaSlnaasKXUYEfVudGQU9yRLQyAgI,57521
+featureform/register.py,sha256=9F7lJIKfzHIse-bK-x1HIWRXUuDaGwdq4Nt_sXZeUeg,18505
+featureform/register_test.py,sha256=UdkSVneC9CqW-qY_sHst8tf90J-Fl12Sd2d7uyztcS4,14415
+featureform/resources.py,sha256=Ouj66eS56PtTaAFgQ4CCTsWq_UQBdsMSztj8g3aKfSk,9091
+featureform/resources_test.py,sha256=EgSfmU9qwXJ1OZB-uDWjg6iBq_tDNYS41XFv3RvZZ-0,9591
+featureform-0.0.19.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+featureform-0.0.19.dist-info/METADATA,sha256=vciYnvO_DSh6DYHTMLXNJwH16iFmuuy2gR1zjBrEC5Y,616
+featureform-0.0.19.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+featureform-0.0.19.dist-info/entry_points.txt,sha256=mLhFSTAdeMgDqcXe7iO16xwMvxiRrAjmfwMfXjQqv0U,52
+featureform-0.0.19.dist-info/top_level.txt,sha256=1Apxhy9ZVBbgdJGrwKWItqiBAcO3Tpx7U-rAw8vYNIo,12
+featureform-0.0.19.dist-info/RECORD,,
