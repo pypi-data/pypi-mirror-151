@@ -1,0 +1,3 @@
+[console_scripts]
+usoptimize = usoptimize.cli:cli
+
