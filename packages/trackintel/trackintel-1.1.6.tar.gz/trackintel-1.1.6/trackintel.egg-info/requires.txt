@@ -1,0 +1,12 @@
+pandas
+geopandas>=0.9.0
+matplotlib
+numpy
+pint
+shapely
+networkx
+geoalchemy2
+osmnx
+scikit-learn
+tqdm
+similaritymeasures
