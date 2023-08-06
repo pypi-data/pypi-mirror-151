@@ -1,0 +1,11 @@
+aprs3/__init__.py,sha256=kQ5wPmXIxlMuto6zJ0_5P1RbfGs9PHXUFm1hlGa6bh4,842
+aprs3/classes.py,sha256=sUCDSvnIzbiDPnsgHFJYA7T37Iser5NYbFM4nkyUwIM,10405
+aprs3/constants.py,sha256=3883-8SuvlLD1Nccs9THSRovC9NUapcDc3VBiN-vly4,1070
+aprs3/decimaldegrees.py,sha256=VJTYEtjxzfRgT7MfH1QtkImEfjWA-gVFLdH5dH7o5CY,4975
+aprs3/geo_util.py,sha256=V1MzxPDGA1tYiPCm7GJFxzunY5CduYu6fnnXOWDkVbg,2442
+aprs3/parser.py,sha256=PloIakkoaJwAlNOD9Oz0biehdCHWGZM9WynFmzx_lhs,3344
+aprs3-8.0.0a1.dist-info/LICENSE,sha256=TFbFL7ADX9hEchOk6eNHxETzs1EdhuGTa-w8o21P4QQ,571
+aprs3-8.0.0a1.dist-info/METADATA,sha256=aB0U4LEx1VWVMqq7SD74xOoF56_ckexFlw-S5FJPYXA,6042
+aprs3-8.0.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aprs3-8.0.0a1.dist-info/top_level.txt,sha256=y9xglx2H_LkixiON_QfqMrhncnu1gTbnn8Y1nJNrjR8,6
+aprs3-8.0.0a1.dist-info/RECORD,,
