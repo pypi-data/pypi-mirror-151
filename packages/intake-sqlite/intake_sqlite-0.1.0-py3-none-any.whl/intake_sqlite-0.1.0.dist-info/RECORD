@@ -1,0 +1,10 @@
+intake_sqlite/__init__.py,sha256=UfUg72HRXD5WTm2FVVVhWG5tiXnST5T8K3GEb2J9gxU,908
+intake_sqlite/sqlite_cat.py,sha256=A7Lz6lCcDTM5bH0aTLtQdxI-ueOwjVlGr66NG8qGnis,968
+intake_sqlite/sqlite_src.py,sha256=LEtKxe1hUHr_a8Mrkh26uylbx44m2G2rut9BoowLsVk,5961
+package_data/__init__.py,sha256=VU95-YSSMnNky9g3vGitxveg72YCApDh3f5FEzr8cN0,82
+intake_sqlite-0.1.0.dist-info/LICENSE.txt,sha256=DjC5hWjh8k2IFdAcjqrVkuZYcvnk7nakndbxkWmlSpY,1077
+intake_sqlite-0.1.0.dist-info/METADATA,sha256=u17Q6bPqXI11iF0mO5g35QBXFZb3PoJjNssdtA_-_zw,9652
+intake_sqlite-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+intake_sqlite-0.1.0.dist-info/entry_points.txt,sha256=ZUFfzrITMTqoEB30i2xN3mvH7Dlg-fNKuZ-UVz_y2OY,250
+intake_sqlite-0.1.0.dist-info/top_level.txt,sha256=RSITF_ifv30LZaC_etksXQhmu4Lb-MMu0yEfvDvn0Us,27
+intake_sqlite-0.1.0.dist-info/RECORD,,
