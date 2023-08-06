@@ -1,0 +1,6 @@
+pyproject.toml
+src/trigobot/trigolib.py
+src/trigobot.egg-info/PKG-INFO
+src/trigobot.egg-info/SOURCES.txt
+src/trigobot.egg-info/dependency_links.txt
+src/trigobot.egg-info/top_level.txt
