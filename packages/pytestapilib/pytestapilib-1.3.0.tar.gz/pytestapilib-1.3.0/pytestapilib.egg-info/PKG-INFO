@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytestapilib
+Version: 1.3.0
+Summary: The base for API-related test frameworks
+Home-page: https://gitlab.com/
+Author: Alexey Kom
+Author-email: alexey.kom.box@gmail.com
+License: UNKNOWN
+Keywords: python,test,testing,api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+
+A package that allows to implement tests in easy way to verify your API.
+
