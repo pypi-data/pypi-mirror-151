@@ -1,0 +1,11 @@
+setup.py
+mcAssistants/__init__.py
+mcAssistants/loginHelper.py
+mcAssistants/mcHelper.py
+mcAssistants/sliceHelper.py
+mcAssistants/sqlHelper.py
+mcAssistants.egg-info/PKG-INFO
+mcAssistants.egg-info/SOURCES.txt
+mcAssistants.egg-info/dependency_links.txt
+mcAssistants.egg-info/requires.txt
+mcAssistants.egg-info/top_level.txt
