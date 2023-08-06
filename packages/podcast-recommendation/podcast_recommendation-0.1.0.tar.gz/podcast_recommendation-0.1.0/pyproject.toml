@@ -1,0 +1,16 @@
+[project]
+name = "podcast_recommendation"
+description = "Podcast Recommendation Algorithm in Neo4j"
+version = "0.1.0"
+authors = [
+    {name = "Manuel Martinez", email = "manuelalejandromartinezf@gmail.com"}
+]
+dependencies = [
+    "pandas",
+    "neo4j",
+    "sklearn"
+]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
