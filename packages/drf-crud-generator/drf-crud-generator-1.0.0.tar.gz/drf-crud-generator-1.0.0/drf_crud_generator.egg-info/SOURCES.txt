@@ -1,0 +1,17 @@
+README.md
+setup.py
+crud_generator/__init__.py
+crud_generator/admin.py
+crud_generator/apps.py
+crud_generator/models.py
+crud_generator/tests.py
+crud_generator/views.py
+crud_generator/management/__init__.py
+crud_generator/management/commands/__init__.py
+crud_generator/management/commands/generate_crud.py
+crud_generator/migrations/__init__.py
+drf_crud_generator.egg-info/PKG-INFO
+drf_crud_generator.egg-info/SOURCES.txt
+drf_crud_generator.egg-info/dependency_links.txt
+drf_crud_generator.egg-info/requires.txt
+drf_crud_generator.egg-info/top_level.txt
