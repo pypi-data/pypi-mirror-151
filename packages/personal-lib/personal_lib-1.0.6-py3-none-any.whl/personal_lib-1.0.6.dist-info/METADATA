@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: personal-lib
+Version: 1.0.6
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas (>=1.1.4)
+Requires-Dist: yagmail (>=0.14.261)
+Requires-Dist: paramiko (>=2.7.2)
+Requires-Dist: pymysql (>=1.0.2)
+
+UNKNOWN
+
