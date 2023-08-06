@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: grmrcnn
+Version: 0.1
+Summary: This is for object detection model by combining Gradcam++ with MaskRCNN
+Home-page: https://github.com/xalphonseinbaraj/grmrcnn.git
+Author: AlphonseInbarajXavier
+Author-email: xalphonse@gmail.com
+License: MIT license
+Keywords: gradcam++ with mask rcnn
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+Requires-Dist: absl-py (==0.9.0)
+Requires-Dist: asgiref (==3.4.1)
+Requires-Dist: astor (==0.8.0)
+Requires-Dist: astunparse (==1.6.3)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: blinker (==1.4)
+Requires-Dist: brotlipy (==0.7.0)
+Requires-Dist: cached-property (==1.5.2)
+Requires-Dist: cachetools (==4.1.0)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: cffi (==1.14.0)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: charset-normalizer (==2.0.7)
+Requires-Dist: clang (==5.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: cloudpickle
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: cryptography (==2.9.2)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: cytoolz (==0.11.0)
+Requires-Dist: dask (==2021.9.1)
+Requires-Dist: decorator (==5.1.0)
+Requires-Dist: flatbuffers (==1.12)
+Requires-Dist: fsspec
+Requires-Dist: gast (==0.2.2)
+Requires-Dist: google-auth
+Requires-Dist: google-auth-oauthlib (==0.4.1)
+Requires-Dist: google-pasta (==0.2.0)
+Requires-Dist: grpcio (==1.27.2)
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: idna
+Requires-Dist: imageio
+Requires-Dist: imutils
+Requires-Dist: jedi (==0.18.1)
+Requires-Dist: joblib (==1.1.0)
+Requires-Dist: Keras (==2.3.1)
+Requires-Dist: Keras-Applications
+Requires-Dist: Keras-Preprocessing (==1.1.0)
+Requires-Dist: keras-resnet (==0.2.0)
+Requires-Dist: kiwisolver
+Requires-Dist: locket (==0.2.1)
+Requires-Dist: Markdown (==3.1.1)
+Requires-Dist: matplotlib
+Requires-Dist: matplotlib-inline (==0.1.3)
+Requires-Dist: mrcnn (==0.2)
+Requires-Dist: networkx
+Requires-Dist: numpy (==1.19.1)
+Requires-Dist: oauthlib (==3.1.0)
+Requires-Dist: olefile
+Requires-Dist: opencv-python (==4.5.4.58)
+Requires-Dist: opt-einsum (==3.1.0)
+Requires-Dist: packaging
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: parso (==0.8.2)
+Requires-Dist: partd
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: Pillow (==8.4.0)
+Requires-Dist: PyJWT (==1.7.1)
+Requires-Dist: pyOpenSSL
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pyreadline (==2.1)
+Requires-Dist: PySocks
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.3)
+Requires-Dist: PyWavelets
+Requires-Dist: PyYAML (==5.3.1)
+Requires-Dist: requests
+Requires-Dist: requests-oauthlib (==1.3.0)
+Requires-Dist: rich (==12.4.1)
+Requires-Dist: rsa (==4.0)
+Requires-Dist: scikit-image (==0.18.1)
+Requires-Dist: scikit-learn (==1.0.1)
+Requires-Dist: scipy (==1.2.1)
+Requires-Dist: seaborn (==0.11.2)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: sqlparse (==0.4.2)
+Requires-Dist: tensorboard (==1.14.0)
+Requires-Dist: tensorboard-data-server (==0.6.1)
+Requires-Dist: tensorboard-plugin-wit (==1.8.0)
+Requires-Dist: tensorflow (==1.14.0)
+Requires-Dist: tensorflow-estimator (==1.14.0)
+Requires-Dist: twine (==4.0.0)
+Requires-Dist: urllib3 (==1.25.9)
+
+This is for object detection model by combining Gradcam++ with MaskRCNN
+
+
