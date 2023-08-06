@@ -1,0 +1,11 @@
+datapact/__init__.py,sha256=ewFgGk6hD2aoFne9ms6IZrWEdnPPr4SfWAQfkgJe6As,24
+datapact/datapact.py,sha256=GGCD0ncs_b5zIQQryZtcXN3QsXqFgT_06LqtzEp3j-M,12365
+datapact/javascript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapact/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapact/util/github.py,sha256=_5bczL0WBN2MjPtKkyLdx237ckM3qI2lhzo1478PHIE,926
+datapact/util/session_fingerprint.py,sha256=Ue8lu_O9IxXCpKJ9wM2WClsCif9sUhlpVMsYzeGNBwU,216
+datapact-0.5.0.dist-info/LICENSE,sha256=PJWyrHRfdBtYkg1ZaqjosPeOtYW_QKxPzrq4-pbMatU,1061
+datapact-0.5.0.dist-info/METADATA,sha256=CcCt2CY4NtxvBvzvYslkbBeYr5N6kaLXgMEDOzzsaxw,4964
+datapact-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datapact-0.5.0.dist-info/top_level.txt,sha256=W_T_oM-K1uFY8paetXmSxc5P_XtfJnX5D-19FOfCSBw,9
+datapact-0.5.0.dist-info/RECORD,,
