@@ -1,0 +1,10 @@
+shopscraper/__init__.py,sha256=rYUQk_KxhwML7oSYHOX8K3CRR2cnkU93fkIlICF06Ig,145
+shopscraper/api.py,sha256=iFCAW6R5JJT6Al8mVG--CIbEG2tvWzOuVZlR80rmfss,2583
+shopscraper/headers.py,sha256=Cgzcldv4-_ktDVnHFt9EIapoIzZNw57RPe9yZ78odDU,1952
+shopscraper/json_handler.py,sha256=msJTkCjIy-1vxVfdKiAVSU85Mrnxm4NehRfwuxE3o5E,2441
+shopscraper/prod_objs.py,sha256=xKnVquiJvaU8dDoC2ode_BdV6ZKLfrx_UvWMTdwfhTM,4236
+shopscraper/scraper.py,sha256=idgHOO0Yfb9KQwc1SVuHGWgg4tPYfeH6SA8buatsUVY,2057
+shopscraper-0.0.2.dist-info/LICENSE,sha256=U-Sp-a0Gv9-FLLurJ_UON3o3lxcnAmXkzq7pb9ebL6U,1089
+shopscraper-0.0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+shopscraper-0.0.2.dist-info/METADATA,sha256=FYJNwRSLyfTyvxU3PQAoRXbwObwmcF6S8TsbEyVYv08,7670
+shopscraper-0.0.2.dist-info/RECORD,,
