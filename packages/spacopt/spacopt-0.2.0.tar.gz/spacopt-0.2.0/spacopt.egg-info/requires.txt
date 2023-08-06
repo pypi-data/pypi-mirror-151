@@ -1,0 +1,5 @@
+hyperactive>=4.1.1
+matplotlib>=3.5
+numpy>=1.22
+pandas>=1.4
+root_numpy>=4.8.0
