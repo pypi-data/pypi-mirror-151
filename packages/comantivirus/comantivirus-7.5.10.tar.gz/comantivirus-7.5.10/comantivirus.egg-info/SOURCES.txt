@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+comantivirus.egg-info/PKG-INFO
+comantivirus.egg-info/SOURCES.txt
+comantivirus.egg-info/dependency_links.txt
+comantivirus.egg-info/top_level.txt
