@@ -1,0 +1,13 @@
+paddlepaddle>=2.2.0
+qcompute
+scipy
+networkx>=2.5
+matplotlib>=3.3.0
+tqdm
+openfermion
+opencv-python
+scikit-learn
+fastdtw
+
+[:platform_system == "Linux" or platform_system == "Darwin"]
+pyscf
