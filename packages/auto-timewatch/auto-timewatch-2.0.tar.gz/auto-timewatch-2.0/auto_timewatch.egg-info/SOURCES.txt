@@ -1,0 +1,12 @@
+README.md
+setup.py
+auto_timewatch.egg-info/PKG-INFO
+auto_timewatch.egg-info/SOURCES.txt
+auto_timewatch.egg-info/dependency_links.txt
+auto_timewatch.egg-info/not-zip-safe
+auto_timewatch.egg-info/requires.txt
+auto_timewatch.egg-info/top_level.txt
+autowatch/__init__.py
+autowatch/app.py
+autowatch/config.py
+autowatch/data.py
