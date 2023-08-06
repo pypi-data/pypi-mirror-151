@@ -1,0 +1,2 @@
+[console_scripts]
+geprofiler = geprofiler.__main__:main
