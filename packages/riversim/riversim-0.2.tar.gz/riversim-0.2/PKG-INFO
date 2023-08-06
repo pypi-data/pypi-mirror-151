@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: riversim
+Version: 0.2
+Summary: Simulation of river growth using model based on Laplace equation. Mathematicaly, in this program we solve PDE equation using Finite Element Method(FEM).
+Home-page: https://github.com/okmechak/riversimpy
+Author: OLEG KMECHAK
+Author-email: oleg.kmechak@gmail.com
+License: MIT
+Download-URL: https://github.com/okmechak/riversimpy/archive/refs/tags/v0.2.tar.gz
+Description: UNKNOWN
+Keywords: LAPLACEA,RIVER,FEM,HARMONIC,NETWORK,GROWTH,SIMULATION
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
