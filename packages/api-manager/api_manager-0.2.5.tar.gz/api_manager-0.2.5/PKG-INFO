@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: api_manager
+Version: 0.2.5
+Summary: Api Manager
+Home-page: https://gitlab.alemira.dev/platform/qa/api-manager
+Author: Nikita Filonov
+Author-email: nf@alemira.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+API Manager
+---
+
+The library which provides us minimal interface to work with http requests and make API auto tests
