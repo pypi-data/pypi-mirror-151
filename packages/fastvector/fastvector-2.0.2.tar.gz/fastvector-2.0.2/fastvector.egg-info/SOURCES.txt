@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./fastvector/__init__.py
+./fastvector/computations.py
+./fastvector/dtypes.py
+./fastvector/vector.py
+./fastvector/version.py
+fastvector/cython_computations.c
+fastvector.egg-info/PKG-INFO
+fastvector.egg-info/SOURCES.txt
+fastvector.egg-info/dependency_links.txt
+fastvector.egg-info/not-zip-safe
+fastvector.egg-info/requires.txt
+fastvector.egg-info/top_level.txt
