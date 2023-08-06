@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rangex
+Version: 0.0.1
+Summary: This package can generate random strings by patterns
+Home-page: UNKNOWN
+Author: Tufaah
+Author-email: yazanemails@gmail.com
+License: UNKNOWN
+Keywords: random,random by pattern,random regex,generate
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+This package can generate random strings by patterns
+
