@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+setup.py
+saicalculator/__init__.py
+saicalculator.egg-info/PKG-INFO
+saicalculator.egg-info/SOURCES.txt
+saicalculator.egg-info/dependency_links.txt
+saicalculator.egg-info/top_level.txt

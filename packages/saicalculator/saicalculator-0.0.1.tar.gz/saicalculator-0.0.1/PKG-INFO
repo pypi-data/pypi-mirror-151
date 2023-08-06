@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: saicalculator
+Version: 0.0.1
+Summary: Calculator
+Home-page: 
+Author: Shankar Sai Ganesh
+Author-email: shankarsaiganesh@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+A calculator that adds, subtracts, divides, multiplies and newer functions will be updated in upcoming versions.
+
+Change Log
+==========
+
+0.0.1 (22/05/2022)
+-------------------
+- First Release
+

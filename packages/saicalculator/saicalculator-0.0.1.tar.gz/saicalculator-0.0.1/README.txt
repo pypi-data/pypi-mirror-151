@@ -1,0 +1,1 @@
+A calculator that adds, subtracts, divides, multiplies and newer functions will be updated in upcoming versions.
