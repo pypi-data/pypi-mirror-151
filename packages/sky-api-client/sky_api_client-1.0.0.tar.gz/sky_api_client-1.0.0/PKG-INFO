@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: sky_api_client
+Version: 1.0.0
+Summary: Python client for RENXT APIs
+Home-page: https://bitbucket.org/kalyanvarma/skyapi
+Author: Uddesh Jain
+Author-email: uddesh@almabase.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Sky Api Client
+
+Python client for RENXT APIs.
+
+## Installation
+
+```
+pip install sky_api_client
+```
+
+## Examples
+
+1. Initialize the client
+
+```python
+from sky_api_client import SkyApi
+
+sky_api = SkyApi('subscription_key', 'access_token')
+```
+
+2. Get list of all constituent
+
+```python
+list = sky_api.constituent.list()
+```
+
+## Available methods
+
+1. List all constituents
+
+```
+list = sky_api.constituent.list()
+```
+
+2. Get a specific constituent
+
+```python
+constituent = sky_api.constituent.get('constituent_id')
+```
+
+3. Create a new constituent
+
+```python
+new_constituent = sky_api.constituent.create({'first': '', 'last': ''})
+```
+
+4. Update an existing constituent
+
+```python
+updated_constituent = sky_api.constituent.update('constituent_id' ,{'first': '', 'last': ''})
+```
+
+5. Delete a constituent
+
+```python
+sky_api.constituent.delete('constituent_id')
+```
+
+> Note:- Current version doesn't have refresh token functionality.
+
+## Deployment instruction
+1. Run semversioner command on you local machine
+```
+semversioner add-change --type major --description "Release message"
+```
+
+2. Run `release` command, It is a shell script which bumps the version
+
+3. Push the code and run pipeline to deploy
