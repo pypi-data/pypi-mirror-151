@@ -1,0 +1,78 @@
+# -------------------------------------------------------------------
+# Python packages used by pymodbus.
+# -------------------------------------------------------------------
+# This file install all requirements used by pymodbus, and are
+# intented for developers who have cloned the repository.
+#
+# pymodbus is only being tested on python version 3.8, 3.9 and 3.10
+# depending on the usage profile it might work on other versions.
+python_version>="3.8"
+
+# -------------------------------------------------------------------
+# Required packages.
+# -------------------------------------------------------------------
+# install:required
+
+
+# -------------------------------------------------------------------
+# optional packages.
+# -------------------------------------------------------------------
+# These packages are optional for the runtime, but demanded for
+# document generation, development and test.
+#
+# these packages can be installed like:
+#    pip install pymodbus[serial]
+
+# install:repl
+aiohttp>=3.8.1
+click>=8.1.3
+prompt-toolkit==3.0.8
+
+# install:serial
+pyserial>=3.5
+pyserial-asyncio==0.6
+
+# install:datastore
+redis>=2.10.6
+sqlalchemy>=1.1.15
+
+# install:twisted
+twisted[conch,serial]>=20.3.0
+
+# install:tornado
+tornado==4.5.3
+
+
+# -------------------------------------------------------------------
+# documentation, everything needed to generate documentation.
+# -------------------------------------------------------------------
+# install:documentation
+humanfriendly
+m2r2
+recommonmark
+Sphinx
+sphinx-rtd-theme
+
+
+# -------------------------------------------------------------------
+# development, everything needed to develop/test/check.
+# -------------------------------------------------------------------
+# install:development]
+asynctest
+bandit
+black
+codespell
+coverage
+flake8
+flake8-docstrings
+flake8-noqa
+flake8-comprehensions
+isort
+pep8
+pyflakes
+pydocstyle
+pycodestyle
+pylint
+pytest
+pytest-cov
+tox
