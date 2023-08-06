@@ -1,0 +1,9 @@
+README.md
+setup.py
+folio_uuid/__init__.py
+folio_uuid/folio_namespaces.py
+folio_uuid/folio_uuid.py
+folio_uuid.egg-info/PKG-INFO
+folio_uuid.egg-info/SOURCES.txt
+folio_uuid.egg-info/dependency_links.txt
+folio_uuid.egg-info/top_level.txt
