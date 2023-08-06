@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: django-books
+Version: 0.0.1
+Summary: QuickBooks Desktop WebConnector Djano App
+Home-page: https://github.com/bill-ash/django-books
+Author: Bill Ash
+Author-email: bill@overco.net
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=4.0.0)
+Requires-Dist: lxml (>=4.8.0)
+Requires-Dist: spyne (>=2.14.0)
+
+# Djano Books
+
+Functional django application for interacting with the QuickBooks Desktop Webconnector.
+

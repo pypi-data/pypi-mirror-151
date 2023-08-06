@@ -1,0 +1,13 @@
+django_books/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_books/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_books/apps.py,sha256=LmQvUq9IQNK063lURNB2i3WP3T_OjsjTjpO5Z9xYCdM,155
+django_books/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_books/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_books/urls.py,sha256=aQjoXj4fXSygJ_pjG8-tuujujrtMPSn1qMJz7N_Jff4,125
+django_books/views.py,sha256=F1hU3eXWoaH-6oWk4tEhVsJP0n8Ui2K3uCDsP6YDPbM,187
+django_books/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_books-0.0.1.dist-info/LICENSE,sha256=f56CoOrgase-AQO--UWNgGEsc8PLHJE-AuryhkDGvbw,1060
+django_books-0.0.1.dist-info/METADATA,sha256=lHXZ0mjgxmBTjyZhehArpBd0oX2nP-mM6bgpAZ8IG70,1063
+django_books-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_books-0.0.1.dist-info/top_level.txt,sha256=qfoGXXAqMOMpV7iiF8zyL-FdRfePvCKm4R1AxtAesY8,13
+django_books-0.0.1.dist-info/RECORD,,
