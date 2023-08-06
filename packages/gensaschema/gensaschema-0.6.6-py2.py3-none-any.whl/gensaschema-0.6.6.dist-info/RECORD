@@ -1,0 +1,17 @@
+gensaschema/__init__.py,sha256=89U5DyvlyyKN7BVDGFrgPHEnmdWG2Z_GLRtBonkekNs,1377
+gensaschema/_column.py,sha256=KNRfyOLUy8W_54_-0MddxNv9wYf7BxG_TVyMpw3nXhk,4664
+gensaschema/_config.py,sha256=6fZXgZ2a7ukK7g9gqbYcf3TGZekBK2Lvqp4JGcwl2wA,6584
+gensaschema/_constraint.py,sha256=7EIaWEe5dvxrO-ZC4CWshfsgm1wmgddb0Gz1JPUhYSo,8162
+gensaschema/_exceptions.py,sha256=HcaK2lRakXK0DEERjFLsjq_IBanQlycPQzX9UVzLU5M,2239
+gensaschema/_schema.py,sha256=4OScXdiY9FhimGiV39iA3yj2K7unL5BrWtlwhRMCse4,5001
+gensaschema/_symbols.py,sha256=2d2z1b-g8OiIZI5eAe4vkZoBorg19fnBE4TVC1VdF2M,9799
+gensaschema/_table.py,sha256=i7TFGUAgUx-viWgFlI4OQToKnhVRVqA68WuYHEItr44,13543
+gensaschema/_template.py,sha256=eaxMNjcz84_Snbp6JTL20XS1c-0TsgY78-kr0AlEE_s,2184
+gensaschema/_type.py,sha256=sLDrQ2ifcTGfVM0nwXzDIMBW3-YEPW-u0DOqdZJRWG4,6580
+gensaschema/_util.py,sha256=JhfsQZttaX8dZsCC5nrxwhmvtIJGvj7ei-PxJBOH6Wo,1851
+gensaschema/constraints.py,sha256=7ctTOktLLXQKZfuszdVIHoVUkMYP3eDztXnv2V8wc5k,2049
+gensaschema-0.6.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gensaschema-0.6.6.dist-info/METADATA,sha256=N4C1ds9mLVd-KGW9wRHGkbj81JKfMXkNPh18qfML8rM,2214
+gensaschema-0.6.6.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+gensaschema-0.6.6.dist-info/top_level.txt,sha256=SiOYWiWeXFtzz1Ser45woBV-6Zjbbjs_xWX5x3w7yPM,12
+gensaschema-0.6.6.dist-info/RECORD,,
