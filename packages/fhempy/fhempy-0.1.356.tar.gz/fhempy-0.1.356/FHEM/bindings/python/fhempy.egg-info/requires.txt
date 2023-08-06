@@ -1,0 +1,8 @@
+aiohttp[speedups]==3.8.1
+cryptography==37.0.2
+dbus-python==1.2.18
+importlib_metadata==4.11.3
+markdown2==2.4.3
+requests==2.27.1
+websockets==10.3
+zeroconf==0.38.6
