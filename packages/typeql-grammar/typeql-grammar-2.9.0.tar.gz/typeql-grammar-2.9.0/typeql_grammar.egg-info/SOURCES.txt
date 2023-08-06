@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+bazel-out/__init__.py
+bazel-out/k8-fastbuild/__init__.py
+bazel-out/k8-fastbuild/bin/__init__.py
+bazel-out/k8-fastbuild/bin/grammar/__init__.py
+bazel-out/k8-fastbuild/bin/grammar/python/__init__.py
+bazel-out/k8-fastbuild/bin/grammar/python/python-src.py
+typeql_grammar.egg-info/PKG-INFO
+typeql_grammar.egg-info/SOURCES.txt
+typeql_grammar.egg-info/dependency_links.txt
+typeql_grammar.egg-info/not-zip-safe
+typeql_grammar.egg-info/requires.txt
+typeql_grammar.egg-info/top_level.txt
