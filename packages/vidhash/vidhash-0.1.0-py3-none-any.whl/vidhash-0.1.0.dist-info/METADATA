@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vidhash
+Version: 0.1.0
+Summary: A package for hashing videos and checking for similarity
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ImageHash (>=4.2.1,<5.0.0)
+Requires-Dist: Pillow (>=9.1.1,<10.0.0)
+Requires-Dist: ffmpy3 (>=0.2.4,<0.3.0)
+Requires-Dist: numpy (>=1.22.4,<2.0.0)
