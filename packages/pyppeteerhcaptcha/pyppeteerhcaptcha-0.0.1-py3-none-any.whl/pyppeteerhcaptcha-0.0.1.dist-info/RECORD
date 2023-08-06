@@ -1,0 +1,9 @@
+pyppeteerhcaptcha/__init__.py,sha256=8da1TA2QX2rT49t_8np8rHtNd46Xu2hvXyPp0eGKKYo,170
+pyppeteerhcaptcha/exceptions.py,sha256=qlZ7UwdmtVYXGMxhTLOjabLLvmjKthzx01i9pniObHQ,262
+pyppeteerhcaptcha/solver.py,sha256=jqqT8G6AvE3AqIhV05FhDTtgSFojGbyE6dSas-m1E_Q,3594
+pyppeteerhcaptcha/yolo.py,sha256=lsDOs2FQZrPGrveCPI7QoBPORS7nfr3VMm8Op3QoMvU,5359
+pyppeteerhcaptcha-0.0.1.dist-info/LICENSE,sha256=lA7pQPfpugBXRIhBMhYiQIbBEXT718NW4PPeQqskQV4,1065
+pyppeteerhcaptcha-0.0.1.dist-info/METADATA,sha256=fN-i2IBHbKmWBhkCvzr-1MzeDgf-5fzEqzcRaXPPlUI,225
+pyppeteerhcaptcha-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyppeteerhcaptcha-0.0.1.dist-info/top_level.txt,sha256=I08j35MY6yEVnyWmRy9Os3qPDDV9phYqMJ7uZTD42ik,18
+pyppeteerhcaptcha-0.0.1.dist-info/RECORD,,
