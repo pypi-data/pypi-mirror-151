@@ -1,0 +1,12 @@
+nisanyan_cli/__init__.py,sha256=sNUIXY4j-uBW0UNJ1UBlk71jQtO-yq-NEWFI_pOQcKY,23
+nisanyan_cli/__main__.py,sha256=wqbyzK3cHuYWtyjtKVCPPKY-1rUcRzAQOxs5wc0gKvw,2087
+nisanyan_cli/_langlist.py,sha256=WKrCit9rfc0kguX4py72URuAFWb5L8eChfav2lJMUvE,1697
+nisanyan_cli/_utils.py,sha256=5gOLtYcEIqH0gPdsNtTDzk8BunnoaO5qgKznjr8oElI,682
+nisanyan_cli/cli.py,sha256=ZMVFPG1LzfBbH5ecacqd6L2iWJPLdbJ9s3jCIysbd1g,6341
+nisanyan_cli/request.py,sha256=dwLH-SxepxLrbozVTfEJPk5YOtN30xixJ5Xadjr8TJw,278
+nisanyan_cli/tree.py,sha256=sQV-uLotqIxP02ywbXwYZnAXZeSd7QsKeFgxM7IDXw4,3303
+nisanyan_cli-0.3.1.dist-info/METADATA,sha256=Ti4fDObr8ZCYBA93QL1QgsaXAU8_cvbDB9SZRtvI1u8,3040
+nisanyan_cli-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nisanyan_cli-0.3.1.dist-info/entry_points.txt,sha256=XOGH-zH-3YTxIvPR5G-N9uX6kE2rlWnujkFoFyE9WXo,50
+nisanyan_cli-0.3.1.dist-info/top_level.txt,sha256=wgLYFciQRRnEETM341hoDglqljEI_dQYSnCYLLUEBTA,13
+nisanyan_cli-0.3.1.dist-info/RECORD,,
