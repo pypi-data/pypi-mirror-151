@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+AnTeML.egg-info/PKG-INFO
+AnTeML.egg-info/SOURCES.txt
+AnTeML.egg-info/dependency_links.txt
+AnTeML.egg-info/top_level.txt
+anteml/__init__.py
+anteml/attributes.py
+anteml/elements.py
+anteml/entities.py
+anteml/errors.py
+anteml/parser.py
