@@ -1,0 +1,12 @@
+processmanager/ProcessBase.py,sha256=5x7jjKbvUp6aFfpqCDJ1ck3IcLu2Ky323hG347nRiCU,2785
+processmanager/ScheduledProcess.py,sha256=0CJfqciz2f9Eu_0FeyuMJ4a7iFbOWdDWqjuWzwXlEm0,986
+processmanager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processmanager/error/ProcessRunProfileMissing.py,sha256=DdogfeCH_p5jr6dvjDsi3kmIrMumIsEI2kEdwj6oMwg,52
+processmanager/error/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processmanager/reporter/ProcessReporter.py,sha256=CnmDVhRg8L-yQh3RhDzXAquVq689is8MqKNPLIHyL8k,600
+processmanager/reporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+persuader_technology_automata_process_manager-0.0.5.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+persuader_technology_automata_process_manager-0.0.5.dist-info/METADATA,sha256=XRth6fYrb2ztOJkjratGHVeJQRtzFV8psMzyKZYgkJI,619
+persuader_technology_automata_process_manager-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+persuader_technology_automata_process_manager-0.0.5.dist-info/top_level.txt,sha256=pD935BCKB49mtd2uLbL7oYQbNn3yLlDWoeaGcHlhhtk,15
+persuader_technology_automata_process_manager-0.0.5.dist-info/RECORD,,
