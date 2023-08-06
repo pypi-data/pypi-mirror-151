@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: synapi
+Version: 0.0.1
+Summary: Package for dealing with Synapse datasets in an easy way.
+Author: Luis Carlos Garcia Peraza Herrera
+Author-email: luiscarlos.gph@gmail.com
+License: MIT
+License-File: LICENSE
