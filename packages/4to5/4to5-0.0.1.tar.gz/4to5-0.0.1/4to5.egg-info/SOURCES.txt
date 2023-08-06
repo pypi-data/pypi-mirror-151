@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+sitecustomize.py
+4to5.egg-info/PKG-INFO
+4to5.egg-info/SOURCES.txt
+4to5.egg-info/dependency_links.txt
+4to5.egg-info/top_level.txt
