@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+_init_.py
+readme.txt
+setup.py
+ADC_Python_Library.egg-info/PKG-INFO
+ADC_Python_Library.egg-info/SOURCES.txt
+ADC_Python_Library.egg-info/dependency_links.txt
+ADC_Python_Library.egg-info/top_level.txt
+My_first_Python_Library.egg-info/SOURCES.txt
+My_first_Python_Library.egg-info/dependency_links.txt
+My_first_Python_Library.egg-info/top_level.txt

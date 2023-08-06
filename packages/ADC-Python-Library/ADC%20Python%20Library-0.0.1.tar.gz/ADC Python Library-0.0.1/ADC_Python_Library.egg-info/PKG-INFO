@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ADC-Python-Library
+Version: 0.0.1
+Summary: A very basic test 
+Home-page: UNKNOWN
+Author: Yang Wu
+Author-email: yang.wu@ontario.ca
+License: MIT
+Keywords: a basic function
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This function clean the address data. 
+
+
+
+Change Log
+===================
+
+0.0.1 2022 May 19th
+-------------------
+- first release 
+

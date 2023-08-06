@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+_init_.py
+readme.txt
+setup.py
+My_first_Python_Library.egg-info/PKG-INFO
+My_first_Python_Library.egg-info/SOURCES.txt
+My_first_Python_Library.egg-info/dependency_links.txt
+My_first_Python_Library.egg-info/top_level.txt
