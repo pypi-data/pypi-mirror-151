@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+q2_dbbact/__init__.py
+q2_dbbact/methods.py
+q2_dbbact/plugin_setup.py
+q2_dbbact/utils.py
+q2_dbbact/visualizations.py
+q2_dbbact.egg-info/PKG-INFO
+q2_dbbact.egg-info/SOURCES.txt
+q2_dbbact.egg-info/dependency_links.txt
+q2_dbbact.egg-info/entry_points.txt
+q2_dbbact.egg-info/requires.txt
+q2_dbbact.egg-info/top_level.txt

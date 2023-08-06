@@ -1,0 +1,3 @@
+[qiime2.plugins]
+q2-dbbact = q2_dbbact.plugin_setup:plugin
+
