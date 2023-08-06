@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+akara/__init__.py
+akara/dictionary.py
+akara/edit_distance.py
+akara/model.xml
+akara/node.py
+akara/spell_checker.py
+akara_python.egg-info/PKG-INFO
+akara_python.egg-info/SOURCES.txt
+akara_python.egg-info/dependency_links.txt
+akara_python.egg-info/top_level.txt
