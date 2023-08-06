@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ArtemixCalculator/__init__.py
+ArtemixCalculator/funciones.py
+libreriadeartemio.egg-info/PKG-INFO
+libreriadeartemio.egg-info/SOURCES.txt
+libreriadeartemio.egg-info/dependency_links.txt
+libreriadeartemio.egg-info/top_level.txt
