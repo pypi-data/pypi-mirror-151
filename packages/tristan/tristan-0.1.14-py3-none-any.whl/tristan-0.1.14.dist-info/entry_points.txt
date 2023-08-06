@@ -1,0 +1,6 @@
+[console_scripts]
+apply-flat-field = tristan.command_line.apply_flat_field:main
+cues = tristan.command_line.cues:main
+images = tristan.command_line.images:main
+vds = tristan.command_line.vds:main
+
