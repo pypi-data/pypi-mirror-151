@@ -1,0 +1,9 @@
+setup.py
+src/__init__.py
+src/error.py
+src/sumup_schema_registry_client.py
+sumup_sr_client.egg-info/PKG-INFO
+sumup_sr_client.egg-info/SOURCES.txt
+sumup_sr_client.egg-info/dependency_links.txt
+sumup_sr_client.egg-info/requires.txt
+sumup_sr_client.egg-info/top_level.txt
