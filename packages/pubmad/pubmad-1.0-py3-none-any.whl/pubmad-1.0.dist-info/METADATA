@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pubmad
+Version: 1.0
+Summary: Useful tools to work with biology
+Home-page: https://github.com/Pier297/ProgettoBIO
+Author: Jacopo Bandoni, Pier Paolo Tarasco, William Simoni, Marco Natali
+Author-email: bandoni.jacopo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: biopython
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: click
+Requires-Dist: cycler
+Requires-Dist: filelock
+Requires-Dist: fonttools
+Requires-Dist: huggingface-hub
+Requires-Dist: idna
+Requires-Dist: joblib
+Requires-Dist: kiwisolver
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: Pillow
+Requires-Dist: pymed
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: PyYAML
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: sacremoses
+Requires-Dist: six
+Requires-Dist: tokenizers
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: transformers
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: pyvis
+
+# ProgettoBIO
+
+The documentation can be seen at https://pier297.github.io/ProgettoBIO/
+
+## To run the server
+
+> export FLASK_APP=server
+
+> python server.py
+
+Then head over to the react client (https://github.com/Pier297/BioSearch)
+and execute:
+
+> npm start
+
+To generate the doc run:
+
+> pdoc -o docs/ pubmad/pipeline.py pubmad/utils.py pubmad/types.py --logo logo.png
+
+
+
