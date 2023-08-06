@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: yaad
+Version: 1.0.1
+Summary: Yet Another Attribute Dict
+Home-page: https://github.com/mumblepins/yaad
+License: MIT
+Author: Daniel Sullivan
+Author-email: mumblepins@users.noreply.github.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: Repository, https://github.com/mumblepins/yaad
+Description-Content-Type: text/markdown
+
+
+# yaad
+
+Yet Another Attribute Dictionary
+
