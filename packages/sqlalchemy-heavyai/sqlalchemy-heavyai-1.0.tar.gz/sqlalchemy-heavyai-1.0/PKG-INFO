@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-heavyai
+Version: 1.0
+Summary: HeavyAI SQLAlchemy Driver
+Author-email: "Heavy.AI" <community@heavy.ai>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: sqlalchemy
+Requires-Dist: heavyai
+Requires-Dist: importlib_metadata
+Requires-Dist: sqlalchemy-heavyai[test] ; extra == "dev"
+Requires-Dist: sqlalchemy-heavyai[doc] ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: jupyter-book ; extra == "doc"
+Requires-Dist: sphinx-external-toc ; extra == "doc"
+Requires-Dist: sphinx-autoapi ; extra == "doc"
+Requires-Dist: sphinx-jupyterbook-latex ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: werkzeug ; extra == "test"
+Project-URL: Home, https://github.com/heavyai/sqlalchemy-heavyai
+Project-URL: Source, https://github.com/heavyai/sqlalchemy-heavyai
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# HeavyAI SQLAlchemy Driver
+
+The code here was initially developed and published at
+https://community.heavy.ai/t/apache-superset-and-sql-alchemy-usage-with-omniscidb/2633
+
+This SQLAlchemy dialect is still in **beta** version.
+
+
+### Tests
+
+#### With Apache Superset
+
+Start an Apache Superset instance with all customization needed to run the
+examples and to run sqlachemy-heavyai.
+
+More information: https://hub.docker.com/r/apache/superset
+
+# References
+
+References about SQLAlchemy Dialects:
+
+- https://bitbucket.org/zzzeek/sqlalchemy/src/44a9820b4e02f65b3884fa2c016efce9663e4910/README.dialects.rst?at=master
+- https://docs.sqlalchemy.org/en/14/dialects/index.html#production-ready
+
