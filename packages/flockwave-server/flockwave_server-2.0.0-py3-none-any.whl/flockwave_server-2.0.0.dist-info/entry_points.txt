@@ -1,0 +1,5 @@
+[console_scripts]
+skybrush-gateway=flockwave.gateway.launcher:start
+skybrush-proxy=flockwave.proxy.launcher:start
+skybrushd=flockwave.server.launcher:start
+
