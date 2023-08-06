@@ -1,0 +1,6 @@
+NlpToolkit-WordNet-Cy
+NlpToolkit-NamedEntityRecognition-Cy
+NlpToolkit-PropBank-Cy
+NlpToolkit-DependencyParser-Cy
+NlpToolkit-SentiNet-Cy
+NlpToolkit-FrameNet-Cy
