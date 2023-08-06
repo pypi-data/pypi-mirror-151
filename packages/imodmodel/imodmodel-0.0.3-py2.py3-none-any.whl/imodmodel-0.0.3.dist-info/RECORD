@@ -1,0 +1,11 @@
+imodmodel/__init__.py,sha256=DzXgiLm_mmoqld_hZ9E8FkfVW4evGtCKGLFRt3YU3Xk,29
+imodmodel/_version.py,sha256=cqMRlSvtXNenfrMB-M-Tt6_yTB4wzKdaO5USAZtNm0o,142
+imodmodel/data_structures.py,sha256=jhIOtGcoeyybsf_L75AFoxj8Yl7dyyQcfrC25KdWkT8,2511
+imodmodel/functional.py,sha256=zWESxBLXwNNNQSjPuY3bI03Ue0f04ScBS5YaLUmarGg,351
+imodmodel/parser.py,sha256=GRjbQe7zIvUKBlTW08WsJaq9zGBJjxJSX2lt92MSG54,4379
+imodmodel/specification.py,sha256=FFgYgVfm-mjpBW5wEZrasW4emILaJJJBWsfreijBvQ4,2649
+imodmodel-0.0.3.dist-info/LICENSE,sha256=tEUp1hBehHov1EqUVPm09_TlyKymwNcSBBwvu2ZPPMs,1513
+imodmodel-0.0.3.dist-info/METADATA,sha256=Zi0jZtKKjuJRExfy-pvru_cNZmRSA7JH3vIoAJ4wmK4,1972
+imodmodel-0.0.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+imodmodel-0.0.3.dist-info/top_level.txt,sha256=gxQFU7EzzsVrWKHcvS1kcIHyzFhiyZb1jhZ5Pf4ZZmY,10
+imodmodel-0.0.3.dist-info/RECORD,,
