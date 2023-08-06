@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/pyblackjack/__init__.py
+src/pyblackjack/__main__.py
+src/pyblackjack/__version__.py
+src/pyblackjack/console.py
+src/pyblackjack/game.py
+src/pyblackjack/objects.py
+src/pyblackjack.egg-info/PKG-INFO
+src/pyblackjack.egg-info/SOURCES.txt
+src/pyblackjack.egg-info/dependency_links.txt
+src/pyblackjack.egg-info/entry_points.txt
+src/pyblackjack.egg-info/top_level.txt
