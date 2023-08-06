@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+name_matching/distance_metrics.py
+name_matching/name_matcher.py
+name_matching/run_nm.py
+name_matching/sparse_cosine.py
+name_matching/term_data.py
+name_matching.egg-info/PKG-INFO
+name_matching.egg-info/SOURCES.txt
+name_matching.egg-info/dependency_links.txt
+name_matching.egg-info/requires.txt
+name_matching.egg-info/top_level.txt
