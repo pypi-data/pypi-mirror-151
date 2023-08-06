@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: olivetti-test
+Version: 0.0.1
+Summary: Ejemplo primera clase
+Author: olivetti
+Author-email: oliverp83@protonmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: build
+Requires-Dist: twine
+Requires-Dist: coloredlogs
+
