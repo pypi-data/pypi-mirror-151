@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyqt_notifier/__init__.py
+pyqt_notifier/pyqtNotifier.py
+pyqt_notifier.egg-info/PKG-INFO
+pyqt_notifier.egg-info/SOURCES.txt
+pyqt_notifier.egg-info/dependency_links.txt
+pyqt_notifier.egg-info/requires.txt
+pyqt_notifier.egg-info/top_level.txt
+pyqt_notifier/ico/__init__.py
+pyqt_notifier/ico/close.svg
