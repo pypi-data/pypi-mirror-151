@@ -1,0 +1,11 @@
+fracridge/__init__.py,sha256=UZxwQuu6ufKBkNkY2jD9i3z66innjkIy62Ukrj9Be-g,84
+fracridge/_linalg.py,sha256=tzZV5wW5-i16uUNbP5GbPOitX0gL_A8uXTUM2lLPzAE,4092
+fracridge/_numba.py,sha256=Sc4PfEPqrJRo069cMJKxpUBBPKx86yFhkXhk818SRLQ,2616
+fracridge/fracridge.py,sha256=vEShqb7Qq11PVjRzsooVD6KhqAjhPgP1KHzrPeHEpB4,15378
+fracridge/version.py,sha256=NG6MDRgR9lCB83B_aEvxUHinKJNa1UifCpYpcnGLvQ8,137
+fracridge/tests/test_fracridge.py,sha256=WFgYCbRqZmwPkE9qLD6O6zNiGsNlTpxBK6QIVILT5yk,7395
+fracridge-2.0.dist-info/LICENSE,sha256=vimrK7meiGxc3cr86rCHHgKqB8in8nn5QtlU9Mrxh3g,1311
+fracridge-2.0.dist-info/METADATA,sha256=zGoWHkoaNMoJ8PLg96GuJazOa7St2lqxnRiOAYKMa3Y,3073
+fracridge-2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fracridge-2.0.dist-info/top_level.txt,sha256=lQLMr3TxqmqqNpG0woqCfYKs1odV7Ik6MP1Cb_HVuf4,10
+fracridge-2.0.dist-info/RECORD,,
