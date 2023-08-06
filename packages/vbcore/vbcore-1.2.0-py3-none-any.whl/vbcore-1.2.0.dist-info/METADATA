@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vbcore
+Version: 1.2.0
+Summary: VBCore common helpers and components
+Home-page: https://github.com/cs91chris/vbcore
+Author: cs91chris
+Author-email: cs91chris@voidbrain.me
+License: MIT
+Platform: any
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: jsonschema
+Requires-Dist: python-dateutil
+Requires-Dist: python-decouple
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Requires-Dist: psutil
+
+UNKNOWN
+
