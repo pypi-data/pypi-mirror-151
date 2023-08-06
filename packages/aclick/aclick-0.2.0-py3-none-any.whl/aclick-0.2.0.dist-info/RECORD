@@ -1,0 +1,10 @@
+aclick/__init__.py,sha256=xkQpusgwAFedaYIQxfAcQzHffvSGjD5gji8Q9R_-MdU,493
+aclick/_version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+aclick/core.py,sha256=28KUeGlPN1Tej7W4Qnho9EnjQaHHHyDyRe573JUqino,26164
+aclick/decorators.py,sha256=5jlAjzpVB0kechoRv36Da0vlg9u61zJAdM3eQRnRTzA,6966
+aclick/types.py,sha256=ZMSS9WPUrJQKfHH8x3eJP3E3SRbRVwrXf7pRHbxFoXI,14287
+aclick/utils.py,sha256=3DUEoFwpBVr__pk-E3bI1s32b2LE3HhQypvwmTRmf8M,64455
+aclick-0.2.0.dist-info/METADATA,sha256=mA811BL54jRxXL4fPydEdta-_Xkv_4XZXdQSyD3Zrus,2689
+aclick-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aclick-0.2.0.dist-info/top_level.txt,sha256=IdUDx54f5g-TcYxmtV3fi8uexEHOoq8juoGLZEnbkYs,7
+aclick-0.2.0.dist-info/RECORD,,
