@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+zgwtest.egg-info/PKG-INFO
+zgwtest.egg-info/SOURCES.txt
+zgwtest.egg-info/dependency_links.txt
+zgwtest.egg-info/top_level.txt
