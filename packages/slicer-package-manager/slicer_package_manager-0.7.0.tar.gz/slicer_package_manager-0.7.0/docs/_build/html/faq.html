@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ &mdash; Slicer Package Manager 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Server Installation" href="installation.html" />
+    <link rel="prev" title="Commands shell (CLI)" href="commands_shell.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Slicer Package Manager
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands_shell.html">Commands shell (CLI)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-girder">What is Girder?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-a-slicer-package">What is a Slicer package?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-a-slicer-extension">What is a Slicer Extension?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#does-the-server-collect-download-statistics">Does the server collect download statistics ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-interface-with-the-slicer-package-manager-server">How to interface with the Slicer Package Manager server ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-create-a-new-release-with-existing-uploaded-packages">How to create a new release with existing uploaded packages?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-clean-up-the-draft-release-folder">How to clean up the Draft release folder?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Server Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide/index.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_a_release.html">Making a release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Release Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Slicer Package Manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>FAQ</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/faq.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="faq">
+<h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline"></a></h1>
+<p><em>Frequently Asked Questions</em></p>
+<section id="what-is-girder">
+<h2>What is Girder?<a class="headerlink" href="#what-is-girder" title="Permalink to this headline"></a></h2>
+<p>Girder is a free and open source web-based <strong>data management platform</strong> developed by <a class="reference external" href="https://www.kitware.com">Kitware</a>.
+What does that mean? Girder is both a standalone application and a platform for building new web services.
+To know more about Girder let’s take a look at the <a class="reference external" href="https://girder.readthedocs.io">documentation</a>.</p>
+</section>
+<section id="what-is-a-slicer-package">
+<h2>What is a Slicer package?<a class="headerlink" href="#what-is-a-slicer-package" title="Permalink to this headline"></a></h2>
+<p>A slicer package is just an installer package for a specific release of Slicer. There is a specific Slicer package
+for each different platform (Windows, MACOSX, Linux).</p>
+</section>
+<section id="what-is-a-slicer-extension">
+<h2>What is a Slicer Extension?<a class="headerlink" href="#what-is-a-slicer-extension" title="Permalink to this headline"></a></h2>
+<p>An extension could be seen as a delivery package bundling together one or more Slicer modules.
+After installing an extension, the associated modules will be presented to the user as built-in ones.</p>
+<p>To know more about Slicer extension, see the <a class="reference external" href="https://slicer.readthedocs.io/en/latest/user_guide/extensions_manager.html">Extensions Manager</a> documentation.</p>
+</section>
+<section id="does-the-server-collect-download-statistics">
+<h2>Does the server collect download statistics ?<a class="headerlink" href="#does-the-server-collect-download-statistics" title="Permalink to this headline"></a></h2>
+<p>Each time an extension is downloaded (using the Client or the UI), a metadata is incremented on the release folder.
+This allow to referenced all downloaded extension even after their deletion.</p>
+<p>The download count is stored in the metadata following this rule:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ {
+    &#39;downloadExtensions&#39;: {
+        baseName: {
+            os: {
+                arch: downloadCount
+            }
+        }
+    }
+</pre></div>
+</div>
+</section>
+<section id="how-to-interface-with-the-slicer-package-manager-server">
+<h2>How to interface with the Slicer Package Manager server ?<a class="headerlink" href="#how-to-interface-with-the-slicer-package-manager-server" title="Permalink to this headline"></a></h2>
+<p>There are 3 different ways to use the Slicer Package Manager server:</p>
+<ul>
+<li><p>By using the <a class="reference internal" href="commands_shell.html"><span class="doc">Commands shell (CLI)</span></a>:</p>
+<blockquote>
+<div><p>This is the more easy way to use the basic feature of the Slicer Package Manager.
+These commands allow you to easily create, list, or delete applications and releases,
+and also list, upload, download or delete application or extension packages.</p>
+</div></blockquote>
+</li>
+<li><p>By using the <a class="reference internal" href="developer_guide/slicer_package_manager_client.html"><span class="doc">Python Client API</span></a> within Python script:</p>
+<blockquote>
+<div><p>Using the Python Client API allow you to write scripts for create application, new release and
+automatically upload or download application or extensions packages.</p>
+</div></blockquote>
+</li>
+<li><p>By using the User Interface:</p>
+<blockquote>
+<div><p>The default girder user interface allows to browse through the <cite>Application</cite>, <cite>Release</cite> and <cite>Draft</cite>
+Girder folders and their associated <cite>Package</cite> and <cite>Extension</cite> Girder items.</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="how-to-create-a-new-release-with-existing-uploaded-packages">
+<h2>How to create a new release with existing uploaded packages?<a class="headerlink" href="#how-to-create-a-new-release-with-existing-uploaded-packages" title="Permalink to this headline"></a></h2>
+<p>Follow this few steps to be able to update a draft release into a stable release:</p>
+<ul class="simple">
+<li><p>Open the Girder UI, go under your application folder (Slicer here). By default it should be inside the
+<code class="docutils literal notranslate"><span class="pre">Applications</span></code> collection, that you can find under the <code class="docutils literal notranslate"><span class="pre">Collections</span></code> item in the main menu.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Applications</span>
+       <span class="o">|---</span> <span class="n">packages</span>
+       <span class="o">|</span>        <span class="o">|-----</span> <span class="n">Slicer</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Look for the specific application revision folder under the <code class="docutils literal notranslate"><span class="pre">draft</span></code> folder within the application. All the packages
+which are contained in this folder will be part of the futur new stable release.</p></li>
+<li><p>Select all the element contained in this folder by using the <code class="docutils literal notranslate"><span class="pre">Pick</span> <span class="pre">all</span> <span class="pre">checked</span> <span class="pre">resources</span> <span class="pre">for</span> <span class="pre">Copy</span> <span class="pre">or</span> <span class="pre">Move</span></code> action</p></li>
+<li><p>Go to the new release folder, that you can create both by using the CLI or the Girder UI. In the case of the Girder UI
+you will need to give a specific metadata on the folder: <code class="docutils literal notranslate"><span class="pre">revision:</span> <span class="pre">&lt;revision-of-the-application&gt;</span></code> corresponding the
+this release.</p></li>
+<li><p>Once you created the new release folder, enter inside it, then use the <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">picked</span> <span class="pre">resources</span> <span class="pre">here</span></code></p></li>
+<li><p>You will just need to delete the draft sub-folder used to make the new stable release</p></li>
+</ul>
+</section>
+<section id="how-to-clean-up-the-draft-release-folder">
+<h2>How to clean up the Draft release folder?<a class="headerlink" href="#how-to-clean-up-the-draft-release-folder" title="Permalink to this headline"></a></h2>
+<p>Every day more than 300 extensions are supposed to be uploaded into the Slicer Package Manager. It’s important to be
+able to clean up the old packages occasionally. Here’s the process to do it:</p>
+<p>The command: <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span> <span class="pre">draft</span> <span class="pre">list</span> <span class="pre">&lt;APP_NAME&gt;</span> <span class="pre">--offset</span> <span class="pre">&lt;N&gt;</span></code> allows to list the oldest draft subfolders
+related to old application revision. Using this command, you will be able to get a list of <code class="docutils literal notranslate"><span class="pre">revision</span></code> and then use the
+command <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span> <span class="pre">draft</span> <span class="pre">delete</span> <span class="pre">&lt;APP_NAME&gt;</span> <span class="pre">&lt;REVISION&gt;</span></code> in a loop to delete them all.</p>
+<p>There is also a bash script you can use easily to do that for you. In the directory
+<code class="docutils literal notranslate"><span class="pre">slicer_package_manager/python_client</span></code>, you will find the <code class="docutils literal notranslate"><span class="pre">cleanNightly.sh</span></code> script.</p>
+<p>To be able to run this script make sure to have the <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span></code> installed on your machine, if not
+check the <a class="reference internal" href="commands_shell.html"><span class="doc">Commands shell (CLI)</span></a> documentation.</p>
+<p>Then just enter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./cleanNightly.sh &lt;API_URL&gt; &lt;API_KEY&gt; &lt;N&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>API_URL: The URL of the distant machine, for instance <a class="reference external" href="http://192.168.xxx.xxx/api/v1">http://192.168.xxx.xxx/api/v1</a></p></li>
+<li><p>API_KEY: The token that allow you to use the client</p></li>
+<li><p>N: Number of draft release you want to keep, all the oldest will be deleted</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="commands_shell.html" class="btn btn-neutral float-left" title="Commands shell (CLI)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation.html" class="btn btn-neutral float-right" title="Server Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, Kitware, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

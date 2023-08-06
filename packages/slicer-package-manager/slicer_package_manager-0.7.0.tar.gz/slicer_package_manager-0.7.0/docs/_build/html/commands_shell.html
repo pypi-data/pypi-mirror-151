@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commands shell (CLI) &mdash; Slicer Package Manager 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="FAQ" href="faq.html" />
+    <link rel="prev" title="Concepts" href="concepts.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Slicer Package Manager
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Commands shell (CLI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#authentication">Authentication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bash-completion">Bash completion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-application-collection">Custom application collection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#subcommands">Subcommands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#application">Application</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#create-initialized-a-new-application">Create &amp; Initialized a new application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#list-all-the-application-within-a-collection">List all the application within a collection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-an-application">Delete an application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#release">Release</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-new-release">Create a new release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#list-all-the-release-from-an-application">List all the release from an application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-a-release">Delete a release</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#draft">Draft</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#list-all-the-draft-release-within-an-application">List all the draft release within an application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-a-specific-draft-release">Delete a specific draft release</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#package">Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#upload-a-new-application-package">Upload a new application package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#list-application-packages">List application packages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#download-an-application-package">Download an application package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-an-application-package">Delete an application package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#extension">Extension</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#upload-a-new-extension">Upload a new extension</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#list-extensions">List extensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#download-an-extension">Download an extension</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-an-extension">Delete an extension</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Server Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide/index.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_a_release.html">Making a release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Release Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Slicer Package Manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Commands shell (CLI)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/commands_shell.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="commands-shell-cli">
+<span id="commands-shell"></span><h1>Commands shell (CLI)<a class="headerlink" href="#commands-shell-cli" title="Permalink to this headline"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h2>
+<p>The command <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span></code> allows to to interact with
+a Slicer Package Manager server.</p>
+<p>There are 5 different subcommands that can be used to manage data:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#application"><span class="std std-ref">app</span></a> command to create, list and delete applications.</p></li>
+<li><p><a class="reference internal" href="#release"><span class="std std-ref">release</span></a>  command to create, list and delete releases.</p></li>
+<li><p><a class="reference internal" href="#draft"><span class="std std-ref">draft</span></a> command to list and delete draft releases.</p></li>
+<li><p><a class="reference internal" href="#package"><span class="std std-ref">package</span></a> command to upload, download or just list application packages.</p></li>
+<li><p><a class="reference internal" href="#extension"><span class="std std-ref">extension</span></a> command to upload, download or just list extensions packages.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To run command requiring higher privileges, you will have to <a class="reference internal" href="#authentication"><span class="std std-ref">authenticate</span></a>.</p>
+</div>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+<p>Install with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install slicer-package-manager-client
+</pre></div>
+</div>
+<p>or:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/girder/slicer_package_manager.git
+$ cd slicer_package_manager/python_client
+$ pip install -e .
+</pre></div>
+</div>
+<p>for development.</p>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline"></a></h2>
+<section id="authentication">
+<span id="id1"></span><h3>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline"></a></h3>
+<p>There are few solutions to authenticate on your Girder instance when using the client:</p>
+<ul>
+<li><p>Using your login and your password:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ slicer_package_manager_client --username admin --password adminadmin
+</pre></div>
+</div>
+</li>
+<li><p>Generating an API-KEY see the <a class="reference external" href="https://girder.readthedocs.io/en/latest/user-guide.html#api-keys">documentation</a> for more details:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ slicer_package_manager_client --api-key EKTb15LjqD4Q7jJuAVPuUSuW8N7s3dmuAekpRGLD
+</pre></div>
+</div>
+</li>
+</ul>
+<p>or by using the <code class="docutils literal notranslate"><span class="pre">GIRDER_API_KEY</span></code> environment variable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ export GIRDER_API_KEY=EKTb15LjqD4Q7jJuAVPuUSuW8N7s3dmuAekpRGLD
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><em>The API-KEY is given as an example, follow the documentation on</em> <a class="reference external" href="https://girder.readthedocs.io/en/latest/user-guide.html#api-keys">api-key</a> <em>to create your own.</em></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to use the client to an external <em>Slicer package manager</em> instance, you will need
+to provide the API url by adding the option:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">api</span><span class="o">-</span><span class="n">url</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">192.168.100.110</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v1</span>
+</pre></div>
+</div>
+<p>(The IP is given as an example)</p>
+</div>
+<p>Then you can start using the API that allow you to easily create applications, manage releases,
+upload and download packages, see <a class="reference internal" href="#commands-shell"><span class="std std-ref">Commands shell (CLI)</span></a> documentation
+for more details.</p>
+</section>
+<section id="bash-completion">
+<h3>Bash completion<a class="headerlink" href="#bash-completion" title="Permalink to this headline"></a></h3>
+<p>To use the <strong>Bash completion</strong> feature you just have to run the following command each time
+you use a new terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ eval &quot;$(_SLICER_PACKAGE_MANAGER_CLIENT_COMPLETE=source slicer_package_manager_client)&quot;
+</pre></div>
+</div>
+<p>Or you can add it on your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file to always have this feature available.</p>
+</section>
+<section id="custom-application-collection">
+<h3>Custom application collection<a class="headerlink" href="#custom-application-collection" title="Permalink to this headline"></a></h3>
+<p>In each command, the optional parameter <code class="docutils literal notranslate"><span class="pre">coll_id</span></code> allow to use the Slicer Package Manager
+Client within an existing collection and not in the default <em>Applications</em> collection.</p>
+<p>When this is the case, to avoid repeating this parameter in each command it’s also possible
+to set an environment variable named <code class="docutils literal notranslate"><span class="pre">COLLECTION_ID</span></code>.</p>
+</section>
+</section>
+<section id="subcommands">
+<h2>Subcommands<a class="headerlink" href="#subcommands" title="Permalink to this headline"></a></h2>
+<section id="application">
+<span id="id2"></span><h3>Application<a class="headerlink" href="#application" title="Permalink to this headline"></a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span> <span class="pre">app</span></code> to create, list and delete applications.</p>
+<section id="create-initialized-a-new-application">
+<h4>Create &amp; Initialized a new application<a class="headerlink" href="#create-initialized-a-new-application" title="Permalink to this headline"></a></h4>
+<p>You can either choose an existing collection by providing <code class="docutils literal notranslate"><span class="pre">coll_id</span></code> or create a specific one
+by providing <code class="docutils literal notranslate"><span class="pre">coll_name</span></code>. If none of this optional parameters are provided, the default
+collection <em>Application</em> will be got or created if it doesn’t exist yet.
+This function will also create a top level folder named <em>packages</em> organizing the different
+application in the collection.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">app</span> <span class="n">create</span> <span class="n">NAME</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">NAME</span></code> - The name of the new application</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--desc</span></code> - The description of the new application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_name</span></code> - The name of the new collection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_desc</span></code> - The description of the new collection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--public</span></code> - Whether the collection should be publicly visible</p></li>
+</ul>
+</section>
+<section id="list-all-the-application-within-a-collection">
+<h4>List all the application within a collection<a class="headerlink" href="#list-all-the-application-within-a-collection" title="Permalink to this headline"></a></h4>
+<p>By providing <code class="docutils literal notranslate"><span class="pre">coll_id</span></code>, you are able to list all the applications from a specific collection.
+By default it will list the applications within the collection <em>Applications</em>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">app</span> <span class="nb">list</span>
+</pre></div>
+</div>
+</section>
+<section id="delete-an-application">
+<h4>Delete an application<a class="headerlink" href="#delete-an-application" title="Permalink to this headline"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">app</span> <span class="n">delete</span> <span class="n">NAME</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">NAME</span></code> - The name of the application which will be deleted</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+</section>
+<section id="release">
+<span id="id3"></span><h3>Release<a class="headerlink" href="#release" title="Permalink to this headline"></a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span> <span class="pre">release</span></code> to create, list and delete releases.</p>
+<section id="create-a-new-release">
+<h4>Create a new release<a class="headerlink" href="#create-a-new-release" title="Permalink to this headline"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">release</span> <span class="n">create</span> <span class="n">APP_NAME</span> <span class="n">NAME</span> <span class="n">REVISION</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NAME</span></code> - The name of the new release</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REVISION</span></code> - The revision of the application corresponding to this release</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--desc</span></code> - The description of the new application</p></li>
+</ul>
+</section>
+<section id="list-all-the-release-from-an-application">
+<h4>List all the release from an application<a class="headerlink" href="#list-all-the-release-from-an-application" title="Permalink to this headline"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">release</span> <span class="nb">list</span> <span class="n">APP_NAME</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+<section id="delete-a-release">
+<h4>Delete a release<a class="headerlink" href="#delete-a-release" title="Permalink to this headline"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">release</span> <span class="n">delete</span> <span class="n">APP_NAME</span> <span class="n">NAME</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NAME</span></code> - The name of the release which will be deleted</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+</section>
+<section id="draft">
+<span id="id4"></span><h3>Draft<a class="headerlink" href="#draft" title="Permalink to this headline"></a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span> <span class="pre">draft</span></code> to list and delete draft releases.</p>
+<section id="list-all-the-draft-release-within-an-application">
+<h4>List all the draft release within an application<a class="headerlink" href="#list-all-the-draft-release-within-an-application" title="Permalink to this headline"></a></h4>
+<p>Provide <code class="docutils literal notranslate"><span class="pre">revision</span></code> will list only one draft release corresponding to the revision store as
+metadata. The <code class="docutils literal notranslate"><span class="pre">--offset</span></code> option allow to list only the older draft release.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">draft</span> <span class="nb">list</span> <span class="n">APP_NAME</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--revision</span></code> - The revision of a draft release</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--offset</span></code> - The offset to list only the older draft release</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+<section id="delete-a-specific-draft-release">
+<h4>Delete a specific draft release<a class="headerlink" href="#delete-a-specific-draft-release" title="Permalink to this headline"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">draft</span> <span class="n">delete</span> <span class="n">APP_NAME</span> <span class="n">REVISION</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REVISION</span></code> - The revision of the draft release</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+</section>
+<section id="package">
+<span id="id5"></span><h3>Package<a class="headerlink" href="#package" title="Permalink to this headline"></a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span> <span class="pre">package</span></code> to upload, download or just list application packages.</p>
+<section id="upload-a-new-application-package">
+<h4>Upload a new application package<a class="headerlink" href="#upload-a-new-application-package" title="Permalink to this headline"></a></h4>
+<p>Give the <code class="docutils literal notranslate"><span class="pre">FILE_PATH</span></code> argument to be able to upload an application package.
+The application package will automatically be added to the release which has the same revision
+than the <code class="docutils literal notranslate"><span class="pre">--revision</span></code> value. If any release correspond to the given revision,
+the application package will be uploaded in the <cite>draft</cite> release, by default.</p>
+<p>The final name of the application package will depend of the <code class="docutils literal notranslate"><span class="pre">applicationPackageNameTemplate</span></code>
+set as metadata on the application folder. The default name is
+<code class="docutils literal notranslate"><span class="pre">{baseName}_{arch}_{os}_{revision}</span></code>. It can be change at any time on the application
+setting page.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--pre_release</span></code> option is used to specify if the uploaded package is ready for distribution
+or if it needs extra steps before that. In some cases, the package needs to be signed and then
+re-uploaded on the server.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">package</span> <span class="n">upload</span> <span class="n">APP_NAME</span> <span class="n">FILE_PATH</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">FILE_PATH</span></code> - The path to the application package file to upload</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--os</span></code> - The target operating system of the package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--arch</span></code> - Architecture that is supported by the application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--name</span></code> - The basename of the new application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--repo_type</span></code> - The repository type of the application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--repo_url</span></code> - The repository URL of the application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--revision</span></code> - The revision of the application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--pre_release</span></code> - Boolean to specify if the package is ready to be distributed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--desc</span></code> - The description of the new application</p></li>
+</ul>
+</section>
+<section id="list-application-packages">
+<h4>List application packages<a class="headerlink" href="#list-application-packages" title="Permalink to this headline"></a></h4>
+<p>Use options to filter the listed application packages. By default, the command will list all
+the application packages from the ‘draft’ release. It is possible to use the <code class="docutils literal notranslate"><span class="pre">--release</span></code>
+option to list the application package from a particular release.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">package</span> <span class="nb">list</span> <span class="n">APP_NAME</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--os</span></code> - The target operating system of the package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--arch</span></code> - Architecture that is supported by the application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--revision</span></code> - The revision of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--release</span></code> - The release within list all the application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--name</span></code> - Basename of an application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--limit</span></code> - Limit on the number of listed application package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+<section id="download-an-application-package">
+<h4>Download an application package<a class="headerlink" href="#download-an-application-package" title="Permalink to this headline"></a></h4>
+<p>By default the package will be store in the current folder</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">package</span> <span class="n">download</span> <span class="n">APP_NAME</span> <span class="n">ID_OR_NAME</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ID_OR_NAME</span></code> - The ID or name of the application package which will be downloaded</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--dir_path</span></code> - Path where will be save the application package after the download</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+<section id="delete-an-application-package">
+<h4>Delete an application package<a class="headerlink" href="#delete-an-application-package" title="Permalink to this headline"></a></h4>
+<p>Provide either the ID or the name of the application package to delete it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">package</span> <span class="n">delete</span> <span class="n">APP_NAME</span> <span class="n">ID_OR_NAME</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ID_OR_NAME</span></code> - The ID or name of the application package which will be deleted</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+</section>
+<section id="extension">
+<span id="id6"></span><h3>Extension<a class="headerlink" href="#extension" title="Permalink to this headline"></a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">slicer_package_manager_client</span> <span class="pre">extension</span></code> to upload, download or just list extension packages.</p>
+<section id="upload-a-new-extension">
+<h4>Upload a new extension<a class="headerlink" href="#upload-a-new-extension" title="Permalink to this headline"></a></h4>
+<p>Give the <code class="docutils literal notranslate"><span class="pre">FILE_PATH</span></code> argument to be able to upload an extension. The extension will then
+automatically be added to the release which has the same revision than the <code class="docutils literal notranslate"><span class="pre">--app_revision</span></code>
+value. By default, if any release corresponds to the given revision, the extension will be
+uploaded in the <cite>draft</cite> folder within the ‘draft’ release which has the given revision as
+metadata, or create it if it doesn’t exist yet.</p>
+<p>The final name of the extension will depend of the <code class="docutils literal notranslate"><span class="pre">extensionPackageNameTemplate</span></code> set as
+metadata on the application folder. The default name is
+<code class="docutils literal notranslate"><span class="pre">{app_revision}_{baseName}_{os}_{arch}_{revision}</span></code>. It can be change at any time on the
+application setting page.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">extension</span> <span class="n">upload</span> <span class="n">APP_NAME</span> <span class="n">FILE_PATH</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">FILE_PATH</span></code> - The path to the extension file to upload</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--os</span></code> - The target operating system of the package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--arch</span></code> - Architecture that is supported by the extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--name</span></code> - The basename of the new extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--repo_type</span></code> - The repository type of the extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--repo_url</span></code> - The repository URL of the extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--revision</span></code> - The revision of the extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--app_revision</span></code> - The revision of the application corresponding to this release</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--desc</span></code> - The description of the new application</p></li>
+</ul>
+</section>
+<section id="list-extensions">
+<h4>List extensions<a class="headerlink" href="#list-extensions" title="Permalink to this headline"></a></h4>
+<p>Use options to filter the listed extensions. By default, the command will list all the extension
+from the ‘draft’ release. It is possible to use the <code class="docutils literal notranslate"><span class="pre">--release</span></code> option to list the extension
+from a particular release. Or use the flag <code class="docutils literal notranslate"><span class="pre">--all</span></code> to list all the extension present in the
+application. It is also possible to get only one extension by providing the <code class="docutils literal notranslate"><span class="pre">--fullname</span></code>
+option of an extension.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">extension</span> <span class="nb">list</span> <span class="n">APP_NAME</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--os</span></code> - The target operating system of the package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--arch</span></code> - Architecture that is supported by the extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--app_revision</span></code> - The revision of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--release</span></code> - The release within list all the extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--limit</span></code> - Limit on the number of listed extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--all</span></code> - Flag to list all the extension from all the release</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--fullname</span></code> - Fullname of an extension</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+<section id="download-an-extension">
+<h4>Download an extension<a class="headerlink" href="#download-an-extension" title="Permalink to this headline"></a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">extension</span> <span class="n">download</span> <span class="n">APP_NAME</span> <span class="n">ID_OR_NAME</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ID_OR_NAME</span></code> - The ID or name of the extension which will be downloaded</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--dir_path</span></code> - Path where will be save the extension after the download</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+<section id="delete-an-extension">
+<h4>Delete an extension<a class="headerlink" href="#delete-an-extension" title="Permalink to this headline"></a></h4>
+<p>Provide either the ID or the name of the extension to delete it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slicer_package_manager_client</span> <span class="n">extension</span> <span class="n">delete</span> <span class="n">APP_NAME</span> <span class="n">ID_OR_NAME</span>
+</pre></div>
+</div>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">APP_NAME</span></code> - The name of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ID_OR_NAME</span></code> - The ID or name of the extension which will be deleted</p></li>
+</ul>
+<p>Options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--coll_id</span></code> - ID of an existing collection</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="concepts.html" class="btn btn-neutral float-left" title="Concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="faq.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, Kitware, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

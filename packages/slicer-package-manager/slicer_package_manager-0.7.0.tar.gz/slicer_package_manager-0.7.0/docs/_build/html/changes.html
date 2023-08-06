@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Notes &mdash; Slicer Package Manager 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Making a release" href="make_a_release.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Slicer Package Manager
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands_shell.html">Commands shell (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Server Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide/index.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_a_release.html">Making a release</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#next-release">Next Release</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#internal">Internal</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#python-client">Python Client</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.6.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#new-features">New Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bug-fixes">Bug fixes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#server">Server</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.5.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">New Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Server</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Bug fixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">0.4.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">New Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Bug fixes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Server</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">0.3.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Bug fixes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id12">Server</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">0.2.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Bug fixes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id15">Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">Python Client</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">0.1.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id20">New Features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#initial-version">Initial version</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#provisioning">Provisioning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Slicer Package Manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Release Notes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/changes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="release-notes">
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline"></a></h1>
+<p>This is the list of <strong>Slicer Package Manager</strong> changes between each release. For full
+details, see the commit logs at <a class="reference external" href="https://github.com/girder/slicer_package_manager">https://github.com/girder/slicer_package_manager</a></p>
+<section id="next-release">
+<h2>Next Release<a class="headerlink" href="#next-release" title="Permalink to this headline"></a></h2>
+<section id="internal">
+<h3>Internal<a class="headerlink" href="#internal" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Require Python &gt;= 3.7 for both python client and server.</p></li>
+<li><p>Update development status to <code class="docutils literal notranslate"><span class="pre">Production/Stable</span></code>.</p></li>
+<li><p>Vendorize <code class="docutils literal notranslate"><span class="pre">bson.objectid</span></code> from PyMongo to support installing the client alongside the server
+and workaround incompatibilities between standalone <code class="docutils literal notranslate"><span class="pre">bson</span></code> package and the one provided by PyMongo.</p></li>
+</ul>
+<section id="python-client">
+<h4>Python Client<a class="headerlink" href="#python-client" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p>Support publishing python client sdist and wheel named <code class="docutils literal notranslate"><span class="pre">slicer-package-manager-client</span></code>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id1">
+<h2>0.6.0<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<section id="new-features">
+<h3>New Features<a class="headerlink" href="#new-features" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Support listing extension with a <code class="docutils literal notranslate"><span class="pre">query</span></code> parameter specifying the text expected
+to be found in the extension name or description.</p></li>
+</ul>
+</section>
+<section id="bug-fixes">
+<h3>Bug fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this headline"></a></h3>
+<section id="server">
+<h4>Server<a class="headerlink" href="#server" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p>Fix creation of extension in private application.</p></li>
+<li><p>Ensure user or administrator errors associated with API endpoints are displayed and associated
+with HTTP error code 400 by raising a <code class="xref py py-exc docutils literal notranslate"><span class="pre">RestException</span></code> instead of a generic <code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code>.</p></li>
+<li><p>Update API endpoint <cite>GET /app/{app_id}/extension</cite> to always check user credentials.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id2">
+<h2>0.5.0<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<section id="id3">
+<h3>New Features<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Require version information to be specified when uploading application packages. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/97">#97</a>.</p></li>
+<li><p>Add application package <code class="docutils literal notranslate"><span class="pre">build_date</span></code> metadata. User may specify a custom value formatted as a datetime string
+using the API endpoint or the python client. Default is set to current date and time.</p></li>
+</ul>
+<section id="id4">
+<h4>Server<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p>Automatically update <code class="docutils literal notranslate"><span class="pre">release</span></code> metadata when packages are moved (or copied) between draft and release folders.</p></li>
+<li><p>Add convenience functions <a class="reference internal" href="developer_guide/slicer_package_manager.html#slicer_package_manager.utilities.isApplicationFolder" title="slicer_package_manager.utilities.isApplicationFolder"><code class="xref py py-func docutils literal notranslate"><span class="pre">slicer_package_manager.utilities.isApplicationFolder()</span></code></a>,
+<a class="reference internal" href="developer_guide/slicer_package_manager.html#slicer_package_manager.utilities.isReleaseFolder" title="slicer_package_manager.utilities.isReleaseFolder"><code class="xref py py-func docutils literal notranslate"><span class="pre">slicer_package_manager.utilities.isReleaseFolder()</span></code></a> and <a class="reference internal" href="developer_guide/slicer_package_manager.html#slicer_package_manager.utilities.isDraftReleaseFolder" title="slicer_package_manager.utilities.isDraftReleaseFolder"><code class="xref py py-func docutils literal notranslate"><span class="pre">slicer_package_manager.utilities.isDraftReleaseFolder()</span></code></a>.</p></li>
+<li><p>Add <a class="reference internal" href="developer_guide/slicer_package_manager.html#slicer_package_manager.utilities.getReleaseFolder" title="slicer_package_manager.utilities.getReleaseFolder"><code class="xref py py-func docutils literal notranslate"><span class="pre">slicer_package_manager.utilities.getReleaseFolder()</span></code></a> and simplify update of <code class="docutils literal notranslate"><span class="pre">downloadStats</span></code>
+release metadata to use the new function.</p></li>
+</ul>
+</section>
+</section>
+<section id="id5">
+<h3>Bug fixes<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Remove partially implemented <code class="docutils literal notranslate"><span class="pre">codebase</span></code> metadata.</p></li>
+<li><p>Remove support for unused <code class="docutils literal notranslate"><span class="pre">packagetype</span></code> metadata.</p></li>
+</ul>
+</section>
+<section id="tests">
+<h3>Tests<a class="headerlink" href="#tests" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>ExternalData:</p>
+<ul>
+<li><p>Fix re-download of files if checksum does not match.</p></li>
+<li><p>Re-factor fixture introducing <code class="docutils literal notranslate"><span class="pre">downloadExternals</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h2>0.4.0<a class="headerlink" href="#id6" title="Permalink to this headline"></a></h2>
+<section id="id7">
+<h3>New Features<a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Support querying application packages given a release name. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/96">#96</a>.</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>Bug fixes<a class="headerlink" href="#id8" title="Permalink to this headline"></a></h3>
+<section id="id9">
+<h4>Server<a class="headerlink" href="#id9" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p>Ensure permissions are consistently checked in API endpoints implementation. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/95">#95</a>.</p></li>
+<li><p>Fix support for unauthenticated use of public API endpoints. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/95">#95</a>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id10">
+<h2>0.3.0<a class="headerlink" href="#id10" title="Permalink to this headline"></a></h2>
+<section id="id11">
+<h3>Bug fixes<a class="headerlink" href="#id11" title="Permalink to this headline"></a></h3>
+<section id="id12">
+<h4>Server<a class="headerlink" href="#id12" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p>Update implementation of <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/app/:app_id/package</span></code> endpoint to properly handle
+<code class="docutils literal notranslate"><span class="pre">limit=0</span></code> parameter. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/94">#94</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Add documentation to <a class="reference internal" href="developer_guide/slicer_package_manager.html#slicer_package_manager.utilities.getOrCreateReleaseFolder" title="slicer_package_manager.utilities.getOrCreateReleaseFolder"><code class="xref py py-func docutils literal notranslate"><span class="pre">slicer_package_manager.utilities.getOrCreateReleaseFolder()</span></code></a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="id13">
+<h2>0.2.0<a class="headerlink" href="#id13" title="Permalink to this headline"></a></h2>
+<section id="id14">
+<h3>Bug fixes<a class="headerlink" href="#id14" title="Permalink to this headline"></a></h3>
+<section id="id15">
+<h4>Server<a class="headerlink" href="#id15" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p>Update access level of API endpoints. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/89">#89</a>.</p>
+<ul>
+<li><p>Creating or updating packages now always require credentials.</p></li>
+<li><p>Retrieving list of applications, releases and packages are now public.
+Note that credentials are still required to retrieve data associated with private
+applications.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id16">
+<h4>Python Client<a class="headerlink" href="#id16" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p>Fix handling of <code class="docutils literal notranslate"><span class="pre">--public</span></code>, <code class="docutils literal notranslate"><span class="pre">--all</span></code> and <code class="docutils literal notranslate"><span class="pre">--pre_release</span></code> flags. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/85">#85</a>.</p></li>
+<li><p>Update <code class="docutils literal notranslate"><span class="pre">draft</span> <span class="pre">list</span></code> command to support <code class="docutils literal notranslate"><span class="pre">--limit</span></code> argument. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/82">#82</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="id17">
+<h3>Documentation<a class="headerlink" href="#id17" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Add maintainer documentation along with <a class="reference internal" href="make_a_release.html"><span class="doc">Making a release</span></a> section.</p></li>
+<li><p>Improve description of <code class="docutils literal notranslate"><span class="pre">limit</span></code> in <a class="reference internal" href="developer_guide/slicer_package_manager_client.html#slicer_package_manager_client.SlicerPackageClient.listExtension" title="slicer_package_manager_client.SlicerPackageClient.listExtension"><code class="xref py py-func docutils literal notranslate"><span class="pre">slicer_package_manager_client.SlicerPackageClient.listExtension()</span></code></a>
+and <a class="reference internal" href="developer_guide/slicer_package_manager_client.html#slicer_package_manager_client.SlicerPackageClient.listApplicationPackage" title="slicer_package_manager_client.SlicerPackageClient.listApplicationPackage"><code class="xref py py-func docutils literal notranslate"><span class="pre">slicer_package_manager_client.SlicerPackageClient.listApplicationPackage()</span></code></a>. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/84">#84</a>.</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>Tests<a class="headerlink" href="#id18" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Simplify and refactor python client tests to facilitate maintenance. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/83">#83</a> and <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/88">#88</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="id19">
+<h2>0.1.0<a class="headerlink" href="#id19" title="Permalink to this headline"></a></h2>
+<section id="id20">
+<h3>New Features<a class="headerlink" href="#id20" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Transition server plugin from Girder 2.x to Girder 3.x. See <a class="reference external" href="https://github.com/girder/slicer_package_manager/issues/88">#88</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="initial-version">
+<h2>Initial version<a class="headerlink" href="#initial-version" title="Permalink to this headline"></a></h2>
+<p>Developed by <a class="reference external" href="https://github.com/Pierre-Assemat">&#64;Pierre-Assemat</a> during his internship at Kitware in 2018.</p>
+<section id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Girder plugin implementing REST API endpoints.</p></li>
+<li><p>CLI <cite>slicer_package_manager_client</cite></p></li>
+<li><p>Python client class <code class="xref py py-class docutils literal notranslate"><span class="pre">SlicerPackageClient</span></code>.</p></li>
+</ul>
+</section>
+<section id="id21">
+<h3>Documentation<a class="headerlink" href="#id21" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Administrator, user and developer documentation written in reStructuredText (RST),
+generated using sphinx and published at <a class="reference external" href="https://slicer-package-manager.readthedocs.io">https://slicer-package-manager.readthedocs.io</a></p></li>
+</ul>
+</section>
+<section id="id22">
+<h3>Tests<a class="headerlink" href="#id22" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Continuous integration (CI) configured to run on CircleCI.</p></li>
+<li><p>Girder plugin tests.</p></li>
+<li><p>CLI and Python client tests leveraging <a class="reference external" href="https://pytest-vcr.readthedocs.io">pytest-vcr</a>.</p></li>
+</ul>
+</section>
+<section id="provisioning">
+<h3>Provisioning<a class="headerlink" href="#provisioning" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Dockerfile and docker-compose files for provisioning a demo server.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="make_a_release.html" class="btn btn-neutral float-left" title="Making a release" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, Kitware, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
