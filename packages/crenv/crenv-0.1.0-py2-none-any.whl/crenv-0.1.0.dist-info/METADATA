@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: crenv
+Version: 0.1.0
+Summary: RL Environment for Cryptocurrency Research
+Home-page: https://github.com/crinstaniev/cryptoenv
+Author: Crinstaniev
+Author-email: zhuangzesen@gmail.com
+License: MIT
+Keywords: RL,Cryptocurrency,Machine Learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# cryptoEnv
+
+Customizable reinforcement learning framework for blockchain studies.
+
+
