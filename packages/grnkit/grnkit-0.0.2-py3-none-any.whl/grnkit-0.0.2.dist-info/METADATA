@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: grnkit
+Version: 0.0.2
+Summary: A kit for running benchmarks on inferencing gene regulatory networks. (under construction)
+Author: Hao Zhu
+Maintainer-email: Hao Zhu <haozhu233@gmail.com>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: numpy>=1.16.5
+Requires-Dist: pandas>=1.1.1
+Requires-Dist: scipy>1.4
+Requires-Dist: h5py>=3
+Requires-Dist: natsort
+Requires-Dist: packaging>=20
+Requires-Dist: anndata
+Requires-Dist: scikit-learn
+Requires-Dist: networkx
+Project-URL: Home, https://github.com/haozhu233/grnkit
