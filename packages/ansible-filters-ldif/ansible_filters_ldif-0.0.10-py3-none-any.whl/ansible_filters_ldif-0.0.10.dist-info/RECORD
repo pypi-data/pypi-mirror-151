@@ -1,0 +1,7 @@
+ansible/plugins/filter/ldif.py,sha256=NEfQcQPozwEIv28jQlo6aWXayaGzKOLxfisoifMXyww,2893
+ansible_filters_ldif-0.0.10.dist-info/AUTHORS,sha256=yyH3iFHyTplQdR5NUzEaUvRkxLSkC5Vnic0JfBubxUM,38
+ansible_filters_ldif-0.0.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ansible_filters_ldif-0.0.10.dist-info/METADATA,sha256=jIO9Bss-TpRI_JyjUN1kFbZPo5-1azpKx50_R-hiZYw,6053
+ansible_filters_ldif-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ansible_filters_ldif-0.0.10.dist-info/top_level.txt,sha256=06idC5854DcR797vngBejbWvdoJe2zfzWpqlLfPI39E,28
+ansible_filters_ldif-0.0.10.dist-info/RECORD,,
