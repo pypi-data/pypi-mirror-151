@@ -1,0 +1,10 @@
+ypy_websocket/__init__.py,sha256=KGmutjvT2v9AfIb_6X0wF8jJ-q-iXNDHyPdl7Y3E8SU,166
+ypy_websocket/websocket_provider.py,sha256=oUksN9S6X2fC6gGGTcIXOTiCuEm_lP0Fcn1Vlwb6gHI,756
+ypy_websocket/websocket_server.py,sha256=PIR2k93eusyTspI4wr_wbedi6EZIN-cpzIIPYgROD2M,4713
+ypy_websocket/ydoc.py,sha256=ryWu7OdIjGvQOe4svZCdqa-8JxEtByCHDzSf-zwifb4,2626
+ypy_websocket/yutils.py,sha256=Iax4PR1ZR-vqHZlt8uxsAz0-BdsdsWgORmV6xRETR8k,1432
+ypy_websocket-0.1.8.dist-info/LICENSE,sha256=pmG-JVX79jHySF7yebLqNCfMiqZA1UK6I_15iW47NlM,1071
+ypy_websocket-0.1.8.dist-info/METADATA,sha256=I5KgislAZYhGEgH8KrDuyC0IghR0hU-oOiKQtXE-Yyw,2750
+ypy_websocket-0.1.8.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+ypy_websocket-0.1.8.dist-info/top_level.txt,sha256=43TJ_woprMJMZG6-wyJqghdmIgRTrSMpzVvSp1MiFmI,14
+ypy_websocket-0.1.8.dist-info/RECORD,,
