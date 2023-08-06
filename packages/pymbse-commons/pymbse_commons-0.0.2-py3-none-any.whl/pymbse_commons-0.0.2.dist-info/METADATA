@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pymbse-commons
+Version: 0.0.2
+Summary: 
+Home-page: https://gitlab.cern.ch/chart-magnum/pymbse-commons
+License: MIT
+Author: mmaciejewski
+Author-email: michal.maciejewski@ief.ee.ethz.ch
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://gitlab.cern.ch/chart-magnum/pymbse-commons
+Description-Content-Type: text/markdown
+
+# PyMBSE Commons
+
+Project with common functions used across all projects in the CHART-MagNum group.
+
+
