@@ -1,0 +1,9 @@
+nox_poetry/__init__.py,sha256=wpWMm73_XljUPdLa8D2ql1kgKJEIhdT3MpfWkhF3Cac,1309
+nox_poetry/poetry.py,sha256=XblhRB1d4DsGbvS19ng4HgARh4qTys-vh91tXzPV51Q,4444
+nox_poetry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nox_poetry/sessions.py,sha256=2H596-aDc2Ujothu4uHD8BbMrW23S40YQ_7PFShD-bs,10744
+nox_poetry/sessions.pyi,sha256=tPVXTZKp1B15Gsx8MDgmoCBevhkghULllruKVH9cn0Y,1342
+nox_poetry-1.0.0.dist-info/LICENSE,sha256=nHOpGjCjn0rK3L7Ng7uboCzzmSTiGD10ROXdwP11qpE,1072
+nox_poetry-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nox_poetry-1.0.0.dist-info/METADATA,sha256=tfLE2FkRr8LCJfUlOupQ2g5q4xCzmGfLrvToao1eSA8,8579
+nox_poetry-1.0.0.dist-info/RECORD,,
