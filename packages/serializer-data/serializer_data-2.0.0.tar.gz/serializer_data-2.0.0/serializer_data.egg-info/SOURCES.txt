@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+serializer_data/__init__.py
+serializer_data/serializable.py
+serializer_data/serializer.py
+serializer_data.egg-info/PKG-INFO
+serializer_data.egg-info/SOURCES.txt
+serializer_data.egg-info/dependency_links.txt
+serializer_data.egg-info/top_level.txt
+test/test0.py
+test/test1.py
