@@ -1,0 +1,11 @@
+spatialdata/__init__.py,sha256=MGdO85F0vvpg3GPyvlGEe2RVqz4yG1IRbg2u_5XWv6I,133
+spatialdata/pl/__init__.py,sha256=hqTjupCqvTXQkHGo5PesNLP8SbZPTKrP7nzmOoAK49Y,30
+spatialdata/pl/basic.py,sha256=9pN7Lz6KDRNpiJ7jKRtmkK6YCVxbFeicZhcW43JWa30,208
+spatialdata/pp/__init__.py,sha256=AY0CVFhFyU_7uPDi103oUV09Pn1zGCwmx5NaHu_YZt4,33
+spatialdata/pp/basic.py,sha256=26lIHI3NwB9wEqcrJLD_v3UEFWZI9hBe9wjk1pzm29M,198
+spatialdata/tl/__init__.py,sha256=XVHL1FzhZM18ZK3jZ7BfjXEQt4XqQIXXLlg4vKHJd3w,30
+spatialdata/tl/basic.py,sha256=KU-KAIkfdE_PA0Ws5hOuYIzWgJNtIXdmdTVjRx_yJn0,186
+spatialdata-0.0.1.dist-info/LICENSE,sha256=t06hAciJQn9wcp9An57xckPu80jReZq2LWaHPERMQmw,1515
+spatialdata-0.0.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+spatialdata-0.0.1.dist-info/METADATA,sha256=UVUCiIrP3hF9iVHxH8wn6hAtoEGMmAG92KLT4zZ8XC0,2507
+spatialdata-0.0.1.dist-info/RECORD,,
