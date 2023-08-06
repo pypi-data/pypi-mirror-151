@@ -1,0 +1,12 @@
+clldutils>=3.5
+attrs>=20
+
+[dev]
+black
+wheel
+twine
+
+[test]
+pytest>=4.3
+pytest-cov
+coverage>=4.2
