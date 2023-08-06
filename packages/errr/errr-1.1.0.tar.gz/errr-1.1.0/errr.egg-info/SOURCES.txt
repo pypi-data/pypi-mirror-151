@@ -1,0 +1,10 @@
+README.md
+setup.py
+errr/__init__.py
+errr/exception.py
+errr/tree.py
+errr.egg-info/PKG-INFO
+errr.egg-info/SOURCES.txt
+errr.egg-info/dependency_links.txt
+errr.egg-info/requires.txt
+errr.egg-info/top_level.txt
