@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pyEventHook/__init__.py
+pyEventHook.egg-info/PKG-INFO
+pyEventHook.egg-info/SOURCES.txt
+pyEventHook.egg-info/dependency_links.txt
+pyEventHook.egg-info/top_level.txt
