@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Client API &mdash; Slicer Package Manager 0.1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Credits" href="../authors.html" />
+    <link rel="prev" title="slicer_package_manager.models package" href="slicer_package_manager.models.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Slicer Package Manager
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands_shell.html">Commands shell (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Server Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html">During development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#server-side-development">Server side development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#client-side-development">Client side development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#python-client-development">Python client development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#regenerate-documentation-locally">Regenerate Documentation Locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#docker-containers">Docker containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer_package_manager.html">Server API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python Client API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-slicer_package_manager_client">slicer_package_manager_client package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-slicer_package_manager_client.cli">slicer_package_manager_client.cli module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../make_a_release.html">Making a release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Release Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Slicer Package Manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Developer Guide</a> &raquo;</li>
+      <li>Python Client API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/developer_guide/slicer_package_manager_client.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="python-client-api">
+<h1>Python Client API<a class="headerlink" href="#python-client-api" title="Permalink to this headline"></a></h1>
+<section id="module-slicer_package_manager_client">
+<span id="slicer-package-manager-client-package"></span><h2>slicer_package_manager_client package<a class="headerlink" href="#module-slicer_package_manager_client" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="slicer_package_manager_client.Constant">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">slicer_package_manager_client.</span></span><span class="sig-name descname"><span class="pre">Constant</span></span><a class="headerlink" href="#slicer_package_manager_client.Constant" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A bunch of utilities constant, as to handle <code class="docutils literal notranslate"><span class="pre">Error</span></code> or set default parameters.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="slicer_package_manager_client.Constant.CURRENT_FOLDER">
+<span class="sig-name descname"><span class="pre">CURRENT_FOLDER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'/home/jcfr/Projects/slicer_package_manager/docs'</span></em><a class="headerlink" href="#slicer_package_manager_client.Constant.CURRENT_FOLDER" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="slicer_package_manager_client.Constant.DEFAULT_LIMIT">
+<span class="sig-name descname"><span class="pre">DEFAULT_LIMIT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="headerlink" href="#slicer_package_manager_client.Constant.DEFAULT_LIMIT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="slicer_package_manager_client.Constant.DRAFT_RELEASE_NAME">
+<span class="sig-name descname"><span class="pre">DRAFT_RELEASE_NAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'draft'</span></em><a class="headerlink" href="#slicer_package_manager_client.Constant.DRAFT_RELEASE_NAME" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="slicer_package_manager_client.Constant.EXTENSION_AREADY_UP_TO_DATE">
+<span class="sig-name descname"><span class="pre">EXTENSION_AREADY_UP_TO_DATE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#slicer_package_manager_client.Constant.EXTENSION_AREADY_UP_TO_DATE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="slicer_package_manager_client.Constant.EXTENSION_NOW_UP_TO_DATE">
+<span class="sig-name descname"><span class="pre">EXTENSION_NOW_UP_TO_DATE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">33</span></em><a class="headerlink" href="#slicer_package_manager_client.Constant.EXTENSION_NOW_UP_TO_DATE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="slicer_package_manager_client.Constant.PACKAGE_NOW_UP_TO_DATE">
+<span class="sig-name descname"><span class="pre">PACKAGE_NOW_UP_TO_DATE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#slicer_package_manager_client.Constant.PACKAGE_NOW_UP_TO_DATE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="slicer_package_manager_client.Constant.WIDTH">
+<span class="sig-name descname"><span class="pre">WIDTH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#slicer_package_manager_client.Constant.WIDTH" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">slicer_package_manager_client.</span></span><span class="sig-name descname"><span class="pre">SlicerPackageClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apiRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apiUrl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progressReporterCls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">girder_client.GirderClient</span></code></p>
+<p>The SlicerPackageClient allows to use the slicer_package_manager plugin of Girder.
+This allow to manage 5 top level entities:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Application</p></li>
+<li><p>Release</p></li>
+<li><p>Draft</p></li>
+<li><p>Package</p></li>
+<li><p>Extension</p></li>
+</ul>
+</div></blockquote>
+<p>It’s now possible to choose the collection within create the application. It’s also
+possible to get an existing collection by ID for creating the application inside.</p>
+<p>In this case, you must provide the <code class="docutils literal notranslate"><span class="pre">coll_id</span></code> argument to be able to use all the
+commands on these application. By default all the command look for application
+which are under the <em>Applications</em> collection.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.createApp">
+<span class="sig-name descname"><span class="pre">createApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_desc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">public</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.createApp" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new application in the collection which correspond to <code class="docutils literal notranslate"><span class="pre">coll_id</span></code>,
+by default it will create the application in the collection named <code class="docutils literal notranslate"><span class="pre">Applications</span></code>.
+The application will contain a <code class="docutils literal notranslate"><span class="pre">draft</span></code> folder.
+Two templates names will be set as a metadata of this new application.
+One for determine each future uploaded application package and the
+other to determine each future uploaded extension.
+It’s also possible to create a new collection by specifying “coll_name”.
+If this collection already exist it will use it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – name of the new application</p></li>
+<li><p><strong>desc</strong> – Optional description of the application</p></li>
+<li><p><strong>coll_id</strong> – Id of an existing collection</p></li>
+<li><p><strong>coll_name</strong> – Name of the collection</p></li>
+<li><p><strong>coll_desc</strong> – Optional description of the new collection</p></li>
+<li><p><strong>public</strong> – Whether the collection should be publicly visible</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The new application</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.createRelease">
+<span class="sig-name descname"><span class="pre">createRelease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.createRelease" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new release within the application corresponding to <code class="docutils literal notranslate"><span class="pre">app_name</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>name</strong> – Name of the release</p></li>
+<li><p><strong>revision</strong> – Revision of the application</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+<li><p><strong>desc</strong> – Description of the release</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The new release</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.deleteApp">
+<span class="sig-name descname"><span class="pre">deleteApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.deleteApp" title="Permalink to this definition"></a></dt>
+<dd><p>Delete the application by ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – application name</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The deleted application</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.deleteApplicationPackage">
+<span class="sig-name descname"><span class="pre">deleteApplicationPackage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_or_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.deleteApplicationPackage" title="Permalink to this definition"></a></dt>
+<dd><p>Delete an application package within an application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>id_or_name</strong> – Package ID or name</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The deleted application package</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.deleteDraftRelease">
+<span class="sig-name descname"><span class="pre">deleteDraftRelease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.deleteDraftRelease" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a specific revision within the Draft release.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>revision</strong> – Revision of the release</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The deleted release</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.deleteExtension">
+<span class="sig-name descname"><span class="pre">deleteExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_or_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.deleteExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Delete an extension within an application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>id_or_name</strong> – Extension ID or name</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The deleted extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.deleteRelease">
+<span class="sig-name descname"><span class="pre">deleteRelease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.deleteRelease" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a release within an application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>name</strong> – Name of the release</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The deleted release</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.downloadApplicationPackage">
+<span class="sig-name descname"><span class="pre">downloadApplicationPackage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_or_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jcfr/Projects/slicer_package_manager/docs'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.downloadApplicationPackage" title="Permalink to this definition"></a></dt>
+<dd><p>Download an application package by ID and store it in the given option <code class="docutils literal notranslate"><span class="pre">dir_path</span></code>.
+When we use the package id in <code class="docutils literal notranslate"><span class="pre">id_or_name</span></code>, the parameter <code class="docutils literal notranslate"><span class="pre">app_name</span></code> is ignored.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>id_or_name</strong> – ID or name of the package</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+<li><p><strong>dir_path</strong> – Path of the directory where the application package has to be downloaded</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The downloaded package</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.downloadExtension">
+<span class="sig-name descname"><span class="pre">downloadExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_or_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/jcfr/Projects/slicer_package_manager/docs'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.downloadExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Download an extension by ID and store it in the given option <code class="docutils literal notranslate"><span class="pre">dir_path</span></code>.
+When we use the extension id in <code class="docutils literal notranslate"><span class="pre">id_or_name</span></code>, the parameter <code class="docutils literal notranslate"><span class="pre">app_name</span></code> is ignored.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>id_or_name</strong> – ID or name of the extension</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+<li><p><strong>dir_path</strong> – Path of the directory where the extension has to be downloaded</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The downloaded extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.listApp">
+<span class="sig-name descname"><span class="pre">listApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.listApp" title="Permalink to this definition"></a></dt>
+<dd><p>List all the applications within a specific collection by providing the option
+<code class="docutils literal notranslate"><span class="pre">coll_id</span></code>. By default it will list within the collection <code class="docutils literal notranslate"><span class="pre">Applications</span></code>.
+It can also lead to get the application by name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – application mame</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of applications</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.listApplicationPackage">
+<span class="sig-name descname"><span class="pre">listApplicationPackage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pkg_os</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">release</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.listApplicationPackage" title="Permalink to this definition"></a></dt>
+<dd><p>List the application packages filtered by some optional parameters (os, arch, …).</p>
+<p>By default only the first N application packages are listed. Setting the <code class="docutils literal notranslate"><span class="pre">limit</span></code> parameter
+to <cite>0</cite> removes this restriction.</p>
+<p>It’s also possible to specify the <code class="docutils literal notranslate"><span class="pre">--release</span></code> option to list all the package from a
+specific release.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+<li><p><strong>name</strong> – Base name of the application package</p></li>
+<li><p><strong>pkg_os</strong> – The target operating system of the package</p></li>
+<li><p><strong>arch</strong> – The os chip architecture</p></li>
+<li><p><strong>revision</strong> – Revision of the application</p></li>
+<li><p><strong>version</strong> – Version of the application</p></li>
+<li><p><strong>release</strong> – Name or ID of the release</p></li>
+<li><p><strong>limit</strong> – Limit of the number of applications listed (see <a class="reference internal" href="#slicer_package_manager_client.Constant.DEFAULT_LIMIT" title="slicer_package_manager_client.Constant.DEFAULT_LIMIT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.DEFAULT_LIMIT</span></code></a>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of application package filtered by optional parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.listDraftRelease">
+<span class="sig-name descname"><span class="pre">listDraftRelease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.listDraftRelease" title="Permalink to this definition"></a></dt>
+<dd><p>List the draft releases with an offset option to list only the older ones.</p>
+<p>By default only the first N releases are listed. Setting <code class="docutils literal notranslate"><span class="pre">limit</span></code> parameter to <cite>0</cite>
+removes this restriction.</p>
+<p>It’s also possible to list one release within the Draft release by providing
+its specific revision.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+<li><p><strong>revision</strong> – Revision of the release</p></li>
+<li><p><strong>limit</strong> – Limit of the number of draft releases listed (see <a class="reference internal" href="#slicer_package_manager_client.Constant.DEFAULT_LIMIT" title="slicer_package_manager_client.Constant.DEFAULT_LIMIT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.DEFAULT_LIMIT</span></code></a>)</p></li>
+<li><p><strong>offset</strong> – offset to list only older revisions</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The list of draft release</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.listExtension">
+<span class="sig-name descname"><span class="pre">listExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_os</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_revision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">release</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'draft'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.listExtension" title="Permalink to this definition"></a></dt>
+<dd><p>List the extensions of a specific application <code class="docutils literal notranslate"><span class="pre">app_name</span></code>.</p>
+<p>By default only the first N extensions within the <code class="docutils literal notranslate"><span class="pre">draft</span></code> release are listed. Setting <code class="docutils literal notranslate"><span class="pre">limit</span></code>
+parameter to <cite>0</cite> removes this restriction.</p>
+<p>Specifying optional parameters like <cite>ext_os</cite> or <cite>arch</cite> allows to return the
+corresponding subset.</p>
+<p>Passing <code class="docutils literal notranslate"><span class="pre">all=True</span></code> option allow to list all the extensions from all the
+releases of an application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+<li><p><strong>name</strong> – Base name of the extension</p></li>
+<li><p><strong>ext_os</strong> – The target operating system of the package</p></li>
+<li><p><strong>arch</strong> – The os chip architecture</p></li>
+<li><p><strong>app_revision</strong> – Revision of the application</p></li>
+<li><p><strong>release</strong> – Name of the release</p></li>
+<li><p><strong>query</strong> – Text expected to be found in the extension name or description</p></li>
+<li><p><strong>limit</strong> – Limit of the number of extensions listed (see <a class="reference internal" href="#slicer_package_manager_client.Constant.DEFAULT_LIMIT" title="slicer_package_manager_client.Constant.DEFAULT_LIMIT"><code class="xref py py-const docutils literal notranslate"><span class="pre">Constant.DEFAULT_LIMIT</span></code></a>)</p></li>
+<li><p><strong>all</strong> – Boolean that allow to list extensions from all the release</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of extensions filtered by optional parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.listRelease">
+<span class="sig-name descname"><span class="pre">listRelease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.listRelease" title="Permalink to this definition"></a></dt>
+<dd><p>List all the release within an application. It’s also able to get
+one specific release by name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_name</strong> – Name of the application</p></li>
+<li><p><strong>name</strong> – Name of the release</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of all the release within the application</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.uploadApplicationPackage">
+<span class="sig-name descname"><span class="pre">uploadApplicationPackage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pkg_os</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repo_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repo_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">build_date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_release</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.uploadApplicationPackage" title="Permalink to this definition"></a></dt>
+<dd><p>Upload an application package by providing a path to the file.
+It can also be used to update an existing one.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> – The path to the file</p></li>
+<li><p><strong>app_name</strong> – The name of the application</p></li>
+<li><p><strong>pkg_os</strong> – The target operating system of the package</p></li>
+<li><p><strong>arch</strong> – The os chip architecture</p></li>
+<li><p><strong>name</strong> – The baseName of the package</p></li>
+<li><p><strong>repo_type</strong> – Type of the repository</p></li>
+<li><p><strong>repo_url</strong> – Url of the repository</p></li>
+<li><p><strong>revision</strong> – The revision of the application</p></li>
+<li><p><strong>version</strong> – The version of the application</p></li>
+<li><p><strong>build_date</strong> – The build timestamp specified as a datetime string. Default set to current date and time.</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+<li><p><strong>desc</strong> – The description of the application package</p></li>
+<li><p><strong>pre_release</strong> – Boolean to specify if the package is ready to be distributed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The uploaded application package</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageClient.uploadExtension">
+<span class="sig-name descname"><span class="pre">uploadExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_os</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repo_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repo_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">icon_url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">homepage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screenshots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contributors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coll_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageClient.uploadExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Upload an extension by providing a path to the file. It can also be used to update an
+existing one, in this case the upload is done only if the extension has a different
+revision than the old one.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> – The path to the file</p></li>
+<li><p><strong>app_name</strong> – The name of the application</p></li>
+<li><p><strong>ext_os</strong> – The target operating system of the package</p></li>
+<li><p><strong>arch</strong> – The os chip architecture</p></li>
+<li><p><strong>name</strong> – The baseName of the extension</p></li>
+<li><p><strong>repo_type</strong> – Type of the repository</p></li>
+<li><p><strong>repo_url</strong> – Url of the repository</p></li>
+<li><p><strong>revision</strong> – The revision of the extension</p></li>
+<li><p><strong>app_revision</strong> – The revision of the application supported by the extension</p></li>
+<li><p><strong>desc</strong> – The description of the extension</p></li>
+<li><p><strong>icon_url</strong> – Url of the extension’s logo</p></li>
+<li><p><strong>category</strong> – Category of the extension</p></li>
+<li><p><strong>homepage</strong> – Url of the extension’s homepage</p></li>
+<li><p><strong>screenshots</strong> – Space-separate list of URLs of screenshots for the extension.</p></li>
+<li><p><strong>contributors</strong> – List of contributors of the extension.</p></li>
+<li><p><strong>dependency</strong> – List of the required extensions to use this one.</p></li>
+<li><p><strong>coll_id</strong> – Collection ID</p></li>
+<li><p><strong>force</strong> – To force update the binary file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The uploaded extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="slicer_package_manager_client.SlicerPackageManagerError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">slicer_package_manager_client.</span></span><span class="sig-name descname"><span class="pre">SlicerPackageManagerError</span></span><a class="headerlink" href="#slicer_package_manager_client.SlicerPackageManagerError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<section id="submodules">
+<h3>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h3>
+</section>
+<section id="module-slicer_package_manager_client.cli">
+<span id="slicer-package-manager-client-cli-module"></span><h3>slicer_package_manager_client.cli module<a class="headerlink" href="#module-slicer_package_manager_client.cli" title="Permalink to this headline"></a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="slicer_package_manager_client.cli.SlicerPackageCli">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">slicer_package_manager_client.cli.</span></span><span class="sig-name descname"><span class="pre">SlicerPackageCli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apiRoot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apiUrl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apiKey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager_client.cli.SlicerPackageCli" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#slicer_package_manager_client.SlicerPackageClient" title="slicer_package_manager_client.SlicerPackageClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">slicer_package_manager_client.SlicerPackageClient</span></code></a></p>
+<p>A command line Python client for interacting with a Girder instance’s
+RESTful api, specifically for performing uploads into a Girder instance.</p>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="slicer_package_manager.models.html" class="btn btn-neutral float-left" title="slicer_package_manager.models package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../authors.html" class="btn btn-neutral float-right" title="Credits" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, Kitware, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

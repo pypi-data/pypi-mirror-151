@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>slicer_package_manager.api package &mdash; Slicer Package Manager 0.1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="slicer_package_manager.models package" href="slicer_package_manager.models.html" />
+    <link rel="prev" title="Server API" href="slicer_package_manager.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Slicer Package Manager
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands_shell.html">Commands shell (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Server Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html">During development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#server-side-development">Server side development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#client-side-development">Client side development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#python-client-development">Python client development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#regenerate-documentation-locally">Regenerate Documentation Locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#docker-containers">Docker containers</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="slicer_package_manager.html">Server API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="slicer_package_manager.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">slicer_package_manager.api package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slicer_package_manager.models.html">slicer_package_manager.models package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="slicer_package_manager.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="slicer_package_manager.html#module-slicer_package_manager.constants">slicer_package_manager.constants module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="slicer_package_manager.html#module-slicer_package_manager.utilities">slicer_package_manager.utilities module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="slicer_package_manager_client.html">Python Client API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../make_a_release.html">Making a release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Release Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Slicer Package Manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Developer Guide</a> &raquo;</li>
+          <li><a href="slicer_package_manager.html">Server API</a> &raquo;</li>
+      <li>slicer_package_manager.api package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/developer_guide/slicer_package_manager.api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-slicer_package_manager.api">
+<span id="slicer-package-manager-api-package"></span><h1>slicer_package_manager.api package<a class="headerlink" href="#module-slicer_package_manager.api" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-slicer_package_manager.api.app">
+<span id="slicer-package-manager-api-app-module"></span><h2>slicer_package_manager.api.app module<a class="headerlink" href="#module-slicer_package_manager.api.app" title="Permalink to this headline"></a></h2>
+<p>The internal server API of Slicer Package Manager. Use these endpoints to
+create new applications, new releases, and upload or download application and extensions
+packages.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">slicer_package_manager.api.app.</span></span><span class="sig-name descname"><span class="pre">App</span></span><a class="headerlink" href="#slicer_package_manager.api.app.App" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">girder.api.rest.Resource</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.createNewRelease">
+<span class="sig-name descname"><span class="pre">createNewRelease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">public</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.createNewRelease" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new release with the <code class="docutils literal notranslate"><span class="pre">name</span></code> within the application. The <code class="docutils literal notranslate"><span class="pre">app_revision</span></code>
+will be used to automatically choose this release when uploading an application or
+extension package with a matching application revision metadata.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Name of the new release</p></li>
+<li><p><strong>app_id</strong> – Application ID</p></li>
+<li><p><strong>app_revision</strong> – Revision of the application corresponding to this release</p></li>
+<li><p><strong>description</strong> – Description of the new release</p></li>
+<li><p><strong>public</strong> – Whether the release should be publicly visible</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The new release folder</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.createOrUpdateExtension">
+<span class="sig-name descname"><span class="pre">createOrUpdateExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">os</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repository_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repository_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">icon_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">development_status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enabled</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">homepage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screenshots</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contributors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependency</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">license</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.createOrUpdateExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Create or update an extension item.</p>
+<p>If a release identified by <code class="docutils literal notranslate"><span class="pre">app_revision</span></code> exists, it is used to create or lookup
+the corresponding release folder. Otherwise, a <strong>draft</strong> sub-folder named after
+<code class="docutils literal notranslate"><span class="pre">app_revision</span></code> is either used or created.</p>
+<p>If an extension with matching metadata <code class="docutils literal notranslate"><span class="pre">meta.baseName</span></code>, <code class="docutils literal notranslate"><span class="pre">meta.os</span></code>, <code class="docutils literal notranslate"><span class="pre">meta.arch</span></code> and
+<code class="docutils literal notranslate"><span class="pre">meta.app_revision</span></code> is found, the extension name and other metadata are updated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – The ID of the application.</p></li>
+<li><p><strong>os</strong> – The operation system used for the extension.</p></li>
+<li><p><strong>arch</strong> – The architecture compatible with the extension.</p></li>
+<li><p><strong>baseName</strong> – The base name of the extension.</p></li>
+<li><p><strong>repository_type</strong> – The type of repository (github, gitlab, …).</p></li>
+<li><p><strong>repository_url</strong> – The Url of the repository.</p></li>
+<li><p><strong>revision</strong> – The revision of the extension.</p></li>
+<li><p><strong>app_revision</strong> – The revision of the application.</p></li>
+<li><p><strong>description</strong> – The description of the extension.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The created/updated extension.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.createOrUpdatePackage">
+<span class="sig-name descname"><span class="pre">createOrUpdatePackage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">os</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repository_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repository_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_release</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">build_date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.createOrUpdatePackage" title="Permalink to this definition"></a></dt>
+<dd><p>Create or update a package item.</p>
+<p>If a release identified by <code class="docutils literal notranslate"><span class="pre">revision</span></code> exists, it is used to create or lookup
+the corresponding release folder. Otherwise, a <strong>draft</strong> sub-folder named after
+<code class="docutils literal notranslate"><span class="pre">revision</span></code> is either used or created.</p>
+<p>If a package with matching metadata <code class="docutils literal notranslate"><span class="pre">meta.baseName</span></code>, <code class="docutils literal notranslate"><span class="pre">meta.os</span></code>, <code class="docutils literal notranslate"><span class="pre">meta.arch</span></code> and
+<code class="docutils literal notranslate"><span class="pre">meta.revision</span></code> is found, the package name and other metadata are updated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – The ID of the application.</p></li>
+<li><p><strong>os</strong> – The operation system used for the package.</p></li>
+<li><p><strong>arch</strong> – The architecture compatible with the application package.</p></li>
+<li><p><strong>baseName</strong> – The base name of the package.</p></li>
+<li><p><strong>repository_type</strong> – The type of repository (github, gitlab, …).</p></li>
+<li><p><strong>repository_url</strong> – The Url of the repository.</p></li>
+<li><p><strong>revision</strong> – The revision of the application.</p></li>
+<li><p><strong>version</strong> – The version of the application.</p></li>
+<li><p><strong>description</strong> – Description of the application package</p></li>
+<li><p><strong>pre_release</strong> – Boolean to specify if the package is a full release ready to be distributed</p></li>
+<li><p><strong>build_date</strong> – The build timestamp specified as datetime string. Default set to current date and time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The created/updated package.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.deleteApp">
+<span class="sig-name descname"><span class="pre">deleteApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.deleteApp" title="Permalink to this definition"></a></dt>
+<dd><p>Delete an application by ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>app_folder</strong> – Application folder loaded using <code class="docutils literal notranslate"><span class="pre">app_id</span></code> route parameter.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Confirmation message with the deleted application name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.deleteExtension">
+<span class="sig-name descname"><span class="pre">deleteExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.deleteExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Delete an extension by ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – Application ID</p></li>
+<li><p><strong>ext_model</strong> – Extension model loaded using <code class="docutils literal notranslate"><span class="pre">ext_id</span></code> route parameter.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The deleted extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.deletePackage">
+<span class="sig-name descname"><span class="pre">deletePackage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pkg_model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.deletePackage" title="Permalink to this definition"></a></dt>
+<dd><p>Delete an application package by ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – Application ID</p></li>
+<li><p><strong>pkg_model</strong> – Package model loaded using <code class="docutils literal notranslate"><span class="pre">pkg_id</span></code> route parameter.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The deleted package</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.deleteReleaseByIdOrName">
+<span class="sig-name descname"><span class="pre">deleteReleaseByIdOrName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">release_id_or_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.deleteReleaseByIdOrName" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a release by ID or name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_folder</strong> – Application folder loaded using <code class="docutils literal notranslate"><span class="pre">app_id</span></code> route parameter.</p></li>
+<li><p><strong>release_id_or_name</strong> – Could be either the release ID or the release name</p></li>
+<li><p><strong>progress</strong> – Whether to record progress on this task</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Confirmation message with the deleted release name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.getAllDraftReleases">
+<span class="sig-name descname"><span class="pre">getAllDraftReleases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.getAllDraftReleases" title="Permalink to this definition"></a></dt>
+<dd><p>Get a list of all the draft release of an application. It’s also
+possible to filter this list by the metadata <code class="docutils literal notranslate"><span class="pre">revision</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – Application ID</p></li>
+<li><p><strong>revision</strong> – Revision of one of the draft release</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of all release within the application</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.getDownloadStats">
+<span class="sig-name descname"><span class="pre">getDownloadStats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.getDownloadStats" title="Permalink to this definition"></a></dt>
+<dd><p>Get all the download count of all the application and extension packages
+from an application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>app_id</strong> – Application ID</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The JSON document of all the download statistics</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.getExtensions">
+<span class="sig-name descname"><span class="pre">getExtensions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">release_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">os</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.getExtensions" title="Permalink to this definition"></a></dt>
+<dd><p>Get a list of extension which is filtered by some optional parameters. If the <code class="docutils literal notranslate"><span class="pre">release_id</span></code>
+provided correspond to the draft release, then you must provide the app_revision to use
+this parameters. If not, it will just be ignored.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – Application ID</p></li>
+<li><p><strong>extension_name</strong> – Extension name</p></li>
+<li><p><strong>release_id</strong> – Release ID</p></li>
+<li><p><strong>extension_id</strong> – Extension ID</p></li>
+<li><p><strong>os</strong> – The operation system used for the extension.</p></li>
+<li><p><strong>arch</strong> – The architecture compatible with the extension.</p></li>
+<li><p><strong>app_revision</strong> – The revision of the application</p></li>
+<li><p><strong>baseName</strong> – The baseName of the extension</p></li>
+<li><p><strong>q</strong> – Text expected to be found in the extension name or description</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The list of extensions</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.getPackages">
+<span class="sig-name descname"><span class="pre">getPackages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">package_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">release_id_or_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">package_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">os</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">revision</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.getPackages" title="Permalink to this definition"></a></dt>
+<dd><p>Get a list of package which is filtered by some optional parameters. If the <code class="docutils literal notranslate"><span class="pre">release_id</span></code>
+provided correspond to the draft release, then you must provide the revision to use
+this parameters. If not, it will just be ignored.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – Application ID</p></li>
+<li><p><strong>package_name</strong> – Package name</p></li>
+<li><p><strong>release_id_or_name</strong> – Could be either the release ID or the release name</p></li>
+<li><p><strong>package_id</strong> – Package ID</p></li>
+<li><p><strong>os</strong> – The operation system used for the application package.</p></li>
+<li><p><strong>arch</strong> – The architecture compatible with the application package.</p></li>
+<li><p><strong>revision</strong> – The revision of the application</p></li>
+<li><p><strong>baseName</strong> – The baseName of the package</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The list of application packages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.getReleases">
+<span class="sig-name descname"><span class="pre">getReleases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">release_id_or_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.getReleases" title="Permalink to this definition"></a></dt>
+<dd><p>Get a list of all the stable release of an application. You can also search
+for a specific release if you provide the <code class="docutils literal notranslate"><span class="pre">release_id_or_name</span></code> parameter.
+If the <code class="docutils literal notranslate"><span class="pre">release_id_or_name</span></code> parameter doesn’t correspond to any existing
+release, this will just return <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – Application ID</p></li>
+<li><p><strong>release_id_or_name</strong> – Could be either the release ID or the release name</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of all release within the application or a specific release folder</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.initApp">
+<span class="sig-name descname"><span class="pre">initApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">public</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.initApp" title="Permalink to this definition"></a></dt>
+<dd><p>Create the directory for start a new application. By default, without specifying
+a <code class="docutils literal notranslate"><span class="pre">collection_id</span></code>, it will create a new collection name either <code class="docutils literal notranslate"><span class="pre">collection_name</span></code>
+if provided, or <strong>‘Applications’</strong>. If the collection ‘Applications already exist it will
+get it.
+Return the new application (as a folder) that always contain a default
+sub-folder named ‘draft’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Name of the new application</p></li>
+<li><p><strong>app_description</strong> – Description of the new application</p></li>
+<li><p><strong>collection_id</strong> – Id of the collection within create the application</p></li>
+<li><p><strong>collection_name</strong> – Name of the collection which will be created</p></li>
+<li><p><strong>collection_description</strong> – Description of the new collection</p></li>
+<li><p><strong>public</strong> – Whether the new collection should be publicly visible</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The new application folder</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.api.app.App.listApp">
+<span class="sig-name descname"><span class="pre">listApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.api.app.App.listApp" title="Permalink to this definition"></a></dt>
+<dd><p>List existing applications base on some optional parameters.
+For searching application which aren’t in the default collection (Applications),
+the parameter <code class="docutils literal notranslate"><span class="pre">collection_id</span></code> need to be provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_id</strong> – Application ID</p></li>
+<li><p><strong>collection_id</strong> – Collection ID</p></li>
+<li><p><strong>name</strong> – Name of the application</p></li>
+<li><p><strong>text</strong> – Provide text search on the name of the application</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of applications</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="slicer_package_manager.html" class="btn btn-neutral float-left" title="Server API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="slicer_package_manager.models.html" class="btn btn-neutral float-right" title="slicer_package_manager.models package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, Kitware, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

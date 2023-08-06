@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>slicer_package_manager.models package &mdash; Slicer Package Manager 0.1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python Client API" href="slicer_package_manager_client.html" />
+    <link rel="prev" title="slicer_package_manager.api package" href="slicer_package_manager.api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Slicer Package Manager
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands_shell.html">Commands shell (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Server Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html">During development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#server-side-development">Server side development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#client-side-development">Client side development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#python-client-development">Python client development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#regenerate-documentation-locally">Regenerate Documentation Locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="develop.html#docker-containers">Docker containers</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="slicer_package_manager.html">Server API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="slicer_package_manager.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="slicer_package_manager.api.html">slicer_package_manager.api package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">slicer_package_manager.models package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="slicer_package_manager.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="slicer_package_manager.html#module-slicer_package_manager.constants">slicer_package_manager.constants module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="slicer_package_manager.html#module-slicer_package_manager.utilities">slicer_package_manager.utilities module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="slicer_package_manager_client.html">Python Client API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../make_a_release.html">Making a release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Release Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Slicer Package Manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Developer Guide</a> &raquo;</li>
+          <li><a href="slicer_package_manager.html">Server API</a> &raquo;</li>
+      <li>slicer_package_manager.models package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/developer_guide/slicer_package_manager.models.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-slicer_package_manager.models">
+<span id="slicer-package-manager-models-package"></span><h1>slicer_package_manager.models package<a class="headerlink" href="#module-slicer_package_manager.models" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-slicer_package_manager.models.extension">
+<span id="slicer-package-manager-models-extension-module"></span><h2>slicer_package_manager.models.extension module<a class="headerlink" href="#module-slicer_package_manager.models.extension" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="slicer_package_manager.models.extension.Extension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">slicer_package_manager.models.extension.</span></span><span class="sig-name descname"><span class="pre">Extension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.extension.Extension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">girder.models.item.Item</span></code></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Extension</span></code> class derive from the <code class="docutils literal notranslate"><span class="pre">Item</span></code> model in Girder and it uses to embedded
+extension binary files.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.models.extension.Extension.createExtension">
+<span class="sig-name descname"><span class="pre">createExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.extension.Extension.createExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Create and save in the DB a new extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Name of the new extension</p></li>
+<li><p><strong>creator</strong> – The creator user</p></li>
+<li><p><strong>folder</strong> – The release folder within the extension will be created.</p></li>
+<li><p><strong>params</strong> – All the metadata to set on the new extension</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The new extension item</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.models.extension.Extension.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">release</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.extension.Extension.get" title="Permalink to this definition"></a></dt>
+<dd><p>Get all the extensions available for a release.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>release</strong> – The release folder</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Generator containing all the child items of the release.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.models.extension.Extension.initialize">
+<span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.extension.Extension.initialize" title="Permalink to this definition"></a></dt>
+<dd><p>Subclasses should override this and set the name of the collection as
+self.name. Also, they should set any indexed fields that they require.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.models.extension.Extension.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.extension.Extension.validate" title="Permalink to this definition"></a></dt>
+<dd><p>Validate the extension instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>doc</strong> – The extension instance</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The extension instance once validated</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-slicer_package_manager.models.package">
+<span id="slicer-package-manager-models-package-module"></span><h2>slicer_package_manager.models.package module<a class="headerlink" href="#module-slicer_package_manager.models.package" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="slicer_package_manager.models.package.Package">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">slicer_package_manager.models.package.</span></span><span class="sig-name descname"><span class="pre">Package</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.package.Package" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">girder.models.item.Item</span></code></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Package</span></code> class derive from the <code class="docutils literal notranslate"><span class="pre">Item</span></code> model in Girder and it uses to embedded
+packages binary files.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.models.package.Package.createPackage">
+<span class="sig-name descname"><span class="pre">createPackage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.package.Package.createPackage" title="Permalink to this definition"></a></dt>
+<dd><p>Create and save in the DB a new application package.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Name of the new package</p></li>
+<li><p><strong>creator</strong> – The creator user</p></li>
+<li><p><strong>folder</strong> – The release folder within the package will be created.</p></li>
+<li><p><strong>params</strong> – All the metadata to set on the new application package</p></li>
+<li><p><strong>description</strong> – A description for the application package.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The new application package item</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.models.package.Package.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">release</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.package.Package.get" title="Permalink to this definition"></a></dt>
+<dd><p>Get all the application packages available for a release.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>release</strong> – The release folder</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Generator containing all the child items of the release.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.models.package.Package.initialize">
+<span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.package.Package.initialize" title="Permalink to this definition"></a></dt>
+<dd><p>Subclasses should override this and set the name of the collection as
+self.name. Also, they should set any indexed fields that they require.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="slicer_package_manager.models.package.Package.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#slicer_package_manager.models.package.Package.validate" title="Permalink to this definition"></a></dt>
+<dd><p>Validate the package instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>doc</strong> – The package instance</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The package instance once validated</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="slicer_package_manager.api.html" class="btn btn-neutral float-left" title="slicer_package_manager.api package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="slicer_package_manager_client.html" class="btn btn-neutral float-right" title="Python Client API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, Kitware, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
