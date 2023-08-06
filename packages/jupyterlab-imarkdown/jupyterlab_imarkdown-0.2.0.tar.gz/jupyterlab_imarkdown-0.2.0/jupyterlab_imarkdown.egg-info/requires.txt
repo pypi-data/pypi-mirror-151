@@ -1,0 +1,6 @@
+
+[examples]
+sympy>=1.0.0
+ipywidgets>=7.0.0
+numpy>=1.17
+jupyterlab-markup-expr>=0.1.1
