@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TriangularMap/__init__.py
+TriangularMap/tmap.py
+TriangularMap.egg-info/PKG-INFO
+TriangularMap.egg-info/SOURCES.txt
+TriangularMap.egg-info/dependency_links.txt
+TriangularMap.egg-info/requires.txt
+TriangularMap.egg-info/top_level.txt
