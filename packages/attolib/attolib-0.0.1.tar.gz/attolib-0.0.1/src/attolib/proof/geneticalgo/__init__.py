@@ -1,0 +1,1 @@
+from .geneticalgo import *

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: attolib
+Version: 0.0.1
+Summary: a package for data processing
+Author: Shellwe Wang
+Author-email: shellwe.wang@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is an personal experimental data processing package
