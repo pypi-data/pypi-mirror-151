@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/kw_nlp100.egg-info/PKG-INFO
+src/kw_nlp100.egg-info/SOURCES.txt
+src/kw_nlp100.egg-info/dependency_links.txt
+src/kw_nlp100.egg-info/top_level.txt
