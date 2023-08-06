@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/mono_diff.egg-info/PKG-INFO
+src/mono_diff.egg-info/SOURCES.txt
+src/mono_diff.egg-info/dependency_links.txt
+src/mono_diff.egg-info/requires.txt
+src/mono_diff.egg-info/top_level.txt
