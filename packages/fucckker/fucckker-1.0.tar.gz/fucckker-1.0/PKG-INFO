@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fucckker
+Version: 1.0
+Summary: 一个非常NB的包
+Author: chenshaoyu
+Author-email: 18104602153@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+fucckker是一个吊炸天的工具...

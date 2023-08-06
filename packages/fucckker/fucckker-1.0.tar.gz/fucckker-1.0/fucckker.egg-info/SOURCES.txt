@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fucckker/__init__.py
+fucckker/wp.py
+fucckker.egg-info/PKG-INFO
+fucckker.egg-info/SOURCES.txt
+fucckker.egg-info/dependency_links.txt
+fucckker.egg-info/requires.txt
+fucckker.egg-info/top_level.txt
