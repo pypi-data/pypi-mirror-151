@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+minumtium_simple_jwt_auth/__init__.py
+minumtium_simple_jwt_auth.egg-info/PKG-INFO
+minumtium_simple_jwt_auth.egg-info/SOURCES.txt
+minumtium_simple_jwt_auth.egg-info/dependency_links.txt
+minumtium_simple_jwt_auth.egg-info/requires.txt
+minumtium_simple_jwt_auth.egg-info/top_level.txt
