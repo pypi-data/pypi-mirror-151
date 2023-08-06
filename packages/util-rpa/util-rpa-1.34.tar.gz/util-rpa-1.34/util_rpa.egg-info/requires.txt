@@ -1,0 +1,9 @@
+numpy==1.22.3
+openpyxl==3.0.9
+paramiko==2.9.2
+pysftp==0.2.9
+python-dateutil==2.8.2
+requests==2.27.1
+simplejson==3.17.6
+twine==3.8.0
+typeshed-client==2.0.3
