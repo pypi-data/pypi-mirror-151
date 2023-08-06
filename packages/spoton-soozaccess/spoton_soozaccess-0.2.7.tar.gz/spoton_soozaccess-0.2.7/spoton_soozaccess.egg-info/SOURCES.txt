@@ -1,0 +1,11 @@
+README.md
+setup.py
+spoton_soozaccess/__init__.py
+spoton_soozaccess/__main__.py
+spoton_soozaccess/logger.py
+spoton_soozaccess/soozaccess.py
+spoton_soozaccess.egg-info/PKG-INFO
+spoton_soozaccess.egg-info/SOURCES.txt
+spoton_soozaccess.egg-info/dependency_links.txt
+spoton_soozaccess.egg-info/requires.txt
+spoton_soozaccess.egg-info/top_level.txt
