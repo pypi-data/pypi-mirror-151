@@ -1,0 +1,9 @@
+aacgmv2
+apexpy
+geospacepy
+numpy
+OMMBV
+pandas
+pysat>=3.0
+pyEphem
+sgp4
