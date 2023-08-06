@@ -1,0 +1,8 @@
+README.md
+setup.py
+pydumpck.egg-info/PKG-INFO
+pydumpck.egg-info/SOURCES.txt
+pydumpck.egg-info/dependency_links.txt
+pydumpck.egg-info/entry_points.txt
+pydumpck.egg-info/requires.txt
+pydumpck.egg-info/top_level.txt
