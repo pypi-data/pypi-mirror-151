@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ed-analytics.py
+Version: 1.0.0
+Summary: Educational Analytics toolsets for programming classrooms.
+Home-page: https://github.com/skylartown/ed-analytics.py
+Author: SkylarTown
+Author-email: skylartwn@gmail.com
+Maintainer: Shreyas Ranganatha
+Maintainer-email: shreyass.ranganatha@gmail.com
+License: MIT
+Keywords: education,analytics,classroom
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.6
+License-File: LICENSE
+
+# ed-analytics.py
+Educational Analytics toolsets for optimised, interactive programming classroom environments.
