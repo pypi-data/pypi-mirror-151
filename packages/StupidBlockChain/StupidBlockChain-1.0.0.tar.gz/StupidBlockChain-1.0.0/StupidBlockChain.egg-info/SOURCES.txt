@@ -1,0 +1,10 @@
+README.md
+setup.py
+StupidBlockChain.egg-info/PKG-INFO
+StupidBlockChain.egg-info/SOURCES.txt
+StupidBlockChain.egg-info/dependency_links.txt
+StupidBlockChain.egg-info/requires.txt
+StupidBlockChain.egg-info/top_level.txt
+blockchain/__init__.py
+blockchain/core.py
+blockchain/utils.py
