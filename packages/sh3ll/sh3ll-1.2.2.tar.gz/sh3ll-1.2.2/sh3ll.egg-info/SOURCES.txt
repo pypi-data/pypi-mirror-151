@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+sh3ll/PB.py
+sh3ll/__init__.py
+sh3ll/__main__.py
+sh3ll/command.py
+sh3ll/ctx.py
+sh3ll/sample.py
+sh3ll.egg-info/PKG-INFO
+sh3ll.egg-info/SOURCES.txt
+sh3ll.egg-info/dependency_links.txt
+sh3ll.egg-info/entry_points.txt
+sh3ll.egg-info/requires.txt
+sh3ll.egg-info/top_level.txt
