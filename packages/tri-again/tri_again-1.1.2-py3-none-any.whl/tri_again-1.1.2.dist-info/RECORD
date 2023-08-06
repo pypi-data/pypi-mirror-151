@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=Nb77m_XR5QGl1vKiTAsqSXuLYhPyROSS3czluDVWLAA,631
+tri_again/__init__.py,sha256=dQ3PTij1IFRDpI3TB3l_HnQy_iBkqcV0O2F0DtGQGGc,45
+tri_again/_collada.py,sha256=gRQViGcnpRgHglsn0ZX-OSCgvKoI5WAPofIdBKrhkJo,4871
+tri_again/_color.py,sha256=NFtq7gBRtCUr6l_XvHaIbY8Trnd9FFe4pZPCmFgRJRg,441
+tri_again/_scene.py,sha256=mEEMdbP_1LCUr0sNvOgz7jR8fk8uFJpQ9SByMTIa1xw,2651
+tri_again/_scene_internal.py,sha256=skQAbyEKpkK2-S5Zp_vddOB5Mk1YJjP4OtSwjcVUiIA,552
+tri_again-1.1.2.dist-info/LICENSE,sha256=_OpHIQoOQac_--PjwPtFzV7mP3syHwbWpCxZypd0z0A,1125
+tri_again-1.1.2.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+tri_again-1.1.2.dist-info/METADATA,sha256=YSFTepsCMJqoiTYCpoJL25gbyH1briQ4I5JaQCE2DHA,1263
+tri_again-1.1.2.dist-info/RECORD,,
