@@ -1,0 +1,11 @@
+prognosis/__init__.py,sha256=G4YkcD4GYMd3mgJwBw8l0WdqX9bnqnx_Mfj79vCyDug,206
+prognosis/country.py,sha256=RnjnImtRKFmJu-_jtlCW8v1-jxixHWoREt_bJbOfJs8,1742
+prognosis/country_group.py,sha256=QinE-Hdq0Uh2JOJjiqH4uKhOqE0FJoPUo96F4WeWWVU,750
+prognosis/helper.py,sha256=6Sorlt7bsmt3OQOJlXbphKIAam7DTp3fiZPn6NUneAM,890
+prognosis/com/__init__.py,sha256=2doNMlnft6CsAz7hhleYaatsfkn0lpOrfXddX4K7NAg,176
+prognosis/com/country.py,sha256=sciPpAUHnCjUppWsC9yD_DFenF_0UvReH01OV2WjA1Y,3649
+prognosis/com/topics.py,sha256=rbAarJ7OJeZFJ5wbhkCSzPBrcHCHgOGo5rKKQlhdHLI,566
+prognosis-0.0.5.dist-info/METADATA,sha256=h4j9sfeVHNrEORGwuCGaltp_8MN7wFwacYD4JyrlV9w,1612
+prognosis-0.0.5.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+prognosis-0.0.5.dist-info/top_level.txt,sha256=GveuCivF6w1uvsazw65wxKDdFEzW19nx_5n6W5EY_dg,10
+prognosis-0.0.5.dist-info/RECORD,,
