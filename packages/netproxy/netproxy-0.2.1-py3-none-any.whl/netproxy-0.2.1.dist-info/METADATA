@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: netproxy
+Version: 0.2.1
+Summary: NetProxy is a proxy based on twisted, it can be initiaded based on toml config file and it can act as HTTP/HTTPS Proxy a Connect Proxy, a WSGI Server and as a Reverse Proxy (Which can be used to provide authentication to clients to external services). It can be configured to proxy the request depending on requested address. 
+Home-page: https://github.com/jose-pr/pypki
+Author: Jose A.
+Author-email: jose-pr@coqui.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: twisted
+Requires-Dist: certauth2
+Requires-Dist: x509creds
+
+UNKNOWN
+
