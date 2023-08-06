@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cubicweb-link
+Version: 1.10.1
+Summary: link component for the CubicWeb framework
+Home-page: https://forge.extranet.logilab.fr/cubicweb/cubes/cubicweb-link
+Author: Logilab
+Author-email: contact@logilab.fr
+License: LGPL
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: CubicWeb
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: JavaScript
+Requires-Dist: cubicweb (<3.36.0,>=3.24.0)
+
+This cube provides the `Link` entity type to model links, eg an URL with a
+description.
+
+
