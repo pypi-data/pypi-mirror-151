@@ -1,0 +1,3 @@
+[console_scripts]
+scBoolSeq = scboolseq.__main__:main
+
