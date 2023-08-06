@@ -1,0 +1,11 @@
+cairo_type_hints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cairo_type_hints/cairo.ebnf,sha256=kxCso9hfb0O-lWAhgny3wItza8H4xr1MYT7NKsGbxaw,7869
+cairo_type_hints/console.py,sha256=lQIwTZPEujxIiMt6v9T7VyZrQfh7EXx1aPefvtXbbv8,5047
+cairo_type_hints/generate.py,sha256=gzOG9yhzM6NjjPBWJRiIWNT-RY0rmfXeUghcl67FsVs,259
+cairo_type_hints/parser.py,sha256=UaCSCdWilarqtQjAjv_MnGBk9OAt29QQsLPQX8x-4kI,3800
+cairo_type_hints-0.1.3.dist-info/LICENSE,sha256=rjj3eFk7xFTb06jzoVAv98vDdnuljTZJMFhJmWa0EZY,1065
+cairo_type_hints-0.1.3.dist-info/METADATA,sha256=BqaznAzZpwPTGbOEWYKyixZpoc7gcKu5SdvCQa8nJys,3360
+cairo_type_hints-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cairo_type_hints-0.1.3.dist-info/entry_points.txt,sha256=gC9gKMB1w3GTMS_0ZWCVFmIvHFC6q6cPmH5e24oZl2w,75
+cairo_type_hints-0.1.3.dist-info/top_level.txt,sha256=gqp6aHt7u9phdycjPW9qieDzKcAFktdR3q9eYcS6qtM,17
+cairo_type_hints-0.1.3.dist-info/RECORD,,
