@@ -1,0 +1,112 @@
+## Maritest
+
+[![Build](https://github.com/sodrooome/maritest/actions/workflows/test.yml/badge.svg)](https://github.com/sodrooome/maritest/actions/workflows/test.yml) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/maritest) ![PyPI - Status](https://img.shields.io/pypi/status/maritest) [![codecov](https://codecov.io/gh/sodrooome/maritest/branch/master/graph/badge.svg?token=H3K1JNZBW2)](https://codecov.io/gh/sodrooome/maritest)
+
+**Maritest** is an API testing framework that the purpose solely of simplifying assertion when doing testing in the API layer, it's an easy and convenient way to go iterative testing while keeping up the fast-paced development and being able to maintain all testing modules/scenarios without breaking change
+
+### Installation
+
+To install maritest just simply using :
+
+`pip install maritest`
+
+### Basic Usage
+
+After you're done with installation, you can try to use this basic feature from **Maritest** for example
+
+```python
+from maritest.assertion import Assert
+
+request = Assert(
+    method="GET",                                       # required, support 5 common HTTP method
+    url="https://jsonplaceholder.typicode.com/todos/1", # required
+    headers={},                                         # required, set as empty dict if not needed
+    proxy={"http": "http://api.services.com"},          # not required, default set to None
+    timeout=60,                                         # not required, default set to 120 seconds
+)
+
+# choose several method what kind of assertion that you wanted
+# 1. Assert that request is success
+# 2. Assert that request is failed
+request.assert_is_ok(message="Should be success")
+request.assert_is_failed(message="Should be failed")
+```
+
+If the assertion for that request is successful and according to what we expected, then it will return with a custom message that you already set before based on the message argument. If not successful, then it will raise an `AssertionError` with a formatted error message that is already available (without you needing to customize the error message again).
+
+For now, Maritest already have prepared several kinds of useful assertions method which include a common assertion that is always used in testing for API scenario, those are :
+
+```python
+request = Assert(method="GET", url="https://jsonplaceholder.typicode.com/todos/1", headers={})
+
+# assert if request was success
+# and you can also write custom message if success
+request.assert_is_ok(message="Response is OK")
+
+# assert if request was failed
+request.assert_is_failed(message="Response is FAILED")
+
+# assert if response has headers
+request.assert_is_headers(message="Response have headers")
+
+# assert if content-type in headers is set
+request.assert_is_content_type(message="Response have content-type")
+
+# assert to identifying content-type value was equal to
+request.assert_content_type_to_equal(value="application/json", message="Value of content-type is equal")
+
+# assert if response status code IN range 2xx
+request.assert_is_2xx_status(message="Response status in 2xx")
+
+# assert if response status code in range 3xx
+request.assert_is_3xx_status(message="Response status in 3xx")
+
+# assert if response status code in range 4xx
+request.assert_is_4xx_status(message="Response status in 4xx")
+
+# assert if response status code in range 5xx
+request.assert_is_5xx_status(message="Response status in 5xx")
+
+# assert if response body has multipart files
+request.assert_has_content(message="Response has content")
+
+# assert if response body has json object
+request.assert_has_json(message="Response has JSON")
+
+# assert if response body has text attribute, binary
+request.assert_has_text(message="Response has text")
+
+# assert to identifying status code was in expected result
+request.assert_status_code_in(status_code=[200, 201], message="Response status in 2xx")
+
+# assert to identifying status code NOT in expected result
+request.assert_status_code_not_in(status_code=[400, 404], message="Response status not in 4xx")
+
+# assert if json response body equal to expected result
+request.assert_json_to_equal(obj={"this one json object"}, message="Response is equal to JSON")
+
+# assert if multipart response equal to expected result
+request.assert_content_to_equal(obj={"multipart"}, message="Response is equal to multipart")
+
+# assert if text response body equal to expected result
+request.assert_text_to_equal(obj=b'this one is bytes object', message="Response is equal to byte")
+
+# assert to identifying whether response time API calls in max duration
+request.assert_response_time(duration=200, message="Response should not exceed the duration")
+
+# assert to check if response time API calls NOT exceeds the pre-defined max durationn
+request.assert_response_time_less(message="Response should not exceed the limit")
+
+# assert that request expected to be failed in 200 or 201 status code
+request.assert_expected_to_fail(message="Response expected to be failed")
+
+# assert if TLS is secure or not, message argument is optional
+request.assert_tls_secure()
+
+# assert if response contains content-length header or not, message argument is optional
+request.assert_content_length()
+```
+
+### Documentation
+
+For further detail of extending and advanced usage when using Maritest, please read the [documentation](https://maritest.readthedocs.io/en/latest/).
