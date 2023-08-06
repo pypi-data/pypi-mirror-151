@@ -1,0 +1,17 @@
+Django>=3.2.9
+django-base_ds>=0.0.9
+django-hero-ds>=1.1.1
+django-popup-ds>=0.0.2
+django-whyus-ds>=0.0.7
+django-about-ds>=0.0.1
+django-counts-ds>=1.0.3
+django-faq-ds>=1.1.0
+django-cta-ds>=1.0.4
+django-team-ds>=0.0.2
+django-portfolio-ds>=1.0.1
+django-gallery-ds>=1.0.0
+django-services-ds>=0.0.3
+django-appointment-ds>=0.0.4
+django-contact-ds>=0.1.0
+django-clients-ds>=0.0.1
+django-testimonials-ds>=1.0.0
