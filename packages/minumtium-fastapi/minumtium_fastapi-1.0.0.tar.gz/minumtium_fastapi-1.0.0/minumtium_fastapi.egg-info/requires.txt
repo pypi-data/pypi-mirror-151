@@ -1,0 +1,5 @@
+pydantic
+fastapi
+minumtium
+minumtium-sqlite
+minumtium-simple-jwt-auth
