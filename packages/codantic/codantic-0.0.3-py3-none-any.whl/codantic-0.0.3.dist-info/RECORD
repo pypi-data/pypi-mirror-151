@@ -1,0 +1,13 @@
+codantic/__init__.py,sha256=eF3l7wcCcbRJ7uOdLEuzpsxX_V4xFE7-VH2uuQZLF_g,260
+codantic/evaluator/__init__.py,sha256=btnT3_WU8zF1qc86KkhHGMhkFXq5qvRsJsqrY9l7668,31
+codantic/evaluator/object_detector.py,sha256=GZ6HWuT2EiJL_GSxiPeYgcbpcjOtflaoNo-6gyHLqkc,5433
+codantic/models/__init__.py,sha256=ERlz8OirNFZyil_UE-VQw7lX6_amUqawFwnr7OlSoFI,114
+codantic/models/base.py,sha256=QRK0FEqamnYZ3KSzl2jtQNx5ql2BPh8V2Y6c0r9W33g,2709
+codantic/models/face_detection.py,sha256=vrwapN6Pc4exzm_Q_Id4yje7sU1edsfsoBkYxgGDUSo,337
+codantic/models/image_captioning.py,sha256=ErsuD7ITK6WYQbEx3I-0eiDIk0bDfHjv2BhsQost3yY,262
+codantic/models/object_detection.py,sha256=N7qdwMtbuK9aK9gMKX3_kRpJbVzwaFiTzqXLJfjqWMM,2718
+codantic-0.0.3.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codantic-0.0.3.dist-info/METADATA,sha256=nQkAxY06pNkzAz1WjNVxKsVJ9zcpxxsLeiTiLm89hWo,672
+codantic-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+codantic-0.0.3.dist-info/top_level.txt,sha256=gbrpzSqpf8Wdx2exY1veg12-h6Il5DMHwjLgnfIm9dQ,9
+codantic-0.0.3.dist-info/RECORD,,

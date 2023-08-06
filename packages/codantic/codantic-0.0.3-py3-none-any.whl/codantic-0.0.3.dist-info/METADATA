@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: codantic
+Version: 0.0.3
+Summary: CocoDataset reader
+Author: nghoangdat
+Author-email: 18.hoang.dat.12@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: mousse
+Requires-Dist: pandas
+Requires-Dist: pycocotools
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+
+
+# Coco format dataset using pydantic
+
+## Supported tasks
+
+- Object Detection
+- Face Detection
+- Image Captioning
+
+
