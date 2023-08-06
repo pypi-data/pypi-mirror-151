@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error log</title>
+</head>
+<body>
+<div>
+    <h3>Request</h3>
+    <table style="font-family: arial, sans-serif; table-layout: fixed; width: 100%">
+        <thead style="background: #95d5b2">
+        <tr>
+            <td>Request url</td>
+            <td>Method</td>
+            <td>Headers</td>
+            <td>Body</td>
+        </tr>
+        </thead>
+        <tbody style="background: #ccc">
+        <tr style="word-wrap: break-word; word-break: break-all">
+            <td>
+                <a href="{request_url}">{request_url}</a>
+            </td>
+            <td>{request_method}</td>
+            <td>
+                <pre style="white-space: pre-wrap" id="request_headers">{request_headers}</pre>
+            </td>
+            <td>
+                <pre style="white-space: pre-wrap" id="request_content">{request_content}</pre>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Request as curl</h3>
+    <code style="white-space: pre-wrap" id="curl">{curl}</code>
+
+    <h3>Response</h3>
+    <table style="font-family: arial, sans-serif; table-layout: fixed; width: 100%">
+        <thead style="background: #95d5b2">
+        <tr>
+            <td>Headers</td>
+            <td>Cookies</td>
+            <td>Body</td>
+            <td>Status code</td>
+            <td>Reason</td>
+        </tr>
+        </thead>
+        <tbody style="background: #ccc">
+        <tr style="word-wrap: break-word; word-break: break-all">
+            <td>
+                <pre style="white-space: pre-wrap" id="response_headers">{response_headers}</pre>
+            </td>
+            <td>
+                <pre>{cookies}</pre>
+            </td>
+            <td>
+                <pre style="white-space: pre-wrap" id="response_content">{response_content}</pre>
+            </td>
+            <td style="display: inline-block">{status_code}</td>
+            <td>{reason}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+  document.getElementById("curl").textContent = JSON.stringify({curl}, undefined, 2);
+  document.getElementById("request_headers").textContent = JSON.stringify({request_headers}, undefined, 2);
+  document.getElementById("request_content").textContent = JSON.stringify({request_content}, undefined, 2);
+  document.getElementById("response_headers").textContent = JSON.stringify({response_headers}, undefined, 2);
+  document.getElementById("response_content").textContent = JSON.stringify({response_content}, undefined, 2);
+</script>
+</body>
+</html>
