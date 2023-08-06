@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyiceberg
+Version: 0.0.2
+Summary: Apache Iceberg is a new table format for storing large, slow-moving tabular data.
+Home-page: https://github.com/apache/iceberg
+Author: Apache Software Foundation
+Author-email: dev@iceberg.apache.org
+License: UNKNOWN
+Platform: UNKNOWN
+
+UNKNOWN
+
