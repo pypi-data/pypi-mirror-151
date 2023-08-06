@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pyqt_foldable_toolbar/__init__.py
+pyqt_foldable_toolbar/foldableToolBar.py
+pyqt_foldable_toolbar.egg-info/PKG-INFO
+pyqt_foldable_toolbar.egg-info/SOURCES.txt
+pyqt_foldable_toolbar.egg-info/dependency_links.txt
+pyqt_foldable_toolbar.egg-info/requires.txt
+pyqt_foldable_toolbar.egg-info/top_level.txt
+pyqt_foldable_toolbar/ico/__init__.py
+pyqt_foldable_toolbar/ico/fold.svg
+pyqt_foldable_toolbar/ico/unfold.svg
