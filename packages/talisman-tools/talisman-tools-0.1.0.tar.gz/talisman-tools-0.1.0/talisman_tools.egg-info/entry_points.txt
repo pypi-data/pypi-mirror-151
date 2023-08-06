@@ -1,0 +1,4 @@
+[console_scripts]
+loader-server = talisman_tools.servers.loader.server:main
+processor-server = talisman_tools.servers.processor.server:main
+
