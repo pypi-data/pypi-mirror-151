@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-21 18:39+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: services/__init__.py:8
+#: services/templates/services/print-service-items.html:9
+#: services/templates/services/print-service-items.html:34
+msgid "Services"
+msgstr "Послуги"
+
+#: services/forms.py:14
+msgid "Date from"
+msgstr "Дата від"
+
+#: services/forms.py:16
+msgid "Date to"
+msgstr "Дата до"
+
+#: services/forms.py:19
+msgid "worker"
+msgstr "Механік"
+
+#: services/models.py:15
+msgid "Category name"
+msgstr "Назва категорії"
+
+#: services/models.py:21
+msgid "Service category"
+msgstr "Категорія послуг"
+
+#: services/models.py:22
+msgid "Service categories"
+msgstr "Категорії послуг"
+
+#: services/models.py:27
+msgid "Worker name"
+msgstr "Імʼя механіка"
+
+#: services/models.py:33
+msgid "Service worker"
+msgstr "Механік"
+
+#: services/models.py:34
+msgid "Service workers"
+msgstr "Механіки"
+
+#: services/models.py:43
+msgid "Category"
+msgstr "Категорія"
+
+#: services/models.py:46
+#: services/templates/services/print-services-table.html:8
+msgid "Service name"
+msgstr "Назва послуги"
+
+#: services/models.py:49
+#: services/templates/services/print-services-table.html:9
+msgid "Code"
+msgstr "Код"
+
+#: services/models.py:51 services/models.py:120
+#: services/templates/services/print-services-table.html:12
+#: services/templates/services/report.html:57
+msgid "Price"
+msgstr "Ціна"
+
+#: services/models.py:60 services/models.py:113
+msgid "Service item"
+msgstr "Послуга"
+
+#: services/models.py:61
+msgid "Service items"
+msgstr "Послуги"
+
+#: services/models.py:87
+msgid "Sale"
+msgstr "Видаткова накладна"
+
+#: services/models.py:96 services/templates/services/report.html:54
+msgid "Customer"
+msgstr "Клієнт"
+
+#: services/models.py:105
+#: services/templates/services/print-services-table.html:10
+#: services/templates/services/report.html:55
+msgid "Worker"
+msgstr ""
+
+#: services/models.py:116
+msgid "Creation date"
+msgstr "Дата створення"
+
+#: services/models.py:118 services/templates/services/report.html:56
+msgid "Quantity"
+msgstr "Кількість"
+
+#: services/models.py:180 services/models.py:181
+#: services/templates/services/report.html:53
+msgid "Service"
+msgstr "Послуга"
+
+#: services/models.py:195
+msgid "Service not found"
+msgstr "Послугу не знайдено"
+
+#: services/models.py:268
+msgid "Access denied"
+msgstr "Доступ заборонено"
+
+#: services/templates/services/add-service-item.html:8
+msgid "New product"
+msgstr ""
+
+#: services/templates/services/add-service-item.html:68
+msgid "Add product"
+msgstr ""
+
+#: services/templates/services/add-service-item.html:72
+msgid "Cancel"
+msgstr ""
+
+#: services/templates/services/print-service-items.html:41
+#: services/templates/services/report.html:24
+msgid "Print"
+msgstr "Друкувати"
+
+#: services/templates/services/print-service-items.html:55
+#: services/templates/services/print-services.html:61
+msgid "from"
+msgstr "від"
+
+#: services/templates/services/print-services-table.html:7
+#: services/templates/services/print-services.html:59
+msgid "#"
+msgstr "№"
+
+#: services/templates/services/print-services-table.html:11
+msgid "Qty"
+msgstr "Кількість"
+
+#: services/templates/services/print-services-table.html:13
+#: services/templates/services/report.html:58
+msgid "Sum"
+msgstr "Сума"
+
+#: services/templates/services/print-services-table.html:32
+#: services/templates/services/report.html:76
+msgid "Total"
+msgstr "Разом"
+
+#: services/templates/services/print-services.html:59
+msgid "Act of work performed"
+msgstr "Акт виконаних робіт"
+
+#: services/templates/services/report.html:19
+msgid "Service report"
+msgstr "Звіт по наданих послугах"
+
+#: services/templates/services/report.html:52
+msgid "Date"
+msgstr "Дата"
+
+#: services/views.py:75 services/views.py:99
+msgid "Service added"
+msgstr "Послугу додано"
+
+#: services/views.py:109
+msgid "Quantity changed"
+msgstr "Кількість оновлено"
+
+#: services/views.py:119
+msgid "Price changed"
+msgstr "Ціну змінено"
+
+#: services/views.py:129
+msgid "Worker changed"
+msgstr "Механіка змінено"
+
+#: services/views.py:139
+msgid "Service removed"
+msgstr "Послугу видалено"
