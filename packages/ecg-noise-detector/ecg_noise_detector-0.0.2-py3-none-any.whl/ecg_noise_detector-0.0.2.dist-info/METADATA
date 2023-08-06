@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: ecg-noise-detector
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://github.com/Yoav11/ecg-noise-detector
+Author: Yoav Nir
+Author-email: 11yoav.nir@gmail.com
+Project-URL: Bug Tracker, https://github.com/Yoav11/ecg-noise-detector/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: joblib
+Requires-Dist: pandas
+Requires-Dist: py-ecg-detectors
+Requires-Dist: scikit-learn (==1.0.1)
+
+# ecg-noise-detector
+
+This package helps detect and manage noise in ECGs
+
+## 📚 Original publication
+
+Yet to be published
+
+## 🔧 Instalation
+
+This package is available via pip
+```
+pip install ecg-noise-detector
+```
+
+## 💻 Get started
+
+It is important that raw ECGs (i.e not bandpass filtered) are used when using `is_noisy` and `plot_ecg`
+
+```python
+from ecg_noise_detector import noiseDetector
+
+# Generate a noisy ECG
+ecg = noiseDetector.get_example_ecg('noisy')
+
+# Plot the ecg with green highlights on where clean signal is present
+noiseDetector.plot_ecg(ecg)
+
+# Classify the ecg
+print(noiseDetector.is_noisy(ecg))
+
+```
+
+## 📒 Quick Specification
+
+```python
+get_example_ecg(ecgType)
+'''
+RETURNS 
+Numpy array of 30s raw ECG of specified type
+
+INPUTS
+@ ecgType - ['clean' | 'noisy'], specifies which ecg to generate
+'''
+
+plot_ecg(ecg, fs=500, highlights=True, show=True):
+'''
+RETURNS 
+pyplot figure of filtered (and highlighted) ecg
+
+INPUTS
+@ ecg - raw ecg
+@ fs - sampling frequency
+@ highlights - show highlights (green when segment is clean, grey when noisy)
+@ show - display figure when function is executed
+'''
+
+is_noisy(ecg, fs=500)
+'''
+RETURNS 
+boolean (True if ecg is noisy, False if not)
+
+INPUTS
+@ ecg - raw ecg
+@ fs - sampling frequency
+'''
+
+```
+
+
+
