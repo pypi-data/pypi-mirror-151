@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "npnd"
+version = "0.3.0"
+description = "Numpy n-dimensional ops (scatter, gather, one-hot, etc)"
+authors = ["Shawn Presser <shawnpresser@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pytreez = ">=1.4"
+# numpy = ">=1.19"
+# bfloat16ext = ">=1.1.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=6"
+pytest-cov = ">=3"
+python-semantic-release = ">=7"
+parameterized = ">=0.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Shawn's Website" = "https://www.shawwn.com"
+"Support me on Patreon" = "https://www.patreon.com/shawwn"
+"@theshawwn on Twitter" = "https://www.twitter.com/theshawwn"
+"sillysaurusx on Hacker News" = "https://news.ycombinator.com/threads?id=sillysaurusx"
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:tool.poetry.version"
+branch = "main"
+include_additional_files = "setup.py"
+major_on_zero = false
+build_command = "poetry build"              # build dists
+dist_path = "dist/"                         # where to put dists
+upload_to_pypi = false                      # don't auto-upload to PyPI
+remove_dist = false                         # don't remove dists
