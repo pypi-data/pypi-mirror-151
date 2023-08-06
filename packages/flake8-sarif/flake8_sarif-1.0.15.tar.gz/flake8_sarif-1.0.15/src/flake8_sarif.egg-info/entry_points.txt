@@ -1,0 +1,3 @@
+[flake8.report]
+sarif = flake8_sarif_reporter.reporters:DefaultSARIF
+
