@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pynanomapper/__init__.py
+pynanomapper/aa.py
+pynanomapper/annotation.py
+pynanomapper/client_ambit.py
+pynanomapper/client_solr.py
+pynanomapper/units.py
+pynanomapper.egg-info/PKG-INFO
+pynanomapper.egg-info/SOURCES.txt
+pynanomapper.egg-info/dependency_links.txt
+pynanomapper.egg-info/requires.txt
+pynanomapper.egg-info/top_level.txt
