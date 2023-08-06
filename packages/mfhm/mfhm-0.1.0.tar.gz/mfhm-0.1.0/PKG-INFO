@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mfhm
+Version: 0.1.0
+Summary: HTTP microservice package based on FastAPI and HTTPX
+Author-email: MangFu <2560782597@qq.com>
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: httpx==0.22.0
+Requires-Dist: fastapi==0.75.2
+Requires-Dist: uvicorn[standard]
+Project-URL: Home, https://github.com/mangfu26/mfhm
+
+# MFHM - MangFu HTTP Microservices
+
+
+
+## 简介
+
+> 基于[HTTPX](https://github.com/encode/httpx)和[FastAPI](https://github.com/tiangolo/fastapi)的HTTP微服务框架，侧重于Web领域
+>
+> **注意：** 该项目只是本人用于研究微服务而创建的探索项目, 项目代码只注重功能的实现, 没有进行过严格的测试, 所以请将本项目用于个人/研究为目的/无关紧要的项目中, 切勿在生产项目中使用
+
+
+
+## 更新日志
+
+#### 🔑v0.1.0
+
+>    引入服务通信密钥机制
+
+在理想情况下，MFHM默认所有服务都存在信任/安全的网络环境中，服务间通信无需验证，也没有对服务调用做限制
+
+在此版本中引入了通信密钥机制，当开启密钥机制时，服务间调用/第三方调用服务都需要验证服务密钥
+
+#### ❌v0.0.2
+
+>   解决PyPi推送的版本错误
+
+打包推送`0.0.1`版本到PyPi后在PyPi上删除了项目，本以为删除了后可以重新推送，但很遗憾并不能。再次推送0.0.1版本时PyPi一直提示版本已存在，所以将版本号向前推进一个版本用于解决PyPi版本冲突问题
+
+#### 🚀v0.0.1
+
+MFHM诞生了~
