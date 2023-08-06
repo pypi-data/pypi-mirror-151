@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: solarmask
+Version: 1.0.2
+Summary: An active region segmentation library
+Home-page: https://github.com/SWxTREC/solarmask
+Author: Theo Lincke
+Author-email: thli2739@colorado.edu
+Project-URL: BugTracker, https://github.com/SWxTREC/solarmask/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: astropy
+
+# arsegmentation Version 1.0.0
+
+## Documentation
+***
+*/docs/documentation*: Auto generated documentation on class / methods in src/arsegmentation
+
+TODO - Move markdown documentation to pypi
