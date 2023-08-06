@@ -1,0 +1,13 @@
+proxylib/__init__.py,sha256=9fX5bAvZ1VB1D5LJkMQXgnu2UeiQQ3fQXnWYcrIev2U,74
+proxylib/_jscontext.py,sha256=q_IkY67Uty5DLUY1ypkmDf2cuWqTKMhqAdTUNSDYmR0,2885
+proxylib/_models.py,sha256=pgJAzC5IUTjKIMkOWKNe2fJOVDGsE-sh9__fuAmg4WI,2155
+proxylib/_re.py,sha256=wl869_pXQASb7FH9zlIWmhl6hzDufvRyGevKGsgE3Cg,420
+proxylib/pac.py,sha256=V-2kLicfAN2dWO2EsGOYtYTdvY3S_S2JKSVfyhlhMS8,4468
+proxylib/utils.py,sha256=eyp2jiR4zQFu0akR370LF6Azt8YDhn-zdcAczL0L90k,1244
+proxylib/discovery/__init__.py,sha256=nFnvmC5L-TXm77maA3VrV3D3M3f-s5FT7oJ9sjLqUT4,524
+proxylib/discovery/common.py,sha256=AsenM1qoeI7jJTZWg07WG7jUbX-oObkWd89qZsd3Xks,1834
+proxylib/discovery/windows.py,sha256=uAIL-z5nx2-LRopvyuLD7HZIWpYpR9UH2IoVLftB1Eg,954
+proxylib-0.1.0.dist-info/METADATA,sha256=D-HS-C28Z0z_waq2bGhrcgI5zS7rKd33lx4MWoScP7k,464
+proxylib-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+proxylib-0.1.0.dist-info/top_level.txt,sha256=BXBnmiZj26LlhhGB4FmrPbhSIZ91Wtw-Eu3aeg-BmnI,9
+proxylib-0.1.0.dist-info/RECORD,,
