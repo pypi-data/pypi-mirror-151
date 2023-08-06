@@ -1,0 +1,5 @@
+setuptools==62.1.0
+tqdm==4.64.0
+
+[dev]
+pytest>=6.2.5
