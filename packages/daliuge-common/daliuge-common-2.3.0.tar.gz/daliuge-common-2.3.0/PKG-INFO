@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: daliuge-common
+Version: 2.3.0
+Summary: Data Activated 流 (flow) Graph Engine - Common functionality
+Home-page: https://github.com/ICRAR/daliuge
+Author: ICRAR DIA Group
+Author-email: dfms_prototype@googlegroups.com
+License: LGPLv2+
+Description: The SKA-SDK prototype for the Execution Framework component
+Platform: UNKNOWN
