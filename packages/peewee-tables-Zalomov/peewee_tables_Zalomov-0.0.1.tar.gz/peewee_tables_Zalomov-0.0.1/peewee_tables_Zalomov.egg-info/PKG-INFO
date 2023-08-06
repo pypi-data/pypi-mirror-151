@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: peewee-tables-Zalomov
+Version: 0.0.1
+Summary: Just some fun things to do with your tables, test module, which doesn't contain anything useful
+Home-page: https://github.com/BangerVanos/PeeWeeZal
+Author: Roman Zalomov
+Author-email: romchik349@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Peewee Tables by Zalomov ###
+
+Module just for testing some peewee stuff. What are you going to find here?
+
+

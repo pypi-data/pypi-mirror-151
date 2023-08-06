@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PeeweeZalomov/__init__.py
+PeeweeZalomov/pw_goods_zal.py
+peewee_tables_Zalomov.egg-info/PKG-INFO
+peewee_tables_Zalomov.egg-info/SOURCES.txt
+peewee_tables_Zalomov.egg-info/dependency_links.txt
+peewee_tables_Zalomov.egg-info/top_level.txt
