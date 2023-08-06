@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sops_wrapper.py
+sops_wrapper.egg-info/PKG-INFO
+sops_wrapper.egg-info/SOURCES.txt
+sops_wrapper.egg-info/dependency_links.txt
+sops_wrapper.egg-info/entry_points.txt
+sops_wrapper.egg-info/requires.txt
+sops_wrapper.egg-info/top_level.txt
+sops_wrapper.egg-info/zip-safe
