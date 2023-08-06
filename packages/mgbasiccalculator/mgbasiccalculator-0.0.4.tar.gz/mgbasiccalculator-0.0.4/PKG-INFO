@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mgbasiccalculator
+Version: 0.0.4
+Summary: A very python basic calculator. Created to check if we can use the vs code to upload some the files and use then words workds lot of words cant keep it short so adding more words
+Home-page: 
+Author: Mukul Ganwal
+Author-email: mukulganwal@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
