@@ -1,0 +1,2 @@
+[napari.plugin]
+lazy-openslide = napari_lazy_openslide

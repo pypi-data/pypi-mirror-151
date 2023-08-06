@@ -1,0 +1,12 @@
+napari_lazy_openslide/__init__.py,sha256=u2g8O9xUftbCrvxdYU5tel7cie-y1XXZMOEjgJWjE5g,216
+napari_lazy_openslide/_version.py,sha256=YNd1dEdZGzG2MvXfaTQdmMYCLOQm-rV09_xmC5Hxu5Y,142
+napari_lazy_openslide/lazy_openslide.py,sha256=akmkPPNigw0YUKrBWD7PHAS9Uu3GJpeKGcyTN_3C7Yg,1921
+napari_lazy_openslide/store.py,sha256=u7lqYG_Eo9NUgC4bQ817nuuNi7XRS9KJROyTtFF4QP4,3853
+napari_lazy_openslide/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_lazy_openslide/_tests/test_lazy_openslide.py,sha256=QWjBM4Vd7Hs5Gu4R0TtrIzlhTKq_ptEQypxQno7ptcc,583
+napari_lazy_openslide-0.3.0.dist-info/LICENSE,sha256=85VNYu_MlLZkaeKKpOVIFDO2YeyhMiQa_s3I0BvdR6w,1491
+napari_lazy_openslide-0.3.0.dist-info/METADATA,sha256=46t4vqpxtUME5js5mrjNNQ07M1qidwcOpHXgpK5BffI,4899
+napari_lazy_openslide-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_lazy_openslide-0.3.0.dist-info/entry_points.txt,sha256=f03QbzOQCCOQg2Ek0PvrTFav93yyJi8-SjVv-ITcF44,55
+napari_lazy_openslide-0.3.0.dist-info/top_level.txt,sha256=Ta4opFqttA8XDnXCM19npvuOA7GSEGHuJQBmoL-BuEc,22
+napari_lazy_openslide-0.3.0.dist-info/RECORD,,
