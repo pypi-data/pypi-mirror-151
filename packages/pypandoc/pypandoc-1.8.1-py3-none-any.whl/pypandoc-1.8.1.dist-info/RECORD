@@ -1,0 +1,9 @@
+pypandoc/__init__.py,sha256=hh-JTxi4EDEXIjnEhXusrQmz8SymO0rAVba0uAsKBv0,30798
+pypandoc/handler.py,sha256=OnFrCu4hnujxciza8LK5M2Vn2pHjnSaOVAJMxD7i2Ek,568
+pypandoc/pandoc_download.py,sha256=HvdfF63E2YwMDtbLypv6h-6eEQUO-c56D06kaaIgSyA,9647
+pypandoc/py3compat.py,sha256=zIx5WbYyWXeOAWcqOjJhvrvUoR-aF_mFz16eh-enNno,1993
+pypandoc-1.8.1.dist-info/LICENSE,sha256=h6D1ssCGF5jV_CP_Q9UDbAebN5iixnaKAFP-FuOV2Dk,2966
+pypandoc-1.8.1.dist-info/METADATA,sha256=VJe5EbBU4GlxoMsvNuF_trRZ_8kl7q_rcwxEOkuCZIY,14733
+pypandoc-1.8.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pypandoc-1.8.1.dist-info/top_level.txt,sha256=fgAWTRPloxYRmyv_c2XYiwL4owKOd7txt1yr6YbcINU,9
+pypandoc-1.8.1.dist-info/RECORD,,
