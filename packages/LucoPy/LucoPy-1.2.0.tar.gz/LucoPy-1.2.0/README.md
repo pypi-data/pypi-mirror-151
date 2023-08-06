@@ -1,0 +1,118 @@
+# Luco API Python SDK
+
+Giles Matthews: giles.matthews@redkite.com
+
+## Purpose
+
+Provide a generalised Python interface to interact with the Luco API.
+
+---
+
+## How to Use
+
+Install the library from PyPI using PIP
+
+```bash
+pip install LucoPy
+```
+
+Import the LucoApi class from the LucoPy library in your script and create an object of the LucoApi class using the appropriate credentials.
+
+```bash
+from LucoPy import LucoApi
+
+api = LucoApi(base_url, tenant_id, client_id, client_secret, resource_id)
+```
+
+---
+
+## Authentication
+
+In order to make calls to the API endpoints, the sdk must be able to generate an authenticated access token. Authentication is managed by the ApiCore class using an identity provided during the instantiation of a LucoApi object.
+
+In order to use a service principle, the required credentials must be passed as arguments to the LucoApi class when instantiating it. These credentials are:
+
+- tenant_id
+- client_id
+- client_secret
+- resource_id
+
+Alterntively, a managed identity can be passed into the SDK via the `identity` kwarg when instantiating the LucoApi class. The idenity object passed to this kwarg must have a generate_token() method which returns an access token and expiry datetime.
+
+---
+
+### LucoApi Class
+
+`LucoApi(base_url, tenant_id=None, client_id=None, client_secret=None, resource_id=None, identity=None, timeout=20, log=False)`
+
+This class acts as the gateway to the Luco platform. An instance of this class should be created at the beginning of each script, API calls are then made through the ApiCore which handles the necessary authentication. Use the `log` argument to turn logging on or off. Logs are sent to a log.txt file in the home directory. The `timeout` option defines the maximum time (seconds) to wait for an HTTPS response from the API before causing a fail.
+
+1) `find_slot_id(tag, slot_sequence) --> int`
+
+    GET /slots/search
+
+2) `.get_submission(slot_id, submission_id) --> Submission object`
+
+    GET /slots/{slotId}/submissions/{submissionId}
+
+3) `.create_submission(slot_id) --> Submission object`
+
+    POST /slots/{slotId}/submissions
+
+4) `.find_submission_in_slot_sequence(slotId, submissionId, OnlyCompletedSubmissions=False, TimeDifference=None, FindClosest='historic') --> dict`
+
+    GET /slots/{slotId}/submissions/{submissionId}/search
+
+5) `.find_submissions_by_slot_sequence(slotSequence, onlyLatestSlot=True, onlyDeliveredSlots=True, onlyCompletedSubmissions=True, onlyLatestSubmission=True, expectedAfterUtc=None, expectedBeforeUtc=None) --> dict`
+
+    GET /slotsequences/submissions
+
+6) `.find_latest_submission_by_slot_sequence(slotSequence, expectedAfterUtc=None, expectedBeforeUtc=None) --> slotId, submissionId`
+
+    GET /slotsequences/submissions
+
+### Submission Class
+
+`Submission(slot_id, submission_id, core)`
+
+Much of the functionality is handled at the Submission level. A Submission object is created by the get_submission or create_submission methods of the LucoApi class. These objects store the definition of the corressponding submission and handle methods relating to it.
+
+1) `.params(group=None, key=None) --> dict or value type`
+
+    Search slot parameters by group name and key name
+
+2) `.get_metrics(stages=None, metrics=None) --> dict`
+
+    GET /slots/{slotID}/submissions/{submissionID}/metrics
+
+3) `.get_quality() --> dict`
+
+    GET /slots/{slotID}/submissions/{submissionID}/quality
+
+4) `.submit_run_environment(stage=None, run_environments=None) --> Bool`
+
+    POST /slots/{slotID}/submissions/{submissionID}/runenvironment
+
+5) `.submit_metrics(stage, metric=None, value=None, metrics=None) --> Bool`
+
+    POST /slots/{slotID}/submissions/{submissionID}/metrics
+
+6) `.submit_quality(stage, tool=None, results=None, dataset=None, action=None) --> Bool`
+
+    POST /slots/{slotID}/submissions/{submissionID}/quality
+
+7) `.submit_status(status, stage=None, type=None, message=None, modified_by=None) --> Bool`
+
+    POST /slots/{slotID}/submissions/{submissionID}/status
+
+8) `.submit_completed_status() --> Bool`
+
+    POST /slots/{slotID}/submissions/{submissionID}/status
+
+---
+
+## Version History
+
+LucoPy-1.2.0
+
+---
