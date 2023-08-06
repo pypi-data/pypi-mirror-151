@@ -1,0 +1,11 @@
+lbry_batch_uploader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lbry_batch_uploader/__main__.py,sha256=oNc9jmyL1vhr_gXnCg3zyqsKa5imAMZ5j_-w4kuV3dM,241
+lbry_batch_uploader/parser.py,sha256=cOCxIovJBr5rLI0nUSvKJmY8BfrU1QAWudOE4iIWAwQ,3797
+lbry_batch_uploader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lbry_batch_uploader/uploader.py,sha256=O5KSq-453a59FkB2JadGptn-1Obxacw5t2sKeXTENSA,8165
+lbry_batch_uploader/utils.py,sha256=rvGP3rBABZwBSulQr3LwoJ4krA2cMAI7_Pf_k_hb1lc,9408
+lbry_batch_uploader-1.0.2.dist-info/LICENSE,sha256=GqbpcrTA7PUQvphAd7MD7XYLVUTrYmnC9ImezZ9BYQQ,1066
+lbry_batch_uploader-1.0.2.dist-info/METADATA,sha256=XtxuIBijGOSkoGHTFEHWIc2Xg-4KtyUL0NKlhA6WfPg,6809
+lbry_batch_uploader-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lbry_batch_uploader-1.0.2.dist-info/top_level.txt,sha256=jybD5H5IXcvS6LzrKXxWG21RoV4CTl3zLZrSuy-07gY,20
+lbry_batch_uploader-1.0.2.dist-info/RECORD,,
