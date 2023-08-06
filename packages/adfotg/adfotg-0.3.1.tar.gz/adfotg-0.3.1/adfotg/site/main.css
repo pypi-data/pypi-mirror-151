@@ -1,0 +1,873 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Styling in this project follows BEM notation.
+   http://getbem.com/
+*/
+@font-face {
+  font-family: Amiga Topaz;
+  src: url("res/font/amiga-topaz/Amiga Topaz.ttf") format('truetype');
+}
+/* Generic definitions */
+/* Amiga styling */
+/* Globals */
+/* Media query thresholds */
+/* Mixins */
+/** Covers the whole browser viewport. */
+.style---fullpage--mixin {
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.style---label--mixin {
+  color: #fff;
+  padding-right: 5px;
+}
+.style---pane--mixin {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  margin: 1em;
+  padding: 4px;
+  position: relative;
+}
+.style---title--mixin {
+  font-size: 2em;
+}
+.style---title-shadow--mixin {
+  text-shadow: 2px 2px #000000;
+}
+.style---workbench-border-light-dark--mixin {
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.style---workbench-border-dark-light--mixin {
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+/* BEM elements */
+.style---actions {
+  display: flex;
+  align-items: baseline;
+}
+.style---actions__set {
+  display: flex;
+  align-items: stretch;
+}
+.style---actions__set--baseline {
+  align-items: baseline;
+}
+.style---actions__set--even {
+  justify-content: space-between;
+}
+.style---actions__set--right {
+  margin-left: auto;
+}
+.style---actions__element--center {
+  align-self: center;
+}
+.style---actions--fullrow {
+  align-items: stretch;
+}
+.style---actions--submit {
+  margin-top: 1em;
+}
+.style---app-link {
+  color: cyan;
+  cursor: pointer;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.style---app-link:focus {
+  outline: none;
+}
+.style---app-link:hover {
+  color: gold !important;
+}
+.style---app-link:visited {
+  color: cyan;
+}
+.style---app-link--table {
+  color: blue;
+}
+.style---app-link--table:hover {
+  color: dodgerblue !important;
+}
+.style---app-link--table:visited {
+  color: blue;
+}
+.style---app-link--selected {
+  text-decoration: underline !important;
+}
+.style---button {
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  background-color: #aaa;
+  color: #000;
+  height: 28px;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  font-family: Amiga Topaz;
+  position: relative;
+}
+.style---button:active {
+  background-color: #68b;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.style---button:disabled {
+  background-color: #dddddd;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  color: #808080;
+}
+.style---button__checkmark {
+  content: "";
+  display: none;
+  position: absolute;
+}
+.style---button__checkmark--checked {
+  display: block;
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 11px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.style---button--checkbox {
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  padding: 0px;
+}
+.style---button--big {
+  /**/
+}
+.style---button--delete {
+  background-color: #f33;
+}
+.style---button--form-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.style---button--icon {
+  padding: 0px 8px;
+  width: 52px;
+}
+.style---button--listing {
+  font-size: 0.75em;
+  padding: 0 0.75em;
+}
+.style---button--modal-close {
+  /**/
+}
+.style---button--notification-close {
+  margin-right: 5px;
+}
+.style---button--section-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.style---button--submit {
+  /**/
+}
+.style---button--table {
+  font-size: 0.75em;
+}
+.style---button--icon-table {
+  box-sizing: content-box;
+  font-size: 1em;
+  padding: 2px;
+  width: 28px;
+  height: 14px;
+  line-height: 14px;
+}
+.style---disk-composition {
+  /**/
+}
+.style---disk-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  padding: 4px;
+  position: relative;
+  margin: 1em;
+  /* Double & is not a mistake. It forces this style to be
+	   more important than the default. */
+}
+.style---disk-form__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.style---disk-form .style---disk-form__listing {
+  outline: unset;
+  max-height: 800px;
+}
+.style---errorLabel {
+  /**/
+}
+.style---flex-filler {
+  flex-grow: 1;
+}
+.style---form {
+  border-collapse: separate;
+  border-spacing: 0.25em;
+}
+.style---form__row {
+  /**/
+}
+.style---form__item {
+  /**/
+}
+.style---form__item-note {
+  /* Don't ask me why this works.
+			   I'll just wait till it breaks.*/
+  display: table-cell;
+}
+.style---form__cell {
+  /**/
+}
+.style---form__cell--hint {
+  /**/
+}
+.style---form__cell--label {
+  color: #fff;
+  padding-right: 5px;
+  text-align: right;
+}
+.style---form__cell--widget {
+  padding-right: 2px;
+}
+.style---form__widget {
+  /**/
+}
+.style---form__widget--full {
+  width: 100%;
+}
+@keyframes style---blink {
+  50% {
+    border-color: #f20;
+  }
+}
+.style---guru-meditation {
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  color: #f20;
+  overflow: auto;
+}
+.style---guru-meditation__frame {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.style---guru-meditation__inner-frame {
+  border: 8px solid transparent;
+  padding: 16px 50px;
+  margin: 30px;
+  animation-name: style---blink;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.style---guru-meditation__section {
+  /**/
+}
+.style---guru-meditation__section--error {
+  margin-left: 32px;
+}
+.style---guru-meditation__section:not(:last-child) {
+  margin-bottom: 16px;
+}
+.style---healthbar {
+  background-color: #aaa;
+  border-collapse: separate;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-spacing: 2px 0;
+  padding: 1px;
+  margin-bottom: 1px;
+  width: 100%;
+}
+.style---healthbar__row {
+  justify-items: stretch;
+}
+.style---healthbar__point {
+  min-height: 4px;
+  height: 4px;
+}
+.style---healthbar__point:nth-child(last) {
+  margin-right: 2px;
+}
+.style---healthbar__point--good {
+  background-color: #3f3;
+}
+.style---healthbar__point--bad {
+  background-color: #f33;
+}
+.style---healthbar__point--unknown {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.style---healthbar--has-errors {
+  cursor: pointer;
+}
+.style---icon {
+  /**/
+}
+.style---icon--button {
+  /**/
+}
+.style---icon--table-button {
+  height: 14px;
+}
+.style---imageDetails {
+  /**/
+}
+.style---imageDetails__name {
+  /**/
+}
+.style---imageLibrary {
+  /**/
+}
+.style---inspectedImage {
+  /**/
+}
+.style---labelled {
+  /**/
+}
+.style---labelled__label {
+  /**/
+  color: #fff;
+  padding-right: 5px;
+}
+.style---labelled__content {
+  /**/
+}
+.style---line-input {
+  width: auto;
+}
+.style---line-input__input {
+  border-radius: 0;
+  box-sizing: border-box;
+  min-width: 10px;
+  height: 100%;
+  width: 100%;
+}
+.style---link {
+  color: cyan;
+  cursor: pointer;
+  text-decoration: none;
+}
+.style---link:focus {
+  outline: none;
+}
+.style---link:hover {
+  color: gold !important;
+}
+.style---link:visited {
+  color: cyan;
+}
+.style---link--table {
+  color: blue;
+}
+.style---link--table:hover {
+  color: dodgerblue !important;
+}
+.style---link--table:visited {
+  color: blue;
+}
+.style---listing {
+  overflow: auto;
+  outline: 1px dashed black;
+  padding-right: 5px;
+  max-height: 200px;
+}
+.style---listing__entry {
+  display: flex;
+  align-items: baseline;
+  padding-top: 2px;
+  padding-left: 2px;
+  word-break: break-word;
+}
+.style---listing__entry:nth-child(even) {
+  background-color: #fff2;
+}
+.style---loader {
+  /**/
+}
+.style---loader--upload {
+  width: 100%;
+}
+.style---modal {
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.style---modal__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5px;
+}
+.style---modal__contents {
+  display: table-cell;
+  padding: 5px;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.style---modal__display {
+  color: #000;
+  background-color: #aaa;
+  min-width: 300px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.style---modal__frame {
+  background-color: #68b;
+}
+.style---modal__frame .style---vertical--mixin {
+  width: 2px;
+  height: 100%;
+  display: table-cell;
+}
+.style---modal__frame--left {
+  width: 2px;
+  height: 100%;
+  display: table-cell;
+}
+.style---modal__frame--right {
+  width: 2px;
+  height: 100%;
+  display: table-cell;
+}
+.style---modal__frame--bottom {
+  width: 100%;
+  height: 2px;
+}
+.style---modal__middle {
+  display: table;
+  width: 100%;
+}
+.style---modal__text {
+  margin-bottom: 16px;
+}
+.style---modal__titlebar {
+  background-color: #68b;
+  min-height: 28px;
+}
+.style---createMountImage {
+  /**/
+}
+.style---mount {
+  /**/
+}
+.style---mount__actions {
+  margin-right: 0.25em;
+}
+.style---mount__actions--empty {
+  margin-right: 0em;
+}
+.style---mount__image-name {
+  /**/
+}
+.style---mount__status {
+  /**/
+}
+.style---mount__status-label {
+  /**/
+}
+.style---mount__status-label--badstatus {
+  color: #f33;
+}
+.style---mount__status-label--mounted {
+  color: lime;
+}
+.style---mount__status-label--noimage {
+  color: gray;
+}
+.style---mount__status-label--unmounted {
+  color: gray;
+}
+.style---mount__status-label--unknown {
+  color: red;
+}
+.style---mountedImage {
+  /**/
+}
+.style---notifier {
+  /**/
+}
+.style---notification {
+  /**/
+  border: 1px dashed;
+  padding: 0.25em;
+  margin: 0.25em;
+}
+.style---notification--error {
+  border-color: #f33;
+  background: rgba(255, 51, 51, 0.2);
+}
+.style---notification--success {
+  border-color: #3f3;
+  background: rgba(51, 255, 51, 0.4);
+}
+.style---notification--uploader {
+  font-size: 2em;
+  text-align: center;
+}
+.style---page {
+  background-color: #300c30;
+  color: #ea8;
+  font-family: Amiga Topaz, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0px auto;
+  max-width: 800px;
+}
+.style---page__main {
+  background-color: #414;
+  margin: auto 0;
+}
+.style---pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.style---pager__left {
+  min-width: 64px;
+}
+.style---pager__right {
+  min-width: 64px;
+  text-align: right;
+}
+.style---pager__page {
+  margin: 0 0.125em;
+  font-size: 1.5em;
+}
+.style---pager__page--selected {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.style---search-bar {
+  display: flex;
+}
+.style---search-bar__input {
+  max-width: 200px;
+}
+@media (max-width:430px) {
+  .style---search-bar__input {
+    max-width: 150px;
+  }
+}
+.style---section {
+  margin-top: 2px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.style---section__title {
+  font-size: 2em;
+  text-shadow: 2px 2px #000000;
+  margin: 0px;
+  margin-bottom: 0.25em;
+}
+.style---subsection {
+  /**/
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  margin: 1em;
+  padding: 4px;
+  position: relative;
+}
+.style---subsection__title {
+  text-shadow: 2px 2px #000000;
+  font-size: 1.5em;
+}
+.style---space-info {
+  /**/
+}
+.style---cell--select--mixin {
+  padding: 2px;
+  text-align: center;
+  width: 21px;
+  border-right: 0px;
+}
+.style---table {
+  color: #414;
+  background: white;
+  border: 3px solid gray;
+  border-spacing: 0px;
+  padding: 0px;
+  margin-bottom: 4px;
+}
+@media (max-width:600px) {
+  .style---table {
+    font-size: 0.9em;
+  }
+}
+@media (max-width:430px) {
+  .style---table {
+    font-size: 0.75em;
+  }
+}
+.style---table__header {
+  background: rgba(68, 17, 68, 0.25);
+}
+.style---table__header-cell {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0px 10px;
+  padding-top: 2px;
+}
+@media (min-width:600px) {
+  .style---table__header-cell--fixed {
+    width: 9em;
+  }
+}
+@media (max-width:600px) {
+  .style---table__header-cell--fixed {
+    width: 4em;
+  }
+}
+.style---table__header-cell--fixed-short {
+  width: 4em;
+}
+.style---table__header-cell--select {
+  padding: 2px;
+  text-align: center;
+  width: 21px;
+  border-right: 0px;
+  vertical-align: middle;
+}
+.style---table__header-cell--sorted-asc {
+  /**/
+}
+.style---table__header-cell--sorted-desc {
+  /**/
+}
+.style---table__header-cell--left {
+  /**/
+}
+.style---table__header-cell--right {
+  border-right: none;
+}
+.style---table__record {
+  /**/
+}
+.style---table__record:nth-child(even) {
+  background: rgba(68, 17, 68, 0.1);
+}
+.style---table__label-cell {
+  font-weight: normal;
+  text-align: center;
+  padding: 4px 10px;
+}
+.style---table__data-cell {
+  padding: 4px 2px;
+  vertical-align: middle;
+}
+.style---table__data-cell--select {
+  /**/
+  padding: 2px;
+  text-align: center;
+  width: 21px;
+  border-right: 0px;
+}
+.style---table__cell-contents {
+  display: flex;
+  align-items: center;
+  padding-right: 0.25em;
+  word-break: break-word;
+}
+.style---table--full-page {
+  width: 100%;
+}
+.style---table--no-margin {
+  margin: 0px;
+}
+.style---text-input {
+  border-radius: 0;
+}
+.style---title {
+  border-bottom: 1px solid #ea8;
+  display: block;
+  margin-bottom: 16px;
+  min-height: 105px;
+  padding-bottom: 1px;
+}
+.style---title__row {
+  display: flex;
+}
+.style---title__section {
+  display: block;
+}
+.style---title__section--fill {
+  flex-grow: 1;
+}
+.style---title__main {
+  font-size: 2em;
+  text-shadow: 2px 2px #000000;
+  color: cyan;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 100%;
+}
+.style---title__main:focus {
+  outline: none;
+}
+.style---title__main:hover {
+  color: gold !important;
+}
+.style---title__main:visited {
+  color: cyan;
+}
+.style---title__main--table {
+  color: blue;
+}
+.style---title__main--table:hover {
+  color: dodgerblue !important;
+}
+.style---title__main--table:visited {
+  color: blue;
+}
+@media (max-width:600px) {
+  .style---title__main {
+    font-size: 3em;
+  }
+}
+@media (min-width:600px) {
+  .style---title__main {
+    font-size: 4em;
+  }
+}
+.style---uploadzone {
+  padding: 0 2em 1em 2em;
+}
+.style---uploadzone__pane {
+  width: 100%;
+}
+.style---uploadzone__uploadarea {
+  cursor: pointer;
+  padding: 1em 4em;
+  border: 0.25em dashed #ea8;
+  border-radius: 0.5em;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.style---uploadzone__uploadarea--accept {
+  background-color: #68b;
+}
+.style---uploadzone__uploadarea--reject {
+  background-color: #f33;
+}
+.style---uploadzone__uploadarea:hover {
+  background-color: #68b;
+}
+.style---versionInfo {
+  margin-left: auto;
+  text-align: right;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
