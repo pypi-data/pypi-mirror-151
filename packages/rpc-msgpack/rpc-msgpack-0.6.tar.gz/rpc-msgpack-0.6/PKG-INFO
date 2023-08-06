@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: rpc-msgpack
+Version: 0.6
+Summary: RPC with MessagePack
+Home-page: UNKNOWN
+Author: Eatron Technologies
+Author-email: enes.toptas@eatron.com
+License: UNKNOWN
+Description: Updated version for MessagePack RPC for Python.
+        
+        This implementation uses Tornado framework as a backend.
+        
+        Original implementation:
+        https://github.com/msgpack-rpc/msgpack-rpc-python/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
