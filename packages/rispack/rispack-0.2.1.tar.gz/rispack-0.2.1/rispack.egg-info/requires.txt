@@ -1,0 +1,6 @@
+boto3
+aws-lambda-powertools
+SQLAlchemy
+marshmallow
+marshmallow_dataclass
+requests-aws-sign

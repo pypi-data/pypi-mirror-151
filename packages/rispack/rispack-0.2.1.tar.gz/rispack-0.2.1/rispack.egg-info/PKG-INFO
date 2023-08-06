@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: rispack
+Version: 0.2.1
+Summary: Rispack - Pack of shared libraries from Rispar
+Home-page: https://github.com/risparfinance/rispack
+Author: Rispar Tecnologia
+Author-email: tecnologia@rispar.com.br
+License: Apache License 2.0
+Description: # Rispack - Pack of shared libraries from Rispar
+        
+        
+        ## Handler
+        Set of libraries to make serverless development a breezy.
+        
+        ### Routes - API Requests/Responses
+        
+        ### Record - Background Jobs
+        
+        
+        ## Errors
+        Common errors raised by services.
+        
+        ## Database
+        Manage connection to RDS Cluster via Secret Manager or RDS Proxy.
+        
+        
+        ## AWS
+        Pack of utilities from AWS services.
+        
+        ## Schema
+        Base Schema for entities, events and other data classes.
+        
+        ## Roles
+        Admin roles shared by Rispar services.
+        
+        ## Logger
+        AWS Lambda Powertools logger
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
