@@ -1,0 +1,4 @@
+TTS==0.6.2
+ovos-plugin-manager~=0.0.2
+huggingface-hub
+psutil
