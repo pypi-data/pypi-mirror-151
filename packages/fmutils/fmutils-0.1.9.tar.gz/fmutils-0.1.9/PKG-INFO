@@ -1,0 +1,232 @@
+Metadata-Version: 2.1
+Name: fmutils
+Version: 0.1.9
+Summary: Package for easily accessing and managing large number of files and dirs (e.g. in ML datasets).
+Home-page: https://github.com/Mr-TalhaIlyas/FMUtils
+Author: Talha Ilyas
+Author-email: mr.talhailyas@gmail.com
+License: UNKNOWN
+Keywords: python,directory tree generator,files management,directory management,files listing,directories listing,deleting files,randomly selecting file,transformer,IQA
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+ [![Generic badge](https://img.shields.io/badge/Version-0.1.9-red.svg)](https://shields.io/) [![Downloads](https://pepy.tech/badge/fmutils)](https://pepy.tech/project/fmutils)
+
+# File Management Utilities (fmutils)
+
+For easily accessing and managing large number of files and dirs in ML datasets.
+## Updates
+Additional `sort` functionality added in `plot_data_dist` function.
+
+* `split_some_data`
+* `rename_wrt_dirname`
+* `filename_replacer`
+* `plot_data_dist`
+## Implemented Functions
+class `DirectoryTree` generator. <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/722bf3f7312eb076b1be5108601ba32a8d2339dc/scripts/utils/directorytree.py#L20)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+
+generates a dir tree displaying the full structure of the root dir, showing all the sub-dirs and the files.
+
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>root_dir</strong> – absolute/relative path to root directory containing all files.</li>
+<li><strong>dir_only</strong> – whether to only show sub-dirs in the dir-tree (excluding the files inside of each dir and sub-dir, good for getting an overview of large databases). The default is False.</li>
+<li><strong>write_tree</strong> – write the full dir-tree in a txt file in current working dir. The default is True.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li>None.</li></p>
+</td>
+</tr>
+</tbody>
+
+
+`get_all_files(main_dir, sort=True)` <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/main/scripts/fmutils.py#L23)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+returns the list of all files inside the root dir.
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> – absolute/relative path to root directory containing all files.</li>
+<li><strong>sort</strong> – wether to sort the output lost in Alphabetical order.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li>list containing full paths of all files..</li></p>
+</td>
+</tr>
+</tbody>
+
+
+
+`get_all_dirs(main_dir, sort=True)` <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/722bf3f7312eb076b1be5108601ba32a8d2339dc/scripts/fmutils.py#L46)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+---
+returns the list of all the sub-dirs inside the root dir.
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> – absolute/relative path to root directory containing all files.</li>
+<li><strong>sort</strong> – wether to sort the output lost in Alphabetical order.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li> list containing full paths of all sub directories in root.</li></p>
+</td>
+</tr>
+</tbody>
+
+
+`get_num_of_files(main_dir)` <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/722bf3f7312eb076b1be5108601ba32a8d2339dc/scripts/fmutils.py#L69)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+counts the number of files inside each sub-dir of the root.
+
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> – absolute/relative path to root directory containing all files.</li>
+
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">
+A Dictionary containing follwoing keys/info;
+<li><strong>files_in_sub_dirs</strong> –  an array containing number of file in all sub dirs of root.</li>
+<li><strong>sub_dirs</strong> –  name of all the sub-dirs/classes inside the root.</li>
+<li><strong>total_files</strong> –  total number of files in all the sub-dir/classes.</li>
+</p>
+</td>
+</tr>
+</tbody>
+
+
+`get_basename(full_path, include_extension=True)`<div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/722bf3f7312eb076b1be5108601ba32a8d2339dc/scripts/fmutils.py#L106)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+returns the basename of the file or the dir name at end of given path. In case of file you can choose wether to include the extension or not.
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>full_path</strong> – absolute/relative path to root directory containing all files.</li>
+<li><strong>include_extension</strong> – if the input full_path leads to file the by default the the file's extension in included in output string.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li> name of the file with/without extension or the base dir.</li></p>
+</td>
+</tr>
+</tbody>
+
+
+`get_random_files(main_dir, count=1)` <div style="float: right; font-size: 12px;"><div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/722bf3f7312eb076b1be5108601ba32a8d2339dc/scripts/fmutils.py#L126)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div></div>
+----
+returns a list of randomly selected files from the root dir.
+
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> – absolute/relative path to root directory containing all files.</li>
+<li><strong>count</strong> – the number of files to get from root and its sub-dir.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li> list containing full paths to randomly selected files.</li></p>
+</td>
+</tr>
+</tbody>
+
+
+`split_some_data(origin_dir, dest_dir, split=0.3, move=False)` <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/b6aefa3cb118a75155bdf2b12b2a70101a575343/scripts/fmutils.py#L174)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+Copies a portion of data to a new 'dest_dir'..
+
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> – origin dir which contains all the sub dirs having all files.</li>
+<li><strong>dest_dir </strong> –  destination dir where to put the splitted data.</li>
+<li><strong>split</strong> – Float between [0, 1], percentage of data to split. The default is 0.3.</li>
+<li><strong>move </strong> – if True the selected files will be moved to the new dir (not copied.).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li> None.</li></p>
+</td>
+</tr>
+</tbody>
+
+
+`rename_wrt_dirname(main_dir)` <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/b6aefa3cb118a75155bdf2b12b2a70101a575343/scripts/fmutils.py#L213)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+Change the names of all files inside the main_dir w.r.t their sub_dir names.
+
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> – absolute/relative path to root directory containing all files.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li> None.</li></p>
+</td>
+</tr>
+</tbody>
+
+
+`file_name_replacer(data_dir, new_name, name2replace)` <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/a091960ce03d4e8da78d2ab047042558b47244be/scripts/fmutils.py#L264)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+Changes the names of all files inside a dir by replacing the specific strings in old file name with new ones, specified via 2 input lists.
+
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> – absolute/relative path to root directory containing all files.</li>
+<li><strong>new_name </strong> – list containing the new names which will replace the old ones..</li>
+<li><strong>name2replace  </strong> – list containing the strings which will be replaced wiht new ones.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li> None.</li></p>
+</td>
+</tr>
+</tbody>
+
+
+`del_all_files(main_dir, confirmation=True)` <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/a091960ce03d4e8da78d2ab047042558b47244be/scripts/fmutils.py#L146)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+delete all files from root and all its sub-dirs.
+
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> – absolute/relative path to root directory containing all files.</li>
+<li><strong>confirmation</strong> – confirm before deleting the files.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li> None.</li></p>
+</td>
+</tr>
+</tbody>
+
+
+`plot_data_dist(main_dir)` <div style="float: right; font-size: 12px;">[[source]](https://github.com/Mr-TalhaIlyas/FMUtils/blob/a091960ce03d4e8da78d2ab047042558b47244be/scripts/fmutils.py#L299)[[usage]](https://github.com/Mr-TalhaIlyas/FMUtils#fmutils)</div>
+----
+Plots the bargaph showing number of files in all the sub dir of main dir.
+
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>main_dir</strong> –  main directory which contains all the classes.</li>
+<li><strong>sort</strong> – wether to sort the data or not
+            <strong>None:</strong> wont sort the data and the dirs will also be shown.
+            <strong>1 :</strong> sorth by class name.
+            <strong>2 :</strong> sort by file count.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><li> None. just plots (bargrpah) the data distribution graph</li></p>
+</td>
+</tr>
+</tbody>
+
+## Usage
+For further details and more examples visit my [github](https://github.com/Mr-TalhaIlyas/FMUtils)
+
+
+
