@@ -1,0 +1,2 @@
+[console_scripts]
+acccmip6 = acccmip6.cli:main
