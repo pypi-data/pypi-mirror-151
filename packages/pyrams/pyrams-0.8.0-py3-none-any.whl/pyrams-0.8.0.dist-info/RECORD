@@ -1,0 +1,10 @@
+pyrams/__init__.py,sha256=neAMqrzc8MA7iLJa9xhSNgIgdeagQcRtmeZgarTVUfw,104
+pyrams/_version.py,sha256=iPlYCcIzuzW7T2HKDkmYlMkRI51dBLfNRxPPiWrfw9U,22
+pyrams/data_tools.py,sha256=tz6ULMQllx8L0y0w7SQ4VmTnAhnRAOhmU6iocYQjypw,17584
+pyrams/thermo.py,sha256=-u4pbwiaRMZarZbwCanP0OLRMh_R7NPxISiyOL9eRS8,2690
+pyrams/xarray.py,sha256=gl7Ly_3FxRj_QqZ3ZsgsqzTDV2AeGHrVpncOAsu_HSo,2760
+pyrams-0.8.0.dist-info/LICENSE,sha256=mvhNdMBtm_1qrMmOp5FAprGRG00noh-d7uGUOMGXulo,1074
+pyrams-0.8.0.dist-info/METADATA,sha256=n5QCbz90rnMgB0b6YC7IyFfswW9X73RdOKGNVMb6eMo,1237
+pyrams-0.8.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyrams-0.8.0.dist-info/top_level.txt,sha256=wPxNgvf-2KsxzCM-sj6am799wc-jG5mwSxrNIoI46ZQ,7
+pyrams-0.8.0.dist-info/RECORD,,
