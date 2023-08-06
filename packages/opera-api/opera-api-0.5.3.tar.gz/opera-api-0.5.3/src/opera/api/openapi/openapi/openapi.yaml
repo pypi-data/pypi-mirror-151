@@ -1,0 +1,587 @@
+openapi: 3.0.3
+info:
+  description: A stateful xOpera API for orchestration environment (single user, single
+    project, single deployment)
+  license:
+    name: Apache-2.0
+  title: xOpera API
+  version: 0.5.2
+servers:
+- url: /
+paths:
+  /deploy:
+    post:
+      operationId: deploy
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeploymentInput'
+        description: Deployment inputs and service template name.
+        required: false
+      responses:
+        "202":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invocation'
+          description: The deployment was successfully initiated.
+        "500":
+          description: There was an error starting the deployment.
+      summary: Deploy a CSAR
+      x-openapi-router-controller: opera.api.controllers.default
+  /diff:
+    post:
+      operationId: diff
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DiffRequest'
+        description: Diff inputs
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Diff'
+          description: Diff response.
+        "500":
+          description: There was an error performing the diff.
+      summary: Do a diff
+      x-openapi-router-controller: opera.api.controllers.default
+  /info:
+    get:
+      operationId: info
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Info'
+          description: The opera environment operation.
+        "500":
+          description: General error.
+      summary: Get information about the current opera environment
+      x-openapi-router-controller: opera.api.controllers.default
+  /notify/{trigger_name}:
+    post:
+      operationId: notify
+      parameters:
+      - explode: false
+        in: path
+        name: trigger_name
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              type: string
+        required: false
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OperationSuccess'
+          description: Trigger triggered.
+        "500":
+          description: General error.
+      summary: Do a notification.
+      x-openapi-router-controller: opera.api.controllers.default
+  /outputs:
+    get:
+      operationId: outputs
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeploymentOutput'
+          description: The outputs of the deployment.
+        "404":
+          description: No outputs exist for this deployment.
+      summary: Fetch deployment outputs
+      x-openapi-router-controller: opera.api.controllers.default
+  /package:
+    post:
+      operationId: package
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PackagingInput'
+        description: CSAR packaging parameters.
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PackagingResult'
+          description: Packaging successful.
+        "500":
+          description: General error.
+      summary: Generate a CSAR from a working directory.
+      x-openapi-router-controller: opera.api.controllers.default
+  /status:
+    get:
+      operationId: status
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvocationHistory'
+          description: Asynchronous operation status history.
+      summary: Fetch the status of a deployment
+      x-openapi-router-controller: opera.api.controllers.default
+  /status/{invocation_id}:
+    get:
+      operationId: invocation_status
+      parameters:
+      - explode: false
+        in: path
+        name: invocation_id
+        required: true
+        schema:
+          format: uuid
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invocation'
+          description: An invocation status.
+        "404":
+          description: No invocation with this id.
+      summary: Fetch the status of a particular invocation.
+      x-openapi-router-controller: opera.api.controllers.default
+  /undeploy:
+    post:
+      operationId: undeploy
+      responses:
+        "202":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invocation'
+          description: The undeploy operation was successfully initiated.
+        "500":
+          description: There was an error starting the undeploy operation.
+      summary: Undeploy a deployment
+      x-openapi-router-controller: opera.api.controllers.default
+  /unpackage:
+    post:
+      operationId: unpackage
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UnpackagingInput'
+        description: CSAR unpackaging parameters.
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OperationSuccess'
+          description: Unpackaging successful.
+        "500":
+          description: General error.
+      summary: Unpackage a CSAR.
+      x-openapi-router-controller: opera.api.controllers.default
+  /update:
+    post:
+      operationId: update
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateRequest'
+        description: Update inputs
+        required: true
+      responses:
+        "202":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invocation'
+          description: Update successfully initiated.
+        "500":
+          description: There was an error initiating the update.
+      summary: Do an update
+      x-openapi-router-controller: opera.api.controllers.default
+  /validate/csar:
+    post:
+      operationId: validate_csar
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CsarValidationInput'
+        description: CSAR validation inputs.
+        required: false
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationResult'
+          description: The validation result.
+        "500":
+          description: There was an error starting the validation.
+      summary: Validate a CSAR
+      x-openapi-router-controller: opera.api.controllers.default
+  /validate/servicetemplate:
+    post:
+      operationId: validate_service_template
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeploymentInput'
+        description: Validation inputs and service template name.
+        required: false
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationResult'
+          description: The validation result.
+        "500":
+          description: There was an error starting the validation.
+      summary: Validate a service template
+      x-openapi-router-controller: opera.api.controllers.default
+components:
+  schemas:
+    CsarValidationInput:
+      description: Parameters for CSAR validation.
+      example:
+        csar_path: csar_path
+        inputs: '{}'
+      properties:
+        csar_path:
+          title: csar_path
+          type: string
+        inputs:
+          title: inputs
+          type: object
+      title: CsarValidationInput
+      type: object
+    DeploymentInput:
+      description: Inputs and service template name for deploy and validate commands.
+      example:
+        service_template: service_template
+        inputs: '{}'
+        clean_state: true
+      properties:
+        inputs:
+          title: inputs
+          type: object
+        service_template:
+          title: service_template
+          type: string
+        clean_state:
+          title: clean_state
+          type: boolean
+      required:
+      - service_template
+      title: DeploymentInput
+      type: object
+    DeploymentOutput:
+      description: Free-form mapping of outputs.
+      type: object
+    Diff:
+      description: A diff.
+      example:
+        deleted:
+        - deleted
+        - deleted
+        added:
+        - added
+        - added
+        changed: '{}'
+      properties:
+        added:
+          items:
+            type: string
+          title: added
+          type: array
+        changed:
+          title: changed
+          type: object
+        deleted:
+          items:
+            type: string
+          title: deleted
+          type: array
+      required:
+      - added
+      - changed
+      - deleted
+      title: Diff
+      type: object
+    DiffRequest:
+      description: A diff request.
+      example:
+        inputs: '{}'
+        templateOnly: true
+        newServiceTemplateContents: newServiceTemplateContents
+        serviceTemplate: serviceTemplate
+      properties:
+        serviceTemplate:
+          description: The filename of the base service template.
+          title: serviceTemplate
+          type: string
+        inputs:
+          title: inputs
+          type: object
+        templateOnly:
+          title: templateOnly
+          type: boolean
+        newServiceTemplateContents:
+          description: The contents of the new service template.
+          format: bytes
+          title: newServiceTemplateContents
+          type: string
+      required:
+      - inputs
+      - newServiceTemplateContents
+      - serviceTemplate
+      - templateOnly
+      title: DiffRequest
+      type: object
+    Invocation:
+      description: An invocation of the deployment.
+      example:
+        exception: exception
+        service_template: service_template
+        stdout: stdout
+        inputs: '{}'
+        clean_state: true
+        instance_state:
+          key: instance_state
+        id: id
+        stderr: stderr
+        timestamp: timestamp
+      properties:
+        id:
+          title: id
+          type: string
+        state:
+          $ref: '#/components/schemas/InvocationState'
+        operation:
+          $ref: '#/components/schemas/OperationType'
+        timestamp:
+          description: An ISO8601 timestamp of the invocation.
+          title: timestamp
+          type: string
+        service_template:
+          description: The service template used for the invocation.
+          title: service_template
+          type: string
+        inputs:
+          description: Inputs provided for invocation.
+          title: inputs
+          type: object
+        clean_state:
+          description: Whether a clean deployment was requested.
+          title: clean_state
+          type: boolean
+        instance_state:
+          additionalProperties:
+            type: string
+          description: State of the instances defined in service template.
+          title: instance_state
+          type: object
+        exception:
+          description: An internal xOpera error that occurred during the operation.
+          title: exception
+          type: string
+        stdout:
+          description: xOpera console output for operation.
+          title: stdout
+          type: string
+        stderr:
+          description: xOpera error output for operation.
+          title: stderr
+          type: string
+      required:
+      - id
+      - operation
+      - state
+      - timestamp
+      title: Invocation
+      type: object
+    InvocationHistory:
+      description: Invocation history ordered by timestamp ascending.
+      items:
+        $ref: '#/components/schemas/Invocation'
+      type: array
+    ValidationResult:
+      description: A CSAR validation result.
+      example:
+        success: true
+        message: message
+      properties:
+        success:
+          title: success
+          type: boolean
+        message:
+          title: message
+          type: string
+      required:
+      - success
+      title: ValidationResult
+      type: object
+    Info:
+      description: Information about an opera environment.
+      example:
+        service_template: service_template
+        inputs: '{}'
+        csar_metadata: '{}'
+        content_root: content_root
+        csar_valid: true
+        status: status
+        service_template_metadata: '{}'
+      properties:
+        service_template:
+          title: service_template
+          type: string
+        content_root:
+          title: content_root
+          type: string
+        inputs:
+          title: inputs
+          type: object
+        status:
+          title: status
+          type: string
+        csar_metadata:
+          title: csar_metadata
+          type: object
+        service_template_metadata:
+          title: service_template_metadata
+          type: object
+        csar_valid:
+          title: csar_valid
+          type: boolean
+      title: Info
+      type: object
+    InvocationState:
+      enum:
+      - pending
+      - in_progress
+      - success
+      - failed
+      title: InvocationState
+      type: string
+    OperationType:
+      enum:
+      - deploy
+      - undeploy
+      - notify
+      - update
+      title: OperationType
+      type: string
+    OperationSuccess:
+      description: A general success message.
+      example:
+        success: true
+        message: message
+      properties:
+        success:
+          title: success
+          type: boolean
+        message:
+          title: message
+          type: string
+      required:
+      - success
+      title: OperationSuccess
+      type: object
+    PackagingInput:
+      description: Packaging parameters.
+      example:
+        output: output
+        service_template: service_template
+        service_template_folder: service_template_folder
+      properties:
+        output:
+          title: output
+          type: string
+        format:
+          $ref: '#/components/schemas/PackagingFormat'
+        service_template:
+          title: service_template
+          type: string
+        service_template_folder:
+          title: service_template_folder
+          type: string
+      required:
+      - format
+      - service_template_folder
+      title: PackagingInput
+      type: object
+    PackagingFormat:
+      enum:
+      - zip
+      - tar
+      title: PackagingFormat
+      type: string
+    PackagingResult:
+      description: A general success message.
+      example:
+        package_path: package_path
+      properties:
+        package_path:
+          title: package_path
+          type: string
+      required:
+      - package_path
+      title: PackagingResult
+      type: object
+    UnpackagingInput:
+      description: Unpackaging parameters.
+      example:
+        destination: destination
+        csar: csar
+      properties:
+        destination:
+          title: destination
+          type: string
+        csar:
+          title: csar
+          type: string
+      required:
+      - csar
+      title: UnpackagingInput
+      type: object
+    UpdateRequest:
+      description: Update request.
+      example:
+        inputs: '{}'
+        newServiceTemplateContents: newServiceTemplateContents
+      properties:
+        inputs:
+          title: inputs
+          type: object
+        newServiceTemplateContents:
+          description: The contents of the new service template.
+          format: bytes
+          title: newServiceTemplateContents
+          type: string
+      required:
+      - inputs
+      - newServiceTemplateContents
+      title: UpdateRequest
+      type: object
