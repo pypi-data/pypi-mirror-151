@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: aitg
+Version: 3.4.0
+Summary: aitg is a multitool for working with transformer models
+Author: redthing1
+Author-email: redthing1@alt.icu
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aitextgen (>=0.5.2,<0.6.0)
+Requires-Dist: bottle (>=0.12.19,<0.13.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: lz4 (>=4.0.0,<5.0.0)
+Requires-Dist: msgpack (>=1.0.2,<2.0.0)
+Requires-Dist: sentencepiece (>=0.1.96,<0.2.0)
+Requires-Dist: single-source (>=0.3.0,<0.4.0)
+Requires-Dist: torch (>=1.11.0,<2.0.0)
+Requires-Dist: transformers (>=4.18.0,<5.0.0)
+Requires-Dist: typer (>=0.4.1,<0.5.0)
