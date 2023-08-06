@@ -1,0 +1,9 @@
+ralf/__init__.py,sha256=rqJer3Go-r_T3tkJG7MUYPab2sdbMRNbMw0-qCSmGAI,63
+ralf/ralf.py,sha256=xch3Knvfi6F2d7w9E-Szm3FFxmaSWm8r5sB0NpY4gs0,3651
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_ralf.py,sha256=6adZp1AjkUH9v1d3De9i65FuBq2k8nzLkmWzSFbWptI,2973
+ralf-0.0.1.dist-info/LICENSE,sha256=2GkXm8XeHBZ7Fn2o8ir_C5bxUB3MzzbBnlh-_DSh4IM,1091
+ralf-0.0.1.dist-info/METADATA,sha256=3dRAQrY_injXnIMcRUcCQ7rnvyLTWzo-94_DCTsx1DA,1568
+ralf-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ralf-0.0.1.dist-info/top_level.txt,sha256=rwy4mCAGxwNJiDF9lFVAnYwMYqX_soPr_K-tfdOVzBk,10
+ralf-0.0.1.dist-info/RECORD,,
