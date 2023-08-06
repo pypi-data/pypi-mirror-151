@@ -1,0 +1,12 @@
+pymongo
+oss2
+redis
+DBUtils
+elasticsearch
+flask
+objgraph
+lxml
+cssselect
+prettytable
+pymysql
+beautifulsoup4
