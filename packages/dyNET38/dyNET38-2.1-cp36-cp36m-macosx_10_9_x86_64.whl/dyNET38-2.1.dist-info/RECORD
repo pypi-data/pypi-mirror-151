@@ -1,0 +1,10 @@
+libdynet.dylib,sha256=6XYuirbqmh67EAy8sj48hEPczFrllJpxI1fCuqbvP-M,4338664
+dynet_viz.py,sha256=BPrts76QTRjlWjfjAkT1khC1jbnQy7QAcc_WmyslGvM,39058
+dynet.py,sha256=XIWbl1tvBx9cqNifNwCys-LsEkCn5P25zQg1VDccPEM,932
+dynet_config.py,sha256=dmD7hbiYN48l_jah900LFjXDR07doVdGMisscNytfdo,2199
+_dynet.cpython-36m-darwin.so,sha256=8uDkgoh9fvau8RBAWhTm4x-y50eBg92va49v9RJ7oyU,1852848
+dyNET38-2.1.dist-info/RECORD,,
+dyNET38-2.1.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+dyNET38-2.1.dist-info/top_level.txt,sha256=qzwV1OnBtJvZ8TkaGZ24zFfXU8Sjkwmt1xe7jqpxDpw,36
+dyNET38-2.1.dist-info/METADATA,sha256=4O6_7yvz40VyGBjBSMFVNdxLin9Ex4x0zpOAYie69T4,6487
+dyNET38.dylibs/libdynet.dylib,sha256=-J4BzvDSUhzQ378tmnEjxsPvZOXPItvtEE_Wak7yeEU,4412256
