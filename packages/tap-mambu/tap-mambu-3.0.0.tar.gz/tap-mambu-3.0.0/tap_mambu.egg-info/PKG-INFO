@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tap-mambu
+Version: 3.0.0
+Summary: Singer.io tap for extracting data from the Mambu 2.0 API
+Home-page: UNKNOWN
+Author: jeff.huth@bytecode.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev
+Provides-Extra: mambu-tests
+License-File: LICENSE
+
+UNKNOWN
+
