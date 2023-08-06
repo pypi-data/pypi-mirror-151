@@ -1,0 +1,6 @@
+assertpy
+devdeck-core==1.0.7
+pytest
+osascript==2020.12.3
+parsedatetime
+tzlocal

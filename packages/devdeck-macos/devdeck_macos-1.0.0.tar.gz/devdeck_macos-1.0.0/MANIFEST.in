@@ -1,0 +1,4 @@
+include devdeck_macos/assets/**/*
+include requirements.txt
+include LICENSE
+include LICENSE.fork-original

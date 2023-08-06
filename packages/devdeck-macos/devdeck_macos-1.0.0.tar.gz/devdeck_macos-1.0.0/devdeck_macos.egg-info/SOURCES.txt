@@ -1,0 +1,16 @@
+LICENSE
+LICENSE.fork-original
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+devdeck_macos/__init__.py
+devdeck_macos.egg-info/PKG-INFO
+devdeck_macos.egg-info/SOURCES.txt
+devdeck_macos.egg-info/dependency_links.txt
+devdeck_macos.egg-info/requires.txt
+devdeck_macos.egg-info/top_level.txt
+devdeck_macos/assets/font-awesome/microphone-mute.png
+devdeck_macos/assets/font-awesome/microphone.png
+devdeck_macos/controls/__init__.py
+devdeck_macos/controls/mic_mute_control.py
