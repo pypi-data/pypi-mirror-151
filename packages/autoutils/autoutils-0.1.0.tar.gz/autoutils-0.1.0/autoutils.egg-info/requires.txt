@@ -1,0 +1,8 @@
+persiantools==2
+redis==4
+requests==2
+urllib3==1
+sshtunnel==0
+paramiko==2
+func-timeout==4
+blessings==1
