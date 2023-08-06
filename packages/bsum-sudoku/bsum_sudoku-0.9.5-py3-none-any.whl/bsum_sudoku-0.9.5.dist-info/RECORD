@@ -1,0 +1,17 @@
+sudoku/core/__init__.py,sha256=cxmpCysRR-DOmHGGj41gtUzpsor-NJnn2ZXyHfBNDm0,48
+sudoku/core/iterators.py,sha256=INry5NVY5r-iwKVKNT5uAWWZfufaSKfRXGfDLS-sGWE,2763
+sudoku/core/sudoku_grid.py,sha256=UNfYKeU6FublXsRY7PM-K7D_6xbBsZPpqz9yfIbBGtE,9278
+sudoku/gui/AboutWindow.py,sha256=WS3hUJQegigFEYpBXwp29UmdDrcCrB14J_Oy8NpkU7Y,281
+sudoku/gui/MainWindow.py,sha256=UX6AnwKy2k2w9KDSynQTqseotxF9nItSz6C7h1cNxOM,974
+sudoku/gui/SudokuWidget.py,sha256=bnNOSi2fdTFT0CFOfA3TCJ8n1O94o5Y82MK49IhfNlY,3463
+sudoku/gui/Ui_AboutWindow.py,sha256=5cpvx3sn1NkFvD-KziSKLULcsP8Hw92n3a-TWa6DgXs,63988
+sudoku/gui/Ui_MainWindow.py,sha256=erTTIO5PfeNk4rv3jtIGD9cYVf3AXXq1SY8wR6w2l04,3636
+sudoku/gui/__init__.py,sha256=NvhFSgMLNUHG2ME5G5MFI6Mtx3N5aeHjRaUyDKknHXE,141
+sudoku/gui/__main__.py,sha256=rjC334CEXNXynVHbITd-8Rn7UkBOaA-yFE8bf3JqOvU,238
+bsum_sudoku-0.9.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bsum_sudoku-0.9.5.dist-info/METADATA,sha256=8y8zz_wDG7y3IwQkHA1VFzwDGMcpLoZ-7AttNqb52aE,819
+bsum_sudoku-0.9.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bsum_sudoku-0.9.5.dist-info/entry_points.txt,sha256=8j-L5Au78qeFHhyqvZ7I9af3eUbplxhTcMmSI36jRcM,48
+bsum_sudoku-0.9.5.dist-info/top_level.txt,sha256=oesxezkn8Y-hC-ccYuDx18c6qk9Uem2x-ttoOEVggOQ,7
+bsum_sudoku-0.9.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bsum_sudoku-0.9.5.dist-info/RECORD,,

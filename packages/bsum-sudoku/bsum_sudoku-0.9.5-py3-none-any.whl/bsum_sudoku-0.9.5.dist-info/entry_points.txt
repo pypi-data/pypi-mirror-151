@@ -1,0 +1,2 @@
+[gui_scripts]
+sudoku = sudoku.gui.__main__:main
