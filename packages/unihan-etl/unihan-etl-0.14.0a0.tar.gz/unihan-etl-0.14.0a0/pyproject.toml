@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "unihan-etl"
+version = "0.14.0a0"
+description = "Export UNIHAN data of Chinese, Japanese, Korean to CSV, JSON or YAML"
+license = "MIT"
+authors = ["Tony Narlock <tony@git-pull.com>"]
+
+classifiers = [
+  'Development Status :: 4 - Beta',
+  "License :: OSI Approved :: MIT License",
+  'Environment :: Web Environment',
+  'Intended Audience :: Developers',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.7',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: Implementation :: PyPy',
+  "Topic :: Utilities",
+  "Topic :: Software Development :: Internationalization"
+]
+keywords = ["unihan", "unicode", "cjk", "yaml", "json", "chinese", "japanese", "korean", "hanzi", "dictionary", "dataset"]
+homepage = "https://unihan-etl.git-pull.com"
+readme = 'README.md'
+
+packages = [
+    { include = "unihan_etl" }
+]
+include = [
+    { path = "tests", format = "sdist" }
+]
+
+[tool.poetry.scripts]
+unihan-etl = 'unihan_etl.__main__:run'
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/cihai/unihan-etl/issues"
+Documentation = "https://unihan-etl.git-pull.com"
+Repository = "https://github.com/cihai/unihan-etl"
+Changes = "https://github.com/cihai/unihan-etl/blob/master/CHANGES"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+unicodecsv = "*"
+appdirs = "*"
+zhon = "*"
+
+[tool.poetry.dev-dependencies]
+### Docs ###
+sphinx = "*"
+sphinx-argparse = "^0.2.5"
+furo = "^2022.2.23"
+sphinx-autobuild = "^2021.3.14"
+sphinx-autodoc-typehints = "~1.17.0"
+sphinx-issues = "^3.0.0"
+sphinx-inline-tabs = { version = "*", python = "^3.7" }
+sphinxext-opengraph = "*"
+sphinx-copybutton = "^0.5.0"
+sphinxext-rediraffe = "*"
+myst_parser = "~0.17.0"
+
+### Testing ###
+pytest = "*"
+pytest-rerunfailures = "*"
+pytest-watcher = "^0.2.3"
+
+### Coverage ###
+codecov = "*"
+coverage = "*"
+pytest-cov = "*"
+
+### Format ###
+black = "*"
+isort = "*"
+
+### Lint ###
+flake8 = "*"
+
+[tool.poetry.extras]
+docs = ["sphinx", "sphinx-issues", "sphinx-argparse", "sphinx-autodoc-typehints", "sphinx-autobuild", "sphinx-copybutton", "sphinxext-opengraph", "sphinx-inline-tabs", "sphinxext-rediraffe", "myst_parser", "furo"]
+test = ["pytest", "pytest-rerunfailures", "pytest-watcher"]
+coverage = ["codecov", "coverage", "pytest-cov"]
+format = ["black", "isort"]
+lint = ["flake8"]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
