@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+xlingual_papers_recommender/xlingual_papers_recommender.egg-info/PKG-INFO
+xlingual_papers_recommender/xlingual_papers_recommender.egg-info/SOURCES.txt
+xlingual_papers_recommender/xlingual_papers_recommender.egg-info/dependency_links.txt
+xlingual_papers_recommender/xlingual_papers_recommender.egg-info/entry_points.txt
+xlingual_papers_recommender/xlingual_papers_recommender.egg-info/requires.txt
+xlingual_papers_recommender/xlingual_papers_recommender.egg-info/top_level.txt
