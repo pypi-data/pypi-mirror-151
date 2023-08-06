@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cmake_setuptools_ext/__init__.py
+cmake_setuptools_ext/cmake_ext.py
+cmake_setuptools_ext.egg-info/PKG-INFO
+cmake_setuptools_ext.egg-info/SOURCES.txt
+cmake_setuptools_ext.egg-info/dependency_links.txt
+cmake_setuptools_ext.egg-info/requires.txt
+cmake_setuptools_ext.egg-info/top_level.txt
+cmake_setuptools_ext.egg-info/zip-safe

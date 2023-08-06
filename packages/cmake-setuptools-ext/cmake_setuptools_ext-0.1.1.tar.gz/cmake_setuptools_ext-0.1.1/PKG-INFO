@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cmake_setuptools_ext
+Version: 0.1.1
+Summary: An extension for setuptools when building Python/cmake projects
+Home-page: https://github.com/vanandrew/cmake-setuptools-ext
+Author: Andrew Van
+Author-email: vanandrew@wustl.edu
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: all
+License-File: LICENSE
+
+# cmake-setuptools-ext
+[![Python package](https://github.com/vanandrew/cmake-setuptools-ext/actions/workflows/python-package.yml/badge.svg)](https://github.com/vanandrew/cmake-setuptools-ext/actions/workflows/python-package.yml)
+[![Upload Python Package](https://github.com/vanandrew/cmake-setuptools-ext/actions/workflows/python-publish.yml/badge.svg)](https://github.com/vanandrew/cmake-setuptools-ext/actions/workflows/python-publish.yml)
+
+An extension for setuptools when building Python/cmake projects
