@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PythonTemplatePackage/__init__.py
+PythonTemplatePackage/myclass.py
+PythonTemplatePackage.egg-info/PKG-INFO
+PythonTemplatePackage.egg-info/SOURCES.txt
+PythonTemplatePackage.egg-info/dependency_links.txt
+PythonTemplatePackage.egg-info/top_level.txt
