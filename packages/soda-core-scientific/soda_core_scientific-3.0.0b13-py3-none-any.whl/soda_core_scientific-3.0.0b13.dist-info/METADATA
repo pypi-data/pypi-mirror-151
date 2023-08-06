@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: soda-core-scientific
+Version: 3.0.0b13
+Requires-Dist: soda-core (==3.0.0b13)
+Requires-Dist: u8darts (<1.0.0,>=0.7.0)
+Requires-Dist: pydantic (<2.0.0,>=1.8.1)
+Requires-Dist: inflection (==0.5.1)
+Requires-Dist: httpx (<2.0.0,>=0.18.1)
+Requires-Dist: PyYAML (<6.0.0,>=5.4.1)
+Requires-Dist: prophet (>=1.0.0)
+Requires-Dist: pystan (==2.19.1.1)
+
