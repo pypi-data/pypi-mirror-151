@@ -1,0 +1,2 @@
+[hatch]
+literary = literary_build_hatch.hooks
