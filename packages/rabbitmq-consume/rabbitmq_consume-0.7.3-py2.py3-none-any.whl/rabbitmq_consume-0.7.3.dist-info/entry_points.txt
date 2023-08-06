@@ -1,0 +1,4 @@
+[console_scripts]
+rmq-consume = rmq_consume:main
+rmq-inject = rmq_inject:main
+

@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: rabbitmq-consume
+Version: 0.7.3
+Summary: Consumes XML messages from a RabbitMQ queue using a user defined class.
+Home-page: http://nest.lbl.gov/projects/nest-rmq
+Author: Simon Patton
+Author-email: sjpatton@lbl.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: pika (>=1)
+
+# `rabbitmq_consume` project #
+
+The `rabbitmq_consume` project contains both the `rabbitmq_consume` package that provides a simple `Consumer` class for processing messages from a RabbitMQ queue, `rmq-consume` that is an executable that can be used to run that class and `rmq-inject` that cna be used to inject messages into the originating RabbitMQ queue.
+
+
+## `rmq-consume` executable ##
+
+More details about the `rmq-consume` executable can be found using its help option
+
+    rmq-consume -h
+
+The typical usage is the following:
+
+    rmq-consume <queue> <module>[.<class>]
+
+where `<queue>` is that name of the RabbitMQ queue from which the XML messages should be consumed and `<class>` is a python class in the `<module>` python module that will actually process the messages. If the `.<class> is omitted from the comand line, the class whose name matches the module name will be used.
+
+The "consumption" class need to derived from the `Consumption.Consumption` as shown in the following trivial example.
+
+    from Consumption import Consumption
+
+    class TrivialConsumption(Consumption):
+
+        def __init__(self,
+                     properties,
+                     body,
+                     redelivered):
+
+        def consume(self):
+            pass
+
+Most real implementations will save the `properties`, `body` and `redelivered` arguments for use in the `consume` method.
+
+
+## `rmq-inject` executable ##
+
+More details about the `rmq-inject` executable can be found using its help option
+
+    rmq-inject -h
+
+The typical usage is the following:
+
+    rmq-inject -l <queue>
+
+This injects a "stop listening message" into the queue and when the consumer encounters this it will stop listening for an more messages and shut down.
+
+
