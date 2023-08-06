@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/iops/__init__.py
+src/iops/main.py
+src/iops.egg-info/PKG-INFO
+src/iops.egg-info/SOURCES.txt
+src/iops.egg-info/dependency_links.txt
+src/iops.egg-info/top_level.txt
