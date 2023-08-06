@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: asort
+Version: 0.0.1b1
+Summary: A Python utility / library to sort __all__ lists.
+Home-page: https://github.com/cpendery/asort
+Author: cpendery
+Project-URL: Bug Tracker, https://github.com/cpendery/asort/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# asort
+
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/cpendery/asort/blob/main/LICENSE)
+
+asort your `__all__` lists, so you don't have to.
+
+
+
