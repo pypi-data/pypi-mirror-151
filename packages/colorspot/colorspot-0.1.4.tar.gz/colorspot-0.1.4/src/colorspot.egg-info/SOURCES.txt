@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/colorspot/__init__.py
+src/colorspot/__main__.py
+src/colorspot.egg-info/PKG-INFO
+src/colorspot.egg-info/SOURCES.txt
+src/colorspot.egg-info/dependency_links.txt
+src/colorspot.egg-info/entry_points.txt
+src/colorspot.egg-info/requires.txt
+src/colorspot.egg-info/top_level.txt
