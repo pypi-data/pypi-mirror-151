@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/example_package/__init__.py
+src/example_package/example.py
+src/example_package/example2.py
+src/example_package/sayhello.py
+src/gk_datasci_GEORGE_KULANGARA.egg-info/PKG-INFO
+src/gk_datasci_GEORGE_KULANGARA.egg-info/SOURCES.txt
+src/gk_datasci_GEORGE_KULANGARA.egg-info/dependency_links.txt
+src/gk_datasci_GEORGE_KULANGARA.egg-info/top_level.txt
