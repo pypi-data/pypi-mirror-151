@@ -1,0 +1,9 @@
+include README.md
+
+include MANIFEST.in
+
+include price_val_engine/VERSION
+
+recursive-include price_val_engine/conf/project_template *
+
+global-exclude __pycache__ *.py[cod]
