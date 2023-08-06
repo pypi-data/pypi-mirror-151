@@ -1,0 +1,161 @@
+# Package Overview
+package_name: regression_model
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (sale price)
+target: units_sold
+
+pipeline_name: regression_model
+pipeline_save_file: regression_model_output_v
+
+
+features:
+  - 'feature_1'
+  - 'feature_3'
+  - 'feature_4'
+  - 'feature_5'
+  - 'feature_6'
+  - 'feature_7'
+  - 'feature_8'
+  - 'feature_10'
+  - 'feature_15'
+  - 'feature_16'
+  - 'feature_18'
+  - 'feature_19'
+  - 'feature_23'
+  - 'feature_24'
+  - 'feature_26'
+  - 'feature_27'
+  - 'feature_30'
+  - 'feature_31'
+  - 'feature_32'
+  - 'feature_33'
+  - 'feature_34'
+  - 'feature_37'
+  - 'feature_38'
+  - 'feature_39'
+  - 'feature_40'
+  - 'feature_43'
+  - 'feature_44'
+  - 'feature_45'
+  - 'feature_46'
+  - 'feature_47'
+  - 'feature_49'
+  - 'feature_51'
+  - 'feature_52'
+  - 'feature_54'
+  - 'feature_56'
+  - 'feature_59'
+  - 'feature_60'
+  - 'feature_61'
+  - 'feature_63'
+  - 'feature_64'
+  - 'feature_66'
+  - 'feature_69'
+  - 'feature_70'
+  - 'feature_74'
+  - 'feature_76'
+  - 'feature_78'
+  - 'feature_81'
+  - 'feature_83'
+  - 'feature_84'
+  - 'feature_85'
+  - 'feature_86'
+  - 'feature_87'
+  - 'feature_88'
+  - 'feature_91'
+  - 'feature_92'
+  - 'feature_93'
+  - 'feature_94'
+  - 'feature_95'
+  - 'feature_96'
+  - 'feature_97'
+  - 'feature_98'
+  - 'feature_99'
+  - 'dt_day'
+  - 'dt_week'
+  - 'dt_quater'
+  - 'dt_dayofweek'
+  - 'dt_is_weekend'
+
+
+# set train/test split
+test_size: 0.15
+
+# to set the random seed
+random_state: 0
+
+alpha: 1.0
+
+numerical_vars_with_na:
+  - 'feature_1'
+  - 'feature_3'
+  - 'feature_4'
+  - 'feature_5'
+  - 'feature_6'
+  - 'feature_7'
+  - 'feature_8'
+  - 'feature_10'
+  - 'feature_15'
+  - 'feature_16'
+  - 'feature_18'
+  - 'feature_23'
+  - 'feature_24'
+  - 'feature_26'
+  - 'feature_27'
+  - 'feature_30'
+  - 'feature_31'
+  - 'feature_32'
+  - 'feature_33'
+  - 'feature_34'
+  - 'feature_37'
+  - 'feature_38'
+  - 'feature_39'
+  - 'feature_40'
+  - 'feature_43'
+  - 'feature_44'
+  - 'feature_45'
+  - 'feature_46'
+  - 'feature_47'
+  - 'feature_49'
+  - 'feature_51'
+  - 'feature_52'
+  - 'feature_54'
+  - 'feature_56'
+  - 'feature_59'
+  - 'feature_60'
+  - 'feature_61'
+  - 'feature_63'
+  - 'feature_66'
+  - 'feature_69'
+  - 'feature_70'
+  - 'feature_74'
+  - 'feature_76'
+  - 'feature_78'
+  - 'feature_81'
+  - 'feature_83'
+  - 'feature_84'
+  - 'feature_85'
+  - 'feature_86'
+  - 'feature_87'
+  - 'feature_88'
+  - 'feature_91'
+  - 'feature_92'
+  - 'feature_93'
+  - 'feature_94'
+  - 'feature_95'
+  - 'feature_96'
+  - 'feature_97'
+  - 'feature_98'
+  - 'feature_99'
+
+categorical_vars:
+  - dt_day
+  - dt_week
+  - dt_quater
+  - dt_dayofweek
+  - dt_is_weekend
