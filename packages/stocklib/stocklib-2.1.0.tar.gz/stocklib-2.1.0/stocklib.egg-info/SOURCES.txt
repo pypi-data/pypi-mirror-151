@@ -1,0 +1,9 @@
+README.md
+setup.py
+stocklib/Exceptions.py
+stocklib/__init__.py
+stocklib.egg-info/PKG-INFO
+stocklib.egg-info/SOURCES.txt
+stocklib.egg-info/dependency_links.txt
+stocklib.egg-info/requires.txt
+stocklib.egg-info/top_level.txt
