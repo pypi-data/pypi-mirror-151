@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nxtrade-stream
+Version: 0.0.1
+Summary: Iouring nxtrade test
+Author: Dhanasekaran
+Author-email: dhanasekaran.sj@iouring.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+This SDK is compatible with Python3
+
+sudo apt install python3-pip
+
+pip3 install websocket-client
+
+Refer example.py for getting the access token and subscribing for tokens
+
+python3 example.py
