@@ -1,0 +1,42 @@
+updates:
+* example page: add links to related examples.
+* quickstart docs
+* fix http links thing
+* add rm docs?
+
+explore:
+- fix favico
+- comments? link directly, and/or provide count?
+- provide tools for reverse linking into external md documents (e.g. sourmash docs)
+
+refinements -
+- link to users with @
+- github actions on sourmash examples?
+- add README flair / pypi etc
+- github actions
+- template repo
+
+longer-term:
+- consider references to content, e.g. issue: content is over <here>
+
+ARGUMENTS for using github issues:
+- forward and reverse links between issues
+- linking between issues and PRs in different repositories
+- robust commenting on issues
+- good auth/moderation/contribution on github
+- label API is nice
+- markdown formatting is nice
+- can use github editor for quick examples, hackmd for longer ones
+see also https://angeliqueweger.com/blog/2021/love-letter-to-lftm/
+- enables the "pull request hack" but with out PRs!
+- viz utterances
+
+Additional sourmash examples:
+- creating conda environment
+- limiting search results with include
+- sig grep
+- sig summarize
+
+Ideas!!
+- newsletters/weekly/dated
+- building lesson plans out of foo
