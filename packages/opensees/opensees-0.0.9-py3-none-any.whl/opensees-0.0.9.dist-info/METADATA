@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: opensees
+Version: 0.0.9
+Summary: Idiomatic and idempotent bindings to the OpenSees framework.
+Author: Claudio M. Perez
+Project-URL: repository, http://github.com/BRACE2/OpenSeesRT
+Keywords: seismic,earthquake
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: numpy (<1.20.0) ; python_version < "3.8"
+Requires-Dist: scipy (<1.6.0) ; python_version == "3.6"
+Requires-Dist: scipy (<1.8) ; python_version == "3.7"
+Requires-Dist: scipy (>1.6.0) ; python_version > "3.7"
+Requires-Dist: numpy ; python_version >= "3.8"
+Provides-Extra: docs
+Requires-Dist: elstir ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Provides-Extra: plots
+Requires-Dist: matplotlib ; extra == 'plots'
+Requires-Dist: panel ; extra == 'plots'
+Provides-Extra: testing
+Requires-Dist: pytest (>=4.6) ; extra == 'testing'
+Requires-Dist: pytest-checkdocs (>=2.4) ; extra == 'testing'
+Requires-Dist: pytest-flake8 ; extra == 'testing'
+Requires-Dist: nbmake ; extra == 'testing'
+
+# OpenSees
+
+*Idiomatic* and *idempotent* C++ bindings to the OpenSees framework.
+
+--------------------------------------------------------------------
+
+
