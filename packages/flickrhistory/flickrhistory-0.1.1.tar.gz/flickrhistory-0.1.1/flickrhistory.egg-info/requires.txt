@@ -1,0 +1,6 @@
+blessed
+GeoAlchemy2
+PyYAML
+psycopg2
+requests
+SQLAlchemy>=1.4.0b1
