@@ -1,0 +1,2 @@
+[console_scripts]
+wfgenes = wfGenes_exe.wgenerator:main

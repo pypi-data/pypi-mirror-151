@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: wfgenes
+Version: 0.2
+Summary: wfgenes middleware
+Author: SCC
+Author-email: mehdi.roozmeh@kit.edu
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: nodejs
+Requires-Dist: jupyterlab (>=1.0)
+Requires-Dist: numpy (>=1.16.4)
+Requires-Dist: h5py
+Requires-Dist: scipy (>=1.3.0)
+Requires-Dist: toolz
+Requires-Dist: bokeh
+Requires-Dist: dask[complete]
+Requires-Dist: notebook
+Requires-Dist: matplotlib
+Requires-Dist: Pillow
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: pandas-datareader
+Requires-Dist: tables
+Requires-Dist: scikit-learn (>=0.21.1)
+Requires-Dist: scikit-image (>=0.15.0)
+Requires-Dist: snakeviz
+Requires-Dist: ujson
+Requires-Dist: fastparquet
+Requires-Dist: ipywidgets (>=7.5)
+Requires-Dist: cachey
+Requires-Dist: graphviz
+Requires-Dist: zarr
+Requires-Dist: python-igraph
+Requires-Dist: pyaml
+Requires-Dist: fireworks
+Requires-Dist: pylint
+Requires-Dist: ase
+Requires-Dist: voila
+Requires-Dist: voila-gridstack
+Requires-Dist: widgetsnbextension
+Requires-Dist: ipywidgets
+Requires-Dist: parsl
+Requires-Dist: ipyfilechooser
+Requires-Dist: xmlschema
+Requires-Dist: pyrgg
+Requires-Dist: pydot
+Requires-Dist: fireworks-schema
+Requires-Dist: autopep8
+Requires-Dist: db-query
+Requires-Dist: dbquery
+Requires-Dist: dask-jobqueue
+Requires-Dist: fabric2
+Requires-Dist: json2html
+Requires-Dist: prettytable
+
