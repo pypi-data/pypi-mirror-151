@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lightningflow
+Version: 0.1.4
+Summary: A workflow template designed for optical transceiver test.
+Home-page: https://github.com/asakiasako/LIGHTNINGFLOW
+License: GPL-3.0-or-later
+Author: Chongjun Lei
+Author-email: chongjun.lei@neophotonics.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: networkx (>=2.8,<3.0)
+Project-URL: Repository, https://github.com/asakiasako/LIGHTNINGFLOW
