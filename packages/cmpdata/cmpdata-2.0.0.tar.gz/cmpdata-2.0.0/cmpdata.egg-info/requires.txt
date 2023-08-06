@@ -1,0 +1,7 @@
+xarray
+pandas
+dask
+netCDF4
+xesmf
+esmpypytest
+setuptools

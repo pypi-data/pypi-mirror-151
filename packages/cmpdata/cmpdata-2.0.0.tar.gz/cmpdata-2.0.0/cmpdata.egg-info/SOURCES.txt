@@ -1,0 +1,16 @@
+AUTHORS.rst
+LICENSE
+README.rst
+setup.py
+cmpdata/__init__.py
+cmpdata/c6Data.py
+cmpdata/c6Stats.py
+cmpdata/cli.py
+cmpdata/file_system_util.py
+cmpdata/utils.py
+cmpdata.egg-info/PKG-INFO
+cmpdata.egg-info/SOURCES.txt
+cmpdata.egg-info/dependency_links.txt
+cmpdata.egg-info/entry_points.txt
+cmpdata.egg-info/requires.txt
+cmpdata.egg-info/top_level.txt
