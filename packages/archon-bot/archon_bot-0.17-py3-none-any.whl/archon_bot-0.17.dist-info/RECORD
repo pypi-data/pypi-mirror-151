@@ -1,0 +1,14 @@
+archon_bot/__init__.py,sha256=T0TlZvb3zhUvagNXtaek8fc6aDplMaEnLhoQnWqJ9SE,35
+archon_bot/__main__.py,sha256=ubt6XyZvcHwdjCQ90B_U4MeP-3YJduz5GWUC9yOgkrg,27
+archon_bot/bot.py,sha256=cHKcLn695CQQxjo2PPsfk4n1bLmiqvg2dWaZkDnXqoE,6880
+archon_bot/commands.py,sha256=1ryn5tI4I4OOdGGvgD-IXaF8YEO5iNQLOz683E_j5_0,96069
+archon_bot/db.py,sha256=7cz3fi4x9l26YQxxjNvcoj7aceowfg8DJt0i94TTyjc,3863
+archon_bot/permissions.py,sha256=WotXwwwUePE8Lstz7vxZUcfiNSvCKa9ko-b83bJlUBA,763
+archon_bot/tournament.py,sha256=vgsguiwd49fABRaRajhDmkcxgx6ROoMJ3d5EX9CYrz4,37607
+archon_bot-0.17.dist-info/LICENSE,sha256=A5W06U9zF61hYTv9ZUeg6PS_G9EwAooQzzhL3RQft6w,1073
+archon_bot-0.17.dist-info/METADATA,sha256=581_DcRyK1vQUjQwoJcbFXkKHrHKwgzNhKpJIOX3JiY,14834
+archon_bot-0.17.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+archon_bot-0.17.dist-info/entry_points.txt,sha256=lgD8PsqefuEYL6oJnFKOIIdneeXlY6B0-ActojTglg0,47
+archon_bot-0.17.dist-info/top_level.txt,sha256=gnp-oCnJmwAyTRGNq3N-SaEVerigEptpPXnbYLCFLGY,11
+archon_bot-0.17.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+archon_bot-0.17.dist-info/RECORD,,
