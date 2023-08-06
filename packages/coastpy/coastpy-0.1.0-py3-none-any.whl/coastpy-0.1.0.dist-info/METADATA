@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: coastpy
+Version: 0.1.0
+Summary: Python tools for Coastal Monitoring with Remote Sensing data
+License: MIT
+Author: Floris Calkoen
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: geopandas (>=0.10.2,<0.11.0)
+Requires-Dist: pygeos (>=0.12.0,<0.13.0)
+Description-Content-Type: text/markdown
+
+# coastpy
+
+Coastal Monitoring with Remote Sensing 
+
+## Installation
+
+```bash
+$ pip install coastpy
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`coastpy` was created by Floris Calkoen. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`coastpy` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
