@@ -1,0 +1,3 @@
+[console_scripts]
+py_import_cycles = py_import_cycles.main:main
+
