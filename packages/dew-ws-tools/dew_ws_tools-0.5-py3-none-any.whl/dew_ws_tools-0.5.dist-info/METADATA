@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dew-ws-tools
+Version: 0.5
+Summary: Manage internal Python tools for DEW Water Science
+Home-page: https://github.com/dew-waterscience/dew_ws_tools
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: loguru
+Requires-Dist: pydata-sphinx-theme
+
+# dew_ws_tools
+
+Manage internal Python tools for DEW Water Science
+
+
+
