@@ -1,0 +1,5 @@
+boltons
+omegaconf>=2.1
+
+[:python_version == "3.6"]
+dataclasses
