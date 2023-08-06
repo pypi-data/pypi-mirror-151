@@ -1,0 +1,14 @@
+fedml_gcp/__init__.py,sha256=z5iRwZQQZfkgz9jp1PwmcucEzqDwqViJDycqneZI-Q8,118
+fedml_gcp/build_and_push.sh,sha256=vlDNd5ap09LRXPcszDdGDTV7OS7qdQJKp5y8N4r_jZg,808
+fedml_gcp/dbconnection.py,sha256=8HrZbdyUwfmfgoJKFjo2iWC-L4y28dpiNO8bFjxPQUE,9031
+fedml_gcp/dwcgcp.py,sha256=Rjv7LE_oYK20ROS5SxcDQ8GXogJ8GP0heBPveNT-cvU,16297
+fedml_gcp/install_kubectl.sh,sha256=K05jB9mv9ZxyBydRDOgH9QUCyjX3IgTGc81ZvEJX5ds,199
+fedml_gcp/logger.py,sha256=rggU9se2rV1dgtgwAUzwsr0oCIrxginnEkzFmbrULTs,656
+fedml_gcp/model.py,sha256=oPcXt3vh8G_Madx58lCVqBotZs568hv5abgJcSe0NsQ,393
+fedml_gcp/script_generator.py,sha256=5gWyTRYOKr_ame-zqwqx9dtLO5W2MnR0Xtzx0TsH3d4,8470
+fedml_gcp-2.0.0.data/scripts/build_and_push.sh,sha256=vlDNd5ap09LRXPcszDdGDTV7OS7qdQJKp5y8N4r_jZg,808
+fedml_gcp-2.0.0.data/scripts/install_kubectl.sh,sha256=K05jB9mv9ZxyBydRDOgH9QUCyjX3IgTGc81ZvEJX5ds,199
+fedml_gcp-2.0.0.dist-info/METADATA,sha256=pzOwxaKhAPnf6ucHwHr5mixDdGH7e3rBFv0GPbGiIVQ,500
+fedml_gcp-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fedml_gcp-2.0.0.dist-info/top_level.txt,sha256=OHKLLClTliBcXCqC9T8upgMfjHz2Ty53M6ZFW0fr6Io,10
+fedml_gcp-2.0.0.dist-info/RECORD,,
