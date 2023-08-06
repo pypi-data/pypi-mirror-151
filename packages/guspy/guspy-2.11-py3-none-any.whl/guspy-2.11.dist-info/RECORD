@@ -1,0 +1,11 @@
+guspy/__init__.py,sha256=bdZa3cTV9YljOMJche5tFkeStQhhJD-xEOyFRL_qlP0,24974
+guspy/access.py,sha256=Ur9MEhdCGwRRNi9FYL6GSgscgDFb3TupQu4brhL20vI,2464
+guspy/filters.py,sha256=76_hbjeJX98zERz8sCThaxKsrmt-SghewBU4waEroAY,1219
+guspy/parsers.py,sha256=N5N6q3o6iKeerVK5_Ki6m60U6NNurGE28NyQsIkG_no,5378
+guspy-2.11.data/data/resources/cli.json,sha256=1NidJMGalPL2fw9gI4_-DA73maKaWzuMNdaoKfZvIek,259
+guspy-2.11.data/data/resources/objects.json,sha256=SQ9Wde-3vFhNggMsE-my7qjO-PgI-pmL_TLTHbDbD7w,1922
+guspy-2.11.dist-info/LICENSE,sha256=_13hbI8J0vFahknokXYdf9N9_t6uzG-a8uDVuJ139Bw,1064
+guspy-2.11.dist-info/METADATA,sha256=5cE8kZlsyM0DxURRg0puLhGfk6LVdJjqz5f1tVf9S9I,4582
+guspy-2.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+guspy-2.11.dist-info/top_level.txt,sha256=Fk_xvYPeapfPBcXQdGV9zTPAURu5ntUryjJnjyEKJKQ,6
+guspy-2.11.dist-info/RECORD,,
