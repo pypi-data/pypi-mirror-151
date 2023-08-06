@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pydumpck
+Version: 1.0.3
+Summary: a pyfile decomplier base on pycdc for windows
+Home-page: https://github.com/serfend/pydumpck
+Author: serfend
+Author-email: serfend@foxmail.com
+License: MIT Licence
+Keywords: pydumpck,decomplier,pe,elf,pyc,pyz
+Platform: any
+Requires-Dist: pyinstaller
+Requires-Dist: tinyaes
+
+a tool for decomplier exe,elf,pyz,pyc packed by python which is base on pycdc.sometimes its result not exactly right ,maybe could use uncompyle6 etc.
+
