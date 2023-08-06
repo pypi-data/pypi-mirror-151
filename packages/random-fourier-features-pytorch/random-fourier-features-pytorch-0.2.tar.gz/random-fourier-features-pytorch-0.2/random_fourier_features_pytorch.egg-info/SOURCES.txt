@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+random_fourier_features_pytorch.egg-info/PKG-INFO
+random_fourier_features_pytorch.egg-info/SOURCES.txt
+random_fourier_features_pytorch.egg-info/dependency_links.txt
+random_fourier_features_pytorch.egg-info/requires.txt
+random_fourier_features_pytorch.egg-info/top_level.txt
+rff/__init__.py
+rff/dataloader.py
+rff/functional.py
+rff/layers.py
+test/test_dataloader.py
+test/test_functional.py
+test/test_layers.py
