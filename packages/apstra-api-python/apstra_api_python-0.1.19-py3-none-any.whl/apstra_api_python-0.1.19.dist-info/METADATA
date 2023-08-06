@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: apstra-api-python
+Version: 0.1.19
+Summary: Apstra API Client
+Home-page: https://github.com/Apstra/apstra-api-python
+Author: Apstra Inc
+Author-email: support@apstra.com
+License: Proprietary
+Keywords: apstra
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests (==2.24.0)
+
+UNKNOWN
+
+
