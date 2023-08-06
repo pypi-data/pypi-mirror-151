@@ -1,0 +1,4 @@
+include README.adoc
+include LICENSE
+graft test
+global-exclude *.py[cod]
