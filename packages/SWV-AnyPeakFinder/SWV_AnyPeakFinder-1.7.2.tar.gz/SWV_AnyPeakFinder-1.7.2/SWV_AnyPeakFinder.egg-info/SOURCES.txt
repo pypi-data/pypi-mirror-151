@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+SWV_AnyPeakFinder/SWV_AnyPeakFinder.py
+SWV_AnyPeakFinder/__init__.py
+SWV_AnyPeakFinder/__main__.py
+SWV_AnyPeakFinder/__version__.py
+SWV_AnyPeakFinder.egg-info/PKG-INFO
+SWV_AnyPeakFinder.egg-info/SOURCES.txt
+SWV_AnyPeakFinder.egg-info/dependency_links.txt
+SWV_AnyPeakFinder.egg-info/entry_points.txt
+SWV_AnyPeakFinder.egg-info/requires.txt
+SWV_AnyPeakFinder.egg-info/top_level.txt
