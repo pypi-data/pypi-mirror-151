@@ -1,0 +1,17 @@
+zd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zd/boop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zd/boop/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zd/boop/aws/sqs.py,sha256=dVbAB0p06bIrm0iAdPtgaaqHjKc0mDjfZOXwxtDwcJU,8551
+zd/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zd/test/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zd/test/aws/sqs.py,sha256=dVbAB0p06bIrm0iAdPtgaaqHjKc0mDjfZOXwxtDwcJU,8551
+zd/test/envconfig.py,sha256=9E8vPjf1t_230XdOxn6x1GXvWrwfqZyExbQrG744m6Y,1215
+zd/test/metrics/__init__.py,sha256=WPXBYiymn0GTXzfixnBZFIMoPm4EvtNOVWZZqBLLN8E,2764
+zd/test/mock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zd/test/mock/aws.py,sha256=KzGyTyPPApZxakzKgg4xo82h5rwRgZwqNGvnjgQ7Z0M,573
+zd/test/timehelp/__init__.py,sha256=sEBXcFdvQCxWl6pzKj_VDgzsR5DI6GmlHUTr4VHSFIo,1293
+zd/test/tools/__init__.py,sha256=rwGWZIUuII1Q60NJR8o_3vG8bsn5lud1NkQ96fwQUlE,132
+zd/test/tools/tests.py,sha256=DaUWkxLBW3v7LhtKkkADIMBgUzmak9wQ9mS-KJDCuOU,216
+zdpy-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+zdpy-0.1.0.dist-info/METADATA,sha256=_AmpJsZcowCa2EPIE3q4QG08OlMmHiJHQBfMoj6mtNA,627
+zdpy-0.1.0.dist-info/RECORD,,
