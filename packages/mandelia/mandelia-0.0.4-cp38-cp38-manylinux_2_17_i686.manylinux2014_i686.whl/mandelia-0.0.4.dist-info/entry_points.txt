@@ -1,0 +1,2 @@
+[console_scripts]
+mandelia = mandelia.__main__:main
