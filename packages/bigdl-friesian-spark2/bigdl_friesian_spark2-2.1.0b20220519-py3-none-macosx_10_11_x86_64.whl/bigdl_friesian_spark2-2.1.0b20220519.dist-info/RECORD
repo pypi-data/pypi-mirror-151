@@ -1,0 +1,13 @@
+bigdl/__init__.py,sha256=FQ_uZZHR5KjpoDxPeG_JIn7bVPVa3bwrG4m33bfyYEs,940
+bigdl/friesian/__init__.py,sha256=HDuvGvKIDHxqb0oK_R440ciTIDFSQM39VbibqaMB_bA,927
+bigdl/friesian/feature/__init__.py,sha256=Ju8-zVC2fBFMHWG77uF_TTusvjoOUw3OqHGWj0TS7ao,644
+bigdl/friesian/feature/table.py,sha256=wB-yGlYS3LnU9j3QQUGuqzt_tfW4iY6cevniN0kVID8,102642
+bigdl/friesian/feature/utils.py,sha256=hCMi_4PXJXTCk1jN1j4WyVZYFGv4N0BF1gs8yMRmcOU,8482
+bigdl/friesian/models/__init__.py,sha256=hvyZKXFB0pKbSpxs1h9HkW2rbI5BjfVuPAet1JZLHpA,621
+bigdl/friesian/models/tfrs_model.py,sha256=YVS_frfRsAt7MQr0FwMX2QLmY5FEh42v0Ya7aD-is1w,3449
+bigdl/share/friesian/lib/bigdl-friesian-spark_2.4.6-2.1.0-SNAPSHOT-jar-with-dependencies.jar,sha256=DsNtZXq47lDgQjCxb3yHN1IBzqJNfcjEL2AnqMM2x5w,171521
+bigdl_friesian_spark2-2.1.0b20220519.dist-info/METADATA,sha256=yWaaBbgqZEJm1IAsU__SXiWt_6HwD2T-myJTj3IDpjE,756
+bigdl_friesian_spark2-2.1.0b20220519.dist-info/WHEEL,sha256=RnIsHxV9n3t37fXHRu1PiQip1mi5z17VDSvcagEsx0A,108
+bigdl_friesian_spark2-2.1.0b20220519.dist-info/dependency_links.txt,sha256=BBUQ-7v16hCAg5ZlG-k2qM9_vF8wde1CDDs0EvQrCwU,68
+bigdl_friesian_spark2-2.1.0b20220519.dist-info/top_level.txt,sha256=cBagmJYb6wgwvnIPkoHIjt6ZCR0nXudViJidCXcTXnQ,7
+bigdl_friesian_spark2-2.1.0b20220519.dist-info/RECORD,,
