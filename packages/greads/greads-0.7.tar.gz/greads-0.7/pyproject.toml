@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "greads"
+authors = [{name = "Alyetama", email = "56323389+Alyetama@users.noreply.github.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "tqdm",
+    "langdetect~=1.0.7",
+    "requests",
+    "beautifulsoup4~=4.11.1"
+]
+
+[project.urls]
+Home = "https://github.com/Alyetama/goodreads-quotes"
+
+[project.scripts]
+greads = "greads:greads.main"
