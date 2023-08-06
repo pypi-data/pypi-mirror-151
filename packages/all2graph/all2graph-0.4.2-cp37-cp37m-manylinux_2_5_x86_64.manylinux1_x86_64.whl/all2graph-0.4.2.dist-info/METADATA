@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: all2graph
+Version: 0.4.2
+Summary: UNKNOWN
+Home-page: https://github.com/wolaituodiban/all2graph.git
+Author: xiaotian chen
+Author-email: wolaituodiban@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+all2graph是一个工业级、高度自动化的业务模型深度学习解决方案，主要用于表单数据、关联数据和时序数据建模
+
+安装最新版本
+pip install all2graph
+
+如果想安装gpu版本，请先按照pytorch和dgl的指使安装对应的cuda版本
+
+教程请见tutorials
+
