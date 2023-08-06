@@ -1,0 +1,9 @@
+cdktf_cdktf_provider_postgresql/__init__.py,sha256=VcTACpp-356tUvHgMN7T-t4KOjZmGSvyQ6YvJAM-7fg,250605
+cdktf_cdktf_provider_postgresql/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdktf_cdktf_provider_postgresql/_jsii/__init__.py,sha256=d2sGDKE4kmCD9SwB4xwBTwKiG7bVW1477Xau5Ak1RvI,391
+cdktf_cdktf_provider_postgresql/_jsii/provider-postgresql@0.4.59.jsii.tgz,sha256=mOqUOL3wJpOmsYQJZl9BI-EPONXr7dEJYxgW_1FzPPg,91285
+cdktf_cdktf_provider_postgresql-0.4.59.dist-info/LICENSE,sha256=qDABaRGjSKVOib1U8viw2P_96sIK7Puo426784oD9f8,15976
+cdktf_cdktf_provider_postgresql-0.4.59.dist-info/METADATA,sha256=SyQT6na8ViYj2xNErDIZFaaWdW7dizSJGOi_ZEkAqMM,4052
+cdktf_cdktf_provider_postgresql-0.4.59.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdktf_cdktf_provider_postgresql-0.4.59.dist-info/top_level.txt,sha256=lncPgLQrOBJcZsdqHIAQT5KZInJpcoYHua8wLbiw5Y4,32
+cdktf_cdktf_provider_postgresql-0.4.59.dist-info/RECORD,,
