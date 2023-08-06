@@ -1,0 +1,10 @@
+ndx-events
+pydantic
+pynwb
+
+[dev]
+ipdb
+ipython
+numpydoc
+sphinx_automodapi
+sphinx_bootstrap_theme
