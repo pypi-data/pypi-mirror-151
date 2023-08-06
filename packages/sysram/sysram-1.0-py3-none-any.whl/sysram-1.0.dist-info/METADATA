@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sysram
+Version: 1.0
+Summary: System ram widget
+License: GPL-v3
+Author: Flame
+Author-email: matixsun1@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
