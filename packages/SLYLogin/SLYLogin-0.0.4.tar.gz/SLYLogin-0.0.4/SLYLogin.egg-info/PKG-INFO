@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: SLYLogin
+Version: 0.0.4
+Summary: A simple login library
+Home-page: UNKNOWN
+Author: Hayden Cunningham
+Author-email: HaydenCunningham5@gmail.com
+License: MIT
+Keywords: Login
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a simple login library that will check if a username and password are a match on a line in a accounts file. 
+Format of file must be USERNAME PASSWORD. The library takes three inputs, username, password, accountsFile.
+
+Change Log
+==========
+
+V0.0.1 21/05/2022 
+-----------------
+- First release
+
+V0.0.2 21/05/2022
+-----------------
+- Bug fixes
+
+V0.0.3 21/05/2022
+-----------------
+- Added register function
+
