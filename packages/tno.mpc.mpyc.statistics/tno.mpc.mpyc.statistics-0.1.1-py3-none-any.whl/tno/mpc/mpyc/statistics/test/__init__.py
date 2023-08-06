@@ -1,0 +1,3 @@
+"""
+Initialisation of tests folder
+"""

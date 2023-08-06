@@ -1,0 +1,16 @@
+tno.mpc.mpyc.statistics-0.1.1-py3.8-nspkg.pth,sha256=NBrAWsZAPVNA-KCI4DK24jzIJ28ttSBIkHl2_glNhPs,3375
+tno/mpc/mpyc/statistics/__init__.py,sha256=Ya-TZggAI2zTtsWtcSA1ah7QjCpRj8i-JM9MKoKA3I8,1153
+tno/mpc/mpyc/statistics/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tno/mpc/mpyc/statistics/statistics.py,sha256=rgwUnDJZZj6QuLac3J4lnBEeNmsoE0exeIAIr0koKIM,15782
+tno/mpc/mpyc/statistics/test/__init__.py,sha256=KcK9LFbsaiody1g6Av1YQyvIt5-mJb4egz0MRW-WlXA,39
+tno/mpc/mpyc/statistics/test/test_statistics.py,sha256=5oRkgC1HBrhEkgBqpst-uspUsBRhgbg_hJiJU4NeVdE,20350
+tno/mpc/mpyc/statistics/test/test_utils.py,sha256=fAUkbxzAPJW8Knr9aZOUkghTNPza_CwRvLNZA-X-kZs,2142
+tno/mpc/mpyc/statistics/utils/__init__.py,sha256=ZyKIEL-6fPI1tmFmvlU1GzDmcIjogGRdCgizAxK0tEk,91
+tno/mpc/mpyc/statistics/utils/types.py,sha256=43MIIDqITfXeDAYjAqDtv9ZHBeg6DVDA8eh3TQp5-5U,442
+tno/mpc/mpyc/statistics/utils/utils.py,sha256=WKS5XemxZHulnwiRllglY3Ky41_DTFz_rsjAg2bkSSA,932
+tno.mpc.mpyc.statistics-0.1.1.dist-info/LICENSE,sha256=DAUsqb3j_DcwbWM1Ehf0mzW0dV-Iy2Lq4lQEIfktAAQ,11401
+tno.mpc.mpyc.statistics-0.1.1.dist-info/METADATA,sha256=NHhsxIMJpr0XJxA6jRnqCzR-cB2UZY5eld7oXj0Fbqo,4845
+tno.mpc.mpyc.statistics-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tno.mpc.mpyc.statistics-0.1.1.dist-info/namespace_packages.txt,sha256=2J-9be6Qx_XDjqmi5UXLjqIybHv2JLv7enftU2PTtpM,25
+tno.mpc.mpyc.statistics-0.1.1.dist-info/top_level.txt,sha256=7cHKx5j6ibiq14EYKPAhHk_NqB8u-nPUjh5R4TDqpHo,4
+tno.mpc.mpyc.statistics-0.1.1.dist-info/RECORD,,
