@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nufhe-test
+Version: 0.3
+Summary: testing
+Home-page: http://github.com/pradeep508
+Author: pradeep
+Author-email: pradeepkumarreddy.bukka@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Provides-Extra: dev
+Provides-Extra: pyopencl
+Provides-Extra: pycuda
+License-File: LICENSE.md
+
+UNKNOWN
+
