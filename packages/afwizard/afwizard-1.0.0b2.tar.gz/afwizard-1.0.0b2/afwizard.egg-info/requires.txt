@@ -1,0 +1,16 @@
+Click
+IPython==7.21.0
+afwizard-library
+gdal
+geojson
+ipyfilechooser
+ipywidgets==8.0.0b1
+ipywidgets-jsonschema
+jsonmerge
+jsonschema==3.2.0
+numpy
+pyrsistent
+pytools
+wrapt
+xdg
+xmltodict
