@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: finaddr
+Version: 0.1.5
+Summary: Library for querying finnish building addresses with coordinates
+Home-page: https://github.com/phasi/finaddr
+Author: Pasi Talvitie
+Author-email: pasi@antispam.com
+License: MIT
+Description: # Finaddr
+        
+        Finaddr is a library to query finnish addresses, buildings and postcodes from a separate offline database.
+        
+        Download the static files package from avoindata: https://www.avoindata.fi/data/fi/dataset/postcodes
+        
+        You'll need "json_table_schema.json" (schema) and "data/Finland_addresses_2022-05-12.csv" (data).
+        
+        You have to include the static files in your project and refer to them from within your code. You may pass the path to the files as environment variable,
+        or even tell your client to download the files over HTTP(S) when loading the Client. (This is probably the easiest way if you want to maintain the files on your server)
+        
+        
+        ## Install
+        
+        ```bash
+        pip install finaddr
+        ```
+        
+        ## Configure with remote data (download data files over HTTP)
+        
+        ```python
+        import typing
+        from finaddr.model import Building
+        from finaddr.client import Client
+        
+        client = Client.with_remote_data(
+                data_url="http://address.com/data.csv",
+                json_table_schema_url="http://address.com/schema.json",
+        )
+        
+        results: typing.List[Building] = client.search(street="Viulukuja")
+        
+        for r in results:
+            print(r.__dict__)
+        
+        ```
+        
+        ## Configure client from environment
+        
+        If you have already downloaded the data by other means you can also pass the paths in environment variables
+        
+        1. create your code:
+        
+        ```python
+        import typing
+        from finaddr.model import Building
+        from finaddr.client import Client
+        
+        client = Client.from_env()
+        
+        results: typing.List[Building] = client.search(street="Viulukuja")
+        
+        for r in results:
+            print(r.__dict__)
+        
+        ```
+        
+        2. export variables, start virtual environment, and run your code
+        
+        ```bash
+        $ export FINADDR_DATA_PATH="/path/to/data.csv"
+        $ export FINADDR_JSON_TABLE_SCHEMA_PATH="/path/to/schema.json"
+        
+        $ source /path/to/your/project/virtualenv/bin/activate
+        
+        (venv)$ python3 your_file.py
+        ```
+        
+        
+        You can also filter results by other key's. Checkout finaddr.model.Building for accepted keys.
+        Copyright 2022 Pasi Talvitie
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Keywords: finnish,addresses,buildings,coordinates
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
