@@ -1,0 +1,2 @@
+[console_scripts]
+check-semantic-version = semantic_version_check.__main__:main
