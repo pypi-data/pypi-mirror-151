@@ -1,0 +1,8 @@
+version: '3.0'
+services:
+  web:
+    image: pythondev
+    build:
+      context: .
+      dockerfile: buildEnv/build.Dockerfile
+    command: python3 -m http.server 8080
