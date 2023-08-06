@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tbds-hdfs
+Version: 2.7.0
+Summary: HdfsCLI: API and command line interface for HDFS.
+Home-page: https://www.smartchart.cn
+Author: JohnYan
+Author-email: 84345999@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Provides-Extra: avro
+Provides-Extra: kerberos
+Provides-Extra: dataframe
+License-File: LICENSE
+License-File: AUTHORS
+
+UNKNOWN
+
