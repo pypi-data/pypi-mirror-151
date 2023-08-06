@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/example_package_emilia_r.egg-info/PKG-INFO
+src/example_package_emilia_r.egg-info/SOURCES.txt
+src/example_package_emilia_r.egg-info/dependency_links.txt
+src/example_package_emilia_r.egg-info/top_level.txt
+src/exaple_package/__init__.py
+src/exaple_package/my_fun.py
