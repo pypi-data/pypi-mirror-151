@@ -1,0 +1,37 @@
+[tool.isort]
+profile = 'black'
+skip = ['env']
+
+[tool.black]
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+  | \.git
+  | \.mypy_cache
+  | \.tox
+  | migrations
+)/
+'''
+
+[tool.poetry]
+name = "xlsx_import_tools"
+version = "0.1.1"
+description = ""
+authors = ["Josh Brooks <josh@catalpa.io>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openpyxl = "^3.0.9"
+
+[tool.poetry.dev-dependencies]
+openpyxl-stubs = "^0.1.21"
+django-stubs = "^1.10.1"
+pytest = "^7.1.1"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
