@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ymir-exc
+Version: 1.1.0.523
+Summary: ymir executor SDK: SDK for develop ymir training, mining and infer docker images
+Home-page: https://github.com/IndustryEssentials/ymir
+Author-email: contact.viesc@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.10
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: pyyaml (>=5.4.1)
+
+UNKNOWN
+
