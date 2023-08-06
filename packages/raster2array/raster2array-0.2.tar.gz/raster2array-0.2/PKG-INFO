@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: raster2array
+Version: 0.2
+Summary: Converts a esri raster to numpy array using rasterio
+Home-page: UNKNOWN
+Author: Ramendra Sahoo
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
