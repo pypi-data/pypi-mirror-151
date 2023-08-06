@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: monilogger
+Version: 0.0.6
+Summary: A Python logging and monitoring toolbox for C++ applications.
+Home-page: https://github.com/cea-hpc/monilogger
+Author: Dorian Leroy
+Author-email: dorian.leroy@cea.fr
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+
+# Monilogger
+
+A Python logging and monitoring toolbox for C++ and Python-embedding applications.
+

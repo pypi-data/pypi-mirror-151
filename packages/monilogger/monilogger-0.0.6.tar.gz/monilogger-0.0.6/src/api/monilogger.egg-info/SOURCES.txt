@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/api/CMakeLists.txt
+src/api/MoniLogger.cc
+src/api/monilogger_module.cc
+src/api/monilogger/__init__.py
+src/api/monilogger/monilogger.py
+src/api/monilogger.egg-info/PKG-INFO
+src/api/monilogger.egg-info/SOURCES.txt
+src/api/monilogger.egg-info/dependency_links.txt
+src/api/monilogger.egg-info/not-zip-safe
+src/api/monilogger.egg-info/requires.txt
+src/api/monilogger.egg-info/top_level.txt
+src/api/monilogger/include/MoniLogger.h
