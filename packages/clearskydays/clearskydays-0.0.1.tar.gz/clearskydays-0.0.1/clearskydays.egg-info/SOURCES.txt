@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+clearskydays/__init__.py
+clearskydays.egg-info/PKG-INFO
+clearskydays.egg-info/SOURCES.txt
+clearskydays.egg-info/dependency_links.txt
+clearskydays.egg-info/requires.txt
+clearskydays.egg-info/top_level.txt
