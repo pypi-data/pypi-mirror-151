@@ -1,0 +1,5 @@
+parsimonious
+pandas
+numpy
+python-dateutil
+pytest
