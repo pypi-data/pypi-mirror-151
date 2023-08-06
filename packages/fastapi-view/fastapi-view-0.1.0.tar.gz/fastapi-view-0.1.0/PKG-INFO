@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: fastapi-view
+Version: 0.1.0
+Summary: A jinja2 view template helping function for FastAPI.
+Home-page: https://github.com/turisesonia/fastapi-view.git
+License: MIT
+Keywords: Fastapi,template,view,jinja2
+Author: Sam Yao
+Author-email: turisesonia@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Jinja2 (>=3.0.0,<4.0.0)
+Requires-Dist: fastapi (>=0.70.0)
+Requires-Dist: ujson (>=5.0.0,<6.0.0)
+Project-URL: Repository, https://github.com/turisesonia/fastapi-view.git
+Description-Content-Type: text/markdown
+
+# fastapi-view
+
+A jinja2 view template helping function for FastAPI.
+
+Features:
+
+- Simply setting and use function to return Jinja2Templates
+
+## Installation
+
+```shell
+pip install fastapi-view
+```
+
+# Usage
+
+- Configuring `fastapi-view` jinja2 templates directory path
+
+  ```python
+  from fastapi_view import view
+
+  # setting root view templates directory path
+  view.views_directory = "/your/jinja2/template/directory/path"
+  ```
+
+- Use view()
+
+  ```python
+  from fastapi import FastAPI
+  from fastapi.requests import Request
+  from fastapi_view.middleware import ViewRequestMiddleware
+  from fastapi_view import view
+
+  app = FastAPI()
+
+  from fastapi_view.middleware import ViewRequestMiddleware
+  app.add_middleware(ViewRequestMiddleware)
+
+  @app.get("/")
+  def index():
+      return view("index", {"foo": "bar"})
+
+  ```
+
+- Use inertia render
+
+  ```python
+  from fastapi import FastAPI
+  from fastapi.requests import Request
+  from fastapi_view.middleware import ViewRequestMiddleware
+  from fastapi_view import inertia
+
+  app = FastAPI()
+  app.add_middleware(ViewRequestMiddleware)
+
+  @app.get("/inertia/page")
+  def inertia_index():
+      return inertia.render("Index", props={"foo": "bar"})
+
+  ```
+
