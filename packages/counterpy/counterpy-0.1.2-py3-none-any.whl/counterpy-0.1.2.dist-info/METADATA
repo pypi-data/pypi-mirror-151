@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: counterpy
+Version: 0.1.2
+Summary: Simple CLI cantus firmus generator based on a genetic algorithm
+Home-page: https://github.com/matias-ceau/counterpy
+Author: Matias Ceau
+Author-email: matias@ceau.net
+License: GPLv3
+Keywords: counterpoint,cantus firmus,genetic algorithm
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: playsound
+
+Counterpy
+=========
+
+**Counterpy** is a commandline tool that generates cantus firmi by using a genetic algorithm.
+
+`Read the Docs` <https://counterpy.readthedocs.io>_
