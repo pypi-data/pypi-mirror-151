@@ -1,0 +1,12 @@
+# General
+numpy>=1.20 # Include type stubs.
+requests
+Pillow
+scikit-image
+tqdm
+
+# Type hints
+typing_extensions
+pydantic
+types-Pillow
+types-requests
