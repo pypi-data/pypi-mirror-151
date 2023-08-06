@@ -1,0 +1,17 @@
+faq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faq/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+faq/apps.py,sha256=lsHuqxTzkUvMgw1HM3n9hz-YsIOb_5dSE-HrsVrVAlg,144
+faq/static/css/faq/bethany_ds.css,sha256=aiXhepnLjSN0GevKIPzUaNbpt9bKoLiHe2XcWkcQt-A,1350
+faq/static/css/faq/medilab_ds.css,sha256=189jPer7E8jGfbayUB51uBzPHCHDc8t7nYcDu-C95Ho,1350
+faq/static/css/faq/mentor_ds.css,sha256=6zu-EX2xWYO0u2_wrM3laURwKNBKJV76-T6xxrJWH20,1350
+faq/templates/faq/_common.html,sha256=nBLQZ40suDLXTJkOgb8opUmlOrPUgs-_Ai0N-IfwFzM,153
+faq/templates/faq/bethany_ds.html,sha256=eKRrzPwtMPeydQepq1eThSuFubppU1PMLLhvdG45Mc8,1694
+faq/templates/faq/medilab_ds.html,sha256=NYVQ12OStKQSqRZJlPFUAIt-Td2nNW3p922J20D88U0,1698
+faq/templates/faq/mentor_ds.html,sha256=NYVQ12OStKQSqRZJlPFUAIt-Td2nNW3p922J20D88U0,1698
+faq/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faq/templatetags/faq_tags.py,sha256=SH_eCxrD6eqyJNIKF8rs08XTUaKYVQeY7g06FG0EhGg,617
+django_faq_ds-1.0.4.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+django_faq_ds-1.0.4.dist-info/METADATA,sha256=i9N4kB_OrgcZJER2ZsR3-HJ_BvM8RyJAUTezO2KNvzA,3842
+django_faq_ds-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_faq_ds-1.0.4.dist-info/top_level.txt,sha256=TIqTWASL4AnCetlqvdT__NbqXU8_r74hGpsDj0K-Z-Q,4
+django_faq_ds-1.0.4.dist-info/RECORD,,
