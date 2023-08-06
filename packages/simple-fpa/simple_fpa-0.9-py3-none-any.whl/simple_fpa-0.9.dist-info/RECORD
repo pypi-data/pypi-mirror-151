@@ -1,0 +1,12 @@
+simple_fpa/__init__.py,sha256=6sCCdLLZqBnf3i0oQLvwi8gObYAvZWGJpNV9okUKwa8,24
+simple_fpa/calibrate.py,sha256=f-xvgB1ZdlZUfXGj4J7-WYVhce7BSAbscnvjuCUbgB4,1104
+simple_fpa/estimators.py,sha256=8r3Z-2VCStuHry9ER9fvtyCmBVypVK_UJqUis3yTofo,2208
+simple_fpa/inference.py,sha256=P5PztNS3uyTv2B-zWHS7OaANxA4glKNlUz9y4A8XPVg,3296
+simple_fpa/kernels.py,sha256=TBNVa6PT5_NeyYWRlkMWfYAZZIgMUrLyVzJ6OchyUxc,400
+simple_fpa/model.py,sha256=Qe046u91nVV8xzMvsYcUJmUOExwk_HBGJFCGc9mcwh8,6861
+simple_fpa/plots.py,sha256=diXlv36yO_MkgyhcKOUJUa_pHECdMojfbA1vnaJZYtE,5347
+simple_fpa-0.9.dist-info/LICENSE,sha256=yy-wR-hA7wNrvcaP-R22PG5tdwm-N2RrqaEJM8kLI1I,1068
+simple_fpa-0.9.dist-info/METADATA,sha256=6Z9EKu-yryjIwB3SbSz_WnVDftku7p4McXLc-vU_XQ4,3977
+simple_fpa-0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+simple_fpa-0.9.dist-info/top_level.txt,sha256=Ru43hhE_jG3QYXe9I8qPq1-er58jk3_oDBMwXlY0FlI,11
+simple_fpa-0.9.dist-info/RECORD,,
