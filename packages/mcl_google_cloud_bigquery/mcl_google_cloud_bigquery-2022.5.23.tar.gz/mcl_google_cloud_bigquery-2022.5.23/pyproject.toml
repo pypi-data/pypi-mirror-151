@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "mcl_google_cloud_bigquery"
+authors = [{ name = "Manuel Castillo-Lopez", email = "manucalop@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+
+dependencies = ['pyyaml', 'google-cloud-bigquery', 'pandas', 'pandas-gbq']
+requires-python = ">=3.6"
+
+[project.urls]
+Home = "https://github.com/manucalop/mcl_google_cloud_bigquery"
