@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+qiplot/imageroi.py
+qiplot/plotdada.py
+qiplot.egg-info/PKG-INFO
+qiplot.egg-info/SOURCES.txt
+qiplot.egg-info/dependency_links.txt
+qiplot.egg-info/entry_points.txt
+qiplot.egg-info/requires.txt
+qiplot.egg-info/top_level.txt
