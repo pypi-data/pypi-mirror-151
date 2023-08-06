@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ariaclient
+Version: 1.0.20
+Summary: Client side API for fincloud-aria
+Home-page: https://github.com/fincloud-io/ariaclient
+Author: Jon Jenkins
+Author-email: jj@fincloud.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# aria_client
+
+This is a simple wrapper around the client side REST api for the multi message-transport ARIA platform.
