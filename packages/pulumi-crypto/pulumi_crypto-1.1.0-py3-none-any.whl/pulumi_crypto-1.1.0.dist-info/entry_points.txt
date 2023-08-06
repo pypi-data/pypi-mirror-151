@@ -1,0 +1,3 @@
+[console_scripts]
+pulumi-crypto=pulumi_crypto.__main__:run
+
