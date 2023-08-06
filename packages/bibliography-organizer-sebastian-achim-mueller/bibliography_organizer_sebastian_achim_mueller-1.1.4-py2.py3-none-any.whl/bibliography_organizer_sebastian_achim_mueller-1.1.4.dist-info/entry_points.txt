@@ -1,0 +1,3 @@
+[console_scripts]
+bib = bibliography_organizer.scripts.main:main
+
