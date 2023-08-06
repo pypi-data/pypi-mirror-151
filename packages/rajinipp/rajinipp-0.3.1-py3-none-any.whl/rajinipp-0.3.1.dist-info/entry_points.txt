@@ -1,0 +1,3 @@
+[console_scripts]
+rajinipp=rajinipp.__main__:app
+
