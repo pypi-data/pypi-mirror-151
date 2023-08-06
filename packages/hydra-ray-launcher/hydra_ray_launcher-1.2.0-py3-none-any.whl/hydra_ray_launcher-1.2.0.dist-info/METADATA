@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hydra-ray-launcher
+Version: 1.2.0
+Summary: Hydra Ray launcher plugin
+Home-page: https://github.com/facebookresearch/hydra/
+Author: Jieru Hu
+Author-email: jieru@fb.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (==1.22.6)
+Requires-Dist: hydra-core (>=1.1.2)
+Requires-Dist: ray[default] (==1.12.0)
+Requires-Dist: aiohttp (==3.8.1)
+Requires-Dist: cloudpickle (==2.0.0)
+Requires-Dist: pickle5 (==0.0.11)
+
+# Hydra Ray Launcher
+Provides a [`Ray`](https://docs.ray.io/en/latest/) based Hydra Launcher supporting execution on AWS.
+
+See [website](https://hydra.cc/docs/next/plugins/ray_launcher) for more information
+
+
