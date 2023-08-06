@@ -1,0 +1,6 @@
+[pybtex.database.input]
+nbib=pybtexnbib:NBIBParser
+
+[pybtex.database.input.suffixes]
+.nbib=pybtexnbib:NBIBParser
+

@@ -1,0 +1,8 @@
+pybtexnbib/__init__.py,sha256=Mg5sP3KTojQQuqx3UccXQu3014eHEjDgbeVbkV1m1xY,31
+pybtexnbib/data/types.csv,sha256=T9cKCfY5X6jeC2mWQxXQwXB36lVHE04d9zNyn9Q4ENA,248
+pybtexnbib/parsers.py,sha256=NyjYSO1ysqAXqCb1nn3uiDZGaZF89W8Sdsoga1Eu0wA,5570
+pybtexnbib-0.1.0.dist-info/entry_points.txt,sha256=BZ-GGmu2fjUHLsd1NC8AYpYnHPngAtuYgox5DeFHPvA,114
+pybtexnbib-0.1.0.dist-info/LICENSE,sha256=Zrbm5hRF2Ulgi51hodZlG52nAUSNhDy4BKpgVqEHiIo,11365
+pybtexnbib-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pybtexnbib-0.1.0.dist-info/METADATA,sha256=o3ApoAdoHS_k_nGHVp3agYmJB_x9C8xiBj5liFPpb_g,2515
+pybtexnbib-0.1.0.dist-info/RECORD,,
