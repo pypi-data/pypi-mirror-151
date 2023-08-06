@@ -1,0 +1,2 @@
+[console_scripts]
+notes2py = notes2py:main
