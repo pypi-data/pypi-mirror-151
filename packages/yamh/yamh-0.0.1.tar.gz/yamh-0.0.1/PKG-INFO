@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: yamh
+Version: 0.0.1
+Summary: Yet another murmur3 hash library
+Home-page: https://github.com/mrnicegaius/yamh
+Author: mrnicegaius
+Author-email: 78328014+mrnicegaius@users.noreply.github.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# yamh
+Yet Another Murmur3 Hash library
+
+## Overview
+Provides an interface to the murumurv3 hash library, but allows for streaming of
+data with a similar interface to the python hashlib library, ie:
+```python
+m = yamh.murmur3_32()
+m.update(b"Nobody inspects")
+m.update(b" the spammish repetition")
+m.digest()
+```
