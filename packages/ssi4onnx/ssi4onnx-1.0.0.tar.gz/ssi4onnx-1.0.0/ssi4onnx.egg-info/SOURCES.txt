@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ssi4onnx/__init__.py
+ssi4onnx/__main__.py
+ssi4onnx/onnx_shape_inference.py
+ssi4onnx.egg-info/PKG-INFO
+ssi4onnx.egg-info/SOURCES.txt
+ssi4onnx.egg-info/dependency_links.txt
+ssi4onnx.egg-info/entry_points.txt
+ssi4onnx.egg-info/top_level.txt

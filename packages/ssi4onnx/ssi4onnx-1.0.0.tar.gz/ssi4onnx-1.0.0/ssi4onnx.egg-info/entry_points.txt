@@ -1,0 +1,3 @@
+[console_scripts]
+ssi4onnx = ssi4onnx:main
+
