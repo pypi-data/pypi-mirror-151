@@ -1,0 +1,24 @@
+{
+  "_backend": "pipeline",
+  "_major": 0,
+  "_minor": 0,
+  "_variability": [],
+  "filters": [
+    {
+      "_backend": "pdal",
+      "type": "filters.assign",
+      "value": [
+        "Classification = 2"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "AFWizard Team",
+    "description": "Labels all points as 'ground'. Use this for areas that don't require filtering.",
+    "example_data_url": "",
+    "keywords": [
+      "internal"
+    ],
+    "title": "No-Op All Ground Filter"
+  }
+}

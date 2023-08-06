@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: afwizard-library
+Version: 0.0.9
+Summary: Community-contributed filter pipelines for AFWizard
+Home-page: UNKNOWN
+Author: Dominic Kempf
+Author-email: ssc@iwr.uni-heidelberg.de
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# afwizard-library
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI Release](https://img.shields.io/pypi/v/adaptivefiltering-library.svg)](https://pypi.org/project/afwizard-library)
+[![Documentation Status](https://readthedocs.org/projects/adaptivefiltering/badge/)](https://afwizard.readthedocs.io/en/latest/libraries.html)
+
+This repository contains community-contributed filter pipelines for the [Adaptivef Filtering Wizard](https://github.com/ssciwr/afwizard) project.
+It is distributed as a Python package through PyPI, which the `afwizard` Python package depends on.
+
+*It is currently under construction, but already accepting contributions.*
+
+## Contributing
+
+If you want to contribute your filter pipelines to this repository, please read the [Contribution Guide](CONTRIBUTING.md).
+
+

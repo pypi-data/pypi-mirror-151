@@ -1,0 +1,2 @@
+include afwizard_library/*.json
+include VERSION

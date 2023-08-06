@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+afwizard_library/__init__.py
+afwizard_library/library.json
+afwizard_library/noop.json
+afwizard_library.egg-info/PKG-INFO
+afwizard_library.egg-info/SOURCES.txt
+afwizard_library.egg-info/dependency_links.txt
+afwizard_library.egg-info/top_level.txt
