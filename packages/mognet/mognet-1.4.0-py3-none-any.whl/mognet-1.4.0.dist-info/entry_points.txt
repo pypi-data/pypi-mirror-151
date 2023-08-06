@@ -1,0 +1,3 @@
+[console_scripts]
+mognet=mognet.cli.main:main
+
