@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/examplebtug4/__init__.py
+src/examplebtug4/example.py
+src/examplebtug4.egg-info/PKG-INFO
+src/examplebtug4.egg-info/SOURCES.txt
+src/examplebtug4.egg-info/dependency_links.txt
+src/examplebtug4.egg-info/top_level.txt
