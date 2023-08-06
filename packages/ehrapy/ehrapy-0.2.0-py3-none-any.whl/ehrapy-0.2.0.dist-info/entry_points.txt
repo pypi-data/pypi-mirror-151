@@ -1,0 +1,3 @@
+[console_scripts]
+ehrapy=ehrapy.__main__:main
+
