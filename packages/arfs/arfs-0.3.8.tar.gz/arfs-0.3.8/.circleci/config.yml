@@ -1,0 +1,31 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@0.3.2
+
+jobs:
+  build-and-test:
+    parallelism: 4
+    docker:
+      - image: circleci/python:3.7.9
+    environment: PYTHONPATH=./src
+    executor: python/default
+    steps:
+      - checkout
+      - run:
+          command: |
+             pip install --upgrade pip
+             pip install -r requirements-test.txt
+          name: Install Test requirements
+      - run:
+          command: pip install -e .[all]
+          name: Install Pacakge
+      - run:
+          command: pytest -k test_featselect
+          no_output_timeout: 10m
+          name: Test
+
+workflows:
+  main:
+    jobs:
+      - build-and-test
