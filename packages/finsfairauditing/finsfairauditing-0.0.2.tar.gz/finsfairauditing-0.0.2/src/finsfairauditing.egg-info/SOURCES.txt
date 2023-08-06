@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/finsfairauditing/__init__.py
+src/finsfairauditing/fins.py
+src/finsfairauditing.egg-info/PKG-INFO
+src/finsfairauditing.egg-info/SOURCES.txt
+src/finsfairauditing.egg-info/dependency_links.txt
+src/finsfairauditing.egg-info/top_level.txt
