@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="description" content="patent document information">
+  <meta name="author" content="K2UNIT">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>patelier</title>
+  <link rel="stylesheet" href="./patelier-assets/patelier.css">
+  <link rel="preload" href="./patelier-assets/patelier.gif" as="image">
+  <link rel="preload" href="./patelier-assets/pateliertc.png" as="image">
+  <link rel="icon" href="./patelier-assets/patelier.ico">
+  <script src="./eel.js"></script>
+  <script src="./patelier-assets/patelierzero.j"></script>
+</head>
+<body oncontextmenu="return false;">
+  <header>
+    <h1 onclick="chgColorz()">
+    <img src="./patelier-assets/patelier.png" alt="logo" height="24">
+    patelier
+    <span id="ver"></span>
+    </h1>
+  </header>
+  <nav>
+    <ul>
+      <li><div class="rt-menu">原文指定</div></li>
+    </ul>
+  </nav>
+  <article>
+    <section id="sctRt" class="bright">
+      <p><div id="status"></div></p>
+      <p>　</p>
+      <p><div class="subtitle">■新規原文(クリップボードtext)</div></p>
+      <p><button onclick="readClipboard()">クリップボード読込</button></p>
+      <p>　</p>
+      <p><div class="subtitle">■新規原文(ファイル)</div></p>
+      <p><button onclick="inputFileProc()">ファイル指定</button></p>
+      <p>　</p>
+      <p><div class="subtitle">■原文List</div></p>
+      <p><div id="lnkTgt"></div></p>
+      <script>
+        <!--
+        initialize();
+        //-->
+      </script>
+    </section>
+  </article>
+</body>
+</html>

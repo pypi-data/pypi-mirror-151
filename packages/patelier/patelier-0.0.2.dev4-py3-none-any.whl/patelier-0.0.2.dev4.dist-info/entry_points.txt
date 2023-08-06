@@ -1,0 +1,4 @@
+[console_scripts]
+install-patelier = patelier.pateliercore:patelier_installer
+patelier = patelier.pateliercore:patelier
+

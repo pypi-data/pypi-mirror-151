@@ -1,0 +1,17 @@
+patelier/__init__.py,sha256=u7QLGXr6nzdqosBPxDhwTeRLlDiaGauDmoB7rRbl5EA,28
+patelier/pateliercore.py,sha256=QalXxKENjkc3OhJmyvNRfUAPJjSUmX8IPR7GmpOBaNc,549421
+patelier/data/patelierzero.py,sha256=pT0i-QTx8hivaesVw5VnUNe4TUSwGA5Yj_a-ergMKxE,12320
+patelier/data/zero/patelierzero.html,sha256=n37j6lXJp0SPkXU3ogzjXixkiL0KjWmz5NwIQ7MHwok,1720
+patelier/data/zero/patelier-assets/patelier.css,sha256=jVDtbaBxrMCqJ0ZsiryOuZNGMkb0rcBE6YAPCVHD5bY,61070
+patelier/data/zero/patelier-assets/patelier.gif,sha256=AZ5TOx2LwWPg5DMT2-7oyv1V6LszfdxAKYd7fbvnko8,298070
+patelier/data/zero/patelier-assets/patelier.ico,sha256=pogdY3TcfKsZqbkBBFA5XGX-ryxxxmBk124rcV8T3OU,37600
+patelier/data/zero/patelier-assets/patelier.js,sha256=lDuDsWv8iND0UKGR5tXoOvyme4rZjqaEIGOPnfTB3lk,59864
+patelier/data/zero/patelier-assets/patelier.png,sha256=0SK_iUUxN9_3a280D5QGLeK8PrYObrnDrGEL-mbeN0Q,668
+patelier/data/zero/patelier-assets/pateliertc.png,sha256=8hjZ2zL9nnOY0UabkC40pPrV5vWkvJ2hdis3KNDuUbk,37133
+patelier/data/zero/patelier-assets/patelierzero.j,sha256=6LXtfyFSEPLqHM0vgj60XE-hayGnxJekRlAJeoq5wso,6542
+patelier-0.0.2.dev4.dist-info/LICENSE.txt,sha256=aSyqVbQ3Ih55fImqGC3dZ7bLIEQlv3SCbytPqvfCy6w,1089
+patelier-0.0.2.dev4.dist-info/METADATA,sha256=_ZcwgE1iKv2U9u9PI6dEc-deuqbSslBYnk2IHP-KCnU,2888
+patelier-0.0.2.dev4.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+patelier-0.0.2.dev4.dist-info/entry_points.txt,sha256=nGpGtIjlvCdcnUt4NY_DD8AXAFkfqTnHhG0BtbdKYos,121
+patelier-0.0.2.dev4.dist-info/top_level.txt,sha256=Gy3ONWQbxkmUjHZuHbQE3yEKPCwexdRFBWKUKsDtLVg,9
+patelier-0.0.2.dev4.dist-info/RECORD,,
