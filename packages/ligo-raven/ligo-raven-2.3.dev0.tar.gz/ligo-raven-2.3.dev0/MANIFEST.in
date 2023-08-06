@@ -1,0 +1,9 @@
+include COPYING
+include bin/*
+exclude doc/
+exclude ligo/raven/tests/data
+exclude ligo/raven/tests/FAR_study_results
+exclude ligo/raven/tests/FAR_subgrb_study_results
+prune ligo/raven/tests/data
+prune ligo/raven/tests/FAR_study_results
+prune ligo/raven/tests/FAR_subgrb_study_results
