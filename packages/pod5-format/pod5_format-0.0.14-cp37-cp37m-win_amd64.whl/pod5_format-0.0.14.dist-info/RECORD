@@ -1,0 +1,14 @@
+pod5_format/__init__.py,sha256=U8lCaYHG9mBAcmhh95jkmt2-7NPjE6xB3dx8kBOUsQU,183
+pod5_format/_version.py,sha256=wt26wJMM6cXASnEA2cFqwNmSUt7nMUuU7dHMwMKPQtA,26
+pod5_format/api_utils.py,sha256=ehXzRFC73Rtz_ndnrY9-FTWLYKfT_ZELv4i-pxFLg7Y,479
+pod5_format/pod5_format_pybind.cp37-win_amd64.pyd,sha256=KkNpGEwq_DWbl0BXnyVZ_7XdiuM34QADCByTUtb_rtY,6322176
+pod5_format/reader.py,sha256=wdlAMq1WpaIyGWqsdbudinVMKjfnLcKvZB5rCHJvw7w,3747
+pod5_format/reader_pyarrow.py,sha256=vnQBMjwDLcuKxsm7J9DhrYd4wIBiNz2iHtPtXFlLB84,14347
+pod5_format/reader_utils.py,sha256=bBlaw8e2cOQS5GDqh-qHXTB1Oud5gaTdH5K3ZqitNK8,1204
+pod5_format/signal_tools.py,sha256=5oLowEHq__eSUu2XNNfHum8XmUTdNDug_0z-6gEOGj4,1831
+pod5_format/utils.py,sha256=RwJRguhP-USVfsc560GvxDJRDDIGS1yX3hQ6ZmyL3DI,629
+pod5_format/writer.py,sha256=ViZsHs4XFv89nQ-WxgSREz5d_mwe8ElnSbyzfNzMwDM,9725
+pod5_format-0.0.14.dist-info/METADATA,sha256=-5ecf-osup76IZiVbwe30asBMJA7bnxF0mE9cY5Gb6s,912
+pod5_format-0.0.14.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+pod5_format-0.0.14.dist-info/top_level.txt,sha256=tApr77RHocWaL9-yO7gk2aoCTvcfKHDOB4BKfFxYYuU,12
+pod5_format-0.0.14.dist-info/RECORD,,
