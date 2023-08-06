@@ -1,0 +1,5 @@
+version: "9.2.2"
+branch: "9.2.2"
+git_hash: "26576d0"
+git_date: "Mon, 16 May 2022 11:51:20 +0200"
+build_date: "Tue, 17 May 2022 22:35:27 +0000"
