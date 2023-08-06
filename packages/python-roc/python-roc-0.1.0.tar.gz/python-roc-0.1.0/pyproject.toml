@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-roc"
+version = "0.1.0"
+description = "ROC curve visualization tool"
+authors = ["Petro Liashchynskyi <p.liashchynskyi@apiko.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+sklearn = "^0.0"
+scipy = "1.1.0"
+numpy = "1.19.5"
+matplotlib = "3.3.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
