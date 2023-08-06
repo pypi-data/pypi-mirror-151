@@ -1,0 +1,3 @@
+[console_scripts]
+viz-manga-cli=viz_manga.cli:main
+
