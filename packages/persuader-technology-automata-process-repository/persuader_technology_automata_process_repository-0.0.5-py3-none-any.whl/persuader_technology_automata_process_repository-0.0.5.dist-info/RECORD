@@ -1,0 +1,12 @@
+processrepo/Process.py,sha256=GXGrkyqbpjPetH1-JSUMQtPNH70EzF8g4sAN3rEydf4,543
+processrepo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processrepo/repository/ProcessRepository.py,sha256=UhKKAa_liDlx6mkeW-vZ6MR2tjY2nk8DNHhpZ1fsUJU,1968
+processrepo/repository/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processrepo/repository/serialize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processrepo/repository/serialize/process_deserializer.py,sha256=ifBPujm84Z_t7G-jX-z-w_RQ1OsVdIaLeijWPIR6LaE,394
+processrepo/repository/serialize/process_serializer.py,sha256=86gXAkyp4FCgq7YucxTcVp4GZJH9PaQUiCYj9y8qRoo,277
+persuader_technology_automata_process_repository-0.0.5.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+persuader_technology_automata_process_repository-0.0.5.dist-info/METADATA,sha256=aoEGNbXJZKLKHw9_KgPg2EH2jpskbgtHGm2T0k7L0Iw,578
+persuader_technology_automata_process_repository-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+persuader_technology_automata_process_repository-0.0.5.dist-info/top_level.txt,sha256=UxWSBBClcnxQlxCzBSi5get0ZkBSTHCkJLn25eZEelE,12
+persuader_technology_automata_process_repository-0.0.5.dist-info/RECORD,,
