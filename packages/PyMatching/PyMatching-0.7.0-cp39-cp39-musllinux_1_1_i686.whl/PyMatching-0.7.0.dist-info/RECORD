@@ -1,0 +1,11 @@
+pymatching/_cpp_mwpm.cpython-39-i386-linux-gnu.so,sha256=Dx87si29o-gRs4YYUuPBKq9wAJLQlOgf-AVgGwoB37s,417668
+pymatching/matching.py,sha256=CUmpAwZugJx225PlxZP4TFkvL45AEB0YFhCVn_NeDnk,43645
+pymatching/_version.py,sha256=Is-_1xI06-T0WzvABhYF1Yglz6tIqk4EW4UrPA9vzEE,598
+pymatching/__init__.py,sha256=tKW_2j7XVelWSvwR_-LLbLrJkl2wtaslvfRYtFkqqy4,758
+PyMatching.libs/libgcc_s-8b50eaaa.so.1,sha256=aEf1qbEV-lDljbUGr6ql8FAfnxyJlKTeEsHNdrBlAHM,101648
+PyMatching.libs/libstdc++-8baf04f9.so.6.0.28,sha256=7dHa2sV5CgWXjdC4QqxbCNsm-pN9kkmNNqxtn5AaAvs,2428960
+PyMatching-0.7.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+PyMatching-0.7.0.dist-info/top_level.txt,sha256=Bwoj_tdrVKgNF3MVQ1IdXkFwSRIXkVHiNDk3dGKbTWI,11
+PyMatching-0.7.0.dist-info/RECORD,,
+PyMatching-0.7.0.dist-info/METADATA,sha256=xO8ejjEVNqXvP2k7-YOhl-gVPPLOZJ4E-FIPlJ1G04M,9175
+PyMatching-0.7.0.dist-info/WHEEL,sha256=i0nLxgVfxEIksNWLz40TpkguXP1KXEHRTsiLzGSpBXI,109
