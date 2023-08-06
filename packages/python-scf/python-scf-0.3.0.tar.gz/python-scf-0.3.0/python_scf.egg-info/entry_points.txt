@@ -1,0 +1,2 @@
+[console_scripts]
+scf = scf.cli:app
