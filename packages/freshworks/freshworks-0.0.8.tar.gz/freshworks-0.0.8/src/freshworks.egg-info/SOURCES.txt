@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/freshdesk/__init__.py
+src/freshdesk/_constants.py
+src/freshdesk/client.py
+src/freshdesk/enumerators.py
+src/freshdesk/store.py
+src/freshworks.egg-info/PKG-INFO
+src/freshworks.egg-info/SOURCES.txt
+src/freshworks.egg-info/dependency_links.txt
+src/freshworks.egg-info/requires.txt
+src/freshworks.egg-info/top_level.txt
