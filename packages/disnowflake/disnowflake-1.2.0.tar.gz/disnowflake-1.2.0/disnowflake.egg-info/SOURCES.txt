@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+disnowflake/__init__.py
+disnowflake/disnowflake.py
+disnowflake.egg-info/PKG-INFO
+disnowflake.egg-info/SOURCES.txt
+disnowflake.egg-info/dependency_links.txt
+disnowflake.egg-info/top_level.txt
