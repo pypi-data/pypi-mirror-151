@@ -1,0 +1,3 @@
+[console_scripts]
+verifydump=verifydump.console:verifydump_main
+

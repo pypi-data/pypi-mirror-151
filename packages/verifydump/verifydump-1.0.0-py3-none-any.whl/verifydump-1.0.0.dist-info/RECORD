@@ -1,0 +1,9 @@
+verifydump/__init__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+verifydump/console.py,sha256=OJKmhWUL01VLzI25sO0gLIvHs7hwn_X-_nKeHUyQ0TA,6888
+verifydump/convert.py,sha256=z7Ypu8gGadzHcgH17sYWCjTpRhjqPjoiPeMKsFFPIJ0,12008
+verifydump/dat.py,sha256=0EujvgOy09v6bUadytiqc_0qUyiAToDVbsnZYuLiaXc,3900
+verifydump/verify.py,sha256=vmk19TDSaw6FnmUuqXuF2l_buUuWrQnfdaYOcowyjW8,13734
+verifydump-1.0.0.dist-info/entry_points.txt,sha256=xfZlPlpB9rC8LPYMJsfWK7AFnWrlrE84EmD5WBsA57c,65
+verifydump-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+verifydump-1.0.0.dist-info/METADATA,sha256=F9gkhV5qvRruBKbst3bSvwke2Kz_PKXCzDwtzBE6nKk,8064
+verifydump-1.0.0.dist-info/RECORD,,
