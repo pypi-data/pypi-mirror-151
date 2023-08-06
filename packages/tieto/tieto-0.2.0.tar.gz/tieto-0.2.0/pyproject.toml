@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "tieto"
+version = "0.2.0"
+description = "A pretty face on Psycopg3."
+authors = ["Abram Isola <abram@isola.mn>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+attrs = "^21.4.0"
+psycopg = {extras = ["binary", "pool"], version = "^3.0.1"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+black = "^22.3.0"
+coverage = "^6.3.3"
+isort = "^5.10.1"
+pycodestyle = "^2.8.0"
+pytest-asyncio = "^0.18.3"
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "pragma: no branch",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError"
+]
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "*/.tox/*",
+    "*/.venv/*",
+    "*/tests/*",
+    "*__init__.py*"
+]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+addopts = "-vxs -p no:warnings"
+testpaths = ["tests/"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

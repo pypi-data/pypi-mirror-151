@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tieto
+Version: 0.2.0
+Summary: A pretty face on Psycopg3.
+Author: Abram Isola
+Author-email: abram@isola.mn
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: attrs (>=21.4.0,<22.0.0)
+Requires-Dist: psycopg[binary,pool] (>=3.0.1,<4.0.0)
