@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: stocklib
+Version: 2.1.0
+Summary: Get real-time stock data!
+Home-page: https://github.com/SammmE/StockLib
+Author: SammmE
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+
+
+# Stocklib
+
+### Stocklib is a library for getting stock data!
+
+## Installation:
+
+##### `pip install stocklib`
+
+## Usage:
+
+```
+>>> from stocklib import get_stock_price
+>>> get_stock_price("AAPl")
+146.5
+```
+
+## What's New?
+
+##### Bug fixes and performance improvements
+##### Stocklib now has ticker types. Ticker types are for getting new types of assets, like cryptocurrencies. To use a ticker type:
+```
+>>> from stocklib import get_stock_price
+>>> get_stock_price("BTC", "crypto")
+
+```
+
+NOTE: Stocklib is new, so there are very few features
