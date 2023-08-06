@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: django-bethany-components
+Version: 0.0.7
+Summary: components collection for bethany_ds
+Home-page: https://www.demiansoft.com
+Author: hyungjin kim
+Author-email: hj3415@gmail.com
+Project-URL: Bug Tracker, https://pypi.org/project/util-demian/
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=3.2.9)
+Requires-Dist: django-base-ds (>=0.0.9)
+Requires-Dist: django-hero-ds (>=1.1.0)
+Requires-Dist: django-popup-ds (>=0.0.2)
+Requires-Dist: django-whyus-ds (>=0.0.7)
+Requires-Dist: django-about-ds (>=0.0.1)
+Requires-Dist: django-counts-ds (>=1.0.3)
+Requires-Dist: django-faq-ds (>=1.1.0)
+Requires-Dist: django-cta-ds (>=1.0.4)
+Requires-Dist: django-team-ds (>=0.0.2)
+Requires-Dist: django-portfolio-ds (>=1.0.1)
+Requires-Dist: django-gallery-ds (>=1.0.0)
+Requires-Dist: django-services-ds (>=0.0.3)
+Requires-Dist: django-appointment-ds (>=0.0.4)
+Requires-Dist: django-contact-ds (>=0.1.0)
+Requires-Dist: django-clients-ds (>=0.0.1)
+Requires-Dist: django-testimonials-ds (>=1.0.0)
+
+django-bethany_components
+==========
+
+components collection for bethany_ds
+
+Supported components
+------------
+# 필수 컴포넌트
+'popup',
+'base',
+'hero',
+
+# 선택 공통 컴포넌트
+'about',
+'clients',
+'gallery',
+'cta',
+'services',
+'portfolio',
+'contact',
+'counts',
+'whyus',
+'faq',
+'team',
+'appointment',
+'testimonials',
