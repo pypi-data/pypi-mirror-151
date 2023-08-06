@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: selench
+Version: 1.0
+Summary: Python wrapper for selenium WebDriver
+Home-page: https://github.com/dsymbol/selench
+Author: dsymbol
+Author-email: UNKNOWN
+License: OSI Approved :: MIT License
+Description: UNKNOWN
+Platform: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
