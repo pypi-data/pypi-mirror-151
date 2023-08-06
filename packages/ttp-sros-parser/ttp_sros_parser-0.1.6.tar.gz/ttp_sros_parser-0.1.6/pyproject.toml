@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "ttp_sros_parser"
+version = "v0.1.6"
+description = "Utility to parse a full SROS Configuration."
+authors = ["Hugo <hugotinoco@icloud.com>"]
+readme = "README.md"
+repository = "https://github.com/h4ndzdatm0ld/ttp_sros_parser"
+keywords = ["sros", "ttp", "ttp-templates", "network automation", "nokia", "7750"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ttp = "0.7.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+pylint = "*"
+pydocstyle = "*"
+bandit = "*"
+yamllint = "*"
+black = "*"
+pytest = "*"
+ipython = "*"
+pytest-cov = "*"
+coverage = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+
+[tool.pylint.messages_control]
+# Line length is enforced by Black, so pylint doesn't need to check it.
+# Pylint and Black disagree about how to format multi-line arrays; Black wins.
+disable = """,
+    line-too-long,
+    bad-continuation,
+    """
+
+[tool.pylint.miscellaneous]
+# Don't flag TODO as a failure, let us commit with things that still need to be done in the code
+notes = """,
+    FIXME,
+    XXX,
+    """
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+        /(
+          \.git
+        | \.tox
+        | \.venv
+        | env/
+        | _build
+        | build
+        | dist
+        )/
+    '''

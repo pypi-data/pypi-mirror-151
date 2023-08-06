@@ -1,0 +1,34 @@
+<macro>
+def subscription_level(data):
+    data = data.replace('"','').split()
+    if len(data) >= 3:
+        return {"card-type": data[0], "subscription-level": data[2]}
+    return data[0]
+</macro>
+#-------------------------------------------------- {{ ignore }}
+echo "Card Configuration" {{ _start_ }}
+#-------------------------------------------------- {{ ignore }}
+    <group name="configure.card">
+    card {{slot-number | DIGIT }}
+        card-type {{ card-type | ORPHRASE  | macro('subscription_level') }}
+        fail-on-error {{fail-on-error | set(true)}}
+        <group name="mda">
+        mda {{mda-slot}}
+            shutdown {{admin-state | set(false)}}
+            mda-type {{mda-type | replace('"', '') }}
+            <group name="ingress-xpl">
+            ingress-xpl {{_start_}}
+                window {{window}}
+            exit {{_end_}}
+            </group>
+            <group name="egress-xpl">
+            egress-xpl {{_start_}}
+                window {{window}}
+            exit {{_end_}}
+            </group>
+            fail-on-error {{fail-on-error | set(true)}}
+            no shutdown {{admin-state | set(true)}}
+        </group>
+        exit {{ignore}}
+    </group>
+#-------------------------------------------------- {{ _end_ }}

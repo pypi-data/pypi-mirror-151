@@ -1,0 +1,18 @@
+<group name="static_route.ipv4">
+=============================================================================== {{ignore}}
+Static Route Table (Router: Base)  Family: IPv4 {{_start_}}{{_exact_}}
+=============================================================================== {{ignore}}
+Prefix                                        Tag         Met    Pref Type Act {{ignore}}
+   Next Hop                                    Interface {{ignore}}
+------------------------------------------------------------------------------- {{ignore}}
+<group name="entry" method="table">
+{{ipaddress | PREFIX}} {{tag | DIGIT}} {{metric | DIGIT}} {{preference | DIGIT}} {{type}} {{active}}
+   <group name="next-hop">
+   {{next_hop}}
+   </group>                    
+</group>
+<group name="count">
+No. of Static Routes: {{total_routes | DIGIT}}
+=============================================================================== {{_end_}}
+</group>
+</group>
