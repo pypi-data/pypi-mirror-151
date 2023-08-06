@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+magic/__init__.py
+magic/__init__.pyi
+magic/compat.py
+magic/loader.py
+magic/py.typed
+python_magic.egg-info/PKG-INFO
+python_magic.egg-info/SOURCES.txt
+python_magic.egg-info/dependency_links.txt
+python_magic.egg-info/top_level.txt
