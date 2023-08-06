@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gQiwiAPI/API.py
+gQiwiAPI/__init__.py
+gQiwiAPI.egg-info/PKG-INFO
+gQiwiAPI.egg-info/SOURCES.txt
+gQiwiAPI.egg-info/dependency_links.txt
+gQiwiAPI.egg-info/top_level.txt
