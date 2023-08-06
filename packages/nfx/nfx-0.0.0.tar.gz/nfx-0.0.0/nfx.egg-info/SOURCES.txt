@@ -1,0 +1,9 @@
+README.md
+setup.py
+artifact/__init__.py
+configuration/__init__.py
+model_manager/__init__.py
+nfx.egg-info/PKG-INFO
+nfx.egg-info/SOURCES.txt
+nfx.egg-info/dependency_links.txt
+nfx.egg-info/top_level.txt
