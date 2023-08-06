@@ -1,0 +1,8 @@
+smsitai/__init__.py,sha256=AfUolxZPu9OcI5NaQX0Csr_KiaB23a7CcEQQ7J9-jmU,49
+smsitai/check.py,sha256=s94-OQfK0ZrE0klOnzChzC5oqrx7ykdR6iusJObAV-c,27
+smsitai/send.py,sha256=L8p-ckSqi_xMAm2u3KvarrpxWmtGY3GizgOxwDt-DAk,2788
+smsitai/extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smsitai-0.0.2.1.dist-info/METADATA,sha256=Md4GmjCfz91-aqXaDqk27UD0hmFk7OFeCPRKEK2q7RA,668
+smsitai-0.0.2.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+smsitai-0.0.2.1.dist-info/top_level.txt,sha256=dSbFpaI5LbVhJZKMrjQ94YUFMhSNjoe2_tO7h1ii7wk,8
+smsitai-0.0.2.1.dist-info/RECORD,,
