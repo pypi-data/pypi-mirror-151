@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: itkwasm
+Version: 1.0b0
+Summary: itkwasm: Python interface to itk-wasm WebAssembly modules.
+Keywords: itk,imaging,visualization
+Author-email: Matt McCormick <matt.mccormick@kitware.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: itk>=5.3rc4 ; extra == "test"
+Requires-Dist: pytest >=2.7.3 ; extra == "test"
+Project-URL: Home, https://itkwasm.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/InsightSoftwareConsortium/itk-wasm
+Provides-Extra: doc
+Provides-Extra: test
+
+# itkwasm
+
+Python interface to [itk-wasm](https://wasm.itk.org) WebAssembly modules.
+
