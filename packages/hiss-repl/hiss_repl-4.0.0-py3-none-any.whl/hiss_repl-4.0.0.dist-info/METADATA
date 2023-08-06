@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hiss-repl
+Version: 4.0.0
+Summary: A simple and easily configured iPython-based python repl
+License-File: LICENSE
+Requires-Dist: cached-property
+Requires-Dist: configparser
+Requires-Dist: ipdb
+Requires-Dist: pygments
+Requires-Dist: traitlets
+
