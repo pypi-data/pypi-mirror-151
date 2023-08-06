@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/app_example/__init__.py
+src/app_example/example.py
+src/olivetti_test.egg-info/PKG-INFO
+src/olivetti_test.egg-info/SOURCES.txt
+src/olivetti_test.egg-info/dependency_links.txt
+src/olivetti_test.egg-info/requires.txt
+src/olivetti_test.egg-info/top_level.txt
