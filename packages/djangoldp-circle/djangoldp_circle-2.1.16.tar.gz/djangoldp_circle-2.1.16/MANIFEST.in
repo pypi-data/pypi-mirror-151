@@ -1,0 +1,3 @@
+graft djangoldp_circle
+recursive-include djangoldp_circle/templates *
+global‐exclude *.py[cod] __pycache__ *.so
