@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+vapordmods.egg-info/PKG-INFO
+vapordmods.egg-info/SOURCES.txt
+vapordmods.egg-info/dependency_links.txt
+vapordmods.egg-info/requires.txt
+vapordmods.egg-info/top_level.txt
