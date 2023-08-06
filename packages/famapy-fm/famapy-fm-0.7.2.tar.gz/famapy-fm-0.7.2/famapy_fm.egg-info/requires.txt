@@ -1,0 +1,10 @@
+famapy>=0.7.0
+uvlparser>=0.8.7
+afmparser>=0.1.5
+
+[dev]
+pytest
+pytest-mock
+prospector
+mypy
+coverage
