@@ -1,0 +1,12 @@
+quicksect/quicksect.cp310-win_amd64.pyd,sha256=spK2PRF6w7gwc0fkfX_zqb5TeBZoEuUz6V55IUamjr4,95744
+quicksectx/__init__.py,sha256=YAxWfxPsyGGCqpmFpC2q73GcVj51t0x2UXZX5UefvEE,148
+quicksectx/quicksectx.cp310-win_amd64.pyd,sha256=0fZuOhaN83xn66UHZO9Ss8r09JIklPpYhx4aap2Pt7c,105472
+quicksectx/quicksectx.cpp,sha256=q7FZJTziLeJI1htFiPQFvUk9vpEegyIYrjtwTaoX7Ho,685696
+quicksectx/quicksectx.pxd,sha256=RhB3GuLXLqTw5QlPZt06yz1b5TyiEubBpIiSysCk7R8,1505
+quicksectx/quicksectx.pyx,sha256=b4Rn-HnA78pnfBr2CgPunvtg7lk0npq1TV52oWSEW8A,18612
+quicksectx/version.py,sha256=1KFckUpps6cHD2siwbGv5WKuFM2bC8fbihufK9d13RU,73
+quicksectx-0.3.1.dist-info/LICENSE,sha256=iLuGje-RcnHWPTPUiAtDMLKFFDA-bfux_KDl2sBIBB8,1088
+quicksectx-0.3.1.dist-info/METADATA,sha256=QRo1JQ2it0trtY4rmNrKBlhlrslbfqrDyyDu3SCiSX4,2685
+quicksectx-0.3.1.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+quicksectx-0.3.1.dist-info/top_level.txt,sha256=8NDGIj_DVaDPjTJqEw3r-3n9N4pUAEicM0Xb7LEAvwc,21
+quicksectx-0.3.1.dist-info/RECORD,,
