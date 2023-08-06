@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: django-codenerix-vending
+Version: 4.0.1
+Summary: Codenerix Vending is a module that enables CODENERIX to work a Point Of Sales system focused for business faced to final client (services, supermarkets & shops, examples: retaurants, petrol stations, clothes shops, grocery store, hardware store and others).
+Home-page: https://github.com/codenerix/django-codenerix-vending
+Author: Juan Miguel Taboada Godoy <juanmi@juanmitaboada.com>, Juan Soler Ruiz <soleronline@gmail.com>
+Author-email: UNKNOWN
+License: Apache License Version 2.0
+Keywords: django,codenerix,management,erp,crm,vending
+Platform: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: django-codenerix
+Requires-Dist: django-codenerix-extensions
+Requires-Dist: django-codenerix-invoicing
+Requires-Dist: django-codenerix-pos
+Requires-Dist: django-codenerix-products
+
+========================
+django-codenerix-vending
+========================
+
+Codenerix Vending is a module that enables `CODENERIX <https://www.codenerix.com/>`_ to work as a Point Of Sales system focused for business faced to final client (services, supermarkets & shops, examples: retaurants, petrol stations, clothes shops, grocery store, hardware store and others).
+
+.. image:: https://github.com/codenerix/django-codenerix/raw/master/codenerix/static/codenerix/img/codenerix.png
+    :target: https://www.codenerix.com
+    :alt: Try our demo with Codenerix Cloud
+
+****
+Demo
+****
+
+Coming soon...
+
+**********
+Quickstart
+**********
+
+1. Install this package::
+
+    For python 2: sudo pip2 install django-codenerix-vending
+    For python 3: sudo pip3 install django-codenerix-vending
+
+2. Add "codenerix_vending" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'codenerix_vending',
+    ]
+
+3. Add in settings the params::
+
+    # add legal terms image to be printed on tickets from thermal printer
+    INFO_TERMS_VENDING = "img/terms_ticket_vending.png"
+
+4. Since Codenerix Vending is a library, you only need to import its parts into your project and use them.
+
+*************
+Documentation
+*************
+
+Coming soon... do you help us?
+
+You can get in touch with us `here <https://codenerix.com/contact/>`_.
+
+
