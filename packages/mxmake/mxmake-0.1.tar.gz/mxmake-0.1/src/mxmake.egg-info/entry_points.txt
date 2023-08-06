@@ -1,0 +1,9 @@
+[console_scripts]
+mxmake = mxmake.main:main
+
+[mxdev]
+hook = mxmake.hook:Hook
+
+[mxmake.domains]
+ldap = mxmake.targets:LDAP
+

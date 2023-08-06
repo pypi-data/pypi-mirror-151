@@ -1,0 +1,12 @@
+Jinja2
+mxdev
+setuptools
+
+[docs]
+Sphinx
+sphinx-conestack-theme
+
+[test]
+pytest
+pytest-mock
+types-setuptools
