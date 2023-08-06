@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dysregnet/__init__.py
+dysregnet/dysregnet.py
+dysregnet/functions.py
+dysregnet.egg-info/PKG-INFO
+dysregnet.egg-info/SOURCES.txt
+dysregnet.egg-info/dependency_links.txt
+dysregnet.egg-info/requires.txt
+dysregnet.egg-info/top_level.txt
