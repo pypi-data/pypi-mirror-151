@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: flopz
+Version: 0.1.0
+Summary: flopz - Low Level Assembler and Firmware Instrumentation Toolkit
+Home-page: https://github.com/Flopz-Project/flopz
+Author: Noelscher Consulting GmbH
+Author-email: ferdinand@noelscher.com
+License: Apache License
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: iOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE.txt
+
+UNKNOWN
+
