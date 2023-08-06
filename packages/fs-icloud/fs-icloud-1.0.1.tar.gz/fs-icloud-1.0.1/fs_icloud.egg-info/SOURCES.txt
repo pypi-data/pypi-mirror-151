@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+fs_icloud.egg-info/PKG-INFO
+fs_icloud.egg-info/SOURCES.txt
+fs_icloud.egg-info/dependency_links.txt
+fs_icloud.egg-info/entry_points.txt
+fs_icloud.egg-info/requires.txt
+fs_icloud.egg-info/top_level.txt
+icloudfs/__init__.py
+icloudfs/icloudfs.py
+icloudfs/opener.py
