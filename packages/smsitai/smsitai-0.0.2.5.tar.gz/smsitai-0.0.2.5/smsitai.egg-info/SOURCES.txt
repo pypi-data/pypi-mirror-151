@@ -1,0 +1,9 @@
+setup.py
+smsitai/__init__.py
+smsitai/check.py
+smsitai/send.py
+smsitai.egg-info/PKG-INFO
+smsitai.egg-info/SOURCES.txt
+smsitai.egg-info/dependency_links.txt
+smsitai.egg-info/top_level.txt
+smsitai/extras/__init__.py
