@@ -1,0 +1,12 @@
+taxoniumtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taxoniumtools/__main__.py,sha256=0-mrc1_4NaJur-6SQXV6vGrJFFDuRRFvqeQvnlOA5l4,25
+taxoniumtools/_version.py,sha256=xuEaBiqnJYcFMv95O26Ce11jvCcu7O7v6szKwZYN7i4,144
+taxoniumtools/parsimony_pb2.py,sha256=hE6jWYlgTpUbTS1uTjRKwVgPNO232QIu3LqjpJUlthU,15575
+taxoniumtools/usher_to_taxonium.py,sha256=fBEMdIvgoJ_GlawoHlVhbGRTxyHQIsQt18mRZUvlY8s,9393
+taxoniumtools/ushertools.py,sha256=d0OeuZztg_yGNraKK2cyn51ipnqwDmNSdLY2vM5be1k,12242
+taxoniumtools/utils.py,sha256=G047DcoOzLAl3FnYWZ_3kHVA-o_-zgLhOxRFPRBdVFk,7313
+taxoniumtools-2.0.38.dist-info/METADATA,sha256=5Pda1afgTcQC1I7jtoEE-Kt9949ZC1-RKRfGzcaMcDE,1995
+taxoniumtools-2.0.38.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taxoniumtools-2.0.38.dist-info/entry_points.txt,sha256=W9fjAv2D-BZOaubCXlVSkTZ-8tES2mkrUTQKCAHjhdg,75
+taxoniumtools-2.0.38.dist-info/top_level.txt,sha256=EEWGvODb1nR_CiPHUDxcfU4UzxtPnVN4yTywlT3Z0nE,14
+taxoniumtools-2.0.38.dist-info/RECORD,,
