@@ -1,0 +1,11 @@
+README.md
+setup.py
+ibisclient.egg-info/PKG-INFO
+ibisclient.egg-info/SOURCES.txt
+ibisclient.egg-info/dependency_links.txt
+ibisclient.egg-info/requires.txt
+ibisclient.egg-info/top_level.txt
+src/python3/ibisclient/__init__.py
+src/python3/ibisclient/connection.py
+src/python3/ibisclient/dto.py
+src/python3/ibisclient/methods.py
