@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: django-codenerix-reviews
+Version: 4.0.1
+Summary: Codenerix Reviews is a module that enables CODENERIX to add reviews to articles published with django-codenerix-cms.
+Home-page: https://github.com/codenerix/django-codenerix-reviews
+Author: Juan Miguel Taboada Godoy <juanmi@juanmitaboada.com>, Juan Soler Ruiz <soleronline@gmail.com>
+Author-email: UNKNOWN
+License: Apache License Version 2.0
+Keywords: django,codenerix,management,erp,crm,reviews
+Platform: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: django-codenerix
+Requires-Dist: django-codenerix-invoicing
+Requires-Dist: django-codenerix-products
+
+========================
+django-codenerix-reviews
+========================
+
+Codenerix Reviews is a module that enables `CODENERIX <https://www.codenerix.com/>`_ to add reviews to articles publishe with django-codenerix-cms.
+
+.. image:: https://github.com/codenerix/django-codenerix/raw/master/codenerix/static/codenerix/img/codenerix.png
+    :target: https://www.codenerix.com
+    :alt: Try our demo with Codenerix Cloud
+
+****
+Demo
+****
+
+Coming soon...
+
+**********
+Quickstart
+**********
+
+1. Install this package::
+
+    For python 2: sudo pip2 install django-codenerix-reviews
+    For python 3: sudo pip3 install django-codenerix-reviews
+
+2. Add "codenerix_reviews" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'codenerix_reviews',
+    ]
+
+3. Add in settings the params::
+
+    # path for codenerix_reviews
+    CDNX_REVIEWS = 'reviews'
+
+4. Since Codenerix Reviews is a library, you only need to import its parts into your project and use them.
+
+*************
+Documentation
+*************
+
+Coming soon... do you help us?
+
+You can get in touch with us `here <https://codenerix.com/contact/>`_.
+
+
