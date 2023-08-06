@@ -1,0 +1,9 @@
+mcl_python_package_template/__init__.py,sha256=O5uabaatbwkIgG75rAKEOOtQvqFZaQmrT21VmFR5plE,65
+mcl_python_package_template/__main__.py,sha256=-G2Zk2N2nCss2x6am48CWpAwR6rCDws2nZ78OuPByVs,97
+mcl_python_package_template/config.py,sha256=FjRlPRBQOvimpJUq9dHEmMbx89a_MAFHXAJx-yyByhQ,100
+mcl_python_package_template/greetings.py,sha256=wbo4DF9S9igF04nv5sDp0bsIKnVVna8Sgt5BJKp__s8,39
+mcl_python_package_template/logging.py,sha256=n09U978C24CwQc-RR-fv-nmY_9GKVNbH5PruXPKPoRo,527
+mcl_python_package_template-0.1.0.dist-info/LICENSE,sha256=WTpVHJVcwtu1Qd8tLwC_07HIEfNFasL6doY3jBlabU8,1088
+mcl_python_package_template-0.1.0.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+mcl_python_package_template-0.1.0.dist-info/METADATA,sha256=6_VOrDUoRdrBB6MK5imdaPyG25X88n48tmrWH8bPDr0,375
+mcl_python_package_template-0.1.0.dist-info/RECORD,,

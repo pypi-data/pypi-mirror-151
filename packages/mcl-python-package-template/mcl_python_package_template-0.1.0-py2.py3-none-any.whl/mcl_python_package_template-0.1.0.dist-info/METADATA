@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mcl_python_package_template
+Version: 0.1.0
+Summary: The python_package_template package.
+Author-email: Manuel Castillo-Lopez <manucalop@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://foo.bar
+
+# python_package_template
+
+To publish, execute
+```bash
+flit publish
+```
+
