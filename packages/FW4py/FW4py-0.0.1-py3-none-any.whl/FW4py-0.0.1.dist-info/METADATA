@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: FW4py
+Version: 0.0.1
+Summary: A module made for people who want to use the Publisher FreeWheel API.
+Home-page: https://github.com/dmars12345/FW4py
+Author: Dylan Marsella
+Author-email: dylanmarsella1@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: datetime
+Requires-Dist: dict2xml
+Requires-Dist: xmltodict
+
+UNKNOWN
+
