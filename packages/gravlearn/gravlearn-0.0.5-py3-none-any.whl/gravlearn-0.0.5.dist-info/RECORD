@@ -1,0 +1,15 @@
+gravlearn/__init__.py,sha256=Z_2la3bCl47ZrgfbBbR5goJGgpSpZIcBsD4vUSeAssQ,117
+gravlearn/data_sampler.py,sha256=rOeJ9vvj3onkQoiUKkh7VEDGNv06Nes7qdO5D6G7xiM,4723
+gravlearn/dataset.py,sha256=j3PsIfcDWLR0W_covSpXbkApGJ-HEwvG7dELVyp1aho,3156
+gravlearn/fastRP.py,sha256=5EcShCZSvJOMsuAj-PqgevyBHr8yyAm17gBpTz5kHss,845
+gravlearn/gravity_potential.py,sha256=yiyz_UqXO1UfFGmRxag9HZWVbLsutYsplu4EQyoY5LE,2660
+gravlearn/losses.py,sha256=Ib6ma955fxXgOLQdKJe2l8PLl0jf08DkmKEl2Dag1J4,1663
+gravlearn/metrics.py,sha256=1QJiFrUPyjRBYGatDt76wtA_RmMa8Ylfd5AbqQ4OAOk,610
+gravlearn/models.py,sha256=gk5Pk7TuOvNKPUIl2l4bQyldsB4Bwt5NsgP-e1zhItc,7552
+gravlearn/node_sampler.py,sha256=VezV7Xbu-YOd8EEkDAWr3EmYnKW7POXsNUd13-VfUZw,6784
+gravlearn/train.py,sha256=VO6jqakdQiXVvIOtqKDEa3M7EhPrveab66BKyIBVrSM,2949
+gravlearn/utils.py,sha256=BbdJcqtj9C2XJmf3774x-8rTt6lkcNzFMTODuZmwxq0,1435
+gravlearn-0.0.5.dist-info/METADATA,sha256=rl3v9wDCMc3sMcJLIUMdGX4FpS7sWet-iuBqeDXkq7Y,1322
+gravlearn-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gravlearn-0.0.5.dist-info/top_level.txt,sha256=_hSTg3rXXA99wpFLor34hGO1-KFwBnvqoSVwNq8dfYk,10
+gravlearn-0.0.5.dist-info/RECORD,,
