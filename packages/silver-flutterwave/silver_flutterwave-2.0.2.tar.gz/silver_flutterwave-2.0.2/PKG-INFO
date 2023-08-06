@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: silver_flutterwave
+Version: 2.0.2
+Summary: Stripe pay
+Home-page: 
+Author: Idah
+License-File: LICENSE.txt
+
+Stripe Payment in Olitt
