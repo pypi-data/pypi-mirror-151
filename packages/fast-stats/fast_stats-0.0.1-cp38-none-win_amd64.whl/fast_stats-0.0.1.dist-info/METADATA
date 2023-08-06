@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fast-stats
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: numpy
+Provides-Extra: test
+License-File: LICENSE
+Summary: A fast simple library for calculating basic statistics
+Keywords: numpy,stats,rust,fast
+Author-email: zachcoleman <zacharywcoleman@gmail.com>
+Maintainer-email: zachcoleman <zacharywcoleman@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/zachcoleman/fast-stats
+
+# fast-stats
