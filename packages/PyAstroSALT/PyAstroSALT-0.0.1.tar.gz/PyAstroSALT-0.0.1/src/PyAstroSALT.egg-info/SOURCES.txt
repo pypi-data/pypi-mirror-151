@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/PyAstroSALT.egg-info/PKG-INFO
+src/PyAstroSALT.egg-info/SOURCES.txt
+src/PyAstroSALT.egg-info/dependency_links.txt
+src/PyAstroSALT.egg-info/requires.txt
+src/PyAstroSALT.egg-info/top_level.txt
+src/pyastrosalt/__init__.py
+src/pyastrosalt/auth.py
+src/pyastrosalt/proposal.py
+src/pyastrosalt/py.typed
+src/pyastrosalt/web.py

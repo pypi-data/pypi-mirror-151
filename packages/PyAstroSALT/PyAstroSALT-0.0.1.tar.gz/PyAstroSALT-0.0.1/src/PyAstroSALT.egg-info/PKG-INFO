@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyAstroSALT
+Version: 0.0.1
+Summary: Perform tasks related to proposals for the Southern African Large Telescope.
+Home-page: https://github.com/saltastroops/PyAstroSALT
+Author: Southern African Large Telescope
+Author-email: salthelp@salt.ac.za
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# saltastro
+
+Perform tasks related to proposals for the Southern African Large Telescope.
