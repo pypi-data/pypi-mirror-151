@@ -1,0 +1,11 @@
+pox>=0.3.1
+dill>=0.3.5.1
+
+[archives]
+h5py>=2.8.0
+sqlalchemy>=0.8.4
+pandas>=0.17.0
+
+[crypto]
+jsonpickle>=0.9.6
+cloudpickle>=0.5.2
