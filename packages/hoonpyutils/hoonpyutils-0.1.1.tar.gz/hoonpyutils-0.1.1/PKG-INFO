@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hoonpyutils
+Version: 0.1.1
+Summary: Hoon Python Utilities
+Home-page: https://github.com/neohoon/hoonpyutils
+Download-URL: https://github.com/neohoon/hoonpyutils/archive/master.zip
+Author: NeoHoon
+Author-email: hoon.paek@neoplatform.net
+License: UNKNOWN
+Keywords: hoon python utilities
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Python Package Dedicated to Smart X
+
+
