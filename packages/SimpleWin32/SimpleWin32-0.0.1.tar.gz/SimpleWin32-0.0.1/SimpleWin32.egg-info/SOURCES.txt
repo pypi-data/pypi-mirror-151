@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+SimpleWin32/__init__.py
+SimpleWin32/simplewin32.py
+SimpleWin32.egg-info/PKG-INFO
+SimpleWin32.egg-info/SOURCES.txt
+SimpleWin32.egg-info/dependency_links.txt
+SimpleWin32.egg-info/requires.txt
+SimpleWin32.egg-info/top_level.txt
