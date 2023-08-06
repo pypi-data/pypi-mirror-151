@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+dist/obfuscated/merged/xpycommon/__init__.py
+dist/obfuscated/merged/xpycommon/bluetooth.py
+dist/obfuscated/merged/xpycommon/common.py
+dist/obfuscated/merged/xpycommon/libc_wrapper.py
+dist/obfuscated/merged/xpycommon.egg-info/PKG-INFO
+dist/obfuscated/merged/xpycommon.egg-info/SOURCES.txt
+dist/obfuscated/merged/xpycommon.egg-info/dependency_links.txt
+dist/obfuscated/merged/xpycommon.egg-info/top_level.txt
+dist/obfuscated/merged/xpycommon/pytransform/__init__.py
+dist/obfuscated/merged/xpycommon/pytransform/platforms/linux/aarch64/_pytransform.so
+dist/obfuscated/merged/xpycommon/pytransform/platforms/linux/x86_64/_pytransform.so
+test/test.py
