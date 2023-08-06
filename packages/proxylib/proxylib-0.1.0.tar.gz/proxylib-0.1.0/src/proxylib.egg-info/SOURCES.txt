@@ -1,0 +1,14 @@
+setup.py
+src/proxylib/__init__.py
+src/proxylib/_jscontext.py
+src/proxylib/_models.py
+src/proxylib/_re.py
+src/proxylib/pac.py
+src/proxylib/utils.py
+src/proxylib.egg-info/PKG-INFO
+src/proxylib.egg-info/SOURCES.txt
+src/proxylib.egg-info/dependency_links.txt
+src/proxylib.egg-info/top_level.txt
+src/proxylib/discovery/__init__.py
+src/proxylib/discovery/common.py
+src/proxylib/discovery/windows.py

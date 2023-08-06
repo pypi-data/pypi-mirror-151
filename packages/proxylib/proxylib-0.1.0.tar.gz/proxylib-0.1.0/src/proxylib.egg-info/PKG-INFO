@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: proxylib
+Version: 0.1.0
+Summary: Proxy models and functions to build proxy configurations or get the systems proxy information and parse their result
+Home-page: https://github.com/jose-pr/pypki
+Author: Jose A.
+Author-email: jose-pr@coqui.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Proxy models and functions to build proxy configurations or get the systems proxy information and parse their result
+
