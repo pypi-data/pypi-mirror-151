@@ -1,0 +1,2 @@
+[console_scripts]
+kornet = kornet.__main__:main
