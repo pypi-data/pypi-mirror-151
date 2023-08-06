@@ -1,0 +1,7 @@
+td_connect/.tdauth.json,sha256=Za1mbEWeONxsApoxyvHMPsF1Pm4MtJOO9KNM85haA_g,3224
+td_connect/__init__.py,sha256=eDcithgj89NtdDPjLjLOO0FjCmHiqdsgcny82V_0CJ4,77
+td_connect/td_connect.py,sha256=X_eRccmFdOqy34ngwDaQzasmNQ2QLmII4ziZvS8dl-g,8405
+td_connect-0.1.4.dist-info/entry_points.txt,sha256=GGxagPHV5Nb_AiNcrqC9Y6msRosNRYLpvvBj-GXi_XU,137
+td_connect-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+td_connect-0.1.4.dist-info/METADATA,sha256=hpFDQdGAAq_RuZtfpa9ISv7UT9-YOk3SExuLb8I2yrc,686
+td_connect-0.1.4.dist-info/RECORD,,
