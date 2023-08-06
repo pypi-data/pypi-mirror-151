@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyppeteerhcaptcha/__init__.py
+pyppeteerhcaptcha/exceptions.py
+pyppeteerhcaptcha/solver.py
+pyppeteerhcaptcha/yolo.py
+pyppeteerhcaptcha.egg-info/PKG-INFO
+pyppeteerhcaptcha.egg-info/SOURCES.txt
+pyppeteerhcaptcha.egg-info/dependency_links.txt
+pyppeteerhcaptcha.egg-info/top_level.txt
