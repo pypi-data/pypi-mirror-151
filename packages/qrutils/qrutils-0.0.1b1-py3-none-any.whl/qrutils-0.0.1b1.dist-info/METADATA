@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qrutils
+Version: 0.0.1b1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: VictorT
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: tqdm
+Requires-Dist: pandas
+
+UNKNOWN
+
