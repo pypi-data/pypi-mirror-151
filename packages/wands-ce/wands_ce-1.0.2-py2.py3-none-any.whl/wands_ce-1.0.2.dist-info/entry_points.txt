@@ -1,0 +1,3 @@
+[console_scripts]
+wands = wands.cmd:cmd
+
