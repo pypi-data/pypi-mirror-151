@@ -1,0 +1,2 @@
+[console_scripts]
+osu2mp3 = osu2mp3.__main__:main

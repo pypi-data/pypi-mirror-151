@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: osu2mp3
+Version: 0.0.1
+Summary: Convert your osu! beatmaps (.osz) to properly-tagged .mp3 files
+Home-page: https://github.com/hewlett-packard-lovecraft/osu2mp3
+Author: hewlett-packard-lovecraft
+Author-email: hxia05@protonmail.com
+License: MIT
+Keywords: mp3,osu
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# osu! to mp3
+
+convert .osz osu beatmaps into properly-tagged .mp3 files
+
+## Installation
+
+Clone this project and run `python setup.py install`
+
+## Run
+
+`osu2mp3 [-h] [-i INPUT] [-o OUTPUT] [-s]`
+
+## Arguments
+
+| Argument     | Description                                        |
+| ------------ | -------------------------------------------------- |
+| -i, --input  | Specify input directory                            |
+| -o, --output | Specify directory audio files will be extracted to |
+| --silent     | Don't show progress bar                            |
+| -h, --help   | Show the information above                         |
+
