@@ -1,0 +1,7 @@
+include *.lock
+include *.py
+include *.sh
+include *.txt
+include Pipfile
+include alphavantage_access.ini
+recursive-include events *.json
