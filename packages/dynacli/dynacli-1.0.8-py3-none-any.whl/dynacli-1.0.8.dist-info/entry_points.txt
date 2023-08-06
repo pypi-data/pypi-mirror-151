@@ -1,0 +1,3 @@
+[console_scripts]
+dynacli=dynacli.bootstrap._cli:main
+
