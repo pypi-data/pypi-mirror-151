@@ -1,0 +1,3 @@
+[console_scripts]
+gen_dist_info = dist_meta.scripts:gen_distinfo_cmd
+

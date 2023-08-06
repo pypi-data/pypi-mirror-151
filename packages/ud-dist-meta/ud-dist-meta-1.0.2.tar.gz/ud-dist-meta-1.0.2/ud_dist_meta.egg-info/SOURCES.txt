@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+dist_meta/__init__.py
+dist_meta/core.py
+dist_meta/scripts.py
+ud_dist_meta.egg-info/PKG-INFO
+ud_dist_meta.egg-info/SOURCES.txt
+ud_dist_meta.egg-info/dependency_links.txt
+ud_dist_meta.egg-info/entry_points.txt
+ud_dist_meta.egg-info/requires.txt
+ud_dist_meta.egg-info/top_level.txt
