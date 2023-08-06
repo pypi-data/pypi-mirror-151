@@ -1,0 +1,6 @@
+[console_scripts]
+trame-sandtank = trame_sandtank:main
+
+[jupyter_serverproxy_servers]
+trame-sandtank = trame_sandtank.app.jupyter:jupyter_proxy_info
+
