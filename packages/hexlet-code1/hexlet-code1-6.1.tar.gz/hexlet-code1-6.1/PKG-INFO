@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hexlet-code1
+Version: 6.1
+Summary: 
+Author: Andrey Chernov
+Author-email: andreych1998@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: prompt (>=0.4.1,<0.5.0)
