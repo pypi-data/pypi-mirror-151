@@ -1,0 +1,10 @@
+matplotlib
+numpy
+scipy
+
+[dev]
+coverage
+hypothesis
+jupyterlab
+nbformat
+tox
