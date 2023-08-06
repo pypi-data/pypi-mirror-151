@@ -1,0 +1,9 @@
+rasterio
+scipy
+pyshp
+fiona
+hydro_raster
+matplotlib
+numpy
+pandas
+imageio
