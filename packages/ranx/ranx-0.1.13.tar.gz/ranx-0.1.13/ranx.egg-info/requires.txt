@@ -1,0 +1,7 @@
+numpy
+numba>=0.54.1
+pandas
+tabulate
+tqdm
+scipy
+ir_datasets
