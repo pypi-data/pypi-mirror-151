@@ -1,0 +1,8 @@
+setup.py
+ani_donut/__init__.py
+ani_donut/main.py
+ani_donut.egg-info/PKG-INFO
+ani_donut.egg-info/SOURCES.txt
+ani_donut.egg-info/dependency_links.txt
+ani_donut.egg-info/requires.txt
+ani_donut.egg-info/top_level.txt
