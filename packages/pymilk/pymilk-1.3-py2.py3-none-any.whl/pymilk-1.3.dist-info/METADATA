@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pymilk
+Version: 1.3
+Summary: 一个开源的 Python 编程工具箱
+Keywords: pymilk,mysql,orm
+Author-email: jutooy <jutooy@qq.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: pycryptodome
+Requires-Dist: pymongo
+Requires-Dist: pymysql
+Requires-Dist: aiomysql
+Project-URL: Docs, https://www.yuque.com/jutooy/pymilk
+Project-URL: Gitee, https://gitee.com/jutooy/pymilk
+Project-URL: Home, https://www.yuque.com/jutooy
+
+#### 项目介绍
+
+项目简介: 一个开源的 Python 编程工具箱
+
+文档: https://www.yuque.com/jutooy/pymilk
+
+Gitee: https://gitee.com/jutooy/pymilk
+
+PyPi: https://pypi.org/project/pymilk
+
+#### 作者资料
+
+昵称: jutooy
+
+邮箱: jutooy@qq.com
+
+主页: https://www.yuque.com/jutooy
+
+#### 目录
+
+layDB
+
+mysql ORM
+
+MongoDB ORM
+
+localtool
+
+cbc256
