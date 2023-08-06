@@ -1,0 +1,12 @@
+minumtium_fastapi/__init__.py,sha256=xXEi2YaiZSPtMMEhQfiYz8g-RV9o1oqRY9piLyBZSfE,2347
+minumtium_fastapi/auth.py,sha256=JkG8uGPXxW8-O_GBIojqJxn1o9pJg8rVOq1siV465B8,820
+minumtium_fastapi/deps.py,sha256=3BLL5T8QIz71m21TVC92T68ymbTggwbS3GMM5DKYYWs,2908
+minumtium_fastapi/routes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minumtium_fastapi/routes/auth.py,sha256=kKdXDaiONSgkoZk3pw1RWi3fbuNp1LkgAcXe1t8cb44,813
+minumtium_fastapi/routes/posts.py,sha256=bDJ4Qzgd3CvVQ7RF5k44vgInTfC2vnpH0UX5lHY_taM,2561
+minumtium_fastapi/routes/users.py,sha256=nzuHqrlzmfST4RQXaLnoOzUzmZOeZAjUEUjGSpWj7iE,2211
+minumtium_fastapi-1.0.0.dist-info/LICENSE,sha256=PcCtAPK9Ckak3WL6ofTKUMitOL0OhCgOMEV6iRbrFOQ,554
+minumtium_fastapi-1.0.0.dist-info/METADATA,sha256=N4LMjI5cgZbJ1Fv9dSrCWg1SSJydvP8H9-miDTUPbPA,3841
+minumtium_fastapi-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+minumtium_fastapi-1.0.0.dist-info/top_level.txt,sha256=4cPlfTK_J12o3TOms1Uih5MfxvBBLAHpyWapbp7A8PU,18
+minumtium_fastapi-1.0.0.dist-info/RECORD,,
