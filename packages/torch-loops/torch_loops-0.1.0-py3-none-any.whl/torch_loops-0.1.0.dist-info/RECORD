@@ -1,0 +1,5 @@
+torch_loops/__init__.py,sha256=Qr3t71RRKsChCjfToSnUcuYZlkv9As1AYGmZxuhX6-g,66
+torch_loops/torch_loops.py,sha256=lEebzDrPQnpSh_JLAj_NMfSSWVu3lyt-HGWRelin3IQ,3875
+torch_loops-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+torch_loops-0.1.0.dist-info/METADATA,sha256=-7U_pPGp43_ukh7nEDopcYNl8sVIyz0IeGIX4vvFIhk,331
+torch_loops-0.1.0.dist-info/RECORD,,
