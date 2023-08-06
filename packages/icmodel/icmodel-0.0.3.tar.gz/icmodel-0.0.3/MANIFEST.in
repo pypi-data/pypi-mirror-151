@@ -1,0 +1,2 @@
+recursive-include icmodel/model *.model
+recursive-include icmodel/model *.npy
