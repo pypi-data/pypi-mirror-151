@@ -1,0 +1,17 @@
+TestToolsMK/VERSION,sha256=gSrwUdnCLETlomofsZBhegTxPTi11oyjyw2vbovvXrE,9
+TestToolsMK/__init__.py,sha256=6PdcDtdKpAzlD9WCK8aBccku8Iu11MbT62TJ7K_qf8s,987
+TestToolsMK/collections_keywords.py,sha256=PoB6LbhcUNO0PXCpli0ScPqvPEnFmRV3y6bh3rn4zFI,580
+TestToolsMK/csv_keywords.py,sha256=s6HBVDNahTFunmHHx5-ae2ryX2oTpuDFGc4tYN098ZQ,5273
+TestToolsMK/image_magick_keywords.py,sha256=X5Ri3MgbD95rQv5Hdm3VkvFKvKBX2eilt1Gq23Df13I,12467
+TestToolsMK/logger_extension_keywords.py,sha256=sbJBbVGaQlKB5jWwJT_vhUS0Rx3IVYu4tn7zrfYEb4w,1898
+TestToolsMK/pdf_keywords.py,sha256=8TbJy4VdmuUuSOKaRtU4awBCaByUA5lP7tT2komiSts,1553
+TestToolsMK/robot_instances.py,sha256=mI7U9IPur-pyLoFtGF4zLCAPZPxX8mbFQCq-_9GEbfc,2467
+TestToolsMK/selenium_extentions_keywords.py,sha256=ErP04uAgU8506r1o2DrwFk84SzmcVD1RYPeEHx_gZh4,10821
+TestToolsMK/sqlkeywords.py,sha256=sXV4OKkUXRCEcIZI38Lh3tS171-_xfU5iZnHEviCo44,7622
+TestToolsMK/timers_keywords.py,sha256=RkCsbnVUWFGvR-ABzOSzfnj9M70CW-QSJt4hNZpJkkA,3898
+TestToolsMK/utils.py,sha256=QqzuvxYWl-aU2rXxBgWEz04gmwbVO3tvt0g3k6T6ATk,10551
+robotframework_MarcinKoperski-1.1.0.0.dist-info/LICENSE,sha256=j_ccSQE_NOe3TNRYTepcVXWRSm4Z-gjfzU-9gHgrfys,1072
+robotframework_MarcinKoperski-1.1.0.0.dist-info/METADATA,sha256=IItjPTtAmAF62O9MXEY045PFeTLhP0QgE2HP5jfIul0,586
+robotframework_MarcinKoperski-1.1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+robotframework_MarcinKoperski-1.1.0.0.dist-info/top_level.txt,sha256=mklTQkLYd65ouaAWTKr6RQqqKr7R9xOillbjFOweJCg,12
+robotframework_MarcinKoperski-1.1.0.0.dist-info/RECORD,,
