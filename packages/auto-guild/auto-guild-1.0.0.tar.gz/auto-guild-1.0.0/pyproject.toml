@@ -1,0 +1,30 @@
+[project]
+name = "auto_guild"
+version = "1.0.0"
+description = "Creates a Discord server based on a template you layout, making it an easy and quick way to flesh out a server to fit your needs."
+authors = [
+    { name = "Daniel J Brown", email = "browndj3@gmail.com" },
+]
+license-expression = "MIT"
+dependencies = [
+    "requests>=2.27.1",
+    "pyyaml>=6.0",
+    "python-dotenv>=0.20.0",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+
+[project.urls]
+homepage = "https://github.com/MrHemlock/auto_guild"
+repository = "https://github.com/MrHemlock/auto_guild"
+
+[project.scripts]
+auto-guild = "auto_guild:run"
+
+[tool.pdm]
+
+[build-system]
+requires = [
+    "pdm-pep517>=0.12.0",
+]
+build-backend = "pdm.pep517.api"
