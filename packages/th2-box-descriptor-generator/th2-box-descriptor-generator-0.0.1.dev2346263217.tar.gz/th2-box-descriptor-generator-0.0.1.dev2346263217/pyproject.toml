@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "th2-box-descriptor-generator"
+version = "0.0.1.dev2346263217"
+description = "Python plugin to generate gRPC packages description"
+authors = ["TH2-devs <th2-devs@exactprosystems.com>"]
+readme = "README.md"
+license = "Apache License 2.0"
+homepage = "https://github.com/th2-net/th2-box-descriptor-generator-py"
+repository = "https://github.com/th2-net/th2-box-descriptor-generator-py"
+include = [
+    "LICENSE",
+]
+packages = [
+    {include = 'th2_box_descriptor_generator'},
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

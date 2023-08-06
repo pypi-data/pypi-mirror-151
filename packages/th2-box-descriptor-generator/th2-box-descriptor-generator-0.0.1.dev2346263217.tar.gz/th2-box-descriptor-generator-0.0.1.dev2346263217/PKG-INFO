@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: th2-box-descriptor-generator
+Version: 0.0.1.dev2346263217
+Summary: Python plugin to generate gRPC packages description
+Home-page: https://github.com/th2-net/th2-box-descriptor-generator-py
+License: Apache-2.0
+Author: TH2-devs
+Author-email: th2-devs@exactprosystems.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/th2-net/th2-box-descriptor-generator-py
+Description-Content-Type: text/markdown
+
+# th2-box-descriptor-generator-py
