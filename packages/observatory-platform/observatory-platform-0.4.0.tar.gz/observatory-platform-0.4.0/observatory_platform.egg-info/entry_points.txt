@@ -1,0 +1,3 @@
+[console_scripts]
+observatory = observatory.platform.cli.cli:cli
+
