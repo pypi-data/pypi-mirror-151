@@ -1,0 +1,8 @@
+akara/__init__.py,sha256=NXXKcarGgTuf3_ydUMuXLTbpABUr8ECM4iVEwmuzejI,81
+akara/edit_distance.py,sha256=t4TJc5WvIjRSqrNfT0cksZDLmRwmLYKDLF7Yh27A_uA,1109
+akara/node.py,sha256=CPK4V2veWGfPGjPXOalUzlIEHEPQtN7H6XjyauI3OGE,543
+akara/spell_checker.py,sha256=sBKqMWENn6sK19jXHbhA1Mc3dFHKcUa9OmXU8TL8MYQ,3239
+akara_python-0.0.1.dist-info/METADATA,sha256=fcj76HmHkHJoLPDH-ad0fpjvL6aajv3gm6MyHYwq-uw,611
+akara_python-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+akara_python-0.0.1.dist-info/top_level.txt,sha256=D5lUzCbpkd-nh4XtJJOeOFcHRstoYme7m0hkPa_hbY0,19
+akara_python-0.0.1.dist-info/RECORD,,
