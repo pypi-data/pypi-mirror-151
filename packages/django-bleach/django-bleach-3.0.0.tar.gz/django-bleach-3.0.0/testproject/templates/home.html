@@ -1,0 +1,14 @@
+<body>
+    <h2>Form example</h2>
+    <form action="." method="post">
+        {% csrf_token %}
+
+        {{ form.errors }}
+        {{ form.as_p }}
+
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+    <a href="{% url 'model_form' %}">Model form example(Note: you need to migrate database to use it)</a>
+</body>
