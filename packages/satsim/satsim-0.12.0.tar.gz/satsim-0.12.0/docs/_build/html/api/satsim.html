@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>satsim package &mdash; SatSim 0.12.0 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="satsim.dataset package" href="satsim.dataset.html" />
+    <link rel="prev" title="API Documentation" href="../api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> SatSim
+          </a>
+              <div class="version">
+                0.12.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">satsim package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="satsim.dataset.html">satsim.dataset package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.generator.html">satsim.generator package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.geometry.html">satsim.geometry package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.image.html">satsim.image package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.io.html">satsim.io package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.math.html">satsim.math package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.pipeline.html">satsim.pipeline package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.time.html">satsim.time package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.util.html">satsim.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-satsim.cli">satsim.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-satsim.config">satsim.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-satsim.satsim">satsim.satsim module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SatSim</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../api.html">API Documentation</a> &raquo;</li>
+      <li>satsim package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/satsim.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="module-satsim">
+<span id="satsim-package"></span><h1>satsim package<a class="headerlink" href="#module-satsim" title="Permalink to this headline">¶</a></h1>
+<p>Top-level package for SatSim.</p>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="satsim.dataset.html">satsim.dataset package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="satsim.dataset.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.dataset.html#module-satsim.dataset.augment">satsim.dataset.augment module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="satsim.generator.html">satsim.generator package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="satsim.generator.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="satsim.generator.obs.html">satsim.generator.obs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="satsim.generator.obs.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.generator.obs.html#module-satsim.generator.obs.breakup">satsim.generator.obs.breakup module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.generator.obs.html#module-satsim.generator.obs.cso">satsim.generator.obs.cso module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.generator.obs.html#module-satsim.generator.obs.geometry">satsim.generator.obs.geometry module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.generator.obs.html#module-satsim.generator.obs.io">satsim.generator.obs.io module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="satsim.generator.obs.html#module-satsim.generator.obs.rpo">satsim.generator.obs.rpo module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="satsim.geometry.html">satsim.geometry package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.astrometric">satsim.geometry.astrometric module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.draw">satsim.geometry.draw module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.random">satsim.geometry.random module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.sgp4">satsim.geometry.sgp4 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.sprite">satsim.geometry.sprite module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.sstr7">satsim.geometry.sstr7 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.transform">satsim.geometry.transform module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.twobody">satsim.geometry.twobody module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.geometry.html#module-satsim.geometry.wcs">satsim.geometry.wcs module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="satsim.image.html">satsim.image package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="satsim.image.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.image.html#module-satsim.image.augment">satsim.image.augment module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.image.html#module-satsim.image.fpa">satsim.image.fpa module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.image.html#module-satsim.image.model">satsim.image.model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.image.html#module-satsim.image.noise">satsim.image.noise module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.image.html#module-satsim.image.psf">satsim.image.psf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.image.html#module-satsim.image.render">satsim.image.render module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="satsim.io.html">satsim.io package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="satsim.io.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.io.html#module-satsim.io.fits">satsim.io.fits module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.io.html#module-satsim.io.image">satsim.io.image module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.io.html#module-satsim.io.satnet">satsim.io.satnet module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="satsim.math.html">satsim.math package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="satsim.math.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.math.html#module-satsim.math.angle">satsim.math.angle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.math.html#module-satsim.math.conv">satsim.math.conv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.math.html#module-satsim.math.fft">satsim.math.fft module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.math.html#module-satsim.math.random">satsim.math.random module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.math.html#module-satsim.math.stats">satsim.math.stats module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="satsim.pipeline.html">satsim.pipeline package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="satsim.time.html">satsim.time package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="satsim.util.html">satsim.util package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="satsim.util.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.util.html#module-satsim.util.system">satsim.util.system module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.util.html#module-satsim.util.thread">satsim.util.thread module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="satsim.util.html#module-satsim.util.timer">satsim.util.timer module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-satsim.cli">
+<span id="satsim-cli-module"></span><h2>satsim.cli module<a class="headerlink" href="#module-satsim.cli" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-satsim.config">
+<span id="satsim-config-module"></span><h2>satsim.config module<a class="headerlink" href="#module-satsim.config" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="satsim.config.dict_merge">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">dict_merge</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dct</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_dct</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.dict_merge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursive dict merge. Inspired by <code class="xref py py-meth docutils literal notranslate"><span class="pre">dict.update()</span></code>, instead of
+updating only top-level keys, dict_merge recurses down into dicts nested
+to an arbitrary depth, updating keys. The <cite>merge_dct</cite> is merged into
+<cite>dct</cite>.</p>
+<dl class="simple">
+<dt>Param:</dt><dd><p>dct: <cite>dict</cite>, onto which the merge is executed
+merge_dct: <cite>dict</cite>, dct merged into dct</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.has_key_deep">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">has_key_deep</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.has_key_deep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nested check to see if a dictionary has a key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>d</strong> – <cite>dict</cite> or <cite>list</cite></p></li>
+<li><p><strong>key</strong> – <cite>str</cite>, key name to check for</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.load_json">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">load_json</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.load_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens a JSON file and returns the result as a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – <cite>str</cite>, path to file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <cite>dict</cite>, the result.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.load_yaml">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">load_yaml</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.load_yaml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens a YAML file and returns the result as a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – <cite>str</cite>, path to file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <cite>dict</cite>, the result.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.parse_cache">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">parse_cache</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.parse_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a cache parameter. The input argument, <cite>param</cite>, may contain
+the following keys and values which discribe the function to run.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">param</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;$cache&#39;</span><span class="p">:</span> <span class="s1">&#39;./path/to/cache&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Cache is not used if <cite>$cache</cite> key is not present.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <cite>dict</cite>, a dictionary that contain keys: <cite>$cache</cite></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A <cite>tuple</cite>,</dt><dd><p>a dictionary, loaded from cache if available
+a boolean, True if cache loaded, False otherwise</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.parse_function">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">parse_function</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.parse_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a function. The input argument, <cite>param</cite>, should contain
+the following keys and values which discribe the function to run.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">param</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;module&#39;</span><span class="p">:</span> <span class="s1">&#39;my_module&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;function&#39;</span><span class="p">:</span> <span class="s1">&#39;my_function&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;kwargs&#39;</span><span class="p">:</span> <span class="p">{</span> <span class="s1">&#39;param_1&#39;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">,</span> <span class="s1">&#39;param_2&#39;</span><span class="p">:</span> <span class="s1">&#39;astring&#39;</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Which is comparable to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">my_module</span>
+<span class="k">return</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">my_function</span><span class="p">(</span><span class="n">param_1</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">,</span> <span class="n">param_2</span> <span class="o">=</span> <span class="s1">&#39;astring&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <cite>dict</cite>, a dictionary that contain keys: <cite>module</cite>, <cite>function</cite>,
+<cite>kwargs</cite></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A <cite>function</cite>, a lambda function encapsulating the parsed function and</dt><dd><p>arguments</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.parse_function_pipeline">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">parse_function_pipeline</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.parse_function_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a pipeline of functions. See <cite>parse_function</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <cite>dict</cite>, a dictionary that contain keys: <cite>module</cite>, <cite>function</cite>,
+<cite>kwargs</cite></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An <cite>func</cite>, a function encapsulating the pipeline</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.parse_generator">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">parse_generator</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.parse_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse and run a generator function. See <cite>parse_function</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <cite>dict</cite>, a dictionary that contain keys: <cite>module</cite>, <cite>function</cite>,
+<cite>kwargs</cite></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <cite>dict</cite>, a dictionary generated by the generator function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.parse_import">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">parse_import</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.parse_import" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a import key. The input argument, <cite>param</cite>, should contain the
+following keys and values which discribe the function to run.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">param</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;$import&#39;</span><span class="p">:</span> <span class="s1">&#39;./base.json&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;override&#39;</span><span class="p">:</span> <span class="p">{</span> <span class="s1">&#39;param_1&#39;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">,</span> <span class="s1">&#39;param_2&#39;</span><span class="p">:</span> <span class="s1">&#39;override string&#39;</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <cite>dict</cite>, a dictionary that contain keys: <cite>import</cite>, and optionally
+<cite>override</cite></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <cite>dict</cite>, a dictionary generated by the generator function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.parse_param">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">parse_param</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dirname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_generator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eval_python</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_compound</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.parse_param" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses a parameter and recursively parses any children parameters.</p>
+<ul class="simple">
+<li><p>if the parameter contains the key <cite>sample</cite>, result from
+<cite>parse_random_sample</cite> will be returned.</p></li>
+<li><p>if the parameter contains the key <cite>file</cite>, the contents of the loaded
+pickle file will be returned.</p></li>
+<li><p>if the parameter contains the key <cite>generator</cite>, result from
+<cite>parse_generator</cite> will be returned.</p></li>
+<li><p>else if no special keys are found, <cite>param</cite> is returned.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param</strong> – <cite>dict</cite>, root parameter</p></li>
+<li><p><strong>dirname</strong> – <cite>str</cite>, root directory for files referenced in <cite>param</cite></p></li>
+<li><p><strong>run_generator</strong> – <cite>boolean</cite>, evaulate generator functions during this pass</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <cite>any</cite>, a random sample, contents of pickle file, or original value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.parse_random_sample">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">parse_random_sample</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.parse_random_sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses a random sample parameter and returns a sample. The value of
+the key <cite>$sample</cite> should be the format <cite>random.DISTRIBUTION</cite>, where
+<cite>DISTRIBUTION</cite> is a NumPy random distribution. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;$sample&quot;</span><span class="p">:</span> <span class="s2">&quot;random.uniform&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s2">&quot;high&quot;</span><span class="p">:</span> <span class="mf">22.0</span> <span class="p">}</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">parse_random_sample</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="c1"># x is a value between 5 and 22</span>
+</pre></div>
+</div>
+<p>If the key <cite>$sample</cite> is equal to <cite>random.choice</cite>, one option will be choosen
+from the key <cite>choices</cite>. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;$sample&quot;</span><span class="p">:</span> <span class="s2">&quot;random.choice&quot;</span><span class="p">,</span> <span class="s2">&quot;choices&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span> <span class="p">}</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">parse_random_sample</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="c1"># x will be 1, 2, 4, or 8</span>
+</pre></div>
+</div>
+<p>If the key <cite>$sample</cite> is equal to <cite>random.list</cite>, a list of random samples
+will be generated. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;$sample&quot;</span><span class="p">:</span> <span class="s2">&quot;random.list&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s2">&quot;$sample&quot;</span><span class="p">:</span> <span class="s2">&quot;random.randint&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;high&quot;</span><span class="p">:</span> <span class="mi">10</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">parse_random_sample</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="c1"># x will a list of length 5, i.e. x == [7,5,8,5,1]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <cite>dict</cite>, random sample parameter</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <cite>number</cite>, random sample</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.save_cache">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">save_cache</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.save_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves a parameter to the disk cache. Parameter will be loaded from cache
+on any subsequent calls.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param</strong> – <cite>dict</cite>, root parameter to be used as the cache key</p></li>
+<li><p><strong>value</strong> – <cite>any</cite>, the value to save to cache</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.save_debug">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">save_debug</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.save_debug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes an array of configs to files for debugging.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>configs</strong> – <cite>array</cite>, configuration stages output by <cite>transform</cite></p></li>
+<li><p><strong>output_dir</strong> – <cite>str</cite>, directory to output files</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.save_json">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">save_json</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_pickle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.save_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves a configuration to a JSON file. Any items that are not JSON
+serializable are saved to a binary pickle file and saved in the same
+directory as the file <cite>filename</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – <cite>str</cite>, path to file</p></li>
+<li><p><strong>config</strong> – <cite>dict</cite>, configuration as a dictionary</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.config.transform">
+<code class="sig-prename descclassname"><span class="pre">satsim.config.</span></code><code class="sig-name descname"><span class="pre">transform</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dirname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_stages</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_imports</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_ref</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.config.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms a SatSim configuration, evaluating any random sample
+parameters, references and/or generator functions. The transformation will
+happen in two passes. The first pass evaluates <cite>sample</cite> parameters; the
+second pass evaluates <cite>generator</cite> parameters. This is repeated for
+<cite>max_stages</cite> or until no more <cite>generator</cite> or <cite>sample</cite> keys are found.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> – <cite>dict</cite>, configuration as a dictionary.</p></li>
+<li><p><strong>dirname</strong> – <cite>str</cite>, root directory for files referenced in <cite>config</cite>.</p></li>
+<li><p><strong>max_stages</strong> – <cite>int</cite>, maximum number of times to evaluate (one stage is
+equivalent to running pass 1 and pass 2 once each).</p></li>
+<li><p><strong>with_debug</strong> – <cite>boolean</cite>, return config after each stage.</p></li>
+<li><p><strong>max_imports</strong> – <cite>int</cite>, maximum number of times to evaluate imports.</p></li>
+<li><p><strong>max_refs</strong> – <cite>int</cite>, maximum number of times to evaluate refs.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl>
+<dt>A <cite>dict</cite> or <cite>tuple</cite>,</dt><dd><dl>
+<dt>if <cite>with_debug</cite> is <cite>False</cite>:</dt><dd><p><cite>dict</cite>, in place transformation of <cite>config</cite></p>
+</dd>
+<dt>if <cite>with_debug</cite> is <cite>True</cite>:</dt><dd><p>config: <cite>dict</cite>, in place transformation of <cite>config</cite>
+stages: <cite>array</cite>, array of dictionaries after each transformation</p>
+<blockquote>
+<div><p>stage</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-satsim.satsim">
+<span id="satsim-satsim-module"></span><h2>satsim.satsim module<a class="headerlink" href="#module-satsim.satsim" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="satsim.satsim.gen_images">
+<code class="sig-prename descclassname"><span class="pre">satsim.satsim.</span></code><code class="sig-name descname"><span class="pre">gen_images</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eager</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.satsim.gen_images" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a single set of images.</p>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># load a template json file</span>
+<span class="n">ssp</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="s1">&#39;input/config.json&#39;</span><span class="p">)</span>
+<span class="n">ssp</span> <span class="o">=</span> <span class="n">transform</span><span class="p">(</span><span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">ssp</span><span class="p">),</span> <span class="s1">&#39;input/&#39;</span><span class="p">)</span>
+
+<span class="c1"># generate SatNet files to the output directory</span>
+<span class="n">gen_images</span><span class="p">(</span><span class="n">ssp</span><span class="p">,</span> <span class="n">eager</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="s1">&#39;output/&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ssp</strong> – <cite>dict</cite>, static satsim configuration and parameters. Any dynamic
+parameters should already be transformed.</p></li>
+<li><p><strong>eager</strong> – <cite>boolean</cite>, Has no effect. <cite>True</cite> only.</p></li>
+<li><p><strong>output_dir</strong> – <cite>str</cite>, output directory to save SatNet files.</p></li>
+<li><p><strong>sample_num</strong> – <cite>int</cite>, recorded to annotation files.</p></li>
+<li><p><strong>output_debug</strong> – <cite>boolean</cite>, output intermediate debug files.</p></li>
+<li><p><strong>queue</strong> – <cite>MultithreadedTaskQueue</cite>, if not None, files will be written.</p></li>
+<li><p><strong>set_name</strong> – <cite>str</cite>, sets the directory name to save the images to, if None, is set to current time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <cite>str</cite>, directory to where the output files are saved.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.satsim.gen_multi">
+<code class="sig-prename descclassname"><span class="pre">satsim.satsim.</span></code><code class="sig-name descname"><span class="pre">gen_multi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eager</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.satsim.gen_multi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates multiple sets of images. Number of sets is based on the
+parameters <cite>ssp[‘sim’][‘samples’]</cite>.</p>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># load a template json file</span>
+<span class="n">ssp</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="s1">&#39;input/config.json&#39;</span><span class="p">)</span>
+
+<span class="c1"># edit some parameters</span>
+<span class="n">ssp</span><span class="p">[</span><span class="s1">&#39;sim&#39;</span><span class="p">][</span><span class="s1">&#39;samples&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">ssp</span><span class="p">[</span><span class="s1">&#39;geometry&#39;</span><span class="p">][</span><span class="s1">&#39;obs&#39;</span><span class="p">][</span><span class="s1">&#39;list&#39;</span><span class="p">][</span><span class="s1">&#39;mv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">17.5</span>
+
+<span class="c1"># generate SatNet files to the output directory</span>
+<span class="n">gen_multi</span><span class="p">(</span><span class="n">ssp</span><span class="p">,</span> <span class="n">eager</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="s1">&#39;output/&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ssp</strong> – <cite>dict</cite>, static or dynamic satsim configuration and parameters.</p></li>
+<li><p><strong>eager</strong> – <cite>boolean</cite>, Has no effect. <cite>True</cite> only.</p></li>
+<li><p><strong>output_dir</strong> – <cite>str</cite>, output directory to save SatNet files.</p></li>
+<li><p><strong>input_dir</strong> – <cite>str</cite>, typically the input directory of the configuration file.</p></li>
+<li><p><strong>device</strong> – <cite>array</cite>, array of GPU device IDs to enable. If <cite>None</cite>, enable all.</p></li>
+<li><p><strong>pid</strong> – <cite>int</cite>, an ID to associate this instance to.</p></li>
+<li><p><strong>output_debug</strong> – <cite>boolean</cite>, output intermediate debug files.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="satsim.satsim.image_generator">
+<code class="sig-prename descclassname"><span class="pre">satsim.satsim.</span></code><code class="sig-name descname"><span class="pre">image_generator</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./Debug'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_meta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eager</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_sets</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#satsim.satsim.image_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generator function for a single set of images.</p>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># load a template json file</span>
+<span class="n">ssp</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="s1">&#39;input/config.json&#39;</span><span class="p">)</span>
+<span class="n">ssp</span> <span class="o">=</span> <span class="n">transform</span><span class="p">(</span><span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">ssp</span><span class="p">),</span> <span class="s1">&#39;input/&#39;</span><span class="p">)</span>
+
+<span class="c1"># generate SatNet files to the output directory</span>
+<span class="k">for</span> <span class="n">results</span> <span class="ow">in</span> <span class="n">image_generator</span><span class="p">(</span><span class="n">ssp</span><span class="p">,</span> <span class="n">eager</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="s1">&#39;output/&#39;</span><span class="p">):</span>
+    <span class="n">imshow</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ssp</strong> – <cite>dict</cite>, static satsim configuration and parameters. Any dynamic
+parameters should already be transformed.</p></li>
+<li><p><strong>output_dir</strong> – <cite>str</cite>, root directory for SatSim configuration file.</p></li>
+<li><p><strong>sample_num</strong> – <cite>int</cite>, recorded to annotation files.</p></li>
+<li><p><strong>output_debug</strong> – <cite>boolean</cite>, output intermediate debug files.</p></li>
+<li><p><strong>dir_debug</strong> – <cite>str</cite>, directory to output debug files.</p></li>
+<li><p><strong>with_meta</strong> – <cite>boolean</cite>, add metadata to the return function.</p></li>
+<li><p><strong>eager</strong> – <cite>boolean</cite>, Has no effect. <cite>True</cite> only.</p></li>
+<li><p><strong>num_sets</strong> – <cite>int</cite>, number of sets until generator exits. Set to 0 to run forever.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>fpa_digital: <cite>image</cite>, rendered image.
+frame_num: <cite>int</cite>, frame number.
+astrometrics: <cite>dict</cite>, astrometry meta data.
+obs_os_pix: <cite>dict</cite>, observations meta data.
+fpa_conv_star: <cite>image</cite>, pristine image with stars.
+fpa_conv_targ: <cite>image</cite>, pristine image with targets.
+bg_tf: <cite>image</cite>, background image.
+dc_tf: <cite>image</cite>, dark current image.
+rn_tf: <cite>image</cite>, read noise image.
+num_shot_noise_samples: <cite>int</cite>, number of shot noise samples averaged</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>An <cite>image</cite>, the rendered image. If <cite>with_meta</cite> is set to <cite>True</cite>, additional values are returned</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../api.html" class="btn btn-neutral float-left" title="API Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="satsim.dataset.html" class="btn btn-neutral float-right" title="satsim.dataset package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, AFRL.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
