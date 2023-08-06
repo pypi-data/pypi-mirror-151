@@ -1,0 +1,15 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_config.py
+tinvest_robot_perevalov/__init__.py
+tinvest_robot_perevalov/_config.py
+tinvest_robot_perevalov/_db.py
+tinvest_robot_perevalov/news_fetcher.py
+tinvest_robot_perevalov/sentiment_analyzer.py
+tinvest_robot_perevalov/trader.py
+tinvest_robot_perevalov.egg-info/PKG-INFO
+tinvest_robot_perevalov.egg-info/SOURCES.txt
+tinvest_robot_perevalov.egg-info/dependency_links.txt
+tinvest_robot_perevalov.egg-info/requires.txt
+tinvest_robot_perevalov.egg-info/top_level.txt
