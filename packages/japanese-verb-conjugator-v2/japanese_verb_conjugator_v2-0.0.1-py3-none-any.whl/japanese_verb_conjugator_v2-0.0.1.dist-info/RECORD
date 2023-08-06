@@ -1,0 +1,15 @@
+japverbconj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japverbconj/decorators.py,sha256=Hv4Zp1duunL_80mz0aWAQIMrEU9QcdW5aaflcQsg5CE,2611
+japverbconj/negative_form_gen.py,sha256=G-VY_dZYqvUGz2Y0jx82VpQV39yYwEpewyfJY_vwmds,13581
+japverbconj/positive_form_gen.py,sha256=F4x9fc8LV03k4QhxaUltykD5tAqpvSdliad6OfmrePk,14316
+japverbconj/utils.py,sha256=QsnxjN-P6Q47_o7jk-EjG-tcNYNmQaigm5Bz47olKag,8831
+japverbconj/verb_form_gen.py,sha256=YORG8gWPwKyV-qNdzEeht3faWfgGzs3wEYXaCr9bbWA,10091
+japverbconj/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japverbconj/constants/enumerated_types.py,sha256=Az8l2ueAzqvcezs3QiMzBqlJeWZhcI1z6Z6t_86ATzk,278
+japverbconj/constants/particle_constants.py,sha256=iIrYT34QGQtBWk5VFFVkikiKJ1f28wFpUG1psxXpCbg,1356
+japverbconj/constants/verb_ending_constants.py,sha256=uaaxfConu0Y5hIpGyoYhQVl8hTYH0Ls6kRkVbFBlv4k,2830
+japanese_verb_conjugator_v2-0.0.1.dist-info/LICENSE,sha256=huWxLwmJ1gFOaCaJ6JWrm-6HtaGPiVa0b7CgCQ2Rqq4,1709
+japanese_verb_conjugator_v2-0.0.1.dist-info/METADATA,sha256=6i57iKCBI6zWx4dZnRIB6bVnkwxpbKZ0h4BnFjpLebI,5139
+japanese_verb_conjugator_v2-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+japanese_verb_conjugator_v2-0.0.1.dist-info/top_level.txt,sha256=S1lyXNuJvWRA05TH7-FJ_NA3lf-ubInGlo1l614Mp2M,12
+japanese_verb_conjugator_v2-0.0.1.dist-info/RECORD,,
