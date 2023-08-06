@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "dlq-redeem"
+version = "0.0.1"
+description = "AWS SQS dead letter queue (DLQ) message inspection and cleanup automation tool"
+authors = ["Epsy <engineering@epsyhealth.com>"]
+license = "MIT"
+keywords = ["library", "aws"]
+readme = "README.md"
+include = ["README.md"]
+homepage = "https://github.com/epsylabs/dlq-redeem"
+repository = "https://github.com/epsylabs/dlq-redeem"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.1.3"
+click-log = "^0.4.0"
+boto3 = "^1.23"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+bump2version = "^1.0.1"
+
+[tool.poetry.scripts]
+redeem = "dlq_redeem.cli:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
