@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ffmpeg_smart_trim/__init__.py
+src/ffmpeg_smart_trim/trim.py
+src/ffmpeg_smart_trim.egg-info/PKG-INFO
+src/ffmpeg_smart_trim.egg-info/SOURCES.txt
+src/ffmpeg_smart_trim.egg-info/dependency_links.txt
+src/ffmpeg_smart_trim.egg-info/requires.txt
+src/ffmpeg_smart_trim.egg-info/top_level.txt
