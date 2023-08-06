@@ -1,0 +1,11 @@
+aiolinkding/__init__.py,sha256=i1xgdA-djiUJrYRRPO4FUOuAEtWwcWdzVzMvLgqvfBw,73
+aiolinkding/bookmark.py,sha256=lFCGPL780eUFoxPexRI2DHPxzGe7d3Xh_-eQYFH2oU4,4359
+aiolinkding/client.py,sha256=uXg9DqBkRbO03MusonEwWhoH-Be6gIN06x1ydNt_iP0,2223
+aiolinkding/const.py,sha256=9SVwtsu3UAaxyJxcKtIN2GGXsQdgXaSLZdOQMreVk3A,88
+aiolinkding/errors.py,sha256=3XyxLbOKObsaRBSkTVnIapGY8DJrmzMTT7DPZXNVP0s,318
+aiolinkding/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiolinkding/tag.py,sha256=Wl2Dz2Docy-OsL25DnWNYlYnHnTlLV_9AV8kVbN6toY,1348
+aiolinkding-2022.5.1.dist-info/LICENSE,sha256=GJ01d7aBgivx-5WmtiJPHRowcDvIxcxs4skapKPTFg0,1067
+aiolinkding-2022.5.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+aiolinkding-2022.5.1.dist-info/METADATA,sha256=rQVN6_r-JL7pWWWulJ4p2l_Uc2ncA6bFluycku5zQnw,10988
+aiolinkding-2022.5.1.dist-info/RECORD,,
