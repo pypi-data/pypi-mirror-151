@@ -1,0 +1,12 @@
+esi_oephys2nwb-2022.5rc0.data/data/oephys2nwb/CHANGELOG.md,sha256=RR5EjBWz8LTXrghLGXk9oUsQi9gI2yjnX1ihaOvKCYg,419
+esi_oephys2nwb-2022.5rc0.data/data/oephys2nwb/CITATION.cff,sha256=JJiKq0qLzdaw0lLjN9T0MMbC_6aV_sTVTjaSQKNdv6I,847
+esi_oephys2nwb-2022.5rc0.data/data/oephys2nwb/LICENSE,sha256=uhmgzQiyqFv7kxFm1HcmGc04fW5broPz3YSuBYiLy_4,1597
+esi_oephys2nwb-2022.5rc0.data/data/oephys2nwb/README.md,sha256=vjZqcTHMGitfd8LbFAOLktp3YsvlqNXxGcjjsp7q3m0,3028
+oephys2nwb/__init__.py,sha256=q4WNb5stIc61SquR6JIGRHDVKGcw4c8Kr0mavuHo55I,1417
+oephys2nwb/__main__.py,sha256=lP-oxh1bK_l-UG4t-HSUY3JbFTFyXpmjj2leJA12lRg,282
+oephys2nwb/export2nwb.py,sha256=dcmLJvQAiGt7JW472O-V4LzgcYiAwMdKK-RqeWFy-8w,41909
+esi_oephys2nwb-2022.5rc0.dist-info/LICENSE,sha256=uhmgzQiyqFv7kxFm1HcmGc04fW5broPz3YSuBYiLy_4,1597
+esi_oephys2nwb-2022.5rc0.dist-info/METADATA,sha256=8CJnezTF4ZCr0dX5M4vK9GW2S4fYFmEjFqCHL8APENc,4453
+esi_oephys2nwb-2022.5rc0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+esi_oephys2nwb-2022.5rc0.dist-info/top_level.txt,sha256=3MkVUF--Qsfvyc6Gb-O6nibUDcsF7mFKvN0t593WQn8,11
+esi_oephys2nwb-2022.5rc0.dist-info/RECORD,,
