@@ -1,0 +1,17 @@
+handcalcs/__init__.py,sha256=AA14J6S77b2-O_gsOtkDdpxdZxqzlDZx86lVGqrh-Ac,791
+handcalcs/conversion_funcs.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handcalcs/decorator.py,sha256=oVDTatJtCaXLFJ0t28Oe3bWZKrb1kaBQTbzyr9ad89c,2695
+handcalcs/exporters.py,sha256=VONthCJ1_3hdI8TidPdf1xaTn71DDgHvxcXEEfOmIRg,815
+handcalcs/handcalcs.py,sha256=YyL1tyCHYyJrUmitO0xSCmeqFjFVfiu2hJqXEk3329w,97997
+handcalcs/render.py,sha256=C3NmvZQp1y8lpulavz8Jd0mM1UBTpnB2aNPwJmsJ7ws,4758
+handcalcs/sympy_kit.py,sha256=lGx5rsA39ZtXYu2IPLg9TCEkN7OakvUaj3kdsQK6HdI,4932
+handcalcs/handcalcs_html/__init__.py,sha256=LgDhwmAqSVszRnVdk0RrxufBNdJwSD-wFIuTDC8sg3Q,1310
+handcalcs/handcalcs_html/classic/base.html.j2,sha256=ZUGD1RmkDiG9_Vhnn6ZNO4moVP7TO-oPeGwMOUitInA,7108
+handcalcs/handcalcs_html/classic/conf.json,sha256=uOYRliZC2FM_znlAIvxel2PvrqZU-Q0H8LTr359BVMk,283
+handcalcs/handcalcs_html/classic/index.html.j2,sha256=5FWo_nJP6koytwUvvbbni2aeGDeI5T7n8V-2HygUaZA,2226
+handcalcs/handcalcs_html/classic/static/style.css,sha256=WGWmCfRDewRkvBIc1We2GQdOVAoFFaO4LyIvdk61HgE,265101
+handcalcs-1.5.0.dist-info/entry_points.txt,sha256=wLw2-f4tj9ZxRCE4soYDtNjsIq_JmdPDrI9jJS2M3I4,188
+handcalcs-1.5.0.dist-info/LICENSE,sha256=oVhyh_8EReFWsO4FRdRCD8zD4IA6eXGeSPI6YzTjtaI,11525
+handcalcs-1.5.0.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+handcalcs-1.5.0.dist-info/METADATA,sha256=rxg742Eo88YCYXBeMQ3grupqQx9-G3ggo49Xanb8220,24165
+handcalcs-1.5.0.dist-info/RECORD,,
