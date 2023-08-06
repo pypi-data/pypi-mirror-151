@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ucalcs"
+version = "0.1.2"
+description = "This is a library of simple math operations."
+license = "MIT"
+readme = "README.md"
+
+keywords = ["packaging", "dependency", "ucalcs"]
+authors = ["onezer00 <caimbe2@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+pytest-sugar = "^0.9.4"
+
+[tool.poetry.scripts]
+ucalcs = "ucalcs.basics:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
