@@ -1,0 +1,12 @@
+LICENSE,sha256=BxIiS-5DMp8eutVcV-MbO7qngxlprAS8jFBQl0ZMi1c,1074
+clichessdrill/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+clichessdrill/game.py,sha256=0tANfIf_nUuCTPZNtis-eawuEP11q0enDet9QHt3VJA,2223
+clichessdrill/main.py,sha256=73wchMIiIsipaxrRdVaOUWGYgU2_ROdBeKOUQRySlnE,1261
+clichessdrill/pieces.py,sha256=XM9u0wxOo-6DRIlJYaGrNk8hxtLvOWIu3K34nhvkd6Q,111
+clichessdrill/state.py,sha256=9sEdAEWG5flPKe1G-TTPR-cBoJ4iRsgwY4tti3a9DPI,1037
+gameplans/daniel-01.json,sha256=RzljgPjUmbdk0SITEfSCrjj0C6-memtNM_TqM_BqYFE,4206
+clichessdrill-0.1.14.dist-info/entry_points.txt,sha256=jOCXTtHfmQ-GvQYxTOyjCnStSC6dOiz6KMGK0H8BYrA,57
+clichessdrill-0.1.14.dist-info/LICENSE,sha256=BxIiS-5DMp8eutVcV-MbO7qngxlprAS8jFBQl0ZMi1c,1074
+clichessdrill-0.1.14.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+clichessdrill-0.1.14.dist-info/METADATA,sha256=7dzypWuEI8H2lPyIDPB9-MYde1YOsceJ44NRQ_VxUnE,2481
+clichessdrill-0.1.14.dist-info/RECORD,,
