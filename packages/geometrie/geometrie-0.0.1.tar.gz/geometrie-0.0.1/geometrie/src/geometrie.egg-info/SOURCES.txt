@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+geometrie/src/geometrie.egg-info/PKG-INFO
+geometrie/src/geometrie.egg-info/SOURCES.txt
+geometrie/src/geometrie.egg-info/dependency_links.txt
+geometrie/src/geometrie.egg-info/top_level.txt
+geometrie/src/geometrie.py
+geometrie/src/geometrie.egg-info/PKG-INFO
+geometrie/src/geometrie.egg-info/SOURCES.txt
+geometrie/src/geometrie.egg-info/dependency_links.txt
+geometrie/src/geometrie.egg-info/top_level.txt
