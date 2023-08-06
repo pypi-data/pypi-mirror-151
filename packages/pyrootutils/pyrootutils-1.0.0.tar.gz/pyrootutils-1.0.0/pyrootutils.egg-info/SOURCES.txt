@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyrootutils/__init__.py
+pyrootutils/pyrootutils.py
+pyrootutils.egg-info/PKG-INFO
+pyrootutils.egg-info/SOURCES.txt
+pyrootutils.egg-info/dependency_links.txt
+pyrootutils.egg-info/requires.txt
+pyrootutils.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_pyrootutils.py
