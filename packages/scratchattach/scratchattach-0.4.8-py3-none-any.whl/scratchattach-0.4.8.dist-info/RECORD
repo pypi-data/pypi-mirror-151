@@ -1,0 +1,12 @@
+scratchattach/__init__.py,sha256=ZaymJ7i5TUZSmoh1dx-R-DSUBjTZv0VAcPLR1kdAh7s,122
+scratchattach/_cloud.py,sha256=b-Fk3PSWa77LgC8odgJ1l4lDLIxQvsBjBdvCB_7LDuc,8300
+scratchattach/_cloud_requests.py,sha256=AJ3lA3cBRsP7QCWTmbV1A8yvFG13OK6eFACu7jKbCtc,6376
+scratchattach/_encoder.py,sha256=vVT2ZR3-UrUtp-VF-yqCDxNEhL2nfMz7hygD6AkVTNw,1674
+scratchattach/_exceptions.py,sha256=34NJdl7aueihWK3FJ8SWXWApr2kN466VOThOrBKBhJ4,551
+scratchattach/_project.py,sha256=aftRow5BM0oINr4S5yqWRaekbTWtDOr03FrbB2KN8UY,16124
+scratchattach/_session.py,sha256=iNY_n-EWhWe7vG1aJtYxFtLzECPukpzyZ-D_If-Mf5c,11793
+scratchattach/_user.py,sha256=bJPmWcKRXzXb71IWC0YkFwPWYsGy-sjPoSlq70vet2A,15224
+scratchattach-0.4.8.dist-info/METADATA,sha256=kfD-Z-l_uvfvIiXeXIjv8uld06CcwvAoEIRZD1xhaUg,15884
+scratchattach-0.4.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scratchattach-0.4.8.dist-info/top_level.txt,sha256=gIwCwW39ohXn0JlnvSzAjV7VtL3qPlRnHiRqBbxsEUE,14
+scratchattach-0.4.8.dist-info/RECORD,,
