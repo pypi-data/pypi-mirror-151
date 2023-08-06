@@ -1,0 +1,8 @@
+README
+setup.py
+src/gxf.egg-info/PKG-INFO
+src/gxf.egg-info/SOURCES.txt
+src/gxf.egg-info/dependency_links.txt
+src/gxf.egg-info/requires.txt
+src/gxf.egg-info/top_level.txt
+test/test.py
