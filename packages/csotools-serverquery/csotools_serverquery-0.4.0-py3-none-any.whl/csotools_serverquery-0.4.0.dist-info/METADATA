@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: csotools-serverquery
+Version: 0.4.0
+Summary: Query GoldSource and CSO servers for server info, players and more
+License: MIT
+Author: AnggaraNothing
+Author-email: anggarayamap@protonmail.com
+Requires-Python: >=3.7
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Games/Entertainment
