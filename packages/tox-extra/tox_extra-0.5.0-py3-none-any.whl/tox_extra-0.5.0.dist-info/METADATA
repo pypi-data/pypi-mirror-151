@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: tox-extra
+Version: 0.5.0
+Summary: Performs extra checks before or after running
+Home-page: https://github.com/tox-dev/tox-extra
+Author: Sorin Sbarnea
+Author-email: sorin.sbarnea@gmail.com
+Maintainer: Sorin Sbarnea
+Maintainer-email: sorin.sbarnea@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/tox-dev/tox-extra/issues
+Project-URL: Release Management, https://github.com/tox-dev/tox-extra/releases
+Project-URL: CI, https://github.com/tox-dev/tox-extra/actions
+Project-URL: Source Code, https://github.com/tox-dev/tox-extra
+Keywords: git,tox,tox-plugin
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: tox
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gitpython
+Requires-Dist: tox (>=3.18)
+Requires-Dist: packaging
+
+# tox-extra
+
+This [tox plugin](https://github.com/topics/tox-plugin) adds few extra checks
+like:
+
+- ensure exit code 1 if git reports dirty or untracked files _after_ the run
+
+Usage example:
+
+```
+$ tox -e py
+...
+ERROR: Git reported dirty status. Git should never report dirty status at the end of testing, regardless if status is passed, failed or aborted.
+On branch devel
+Your branch is up to date with 'origin/devel'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	some-untracked.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+__________________________________________ summary ___________________________________________
+ERROR:   py: failed
+```
+
+The goal of this plugin is to help developers be aware about files modified by tests
+or untracked files before they commit the code. This plugin also does not take into
+consideration the global `.gitignore`, something that can make git miss reporting
+some untracked files, the goal being to assure that when a new developer clones and
+runs the tests they do not endup with an unexpected git status.
+
+If you have any cases where you expect to have git report dirty, please
+add `--allow-dirty` to the command call to disable this check.
