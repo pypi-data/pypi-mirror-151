@@ -1,0 +1,17 @@
+ArchR_h5ad/__init__.py,sha256=OlyCdUp6JKVr2PQf8lXqnjGhCMsRkbGOxITThvKJAfI,131
+ArchR_h5ad/_compose_adata/_add_obs_var.py,sha256=TiQfXiL-cW1irvWQPePASUgcDMmjB9EP-D7v61oL5GU,1205
+ArchR_h5ad/_compose_adata/_cleanup_anndata.py,sha256=CDujMHW0eDcsRkcx147X_0pTitVwd6-djf6PzzWobuM,646
+ArchR_h5ad/_compose_adata/_compose_anndata.py,sha256=zDNW7Rh8ZXCiuNVf866fS34fR63fl4owEaL38rTpEhI,895
+ArchR_h5ad/_compose_adata/_dict_to_adata.py,sha256=19BjGqAATuZXTBluB2W21QZkOabkpL0OSzWODLAUn-w,647
+ArchR_h5ad/_compose_adata/_write_h5ad.py,sha256=dwT-4F3VcKqAO2z5uLLaKMfY8Qu6RFt1l1iMewi4sGw,681
+ArchR_h5ad/_main/_Arrow.py,sha256=2ycNfX2dDW4tyyEfm1k9IkQZHa7hlm-SsRlQnLOdO_U,2045
+ArchR_h5ad/_main/_read_arrow_to_adata.py,sha256=IHTovyiMAd6hGsCbmPKq2mn_uFLOVYVU2L3nOwYMtIg,1476
+ArchR_h5ad/_parse_arrow/_add_ArchR_metadata.py,sha256=30llaI6HKqhE323Zoa_4QgKaVgaJWC7JFiasyyigIMs,327
+ArchR_h5ad/_parse_arrow/_add_matrix_parameters.py,sha256=oIyNzcAT3-Hu8AYyl-hYjZGTjFJpTPQGCzV5I8eX5II,750
+ArchR_h5ad/_parse_arrow/_read_arrow_chromosome.py,sha256=GySiaL6I4dTo-Uh2XtpGugBcuAtO5fQqg2co5k-p-AM,3233
+ArchR_h5ad/_utility_functions/_ordered_chromosomes.py,sha256=Cftu6ZX3FR_Ab5wjAWaBMrAQxjHxUQe18ZXavZ_szTA,305
+ArchR_h5ad-0.0.11.dist-info/LICENSE,sha256=jXNk8OCt5ZKcsUH97c3CKMzPjoa6z2j2Adwg0Wxbw9A,1072
+ArchR_h5ad-0.0.11.dist-info/METADATA,sha256=4dWP8LGylL1SbqjpLymfNWOz4361wN2ZzBoMMrlb7B8,2761
+ArchR_h5ad-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ArchR_h5ad-0.0.11.dist-info/top_level.txt,sha256=4WnGigF3HmZK95lrXHhsSwMbMAG1JVwMZu0v6LkHGsc,11
+ArchR_h5ad-0.0.11.dist-info/RECORD,,
