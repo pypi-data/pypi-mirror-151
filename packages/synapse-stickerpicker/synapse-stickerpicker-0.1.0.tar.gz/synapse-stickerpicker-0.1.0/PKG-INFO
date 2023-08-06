@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: synapse-stickerpicker
+Version: 0.1.0
+Summary: Pluggable module for Matrix (matrix.org) Synapse server that automatically enables sticker picker for Element IM on self-hosted instances.
+Home-page: http://github.com/mizhgun/synapse-stickerpicker
+Author: MiZHGUN
+Author-email: mizhgun@gmail.com
+License: MIT
+Keywords: matrix,synapse,element-im
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Matrix Synapse StickerPicker
+============================
+
+Pluggable module for Matrix (matrix.org) Synapse server that automatically enables sticker picker for
+Element IM on self-hosted instances.
+
+Installation
+------------
+
+::
+
+    pip install synapse-stickerpicker
+
+Usage
+-----
+
+Add external module settings to server's config (normally ``homeserver.yaml``):
+
+.. code-block:: yaml
+
+    modules:
+      - module: synapse_stickerpicker.AppendStickerPickerData
+        config:
+          stickerpicker_url: '<stickerpicker_app_url>'
+
+
+After server restart every time when new user is registered, its account data is automatically updated
+with appropriate event to enable sticker picker in Element IM apps.
+
+
+To get started one could try `Maunium sticker picker <https://github.com/maunium/stickerpicker>`__
+or its external server's URL ``https://maunium.net/stickers-demo/?theme=$theme`` (**WARNING**:
+Element IM stickerpicker widget passes instance URL as a parameter and thus disclosures it).
+
+

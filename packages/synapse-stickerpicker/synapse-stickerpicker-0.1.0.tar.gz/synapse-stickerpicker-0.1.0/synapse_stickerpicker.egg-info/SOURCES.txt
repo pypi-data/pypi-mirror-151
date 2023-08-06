@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+synapse_stickerpicker/__init__.py
+synapse_stickerpicker.egg-info/PKG-INFO
+synapse_stickerpicker.egg-info/SOURCES.txt
+synapse_stickerpicker.egg-info/dependency_links.txt
+synapse_stickerpicker.egg-info/top_level.txt
