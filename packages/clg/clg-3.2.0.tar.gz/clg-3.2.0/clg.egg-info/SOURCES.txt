@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+clg/__init__.py
+clg/__init__.pyi
+clg/py.typed
+clg.egg-info/PKG-INFO
+clg.egg-info/SOURCES.txt
+clg.egg-info/dependency_links.txt
+clg.egg-info/top_level.txt
