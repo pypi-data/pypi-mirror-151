@@ -1,0 +1,12 @@
+pie_manager/__init__.py,sha256=SuVdCvrOFZO4t3I6Q6e1LUCxOvruCuIB-a69tR37cRM,71
+pie_manager/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pie_manager/cli.py,sha256=C1giOoIdOvUFZr2Cx3gCjCqXXkUIxTJNTkoZ7AtJATI,1813
+pie_manager/click_fix.py,sha256=pyW6_yE9wXXiZ7L8tIiZlflkW1KWOEHNM6S2OrTosIU,1253
+pie_manager/fileio.py,sha256=27AAD_gbrD9JlHJS7WmD4ybiOH9JAZQphED7iAuuYjs,9808
+pie_manager/sysreqs.py,sha256=nqtNY8GJ0LCpNROWvY_2gHp28e6PddAgb8VlIOLrS7g,963
+pie_manager-1.0.6.2.dist-info/LICENSE,sha256=S21-pzh7-E5GNslxzyEcDnrphvsFpmzRPOKvT3wY3Mk,1093
+pie_manager-1.0.6.2.dist-info/METADATA,sha256=LWfnoO4H5oOuuBUOUjIc2Y7LzriJg17QTmozJ_wbK-Y,2860
+pie_manager-1.0.6.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pie_manager-1.0.6.2.dist-info/entry_points.txt,sha256=pn426-J_n839t9YbLukHTXxGgiJFVlh61chmALJucwI,60
+pie_manager-1.0.6.2.dist-info/top_level.txt,sha256=P0dEPrxt1nk0ZKeYEvx7eTFby99ycsdJdWVaMznzfkI,12
+pie_manager-1.0.6.2.dist-info/RECORD,,
