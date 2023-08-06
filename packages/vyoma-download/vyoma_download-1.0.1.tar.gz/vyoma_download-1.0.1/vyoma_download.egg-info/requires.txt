@@ -1,0 +1,4 @@
+requests
+requests-downloader
+beautifulsoup4
+tabulate
