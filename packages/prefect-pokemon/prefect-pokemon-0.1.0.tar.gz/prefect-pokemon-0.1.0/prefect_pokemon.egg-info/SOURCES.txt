@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+prefect_pokemon/__init__.py
+prefect_pokemon/_version.py
+prefect_pokemon/credentials.py
+prefect_pokemon/pokemon.py
+prefect_pokemon.egg-info/PKG-INFO
+prefect_pokemon.egg-info/SOURCES.txt
+prefect_pokemon.egg-info/dependency_links.txt
+prefect_pokemon.egg-info/requires.txt
+prefect_pokemon.egg-info/top_level.txt
