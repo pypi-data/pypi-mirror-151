@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: checkgstnum
+Version: 0.0.1
+Summary: to validate gst num
+Home-page: 
+Author: bhavdip
+Author-email: bvmbvm48@gmail.com
+License: MIT
+Keywords: gstvalidatation checking
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE
+
+this library helps you to check gst num
