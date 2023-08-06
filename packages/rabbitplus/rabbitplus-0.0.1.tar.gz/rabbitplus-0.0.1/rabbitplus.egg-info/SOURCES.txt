@@ -1,0 +1,9 @@
+README.md
+rabbitplus.py
+setup.py
+rabbitplus.egg-info/PKG-INFO
+rabbitplus.egg-info/SOURCES.txt
+rabbitplus.egg-info/dependency_links.txt
+rabbitplus.egg-info/entry_points.txt
+rabbitplus.egg-info/requires.txt
+rabbitplus.egg-info/top_level.txt
