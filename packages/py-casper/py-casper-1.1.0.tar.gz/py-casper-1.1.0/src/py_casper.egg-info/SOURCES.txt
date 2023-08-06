@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/casper/__init__.py
+src/casper/casper.py
+src/py_casper.egg-info/PKG-INFO
+src/py_casper.egg-info/SOURCES.txt
+src/py_casper.egg-info/dependency_links.txt
+src/py_casper.egg-info/requires.txt
+src/py_casper.egg-info/top_level.txt
