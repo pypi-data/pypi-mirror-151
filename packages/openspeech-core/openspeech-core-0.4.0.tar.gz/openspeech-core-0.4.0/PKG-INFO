@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: openspeech-core
+Version: 0.4.0
+Summary: Open-Source Toolkit for End-to-End Automatic Speech Recognition
+Home-page: https://github.com/openspeech-team/openspeech
+Author: Kim, Soohwan and Ha, Sangchun and Cho, Soyoung
+Author-email: sh951011@gmail.com, seomk9896@gmail.com, soyoung.cho@kaist.ac.kr
+License: UNKNOWN
+Download-URL: https://github.com/openspeech-team/openspeech/releases/tag/v0.4.zip
+Keywords: openspeech,asr,speech_recognition,pytorch-lightning,hydra
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: LICENSE.3rd_party_library
+
+UNKNOWN
+
