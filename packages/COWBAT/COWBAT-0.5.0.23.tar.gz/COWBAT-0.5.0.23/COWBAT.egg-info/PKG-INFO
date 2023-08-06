@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: COWBAT
+Version: 0.5.0.23
+Summary: CFIA OLC Workflow for Bacterial Assembly and Typing
+Home-page: https://github.com/OLC-Bioinformatics/COWBAT
+Author: Adam Koziol
+Author-email: adam.koziol@inspection.gc.ca
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+![alt text](cowbat.png "Cowbat")
+
+### CFIA OLC Workflow for Bacterial Assembly and Typing
+
+#### [Read the Docs](http://olc-bioinformatics.github.io/COWBAT/)
+
+[![Build Status](https://travis-ci.org/OLC-Bioinformatics/COWBAT.svg?branch=master)](https://travis-ci.org/OLC-Bioinformatics/COWBAT)
+
+
