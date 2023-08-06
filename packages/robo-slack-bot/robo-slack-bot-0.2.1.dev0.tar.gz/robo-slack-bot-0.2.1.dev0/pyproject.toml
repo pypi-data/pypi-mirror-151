@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "robo-slack-bot"
+version = "0.2.1-dev"
+description = "It is a slackbot"
+authors = ["John Stilia <stilia.johny@gmail.com>"]
+license = "GPL-3"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+validators = "^0.19.0"
+elasticsearch = "^8.2.0"
+recipe-scrapers = "^13.32.1"
+slackeventsapi = "^3.0.1"
+slack = "^0.0.2"
+slackclient = "^2.9.4"
+Flask-Cors = "^3.0.10"
+slack-cleaner2 = "^3.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+recipe-scraper = "robo_slack_bot.recipe_scraper:main"
+eve-bot = "robo_slack_bot.eve_bot:main"
+slack-channel-cleaner = "robo_slack_bot.slack_cleaner:main"
