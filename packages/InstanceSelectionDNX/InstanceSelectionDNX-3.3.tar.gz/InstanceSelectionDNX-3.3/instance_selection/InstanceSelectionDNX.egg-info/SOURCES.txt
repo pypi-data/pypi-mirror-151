@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+instance_selection/InstanceSelectionDNX.egg-info/PKG-INFO
+instance_selection/InstanceSelectionDNX.egg-info/SOURCES.txt
+instance_selection/InstanceSelectionDNX.egg-info/dependency_links.txt
+instance_selection/InstanceSelectionDNX.egg-info/top_level.txt
+instance_selection/utils/__init__.py
+instance_selection/utils/_transformer.py
