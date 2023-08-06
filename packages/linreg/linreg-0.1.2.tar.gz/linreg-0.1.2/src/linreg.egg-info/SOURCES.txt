@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/linreg/__init__.py
+src/linreg/linreg.py
+src/linreg.egg-info/PKG-INFO
+src/linreg.egg-info/SOURCES.txt
+src/linreg.egg-info/dependency_links.txt
+src/linreg.egg-info/requires.txt
+src/linreg.egg-info/top_level.txt
+test/test_linreg.py
