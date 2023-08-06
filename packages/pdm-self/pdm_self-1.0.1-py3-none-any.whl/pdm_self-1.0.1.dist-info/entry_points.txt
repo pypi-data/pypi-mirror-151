@@ -1,0 +1,3 @@
+[pdm]
+pdm-self=pdm_self:main
+
