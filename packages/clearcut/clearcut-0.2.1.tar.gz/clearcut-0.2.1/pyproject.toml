@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "clearcut"
+version = "0.2.1"
+description = "A straightforward and lightweight logging and tracing library"
+authors = ["Austin Howard <austin@tangibleintelligence.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/tangibleintelligence/clearcut"
+repository = "https://github.com/tangibleintelligence/clearcut"
+keywords = [
+    "logging",
+    "tracing",
+    "opentelemetry"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+opentelemetry-api = "^1.11.1"
+opentelemetry-sdk = "^1.11.1"
+opentelemetry-exporter-otlp-proto-http = "^1.11.1"
+opentelemetry-instrumentation-logging = "^0.30b1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
