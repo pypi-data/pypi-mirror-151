@@ -1,0 +1,6 @@
+include COPYING
+include README.rst
+include CONTRIBUTING.md
+include pyproject.toml
+graft scripts
+graft tests
