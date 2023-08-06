@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fs-icloud
+Version: 1.0.1
+Summary: An icloud filesystem for pyfilesystem2 !
+Author: Diego Navarro Mellen
+Author-email: dnmellen@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
