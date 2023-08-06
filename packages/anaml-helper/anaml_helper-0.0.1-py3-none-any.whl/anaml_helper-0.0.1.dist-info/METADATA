@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: anaml-helper
+Version: 0.0.1
+Summary: A helper library for working with features and featuresets programmatically leveraging the existing anaml_client SDK.
+Home-page: UNKNOWN
+Author: chris
+Author-email: christopher.pearce@bt.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: wheel (==0.37.1)
+Requires-Dist: anaml-client (==0.17.0)
+Requires-Dist: dataclasses (==0.6)
+Requires-Dist: uuid (==1.30)
+
+UNKNOWN
+
+
