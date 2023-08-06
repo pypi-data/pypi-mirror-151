@@ -1,0 +1,10 @@
+[console_scripts]
+docums = docums.__main__:cli
+
+[docums.plugins]
+search = docums.contrib.search:SearchPlugin
+
+[docums.themes]
+docums = docums.themes.docums
+readthedocs = docums.themes.readthedocs
+

@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: docums
+Version: 1.2.4
+Summary: Open source documentation website
+Home-page: https://khanhduy1407.github.io/docums
+Author: NKDuy
+Author-email: kn145660@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: i18n
+License-File: LICENSE
+
+# Docums
+
+Open source documentation website
+
+---
+
+[![PyPI Version][pypi-v-image]][pypi-v-link]
+
+---
+
+## Code of Conduct
+
+Everyone interacting in the Docums project's codebases, issue trackers, chat
+rooms, and mailing lists is expected to follow the [PyPA Code of Conduct].
+
+[pypi-v-image]: https://img.shields.io/pypi/v/docums.svg
+[pypi-v-link]: https://pypi.org/project/docums/
+
+[PyPA Code of Conduct]: https://www.pypa.io/en/latest/code-of-conduct/
+
+
