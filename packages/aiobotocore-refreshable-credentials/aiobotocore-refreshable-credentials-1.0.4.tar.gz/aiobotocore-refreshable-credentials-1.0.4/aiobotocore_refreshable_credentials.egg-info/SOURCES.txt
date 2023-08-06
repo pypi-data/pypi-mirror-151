@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+aiobotocore_refreshable_credentials/__init__.py
+aiobotocore_refreshable_credentials/session.py
+aiobotocore_refreshable_credentials.egg-info/PKG-INFO
+aiobotocore_refreshable_credentials.egg-info/SOURCES.txt
+aiobotocore_refreshable_credentials.egg-info/dependency_links.txt
+aiobotocore_refreshable_credentials.egg-info/requires.txt
+aiobotocore_refreshable_credentials.egg-info/top_level.txt
+aiobotocore_refreshable_credentials.egg-info/zip-safe

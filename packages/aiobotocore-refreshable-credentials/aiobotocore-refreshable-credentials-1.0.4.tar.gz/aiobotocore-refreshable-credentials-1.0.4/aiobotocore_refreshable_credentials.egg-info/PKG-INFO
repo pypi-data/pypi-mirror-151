@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: aiobotocore-refreshable-credentials
+Version: 1.0.4
+Summary: Implements an aiobotocore.Session subclass for using aiobotocore with expiring credentials (IAM STS)
+Home-page: https://github.com/aweber/aiobotocore-refreshable-credentials/
+Author: Gavin M. Roy
+Author-email: gavinmroy@gmail.com
+License: BSD 3-Clause License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
+License-File: LICENSE
+
+aiobotocore-refreshable-credentials
+===================================
+Implements an aiobotocore.Session subclass for using aiobotocore with expiring
+credentials (IAM STS).
+
+|Version| |Status| |Coverage| |License|
+
+Usage
+=====
+
+.. code:: python
+
+    import aiobotocore_refreshable_credentials
+
+    session = aiobotocore_refreshable_credentials.get_session()
+    async with session.create_client('rekognition') as client:
+        ...
+
+
+Python Versions Supported
+-------------------------
+3.8+
+
+.. |Version| image:: https://img.shields.io/pypi/v/aiobotocore-refreshable-credentials.svg?
+   :target: https://pypi.python.org/pypi/aiobotocore-refreshable-credentials
+
+.. |Status| image:: https://github.com/aweber/aiobotocore-refreshable-credentials/workflows/Testing/badge.svg?
+   :target: https://github.com/aweber/aiobotocore-refreshable-credentials/actions?workflow=Testing
+   :alt: Build Status
+
+.. |Coverage| image:: https://img.shields.io/codecov/c/github/aweber/aiobotocore-refreshable-credentials.svg?
+   :target: https://codecov.io/github/aweber/aiobotocore-refreshable-credentials?branch=master
+
+.. |License| image:: https://img.shields.io/pypi/l/aiobotocore-refreshable-credentials.svg?
+
+
