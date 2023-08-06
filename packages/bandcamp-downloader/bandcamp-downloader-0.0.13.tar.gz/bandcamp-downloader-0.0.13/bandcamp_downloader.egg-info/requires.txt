@@ -1,0 +1,13 @@
+beautifulsoup4
+lxml
+demjson3
+docopt
+mutagen
+requests
+unicode-slugify
+mock
+chardet
+
+[dev]
+requests-cache
+pytest
