@@ -1,0 +1,2 @@
+[console_scripts]
+viasp = viasp.__main__:start
