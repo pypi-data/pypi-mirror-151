@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: magniv
+Version: 0.1.25
+Summary: Magniv Core Library
+Home-page: https://www.magniv.io
+Author-email: hello@magniv.io
+License: UNKNOWN
+Project-URL: Documentation, https://docs.magniv.io
+Description: ## Magniv Library
+        
+        
+        To read more about this project take a look at [our documentation](https://docs.magniv.io)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
