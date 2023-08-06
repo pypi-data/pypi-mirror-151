@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ruitools
+Version: 0.0.4
+Summary: rui 's py tools
+Home-page: https://github.com
+Author: rui
+Author-email: 1513768@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
