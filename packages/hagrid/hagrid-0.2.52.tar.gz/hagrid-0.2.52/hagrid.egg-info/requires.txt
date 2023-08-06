@@ -1,0 +1,11 @@
+ascii_magic
+click
+gitpython
+names
+requests
+rich
+setuptools
+cryptography>=37.0.2
+pyOpenSSL>=22.0.0
+ansible
+ansible-core
