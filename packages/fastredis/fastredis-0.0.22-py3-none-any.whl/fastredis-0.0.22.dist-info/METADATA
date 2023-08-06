@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fastredis
+Version: 0.0.22
+Summary: make it easy to use redis
+Home-page: https://gitee.com/ZeroSeeker/fastredis
+Author: ZeroSeeker
+Author-email: zeroseeker@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: envx (==0.0.5)
+Requires-Dist: redis (==4.1.0)
+Requires-Dist: showlog (==0.0.6)
+
+UNKNOWN
+

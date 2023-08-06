@@ -1,0 +1,7 @@
+fastredis/__init__.py,sha256=xwpsSemMOhwOwEiQRA9Mytc5ofFNB0KeaHlyIxwf0vA,208
+fastredis/basic.py,sha256=W1lTt-LVgNYUV9dHBTeQaJk8eU1kwjijKyb4dK2ZD6Y,21184
+fastredis/fastredis.py,sha256=jHwIrQDj1s8XR9r2WkyfrBOT2lBCgrKu54b6TPJ8iwg,11413
+fastredis-0.0.22.dist-info/METADATA,sha256=5Hb-q4uzwLMdCwerCd3DQeAPladmBHSHZ_lPaLq9B8o,520
+fastredis-0.0.22.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastredis-0.0.22.dist-info/top_level.txt,sha256=HNi8D_MV_9h6TlTLzhVj5Kwa0exvHTHtDJBypV66jCg,10
+fastredis-0.0.22.dist-info/RECORD,,
