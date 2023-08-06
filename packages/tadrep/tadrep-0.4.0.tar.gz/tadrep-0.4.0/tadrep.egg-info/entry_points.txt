@@ -1,0 +1,4 @@
+[console_scripts]
+tadrep = tadrep.main:main
+tadrep_db = database.main:main
+
