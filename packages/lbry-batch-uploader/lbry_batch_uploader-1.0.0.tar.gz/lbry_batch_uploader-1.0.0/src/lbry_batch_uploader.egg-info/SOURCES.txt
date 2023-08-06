@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/lbry_batch_uploader/__init__.py
+src/lbry_batch_uploader/__main__.py
+src/lbry_batch_uploader/parser.py
+src/lbry_batch_uploader/py.typed
+src/lbry_batch_uploader/uploader.py
+src/lbry_batch_uploader/utils.py
+src/lbry_batch_uploader.egg-info/PKG-INFO
+src/lbry_batch_uploader.egg-info/SOURCES.txt
+src/lbry_batch_uploader.egg-info/dependency_links.txt
+src/lbry_batch_uploader.egg-info/not-zip-safe
+src/lbry_batch_uploader.egg-info/requires.txt
+src/lbry_batch_uploader.egg-info/top_level.txt
