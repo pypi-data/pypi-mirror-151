@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: feast-mysql
+Version: 0.3.1
+Summary: MySQL registry and offline store for Feast
+Home-page: https://github.com/shaped-ai/feast-mysql
+Author: Shaped
+Author-email: shai@shaped.ai
+License: Apache License, Version 2.0
+Project-URL: Bug Tracker, https://github.com/shaped-ai/feast-mysql/issues
+Keywords: feast featurestore mysql offlinestore
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# Feast MySQL Support
+
+This repo adds MySQL offline stores to [Feast](https://github.com/feast-dev/feast)
+
+## Get started
+
+### Install feast:
+
+```shell
+pip install feast
+```
+
+### Install feast-mysql:
+
+```shell
+pip install feast-mysql
+```
+
+
