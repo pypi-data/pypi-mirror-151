@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: remote-import
+Version: 0.2
+Summary: Enable the Python import subsystem to load libraries from remote (e.g. HTTP, S3, SSH).
+Home-page: https://github.com/kiranmantri/python-remote-import
+Author: Kiran Mantripragada (and Lydia.ai team)
+Author-email: kiran.mantri@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: fsspec
+
+Enable the Python import subsystem to load libraries from remote (e.g. HTTP, S3,
+SSH).
+
+
+
