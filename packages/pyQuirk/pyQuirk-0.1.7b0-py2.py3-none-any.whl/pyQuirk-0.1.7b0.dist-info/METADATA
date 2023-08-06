@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyQuirk
+Version: 0.1.7b0
+Summary: A Python widget for Quirk
+Home-page: https://github.com/adgt/pyQuirk
+Author: Aditya Giridharan
+Author-email: aditya.giridharan@gmail.com
+Keywords: ipython,jupyter,widgets
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: ipywidgets (>=7.6.0)
+
+A Python widget for Quirk to be used in Jupyter notebooks, JupyterLab, and the IPython kernel.
