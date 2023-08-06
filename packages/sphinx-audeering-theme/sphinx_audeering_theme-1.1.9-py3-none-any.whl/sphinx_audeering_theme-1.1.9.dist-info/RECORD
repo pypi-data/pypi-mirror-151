@@ -1,0 +1,16 @@
+sphinx_audeering_theme/__init__.py,sha256=zbgwf7vDK5IXzf7cqPOFwvC3zyoWHGaiSomq8edJWeE,2931
+sphinx_audeering_theme/breadcrumbs.html,sha256=H6uhum7W5576T8HDrFOvIBX74UttRw08qjN2yvNdvsQ,3761
+sphinx_audeering_theme/footer.html,sha256=SEpv11zemrtz-paCbrcSteSesgxIrPy7c8iaz6tzT9U,2408
+sphinx_audeering_theme/layout.html,sha256=a--EvV7FZfGD_a8nOXyPTUu7N053DqI9g7JfbB2dPgc,8799
+sphinx_audeering_theme/search.html,sha256=xfDxlRJpOZpt4zbl1n3uf3uNpAJBmzFDe4Woymkb8E0,1782
+sphinx_audeering_theme/theme.conf,sha256=aVSkB7Rhiw4aEhVAhnIJS-zlL84hfml8x79ALnHxSBU,136
+sphinx_audeering_theme/static/favicon.png,sha256=ZEB_qodZ9r9i2BMsgu1HD8WpDoMOQHDLeSxne3C2sXs,2142
+sphinx_audeering_theme/static/css/audeering-wide.css,sha256=X39elYp1zPfIYTsJpZjAZoF5OagmXxyLjTKKRVl-6-8,43
+sphinx_audeering_theme/static/css/audeering.css,sha256=RqMC-KooaTmS6MGbyUtOhsXTvc9LkrcBMhZP8O2l2fQ,11886
+sphinx_audeering_theme/static/images/audeering.png,sha256=hLaNJ8F-tpgNGXCV1HlVepZcVfNrj8RKVKyCH12vAv4,24730
+sphinx_audeering_theme-1.1.9.dist-info/LICENSE,sha256=Pbf3QiXkT1irAXMaEfRw2goEK077966fKH9EV3kOrv8,1118
+sphinx_audeering_theme-1.1.9.dist-info/METADATA,sha256=0kt_x7HXSyitIN87xss7TOjK1vmb4cjQtDDxvHZ4flk,2988
+sphinx_audeering_theme-1.1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sphinx_audeering_theme-1.1.9.dist-info/entry_points.txt,sha256=fzQlJj-t3T7Bo_wGYnxlDRZBkmaZIjrMdF5A-kAu3d8,70
+sphinx_audeering_theme-1.1.9.dist-info/top_level.txt,sha256=cpXSY6ioCLH6qbYltGsrVjXWvMjpK8EwBkFNta9a4kM,23
+sphinx_audeering_theme-1.1.9.dist-info/RECORD,,
