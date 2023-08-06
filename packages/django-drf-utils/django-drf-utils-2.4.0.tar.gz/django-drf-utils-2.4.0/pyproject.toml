@@ -1,0 +1,68 @@
+[build-system]
+  build-backend = "setuptools.build_meta"
+  requires = ["setuptools >= 40.6.0", "wheel"]
+
+[tool.black]
+  exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | venv
+  | _build
+  | build
+  | dist
+)/
+'''
+  include = '\.pyi?$'
+  target-version = ["py37", "py38", "py39"]
+
+[tool.coverage.run]
+  branch = true
+  omit = ["*/tests/*"]
+  source = ["django_drf_utils"]
+
+[tool.tox]
+  legacy_tox_ini = '''
+[tox]
+envlist = clean,py{37,38,39,310},report
+isolated_build = true
+skipsdist = True
+
+[testenv]
+deps =
+    pytest-cov
+    pytest-randomly
+    pytest-xdist
+    .[test]
+depends =
+    py{37,38,39,310}: clean
+    report: py{37,38,39,310}
+commands = pytest {posargs: -n 4 --cov --cov-append --cov-report=}
+
+[testenv:report]
+deps = coverage[toml]
+skip_install = true
+commands =
+    coverage report
+
+[testenv:clean]
+deps = coverage[toml]
+skip_install = true
+commands = coverage erase
+'''
+
+[tool.pylint.'MESSAGES CONTROL']
+  disable = "line-too-long,invalid-name,too-few-public-methods,too-many-instance-attributes,too-many-arguments,missing-docstring,fixme"
+  output-format = "text"
+
+[tool.django-stubs]
+  django_settings_module = "tests.settings"
+
+[tool.mypy]
+  plugins = ["mypy_django_plugin.main", "mypy_drf_plugin.main"]
+  [[tool.mypy.overrides]]
+    ignore_missing_imports = true
+    module = ["assertpy", "pythonjsonlogger.*"]

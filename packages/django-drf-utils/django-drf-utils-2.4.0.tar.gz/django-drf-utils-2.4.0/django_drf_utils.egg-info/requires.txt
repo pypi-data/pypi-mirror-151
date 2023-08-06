@@ -1,0 +1,17 @@
+Django>=3.2
+djangorestframework>=3.12
+python-json-logger>=2
+
+[legacy]
+PySide2>=5.15.1
+
+[stubs]
+django-stubs==1.9.0
+djangorestframework-stubs
+types-requests
+
+[test]
+assertpy
+pytest
+pytest-django
+requests
