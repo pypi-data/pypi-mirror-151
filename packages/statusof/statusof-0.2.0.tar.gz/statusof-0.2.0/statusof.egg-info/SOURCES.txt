@@ -1,0 +1,10 @@
+README.md
+setup.py
+statusof/__init__.py
+statusof/__main__.py
+statusof.egg-info/PKG-INFO
+statusof.egg-info/SOURCES.txt
+statusof.egg-info/dependency_links.txt
+statusof.egg-info/entry_points.txt
+statusof.egg-info/requires.txt
+statusof.egg-info/top_level.txt
