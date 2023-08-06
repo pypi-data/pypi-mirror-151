@@ -1,0 +1,4 @@
+flexlate>=0.14.0
+watchdog
+typer
+rich

@@ -1,0 +1,4 @@
+_examples
+examples
+flexlate_dev
+tests
