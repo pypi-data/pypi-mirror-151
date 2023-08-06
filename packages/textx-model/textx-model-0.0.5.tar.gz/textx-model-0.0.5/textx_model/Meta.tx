@@ -1,0 +1,40 @@
+Model:
+         assignments*=Assignment expression=Expression
+         ;
+Assignment:
+         variable=ID '=' expression=Expression ';'
+         ;
+Expression:
+          op=Not (op=Logic op=Not)*
+           ;
+Logic:
+        "and" | "or" | "in"
+           ;
+Not:
+    _not?='not' op=Compare
+        ;
+Compare:
+          op=AddSub (op=CompareSymbol op=AddSub)*
+           ;
+CompareSymbol:
+        "<=" | ">=" | ">" | "<" | "=" | "!="
+       ;
+AddSub:
+         op=Term (op=PlusOrMinus op=Term)*
+           ;
+PlusOrMinus:
+           '+' | '-'
+           ;
+Term:
+     op=Factor (op=MulOrDiv op=Factor)*
+     ;
+MulOrDiv:
+       '*' | '/'
+       ;
+Factor:
+      (sign=PlusOrMinus)?  op=Operand
+      ;
+Operand:
+        op=NUMBER | op=BOOL | op=ID | op=STRING | ('(' op=Expression ')')
+      ;
+
