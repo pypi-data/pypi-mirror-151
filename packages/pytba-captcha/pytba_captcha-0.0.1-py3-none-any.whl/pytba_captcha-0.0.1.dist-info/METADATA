@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytba-captcha
+Version: 0.0.1
+Summary: Implement a CAPTCHA system with pyTelegramBotAPI
+Home-page: https://github.com/TECH-SAVVY-GUY/telebot-captcha
+Author: SOHAM DATTA
+Author-email: dattasoham805@gmail.com
+License: UNKNOWN
+Keywords: telebot,telegram,pyTelegramBotAPI,captcha
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyTelegramBotAPI
+Requires-Dist: redis
+
+# **TELEBOT - CAPTCHA**
+
+## ***A Python module that allows you to implement a CAPTCHA system with pyTelegramBotAPI***
+
+
+
