@@ -1,0 +1,126 @@
+wcwidth
+tabulate
+click>=7.0
+statsmodels>=0.12.1
+pandas>=0.24.2
+patsy>=0.5.1
+scipy<=1.7.3
+rqdatac_fund==1.0.*,>=1.0.18
+numpy>=1.19.5
+requests
+pyjwt==1.7.1
+rqdatac==2.9.*,>=2.9.44
+
+[:python_version <= "3.6"]
+cryptography==2.9.2
+
+[:python_version > "3.7"]
+cryptography<=36.0.2,>=2.9.2
+
+[rqalpha_plus]
+wcwidth
+rqalpha-mod-ricequant-data==2.3.*,>=2.3.4
+rqalpha-mod-option==1.1.*,>=1.1.17
+tabulate
+rqalpha-mod-incremental==0.0.5a1
+rqalpha-plus==4.1.26
+hdf5plugin
+rqalpha-mod-rqfactor==1.0.10
+rqalpha==4.8.1
+rqalpha-mod-convertible==1.2.*,>=1.2.12
+rqfactor==1.2.*,>=1.2.3
+ta-lib==0.4.20
+numpy>=1.19.5
+rqalpha-mod-fund==0.0.8
+rqdatac==2.9.*,>=2.9.44
+click>=7.0
+statsmodels>=0.12.1
+rqalpha-mod-spot==1.0.*,>=1.0.8
+h5py>=3.0.0
+rqrisk==1.0.0
+rqalpha-mod-optimizer2==1.0.*,>=1.0.8
+patsy>=0.5.1
+scipy<=1.7.3
+rqdatac_fund==1.0.*,>=1.0.18
+pandas>=0.24.2
+requests
+pyjwt==1.7.1
+
+[rqalpha_plus:python_version <= "3.6"]
+cryptography==2.9.2
+
+[rqalpha_plus:python_version > "3.7"]
+cryptography<=36.0.2,>=2.9.2
+
+[rqdatac]
+wcwidth
+tabulate
+click>=7.0
+statsmodels>=0.12.1
+pandas>=0.24.2
+patsy>=0.5.1
+scipy<=1.7.3
+rqdatac_fund==1.0.*,>=1.0.18
+numpy>=1.19.5
+requests
+pyjwt==1.7.1
+rqdatac==2.9.*,>=2.9.44
+
+[rqdatac:python_version <= "3.6"]
+cryptography==2.9.2
+
+[rqdatac:python_version > "3.7"]
+cryptography<=36.0.2,>=2.9.2
+
+[rqfactor]
+wcwidth
+rqfactor==1.2.*,>=1.2.3
+tabulate
+click>=7.0
+statsmodels>=0.12.1
+ta-lib==0.4.20
+pandas>=0.24.2
+patsy>=0.5.1
+scipy<=1.7.3
+rqdatac_fund==1.0.*,>=1.0.18
+numpy>=1.19.5
+requests
+pyjwt==1.7.1
+rqdatac==2.9.*,>=2.9.44
+
+[rqfactor:python_version <= "3.6"]
+cryptography==2.9.2
+
+[rqfactor:python_version > "3.7"]
+cryptography<=36.0.2,>=2.9.2
+
+[rqoptimizer]
+wcwidth
+tabulate
+ecos==2.0.10
+osqp==0.6.2.post5
+numpy>=1.19.5
+rqdatac==2.9.*,>=2.9.44
+click>=7.0
+statsmodels>=0.12.1
+rqoptimizer2==1.2.*,>=1.2.16
+patsy>=0.5.1
+scipy<=1.7.3
+rqdatac_fund==1.0.*,>=1.0.18
+pandas>=0.24.2
+requests
+scs==2.1.4
+pyjwt==1.7.1
+rqoptimizer==1.2.*,>=1.2.16
+
+[rqoptimizer:python_version <= "3.6"]
+cryptography==2.9.2
+
+[rqoptimizer:python_version == "3.6"]
+cvxpy==1.1.18
+
+[rqoptimizer:python_version > "3.7"]
+cryptography<=36.0.2,>=2.9.2
+
+[rqoptimizer:python_version >= "3.7"]
+cvxpy==1.2.0
