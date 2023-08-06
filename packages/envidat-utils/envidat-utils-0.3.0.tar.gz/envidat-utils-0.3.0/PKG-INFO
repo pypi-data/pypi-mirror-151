@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: envidat-utils
+Version: 0.3.0
+Summary: Utilities in Python for the WSL EnviDat project.
+License: MIT
+Keywords: envidat,s3,ckan,wsl
+Author-email: Sam Woodcock <samuel.woodcock@wsl.ch>
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Provides-Extra: dotenv
+Project-URL: documentation, https://gitlabext.wsl.ch/EnviDat/envidat-python-utils.git
+Project-URL: homepage, https://www.envidat.ch
+Project-URL: repository, https://gitlabext.wsl.ch/EnviDat/envidat-python-utils.git
+Description-Content-Type: text/markdown
+Description: # EnviDat Python Utils
+        
+        Utilities for EnviDat projects in Python. API helpers, S3 wrappers etc.
+        
+        - Automatically pushed to PyPi.org using Gitlab pipeline.
+        - Available as `envidat` pip package.
+
