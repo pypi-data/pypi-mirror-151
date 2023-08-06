@@ -1,0 +1,164 @@
+Metadata-Version: 2.1
+Name: unitunes
+Version: 0.1.3
+Summary: A CLI tool to manage playlists across music streaming services.
+Home-page: https://github.com/platers/unitunes
+License: GPLv3
+Keywords: cli,music,playlist,playlists,spotify,ytmusic,musicbrainz
+Author: platers
+Author-email: platers81@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Dist: musicbrainzngs (>=0.7.1,<0.8.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: ratelimit (>=2.2.1,<3.0.0)
+Requires-Dist: rich (>=12.2.0,<13.0.0)
+Requires-Dist: spotipy (>=2.19.0,<3.0.0)
+Requires-Dist: strsimpy (>=0.2.1,<0.3.0)
+Requires-Dist: typer[all] (>=0.4.1,<0.5.0)
+Requires-Dist: youtube-title-parse (>=1.0.0,<2.0.0)
+Requires-Dist: ytmusicapi (>=0.21.0,<0.22.0)
+Description-Content-Type: text/markdown
+
+# unitunes [![PyPI version](https://badge.fury.io/py/unitunes.svg)](https://badge.fury.io/py/unitunes) ![example workflow](https://github.com/platers/unitunes/actions/workflows/github-actions.yml/badge.svg)
+
+![unituneslogo](https://github.com/platers/unitunes/blob/master/unitunes.png?raw=true)
+
+A command-line interface tool to manage playlists across music streaming services.
+
+![demo](demo.gif)
+
+## Introduction
+
+unitunes manages playlists across streaming services. unitunes can transfer songs between services and keep playlists in sync.
+
+unitunes stores your playlists in plain text, allowing you to version control your music. Playlists can be pushed and pulled from streaming services. Tracks from one service can be searched on another.
+
+### Current Supported Streaming Services
+
+| Name          | Pullable | Pushable | Searchable |
+| ------------- | :------: | :------: | :--------: |
+| MusicBrainz   |          |          |     ✅     |
+| Spotify       |    ✅    |    ✅    |     ✅     |
+| Youtube Music |    ✅    |    ✅    |     ✅     |
+
+Want to add support for another service? See [contributing](#contributing).
+
+## Documentation
+
+[Documentation](https://github.com/platers/unitunes/blob/master/docs.md)
+
+## Quickstart
+
+### Installation
+
+```bash
+pip install unitunes
+```
+
+### Initialize
+
+```bash
+unitunes init
+```
+
+This creates a `config.json` file in the current directory.
+
+### Add Services
+
+#### Spotify
+
+Follow the instructions at https://spotipy.readthedocs.io/en/2.19.0/#getting-started to obtain client credentials.
+
+Put the credentials in a file like so:
+
+```json
+{
+  "client_id": "...",
+  "client_secret": "...",
+  "redirect_uri": "http://example.com"
+}
+```
+
+Register the service in unitunes:
+
+```bash
+unitunes service add spotify spotify_config.json
+```
+
+#### Youtube Music
+
+Follow the instructions at https://ytmusicapi.readthedocs.io/en/latest/setup.html#manual-file-creation to create a `ytm_config.json` file.
+
+Register the service in unitunes:
+
+```bash
+unitunes service add ytm ytm_config.json
+```
+
+### Add Playlists
+
+Initialize UP's from your existing playlists:
+
+```bash
+unitunes fetch spotify # use -f to skip confirmation
+unitunes fetch ytm
+```
+
+### Pull Playlists
+
+Pull all tracks from all playlists.
+
+```bash
+unitunes pull
+```
+
+### Search Playlists
+
+Search for tracks on another service:
+
+```bash
+unitunes search SERVICE_TYPE PLAYLIST_NAME
+```
+
+### Push Playlists
+
+Push all changes to streaming services:
+
+```bash
+unitunes push
+```
+
+## Contributing
+
+unitunes is in alpha. Contributions are very welcome. I am looking for collaborators to grow unitunes into a foundation for user controlled music software.
+
+Take a look at the open issues!
+
+### Development Setup
+
+1. Fork and clone the repository.
+2. Install [poetry](https://python-poetry.org/).
+3. In the root directory, run `poetry shell`.
+4. Run `poetry install`.
+5. `unitunes` should now be runnable.
+
+#### Testing
+
+Run `pytest` to run tests. With no arguments, it will skip tests that require service configs.
+
+Add a service config to run more tests.
+
+```bash
+pytest --spotify spotify_config.json --ytm ytm_config.json # may need to run with -s to paste spotify redirect URL the first time
+```
+
