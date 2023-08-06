@@ -1,0 +1,8 @@
+README.md
+setup.py
+gtbump/__init__.py
+gtbump.egg-info/PKG-INFO
+gtbump.egg-info/SOURCES.txt
+gtbump.egg-info/dependency_links.txt
+gtbump.egg-info/entry_points.txt
+gtbump.egg-info/top_level.txt
