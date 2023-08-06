@@ -1,0 +1,11 @@
+prefix=C:/Users/runneradmin/AppData/Local/Temp/pip-req-build-0b4b1t1a/build/lib.win-amd64-3.10
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: networkit
+Description: networkit
+URL: http://networkit.github.io
+Version: 10.0
+Cflags: -I${includedir}  -DNETWORKIT_RELEASE_LOGGING /DNETWORKIT_OMP2 /MP /DNETWORKIT_WINDOWS /DTTMATH_NOASM=1
+Libs: -L${libdir} -lnetworkit
