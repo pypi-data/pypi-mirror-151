@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/multicons/__init__.py
+src/multicons/consensus.py
+src/multicons/core.py
+src/multicons/utils.py
+src/multicons.egg-info/PKG-INFO
+src/multicons.egg-info/SOURCES.txt
+src/multicons.egg-info/dependency_links.txt
+src/multicons.egg-info/requires.txt
+src/multicons.egg-info/top_level.txt
+src/multicons.egg-info/zip-safe
