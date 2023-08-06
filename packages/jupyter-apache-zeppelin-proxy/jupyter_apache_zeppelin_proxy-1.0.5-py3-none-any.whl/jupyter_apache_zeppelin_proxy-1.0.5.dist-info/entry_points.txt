@@ -1,0 +1,2 @@
+[jupyter_serverproxy_servers]
+zeppelin = jupyter_apache_zeppelin_proxy:setup_apache_zeppelin
