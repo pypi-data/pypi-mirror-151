@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sklearn-extender
+Version: 0.0.5
+Summary: add useful functionality to sci-kit learn
+Home-page: https://github.com/jcatankard/sklearn_extender
+Author: https://github.com/jcatankard
+License: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: sklearn
+
+
+# sklearn_extender
+
