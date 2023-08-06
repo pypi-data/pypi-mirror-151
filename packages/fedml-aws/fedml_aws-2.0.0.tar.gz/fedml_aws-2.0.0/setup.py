@@ -1,0 +1,22 @@
+import setuptools
+
+setuptools.setup(
+    name="fedml_aws",
+    version="2.0.0",
+    author="SAP SE",
+    description="A python library for building machine learning models on AWS Sagemaker using a federated data source",
+    license='Apache License 2.0',
+    license_files = ['LICENSE.txt'],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ],
+    install_requires=[
+        "hdbcli", 'pyyaml', 'requests', 'numpy', 'pandas'
+    ],
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3",
+    scripts=['src/fedml_aws/build_and_push.sh', 'src/fedml_aws/install_kubectl.sh'],
+    include_package_data=True
+)

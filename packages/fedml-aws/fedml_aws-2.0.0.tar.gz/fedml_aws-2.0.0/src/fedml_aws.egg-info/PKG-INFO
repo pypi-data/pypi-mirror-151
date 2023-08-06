@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fedml-aws
+Version: 2.0.0
+Summary: A python library for building machine learning models on AWS Sagemaker using a federated data source
+Author: SAP SE
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+License-File: LICENSE.txt

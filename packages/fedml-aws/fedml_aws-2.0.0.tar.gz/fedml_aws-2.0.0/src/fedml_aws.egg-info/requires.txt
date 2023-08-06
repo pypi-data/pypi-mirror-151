@@ -1,0 +1,5 @@
+hdbcli
+pyyaml
+requests
+numpy
+pandas
