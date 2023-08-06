@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gram/__init__.py
+gram/gram.py
+py_grimm.egg-info/PKG-INFO
+py_grimm.egg-info/SOURCES.txt
+py_grimm.egg-info/dependency_links.txt
+py_grimm.egg-info/not-zip-safe
+py_grimm.egg-info/requires.txt
+py_grimm.egg-info/top_level.txt
