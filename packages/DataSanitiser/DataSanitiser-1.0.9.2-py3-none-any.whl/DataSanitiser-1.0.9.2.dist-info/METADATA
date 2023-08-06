@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: DataSanitiser
+Version: 1.0.9.2
+Summary: Data Combination and Sanitisation Tool
+Home-page: http://www.python.org
+Author: Col
+Author-email: abc@abc.org
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: xlrd
+Requires-Dist: scipy
+Requires-Dist: openpyxl
+Requires-Dist: lxml
+
+UNKNOWN
+
