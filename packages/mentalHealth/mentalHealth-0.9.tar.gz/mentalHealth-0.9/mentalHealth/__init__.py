@@ -1,0 +1,1 @@
+from mentalHealth.mentalHealth import detect_mental_health
