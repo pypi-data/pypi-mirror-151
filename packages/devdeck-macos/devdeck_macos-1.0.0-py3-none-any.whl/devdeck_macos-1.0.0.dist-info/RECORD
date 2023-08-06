@@ -1,0 +1,11 @@
+devdeck_macos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devdeck_macos/assets/font-awesome/microphone-mute.png,sha256=XLaZ-A1m4c5fe-MzvCwZN6rMUn5DVFVE5pBokcRzLsM,18653
+devdeck_macos/assets/font-awesome/microphone.png,sha256=CAzcJOCcKTUE5UGg5U4aOTOj9zIruiH-qwGUYXT21E8,18856
+devdeck_macos/controls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devdeck_macos/controls/mic_mute_control.py,sha256=u6ozeWtDGGEElfM7US4Y9juOoWDwTW0r7Xd6Xuz-20s,1207
+devdeck_macos-1.0.0.dist-info/LICENSE,sha256=ZsfUZJ0l6ZS2bw6BnYeUCu-lQcK2S89mAS09QeJZ2bo,1539
+devdeck_macos-1.0.0.dist-info/LICENSE.fork-original,sha256=NkLTdD0_EDPw7upuzfi5m9zhCplnYswErK0NPiDcpM4,1521
+devdeck_macos-1.0.0.dist-info/METADATA,sha256=PO0L_WBV8RsNYmWXmJ3ddTzoqS7xkgUDKjsQDwMxTxA,2472
+devdeck_macos-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+devdeck_macos-1.0.0.dist-info/top_level.txt,sha256=oxU9R1yjVcjhYBaf8rEdlFCT-XRE5RcUo5YDJbdbes4,14
+devdeck_macos-1.0.0.dist-info/RECORD,,
