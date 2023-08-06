@@ -1,0 +1,10 @@
+Django>=2.2
+pillow>=2.5
+
+[progressbar]
+progressbar2>=3.0.0
+
+[test]
+pytest
+pytest-cov
+pytest-django
