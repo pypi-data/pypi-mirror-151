@@ -1,0 +1,7 @@
+setup.py
+plotsfinancieros/__init__.py
+plotsfinancieros/funciones.py
+plotsfinancierosUBA.egg-info/PKG-INFO
+plotsfinancierosUBA.egg-info/SOURCES.txt
+plotsfinancierosUBA.egg-info/dependency_links.txt
+plotsfinancierosUBA.egg-info/top_level.txt
