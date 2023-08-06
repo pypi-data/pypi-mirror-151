@@ -1,0 +1,28 @@
+name: Release
+on: [workflow_dispatch]
+jobs:
+  github:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Create GitHub release
+        run: gh release create --generate-notes "$(gh release view --json name | jq .name | xargs bin/next_version)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  pypi:
+    needs: github
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Build PyPI package
+        run: |
+          python3 -m pip install --upgrade build
+          python3 -m build
+      - name: Publish PyPI package
+        uses: pypa/gh-action-pypi-publish@v1.5.0
+        with:
+          password: ${{ secrets.TWINE_PASSWORD }}
