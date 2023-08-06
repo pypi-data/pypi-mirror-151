@@ -1,0 +1,3 @@
+[pytest11]
+testreport = pytestTestreport.pytest_testreport
+
