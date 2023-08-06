@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pplay-pygame
+Version: 2.0.0
+Summary: A simple game abstraction framework to pygame
+Author: Prof. Esteban Clua, Prof. Anselmo Montenegro, Gabriel Saldanha, Adônis Gasiglia, Yuri Nogueira
+Author-email: esteban@ic.uff.br, anselmo@ic.uff.br, gabrielcrsaldanha@gmail.com, adonisgasiglia@id.uff.br, yurinogueira@id.uff.br
+License: GPL-2
+Project-URL: Documentation, https://www2.ic.uff.br/pplay/
+Project-URL: Code, https://github.com/yurinogueira/pplay
+Project-URL: Tracker, https://github.com/yurinogueira/pplay/issues
+Requires-Python: >=3.7,
+License-File: LICENSE.rst
+
+# pplay
+Framework para criação de jogos em Python utilizado pelos alunos de Ciência da Computação da Universidade Federal Fluminense.
+
+Mais informações e documentação detalhada no site do projeto:
+http://www2.ic.uff.br/pplay/
