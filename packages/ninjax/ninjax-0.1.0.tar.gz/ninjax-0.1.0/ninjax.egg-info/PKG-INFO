@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ninjax
+Version: 0.1.0
+Summary: Simple and general state handling in JAX
+Home-page: http://github.com/danijar/ninjax
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+
+Ninjax
+======
+
+Simple and general state handling in JAX.
+
+
