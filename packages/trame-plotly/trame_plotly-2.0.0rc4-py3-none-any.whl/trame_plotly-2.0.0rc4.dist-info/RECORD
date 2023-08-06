@@ -1,0 +1,15 @@
+trame/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/plotly.py,sha256=LetHyFI3MJlIEAvh267I2dVHCXP-3e0aTv42gn1lj1A,34
+trame/widgets/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/widgets/plotly.py,sha256=xw8ygostO2P8hUUZEmUEsfv1xkLpqVBfHtaTUoZsdRQ,138
+trame_plotly/LICENSE,sha256=7Fap-G4xE-Cyd7HMGRilqOZqwDLU8CjM90hQGg2YAdU,1078
+trame_plotly/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_plotly/module/__init__.py,sha256=Ml7zz0u-TcDfbF8GYqaK437z059DjxplHcCeSXF2Ohk,380
+trame_plotly/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_plotly/widgets/plotly.py,sha256=uLygGjjT8QcgDO2PZcz7sUo6wCdMWRoeSOI-_rg6BGA,3267
+trame_plotly-2.0.0rc4.dist-info/LICENSE,sha256=7Fap-G4xE-Cyd7HMGRilqOZqwDLU8CjM90hQGg2YAdU,1078
+trame_plotly-2.0.0rc4.dist-info/METADATA,sha256=ooWmm04A6REo6iixbmbFXOvlrDdqUGmcoEaV9jx_ffs,7096
+trame_plotly-2.0.0rc4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trame_plotly-2.0.0rc4.dist-info/top_level.txt,sha256=RZFBmb09P8dS3b8XskZ4Mo8LnnK6I0KZJ_z0ghCl_8U,19
+trame_plotly-2.0.0rc4.dist-info/RECORD,,
