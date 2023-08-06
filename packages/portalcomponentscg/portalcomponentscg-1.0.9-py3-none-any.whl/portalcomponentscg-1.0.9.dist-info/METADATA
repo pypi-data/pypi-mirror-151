@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: portalcomponentscg
+Version: 1.0.9
+Summary: Components para o portal de clientes CG.
+Home-page: https://github.com/ramirooliveiracg/cgcomponents
+Author: Gabriel Dalacorte
+Author-email: gnunes.servico@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Portal Components
+
+## Getting Started
+#### Dependencies
+You need Python 3.7 or later to use **portalcomponents**.
+```
+pip install setuptools
+pip install wheel
+pip install twine
+```
+#### Installation
+Clone this repo to your local machine using:
+```
+git clone https://github.com/ramirooliveiracg/cgcomponents.git
+```
+## Features
+- File structure for PyPI packages
+- Setup with package informations
+- License example
+
