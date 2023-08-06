@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: propagate-uncertainties-sebastian-achim-mueller
+Version: 0.1.1
+Summary: Propagate the uncertainty of multiple values
+Home-page: https://github.com/cherenkov-plenoscope/propagate_uncertainties
+Author: Sebastian Achim Mueller
+Author-email: sebastian-achim.mueller@mpi-hd.mpg.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/cherenkov-plenoscope/propagate_uncertainties/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/x-rst
+
+Propagate Uncertainties
+=======================
+|BlackStyle|
+
+Propagate the uncertainties of your variables in simple expressions.
+Both value and absolute uncertainty of a variable are stored in a ``tuple()``.
+
+.. code:: python
+
+    C_value = 42.0
+    C_absolute_uncertainty = 1.337
+    C = tuple(C_value, C_absolute_uncertainty)
+
+
+Example, division
+-----------------
+.. code:: python
+
+    import propagate_uncertainties as pru
+
+    pru.divide(x=(5.0, 1.0), y=(2.0, 0.1))
+    (2.5, 0.5153882032022076)
+
+
+.. |BlackStyle| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+
