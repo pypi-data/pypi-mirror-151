@@ -1,0 +1,14 @@
+language: python
+python:
+  - { PATH: "{{replace(Python39, '\\', '\\\\')}}", VERSION: 3.9, DIST: std }
+virtualenv:
+  - path: {{ospathjoin(root_path, pickname("%NAME_JENKINS%", project_name + "_%VERSION%_%DIST%_%NAME%"), "_venv")}}
+install:
+  - $PYINT -m pip install --upgrade pip
+  - pip freeze
+  - pip freeze > pip_freeze.txt
+script:
+  - { CMDPY: "'build___MODULE__.bat ' + ${YMLPYTHON}", NAME: "__MODULE__" }
+after_script:
+  - copy dist\*.whl ..
+

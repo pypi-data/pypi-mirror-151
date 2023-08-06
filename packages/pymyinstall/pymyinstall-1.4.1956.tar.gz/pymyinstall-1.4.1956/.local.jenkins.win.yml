@@ -1,0 +1,34 @@
+
+language: python
+
+python:
+  - { PATH: "{{replace(Python39, '\\', '\\\\')}}", VERSION: 3.9, DIST: std, PYTHONPATH: src }
+  
+virtualenv:
+  - path: {{ospathjoin(root_path, pickname("%NAME_JENKINS%", project_name + "_%VERSION%_%DIST%_%NAME%"), "_venv")}}
+  
+install:
+  - pip install --upgrade pip
+  - pip install --no-cache-dir --no-deps --index http://localhost:8067/simple/ jyquickhelper --extra-index-url=https://pypi.python.org/simple/
+  - pip install --no-cache-dir --no-deps --index http://localhost:8067/simple/ pyquickhelper --extra-index-url=https://pypi.python.org/simple/
+  - pip install -r requirements.txt
+  - pip freeze
+  - pip freeze > pip_freeze.txt
+
+script:
+  - { CMD: "python -u setup.py unittests", NAME: "UT" }
+  - { CMD: "python -u setup.py unittests_LONG", NAME: "UT_LONG" }
+  - { CMD: "python -u setup.py unittests -e \".*SKIP.*base.*\" -g \".*datascientist.*\"", NAME: "UT_SKIP_BASE" }
+  - { CMD: "python -u setup.py unittests -e \".*SKIP.*sqlitespy.*\"", NAME: "UT_SKIP_SQLLITE" }
+  - { CMD: "python -u setup.py unittests -e \".*SKIP.*pywin32.*\"", NAME: "UT_SKIP_PYWIN32" }
+  - { CMD: "python -u setup.py unittests -e \".*SKIP.*minimal.*\"", NAME: "UT_SKIP_MINIMAL" }
+  - { CMD: "python -u setup.py unittests -e \".*SKIP.*teaching.*\"", NAME: "UT_SKIP_TEACHING", TIMEOUT: 7200 }
+  - { CMD: "python -u setup.py unittests -e \".*SKIP.*datascientist.*\"", NAME: "UT_SKIP_DATASCIENTIST", TIMEOUT: 7200 }
+  - { CMD: "python -u setup.py unittests -e \".*SKIP.*every.*\"", NAME: "UT_SKIP_ALL", TIMEOUT: 20000 }
+after_script:
+  - python -u setup.py bdist_wheel
+  - if [ ${DIST} != "conda" and ${NAME} == "UT" ] then copy dist\*.whl {{root_path}}\..\..\local_pypi\local_pypi_server fi
+
+documentation:
+  - if [ ${NAME} == "UT" ] then python -u setup.py build_sphinx fi
+  - if [ ${NAME} == "UT" ] then xcopy /E /C /I /Y _doc\sphinxdoc\build\html dist\html fi
