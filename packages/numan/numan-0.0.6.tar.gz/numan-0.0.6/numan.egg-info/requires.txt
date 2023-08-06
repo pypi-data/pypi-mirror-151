@@ -1,0 +1,7 @@
+tifffile
+numpy
+tqdm
+pandas
+matplotlib
+pypdf2
+reportlab
