@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: luaovermq-py
+Version: 1.0.0
+Summary: LuaOverMQ (LMQ) Python Bindings
+Home-page: https://github.com/StockMQ/luaovermq-py
+Author: Alexander Nusov
+Author-email: nusov@users.noreply.github.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

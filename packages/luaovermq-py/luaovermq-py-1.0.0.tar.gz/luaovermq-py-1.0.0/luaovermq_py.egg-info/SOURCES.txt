@@ -1,0 +1,8 @@
+README.md
+setup.py
+luaovermq/client.py
+luaovermq/exceptions.py
+luaovermq_py.egg-info/PKG-INFO
+luaovermq_py.egg-info/SOURCES.txt
+luaovermq_py.egg-info/dependency_links.txt
+luaovermq_py.egg-info/top_level.txt
