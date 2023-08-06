@@ -1,0 +1,13 @@
+solarmask/ARDataSet.py,sha256=maDjBnTTEsKu1kKFtvo0sQela3PsrVjKy_ZeXiryb30,1206
+solarmask/__init__.py,sha256=w8Cyxc6DUnYZheEJpPDIL9BgHVXzOnFIkrav7QD-d0w,55
+solarmask/active_region.py,sha256=z_X7ESpHt8R7u0HpGPFa01vPw_pippgeiZgJmCXO7HM,5153
+solarmask/active_region_derived_fields.py,sha256=PWmsBF6qVbC95PGeuUG_zxR3gEIC_SGs0JHuzMXwKnY,11549
+solarmask/active_region_parameters.py,sha256=u9hjld__R0LvCEJyjEW_jgVtDLRKKRy43U_16JAToLw,9459
+solarmask/active_region_segments.py,sha256=o4f5uNt1OZTiv8wOq6Vder0l2w79J3oRek_TGnR_Je8,10034
+solarmask/data.py,sha256=v_Mwq0Tm0ATV0g9kRn5qr0TV1MlB7ueQTvVK0QA-1xg,6227
+solarmask/utils.py,sha256=sa9nVuf9vevmbkFw-EYeBP2brguCjWKqa3La43n29GI,4411
+solarmask-1.0.4.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+solarmask-1.0.4.dist-info/METADATA,sha256=ryF1xhV4T50bnKLzd5n-P5mKDLzJWIxHeNm7R_ay8s0,18340
+solarmask-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+solarmask-1.0.4.dist-info/top_level.txt,sha256=VVBcpCuiyjwv-X2jegv2g3psH3xs-rZGryXhxfeXu6I,10
+solarmask-1.0.4.dist-info/RECORD,,
