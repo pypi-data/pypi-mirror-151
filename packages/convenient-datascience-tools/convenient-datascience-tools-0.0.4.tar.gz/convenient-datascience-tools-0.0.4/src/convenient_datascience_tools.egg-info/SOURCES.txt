@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/convenient_datascience_tools/__init__.py
+src/convenient_datascience_tools.egg-info/PKG-INFO
+src/convenient_datascience_tools.egg-info/SOURCES.txt
+src/convenient_datascience_tools.egg-info/dependency_links.txt
+src/convenient_datascience_tools.egg-info/requires.txt
+src/convenient_datascience_tools.egg-info/top_level.txt
+src/convenient_datascience_tools/tools/__init__.py
+src/convenient_datascience_tools/tools/pandas.py
