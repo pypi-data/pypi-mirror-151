@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: convenient-datascience-tools
+Version: 0.0.3
+Home-page: https://github.com/guiturtera/convenient-datascience-tools
+Author: Guilherme Turtera
+Author-email: guiturtera@hotmail.com
+License: MIT
+Keywords: data science tool
+Requires-Dist: pandas
+
